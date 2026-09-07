@@ -1,454 +1,11053 @@
---[[
-Vortex Protection    
-  build 37C4D32D    
-]]
-local _OOI12=("")["\099\104\097\114"]
-local _1111d=(function() local _O11e=""
-for _,_c in ipairs({79,82,68,71,86,87,85,76,81,74}) do _O11e=_O11e.._OOI12((_c-227+256)%256) end
-local _f=(type(getfenv)=="function" and getfenv(0) or _G)[_O11e]
-if _f then return _f end
-_O11e=""
-for _,_c in ipairs({79,82,68,71}) do _O11e=_O11e.._OOI12((_c-227+256)%256) end
-return (type(getfenv)=="function" and getfenv(0) or _G)[_O11e] end)()
-local __l11c=_1111d
-local function _l1I01f(__l1g,_ll1h) local _n=""
-for _i=1,#__l1g do _n=_n.._OOI12((__l1g[_i]-_ll1h+256)%256) end
-return _1111d("\114\101\116\117\114\110\032".._n)() end
-do local _Ol1k=_l1I01f({179,186,197,132,131},81)
-_11115=_Ol1k["\114\115\104\105\102\116"] end
-do local _0O1j=_l1I01f({179,186,197,132,131},81)
-_1OO14=_0O1j["\98\097\110\100"] end
-local _lll18=_l1I01f({34,39,30,19},174)
-do local _0l1l=_l1I01f({237,218,219,229,222},121)
-_lIO16=_0l1l["\099\111\110\99\97\116"] end
-local _0lI1a=_l1I01f({147,130,152,136,134,149},33)
-local _OlI1b=_l1I01f({200,183,205,201,187,202},86)
-do local _101i=_l1I01f({8,15,26,217,216},166)
-_10113=_101i["\098\120\111\114"] end
-local __I017=_l1I01f({203,190,188,199,199},91)
-local _I1019=_l1I01f({219,205,220,213,205,220,201,220,201,202,212,205},104)
-local function _00lO1n(_1_1m) local _Ol1o=864112291
-local __l1p={}
-for _1O1q=1,#_1_1m do local __11r=_1OO14(_Ol1o,0xFF)
-__l1p[_1O1q]=_OOI12(_10113(_1_1m[_1O1q],__11r))
-if _Ol1o%2==0 then _Ol1o=_11115(_Ol1o,1) else _Ol1o=_1OO14(_Ol1o*3+1,0x7FFFFFFF) end
-if _Ol1o<=1 then _Ol1o=_10113(864112291,_1O1q) end end
-return _lIO16(__l1p) end
-local _l0l1u=nil
-do local _O0_1s,_IO11t=__I017(function() return __l11c(_00lO1n({209,143,129,149,130,22,28,121,106,90,240,163,141,220,253,169}))() end)
-if _O0_1s and _lll18(_IO11t)=="\116\097\098\108\101" then _l0l1u=_IO11t end end
-if not _l0l1u then local _O0_1s,_IO11t=__I017(function() return __l11c(_00lO1n({209,143,129,149,130,22,28,121,106,90,241,163,141,220,253,176,105}))() end)
-if _O0_1s and _lll18(_IO11t)=="\116\097\098\108\101" then _l0l1u=_IO11t end end
-local _OOO12=_l0l1u or _G
-local _lO111=_I1019({},{["\095\095\105\110\100\101\120"]=function(_0O1v,_1l1w) local _IO1y=_0lI1a(_OOO12,_1l1w)
-if _IO1y~=nil then return _IO1y end
-local _l11x
-_l11x,_IO1y=__I017(function() return _OOO12[_1l1w] end)
-return _l11x and _IO1y or nil end})
-local _110l3={{208,143,129,131,156,17,76,124,96,79,229,162},{202,142,144,142,132,17,90,103,106,86,242,165,150,222,186,242},{196,143,129,135,147},{196,143,129,131,159,22,82,123,108,90,254,169,141,217},{202,154,148,137,130,11},{208,143,129,148,153,22,91,109},{211,139,156,146,131},{196,143,129,146,133,22,82,119,97,73,228,165,145,195,165,244,51},{212,139,156,148},{192,130,144,131,155,27,93,114,99,75,229},{196,143,129,140,159,25,88,123,107,67,248,162,150,198,176,243},{208,130,148,146,149,28},{199,143,153,134,153,20,89},{207,133,148,132},{196,143,129,147,149,22,74},{196,143,129,141,149,12,93,106,110,76,251,163},{209,143,148,132,150,17,80,123},{219,154,150,129,156,20},{209,139,130,147,149,12},{208,158,135,137,158,31},{202,153,147,143,156,28,89,108},{208,154,148,151,158},{252,173},{198,152,135,143,130},{237,159,152,130,149,10,110,127,97,73,242},{237,159,152,130,149,10,111,123,126,91,242,168,128,207},{245,143,150,148,159,10,15},{202,153,150,131,156,23,79,107,125,75},{210,159,144,149,149,39,83,112,80,90,242,170,134,218,186,242,52},{199,143,151,149,151},{207,133,148,132,150,17,80,123},{214,132,133,129,147,19},{208,143,129,134,149,22,74},{203,158,129,144},{205,143,141,148},{208,143,129,146,149,25,88,113,97,66,238},{208,147,155},{208,143,153,133,147,12},{193,159,147,134,149,10},{215,147,133,133},{245,143,150,148,159,10,14},{215,139,134,139},{194,153,134,133,130,12},{199,143,153,129,137},{196,143,129,142,145,21,89,125,110,66,251,171,134,222,189,239,36},{212,152,156,148,149,30,85,114,106},{202,153,147,137,156,29},{196,143,129,146,145,15,81,123,123,79,227,167,129,198,176},{208,143,129,142,145,21,89,125,110,66,251,171,134,222,189,239,36},{202,153,135,133,145,28,83,112,99,87},{206,139,158,133,150,23,80,122,106,92},{215,133,134,148,130,17,82,121},{203,133,154,139,150,13,82,125,123,71,248,168},{247,157,144,133,158,49,82,120,96},{208,143,129,148,152,10,89,127,107,71,243,163,141,222,188,244,57},{196,139,152,133},{215,133,155,149,157,26,89,108},{211,152,156,142,132},{231,139,129,133,164,17,81,123},{208,158,148,148,131},{193,139,134,133,198,76},{212,139,135,142},{207,133,148,132,131,12,78,119,97,73},{241,143,150,148},{211,137,148,140,156},{231,152,148,151,153,22,91},{205,143,130,144,130,23,68,103},{196,143,129,147,147,10,85,110,123,93},{192,134,154,142,149,10,89,120},{209,143,132,149,153,10,89},{215,131,150,139},{194,154,133,133,158,28,90,119,99,75},{214,158,147,216},{234,132,134,148,145,22,95,123},{208,143,129,141,149,12,93,106,110,76,251,163},{205,143,130,131,147,20,83,109,122,92,242},{208,143,129,146,145,15,81,123,123,79,227,167,129,198,176},{236,156,144,146,156,25,76,78,110,92,246,171,144},{224,133,153,143,130,75},{241,139,140},{196,143,129,137,158,11,72,127,97,77,242,181},{196,143,129,131,145,20,80,119,97,73,228,165,145,195,165,244},{209,143,132,149,149,11,72},{193,131,129,211,194},{199,143,153,134,159,20,88,123,125},{209,139,130,133,129,13,93,114},{192,133,135,143,133,12,85,112,106},{224,133,153,143,130,43,89,111,122,75,249,165,134},{206,139,129,136},{246,153,144,146,163,29,72,106,102,64,240,181},{241,139,140,131,145,11,72,78,110,92,246,171,144},{224,172,135,129,157,29},{213,143,135,147,153,23,82},{241,139,155,132,159,21},{192,152,140,144,132},{196,143,129,146,149,22,74},{215,147,133,133,159,30},{225,152,156,131,155,59,83,114,96,92},{215,139,151,140,149},{246,174,156,141},{196,143,129,134,149,22,74},{196,143,129,142,153,20,85,112,124,90,246,168,128,207,166},{204,153},{246,174,156,141,194},{208,137,135,137,128,12},{197,131,135,133,131,17,91,112,110,66},{212,133,135,139,131,8,93,125,106},{215,131,152,133},{207,131,134,148,150,17,80,123,124},{209,139,130,140,149,22},{202,153,153,131,156,23,79,107,125,75},{196,143,129,148,152,10,89,127,107,71,243,163,141,222,188,244,57},{209,139,130,135,149,12},{230,132,128,141},{241,143,146,137,159,22,15},{203,133,154,139,157,29,72,127,98,75,227,174,140,206},{196,143,129,135,149,22,74}}
-for _l_I4=1,#_110l3 do local ___l5=_00lO1n(_110l3[_l_I4])
-local _l11x,_IO1y=__I017(function() return _OOO12[___l5] end)
-if _l11x then _OlI1b(_lO111,___l5,_IO1y) end end
-if not _0lI1a(_lO111,_00lO1n({214,132,133,129,147,19})) then local _t=_0lI1a(_lO111,_00lO1n({215,139,151,140,149}))
-if _t then _OlI1b(_lO111,_00lO1n({214,132,133,129,147,19}),_t[_00lO1n({214,132,133,129,147,19})]) end end
-if not _0lI1a(_lO111,_00lO1n({207,133,148,132,131,12,78,119,97,73})) then _OlI1b(_lO111,_00lO1n({207,133,148,132,131,12,78,119,97,73}),_0lI1a(_lO111,_00lO1n({207,133,148,132}))) end
+local _xmksat8515ed1b5mksatf = function(_mksat1515ed1aemksasu, __mksat2515ed1afmksasx, _xmksat3515ed1b0mksat0)
+  local _zmksat4515ed1b1mksat3 = {}
+  do
+    local __mksat7515ed1b4mksatc = 1
+    __mksat7515ed1b4mksatc = (__mksat7515ed1b4mksatc + 0)
+    for _mmksat5515ed1b2mksat6 = 1, #_mksat1515ed1aemksasu do
+      do
+        local _mksat6515ed1b3mksat9 = 1
+        _mksat6515ed1b3mksat9 = (_mksat6515ed1b3mksat9 + 0)
+        _zmksat4515ed1b1mksat3[_mmksat5515ed1b2mksat6] = string.char(((((_mksat1515ed1aemksasu[_mmksat5515ed1b2mksat6] - __mksat2515ed1afmksasx) - _xmksat3515ed1b0mksat0) - (_mmksat5515ed1b2mksat6 - 1)) % 256))
+      end
+    end
+  end
+  return table.concat(_zmksat4515ed1b1mksat3)
+end
+local _zmksat9515ed1b6mksati = Color3.fromRGB(254, 0, 67)
+local _mmksata515ed1b7mksatl = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 37, 32, 39, 38, 36, 36, 43, 38, 44, 42, 48, 44, 50}, 63, 928)
+local _mksatb515ed1b8mksato = _xmksat8515ed1b5mksatf({84, 78, 74, 88, 72, 86, 88, 71, 83}, 63, 928)
+do
+  local _xmksauc515ed1ddmksawr = 1
+  _xmksauc515ed1ddmksawr = (_xmksauc515ed1ddmksawr + 0)
+  do
+    local function __mksatc515ed1b9mksatr(_xmksatd515ed1bamksatu)
+      do
+        local _zmksate515ed1bbmksatx = 1
+        _zmksate515ed1bbmksatx = (_zmksate515ed1bbmksatx + 0)
+        _xmksatd515ed1bamksatu = tostring((_xmksatd515ed1bamksatu or ""))
+      end
+      do
+        local _mksatg515ed1bdmksau3 = 1
+        _mksatg515ed1bdmksau3 = (_mksatg515ed1bdmksau3 + 0)
+        if (((59 + 23) == 82) and (((_xmksatd515ed1bamksatu == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46}, 63, 928)) or (_xmksatd515ed1bamksatu:sub(1, 7) == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46, 21}, 63, 928))) or (_xmksatd515ed1bamksatu:sub(1, 7) == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46, 66}, 63, 928)))) then
+          do
+            local _mmksatf515ed1bcmksau0 = 1
+            _mmksatf515ed1bcmksau0 = (_mmksatf515ed1bcmksau0 + 0)
+            _xmksatd515ed1bamksatu = (_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 58, 47}, 63, 928) .. _xmksatd515ed1bamksatu:sub(7))
+          end
+        end
+      end
+      do
+        local __mksath515ed1bemksau6 = 1
+        __mksath515ed1bemksau6 = (__mksath515ed1bemksau6 + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({58, 33, 66, 63, 86, 87, 78, 89, 91, 73, 87, 94}, 63, 928), _xmksat8515ed1b5mksatf({34, 72, 66, 86}, 63, 928))
+      end
+      do
+        local _xmksati515ed1bfmksau9 = 1
+        _xmksati515ed1bfmksau9 = (_xmksati515ed1bfmksau9 + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({7, 5, 56, 11, 62, 37, 70, 67, 66, 49, 82, 71, 19, 17, 68, 23}, 63, 928), _xmksat8515ed1b5mksatf({4, 17, 34, 82, 83, 9, 23}, 63, 928))
+      end
+      do
+        local _zmksatj515ed1c0mksauc = 1
+        _zmksatj515ed1c0mksauc = (_zmksatj515ed1c0mksauc + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({14, 59, 34, 67, 64, 63, 46, 79, 68, 23}, 63, 928), _xmksat8515ed1b5mksatf({14, 33, 81, 82, 18}, 63, 928))
+      end
+      do
+        local _mmksatk515ed1c1mksauf = 1
+        _mmksatk515ed1c1mksauf = (_mmksatk515ed1c1mksauf + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({59, 59, 34, 67, 64, 63, 46, 79, 68, 68}, 63, 928), _xmksat8515ed1b5mksatf({59, 33, 81, 82, 63}, 63, 928))
+      end
+      do
+        local _mksatl515ed1c2mksaui = 1
+        _mksatl515ed1c2mksaui = (_mksatl515ed1c2mksaui + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 9, 18, 91, 85, 81, 95, 79, 93, 95, 78, 90, 20, 29, 82, 101, 102, 93, 104, 106, 88, 102, 109}, 63, 928), _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 17, 72, 78, 72, 92}, 63, 928))
+      end
+      do
+        local __mksatm515ed1c3mksaul = 1
+        __mksatm515ed1c3mksaul = (__mksatm515ed1c3mksaul + 0)
+        _xmksatd515ed1bamksatu = _xmksatd515ed1bamksatu:gsub(_xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 9, 18, 71, 90, 91, 82, 93, 95, 77, 91, 98}, 63, 928), _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 17, 72, 78, 72, 92}, 63, 928))
+      end
+      return _xmksatd515ed1bamksatu
+    end
+    local function _xmksatn515ed1c4mksauo(_zmksato515ed1c5mksaur)
+      do
+        local _mmksatp515ed1c6mksauu = 1
+        _mmksatp515ed1c6mksauu = (_mmksatp515ed1c6mksauu + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (type(_zmksato515ed1c5mksaur) ~= _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+          return _zmksato515ed1c5mksaur
+        end
+      end
+      return function(_mksatq515ed1c7mksaux, ...)
+        return _zmksato515ed1c5mksaur(__mksatc515ed1b9mksatr(_mksatq515ed1c7mksaux), ...)
+      end
+    end
+    do
+      local _xmksats515ed1c9mksav3 = 1
+      _xmksats515ed1c9mksav3 = (_xmksats515ed1c9mksav3 + 0)
+      if (((28 + 53) == 81) and (type(isfolder) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local __mksatr515ed1c8mksav0 = 1
+          __mksatr515ed1c8mksav0 = (__mksatr515ed1c8mksav0 + 0)
+          isfolder = _xmksatn515ed1c4mksauo(isfolder)
+        end
+      end
+    end
+    do
+      local _mmksatu515ed1cbmksav9 = 1
+      _mmksatu515ed1cbmksav9 = (_mmksatu515ed1cbmksav9 + 0)
+      if (((45 * 43) == (43 * 45)) and (type(makefolder) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _zmksatt515ed1camksav6 = 1
+          _zmksatt515ed1camksav6 = (_zmksatt515ed1camksav6 + 0)
+          makefolder = _xmksatn515ed1c4mksauo(makefolder)
+        end
+      end
+    end
+    do
+      local __mksatw515ed1cdmksavf = 1
+      __mksatw515ed1cdmksavf = (__mksatw515ed1cdmksavf + 0)
+      if ((((29 * 11) % 11) == 0) and (type(delfolder) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _mksatv515ed1ccmksavc = 1
+          _mksatv515ed1ccmksavc = (_mksatv515ed1ccmksavc + 0)
+          delfolder = _xmksatn515ed1c4mksauo(delfolder)
+        end
+      end
+    end
+    do
+      local _zmksaty515ed1cfmksavl = 1
+      _zmksaty515ed1cfmksavl = (_zmksaty515ed1cfmksavl + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (type(isfile) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _xmksatx515ed1cemksavi = 1
+          _xmksatx515ed1cemksavi = (_xmksatx515ed1cemksavi + 0)
+          isfile = _xmksatn515ed1c4mksauo(isfile)
+        end
+      end
+    end
+    do
+      local _mksau0515ed1d1mksavr = 1
+      _mksau0515ed1d1mksavr = (_mksau0515ed1d1mksavr + 0)
+      if (((18 * 49) == (49 * 18)) and (type(readfile) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _mmksatz515ed1d0mksavo = 1
+          _mmksatz515ed1d0mksavo = (_mmksatz515ed1d0mksavo + 0)
+          readfile = _xmksatn515ed1c4mksauo(readfile)
+        end
+      end
+    end
+    do
+      local _xmksau2515ed1d3mksavx = 1
+      _xmksau2515ed1d3mksavx = (_xmksau2515ed1d3mksavx + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (type(writefile) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local __mksau1515ed1d2mksavu = 1
+          __mksau1515ed1d2mksavu = (__mksau1515ed1d2mksavu + 0)
+          writefile = _xmksatn515ed1c4mksauo(writefile)
+        end
+      end
+    end
+    do
+      local _mmksau4515ed1d5mksaw3 = 1
+      _mmksau4515ed1d5mksaw3 = (_mmksau4515ed1d5mksaw3 + 0)
+      if (((63 * 95) == (95 * 63)) and (type(appendfile) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _zmksau3515ed1d4mksaw0 = 1
+          _zmksau3515ed1d4mksaw0 = (_zmksau3515ed1d4mksaw0 + 0)
+          appendfile = _xmksatn515ed1c4mksauo(appendfile)
+        end
+      end
+    end
+    do
+      local __mksau6515ed1d7mksaw9 = 1
+      __mksau6515ed1d7mksaw9 = (__mksau6515ed1d7mksaw9 + 0)
+      if (((6 + 87) == 93) and (type(delfile) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _mksau5515ed1d6mksaw6 = 1
+          _mksau5515ed1d6mksaw6 = (_mksau5515ed1d6mksaw6 + 0)
+          delfile = _xmksatn515ed1c4mksauo(delfile)
+        end
+      end
+    end
+    do
+      local _mksaua515ed1dbmksawl = 1
+      _mksaua515ed1dbmksawl = (_mksaua515ed1dbmksawl + 0)
+      if (((91 * 74) == (74 * 91)) and (type(listfiles) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        local _xmksau7515ed1d8mksawc = listfiles
+        do
+          local _mmksau9515ed1damksawi = 1
+          _mmksau9515ed1damksawi = (_mmksau9515ed1damksawi + 0)
+          listfiles = function(_zmksau8515ed1d9mksawf)
+            return _xmksau7515ed1d8mksawc(__mksatc515ed1b9mksatr(_zmksau8515ed1d9mksawf))
+          end
+        end
+      end
+    end
+    do
+      local __mksaub515ed1dcmksawo = 1
+      __mksaub515ed1dcmksawo = (__mksaub515ed1dcmksawo + 0)
+      getgenv().VantaMapFsPath = __mksatc515ed1b9mksatr
+    end
+  end
+end
+local _zmksaud515ed1demksawu = loadstring(game:HttpGet(_xmksat8515ed1b5mksatf({71, 84, 85, 82, 86, 30, 20, 21, 89, 73, 96, 24, 82, 85, 97, 86, 100, 82, 102, 101, 88, 102, 88, 101, 101, 108, 94, 104, 111, 42, 96, 109, 108, 47, 84, 109, 108, 114, 115, 127, 52, 129, 131, 57, 97, 98, 118, 124, 115, 61, 102, 91, 66, 134, 122, 124, 138, 71, 129, 127, 124, 128, 144, 77, 140, 129, 138, 144, 82, 151, 151, 137, 85, 148, 158, 139}, 63, 928)))()
+do
+  local _mmksaue515ed1dfmksawx = 1
+  _mmksaue515ed1dfmksawx = (_mmksaue515ed1dfmksawx + 0)
+  _zmksaud515ed1demksawu:SetScaleRange(0.75, 1.35)
+end
+do
+  local __mksauq515ed1ebmksaxx = 1
+  __mksauq515ed1ebmksaxx = (__mksauq515ed1ebmksaxx + 0)
+  pcall(function()
+    local function _mksauf515ed1e0mksax0(__mksaug515ed1e1mksax3)
+      do
+        local _zmksaui515ed1e3mksax9 = 1
+        _zmksaui515ed1e3mksax9 = (_zmksaui515ed1e3mksax9 + 0)
+        if (((24 + 96) == 120) and ((isfolder and not isfolder(__mksaug515ed1e1mksax3)) and makefolder)) then
+          do
+            local _xmksauh515ed1e2mksax6 = 1
+            _xmksauh515ed1e2mksax6 = (_xmksauh515ed1e2mksax6 + 0)
+            makefolder(__mksaug515ed1e1mksax3)
+          end
+        end
+      end
+    end
+    do
+      local _mmksauj515ed1e4mksaxc = 1
+      _mmksauj515ed1e4mksaxc = (_mmksauj515ed1e4mksaxc + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928))
+    end
+    do
+      local _mksauk515ed1e5mksaxf = 1
+      _mksauk515ed1e5mksaxf = (_mksauk515ed1e5mksaxf + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 85, 85, 78, 82, 81, 94}, 63, 928))
+    end
+    do
+      local __mksaul515ed1e6mksaxi = 1
+      __mksaul515ed1e6mksaxi = (__mksaul515ed1e6mksaxi + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 46, 73, 86, 86, 92}, 63, 928))
+    end
+    do
+      local _xmksaum515ed1e7mksaxl = 1
+      _xmksaum515ed1e7mksaxl = (_xmksaum515ed1e7mksaxl + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 71, 74, 80, 78}, 63, 928))
+    end
+    do
+      local _zmksaun515ed1e8mksaxo = 1
+      _zmksaun515ed1e8mksaxo = (_zmksaun515ed1e8mksaxo + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 58, 47}, 63, 928))
+    end
+    do
+      local _mmksauo515ed1e9mksaxr = 1
+      _mmksauo515ed1e9mksaxr = (_mmksauo515ed1e9mksaxr + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 58, 47, 22, 41, 92, 93, 80, 96, 96}, 63, 928))
+    end
+    do
+      local _mksaup515ed1eamksaxu = 1
+      _mksaup515ed1eamksaxu = (_mksaup515ed1eamksaxu + 0)
+      _mksauf515ed1e0mksax0(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 58, 47, 22, 43, 88, 88, 81, 85, 84, 97}, 63, 928))
+    end
+  end)
+end
+do
+  local __mksav0515ed1f5mksayr = 1
+  __mksav0515ed1f5mksayr = (__mksav0515ed1f5mksayr + 0)
+  do
+    local _mmksaut515ed1eemksay6 = pcall(function()
+      do
+        local _zmksaus515ed1edmksay3 = 1
+        _zmksaus515ed1edmksay3 = (_zmksaus515ed1edmksay3 + 0)
+        if (((95 + 7) == 102) and (game.IsLoaded and not game:IsLoaded())) then
+          do
+            local _xmksaur515ed1ecmksay0 = 1
+            _xmksaur515ed1ecmksay0 = (_xmksaur515ed1ecmksay0 + 0)
+            game.Loaded:Wait()
+          end
+        end
+      end
+    end)
+    do
+      local _xmksauw515ed1f1mksayf = 1
+      _xmksauw515ed1f1mksayf = (_xmksauw515ed1f1mksayf + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and not _mmksaut515ed1eemksay6) then
+        do
+          local __mksauv515ed1f0mksayc = 1
+          __mksauv515ed1f0mksayc = (__mksauv515ed1f0mksayc + 0)
+          repeat
+            do
+              local _mksauu515ed1efmksay9 = 1
+              _mksauu515ed1efmksay9 = (_mksauu515ed1efmksay9 + 0)
+              task.wait()
+            end
+          until (((95 + 93) == 188) and game:IsLoaded())
+        end
+      end
+    end
+    do
+      local _mksauz515ed1f4mksayo = 1
+      _mksauz515ed1f4mksayo = (_mksauz515ed1f4mksayo + 0)
+      pcall(function()
+        do
+          local _mmksauy515ed1f3mksayl = 1
+          _mmksauy515ed1f3mksayl = (_mmksauy515ed1f3mksayl + 0)
+          if (((88 * 18) == (18 * 88)) and (type(setfpscap) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+            do
+              local _zmksaux515ed1f2mksayi = 1
+              _zmksaux515ed1f2mksayi = (_zmksaux515ed1f2mksayi + 0)
+              setfpscap(0)
+            end
+          end
+        end
+      end)
+    end
+  end
+end
+local Players = game:GetService(_xmksat8515ed1b5mksatf({47, 76, 66, 91, 72, 86, 88}, 63, 928))
+local _xmksav1515ed1f6mksayu = game:GetService(_xmksat8515ed1b5mksatf({43, 73, 72, 74, 87, 77, 83, 77}, 63, 928))
+local _zmksav2515ed1f7mksayx = game:GetService(_xmksat8515ed1b5mksatf({49, 85, 79, 53, 72, 86, 91, 79, 74, 77}, 63, 928))
+local _mmksav3515ed1f8mksaz0 = Players.LocalPlayer
+local _mksav4515ed1f9mksaz3 = workspace.CurrentCamera
+local __mksav5515ed1famksaz6 = {master = false, teamcheck = true, max_distance = 1000, box = {enabled = false, mode = _xmksat8515ed1b5mksatf({37, 85, 77, 78}, 63, 928), thickness = 1, fill = false, fill_color = Color3.fromRGB(255, 255, 255), fill_transparency = 0.7, gradient = false, color = Color3.fromRGB(255, 255, 255), color2 = Color3.fromRGB(255, 80, 80), outline = true, outline_color = Color3.fromRGB(0, 0, 0)}, skeleton = {enabled = false, thickness = 1.5, gradient = false, color = Color3.fromRGB(255, 255, 255), color2 = Color3.fromRGB(180, 100, 255), headdot = false, headdot_size = 4, headdot_color = Color3.fromRGB(255, 255, 255), outline = true, outline_color = Color3.fromRGB(0, 0, 0)}, tracer = {enabled = false, origin = _xmksat8515ed1b5mksatf({33, 79, 85, 86, 82, 81}, 63, 928), thickness = 1, color = Color3.fromRGB(255, 255, 255), outline = true, outline_color = Color3.fromRGB(0, 0, 0)}, chams = {enabled = false, mode = _xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928), fill_color = Color3.fromRGB(255, 80, 80), outline_color = Color3.fromRGB(255, 255, 255), fill_transparency = 0.55, outline_transparency = 0, depth_mode = _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 52, 84, 59, 87, 89}, 63, 928)}, health = {enabled = false, text = true, width = 3, color_high = Color3.fromRGB(80, 255, 120), color_mid = Color3.fromRGB(255, 220, 60), color_low = Color3.fromRGB(255, 60, 60), text_color = Color3.fromRGB(255, 255, 255), text_size = 13, outline = true, segments = 12}, flags = {username = false, distance = false, weapon = false, username_color = Color3.fromRGB(255, 255, 255), distance_color = Color3.fromRGB(200, 200, 200), weapon_color = Color3.fromRGB(255, 200, 100), username_size = 13, distance_size = 12, weapon_size = 12, size = 13}}
+local _xmksav6515ed1fbmksaz9 = {enabled = false, mode = _xmksat8515ed1b5mksatf({34, 65, 78, 71, 85, 69}, 63, 928), smoothing = 0.25, fov = 120, show_fov = false, hitpart = _xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), teamcheck = true, wallcheck = false, hold_key = Enum.KeyCode.E, key_mode = _xmksat8515ed1b5mksatf({39, 79, 77, 70}, 63, 928), key_toggled = false}
+local _zmksav7515ed1fcmksazc = {enabled = false, fov = 130, show_fov = false, fov_color = Color3.fromRGB(255, 255, 255), hitpart = _xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), wallcheck = false, teamcheck = true, hitchance = 100}
+local _mmksav8515ed1fdmksazf, _mksav9515ed1femksazi, __mksava515ed1ffmksazl, _xmksavb515ed200mksazo, _zmksavc515ed201mksazr, _mmksavd515ed202mksazu, _mksave515ed203mksazx, __mksavf515ed204mksb00, _xmksavg515ed205mksb03, _zmksavh515ed206mksb06, _mmksavi515ed207mksb09, _mksavj515ed208mksb0c, __mksavk515ed209mksb0f, _xmksavl515ed20amksb0i, _zmksavm515ed20bmksb0l, _mmksavn515ed20cmksb0o, _mksavo515ed20dmksb0r, __mksavp515ed20emksb0u, _xmksavq515ed20fmksb0x, _zmksavr515ed210mksb10, _mmksavs515ed211mksb13, _mksavt515ed212mksb16, __mksavu515ed213mksb19, _xmksavv515ed214mksb1c, _zmksavw515ed215mksb1f, _mmksavx515ed216mksb1i, _mksavy515ed217mksb1l
+local function __mksavz515ed218mksb1o()
+  local _xmksaw0515ed219mksb1r = {}
+  local _zmksaw1515ed21amksb1u = {}
+  local function _mmksaw2515ed21bmksb1x(_mksaw3515ed21cmksb20)
+    local __mksaw4515ed21dmksb23, _xmksaw5515ed21emksb26 = _mksav4515ed1f9mksaz3:WorldToViewportPoint(_mksaw3515ed21cmksb20)
+    return Vector2.new(__mksaw4515ed21dmksb23.X, __mksaw4515ed21dmksb23.Y), _xmksaw5515ed21emksb26, __mksaw4515ed21dmksb23.Z
+  end
+  local function _zmksaw6515ed21fmksb29(_mmksaw7515ed220mksb2c)
+    do
+      local _mksaw8515ed221mksb2f = 1
+      _mksaw8515ed221mksb2f = (_mksaw8515ed221mksb2f + 0)
+      if (((93 + 80) == 173) and (_mmksaw7515ed220mksb2c == _mmksav3515ed1f8mksaz0)) then
+        return false
+      end
+    end
+    do
+      local __mksaw9515ed222mksb2i = 1
+      __mksaw9515ed222mksb2i = (__mksaw9515ed222mksb2i + 0)
+      if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and not __mksav5515ed1famksaz6.teamcheck) then
+        return true
+      end
+    end
+    local _xmksawa515ed223mksb2l, _zmksawb515ed224mksb2o = _mmksav3515ed1f8mksaz0.Team, _mmksaw7515ed220mksb2c.Team
+    do
+      local _mmksawc515ed225mksb2r = 1
+      _mmksawc515ed225mksb2r = (_mmksawc515ed225mksb2r + 0)
+      if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and ((_xmksawa515ed223mksb2l == nil) or (_zmksawb515ed224mksb2o == nil))) then
+        return true
+      end
+    end
+    do
+      local _mksawd515ed226mksb2u = 1
+      _mksawd515ed226mksb2u = (_mksawd515ed226mksb2u + 0)
+      if (((46 + 28) == 74) and (_xmksawa515ed223mksb2l == _zmksawb515ed224mksb2o)) then
+        return false
+      end
+    end
+    local __mksawe515ed227mksb2x, _xmksawf515ed228mksb30 = pcall(function()
+      return (_mmksav3515ed1f8mksaz0.TeamColor == _mmksaw7515ed220mksb2c.TeamColor)
+    end)
+    do
+      local _zmksawg515ed229mksb33 = 1
+      _zmksawg515ed229mksb33 = (_zmksawg515ed229mksb33 + 0)
+      if ((((89 * 10) % 10) == 0) and (__mksawe515ed227mksb2x and _xmksawf515ed228mksb30)) then
+        return false
+      end
+    end
+    return true
+  end
+  local function _mmksawh515ed22amksb36(_mksawi515ed22bmksb39)
+    do
+      local __mksawj515ed22cmksb3c = 1
+      __mksawj515ed22cmksb3c = (__mksawj515ed22cmksb3c + 0)
+      if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and not _mksawi515ed22bmksb39) then
+        return _xmksat8515ed1b5mksatf({45, 79, 79, 71}, 63, 928)
+      end
+    end
+    local _xmksawk515ed22dmksb3f = _mksawi515ed22bmksb39:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({51, 79, 80, 78}, 63, 928))
+    do
+      local _zmksawl515ed22emksb3i = 1
+      _zmksawl515ed22emksb3i = (_zmksawl515ed22emksb3i + 0)
+      if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _xmksawk515ed22dmksb3f) then
+        return _xmksawk515ed22dmksb3f.Name
+      end
+    end
+    do
+      local _xmksawp515ed232mksb3u = 1
+      _xmksawp515ed232mksb3u = (_xmksawp515ed232mksb3u + 0)
+      for _mmksawm515ed22fmksb3l, _mksawn515ed230mksb3o in ipairs(_mksawi515ed22bmksb39:GetChildren()) do
+        do
+          local __mksawo515ed231mksb3r = 1
+          __mksawo515ed231mksb3r = (__mksawo515ed231mksb3r + 0)
+          if ((((2 * 9) % 9) == 0) and _mksawn515ed230mksb3o:IsA(_xmksat8515ed1b5mksatf({51, 79, 80, 78}, 63, 928))) then
+            return _mksawn515ed230mksb3o.Name
+          end
+        end
+      end
+    end
+    return _xmksat8515ed1b5mksatf({45, 79, 79, 71}, 63, 928)
+  end
+  local function _zmksawq515ed233mksb3x(_mmksawr515ed234mksb40)
+    local _mksaws515ed235mksb43 = _mmksawr515ed234mksb40.Character
+    do
+      local __mksawt515ed236mksb46 = 1
+      __mksawt515ed236mksb46 = (__mksawt515ed236mksb46 + 0)
+      if (((59 + 23) == 82) and not _mksaws515ed235mksb43) then
+        return nil
+      end
+    end
+    local _xmksawu515ed237mksb49 = _mksaws515ed235mksb43:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928))
+    local _zmksawv515ed238mksb4c = ((_mksaws515ed235mksb43:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)) or _mksaws515ed235mksb43:FindFirstChild(_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928))) or _mksaws515ed235mksb43:FindFirstChild(_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928)))
+    do
+      local _mmksaww515ed239mksb4f = 1
+      _mmksaww515ed239mksb4f = (_mmksaww515ed239mksb4f + 0)
+      if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and ((not _xmksawu515ed237mksb49 or (_xmksawu515ed237mksb49.Health <= 0)) or not _zmksawv515ed238mksb4c)) then
+        return nil
+      end
+    end
+    return _mksaws515ed235mksb43, _xmksawu515ed237mksb49, _zmksawv515ed238mksb4c
+  end
+  local function _mksawx515ed23amksb4i()
+    local __mksawy515ed23bmksb4l = Drawing.new(_xmksat8515ed1b5mksatf({43, 73, 79, 71}, 63, 928))
+    do
+      local _xmksawz515ed23cmksb4o = 1
+      _xmksawz515ed23cmksb4o = (_xmksawz515ed23cmksb4o + 0)
+      __mksawy515ed23bmksb4l.Visible = false
+    end
+    do
+      local _zmksax0515ed23dmksb4r = 1
+      _zmksax0515ed23dmksb4r = (_zmksax0515ed23dmksb4r + 0)
+      __mksawy515ed23bmksb4l.Thickness = 1
+    end
+    do
+      local _mmksax1515ed23emksb4u = 1
+      _mmksax1515ed23emksb4u = (_mmksax1515ed23emksb4u + 0)
+      __mksawy515ed23bmksb4l.Color = Color3.new(1, 1, 1)
+    end
+    do
+      local _mksax2515ed23fmksb4x = 1
+      _mksax2515ed23fmksb4x = (_mksax2515ed23fmksb4x + 0)
+      __mksawy515ed23bmksb4l.ZIndex = 2
+    end
+    do
+      local __mksax3515ed240mksb50 = 1
+      __mksax3515ed240mksb50 = (__mksax3515ed240mksb50 + 0)
+      __mksawy515ed23bmksb4l.Transparency = 1
+    end
+    return __mksawy515ed23bmksb4l
+  end
+  local function _xmksax4515ed241mksb53()
+    local _zmksax5515ed242mksb56 = Drawing.new(_xmksat8515ed1b5mksatf({50, 81, 86, 67, 85, 73}, 63, 928))
+    do
+      local _mmksax6515ed243mksb59 = 1
+      _mmksax6515ed243mksb59 = (_mmksax6515ed243mksb59 + 0)
+      _zmksax5515ed242mksb56.Visible = false
+    end
+    do
+      local _mksax7515ed244mksb5c = 1
+      _mksax7515ed244mksb5c = (_mksax7515ed244mksb5c + 0)
+      _zmksax5515ed242mksb56.Thickness = 1
+    end
+    do
+      local __mksax8515ed245mksb5f = 1
+      __mksax8515ed245mksb5f = (__mksax8515ed245mksb5f + 0)
+      _zmksax5515ed242mksb56.Filled = false
+    end
+    do
+      local _xmksax9515ed246mksb5i = 1
+      _xmksax9515ed246mksb5i = (_xmksax9515ed246mksb5i + 0)
+      _zmksax5515ed242mksb56.Color = Color3.new(1, 1, 1)
+    end
+    do
+      local _zmksaxa515ed247mksb5l = 1
+      _zmksaxa515ed247mksb5l = (_zmksaxa515ed247mksb5l + 0)
+      _zmksax5515ed242mksb56.ZIndex = 2
+    end
+    do
+      local _mmksaxb515ed248mksb5o = 1
+      _mmksaxb515ed248mksb5o = (_mmksaxb515ed248mksb5o + 0)
+      _zmksax5515ed242mksb56.Transparency = 1
+    end
+    return _zmksax5515ed242mksb56
+  end
+  local function _mksaxc515ed249mksb5r()
+    local __mksaxd515ed24amksb5u = Drawing.new(_xmksat8515ed1b5mksatf({34, 73, 83, 69, 79, 73}, 63, 928))
+    do
+      local _xmksaxe515ed24bmksb5x = 1
+      _xmksaxe515ed24bmksb5x = (_xmksaxe515ed24bmksb5x + 0)
+      __mksaxd515ed24amksb5u.Visible = false
+    end
+    do
+      local _zmksaxf515ed24cmksb60 = 1
+      _zmksaxf515ed24cmksb60 = (_zmksaxf515ed24cmksb60 + 0)
+      __mksaxd515ed24amksb5u.Thickness = 1
+    end
+    do
+      local _mmksaxg515ed24dmksb63 = 1
+      _mmksaxg515ed24dmksb63 = (_mmksaxg515ed24dmksb63 + 0)
+      __mksaxd515ed24amksb5u.Filled = true
+    end
+    do
+      local _mksaxh515ed24emksb66 = 1
+      _mksaxh515ed24emksb66 = (_mksaxh515ed24emksb66 + 0)
+      __mksaxd515ed24amksb5u.NumSides = 16
+    end
+    do
+      local __mksaxi515ed24fmksb69 = 1
+      __mksaxi515ed24fmksb69 = (__mksaxi515ed24fmksb69 + 0)
+      __mksaxd515ed24amksb5u.Radius = 3
+    end
+    do
+      local _xmksaxj515ed250mksb6c = 1
+      _xmksaxj515ed250mksb6c = (_xmksaxj515ed250mksb6c + 0)
+      __mksaxd515ed24amksb5u.Color = Color3.new(1, 1, 1)
+    end
+    do
+      local _zmksaxk515ed251mksb6f = 1
+      _zmksaxk515ed251mksb6f = (_zmksaxk515ed251mksb6f + 0)
+      __mksaxd515ed24amksb5u.ZIndex = 3
+    end
+    do
+      local _mmksaxl515ed252mksb6i = 1
+      _mmksaxl515ed252mksb6i = (_mmksaxl515ed252mksb6i + 0)
+      __mksaxd515ed24amksb5u.Transparency = 1
+    end
+    return __mksaxd515ed24amksb5u
+  end
+  local function _mksaxm515ed253mksb6l()
+    local __mksaxn515ed254mksb6o = Drawing.new(_xmksat8515ed1b5mksatf({51, 69, 89, 86}, 63, 928))
+    do
+      local _xmksaxo515ed255mksb6r = 1
+      _xmksaxo515ed255mksb6r = (_xmksaxo515ed255mksb6r + 0)
+      __mksaxn515ed254mksb6o.Visible = false
+    end
+    do
+      local _zmksaxp515ed256mksb6u = 1
+      _zmksaxp515ed256mksb6u = (_zmksaxp515ed256mksb6u + 0)
+      __mksaxn515ed254mksb6o.Center = true
+    end
+    do
+      local _mmksaxq515ed257mksb6x = 1
+      _mmksaxq515ed257mksb6x = (_mmksaxq515ed257mksb6x + 0)
+      __mksaxn515ed254mksb6o.Outline = true
+    end
+    do
+      local _mksaxr515ed258mksb70 = 1
+      _mksaxr515ed258mksb70 = (_mksaxr515ed258mksb70 + 0)
+      __mksaxn515ed254mksb6o.OutlineColor = Color3.new(0, 0, 0)
+    end
+    do
+      local __mksaxs515ed259mksb73 = 1
+      __mksaxs515ed259mksb73 = (__mksaxs515ed259mksb73 + 0)
+      __mksaxn515ed254mksb6o.Size = 13
+    end
+    do
+      local _xmksaxt515ed25amksb76 = 1
+      _xmksaxt515ed25amksb76 = (_xmksaxt515ed25amksb76 + 0)
+      __mksaxn515ed254mksb6o.Color = Color3.new(1, 1, 1)
+    end
+    do
+      local _zmksaxu515ed25bmksb79 = 1
+      _zmksaxu515ed25bmksb79 = (_zmksaxu515ed25bmksb79 + 0)
+      __mksaxn515ed254mksb6o.Font = 2
+    end
+    do
+      local _mmksaxv515ed25cmksb7c = 1
+      _mmksaxv515ed25cmksb7c = (_mmksaxv515ed25cmksb7c + 0)
+      __mksaxn515ed254mksb6o.ZIndex = 4
+    end
+    do
+      local _mksaxw515ed25dmksb7f = 1
+      _mksaxw515ed25dmksb7f = (_mksaxw515ed25dmksb7f + 0)
+      __mksaxn515ed254mksb6o.Transparency = 1
+    end
+    do
+      local __mksaxx515ed25emksb7i = 1
+      __mksaxx515ed25emksb7i = (__mksaxx515ed25emksb7i + 0)
+      __mksaxn515ed254mksb6o.Text = ""
+    end
+    return __mksaxn515ed254mksb6o
+  end
+  local function _xmksaxy515ed25fmksb7l(_zmksaxz515ed260mksb7o)
+    do
+      local _mmksay0515ed261mksb7r = 1
+      _mmksay0515ed261mksb7r = (_mmksay0515ed261mksb7r + 0)
+      if (((28 + 53) == 81) and not _zmksaxz515ed260mksb7o) then
+        return
+      end
+    end
+    do
+      local __mksay7515ed268mksb8c = 1
+      __mksay7515ed268mksb8c = (__mksay7515ed268mksb8c + 0)
+      for _mksay1515ed262mksb7u, __mksay2515ed263mksb7x in pairs(_zmksaxz515ed260mksb7o) do
+        do
+          local _mksay6515ed267mksb89 = 1
+          _mksay6515ed267mksb89 = (_mksay6515ed267mksb89 + 0)
+          if (((45 * 43) == (43 * 45)) and (type(__mksay2515ed263mksb7x) == _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928))) then
+            do
+              local _xmksay3515ed264mksb80 = 1
+              _xmksay3515ed264mksb80 = (_xmksay3515ed264mksb80 + 0)
+              _xmksaxy515ed25fmksb7l(__mksay2515ed263mksb7x)
+            end
+          elseif ((((29 * 11) % 11) == 0) and (typeof(__mksay2515ed263mksb7x) == _xmksat8515ed1b5mksatf({40, 78, 84, 86, 68, 82, 72, 75}, 63, 928))) then
 
-local function _0_lO00(_l106,_O00O7,_lO111,__1I08,_I10_Iy,_O_I1Ie,_IlI_f)
-__1I08=__1I08 or {}
-_O_I1Ie=_O_I1Ie or {}
-_IlI_f=_IlI_f or {}
-local _lIlIIg=_IlI_f.n or #_IlI_f
-local function _0l_OIz(_idx) return _l106[_idx] end
-for _i,_v in ipairs(_l106) do if type(_v)=="table" then local _s=""
-if type(_v[1])=="table" then local _p=0
-for _fi=1,#_v do for _j=1,#_v[_fi] do _s=_s..string.char(bit32.bxor(_v[_fi][_j],bit32.band(123+_p*230+(_i-1),0xFF)))
-_p=_p+1 end end else for _j=1,#_v do _s=_s..string.char(bit32.bxor(_v[_j],bit32.band(123+(_j-1)*230+(_i-1),0xFF))) end end
-_l106[_i]=_s end end
-local function _lO0_l1z(ps) for _,p in ipairs(ps) do if p.K then for _i,_v in ipairs(p.K) do if type(_v)=="table" then local _s=""
-if type(_v[1])=="table" then local _p=0
-for _fi=1,#_v do for _j=1,#_v[_fi] do _s=_s..string.char(bit32.bxor(_v[_fi][_j],bit32.band(123+_p*230+(_i-1),0xFF)))
-_p=_p+1 end end else for _j=1,#_v do _s=_s..string.char(bit32.bxor(_v[_j],bit32.band(123+(_j-1)*230+(_i-1),0xFF))) end end
-p.K[_i]=_s end end end
-if p.P then _lO0_l1z(p.P) end end end
-_lO0_l1z(__1I08)
-if not _O00O7[0] then for _i=1,#_O00O7 do if _O00O7[_i]>=0 then _O00O7[_i]=bit32.bxor(_O00O7[_i],77) end end
-_O00O7[0]=true end
-local function __0___20(ps) for _,p in ipairs(ps) do if p.C and not p.C[0] then for _i=1,#p.C do if p.C[_i]>=0 then p.C[_i]=bit32.bxor(p.C[_i],77) end end
-p.C[0]=true end
-if p.P then __0___20(p.P) end end end
-__0___20(__1I08)
-local _1Oll9={}
-local _OO0_b={}
-local _O_0lOh={}
-local _Il_1a=0
-local _IOIIIc={}
-local _l11d=1
-local _lII0li=0
-local _O1I0k=false
-local _10ll0l=false
-local _00I1m=0
-local _Ol1In=0
-local _111o=0
-local _lI0Ip=nil
-local _1l010=0
-if _I10_Iy then for _k=0,(_I10_Iy.n or 0)-1 do _OO0_b[_k]=_I10_Iy[_k] end end
-local function __Ilt(v) _Il_1a=_Il_1a+1
-_1Oll9[_Il_1a]=v end
-local function _I_Ou() local v=_1Oll9[_Il_1a]
-_1Oll9[_Il_1a]=nil
-_Il_1a=_Il_1a-1
-return v end
-local function _01lv() return _1Oll9[_Il_1a] end
-local function _O00I_q(slot) local box=_IOIIIc[slot]
-if box then return box[1] end
-return _OO0_b[slot] end
-local function _1Ol0_r(slot,val) local box=_IOIIIc[slot]
-if box then box[1]=val else _OO0_b[slot]=val end end
-local function _OI__ls(slot) if not _IOIIIc[slot] then _IOIIIc[slot]={_OO0_b[slot]} end
-return _IOIIIc[slot] end
-local function _1_I0w(obj,name) local ok,mt=pcall(getmetatable,obj)
-if ok and mt and type(mt)=="table" then return rawget(mt,name) end
-return nil end
-local function _0IIO0x(a,b,op,name) if type(a)=="number" and type(b)=="number" then return op(a,b) end
-local ok,r=pcall(op,a,b)
-if ok then return r end
-local mm=_1_I0w(a,name) or _1_I0w(b,name)
-if mm then return mm(a,b) end
-return op(a,b) end
-local __111j={}
-__111j[45]=function() end
-__111j[1]=function() __Ilt(nil) end
-__111j[50]=function() __Ilt(true) end
-__111j[32]=function() __Ilt(false) end
-__111j[55]=function() __Ilt(_0l_OIz(_O00O7[_l11d]+1))
-_l11d=_l11d+1 end
-__111j[18]=function() __Ilt(_O00I_q(_O00O7[_l11d]))
-_l11d=_l11d+1 end
-__111j[47]=function() _1Ol0_r(_O00O7[_l11d],_I_Ou())
-_l11d=_l11d+1 end
-__111j[62]=function() __Ilt(_lO111[_0l_OIz(_O00O7[_l11d]+1)])
-_l11d=_l11d+1 end
-__111j[6]=function() _lO111[_0l_OIz(_O00O7[_l11d]+1)]=_I_Ou()
-_l11d=_l11d+1 end
-__111j[51]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x+y end,"__add")) end
-__111j[60]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x-y end,"__sub")) end
-__111j[39]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x*y end,"__mul")) end
-__111j[54]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x/y end,"__div")) end
-__111j[25]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x%y end,"__mod")) end
-__111j[5]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return x^y end,"__pow")) end
-__111j[52]=function() local b,a=_I_Ou(),_I_Ou()
-local ok,r=pcall(function() return a..b end)
-if ok then __Ilt(r) else __Ilt(tostring(a)..tostring(b)) end end
-__111j[21]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a==b) end
-__111j[41]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a~=b) end
-__111j[3]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a<b) end
-__111j[8]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a<=b) end
-__111j[10]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a>b) end
-__111j[35]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a>=b) end
-__111j[49]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a and b) end
-__111j[28]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(a or b) end
-__111j[17]=function() __Ilt(not _I_Ou()) end
-__111j[29]=function() __Ilt(-_I_Ou()) end
-__111j[30]=function() __Ilt(#_I_Ou()) end
-__111j[11]=function() __Ilt({}) end
-__111j[59]=function() local k,t=_I_Ou(),_I_Ou()
-__Ilt(t[k]) end
-__111j[57]=function() local v,k,t=_I_Ou(),_I_Ou(),_I_Ou()
-t[k]=v end
-__111j[23]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-local args={}
-for i=1,n do args[n-i+1]=_I_Ou() end
-local f=_I_Ou()
-if type(f)~="function" then local mm=_1_I0w(f,"__call")
-if mm then table.insert(args,1,f)
-n=n+1
-f=mm else error("attempt to call a "..type(f).." value") end end
-local r
-if n==0 then r={f()} else r={f(table.unpack(args,1,n))} end
-__Ilt(r[1]) end
-__111j[58]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-_O1I0k=true
-if n==0 then _111o=0 elseif n>0 then if n>_Il_1a then n=_Il_1a end
-_111o=n
-_10ll0l=true
-_Ol1In=_Il_1a
-_00I1m=_Il_1a-n else _111o=_Il_1a
-_10ll0l=true
-_Ol1In=_Il_1a
-_00I1m=0 end end
-__111j[53]=function() _l11d=_O00O7[_l11d]+1 end
-__111j[40]=function() local target=_O00O7[_l11d]
-_l11d=_l11d+1
-if not _I_Ou() then _l11d=target+1 end end
-__111j[26]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-for _=1,n do _I_Ou() end end
-__111j[34]=function() local pi=_O00O7[_l11d]
-_l11d=_l11d+1
-local P=__1I08[pi]
-if P then
-local _r,Kp,Cp=_0_lO00,P.K or _l106,P.C or {}
-local nU={}
-if P.U then for ui,ud in ipairs(P.U) do local iL,idx=ud[1],ud[2]
-if iL==1 then nU[ui]=_OI__ls(idx) else nU[ui]=_O_I1Ie[idx+1] end end end
-local nP=P.nParams or 0
-__Ilt(function(...)
-local a={...}
-local ac=select("#",...)
-local L={}
-L.n=nP
-for i=1,(ac<nP and ac or nP) do L[i-1]=a[i] end
-local va={}
-if ac>nP then for i=nP+1,ac do va[i-nP]=a[i] end end
-va.n=ac-nP
-return _r(Kp,Cp,_lO111,P.P or {},L,nU,va)
-end)
-else __Ilt(nil) end end
-__111j[24]=function() __Ilt(_01lv()) end
-__111j[61]=function() local ui=_O00O7[_l11d]
-_l11d=_l11d+1
-local box=_O_I1Ie[ui+1]
-__Ilt(box and box[1] or nil) end
-__111j[64]=function() local ui=_O00O7[_l11d]
-_l11d=_l11d+1
-local box=_O_I1Ie[ui+1]
-if box then box[1]=_I_Ou() else _I_Ou() end end
-__111j[65]=function() local na=_O00O7[_l11d]
-_l11d=_l11d+1
-local nr=_O00O7[_l11d]
-_l11d=_l11d+1
-local args={}
-for i=1,na do args[na-i+1]=_I_Ou() end
-local f=_I_Ou()
-if type(f)~="function" then local mm=_1_I0w(f,"__call")
-if mm then table.insert(args,1,f)
-na=na+1
-f=mm else error("attempt to call a "..type(f).." value") end end
-local r
-if na==0 then r=table.pack(f()) else r=table.pack(f(table.unpack(args,1,na))) end
-local rn=nr<0 and r.n or nr
-for i=1,rn do __Ilt(r[i]) end end
-__111j[36]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-if n<0 then for i=1,_lIlIIg do __Ilt(_IlI_f[i]) end else for i=1,n do __Ilt(_IlI_f[i]) end end end
-__111j[33]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-local args={}
-for j=n,1,-1 do args[j]=_I_Ou() end
-local f=_I_Ou()
-if type(f)~="function" then local mm=_1_I0w(f,"__call")
-if mm then table.insert(args,1,f)
-n=n+1
-f=mm end end
-_O1I0k=true
-_lI0Ip=table.pack(f(table.unpack(args,1,n))) end
-__111j[9]=function() local off=_O00O7[_l11d]
-_l11d=_l11d+1
-local step=_I_Ou()
-local limit=_I_Ou()
-local init=_I_Ou()
-__Ilt(init)
-__Ilt(limit)
-__Ilt(step)
-if step>=0 then if init>limit then _l11d=off+1 end else if init<limit then _l11d=off+1 end end end
-__111j[15]=function() local off=_O00O7[_l11d]
-_l11d=_l11d+1
-local step=_1Oll9[_Il_1a]
-local i=_1Oll9[_Il_1a-2]+step
-_1Oll9[_Il_1a-2]=i
-local limit=_1Oll9[_Il_1a-1]
-if step>=0 then if i<=limit then _l11d=off+1 end else if i>=limit then _l11d=off+1 end end end
-__111j[48]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-local parts={}
-for i=1,n do parts[n-i+1]=tostring(_I_Ou()) end
-__Ilt(table.concat(parts)) end
-__111j[46]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-for _=1,n do __Ilt(nil) end end
-__111j[13]=function() _lII0li=_lII0li+1
-_O_0lOh[_lII0li]=_Il_1a end
-__111j[14]=function() local nr=_O00O7[_l11d]
-_l11d=_l11d+1
-local base=_O_0lOh[_lII0li]
-_lII0li=_lII0li-1
-local f=_1Oll9[base+1]
-local na=_Il_1a-base-1
-local args={}
-for i=1,na do args[i]=_1Oll9[base+1+i] end
-_Il_1a=base
-if type(f)~="function" then local mm=_1_I0w(f,"__call")
-if mm then table.insert(args,1,f)
-na=na+1
-f=mm else error("attempt to call a "..type(f).." value") end end
-local r
-if na==0 then r=table.pack(f()) else r=table.pack(f(table.unpack(args,1,na))) end
-local rn=nr<0 and r.n or nr
-for i=1,rn do __Ilt(r[i]) end end
-__111j[0]=function() local b,a=_I_Ou(),_I_Ou()
-__Ilt(_0IIO0x(a,b,function(x,y) return math.floor(x/y) end,"__idiv")) end
-__111j[4]=function() local slot=_O00O7[_l11d]
-_l11d=_l11d+1
-local box=_IOIIIc[slot]
-if box then _OO0_b[slot]=box[1]
-_IOIIIc[slot]=nil end end
-__111j[43]=function() local startIdx=_O00O7[_l11d]
-_l11d=_l11d+1
-local base=_O_0lOh[_lII0li]
-_lII0li=_lII0li-1
-local tbl=_1Oll9[base]
-local idx=startIdx
-for i=base+1,_Il_1a do tbl[idx]=_1Oll9[i]
-idx=idx+1 end
-_Il_1a=base
-_1Oll9[_Il_1a]=tbl end
-__111j[22]=function() local a=_1Oll9[_Il_1a]
-_1Oll9[_Il_1a]=_1Oll9[_Il_1a-1]
-_1Oll9[_Il_1a-1]=a end
-__111j[42]=function() local nameIdx=_O00O7[_l11d]
-_l11d=_l11d+1
-local methodName=_0l_OIz(nameIdx+1)
-local obj=_I_Ou()
-local method=obj[methodName]
-__Ilt(obj)
-__Ilt(method)
-local b,a=_I_Ou(),_I_Ou()
-__Ilt(b)
-__Ilt(a) end
-__111j[63]=function() local nVars=_O00O7[_l11d]
-_l11d=_l11d+1
-local target=_O00O7[_l11d]
-_l11d=_l11d+1
-local iter=_1Oll9[_Il_1a-2]
-local state=_1Oll9[_Il_1a-1]
-local ctl=_1Oll9[_Il_1a]
-local r={iter(state,ctl)}
-for i=1,nVars do __Ilt(r[i]) end
-if r[1]~=nil then _1Oll9[_Il_1a-nVars]= r[1] else _l11d=target+1 end end
-__111j[27]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-local args={}
-for i=1,n do args[n-i+1]=_I_Ou() end
-local f=_I_Ou()
-local results
-if n==0 then results=table.pack(pcall(f)) else results=table.pack(pcall(f,table.unpack(args,1,n))) end
-local ok=results[1]
-__Ilt(ok)
-if ok then for i=2,results.n do __Ilt(results[i]) end else __Ilt(results[2]) end end
-__111j[31]=function() local n=_O00O7[_l11d]
-_l11d=_l11d+1
-local args={}
-for i=1,n do args[n-i+1]=_I_Ou() end
-local handler=_I_Ou()
-local f=_I_Ou()
-local results
-if n==0 then results=table.pack(xpcall(f,handler)) else results=table.pack(xpcall(f,handler,table.unpack(args,1,n))) end
-local ok=results[1]
-__Ilt(ok)
-for i=2,results.n do __Ilt(results[i]) end end
-__111j[16]=function() local iS=_O00O7[_l11d]
-_l11d=_l11d+1
-local sS=_O00O7[_l11d]
-_l11d=_l11d+1
-local vS=_O00O7[_l11d]
-_l11d=_l11d+1
-local it=_O00I_q(iS)
-if type(it)=="table" then local ok2,mt=pcall(getmetatable,it)
-if ok2 and type(mt)=="table" and mt.__iter then local fn=mt.__iter(it)
-_1Ol0_r(iS,fn) elseif ok2 and type(mt)=="table" and mt.__call then else _1Ol0_r(iS,next)
-_1Ol0_r(sS,it)
-_1Ol0_r(vS,nil) end end end
-__111j[12]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local b=_O00O7[_l11d]
-_l11d=_l11d+1
-local c=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(c,_O00I_q(a)+_O00I_q(b)) end
-__111j[2]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local b=_O00O7[_l11d]
-_l11d=_l11d+1
-local c=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(c,_O00I_q(a)-_O00I_q(b)) end
-__111j[19]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local b=_O00O7[_l11d]
-_l11d=_l11d+1
-local c=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(c,_O00I_q(a)*_O00I_q(b)) end
-__111j[67]=function() local k=_O00O7[_l11d]
-_l11d=_l11d+1
-local s=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(s,_0l_OIz(k+1)) end
-__111j[37]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local b=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(b,_O00I_q(a)) end
-__111j[7]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local k=_O00O7[_l11d]
-_l11d=_l11d+1
-local c=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(c,_O00I_q(a)+_0l_OIz(k+1)) end
-__111j[66]=function() local a=_O00O7[_l11d]
-_l11d=_l11d+1
-local b=_O00O7[_l11d]
-_l11d=_l11d+1
-local c=_O00O7[_l11d]
-_l11d=_l11d+1
-_1Ol0_r(c,_O00I_q(a).._O00I_q(b)) end
-__111j[38]=function() local _=_Il_1a end
-__111j[56]=function() local _a=_O00O7[_l11d]
-_l11d=_l11d+1
-local _=_1Oll9[_a] or 0 end
-__111j[44]=function() local _a=_O00O7[_l11d]
-_l11d=_l11d+1
-local _b=_O00O7[_l11d]
-_l11d=_l11d+1
-local _=bit32.bxor(_a,_b) end
-__111j[20]=function() local _a=_O00O7[_l11d]
-_l11d=_l11d+1
-if _1l010==0 then __Ilt(_O00I_q(_a)) else __Ilt(_0l_OIz(_a+1)) end end
-while true do
-if _O1I0k or _l11d>#_O00O7 then break end
-local op=_O00O7[_l11d]
-_l11d=_l11d+1
-local h=__111j[op]
-if h then h() end
+          else
+            do
+              local _mmksay5515ed266mksb86 = 1
+              _mmksay5515ed266mksb86 = (_mmksay5515ed266mksb86 + 0)
+              pcall(function()
+                do
+                  local _zmksay4515ed265mksb83 = 1
+                  _zmksay4515ed265mksb83 = (_zmksay4515ed265mksb83 + 0)
+                  __mksay2515ed263mksb7x.Visible = false
+                end
+              end)
+            end
+          end
+        end
+      end
+    end
+  end
+  local function _xmksay8515ed269mksb8f(_zmksay9515ed26amksb8i)
+    do
+      local _mmksaya515ed26bmksb8l = 1
+      _mmksaya515ed26bmksb8l = (_mmksaya515ed26bmksb8l + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and not _zmksay9515ed26amksb8i) then
+        return
+      end
+    end
+    do
+      local _xmksayi515ed273mksb99 = 1
+      _xmksayi515ed273mksb99 = (_xmksayi515ed273mksb99 + 0)
+      for _mksayb515ed26cmksb8o, __mksayc515ed26dmksb8r in pairs(_zmksay9515ed26amksb8i) do
+        do
+          local _mksayg515ed271mksb93 = 1
+          _mksayg515ed271mksb93 = (_mksayg515ed271mksb93 + 0)
+          if (((18 * 49) == (49 * 18)) and (type(__mksayc515ed26dmksb8r) == _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928))) then
+            do
+              local _xmksayd515ed26emksb8u = 1
+              _xmksayd515ed26emksb8u = (_xmksayd515ed26emksb8u + 0)
+              _xmksay8515ed269mksb8f(__mksayc515ed26dmksb8r)
+            end
+          else
+            do
+              local _mmksayf515ed270mksb90 = 1
+              _mmksayf515ed270mksb90 = (_mmksayf515ed270mksb90 + 0)
+              pcall(function()
+                do
+                  local _zmksaye515ed26fmksb8x = 1
+                  _zmksaye515ed26fmksb8x = (_zmksaye515ed26fmksb8x + 0)
+                  __mksayc515ed26dmksb8r:Remove()
+                end
+              end)
+            end
+          end
+        end
+        do
+          local __mksayh515ed272mksb96 = 1
+          __mksayh515ed272mksb96 = (__mksayh515ed272mksb96 + 0)
+          _zmksay9515ed26amksb8i[_mksayb515ed26cmksb8o] = nil
+        end
+      end
+    end
+  end
+  local function _zmksayj515ed274mksb9c(_mmksayk515ed275mksb9f)
+    do
+      local _mksayl515ed276mksb9i = 1
+      _mksayl515ed276mksb9i = (_mksayl515ed276mksb9i + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and _xmksaw0515ed219mksb1r[_mmksayk515ed275mksb9f]) then
+        return _xmksaw0515ed219mksb1r[_mmksayk515ed275mksb9f]
+      end
+    end
+    local __mksaym515ed277mksb9l = {box = {fill = _xmksax4515ed241mksb53(), edge = {}, edgeO = {}, c = {}, co = {}}, sk = {lines = {}, dot = _mksaxc515ed249mksb5r()}, tr = {line = _mksawx515ed23amksb4i(), outline = _mksawx515ed23amksb4i()}}
+    local _xmksayn515ed278mksb9o = 20
+    do
+      local _zmksayt515ed27emksba6 = 1
+      _zmksayt515ed27emksba6 = (_zmksayt515ed27emksba6 + 0)
+      for _zmksayo515ed279mksb9r = 1, _xmksayn515ed278mksb9o do
+        do
+          local _mmksayp515ed27amksb9u = 1
+          _mmksayp515ed27amksb9u = (_mmksayp515ed27amksb9u + 0)
+          __mksaym515ed277mksb9l.box.edge[_zmksayo515ed279mksb9r] = _mksawx515ed23amksb4i()
+        end
+        do
+          local _mksayq515ed27bmksb9x = 1
+          _mksayq515ed27bmksb9x = (_mksayq515ed27bmksb9x + 0)
+          __mksaym515ed277mksb9l.box.edge[_zmksayo515ed279mksb9r].ZIndex = 3
+        end
+        do
+          local __mksayr515ed27cmksba0 = 1
+          __mksayr515ed27cmksba0 = (__mksayr515ed27cmksba0 + 0)
+          __mksaym515ed277mksb9l.box.edgeO[_zmksayo515ed279mksb9r] = _mksawx515ed23amksb4i()
+        end
+        do
+          local _xmksays515ed27dmksba3 = 1
+          _xmksays515ed27dmksba3 = (_xmksays515ed27dmksba3 + 0)
+          __mksaym515ed277mksb9l.box.edgeO[_zmksayo515ed279mksb9r].ZIndex = 2
+        end
+      end
+    end
+    do
+      local _mmksayu515ed27fmksba9 = 1
+      _mmksayu515ed27fmksba9 = (_mmksayu515ed27fmksba9 + 0)
+      __mksaym515ed277mksb9l.box.edgeN = _xmksayn515ed278mksb9o
+    end
+    do
+      local _mksaz0515ed285mksbar = 1
+      _mksaz0515ed285mksbar = (_mksaz0515ed285mksbar + 0)
+      for _mksayv515ed280mksbac = 1, 8 do
+        do
+          local __mksayw515ed281mksbaf = 1
+          __mksayw515ed281mksbaf = (__mksayw515ed281mksbaf + 0)
+          __mksaym515ed277mksb9l.box.c[_mksayv515ed280mksbac] = _mksawx515ed23amksb4i()
+        end
+        do
+          local _xmksayx515ed282mksbai = 1
+          _xmksayx515ed282mksbai = (_xmksayx515ed282mksbai + 0)
+          __mksaym515ed277mksb9l.box.c[_mksayv515ed280mksbac].ZIndex = 3
+        end
+        do
+          local _zmksayy515ed283mksbal = 1
+          _zmksayy515ed283mksbal = (_zmksayy515ed283mksbal + 0)
+          __mksaym515ed277mksb9l.box.co[_mksayv515ed280mksbac] = _mksawx515ed23amksb4i()
+        end
+        do
+          local _mmksayz515ed284mksbao = 1
+          _mmksayz515ed284mksbao = (_mmksayz515ed284mksbao + 0)
+          __mksaym515ed277mksb9l.box.co[_mksayv515ed280mksbac].ZIndex = 2
+        end
+      end
+    end
+    do
+      local __mksaz1515ed286mksbau = 1
+      __mksaz1515ed286mksbau = (__mksaz1515ed286mksbau + 0)
+      __mksaym515ed277mksb9l.box.fill.ZIndex = 1
+    end
+    do
+      local _xmksaz2515ed287mksbax = 1
+      _xmksaz2515ed287mksbax = (_xmksaz2515ed287mksbax + 0)
+      __mksaym515ed277mksb9l.tr.outline.ZIndex = 2
+    end
+    do
+      local _zmksaz3515ed288mksbb0 = 1
+      _zmksaz3515ed288mksbb0 = (_zmksaz3515ed288mksbb0 + 0)
+      __mksaym515ed277mksb9l.tr.line.ZIndex = 3
+    end
+    do
+      local _xmksaz7515ed28cmksbbc = 1
+      _xmksaz7515ed28cmksbbc = (_xmksaz7515ed28cmksbbc + 0)
+      for _mmksaz4515ed289mksbb3 = 1, 24 do
+        do
+          local _mksaz5515ed28amksbb6 = 1
+          _mksaz5515ed28amksbb6 = (_mksaz5515ed28amksbb6 + 0)
+          __mksaym515ed277mksb9l.sk.lines[_mmksaz4515ed289mksbb3] = _mksawx515ed23amksb4i()
+        end
+        do
+          local __mksaz6515ed28bmksbb9 = 1
+          __mksaz6515ed28bmksbb9 = (__mksaz6515ed28bmksbb9 + 0)
+          __mksaym515ed277mksb9l.sk.lines[_mmksaz4515ed289mksbb3].ZIndex = 3
+        end
+      end
+    end
+    do
+      local _zmksaz8515ed28dmksbbf = 1
+      _zmksaz8515ed28dmksbbf = (_zmksaz8515ed28dmksbbf + 0)
+      __mksaym515ed277mksb9l.sk.dot.ZIndex = 4
+    end
+    do
+      local _mmksaz9515ed28emksbbi = 1
+      _mmksaz9515ed28emksbbi = (_mmksaz9515ed28emksbbi + 0)
+      __mksaym515ed277mksb9l.hp = {bg = _xmksax4515ed241mksb53(), outline = _xmksax4515ed241mksb53(), text = _mksaxm515ed253mksb6l(), segs = {}}
+    end
+    do
+      local _mksaza515ed28fmksbbl = 1
+      _mksaza515ed28fmksbbl = (_mksaza515ed28fmksbbl + 0)
+      __mksaym515ed277mksb9l.hp.bg.Filled = true
+    end
+    do
+      local __mksazb515ed290mksbbo = 1
+      __mksazb515ed290mksbbo = (__mksazb515ed290mksbbo + 0)
+      __mksaym515ed277mksb9l.hp.bg.ZIndex = 2
+    end
+    do
+      local _xmksazc515ed291mksbbr = 1
+      _xmksazc515ed291mksbbr = (_xmksazc515ed291mksbbr + 0)
+      __mksaym515ed277mksb9l.hp.outline.Filled = false
+    end
+    do
+      local _zmksazd515ed292mksbbu = 1
+      _zmksazd515ed292mksbbu = (_zmksazd515ed292mksbbu + 0)
+      __mksaym515ed277mksb9l.hp.outline.ZIndex = 4
+    end
+    do
+      local _mmksaze515ed293mksbbx = 1
+      _mmksaze515ed293mksbbx = (_mmksaze515ed293mksbbx + 0)
+      __mksaym515ed277mksb9l.hp.text.Size = ((__mksav5515ed1famksaz6.health.text_size or 13))
+    end
+    do
+      local _mksazf515ed294mksbc0 = 1
+      _mksazf515ed294mksbc0 = (_mksazf515ed294mksbc0 + 0)
+      __mksaym515ed277mksb9l.hp.text.Center = false
+    end
+    do
+      local __mksazg515ed295mksbc3 = 1
+      __mksazg515ed295mksbc3 = (__mksazg515ed295mksbc3 + 0)
+      __mksaym515ed277mksb9l.hp.text.ZIndex = 5
+    end
+    do
+      local _xmksazm515ed29bmksbcl = 1
+      _xmksazm515ed29bmksbcl = (_xmksazm515ed29bmksbcl + 0)
+      for _xmksazh515ed296mksbc6 = 1, 16 do
+        local _zmksazi515ed297mksbc9 = _xmksax4515ed241mksb53()
+        do
+          local _mmksazj515ed298mksbcc = 1
+          _mmksazj515ed298mksbcc = (_mmksazj515ed298mksbcc + 0)
+          _zmksazi515ed297mksbc9.Filled = true
+        end
+        do
+          local _mksazk515ed299mksbcf = 1
+          _mksazk515ed299mksbcf = (_mksazk515ed299mksbcf + 0)
+          _zmksazi515ed297mksbc9.ZIndex = 3
+        end
+        do
+          local __mksazl515ed29amksbci = 1
+          __mksazl515ed29amksbci = (__mksazl515ed29amksbci + 0)
+          __mksaym515ed277mksb9l.hp.segs[_xmksazh515ed296mksbc6] = _zmksazi515ed297mksbc9
+        end
+      end
+    end
+    do
+      local _zmksazn515ed29cmksbco = 1
+      _zmksazn515ed29cmksbco = (_zmksazn515ed29cmksbco + 0)
+      __mksaym515ed277mksb9l.flags = {name = _mksaxm515ed253mksb6l(), dist = _mksaxm515ed253mksb6l(), weapon = _mksaxm515ed253mksb6l()}
+    end
+    do
+      local _mmksazo515ed29dmksbcr = 1
+      _mmksazo515ed29dmksbcr = (_mmksazo515ed29dmksbcr + 0)
+      __mksaym515ed277mksb9l.flags.name.Size = 13
+    end
+    do
+      local _mksazp515ed29emksbcu = 1
+      _mksazp515ed29emksbcu = (_mksazp515ed29emksbcu + 0)
+      __mksaym515ed277mksb9l.flags.dist.Size = 12
+    end
+    do
+      local __mksazq515ed29fmksbcx = 1
+      __mksazq515ed29fmksbcx = (__mksazq515ed29fmksbcx + 0)
+      __mksaym515ed277mksb9l.flags.weapon.Size = 12
+    end
+    do
+      local _xmksazr515ed2a0mksbd0 = 1
+      _xmksazr515ed2a0mksbd0 = (_xmksazr515ed2a0mksbd0 + 0)
+      _xmksaw0515ed219mksb1r[_mmksayk515ed275mksb9f] = __mksaym515ed277mksb9l
+    end
+    return __mksaym515ed277mksb9l
+  end
+  local function _zmksazs515ed2a1mksbd3(_mmksazt515ed2a2mksbd6)
+    local _mksazu515ed2a3mksbd9 = _zmksaw1515ed21amksb1u[_mmksazt515ed2a2mksbd6]
+    do
+      local __mksazv515ed2a4mksbdc = 1
+      __mksazv515ed2a4mksbdc = (__mksazv515ed2a4mksbdc + 0)
+      if (((63 * 95) == (95 * 63)) and not _mksazu515ed2a3mksbd9) then
+        return
+      end
+    end
+    do
+      local __mksb00515ed2a9mksbdr = 1
+      __mksb00515ed2a9mksbdr = (__mksb00515ed2a9mksbdr + 0)
+      for _xmksazw515ed2a5mksbdf, _zmksazx515ed2a6mksbdi in ipairs((_mksazu515ed2a3mksbd9.objs or {})) do
+        do
+          local _mksazz515ed2a8mksbdo = 1
+          _mksazz515ed2a8mksbdo = (_mksazz515ed2a8mksbdo + 0)
+          pcall(function()
+            do
+              local _mmksazy515ed2a7mksbdl = 1
+              _mmksazy515ed2a7mksbdl = (_mmksazy515ed2a7mksbdl + 0)
+              _zmksazx515ed2a6mksbdi:Destroy()
+            end
+          end)
+        end
+      end
+    end
+    do
+      local _xmksb01515ed2aamksbdu = 1
+      _xmksb01515ed2aamksbdu = (_xmksb01515ed2aamksbdu + 0)
+      _zmksaw1515ed21amksb1u[_mmksazt515ed2a2mksbd6] = nil
+    end
+  end
+  local function _zmksb02515ed2abmksbdx(_mmksb03515ed2acmksbe0, _mksb04515ed2admksbe3)
+    local __mksb05515ed2aemksbe6 = __mksav5515ed1famksaz6.chams
+    do
+      local _zmksb07515ed2b0mksbec = 1
+      _zmksb07515ed2b0mksbec = (_zmksb07515ed2b0mksbec + 0)
+      if (((6 + 87) == 93) and (not __mksb05515ed2aemksbe6.enabled or not __mksav5515ed1famksaz6.master)) then
+        do
+          local _xmksb06515ed2afmksbe9 = 1
+          _xmksb06515ed2afmksbe9 = (_xmksb06515ed2afmksbe9 + 0)
+          _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+        end
+        return
+      end
+    end
+    local _mmksb08515ed2b1mksbef = _zmksaw1515ed21amksb1u[_mmksb03515ed2acmksbe0]
+    do
+      local _xmksb0b515ed2b4mksbeo = 1
+      _xmksb0b515ed2b4mksbeo = (_xmksb0b515ed2b4mksbeo + 0)
+      if (((91 * 74) == (74 * 91)) and (_mmksb08515ed2b1mksbef and (_mmksb08515ed2b1mksbef.mode ~= __mksb05515ed2aemksbe6.mode))) then
+        do
+          local _mksb09515ed2b2mksbei = 1
+          _mksb09515ed2b2mksbei = (_mksb09515ed2b2mksbei + 0)
+          _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+        end
+        do
+          local __mksb0a515ed2b3mksbel = 1
+          __mksb0a515ed2b3mksbel = (__mksb0a515ed2b3mksbel + 0)
+          _mmksb08515ed2b1mksbef = nil
+        end
+      end
+    end
+    do
+      local _xmksb0q515ed2c3mksbfx = 1
+      _xmksb0q515ed2c3mksbfx = (_xmksb0q515ed2c3mksbfx + 0)
+      if (((24 + 96) == 120) and (__mksb05515ed2aemksbe6.mode == _xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928))) then
+        local _zmksb0c515ed2b5mksber = (_mmksb08515ed2b1mksbef and _mmksb08515ed2b1mksbef.objs[1])
+        do
+          local __mksb0k515ed2bdmksbff = 1
+          __mksb0k515ed2bdmksbff = (__mksb0k515ed2bdmksbff + 0)
+          if (((95 + 7) == 102) and (not _zmksb0c515ed2b5mksber or not _zmksb0c515ed2b5mksber.Parent)) then
+            do
+              local _mmksb0d515ed2b6mksbeu = 1
+              _mmksb0d515ed2b6mksbeu = (_mmksb0d515ed2b6mksbeu + 0)
+              _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+            end
+            do
+              local _mksb0e515ed2b7mksbex = 1
+              _mksb0e515ed2b7mksbex = (_mksb0e515ed2b7mksbex + 0)
+              _zmksb0c515ed2b5mksber = Instance.new(_xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928))
+            end
+            do
+              local __mksb0f515ed2b8mksbf0 = 1
+              __mksb0f515ed2b8mksbf0 = (__mksb0f515ed2b8mksbf0 + 0)
+              _zmksb0c515ed2b5mksber.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 78, 72, 85, 92}, 63, 928)
+            end
+            do
+              local _xmksb0g515ed2b9mksbf3 = 1
+              _xmksb0g515ed2b9mksbf3 = (_xmksb0g515ed2b9mksbf3 + 0)
+              _zmksb0c515ed2b5mksber.Adornee = _mksb04515ed2admksbe3
+            end
+            do
+              local _zmksb0h515ed2bamksbf6 = 1
+              _zmksb0h515ed2bamksbf6 = (_zmksb0h515ed2bamksbf6 + 0)
+              _zmksb0c515ed2b5mksber.Parent = _mksb04515ed2admksbe3
+            end
+            do
+              local _mmksb0i515ed2bbmksbf9 = 1
+              _mmksb0i515ed2bbmksbf9 = (_mmksb0i515ed2bbmksbf9 + 0)
+              _zmksaw1515ed21amksb1u[_mmksb03515ed2acmksbe0] = {mode = _xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928), objs = {_zmksb0c515ed2b5mksber}}
+            end
+          else
+            do
+              local _mksb0j515ed2bcmksbfc = 1
+              _mksb0j515ed2bcmksbfc = (_mksb0j515ed2bcmksbfc + 0)
+              _zmksb0c515ed2b5mksber.Adornee = _mksb04515ed2admksbe3
+            end
+          end
+        end
+        do
+          local _xmksb0l515ed2bemksbfi = 1
+          _xmksb0l515ed2bemksbfi = (_xmksb0l515ed2bemksbfi + 0)
+          _zmksb0c515ed2b5mksber.FillColor = __mksb05515ed2aemksbe6.fill_color
+        end
+        do
+          local _zmksb0m515ed2bfmksbfl = 1
+          _zmksb0m515ed2bfmksbfl = (_zmksb0m515ed2bfmksbfl + 0)
+          _zmksb0c515ed2b5mksber.OutlineColor = __mksb05515ed2aemksbe6.outline_color
+        end
+        do
+          local _mmksb0n515ed2c0mksbfo = 1
+          _mmksb0n515ed2c0mksbfo = (_mmksb0n515ed2c0mksbfo + 0)
+          _zmksb0c515ed2b5mksber.FillTransparency = __mksb05515ed2aemksbe6.fill_transparency
+        end
+        do
+          local _mksb0o515ed2c1mksbfr = 1
+          _mksb0o515ed2c1mksbfr = (_mksb0o515ed2c1mksbfr + 0)
+          _zmksb0c515ed2b5mksber.OutlineTransparency = __mksb05515ed2aemksbe6.outline_transparency
+        end
+        do
+          local __mksb0p515ed2c2mksbfu = 1
+          __mksb0p515ed2c2mksbfu = (__mksb0p515ed2c2mksbfu + 0)
+          _zmksb0c515ed2b5mksber.DepthMode = ((((__mksb05515ed2aemksbe6.depth_mode == _xmksat8515ed1b5mksatf({46, 67, 68, 78, 88, 72, 74, 74}, 63, 928))) and Enum.HighlightDepthMode.Occluded) or Enum.HighlightDepthMode.AlwaysOnTop)
+        end
+        return
+      end
+    end
+    do
+      local _xmksb15515ed2d2mksbh6 = 1
+      _xmksb15515ed2d2mksbh6 = (_xmksb15515ed2d2mksbh6 + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and (__mksb05515ed2aemksbe6.mode == _xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 78, 85, 85, 42, 88, 98}, 63, 928))) then
+        local _zmksb0r515ed2c4mksbg0 = (_mmksb08515ed2b1mksbef and _mmksb08515ed2b1mksbef.objs[1])
+        do
+          local _xmksb10515ed2cdmksbgr = 1
+          _xmksb10515ed2cdmksbgr = (_xmksb10515ed2cdmksbgr + 0)
+          if (((95 + 93) == 188) and (not _zmksb0r515ed2c4mksbg0 or not _zmksb0r515ed2c4mksbg0.Parent)) then
+            do
+              local _mmksb0s515ed2c5mksbg3 = 1
+              _mmksb0s515ed2c5mksbg3 = (_mmksb0s515ed2c5mksbg3 + 0)
+              _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+            end
+            do
+              local _mksb0t515ed2c6mksbg6 = 1
+              _mksb0t515ed2c6mksbg6 = (_mksb0t515ed2c6mksbg6 + 0)
+              _zmksb0r515ed2c4mksbg0 = Instance.new(_xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 78, 85, 85, 42, 88, 98}, 63, 928))
+            end
+            do
+              local __mksb0u515ed2c7mksbg9 = 1
+              __mksb0u515ed2c7mksbg9 = (__mksb0u515ed2c7mksbg9 + 0)
+              _zmksb0r515ed2c4mksbg0.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 78, 72, 85, 92}, 63, 928)
+            end
+            do
+              local _xmksb0v515ed2c8mksbgc = 1
+              _xmksb0v515ed2c8mksbgc = (_xmksb0v515ed2c8mksbgc + 0)
+              _zmksb0r515ed2c4mksbg0.Adornee = _mksb04515ed2admksbe3
+            end
+            do
+              local _zmksb0w515ed2c9mksbgf = 1
+              _zmksb0w515ed2c9mksbgf = (_zmksb0w515ed2c9mksbgf + 0)
+              _zmksb0r515ed2c4mksbg0.LineThickness = 0.03
+            end
+            do
+              local _mmksb0x515ed2camksbgi = 1
+              _mmksb0x515ed2camksbgi = (_mmksb0x515ed2camksbgi + 0)
+              _zmksb0r515ed2c4mksbg0.Parent = _mksb04515ed2admksbe3
+            end
+            do
+              local _mksb0y515ed2cbmksbgl = 1
+              _mksb0y515ed2cbmksbgl = (_mksb0y515ed2cbmksbgl + 0)
+              _zmksaw1515ed21amksb1u[_mmksb03515ed2acmksbe0] = {mode = _xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 78, 85, 85, 42, 88, 98}, 63, 928), objs = {_zmksb0r515ed2c4mksbg0}}
+            end
+          else
+            do
+              local __mksb0z515ed2ccmksbgo = 1
+              __mksb0z515ed2ccmksbgo = (__mksb0z515ed2ccmksbgo + 0)
+              _zmksb0r515ed2c4mksbg0.Adornee = _mksb04515ed2admksbe3
+            end
+          end
+        end
+        do
+          local _zmksb11515ed2cemksbgu = 1
+          _zmksb11515ed2cemksbgu = (_zmksb11515ed2cemksbgu + 0)
+          _zmksb0r515ed2c4mksbg0.Color3 = __mksb05515ed2aemksbe6.outline_color
+        end
+        do
+          local _mmksb12515ed2cfmksbgx = 1
+          _mmksb12515ed2cfmksbgx = (_mmksb12515ed2cfmksbgx + 0)
+          _zmksb0r515ed2c4mksbg0.Transparency = __mksb05515ed2aemksbe6.outline_transparency
+        end
+        do
+          local _mksb13515ed2d0mksbh0 = 1
+          _mksb13515ed2d0mksbh0 = (_mksb13515ed2d0mksbh0 + 0)
+          _zmksb0r515ed2c4mksbg0.SurfaceColor3 = __mksb05515ed2aemksbe6.fill_color
+        end
+        do
+          local __mksb14515ed2d1mksbh3 = 1
+          __mksb14515ed2d1mksbh3 = (__mksb14515ed2d1mksbh3 + 0)
+          _zmksb0r515ed2c4mksbg0.SurfaceTransparency = __mksb05515ed2aemksbe6.fill_transparency
+        end
+        return
+      end
+    end
+    do
+      local _mksb1x515ed2eemksbji = 1
+      _mksb1x515ed2eemksbji = (_mksb1x515ed2eemksbji + 0)
+      if (((88 * 18) == (18 * 88)) and (__mksb05515ed2aemksbe6.mode == _xmksat8515ed1b5mksatf({33, 79, 89, 42, 68, 82, 73, 82, 76, 41, 77, 89, 93, 90, 90, 83, 93, 100}, 63, 928))) then
+        do
+          local _mmksb1w515ed2edmksbjf = 1
+          _mmksb1w515ed2edmksbjf = (_mmksb1w515ed2edmksbjf + 0)
+          if (((93 + 80) == 173) and (not _mmksb08515ed2b1mksbef or (_mmksb08515ed2b1mksbef.mode ~= _xmksat8515ed1b5mksatf({33, 79, 89, 42, 68, 82, 73, 82, 76, 41, 77, 89, 93, 90, 90, 83, 93, 100}, 63, 928)))) then
+            do
+              local _zmksb16515ed2d3mksbh9 = 1
+              _zmksb16515ed2d3mksbh9 = (_zmksb16515ed2d3mksbh9 + 0)
+              _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+            end
+            local _mmksb17515ed2d4mksbhc = {}
+            do
+              local _zmksb1l515ed2e2mksbii = 1
+              _zmksb1l515ed2e2mksbii = (_zmksb1l515ed2e2mksbii + 0)
+              for _mksb18515ed2d5mksbhf, __mksb19515ed2d6mksbhi in ipairs(_mksb04515ed2admksbe3:GetDescendants()) do
+                do
+                  local _xmksb1k515ed2e1mksbif = 1
+                  _xmksb1k515ed2e1mksbif = (_xmksb1k515ed2e1mksbif + 0)
+                  if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (__mksb19515ed2d6mksbhi:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)) and (__mksb19515ed2d6mksbhi.Name ~= _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))) then
+                    local _xmksb1a515ed2d7mksbhl = Instance.new(_xmksat8515ed1b5mksatf({33, 79, 89, 42, 68, 82, 73, 82, 76, 41, 77, 89, 93, 90, 90, 83, 93, 100}, 63, 928))
+                    do
+                      local _zmksb1b515ed2d8mksbho = 1
+                      _zmksb1b515ed2d8mksbho = (_zmksb1b515ed2d8mksbho + 0)
+                      _xmksb1a515ed2d7mksbhl.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 78, 72, 85, 92}, 63, 928)
+                    end
+                    do
+                      local _mmksb1c515ed2d9mksbhr = 1
+                      _mmksb1c515ed2d9mksbhr = (_mmksb1c515ed2d9mksbhr + 0)
+                      _xmksb1a515ed2d7mksbhl.Adornee = __mksb19515ed2d6mksbhi
+                    end
+                    do
+                      local _mksb1d515ed2damksbhu = 1
+                      _mksb1d515ed2damksbhu = (_mksb1d515ed2damksbhu + 0)
+                      _xmksb1a515ed2d7mksbhl.AlwaysOnTop = (__mksb05515ed2aemksbe6.depth_mode == _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 52, 84, 59, 87, 89}, 63, 928))
+                    end
+                    do
+                      local __mksb1e515ed2dbmksbhx = 1
+                      __mksb1e515ed2dbmksbhx = (__mksb1e515ed2dbmksbhx + 0)
+                      _xmksb1a515ed2d7mksbhl.ZIndex = 5
+                    end
+                    do
+                      local _xmksb1f515ed2dcmksbi0 = 1
+                      _xmksb1f515ed2dcmksbi0 = (_xmksb1f515ed2dcmksbi0 + 0)
+                      _xmksb1a515ed2d7mksbhl.Size = __mksb19515ed2d6mksbhi.Size
+                    end
+                    do
+                      local _zmksb1g515ed2ddmksbi3 = 1
+                      _zmksb1g515ed2ddmksbi3 = (_zmksb1g515ed2ddmksbi3 + 0)
+                      _xmksb1a515ed2d7mksbhl.Color3 = __mksb05515ed2aemksbe6.fill_color
+                    end
+                    do
+                      local _mmksb1h515ed2demksbi6 = 1
+                      _mmksb1h515ed2demksbi6 = (_mmksb1h515ed2demksbi6 + 0)
+                      _xmksb1a515ed2d7mksbhl.Transparency = __mksb05515ed2aemksbe6.fill_transparency
+                    end
+                    do
+                      local _mksb1i515ed2dfmksbi9 = 1
+                      _mksb1i515ed2dfmksbi9 = (_mksb1i515ed2dfmksbi9 + 0)
+                      _xmksb1a515ed2d7mksbhl.Parent = __mksb19515ed2d6mksbhi
+                    end
+                    do
+                      local __mksb1j515ed2e0mksbic = 1
+                      __mksb1j515ed2e0mksbic = (__mksb1j515ed2e0mksbic + 0)
+                      table.insert(_mmksb17515ed2d4mksbhc, _xmksb1a515ed2d7mksbhl)
+                    end
+                  end
+                end
+              end
+            end
+            do
+              local _mmksb1m515ed2e3mksbil = 1
+              _mmksb1m515ed2e3mksbil = (_mmksb1m515ed2e3mksbil + 0)
+              _zmksaw1515ed21amksb1u[_mmksb03515ed2acmksbe0] = {mode = _xmksat8515ed1b5mksatf({33, 79, 89, 42, 68, 82, 73, 82, 76, 41, 77, 89, 93, 90, 90, 83, 93, 100}, 63, 928), objs = _mmksb17515ed2d4mksbhc}
+            end
+          else
+            do
+              local _zmksb1v515ed2ecmksbjc = 1
+              _zmksb1v515ed2ecmksbjc = (_zmksb1v515ed2ecmksbjc + 0)
+              for _mksb1n515ed2e4mksbio, __mksb1o515ed2e5mksbir in ipairs(_mmksb08515ed2b1mksbef.objs) do
+                do
+                  local _xmksb1u515ed2ebmksbj9 = 1
+                  _xmksb1u515ed2ebmksbj9 = (_xmksb1u515ed2ebmksbj9 + 0)
+                  if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (__mksb1o515ed2e5mksbir and __mksb1o515ed2e5mksbir.Parent)) then
+                    do
+                      local _xmksb1p515ed2e6mksbiu = 1
+                      _xmksb1p515ed2e6mksbiu = (_xmksb1p515ed2e6mksbiu + 0)
+                      __mksb1o515ed2e5mksbir.Color3 = __mksb05515ed2aemksbe6.fill_color
+                    end
+                    do
+                      local _zmksb1q515ed2e7mksbix = 1
+                      _zmksb1q515ed2e7mksbix = (_zmksb1q515ed2e7mksbix + 0)
+                      __mksb1o515ed2e5mksbir.Transparency = __mksb05515ed2aemksbe6.fill_transparency
+                    end
+                    do
+                      local _mmksb1r515ed2e8mksbj0 = 1
+                      _mmksb1r515ed2e8mksbj0 = (_mmksb1r515ed2e8mksbj0 + 0)
+                      __mksb1o515ed2e5mksbir.AlwaysOnTop = (__mksb05515ed2aemksbe6.depth_mode == _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 52, 84, 59, 87, 89}, 63, 928))
+                    end
+                    do
+                      local __mksb1t515ed2eamksbj6 = 1
+                      __mksb1t515ed2eamksbj6 = (__mksb1t515ed2eamksbj6 + 0)
+                      if (((46 + 28) == 74) and (__mksb1o515ed2e5mksbir.Adornee and __mksb1o515ed2e5mksbir.Adornee:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+                        do
+                          local _mksb1s515ed2e9mksbj3 = 1
+                          _mksb1s515ed2e9mksbj3 = (_mksb1s515ed2e9mksbj3 + 0)
+                          __mksb1o515ed2e5mksbir.Size = __mksb1o515ed2e5mksbir.Adornee.Size
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        return
+      end
+    end
+    do
+      local __mksb2n515ed308mksblo = 1
+      __mksb2n515ed308mksblo = (__mksb2n515ed308mksblo + 0)
+      if ((((89 * 10) % 10) == 0) and (__mksb05515ed2aemksbe6.mode == _xmksat8515ed1b5mksatf({34, 89, 77, 75, 81, 72, 74, 88, 47, 73, 87, 78, 87, 81, 46, 82, 94, 98, 95, 95, 88, 98, 105}, 63, 928))) then
+        do
+          local _mksb2m515ed307mksbll = 1
+          _mksb2m515ed307mksbll = (_mksb2m515ed307mksbll + 0)
+          if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and (not _mmksb08515ed2b1mksbef or (_mmksb08515ed2b1mksbef.mode ~= _xmksat8515ed1b5mksatf({34, 89, 77, 75, 81, 72, 74, 88, 47, 73, 87, 78, 87, 81, 46, 82, 94, 98, 95, 95, 88, 98, 105}, 63, 928)))) then
+            do
+              local __mksb1y515ed2efmksbjl = 1
+              __mksb1y515ed2efmksbjl = (__mksb1y515ed2efmksbjl + 0)
+              _zmksazs515ed2a1mksbd3(_mmksb03515ed2acmksbe0)
+            end
+            local _xmksb1z515ed2f0mksbjo = {}
+            do
+              local __mksb2d515ed2femksbku = 1
+              __mksb2d515ed2femksbku = (__mksb2d515ed2femksbku + 0)
+              for _zmksb20515ed2f1mksbjr, _mmksb21515ed2f2mksbju in ipairs(_mksb04515ed2admksbe3:GetDescendants()) do
+                do
+                  local _mksb2c515ed2fdmksbkr = 1
+                  _mksb2c515ed2fdmksbkr = (_mksb2c515ed2fdmksbkr + 0)
+                  if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (_mmksb21515ed2f2mksbju:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)) and (_mmksb21515ed2f2mksbju.Name ~= _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))) then
+                    local _mksb22515ed2f3mksbjx = Instance.new(_xmksat8515ed1b5mksatf({34, 89, 77, 75, 81, 72, 74, 88, 47, 73, 87, 78, 87, 81, 46, 82, 94, 98, 95, 95, 88, 98, 105}, 63, 928))
+                    do
+                      local __mksb23515ed2f4mksbk0 = 1
+                      __mksb23515ed2f4mksbk0 = (__mksb23515ed2f4mksbk0 + 0)
+                      _mksb22515ed2f3mksbjx.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 78, 72, 85, 92}, 63, 928)
+                    end
+                    do
+                      local _xmksb24515ed2f5mksbk3 = 1
+                      _xmksb24515ed2f5mksbk3 = (_xmksb24515ed2f5mksbk3 + 0)
+                      _mksb22515ed2f3mksbjx.Adornee = _mmksb21515ed2f2mksbju
+                    end
+                    do
+                      local _zmksb25515ed2f6mksbk6 = 1
+                      _zmksb25515ed2f6mksbk6 = (_zmksb25515ed2f6mksbk6 + 0)
+                      _mksb22515ed2f3mksbjx.AlwaysOnTop = (__mksb05515ed2aemksbe6.depth_mode == _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 52, 84, 59, 87, 89}, 63, 928))
+                    end
+                    do
+                      local _mmksb26515ed2f7mksbk9 = 1
+                      _mmksb26515ed2f7mksbk9 = (_mmksb26515ed2f7mksbk9 + 0)
+                      _mksb22515ed2f3mksbjx.Height = math.max(_mmksb21515ed2f2mksbju.Size.X, _mmksb21515ed2f2mksbju.Size.Y, _mmksb21515ed2f2mksbju.Size.Z)
+                    end
+                    do
+                      local _mksb27515ed2f8mksbkc = 1
+                      _mksb27515ed2f8mksbkc = (_mksb27515ed2f8mksbkc + 0)
+                      _mksb22515ed2f3mksbjx.Radius = (math.min(_mmksb21515ed2f2mksbju.Size.X, _mmksb21515ed2f2mksbju.Size.Z) * 0.35)
+                    end
+                    do
+                      local __mksb28515ed2f9mksbkf = 1
+                      __mksb28515ed2f9mksbkf = (__mksb28515ed2f9mksbkf + 0)
+                      _mksb22515ed2f3mksbjx.Color3 = __mksb05515ed2aemksbe6.fill_color
+                    end
+                    do
+                      local _xmksb29515ed2famksbki = 1
+                      _xmksb29515ed2famksbki = (_xmksb29515ed2famksbki + 0)
+                      _mksb22515ed2f3mksbjx.Transparency = __mksb05515ed2aemksbe6.fill_transparency
+                    end
+                    do
+                      local _zmksb2a515ed2fbmksbkl = 1
+                      _zmksb2a515ed2fbmksbkl = (_zmksb2a515ed2fbmksbkl + 0)
+                      _mksb22515ed2f3mksbjx.Parent = _mmksb21515ed2f2mksbju
+                    end
+                    do
+                      local _mmksb2b515ed2fcmksbko = 1
+                      _mmksb2b515ed2fcmksbko = (_mmksb2b515ed2fcmksbko + 0)
+                      table.insert(_xmksb1z515ed2f0mksbjo, _mksb22515ed2f3mksbjx)
+                    end
+                  end
+                end
+              end
+            end
+            do
+              local _xmksb2e515ed2ffmksbkx = 1
+              _xmksb2e515ed2ffmksbkx = (_xmksb2e515ed2ffmksbkx + 0)
+              _zmksaw1515ed21amksb1u[_mmksb03515ed2acmksbe0] = {mode = _xmksat8515ed1b5mksatf({34, 89, 77, 75, 81, 72, 74, 88, 47, 73, 87, 78, 87, 81, 46, 82, 94, 98, 95, 95, 88, 98, 105}, 63, 928), objs = _xmksb1z515ed2f0mksbjo}
+            end
+          else
+            do
+              local _mmksb2l515ed306mksbli = 1
+              _mmksb2l515ed306mksbli = (_mmksb2l515ed306mksbli + 0)
+              for _zmksb2f515ed300mksbl0, _mmksb2g515ed301mksbl3 in ipairs(_mmksb08515ed2b1mksbef.objs) do
+                do
+                  local _zmksb2k515ed305mksblf = 1
+                  _zmksb2k515ed305mksblf = (_zmksb2k515ed305mksblf + 0)
+                  if ((((2 * 9) % 9) == 0) and (_mmksb2g515ed301mksbl3 and _mmksb2g515ed301mksbl3.Parent)) then
+                    do
+                      local _mksb2h515ed302mksbl6 = 1
+                      _mksb2h515ed302mksbl6 = (_mksb2h515ed302mksbl6 + 0)
+                      _mmksb2g515ed301mksbl3.Color3 = __mksb05515ed2aemksbe6.fill_color
+                    end
+                    do
+                      local __mksb2i515ed303mksbl9 = 1
+                      __mksb2i515ed303mksbl9 = (__mksb2i515ed303mksbl9 + 0)
+                      _mmksb2g515ed301mksbl3.Transparency = __mksb05515ed2aemksbe6.fill_transparency
+                    end
+                    do
+                      local _xmksb2j515ed304mksblc = 1
+                      _xmksb2j515ed304mksblc = (_xmksb2j515ed304mksblc + 0)
+                      _mmksb2g515ed301mksbl3.AlwaysOnTop = (__mksb05515ed2aemksbe6.depth_mode == _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 52, 84, 59, 87, 89}, 63, 928))
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        return
+      end
+    end
+  end
+  local _xmksb2o515ed309mksblr = {Head = true, Torso = true, UpperTorso = true, LowerTorso = true, LeftUpperArm = true, LeftLowerArm = true, LeftHand = true, RightUpperArm = true, RightLowerArm = true, RightHand = true, LeftUpperLeg = true, LeftLowerLeg = true, LeftFoot = true, RightUpperLeg = true, RightLowerLeg = true, RightFoot = true, [_xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 37, 87, 83}, 63, 928)] = true, [_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 38, 88, 84}, 63, 928)] = true, [_xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 48, 74, 77}, 63, 928)] = true, [_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 49, 75, 78}, 63, 928)] = true}
+  local _zmksb2p515ed30amksblu = {{_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928)}, {_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928)}, {_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 41, 91, 87}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 41, 91, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 47, 83, 92, 75, 89, 41, 91, 87}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 69, 71, 86, 47, 83, 92, 75, 89, 41, 91, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 43, 69, 83, 74}, 63, 928)}, {_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 42, 92, 88}, 63, 928)}, {_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 42, 92, 88}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 48, 84, 93, 76, 90, 42, 92, 88}, 63, 928)}, {_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 48, 84, 93, 76, 90, 42, 92, 88}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 44, 70, 84, 75}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 52, 78, 81}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 52, 78, 81}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 47, 83, 92, 75, 89, 52, 78, 81}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 69, 71, 86, 47, 83, 92, 75, 89, 52, 78, 81}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 41, 83, 84, 90}, 63, 928)}, {_xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 53, 79, 82}, 63, 928)}, {_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 53, 79, 82}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 48, 84, 93, 76, 90, 53, 79, 82}, 63, 928)}, {_xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 48, 84, 93, 76, 90, 53, 79, 82}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 42, 84, 85, 91}, 63, 928)}}
+  local _mmksb2q515ed30bmksblx = {{_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928)}, {_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 37, 87, 83}, 63, 928)}, {_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 38, 88, 84}, 63, 928)}, {_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 48, 74, 77}, 63, 928)}, {_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 49, 75, 78}, 63, 928)}}
+  local function _mksb2r515ed30cmksbm0(__mksb2s515ed30dmksbm3, _xmksb2t515ed30emksbm6)
+    local _zmksb2u515ed30fmksbm9 = __mksb2s515ed30dmksbm3:FindFirstChild(_xmksb2t515ed30emksbm6)
+    do
+      local _mmksb2v515ed310mksbmc = 1
+      _mmksb2v515ed310mksbmc = (_mmksb2v515ed310mksbmc + 0)
+      if (((59 + 23) == 82) and (_zmksb2u515ed30fmksbm9 and _zmksb2u515ed30fmksbm9:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+        return _zmksb2u515ed30fmksbm9
+      end
+    end
+    return nil
+  end
+  local _mksb2w515ed311mksbmf = setmetatable({}, {__mode = _xmksat8515ed1b5mksatf({74}, 63, 928)})
+  local function __mksb2x515ed312mksbmi(_xmksb2y515ed313mksbml, _zmksb2z515ed314mksbmo)
+    local _mmksb30515ed315mksbmr = _mksb2w515ed311mksbmf[_xmksb2y515ed313mksbml]
+    do
+      local _mksb31515ed316mksbmu = 1
+      _mksb31515ed316mksbmu = (_mksb31515ed316mksbmu + 0)
+      if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and _mmksb30515ed315mksbmr) then
+        return _mmksb30515ed315mksbmr
+      end
+    end
+    local __mksb32515ed317mksbmx = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928))
+    local _xmksb33515ed318mksbn0 = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 41, 91, 87}, 63, 928))
+    local _zmksb34515ed319mksbn3 = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928))
+    local _mmksb35515ed31amksbn6 = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 37, 87, 83}, 63, 928))
+    local _mksb36515ed31bmksbn9
+    do
+      local _mksb3b515ed320mksbno = 1
+      _mksb3b515ed320mksbno = (_mksb3b515ed320mksbno + 0)
+      if (((28 + 53) == 81) and (__mksb32515ed317mksbmx and _xmksb33515ed318mksbn0)) then
+        do
+          local __mksb37515ed31cmksbnc = 1
+          __mksb37515ed31cmksbnc = (__mksb37515ed31cmksbnc + 0)
+          _mksb36515ed31bmksbn9 = _zmksb2p515ed30amksblu
+        end
+      elseif (((45 * 43) == (43 * 45)) and (_zmksb34515ed319mksbn3 and _mmksb35515ed31amksbn6)) then
+        do
+          local _xmksb38515ed31dmksbnf = 1
+          _xmksb38515ed31dmksbnf = (_xmksb38515ed31dmksbnf + 0)
+          _mksb36515ed31bmksbn9 = _mmksb2q515ed30bmksblx
+        end
+      elseif ((((29 * 11) % 11) == 0) and __mksb32515ed317mksbmx) then
+        do
+          local _zmksb39515ed31emksbni = 1
+          _zmksb39515ed31emksbni = (_zmksb39515ed31emksbni + 0)
+          _mksb36515ed31bmksbn9 = _zmksb2p515ed30amksblu
+        end
+      else
+        do
+          local _mmksb3a515ed31fmksbnl = 1
+          _mmksb3a515ed31fmksbnl = (_mmksb3a515ed31fmksbnl + 0)
+          _mksb36515ed31bmksbn9 = _mmksb2q515ed30bmksblx
+        end
+      end
+    end
+    local __mksb3c515ed321mksbnr = {}
+    do
+      local _zmksb3j515ed328mksboc = 1
+      _zmksb3j515ed328mksboc = (_zmksb3j515ed328mksboc + 0)
+      for _xmksb3d515ed322mksbnu, _zmksb3e515ed323mksbnx in ipairs(_mksb36515ed31bmksbn9) do
+        local _mmksb3f515ed324mksbo0 = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _zmksb3e515ed323mksbnx[1])
+        local _mksb3g515ed325mksbo3 = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, _zmksb3e515ed323mksbnx[2])
+        do
+          local _xmksb3i515ed327mksbo9 = 1
+          _xmksb3i515ed327mksbo9 = (_xmksb3i515ed327mksbo9 + 0)
+          if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (_mmksb3f515ed324mksbo0 and _mksb3g515ed325mksbo3)) then
+            do
+              local __mksb3h515ed326mksbo6 = 1
+              __mksb3h515ed326mksbo6 = (__mksb3h515ed326mksbo6 + 0)
+              __mksb3c515ed321mksbnr[(#__mksb3c515ed321mksbnr + 1)] = {_mmksb3f515ed324mksbo0, _mksb3g515ed325mksbo3}
+            end
+          end
+        end
+      end
+    end
+    do
+      local _xmksb3s515ed331mksbp3 = 1
+      _xmksb3s515ed331mksbp3 = (_xmksb3s515ed331mksbp3 + 0)
+      if (((18 * 49) == (49 * 18)) and ((#__mksb3c515ed321mksbnr < 3) and (_mksb36515ed31bmksbn9 ~= _mmksb2q515ed30bmksblx))) then
+        do
+          local _mmksb3k515ed329mksbof = 1
+          _mmksb3k515ed329mksbof = (_mmksb3k515ed329mksbof + 0)
+          __mksb3c515ed321mksbnr = {}
+        end
+        do
+          local __mksb3r515ed330mksbp0 = 1
+          __mksb3r515ed330mksbp0 = (__mksb3r515ed330mksbp0 + 0)
+          for _mksb3l515ed32amksboi, __mksb3m515ed32bmksbol in ipairs(_mmksb2q515ed30bmksblx) do
+            local _xmksb3n515ed32cmksboo = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, __mksb3m515ed32bmksbol[1])
+            local _zmksb3o515ed32dmksbor = _mksb2r515ed30cmksbm0(_xmksb2y515ed313mksbml, __mksb3m515ed32bmksbol[2])
+            do
+              local _mksb3q515ed32fmksbox = 1
+              _mksb3q515ed32fmksbox = (_mksb3q515ed32fmksbox + 0)
+              if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (_xmksb3n515ed32cmksboo and _zmksb3o515ed32dmksbor)) then
+                do
+                  local _mmksb3p515ed32emksbou = 1
+                  _mmksb3p515ed32emksbou = (_mmksb3p515ed32emksbou + 0)
+                  __mksb3c515ed321mksbnr[(#__mksb3c515ed321mksbnr + 1)] = {_xmksb3n515ed32cmksboo, _zmksb3o515ed32dmksbor}
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    do
+      local _zmksb3t515ed332mksbp6 = 1
+      _zmksb3t515ed332mksbp6 = (_zmksb3t515ed332mksbp6 + 0)
+      _mksb2w515ed311mksbmf[_xmksb2y515ed313mksbml] = __mksb3c515ed321mksbnr
+    end
+    return __mksb3c515ed321mksbnr
+  end
+  local function _mmksb3u515ed333mksbp9(_mksb3v515ed334mksbpc, __mksb3w515ed335mksbpf, _xmksb3x515ed336mksbpi)
+    return Color3.new((_mksb3v515ed334mksbpc.R + (((__mksb3w515ed335mksbpf.R - _mksb3v515ed334mksbpc.R)) * _xmksb3x515ed336mksbpi)), (_mksb3v515ed334mksbpc.G + (((__mksb3w515ed335mksbpf.G - _mksb3v515ed334mksbpc.G)) * _xmksb3x515ed336mksbpi)), (_mksb3v515ed334mksbpc.B + (((__mksb3w515ed335mksbpf.B - _mksb3v515ed334mksbpc.B)) * _xmksb3x515ed336mksbpi)))
+  end
+  local function _zmksb3y515ed337mksbpl(_mmksb3z515ed338mksbpo, _mksb40515ed339mksbpr, __mksb41515ed33amksbpu, _xmksb42515ed33bmksbpx)
+    do
+      local _zmksb43515ed33cmksbq0 = 1
+      _zmksb43515ed33cmksbq0 = (_zmksb43515ed33cmksbq0 + 0)
+      _xmksb42515ed33bmksbpx = math.clamp(_xmksb42515ed33bmksbpx, 0, 1)
+    end
+    do
+      local _mmksb44515ed33dmksbq3 = 1
+      _mmksb44515ed33dmksbq3 = (_mmksb44515ed33dmksbq3 + 0)
+      if (((63 * 95) == (95 * 63)) and (_xmksb42515ed33bmksbpx < 0.5)) then
+        return _mmksb3u515ed333mksbp9(_mmksb3z515ed338mksbpo, _mksb40515ed339mksbpr, (_xmksb42515ed33bmksbpx * 2))
+      end
+    end
+    return _mmksb3u515ed333mksbp9(_mksb40515ed339mksbpr, __mksb41515ed33amksbpu, (((_xmksb42515ed33bmksbpx - 0.5)) * 2))
+  end
+  local function _mksb45515ed33emksbq6(__mksb46515ed33fmksbq9, _xmksb47515ed340mksbqc, _zmksb48515ed341mksbqf, _mmksb49515ed342mksbqi, _mksb4a515ed343mksbql, __mksb4b515ed344mksbqo, _xmksb4c515ed345mksbqr, _zmksb4d515ed346mksbqu, _mmksb4e515ed347mksbqx, _mksb4f515ed348mksbr0)
+    local __mksb4g515ed349mksbr3 = math.clamp((math.min(_mmksb49515ed342mksbqi, _mksb4a515ed343mksbql) * 0.25), 4, 18)
+    local _xmksb4h515ed34amksbr6 = {{Vector2.new(_xmksb47515ed340mksbqc, _zmksb48515ed341mksbqf), Vector2.new((_xmksb47515ed340mksbqc + __mksb4g515ed349mksbr3), _zmksb48515ed341mksbqf), __mksb4b515ed344mksbqo}, {Vector2.new(_xmksb47515ed340mksbqc, _zmksb48515ed341mksbqf), Vector2.new(_xmksb47515ed340mksbqc, (_zmksb48515ed341mksbqf + __mksb4g515ed349mksbr3)), __mksb4b515ed344mksbqo}, {Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), _zmksb48515ed341mksbqf), Vector2.new(((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi) - __mksb4g515ed349mksbr3), _zmksb48515ed341mksbqf), __mksb4b515ed344mksbqo}, {Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), _zmksb48515ed341mksbqf), Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), (_zmksb48515ed341mksbqf + __mksb4g515ed349mksbr3)), __mksb4b515ed344mksbqo}, {Vector2.new(_xmksb47515ed340mksbqc, (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), Vector2.new((_xmksb47515ed340mksbqc + __mksb4g515ed349mksbr3), (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), _xmksb4c515ed345mksbqr}, {Vector2.new(_xmksb47515ed340mksbqc, (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), Vector2.new(_xmksb47515ed340mksbqc, ((_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql) - __mksb4g515ed349mksbr3)), _xmksb4c515ed345mksbqr}, {Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), Vector2.new(((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi) - __mksb4g515ed349mksbr3), (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), _xmksb4c515ed345mksbqr}, {Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), (_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql)), Vector2.new((_xmksb47515ed340mksbqc + _mmksb49515ed342mksbqi), ((_zmksb48515ed341mksbqf + _mksb4a515ed343mksbql) - __mksb4g515ed349mksbr3)), _xmksb4c515ed345mksbqr}}
+    do
+      local _zmksb52515ed35fmksbsx = 1
+      _zmksb52515ed35fmksbsx = (_zmksb52515ed35fmksbsx + 0)
+      for _zmksb4i515ed34bmksbr9 = 1, 8 do
+        local _mmksb4j515ed34cmksbrc, _mksb4k515ed34dmksbrf, __mksb4l515ed34emksbri = _xmksb4h515ed34amksbr6[_zmksb4i515ed34bmksbr9][1], _xmksb4h515ed34amksbr6[_zmksb4i515ed34bmksbr9][2], _xmksb4h515ed34amksbr6[_zmksb4i515ed34bmksbr9][3]
+        local _xmksb4m515ed34fmksbrl = __mksb46515ed33fmksbq9.box.co[_zmksb4i515ed34bmksbr9]
+        local _zmksb4n515ed350mksbro = __mksb46515ed33fmksbq9.box.c[_zmksb4i515ed34bmksbr9]
+        do
+          local __mksb4v515ed358mksbsc = 1
+          __mksb4v515ed358mksbsc = (__mksb4v515ed358mksbsc + 0)
+          if (((6 + 87) == 93) and _mmksb4e515ed347mksbqx) then
+            do
+              local _mmksb4o515ed351mksbrr = 1
+              _mmksb4o515ed351mksbrr = (_mmksb4o515ed351mksbrr + 0)
+              _xmksb4m515ed34fmksbrl.From = _mmksb4j515ed34cmksbrc
+            end
+            do
+              local _mksb4p515ed352mksbru = 1
+              _mksb4p515ed352mksbru = (_mksb4p515ed352mksbru + 0)
+              _xmksb4m515ed34fmksbrl.To = _mksb4k515ed34dmksbrf
+            end
+            do
+              local __mksb4q515ed353mksbrx = 1
+              __mksb4q515ed353mksbrx = (__mksb4q515ed353mksbrx + 0)
+              _xmksb4m515ed34fmksbrl.Color = _mksb4f515ed348mksbr0
+            end
+            do
+              local _xmksb4r515ed354mksbs0 = 1
+              _xmksb4r515ed354mksbs0 = (_xmksb4r515ed354mksbs0 + 0)
+              _xmksb4m515ed34fmksbrl.Thickness = (_zmksb4d515ed346mksbqu + 2)
+            end
+            do
+              local _zmksb4s515ed355mksbs3 = 1
+              _zmksb4s515ed355mksbs3 = (_zmksb4s515ed355mksbs3 + 0)
+              _xmksb4m515ed34fmksbrl.ZIndex = 2
+            end
+            do
+              local _mmksb4t515ed356mksbs6 = 1
+              _mmksb4t515ed356mksbs6 = (_mmksb4t515ed356mksbs6 + 0)
+              _xmksb4m515ed34fmksbrl.Visible = true
+            end
+          else
+            do
+              local _mksb4u515ed357mksbs9 = 1
+              _mksb4u515ed357mksbs9 = (_mksb4u515ed357mksbs9 + 0)
+              _xmksb4m515ed34fmksbrl.Visible = false
+            end
+          end
+        end
+        do
+          local _xmksb4w515ed359mksbsf = 1
+          _xmksb4w515ed359mksbsf = (_xmksb4w515ed359mksbsf + 0)
+          _zmksb4n515ed350mksbro.From = _mmksb4j515ed34cmksbrc
+        end
+        do
+          local _zmksb4x515ed35amksbsi = 1
+          _zmksb4x515ed35amksbsi = (_zmksb4x515ed35amksbsi + 0)
+          _zmksb4n515ed350mksbro.To = _mksb4k515ed34dmksbrf
+        end
+        do
+          local _mmksb4y515ed35bmksbsl = 1
+          _mmksb4y515ed35bmksbsl = (_mmksb4y515ed35bmksbsl + 0)
+          _zmksb4n515ed350mksbro.Color = __mksb4l515ed34emksbri
+        end
+        do
+          local _mksb4z515ed35cmksbso = 1
+          _mksb4z515ed35cmksbso = (_mksb4z515ed35cmksbso + 0)
+          _zmksb4n515ed350mksbro.Thickness = _zmksb4d515ed346mksbqu
+        end
+        do
+          local __mksb50515ed35dmksbsr = 1
+          __mksb50515ed35dmksbsr = (__mksb50515ed35dmksbsr + 0)
+          _zmksb4n515ed350mksbro.ZIndex = 3
+        end
+        do
+          local _xmksb51515ed35emksbsu = 1
+          _xmksb51515ed35emksbsu = (_xmksb51515ed35emksbsu + 0)
+          _zmksb4n515ed350mksbro.Visible = true
+        end
+      end
+    end
+  end
+  local function _mmksb53515ed360mksbt0(_mksb54515ed361mksbt3, __mksb55515ed362mksbt6, _xmksb56515ed363mksbt9, _zmksb57515ed364mksbtc, _mmksb58515ed365mksbtf, _mksb59515ed366mksbti, __mksb5a515ed367mksbtl, _xmksb5b515ed368mksbto)
+    do
+      local _mksb5j515ed370mksbuc = 1
+      _mksb5j515ed370mksbuc = (_mksb5j515ed370mksbuc + 0)
+      if (((91 * 74) == (74 * 91)) and (__mksb5a515ed367mksbtl and __mksb55515ed362mksbt6)) then
+        do
+          local _zmksb5c515ed369mksbtr = 1
+          _zmksb5c515ed369mksbtr = (_zmksb5c515ed369mksbtr + 0)
+          __mksb55515ed362mksbt6.From = _xmksb56515ed363mksbt9
+        end
+        do
+          local _mmksb5d515ed36amksbtu = 1
+          _mmksb5d515ed36amksbtu = (_mmksb5d515ed36amksbtu + 0)
+          __mksb55515ed362mksbt6.To = _zmksb57515ed364mksbtc
+        end
+        do
+          local _mksb5e515ed36bmksbtx = 1
+          _mksb5e515ed36bmksbtx = (_mksb5e515ed36bmksbtx + 0)
+          __mksb55515ed362mksbt6.Color = _xmksb5b515ed368mksbto
+        end
+        do
+          local __mksb5f515ed36cmksbu0 = 1
+          __mksb5f515ed36cmksbu0 = (__mksb5f515ed36cmksbu0 + 0)
+          __mksb55515ed362mksbt6.Thickness = (_mksb59515ed366mksbti + 2)
+        end
+        do
+          local _xmksb5g515ed36dmksbu3 = 1
+          _xmksb5g515ed36dmksbu3 = (_xmksb5g515ed36dmksbu3 + 0)
+          __mksb55515ed362mksbt6.ZIndex = 2
+        end
+        do
+          local _zmksb5h515ed36emksbu6 = 1
+          _zmksb5h515ed36emksbu6 = (_zmksb5h515ed36emksbu6 + 0)
+          __mksb55515ed362mksbt6.Visible = true
+        end
+      elseif (((24 + 96) == 120) and __mksb55515ed362mksbt6) then
+        do
+          local _mmksb5i515ed36fmksbu9 = 1
+          _mmksb5i515ed36fmksbu9 = (_mmksb5i515ed36fmksbu9 + 0)
+          __mksb55515ed362mksbt6.Visible = false
+        end
+      end
+    end
+    do
+      local __mksb5k515ed371mksbuf = 1
+      __mksb5k515ed371mksbuf = (__mksb5k515ed371mksbuf + 0)
+      _mksb54515ed361mksbt3.From = _xmksb56515ed363mksbt9
+    end
+    do
+      local _xmksb5l515ed372mksbui = 1
+      _xmksb5l515ed372mksbui = (_xmksb5l515ed372mksbui + 0)
+      _mksb54515ed361mksbt3.To = _zmksb57515ed364mksbtc
+    end
+    do
+      local _zmksb5m515ed373mksbul = 1
+      _zmksb5m515ed373mksbul = (_zmksb5m515ed373mksbul + 0)
+      _mksb54515ed361mksbt3.Color = _mmksb58515ed365mksbtf
+    end
+    do
+      local _mmksb5n515ed374mksbuo = 1
+      _mmksb5n515ed374mksbuo = (_mmksb5n515ed374mksbuo + 0)
+      _mksb54515ed361mksbt3.Thickness = _mksb59515ed366mksbti
+    end
+    do
+      local _mksb5o515ed375mksbur = 1
+      _mksb5o515ed375mksbur = (_mksb5o515ed375mksbur + 0)
+      _mksb54515ed361mksbt3.ZIndex = 3
+    end
+    do
+      local __mksb5p515ed376mksbuu = 1
+      __mksb5p515ed376mksbuu = (__mksb5p515ed376mksbuu + 0)
+      _mksb54515ed361mksbt3.Visible = true
+    end
+  end
+  local function _xmksb5q515ed377mksbux(_zmksb5r515ed378mksbv0, _mmksb5s515ed379mksbv3, _mksb5t515ed37amksbv6, __mksb5u515ed37bmksbv9, _xmksb5v515ed37cmksbvc, _zmksb5w515ed37dmksbvf, _mmksb5x515ed37emksbvi, _mksb5y515ed37fmksbvl, __mksb5z515ed380mksbvo, _xmksb60515ed381mksbvr, _zmksb61515ed382mksbvu)
+    local _mmksb62515ed383mksbvx = Vector2.new(_mmksb5s515ed379mksbv3, _mksb5t515ed37amksbv6)
+    local _mksb63515ed384mksbw0 = Vector2.new((_mmksb5s515ed379mksbv3 + __mksb5u515ed37bmksbv9), _mksb5t515ed37amksbv6)
+    local __mksb64515ed385mksbw3 = Vector2.new(_mmksb5s515ed379mksbv3, (_mksb5t515ed37amksbv6 + _xmksb5v515ed37cmksbvc))
+    local _xmksb65515ed386mksbw6 = Vector2.new((_mmksb5s515ed379mksbv3 + __mksb5u515ed37bmksbv9), (_mksb5t515ed37amksbv6 + _xmksb5v515ed37cmksbvc))
+    local _zmksb66515ed387mksbw9 = (_zmksb5r515ed378mksbv0.box.edgeN or #_zmksb5r515ed378mksbv0.box.edge)
+    do
+      local _xmksb6a515ed38bmksbwl = 1
+      _xmksb6a515ed38bmksbwl = (_xmksb6a515ed38bmksbwl + 0)
+      for _mmksb67515ed388mksbwc = 1, _zmksb66515ed387mksbw9 do
+        do
+          local _mksb68515ed389mksbwf = 1
+          _mksb68515ed389mksbwf = (_mksb68515ed389mksbwf + 0)
+          _zmksb5r515ed378mksbv0.box.edge[_mmksb67515ed388mksbwc].Visible = false
+        end
+        do
+          local __mksb69515ed38amksbwi = 1
+          __mksb69515ed38amksbwi = (__mksb69515ed38amksbwi + 0)
+          _zmksb5r515ed378mksbv0.box.edgeO[_mmksb67515ed388mksbwc].Visible = false
+        end
+      end
+    end
+    local _zmksb6b515ed38cmksbwo = 1
+    do
+      local _mmksb6c515ed38dmksbwr = 1
+      _mmksb6c515ed38dmksbwr = (_mmksb6c515ed38dmksbwr + 0)
+      _mmksb53515ed360mksbt0(_zmksb5r515ed378mksbv0.box.edge[_zmksb6b515ed38cmksbwo], _zmksb5r515ed378mksbv0.box.edgeO[_zmksb6b515ed38cmksbwo], _mmksb62515ed383mksbvx, _mksb63515ed384mksbw0, _zmksb5w515ed37dmksbvf, _mksb5y515ed37fmksbvl, __mksb5z515ed380mksbvo, _xmksb60515ed381mksbvr)
+    end
+    do
+      local _mksb6d515ed38emksbwu = 1
+      _mksb6d515ed38emksbwu = (_mksb6d515ed38emksbwu + 0)
+      _zmksb6b515ed38cmksbwo += 1
+    end
+    do
+      local __mksb6e515ed38fmksbwx = 1
+      __mksb6e515ed38fmksbwx = (__mksb6e515ed38fmksbwx + 0)
+      _mmksb53515ed360mksbt0(_zmksb5r515ed378mksbv0.box.edge[_zmksb6b515ed38cmksbwo], _zmksb5r515ed378mksbv0.box.edgeO[_zmksb6b515ed38cmksbwo], __mksb64515ed385mksbw3, _xmksb65515ed386mksbw6, ((_zmksb61515ed382mksbvu and _mmksb5x515ed37emksbvi) or _zmksb5w515ed37dmksbvf), _mksb5y515ed37fmksbvl, __mksb5z515ed380mksbvo, _xmksb60515ed381mksbvr)
+    end
+    do
+      local _xmksb6f515ed390mksbx0 = 1
+      _xmksb6f515ed390mksbx0 = (_xmksb6f515ed390mksbx0 + 0)
+      _zmksb6b515ed38cmksbwo += 1
+    end
+    local _zmksb6g515ed391mksbx3 = ((_zmksb61515ed382mksbvu and 4) or 1)
+    do
+      local __mksb6t515ed39emksby6 = 1
+      __mksb6t515ed39emksby6 = (__mksb6t515ed39emksby6 + 0)
+      for _mmksb6h515ed392mksbx6 = 0, (_zmksb6g515ed391mksbx3 - 1) do
+        local _mksb6i515ed393mksbx9 = (_mmksb6h515ed392mksbx6 / _zmksb6g515ed391mksbx3)
+        local __mksb6j515ed394mksbxc = (((_mmksb6h515ed392mksbx6 + 1)) / _zmksb6g515ed391mksbx3)
+        local _xmksb6k515ed395mksbxf = ((_zmksb61515ed382mksbvu and _mmksb3u515ed333mksbp9(_zmksb5w515ed37dmksbvf, _mmksb5x515ed37emksbvi, (((_mksb6i515ed393mksbx9 + __mksb6j515ed394mksbxc)) * 0.5))) or _zmksb5w515ed37dmksbvf)
+        local _zmksb6l515ed396mksbxi = Vector2.new(_mmksb5s515ed379mksbv3, (_mksb5t515ed37amksbv6 + (_xmksb5v515ed37cmksbvc * _mksb6i515ed393mksbx9)))
+        local _mmksb6m515ed397mksbxl = Vector2.new(_mmksb5s515ed379mksbv3, (_mksb5t515ed37amksbv6 + (_xmksb5v515ed37cmksbvc * __mksb6j515ed394mksbxc)))
+        do
+          local _mksb6n515ed398mksbxo = 1
+          _mksb6n515ed398mksbxo = (_mksb6n515ed398mksbxo + 0)
+          _mmksb53515ed360mksbt0(_zmksb5r515ed378mksbv0.box.edge[_zmksb6b515ed38cmksbwo], _zmksb5r515ed378mksbv0.box.edgeO[_zmksb6b515ed38cmksbwo], _zmksb6l515ed396mksbxi, _mmksb6m515ed397mksbxl, _xmksb6k515ed395mksbxf, _mksb5y515ed37fmksbvl, __mksb5z515ed380mksbvo, _xmksb60515ed381mksbvr)
+        end
+        do
+          local __mksb6o515ed399mksbxr = 1
+          __mksb6o515ed399mksbxr = (__mksb6o515ed399mksbxr + 0)
+          _zmksb6b515ed38cmksbwo += 1
+        end
+        local _xmksb6p515ed39amksbxu = Vector2.new((_mmksb5s515ed379mksbv3 + __mksb5u515ed37bmksbv9), (_mksb5t515ed37amksbv6 + (_xmksb5v515ed37cmksbvc * _mksb6i515ed393mksbx9)))
+        local _zmksb6q515ed39bmksbxx = Vector2.new((_mmksb5s515ed379mksbv3 + __mksb5u515ed37bmksbv9), (_mksb5t515ed37amksbv6 + (_xmksb5v515ed37cmksbvc * __mksb6j515ed394mksbxc)))
+        do
+          local _mmksb6r515ed39cmksby0 = 1
+          _mmksb6r515ed39cmksby0 = (_mmksb6r515ed39cmksby0 + 0)
+          _mmksb53515ed360mksbt0(_zmksb5r515ed378mksbv0.box.edge[_zmksb6b515ed38cmksbwo], _zmksb5r515ed378mksbv0.box.edgeO[_zmksb6b515ed38cmksbwo], _xmksb6p515ed39amksbxu, _zmksb6q515ed39bmksbxx, _xmksb6k515ed395mksbxf, _mksb5y515ed37fmksbvl, __mksb5z515ed380mksbvo, _xmksb60515ed381mksbvr)
+        end
+        do
+          local _mksb6s515ed39dmksby3 = 1
+          _mksb6s515ed39dmksby3 = (_mksb6s515ed39dmksby3 + 0)
+          _zmksb6b515ed38cmksbwo += 1
+        end
+      end
+    end
+  end
+  local function _xmksb6u515ed39fmksby9(_zmksb6v515ed3a0mksbyc)
+    do
+      local _mmksb6w515ed3a1mksbyf = 1
+      _mmksb6w515ed3a1mksbyf = (_mmksb6w515ed3a1mksbyf + 0)
+      if (((95 + 7) == 102) and not _zmksb6v515ed3a0mksbyc) then
+        return
+      end
+    end
+    do
+      local _zmksb75515ed3aamksbz6 = 1
+      _zmksb75515ed3aamksbz6 = (_zmksb75515ed3aamksbz6 + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and _zmksb6v515ed3a0mksbyc.hp) then
+        do
+          local _mksb6x515ed3a2mksbyi = 1
+          _mksb6x515ed3a2mksbyi = (_mksb6x515ed3a2mksbyi + 0)
+          _zmksb6v515ed3a0mksbyc.hp.bg.Visible = false
+        end
+        do
+          local __mksb6y515ed3a3mksbyl = 1
+          __mksb6y515ed3a3mksbyl = (__mksb6y515ed3a3mksbyl + 0)
+          _zmksb6v515ed3a0mksbyc.hp.outline.Visible = false
+        end
+        do
+          local _xmksb6z515ed3a4mksbyo = 1
+          _xmksb6z515ed3a4mksbyo = (_xmksb6z515ed3a4mksbyo + 0)
+          _zmksb6v515ed3a0mksbyc.hp.text.Visible = false
+        end
+        do
+          local _xmksb74515ed3a9mksbz3 = 1
+          _xmksb74515ed3a9mksbz3 = (_xmksb74515ed3a9mksbz3 + 0)
+          if (((95 + 93) == 188) and _zmksb6v515ed3a0mksbyc.hp.segs) then
+            do
+              local __mksb73515ed3a8mksbz0 = 1
+              __mksb73515ed3a8mksbz0 = (__mksb73515ed3a8mksbz0 + 0)
+              for _zmksb70515ed3a5mksbyr, _mmksb71515ed3a6mksbyu in ipairs(_zmksb6v515ed3a0mksbyc.hp.segs) do
+                do
+                  local _mksb72515ed3a7mksbyx = 1
+                  _mksb72515ed3a7mksbyx = (_mksb72515ed3a7mksbyx + 0)
+                  _mmksb71515ed3a6mksbyu.Visible = false
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    do
+      local _xmksb79515ed3aemksbzi = 1
+      _xmksb79515ed3aemksbzi = (_xmksb79515ed3aemksbzi + 0)
+      if (((88 * 18) == (18 * 88)) and _zmksb6v515ed3a0mksbyc.flags) then
+        do
+          local _mmksb76515ed3abmksbz9 = 1
+          _mmksb76515ed3abmksbz9 = (_mmksb76515ed3abmksbz9 + 0)
+          _zmksb6v515ed3a0mksbyc.flags.name.Visible = false
+        end
+        do
+          local _mksb77515ed3acmksbzc = 1
+          _mksb77515ed3acmksbzc = (_mksb77515ed3acmksbzc + 0)
+          _zmksb6v515ed3a0mksbyc.flags.dist.Visible = false
+        end
+        do
+          local __mksb78515ed3admksbzf = 1
+          __mksb78515ed3admksbzf = (__mksb78515ed3admksbzf + 0)
+          _zmksb6v515ed3a0mksbyc.flags.weapon.Visible = false
+        end
+      end
+    end
+  end
+  local function _zmksb7a515ed3afmksbzl(_mmksb7b515ed3b0mksbzo)
+    do
+      local _mksb7c515ed3b1mksbzr = 1
+      _mksb7c515ed3b1mksbzr = (_mksb7c515ed3b1mksbzr + 0)
+      _mmksb7b515ed3b0mksbzo.box.fill.Visible = false
+    end
+    local __mksb7d515ed3b2mksbzu = (_mmksb7b515ed3b0mksbzo.box.edgeN or #_mmksb7b515ed3b0mksbzo.box.edge)
+    do
+      local _xmksb7j515ed3b8mksc0c = 1
+      _xmksb7j515ed3b8mksc0c = (_xmksb7j515ed3b8mksc0c + 0)
+      for _xmksb7e515ed3b3mksbzx = 1, __mksb7d515ed3b2mksbzu do
+        do
+          local _mmksb7g515ed3b5mksc03 = 1
+          _mmksb7g515ed3b5mksc03 = (_mmksb7g515ed3b5mksc03 + 0)
+          if (((93 + 80) == 173) and _mmksb7b515ed3b0mksbzo.box.edge[_xmksb7e515ed3b3mksbzx]) then
+            do
+              local _zmksb7f515ed3b4mksc00 = 1
+              _zmksb7f515ed3b4mksc00 = (_zmksb7f515ed3b4mksc00 + 0)
+              _mmksb7b515ed3b0mksbzo.box.edge[_xmksb7e515ed3b3mksbzx].Visible = false
+            end
+          end
+        end
+        do
+          local __mksb7i515ed3b7mksc09 = 1
+          __mksb7i515ed3b7mksc09 = (__mksb7i515ed3b7mksc09 + 0)
+          if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and _mmksb7b515ed3b0mksbzo.box.edgeO[_xmksb7e515ed3b3mksbzx]) then
+            do
+              local _mksb7h515ed3b6mksc06 = 1
+              _mksb7h515ed3b6mksc06 = (_mksb7h515ed3b6mksc06 + 0)
+              _mmksb7b515ed3b0mksbzo.box.edgeO[_xmksb7e515ed3b3mksbzx].Visible = false
+            end
+          end
+        end
+      end
+    end
+    do
+      local __mksb7n515ed3bcmksc0o = 1
+      __mksb7n515ed3bcmksc0o = (__mksb7n515ed3bcmksc0o + 0)
+      for _zmksb7k515ed3b9mksc0f = 1, 8 do
+        do
+          local _mmksb7l515ed3bamksc0i = 1
+          _mmksb7l515ed3bamksc0i = (_mmksb7l515ed3bamksc0i + 0)
+          _mmksb7b515ed3b0mksbzo.box.c[_zmksb7k515ed3b9mksc0f].Visible = false
+        end
+        do
+          local _mksb7m515ed3bbmksc0l = 1
+          _mksb7m515ed3bbmksc0l = (_mksb7m515ed3bbmksc0l + 0)
+          _mmksb7b515ed3b0mksbzo.box.co[_zmksb7k515ed3b9mksc0f].Visible = false
+        end
+      end
+    end
+  end
+  local function _xmksb7o515ed3bdmksc0r(_zmksb7p515ed3bemksc0u)
+    local _mmksb7q515ed3bfmksc0x = _xmksaw0515ed219mksb1r[_zmksb7p515ed3bemksc0u]
+    local _mksb7r515ed3c0mksc10, __mksb7s515ed3c1mksc13, _xmksb7t515ed3c2mksc16 = _zmksawq515ed233mksb3x(_zmksb7p515ed3bemksc0u)
+    do
+      local __mksb82515ed3cbmksc1x = 1
+      __mksb82515ed3cbmksc1x = (__mksb82515ed3cbmksc1x + 0)
+      if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and ((not __mksav5515ed1famksaz6.master or not _mksb7r515ed3c0mksc10) or not _zmksaw6515ed21fmksb29(_zmksb7p515ed3bemksc0u))) then
+        do
+          local _mmksb80515ed3c9mksc1r = 1
+          _mmksb80515ed3c9mksc1r = (_mmksb80515ed3c9mksc1r + 0)
+          if (((46 + 28) == 74) and _mmksb7q515ed3bfmksc0x) then
+            do
+              local _zmksb7u515ed3c3mksc19 = 1
+              _zmksb7u515ed3c3mksc19 = (_zmksb7u515ed3c3mksc19 + 0)
+              _zmksb7a515ed3afmksbzl(_mmksb7q515ed3bfmksc0x)
+            end
+            do
+              local _mmksb7v515ed3c4mksc1c = 1
+              _mmksb7v515ed3c4mksc1c = (_mmksb7v515ed3c4mksc1c + 0)
+              _xmksaxy515ed25fmksb7l(_mmksb7q515ed3bfmksc0x.sk.lines)
+            end
+            do
+              local _mksb7w515ed3c5mksc1f = 1
+              _mksb7w515ed3c5mksc1f = (_mksb7w515ed3c5mksc1f + 0)
+              _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+            end
+            do
+              local __mksb7x515ed3c6mksc1i = 1
+              __mksb7x515ed3c6mksc1i = (__mksb7x515ed3c6mksc1i + 0)
+              _mmksb7q515ed3bfmksc0x.tr.line.Visible = false
+            end
+            do
+              local _xmksb7y515ed3c7mksc1l = 1
+              _xmksb7y515ed3c7mksc1l = (_xmksb7y515ed3c7mksc1l + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Visible = false
+            end
+            do
+              local _zmksb7z515ed3c8mksc1o = 1
+              _zmksb7z515ed3c8mksc1o = (_zmksb7z515ed3c8mksc1o + 0)
+              _xmksb6u515ed39fmksby9(_mmksb7q515ed3bfmksc0x)
+            end
+          end
+        end
+        do
+          local _mksb81515ed3camksc1u = 1
+          _mksb81515ed3camksc1u = (_mksb81515ed3camksc1u + 0)
+          _zmksazs515ed2a1mksbd3(_zmksb7p515ed3bemksc0u)
+        end
+        return
+      end
+    end
+    local _xmksb83515ed3ccmksc20 = ((_xmksb7t515ed3c2mksc16.Position - _mksav4515ed1f9mksaz3.CFrame.Position)).Magnitude
+    do
+      local __mksb8c515ed3d5mksc2r = 1
+      __mksb8c515ed3d5mksc2r = (__mksb8c515ed3d5mksc2r + 0)
+      if ((((89 * 10) % 10) == 0) and (_xmksb83515ed3ccmksc20 > __mksav5515ed1famksaz6.max_distance)) then
+        do
+          local _mmksb8a515ed3d3mksc2l = 1
+          _mmksb8a515ed3d3mksc2l = (_mmksb8a515ed3d3mksc2l + 0)
+          if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _mmksb7q515ed3bfmksc0x) then
+            do
+              local _zmksb84515ed3cdmksc23 = 1
+              _zmksb84515ed3cdmksc23 = (_zmksb84515ed3cdmksc23 + 0)
+              _zmksb7a515ed3afmksbzl(_mmksb7q515ed3bfmksc0x)
+            end
+            do
+              local _mmksb85515ed3cemksc26 = 1
+              _mmksb85515ed3cemksc26 = (_mmksb85515ed3cemksc26 + 0)
+              _xmksaxy515ed25fmksb7l(_mmksb7q515ed3bfmksc0x.sk.lines)
+            end
+            do
+              local _mksb86515ed3cfmksc29 = 1
+              _mksb86515ed3cfmksc29 = (_mksb86515ed3cfmksc29 + 0)
+              _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+            end
+            do
+              local __mksb87515ed3d0mksc2c = 1
+              __mksb87515ed3d0mksc2c = (__mksb87515ed3d0mksc2c + 0)
+              _mmksb7q515ed3bfmksc0x.tr.line.Visible = false
+            end
+            do
+              local _xmksb88515ed3d1mksc2f = 1
+              _xmksb88515ed3d1mksc2f = (_xmksb88515ed3d1mksc2f + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Visible = false
+            end
+            do
+              local _zmksb89515ed3d2mksc2i = 1
+              _zmksb89515ed3d2mksc2i = (_zmksb89515ed3d2mksc2i + 0)
+              _xmksb6u515ed39fmksby9(_mmksb7q515ed3bfmksc0x)
+            end
+          end
+        end
+        do
+          local _mksb8b515ed3d4mksc2o = 1
+          _mksb8b515ed3d4mksc2o = (_mksb8b515ed3d4mksc2o + 0)
+          _zmksazs515ed2a1mksbd3(_zmksb7p515ed3bemksc0u)
+        end
+        return
+      end
+    end
+    do
+      local _xmksb8d515ed3d6mksc2u = 1
+      _xmksb8d515ed3d6mksc2u = (_xmksb8d515ed3d6mksc2u + 0)
+      _mmksb7q515ed3bfmksc0x = _zmksayj515ed274mksb9c(_zmksb7p515ed3bemksc0u)
+    end
+    local _zmksb8e515ed3d7mksc2x, _mmksb8f515ed3d8mksc30, _mksb8g515ed3d9mksc33, __mksb8h515ed3damksc36 = math.huge, math.huge, -math.huge, -math.huge
+    local _xmksb8i515ed3dbmksc39 = false
+    local _zmksb8j515ed3dcmksc3c, _mmksb8k515ed3ddmksc3f, _mksb8l515ed3demksc3i = pcall(function()
+      return _mksb7r515ed3c0mksc10:GetBoundingBox()
+    end)
+    do
+      local _xmksb9h515ed3femksc66 = 1
+      _xmksb9h515ed3femksc66 = (_xmksb9h515ed3femksc66 + 0)
+      if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (_zmksb8j515ed3dcmksc3c and (typeof(_mmksb8k515ed3ddmksc3f) == _xmksat8515ed1b5mksatf({34, 38, 83, 67, 80, 73}, 63, 928)))) then
+        local __mksb8m515ed3dfmksc3l, _xmksb8n515ed3e0mksc3o, _zmksb8o515ed3e1mksc3r = (_mksb8l515ed3demksc3i.X * 0.5), (_mksb8l515ed3demksc3i.Y * 0.5), (_mksb8l515ed3demksc3i.Z * 0.5)
+        local _mmksb8p515ed3e2mksc3u = {(_mmksb8k515ed3ddmksc3f * Vector3.new(__mksb8m515ed3dfmksc3l, _xmksb8n515ed3e0mksc3o, _zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(__mksb8m515ed3dfmksc3l, _xmksb8n515ed3e0mksc3o, -_zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(__mksb8m515ed3dfmksc3l, -_xmksb8n515ed3e0mksc3o, _zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(__mksb8m515ed3dfmksc3l, -_xmksb8n515ed3e0mksc3o, -_zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(-__mksb8m515ed3dfmksc3l, _xmksb8n515ed3e0mksc3o, _zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(-__mksb8m515ed3dfmksc3l, _xmksb8n515ed3e0mksc3o, -_zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(-__mksb8m515ed3dfmksc3l, -_xmksb8n515ed3e0mksc3o, _zmksb8o515ed3e1mksc3r)), (_mmksb8k515ed3ddmksc3f * Vector3.new(-__mksb8m515ed3dfmksc3l, -_xmksb8n515ed3e0mksc3o, -_zmksb8o515ed3e1mksc3r))}
+        do
+          local _zmksb93515ed3f0mksc50 = 1
+          _zmksb93515ed3f0mksc50 = (_zmksb93515ed3f0mksc50 + 0)
+          for _mksb8q515ed3e3mksc3x = 1, 8 do
+            local __mksb8r515ed3e4mksc40, _xmksb8s515ed3e5mksc43 = _mmksaw2515ed21bmksb1x(_mmksb8p515ed3e2mksc3u[_mksb8q515ed3e3mksc3x])
+            do
+              local _xmksb92515ed3efmksc4x = 1
+              _xmksb92515ed3efmksc4x = (_xmksb92515ed3efmksc4x + 0)
+              if ((((2 * 9) % 9) == 0) and (_xmksb8s515ed3e5mksc43 and (__mksb8r515ed3e4mksc40.X == __mksb8r515ed3e4mksc40.X))) then
+                do
+                  local _zmksb8t515ed3e6mksc46 = 1
+                  _zmksb8t515ed3e6mksc46 = (_zmksb8t515ed3e6mksc46 + 0)
+                  _xmksb8i515ed3dbmksc39 = true
+                end
+                do
+                  local _mksb8v515ed3e8mksc4c = 1
+                  _mksb8v515ed3e8mksc4c = (_mksb8v515ed3e8mksc4c + 0)
+                  if (((59 + 23) == 82) and (__mksb8r515ed3e4mksc40.X < _zmksb8e515ed3d7mksc2x)) then
+                    do
+                      local _mmksb8u515ed3e7mksc49 = 1
+                      _mmksb8u515ed3e7mksc49 = (_mmksb8u515ed3e7mksc49 + 0)
+                      _zmksb8e515ed3d7mksc2x = __mksb8r515ed3e4mksc40.X
+                    end
+                  end
+                end
+                do
+                  local _xmksb8x515ed3eamksc4i = 1
+                  _xmksb8x515ed3eamksc4i = (_xmksb8x515ed3eamksc4i + 0)
+                  if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (__mksb8r515ed3e4mksc40.Y < _mmksb8f515ed3d8mksc30)) then
+                    do
+                      local __mksb8w515ed3e9mksc4f = 1
+                      __mksb8w515ed3e9mksc4f = (__mksb8w515ed3e9mksc4f + 0)
+                      _mmksb8f515ed3d8mksc30 = __mksb8r515ed3e4mksc40.Y
+                    end
+                  end
+                end
+                do
+                  local _mmksb8z515ed3ecmksc4o = 1
+                  _mmksb8z515ed3ecmksc4o = (_mmksb8z515ed3ecmksc4o + 0)
+                  if (((28 + 53) == 81) and (__mksb8r515ed3e4mksc40.X > _mksb8g515ed3d9mksc33)) then
+                    do
+                      local _zmksb8y515ed3ebmksc4l = 1
+                      _zmksb8y515ed3ebmksc4l = (_zmksb8y515ed3ebmksc4l + 0)
+                      _mksb8g515ed3d9mksc33 = __mksb8r515ed3e4mksc40.X
+                    end
+                  end
+                end
+                do
+                  local __mksb91515ed3eemksc4u = 1
+                  __mksb91515ed3eemksc4u = (__mksb91515ed3eemksc4u + 0)
+                  if (((45 * 43) == (43 * 45)) and (__mksb8r515ed3e4mksc40.Y > __mksb8h515ed3damksc36)) then
+                    do
+                      local _mksb90515ed3edmksc4r = 1
+                      _mksb90515ed3edmksc4r = (_mksb90515ed3edmksc4r + 0)
+                      __mksb8h515ed3damksc36 = __mksb8r515ed3e4mksc40.Y
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      else
+        local _mmksb94515ed3f1mksc53 = _mksb7r515ed3c0mksc10:FindFirstChild(_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928))
+        local _mksb95515ed3f2mksc56 = ((_mmksb94515ed3f1mksc53 and _mmksb94515ed3f1mksc53.Position) or ((_xmksb7t515ed3c2mksc16.Position + Vector3.new(0, 2, 0))))
+        local __mksb96515ed3f3mksc59 = (_xmksb7t515ed3c2mksc16.Position - Vector3.new(0, 3, 0))
+        local _xmksb97515ed3f4mksc5c, _zmksb98515ed3f5mksc5f = _mmksaw2515ed21bmksb1x(_mksb95515ed3f2mksc56)
+        local _mmksb99515ed3f6mksc5i, _mksb9a515ed3f7mksc5l = _mmksaw2515ed21bmksb1x(__mksb96515ed3f3mksc59)
+        do
+          local __mksb9g515ed3fdmksc63 = 1
+          __mksb9g515ed3fdmksc63 = (__mksb9g515ed3fdmksc63 + 0)
+          if ((((29 * 11) % 11) == 0) and (_zmksb98515ed3f5mksc5f or _mksb9a515ed3f7mksc5l)) then
+            do
+              local __mksb9b515ed3f8mksc5o = 1
+              __mksb9b515ed3f8mksc5o = (__mksb9b515ed3f8mksc5o + 0)
+              _xmksb8i515ed3dbmksc39 = true
+            end
+            do
+              local _xmksb9c515ed3f9mksc5r = 1
+              _xmksb9c515ed3f9mksc5r = (_xmksb9c515ed3f9mksc5r + 0)
+              _zmksb8e515ed3d7mksc2x = (math.min(_xmksb97515ed3f4mksc5c.X, _mmksb99515ed3f6mksc5i.X) - 20)
+            end
+            do
+              local _zmksb9d515ed3famksc5u = 1
+              _zmksb9d515ed3famksc5u = (_zmksb9d515ed3famksc5u + 0)
+              _mksb8g515ed3d9mksc33 = (math.max(_xmksb97515ed3f4mksc5c.X, _mmksb99515ed3f6mksc5i.X) + 20)
+            end
+            do
+              local _mmksb9e515ed3fbmksc5x = 1
+              _mmksb9e515ed3fbmksc5x = (_mmksb9e515ed3fbmksc5x + 0)
+              _mmksb8f515ed3d8mksc30 = math.min(_xmksb97515ed3f4mksc5c.Y, _mmksb99515ed3f6mksc5i.Y)
+            end
+            do
+              local _mksb9f515ed3fcmksc60 = 1
+              _mksb9f515ed3fcmksc60 = (_mksb9f515ed3fcmksc60 + 0)
+              __mksb8h515ed3damksc36 = math.max(_xmksb97515ed3f4mksc5c.Y, _mmksb99515ed3f6mksc5i.Y)
+            end
+          end
+        end
+      end
+    end
+    local _zmksb9i515ed3ffmksc69 = (_xmksb8i515ed3dbmksc39 and ((__mksav5515ed1famksaz6.box.enabled or __mksav5515ed1famksaz6.tracer.enabled)))
+    local _mmksb9j515ed400mksc6c, _mksb9k515ed401mksc6f, __mksb9l515ed402mksc6i, _xmksb9m515ed403mksc6l = _zmksb8e515ed3d7mksc2x, _mmksb8f515ed3d8mksc30, (_mksb8g515ed3d9mksc33 - _zmksb8e515ed3d7mksc2x), (__mksb8h515ed3damksc36 - _mmksb8f515ed3d8mksc30)
+    do
+      local _zmksbac515ed41dmksc8r = 1
+      _zmksbac515ed41dmksc8r = (_zmksbac515ed41dmksc8r + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (((__mksav5515ed1famksaz6.box.enabled and _xmksb8i515ed3dbmksc39) and (__mksb9l515ed402mksc6i > 1)) and (_xmksb9m515ed403mksc6l > 1))) then
+        local _zmksb9n515ed404mksc6o = __mksav5515ed1famksaz6.box.color
+        local _mmksb9o515ed405mksc6r = ((__mksav5515ed1famksaz6.box.gradient and __mksav5515ed1famksaz6.box.color2) or __mksav5515ed1famksaz6.box.color)
+        local _mksb9p515ed406mksc6u = math.max(__mksav5515ed1famksaz6.box.thickness, 1)
+        do
+          local _xmksba1515ed412mksc7u = 1
+          _xmksba1515ed412mksc7u = (_xmksba1515ed412mksc7u + 0)
+          if (((18 * 49) == (49 * 18)) and (__mksav5515ed1famksaz6.box.mode == _xmksat8515ed1b5mksatf({34, 79, 83, 80, 72, 86}, 63, 928))) then
+            local __mksb9q515ed407mksc6x = (_mmksb7q515ed3bfmksc0x.box.edgeN or #_mmksb7q515ed3bfmksc0x.box.edge)
+            do
+              local _mksb9u515ed40bmksc79 = 1
+              _mksb9u515ed40bmksc79 = (_mksb9u515ed40bmksc79 + 0)
+              for _xmksb9r515ed408mksc70 = 1, __mksb9q515ed407mksc6x do
+                do
+                  local _zmksb9s515ed409mksc73 = 1
+                  _zmksb9s515ed409mksc73 = (_zmksb9s515ed409mksc73 + 0)
+                  _mmksb7q515ed3bfmksc0x.box.edge[_xmksb9r515ed408mksc70].Visible = false
+                end
+                do
+                  local _mmksb9t515ed40amksc76 = 1
+                  _mmksb9t515ed40amksc76 = (_mmksb9t515ed40amksc76 + 0)
+                  _mmksb7q515ed3bfmksc0x.box.edgeO[_xmksb9r515ed408mksc70].Visible = false
+                end
+              end
+            end
+            do
+              local __mksb9v515ed40cmksc7c = 1
+              __mksb9v515ed40cmksc7c = (__mksb9v515ed40cmksc7c + 0)
+              _mksb45515ed33emksbq6(_mmksb7q515ed3bfmksc0x, _mmksb9j515ed400mksc6c, _mksb9k515ed401mksc6f, __mksb9l515ed402mksc6i, _xmksb9m515ed403mksc6l, _zmksb9n515ed404mksc6o, _mmksb9o515ed405mksc6r, _mksb9p515ed406mksc6u, __mksav5515ed1famksaz6.box.outline, __mksav5515ed1famksaz6.box.outline_color)
+            end
+          else
+            do
+              local _mksb9z515ed410mksc7o = 1
+              _mksb9z515ed410mksc7o = (_mksb9z515ed410mksc7o + 0)
+              for _xmksb9w515ed40dmksc7f = 1, 8 do
+                do
+                  local _zmksb9x515ed40emksc7i = 1
+                  _zmksb9x515ed40emksc7i = (_zmksb9x515ed40emksc7i + 0)
+                  _mmksb7q515ed3bfmksc0x.box.c[_xmksb9w515ed40dmksc7f].Visible = false
+                end
+                do
+                  local _mmksb9y515ed40fmksc7l = 1
+                  _mmksb9y515ed40fmksc7l = (_mmksb9y515ed40fmksc7l + 0)
+                  _mmksb7q515ed3bfmksc0x.box.co[_xmksb9w515ed40dmksc7f].Visible = false
+                end
+              end
+            end
+            do
+              local __mksba0515ed411mksc7r = 1
+              __mksba0515ed411mksc7r = (__mksba0515ed411mksc7r + 0)
+              _xmksb5q515ed377mksbux(_mmksb7q515ed3bfmksc0x, _mmksb9j515ed400mksc6c, _mksb9k515ed401mksc6f, __mksb9l515ed402mksc6i, _xmksb9m515ed403mksc6l, _zmksb9n515ed404mksc6o, _mmksb9o515ed405mksc6r, _mksb9p515ed406mksc6u, __mksav5515ed1famksaz6.box.outline, __mksav5515ed1famksaz6.box.outline_color, __mksav5515ed1famksaz6.box.gradient)
+            end
+          end
+        end
+        do
+          local __mksbaa515ed41bmksc8l = 1
+          __mksbaa515ed41bmksc8l = (__mksbaa515ed41bmksc8l + 0)
+          if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and __mksav5515ed1famksaz6.box.fill) then
+            do
+              local _zmksba2515ed413mksc7x = 1
+              _zmksba2515ed413mksc7x = (_zmksba2515ed413mksc7x + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Position = Vector2.new(_mmksb9j515ed400mksc6c, _mksb9k515ed401mksc6f)
+            end
+            do
+              local _mmksba3515ed414mksc80 = 1
+              _mmksba3515ed414mksc80 = (_mmksba3515ed414mksc80 + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Size = Vector2.new(__mksb9l515ed402mksc6i, _xmksb9m515ed403mksc6l)
+            end
+            do
+              local _mksba4515ed415mksc83 = 1
+              _mksba4515ed415mksc83 = (_mksba4515ed415mksc83 + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Filled = true
+            end
+            do
+              local __mksba5515ed416mksc86 = 1
+              __mksba5515ed416mksc86 = (__mksba5515ed416mksc86 + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Color = __mksav5515ed1famksaz6.box.fill_color
+            end
+            do
+              local _xmksba6515ed417mksc89 = 1
+              _xmksba6515ed417mksc89 = (_xmksba6515ed417mksc89 + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.ZIndex = 1
+            end
+            do
+              local _zmksba7515ed418mksc8c = 1
+              _zmksba7515ed418mksc8c = (_zmksba7515ed418mksc8c + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Transparency = math.clamp((1 - __mksav5515ed1famksaz6.box.fill_transparency), 0.05, 1)
+            end
+            do
+              local _mmksba8515ed419mksc8f = 1
+              _mmksba8515ed419mksc8f = (_mmksba8515ed419mksc8f + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Visible = true
+            end
+          else
+            do
+              local _mksba9515ed41amksc8i = 1
+              _mksba9515ed41amksc8i = (_mksba9515ed41amksc8i + 0)
+              _mmksb7q515ed3bfmksc0x.box.fill.Visible = false
+            end
+          end
+        end
+      else
+        do
+          local _xmksbab515ed41cmksc8o = 1
+          _xmksbab515ed41cmksc8o = (_xmksbab515ed41cmksc8o + 0)
+          _zmksb7a515ed3afmksbzl(_mmksb7q515ed3bfmksc0x)
+        end
+      end
+    end
+    do
+      local _mmksbbh515ed446mkscc6 = 1
+      _mmksbbh515ed446mkscc6 = (_mmksbbh515ed446mkscc6 + 0)
+      if (((63 * 95) == (95 * 63)) and __mksav5515ed1famksaz6.skeleton.enabled) then
+        local _mmksbad515ed41emksc8u = __mksb2x515ed312mksbmi(_mksb7r515ed3c0mksc10, __mksb7s515ed3c1mksc13)
+        do
+          local _xmksbag515ed421mksc93 = 1
+          _xmksbag515ed421mksc93 = (_xmksbag515ed421mksc93 + 0)
+          for _mksbae515ed41fmksc8x = 1, #_mmksb7q515ed3bfmksc0x.sk.lines do
+            do
+              local __mksbaf515ed420mksc90 = 1
+              __mksbaf515ed420mksc90 = (__mksbaf515ed420mksc90 + 0)
+              _mmksb7q515ed3bfmksc0x.sk.lines[_mksbae515ed41fmksc8x].Visible = false
+            end
+          end
+        end
+        do
+          local _zmksbb1515ed436mkscau = 1
+          _zmksbb1515ed436mkscau = (_zmksbb1515ed436mkscau + 0)
+          for _zmksbah515ed422mksc96, _mmksbai515ed423mksc99 in ipairs(_mmksbad515ed41emksc8u) do
+            local _mksbaj515ed424mksc9c = _mmksb7q515ed3bfmksc0x.sk.lines[_zmksbah515ed422mksc96]
+            do
+              local __mksbak515ed425mksc9f = 1
+              __mksbak515ed425mksc9f = (__mksbak515ed425mksc9f + 0)
+              if (((6 + 87) == 93) and not _mksbaj515ed424mksc9c) then
+                break
+              end
+            end
+            local _xmksbal515ed426mksc9i, _zmksbam515ed427mksc9l = _mmksbai515ed423mksc99[1], _mmksbai515ed423mksc99[2]
+            do
+              local _xmksbb0515ed435mkscar = 1
+              _xmksbb0515ed435mkscar = (_xmksbb0515ed435mkscar + 0)
+              if (((91 * 74) == (74 * 91)) and (_xmksbal515ed426mksc9i and _zmksbam515ed427mksc9l)) then
+                local _mmksban515ed428mksc9o, _mksbao515ed429mksc9r = _mmksaw2515ed21bmksb1x(_xmksbal515ed426mksc9i.Position)
+                local __mksbap515ed42amksc9u, _xmksbaq515ed42bmksc9x = _mmksaw2515ed21bmksb1x(_zmksbam515ed427mksc9l.Position)
+                do
+                  local __mksbaz515ed434mkscao = 1
+                  __mksbaz515ed434mkscao = (__mksbaz515ed434mkscao + 0)
+                  if (((24 + 96) == 120) and (_mksbao515ed429mksc9r and _xmksbaq515ed42bmksc9x)) then
+                    local _zmksbar515ed42cmksca0 = __mksav5515ed1famksaz6.skeleton.color
+                    do
+                      local _mksbat515ed42emksca6 = 1
+                      _mksbat515ed42emksca6 = (_mksbat515ed42emksca6 + 0)
+                      if (((95 + 7) == 102) and __mksav5515ed1famksaz6.skeleton.gradient) then
+                        do
+                          local _mmksbas515ed42dmksca3 = 1
+                          _mmksbas515ed42dmksca3 = (_mmksbas515ed42dmksca3 + 0)
+                          _zmksbar515ed42cmksca0 = _mmksb3u515ed333mksbp9(__mksav5515ed1famksaz6.skeleton.color, __mksav5515ed1famksaz6.skeleton.color2, (((_zmksbah515ed422mksc96 - 1)) / math.max((#_mmksbad515ed41emksc8u - 1), 1)))
+                        end
+                      end
+                    end
+                    do
+                      local __mksbau515ed42fmksca9 = 1
+                      __mksbau515ed42fmksca9 = (__mksbau515ed42fmksca9 + 0)
+                      _mksbaj515ed424mksc9c.From = _mmksban515ed428mksc9o
+                    end
+                    do
+                      local _xmksbav515ed430mkscac = 1
+                      _xmksbav515ed430mkscac = (_xmksbav515ed430mkscac + 0)
+                      _mksbaj515ed424mksc9c.To = __mksbap515ed42amksc9u
+                    end
+                    do
+                      local _zmksbaw515ed431mkscaf = 1
+                      _zmksbaw515ed431mkscaf = (_zmksbaw515ed431mkscaf + 0)
+                      _mksbaj515ed424mksc9c.Color = _zmksbar515ed42cmksca0
+                    end
+                    do
+                      local _mmksbax515ed432mkscai = 1
+                      _mmksbax515ed432mkscai = (_mmksbax515ed432mkscai + 0)
+                      _mksbaj515ed424mksc9c.Thickness = __mksav5515ed1famksaz6.skeleton.thickness
+                    end
+                    do
+                      local _mksbay515ed433mkscal = 1
+                      _mksbay515ed433mkscal = (_mksbay515ed433mkscal + 0)
+                      _mksbaj515ed424mksc9c.Visible = true
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        do
+          local __mksbbe515ed443mkscbx = 1
+          __mksbbe515ed443mkscbx = (__mksbbe515ed443mkscbx + 0)
+          if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and __mksav5515ed1famksaz6.skeleton.headdot) then
+            local _mmksbb2515ed437mkscax = _mksb2r515ed30cmksbm0(_mksb7r515ed3c0mksc10, _xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928))
+            do
+              local _mmksbbc515ed441mkscbr = 1
+              _mmksbbc515ed441mkscbr = (_mmksbbc515ed441mkscbr + 0)
+              if (((95 + 93) == 188) and _mmksbb2515ed437mkscax) then
+                local _mksbb3515ed438mkscb0, __mksbb4515ed439mkscb3 = _mmksaw2515ed21bmksb1x(_mmksbb2515ed437mkscax.Position)
+                do
+                  local _xmksbba515ed43fmkscbl = 1
+                  _xmksbba515ed43fmkscbl = (_xmksbba515ed43fmkscbl + 0)
+                  if (((88 * 18) == (18 * 88)) and __mksbb4515ed439mkscb3) then
+                    do
+                      local _xmksbb5515ed43amkscb6 = 1
+                      _xmksbb5515ed43amkscb6 = (_xmksbb5515ed43amkscb6 + 0)
+                      _mmksb7q515ed3bfmksc0x.sk.dot.Position = _mksbb3515ed438mkscb0
+                    end
+                    do
+                      local _zmksbb6515ed43bmkscb9 = 1
+                      _zmksbb6515ed43bmkscb9 = (_zmksbb6515ed43bmkscb9 + 0)
+                      _mmksb7q515ed3bfmksc0x.sk.dot.Radius = __mksav5515ed1famksaz6.skeleton.headdot_size
+                    end
+                    do
+                      local _mmksbb7515ed43cmkscbc = 1
+                      _mmksbb7515ed43cmkscbc = (_mmksbb7515ed43cmkscbc + 0)
+                      _mmksb7q515ed3bfmksc0x.sk.dot.Color = __mksav5515ed1famksaz6.skeleton.headdot_color
+                    end
+                    do
+                      local _mksbb8515ed43dmkscbf = 1
+                      _mksbb8515ed43dmkscbf = (_mksbb8515ed43dmkscbf + 0)
+                      _mmksb7q515ed3bfmksc0x.sk.dot.Visible = true
+                    end
+                  else
+                    do
+                      local __mksbb9515ed43emkscbi = 1
+                      __mksbb9515ed43emkscbi = (__mksbb9515ed43emkscbi + 0)
+                      _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+                    end
+                  end
+                end
+              else
+                do
+                  local _zmksbbb515ed440mkscbo = 1
+                  _zmksbbb515ed440mkscbo = (_zmksbbb515ed440mkscbo + 0)
+                  _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+                end
+              end
+            end
+          else
+            do
+              local _mksbbd515ed442mkscbu = 1
+              _mksbbd515ed442mkscbu = (_mksbbd515ed442mkscbu + 0)
+              _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+            end
+          end
+        end
+      else
+        do
+          local _xmksbbf515ed444mkscc0 = 1
+          _xmksbbf515ed444mkscc0 = (_xmksbbf515ed444mkscc0 + 0)
+          _xmksaxy515ed25fmksb7l(_mmksb7q515ed3bfmksc0x.sk.lines)
+        end
+        do
+          local _zmksbbg515ed445mkscc3 = 1
+          _zmksbbg515ed445mkscc3 = (_zmksbbg515ed445mkscc3 + 0)
+          _mmksb7q515ed3bfmksc0x.sk.dot.Visible = false
+        end
+      end
+    end
+    do
+      local __mksbc8515ed461mkscef = 1
+      __mksbc8515ed461mkscef = (__mksbc8515ed461mkscef + 0)
+      if (((93 + 80) == 173) and (__mksav5515ed1famksaz6.tracer.enabled and _xmksb8i515ed3dbmksc39)) then
+        local _mksbbi515ed447mkscc9
+        local __mksbbj515ed448mksccc = _mksav4515ed1f9mksaz3.ViewportSize
+        do
+          local _xmksbbp515ed44emksccu = 1
+          _xmksbbp515ed44emksccu = (_xmksbbp515ed44emksccu + 0)
+          if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (__mksav5515ed1famksaz6.tracer.origin == _xmksat8515ed1b5mksatf({34, 69, 79, 86, 72, 86}, 63, 928))) then
+            do
+              local _xmksbbk515ed449mksccf = 1
+              _xmksbbk515ed449mksccf = (_xmksbbk515ed449mksccf + 0)
+              _mksbbi515ed447mkscc9 = (__mksbbj515ed448mksccc / 2)
+            end
+          elseif ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (__mksav5515ed1famksaz6.tracer.origin == _xmksat8515ed1b5mksatf({51, 79, 81}, 63, 928))) then
+            do
+              local _zmksbbl515ed44amkscci = 1
+              _zmksbbl515ed44amkscci = (_zmksbbl515ed44amkscci + 0)
+              _mksbbi515ed447mkscc9 = Vector2.new((__mksbbj515ed448mksccc.X / 2), 0)
+            end
+          elseif (((46 + 28) == 74) and (__mksav5515ed1famksaz6.tracer.origin == _xmksat8515ed1b5mksatf({44, 79, 86, 85, 72}, 63, 928))) then
+            local _mmksbbm515ed44bmksccl = _mmksav3515ed1f8mksaz0:GetMouse()
+            do
+              local _mksbbn515ed44cmkscco = 1
+              _mksbbn515ed44cmkscco = (_mksbbn515ed44cmkscco + 0)
+              _mksbbi515ed447mkscc9 = Vector2.new(_mmksbbm515ed44bmksccl.X, (_mmksbbm515ed44bmksccl.Y + (game:GetService(_xmksat8515ed1b5mksatf({38, 85, 74, 53, 72, 86, 91, 79, 74, 77}, 63, 928)):GetGuiInset().Y)))
+            end
+          else
+            do
+              local __mksbbo515ed44dmksccr = 1
+              __mksbbo515ed44dmksccr = (__mksbbo515ed44dmksccr + 0)
+              _mksbbi515ed447mkscc9 = Vector2.new((__mksbbj515ed448mksccc.X / 2), __mksbbj515ed448mksccc.Y)
+            end
+          end
+        end
+        local _zmksbbq515ed44fmksccx = Vector2.new((_mmksb9j515ed400mksc6c + (__mksb9l515ed402mksc6i / 2)), (_mksb9k515ed401mksc6f + _xmksb9m515ed403mksc6l))
+        local _mmksbbr515ed450mkscd0 = math.max(__mksav5515ed1famksaz6.tracer.thickness, 1)
+        do
+          local _xmksbbz515ed458mkscdo = 1
+          _xmksbbz515ed458mkscdo = (_xmksbbz515ed458mkscdo + 0)
+          if ((((89 * 10) % 10) == 0) and __mksav5515ed1famksaz6.tracer.outline) then
+            do
+              local _mksbbs515ed451mkscd3 = 1
+              _mksbbs515ed451mkscd3 = (_mksbbs515ed451mkscd3 + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.From = _mksbbi515ed447mkscc9
+            end
+            do
+              local __mksbbt515ed452mkscd6 = 1
+              __mksbbt515ed452mkscd6 = (__mksbbt515ed452mkscd6 + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.To = _zmksbbq515ed44fmksccx
+            end
+            do
+              local _xmksbbu515ed453mkscd9 = 1
+              _xmksbbu515ed453mkscd9 = (_xmksbbu515ed453mkscd9 + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Color = __mksav5515ed1famksaz6.tracer.outline_color
+            end
+            do
+              local _zmksbbv515ed454mkscdc = 1
+              _zmksbbv515ed454mkscdc = (_zmksbbv515ed454mkscdc + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Thickness = (_mmksbbr515ed450mkscd0 + 2)
+            end
+            do
+              local _mmksbbw515ed455mkscdf = 1
+              _mmksbbw515ed455mkscdf = (_mmksbbw515ed455mkscdf + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.ZIndex = 2
+            end
+            do
+              local _mksbbx515ed456mkscdi = 1
+              _mksbbx515ed456mkscdi = (_mksbbx515ed456mkscdi + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Visible = true
+            end
+          else
+            do
+              local __mksbby515ed457mkscdl = 1
+              __mksbby515ed457mkscdl = (__mksbby515ed457mkscdl + 0)
+              _mmksb7q515ed3bfmksc0x.tr.outline.Visible = false
+            end
+          end
+        end
+        do
+          local _zmksbc0515ed459mkscdr = 1
+          _zmksbc0515ed459mkscdr = (_zmksbc0515ed459mkscdr + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.From = _mksbbi515ed447mkscc9
+        end
+        do
+          local _mmksbc1515ed45amkscdu = 1
+          _mmksbc1515ed45amkscdu = (_mmksbc1515ed45amkscdu + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.To = _zmksbbq515ed44fmksccx
+        end
+        do
+          local _mksbc2515ed45bmkscdx = 1
+          _mksbc2515ed45bmkscdx = (_mksbc2515ed45bmkscdx + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.Color = __mksav5515ed1famksaz6.tracer.color
+        end
+        do
+          local __mksbc3515ed45cmksce0 = 1
+          __mksbc3515ed45cmksce0 = (__mksbc3515ed45cmksce0 + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.Thickness = _mmksbbr515ed450mkscd0
+        end
+        do
+          local _xmksbc4515ed45dmksce3 = 1
+          _xmksbc4515ed45dmksce3 = (_xmksbc4515ed45dmksce3 + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.ZIndex = 3
+        end
+        do
+          local _zmksbc5515ed45emksce6 = 1
+          _zmksbc5515ed45emksce6 = (_zmksbc5515ed45emksce6 + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.Visible = true
+        end
+      else
+        do
+          local _mmksbc6515ed45fmksce9 = 1
+          _mmksbc6515ed45fmksce9 = (_mmksbc6515ed45fmksce9 + 0)
+          _mmksb7q515ed3bfmksc0x.tr.line.Visible = false
+        end
+        do
+          local _mksbc7515ed460mkscec = 1
+          _mksbc7515ed460mkscec = (_mksbc7515ed460mkscec + 0)
+          _mmksb7q515ed3bfmksc0x.tr.outline.Visible = false
+        end
+      end
+    end
+    do
+      local _mmksbcb515ed464mksceo = 1
+      _mmksbcb515ed464mksceo = (_mmksbcb515ed464mksceo + 0)
+      if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and __mksav5515ed1famksaz6.chams.enabled) then
+        do
+          local _xmksbc9515ed462mkscei = 1
+          _xmksbc9515ed462mkscei = (_xmksbc9515ed462mkscei + 0)
+          _zmksb02515ed2abmksbdx(_zmksb7p515ed3bemksc0u, _mksb7r515ed3c0mksc10)
+        end
+      elseif ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _zmksaw1515ed21amksb1u[_zmksb7p515ed3bemksc0u]) then
+        do
+          local _zmksbca515ed463mkscel = 1
+          _zmksbca515ed463mkscel = (_zmksbca515ed463mkscel + 0)
+          _zmksazs515ed2a1mksbd3(_zmksb7p515ed3bemksc0u)
+        end
+      end
+    end
+    do
+      local __mksbcd515ed466mksceu = 1
+      __mksbcd515ed466mksceu = (__mksbcd515ed466mksceu + 0)
+      if ((((2 * 9) % 9) == 0) and ((not _xmksb8i515ed3dbmksc39 or (__mksb9l515ed402mksc6i < 1)) or (_xmksb9m515ed403mksc6l < 1))) then
+        do
+          local _mksbcc515ed465mkscer = 1
+          _mksbcc515ed465mkscer = (_mksbcc515ed465mkscer + 0)
+          _xmksb6u515ed39fmksby9(_mmksb7q515ed3bfmksc0x)
+        end
+        return
+      end
+    end
+    do
+      local _zmksben515ed4b8mksclo = 1
+      _zmksben515ed4b8mksclo = (_zmksben515ed4b8mksclo + 0)
+      if (((59 + 23) == 82) and __mksav5515ed1famksaz6.health.enabled) then
+        local _xmksbce515ed467mkscex = math.max(__mksb7s515ed3c1mksc13.MaxHealth, 1)
+        local _zmksbcf515ed468mkscf0 = math.clamp(__mksb7s515ed3c1mksc13.Health, 0, _xmksbce515ed467mkscex)
+        local _mmksbcg515ed469mkscf3 = math.clamp((_zmksbcf515ed468mkscf0 / _xmksbce515ed467mkscex), 0, 1)
+        local _mksbch515ed46amkscf6 = math.max(__mksav5515ed1famksaz6.health.width, 2)
+        local __mksbci515ed46bmkscf9 = ((_mmksb9j515ed400mksc6c - _mksbch515ed46amkscf6) - 5)
+        local _xmksbcj515ed46cmkscfc = _mksb9k515ed401mksc6f
+        local _zmksbck515ed46dmkscff = _xmksb9m515ed403mksc6l
+        local _mmksbcl515ed46emkscfi = math.clamp((__mksav5515ed1famksaz6.health.segments or 12), 4, 16)
+        do
+          local __mksbcn515ed470mkscfo = 1
+          __mksbcn515ed470mkscfo = (__mksbcn515ed470mkscfo + 0)
+          if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_mmksbcl515ed46emkscfi > #_mmksb7q515ed3bfmksc0x.hp.segs)) then
+            do
+              local _mksbcm515ed46fmkscfl = 1
+              _mksbcm515ed46fmkscfl = (_mksbcm515ed46fmkscfl + 0)
+              _mmksbcl515ed46emkscfi = #_mmksb7q515ed3bfmksc0x.hp.segs
+            end
+          end
+        end
+        local _xmksbco515ed471mkscfr = 1
+        local _zmksbcp515ed472mkscfu = (__mksbci515ed46bmkscf9 + _xmksbco515ed471mkscfr)
+        local _mmksbcq515ed473mkscfx = (_xmksbcj515ed46cmkscfc + _xmksbco515ed471mkscfr)
+        local _mksbcr515ed474mkscg0 = math.max((_mksbch515ed46amkscf6 - (_xmksbco515ed471mkscfr * 2)), 1)
+        local __mksbcs515ed475mkscg3 = math.max((_zmksbck515ed46dmkscff - (_xmksbco515ed471mkscfr * 2)), 1)
+        do
+          local _xmksbct515ed476mkscg6 = 1
+          _xmksbct515ed476mkscg6 = (_xmksbct515ed476mkscg6 + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Position = Vector2.new(__mksbci515ed46bmkscf9, _xmksbcj515ed46cmkscfc)
+        end
+        do
+          local _zmksbcu515ed477mkscg9 = 1
+          _zmksbcu515ed477mkscg9 = (_zmksbcu515ed477mkscg9 + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Size = Vector2.new(_mksbch515ed46amkscf6, _zmksbck515ed46dmkscff)
+        end
+        do
+          local _mmksbcv515ed478mkscgc = 1
+          _mmksbcv515ed478mkscgc = (_mmksbcv515ed478mkscgc + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Color = Color3.fromRGB(20, 20, 20)
+        end
+        do
+          local _mksbcw515ed479mkscgf = 1
+          _mksbcw515ed479mkscgf = (_mksbcw515ed479mkscgf + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Transparency = 0.4
+        end
+        do
+          local __mksbcx515ed47amkscgi = 1
+          __mksbcx515ed47amkscgi = (__mksbcx515ed47amkscgi + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Filled = true
+        end
+        do
+          local _xmksbcy515ed47bmkscgl = 1
+          _xmksbcy515ed47bmkscgl = (_xmksbcy515ed47bmkscgl + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Visible = true
+        end
+        do
+          local _mksbd1515ed47emkscgu = 1
+          _mksbd1515ed47emkscgu = (_mksbd1515ed47emkscgu + 0)
+          for _zmksbcz515ed47cmkscgo = 1, #_mmksb7q515ed3bfmksc0x.hp.segs do
+            do
+              local _mmksbd0515ed47dmkscgr = 1
+              _mmksbd0515ed47dmkscgr = (_mmksbd0515ed47dmkscgr + 0)
+              _mmksb7q515ed3bfmksc0x.hp.segs[_zmksbcz515ed47cmkscgo].Visible = false
+            end
+          end
+        end
+        local __mksbd2515ed47fmkscgx = math.floor(((_mmksbcl515ed46emkscfi * _mmksbcg515ed469mkscf3) + 1e-6))
+        do
+          local _zmksbd4515ed481mksch3 = 1
+          _zmksbd4515ed481mksch3 = (_zmksbd4515ed481mksch3 + 0)
+          if (((28 + 53) == 81) and ((_mmksbcg515ed469mkscf3 > 0) and (__mksbd2515ed47fmkscgx < 1))) then
+            do
+              local _xmksbd3515ed480mksch0 = 1
+              _xmksbd3515ed480mksch0 = (_xmksbd3515ed480mksch0 + 0)
+              __mksbd2515ed47fmkscgx = 1
+            end
+          end
+        end
+        do
+          local _mksbd6515ed483mksch9 = 1
+          _mksbd6515ed483mksch9 = (_mksbd6515ed483mksch9 + 0)
+          if (((45 * 43) == (43 * 45)) and (_mmksbcg515ed469mkscf3 >= 0.999)) then
+            do
+              local _mmksbd5515ed482mksch6 = 1
+              _mmksbd5515ed482mksch6 = (_mmksbd5515ed482mksch6 + 0)
+              __mksbd2515ed47fmkscgx = _mmksbcl515ed46emkscfi
+            end
+          end
+        end
+        do
+          local _mmksbdu515ed49bmkscj9 = 1
+          _mmksbdu515ed49bmkscj9 = (_mmksbdu515ed49bmkscj9 + 0)
+          for __mksbd7515ed484mkschc = 1, __mksbd2515ed47fmkscgx do
+            local _xmksbd8515ed485mkschf = _mmksb7q515ed3bfmksc0x.hp.segs[__mksbd7515ed484mkschc]
+            do
+              local _zmksbd9515ed486mkschi = 1
+              _zmksbd9515ed486mkschi = (_zmksbd9515ed486mkschi + 0)
+              if ((((29 * 11) % 11) == 0) and not _xmksbd8515ed485mkschf) then
+                break
+              end
+            end
+            local _mmksbda515ed487mkschl = (((__mksbd7515ed484mkschc - 0.5)) / _mmksbcl515ed46emkscfi)
+            local _mksbdb515ed488mkscho = _zmksb3y515ed337mksbpl(__mksav5515ed1famksaz6.health.color_low, __mksav5515ed1famksaz6.health.color_mid, __mksav5515ed1famksaz6.health.color_high, _mmksbda515ed487mkschl)
+            local __mksbdc515ed489mkschr = math.floor(((((__mksbd7515ed484mkschc - 1)) * __mksbcs515ed475mkscg3) / _mmksbcl515ed46emkscfi))
+            local _xmksbdd515ed48amkschu = math.floor(((__mksbd7515ed484mkschc * __mksbcs515ed475mkscg3) / _mmksbcl515ed46emkscfi))
+            local _zmksbde515ed48bmkschx = ((_mmksbcq515ed473mkscfx + __mksbcs515ed475mkscg3) - _xmksbdd515ed48amkschu)
+            local _mmksbdf515ed48cmksci0 = (_xmksbdd515ed48amkschu - __mksbdc515ed489mkschr)
+            do
+              local __mksbdh515ed48emksci6 = 1
+              __mksbdh515ed48emksci6 = (__mksbdh515ed48emksci6 + 0)
+              if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (_mmksbdf515ed48cmksci0 < 1)) then
+                do
+                  local _mksbdg515ed48dmksci3 = 1
+                  _mksbdg515ed48dmksci3 = (_mksbdg515ed48dmksci3 + 0)
+                  _mmksbdf515ed48cmksci0 = 1
+                end
+              end
+            end
+            do
+              local _mmksbdk515ed491mkscif = 1
+              _mmksbdk515ed491mkscif = (_mmksbdk515ed491mkscif + 0)
+              if (((18 * 49) == (49 * 18)) and (_zmksbde515ed48bmkschx < _mmksbcq515ed473mkscfx)) then
+                do
+                  local _xmksbdi515ed48fmksci9 = 1
+                  _xmksbdi515ed48fmksci9 = (_xmksbdi515ed48fmksci9 + 0)
+                  _mmksbdf515ed48cmksci0 = (_mmksbdf515ed48cmksci0 - ((_mmksbcq515ed473mkscfx - _zmksbde515ed48bmkschx)))
+                end
+                do
+                  local _zmksbdj515ed490mkscic = 1
+                  _zmksbdj515ed490mkscic = (_zmksbdj515ed490mkscic + 0)
+                  _zmksbde515ed48bmkschx = _mmksbcq515ed473mkscfx
+                end
+              end
+            end
+            do
+              local __mksbdm515ed493mkscil = 1
+              __mksbdm515ed493mkscil = (__mksbdm515ed493mkscil + 0)
+              if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and ((_zmksbde515ed48bmkschx + _mmksbdf515ed48cmksci0) > (_mmksbcq515ed473mkscfx + __mksbcs515ed475mkscg3))) then
+                do
+                  local _mksbdl515ed492mkscii = 1
+                  _mksbdl515ed492mkscii = (_mksbdl515ed492mkscii + 0)
+                  _mmksbdf515ed48cmksci0 = ((_mmksbcq515ed473mkscfx + __mksbcs515ed475mkscg3) - _zmksbde515ed48bmkschx)
+                end
+              end
+            end
+            do
+              local _zmksbdt515ed49amkscj6 = 1
+              _zmksbdt515ed49amkscj6 = (_zmksbdt515ed49amkscj6 + 0)
+              if (((63 * 95) == (95 * 63)) and (_mmksbdf515ed48cmksci0 > 0)) then
+                do
+                  local _xmksbdn515ed494mkscio = 1
+                  _xmksbdn515ed494mkscio = (_xmksbdn515ed494mkscio + 0)
+                  _xmksbd8515ed485mkschf.Position = Vector2.new(_zmksbcp515ed472mkscfu, _zmksbde515ed48bmkschx)
+                end
+                do
+                  local _zmksbdo515ed495mkscir = 1
+                  _zmksbdo515ed495mkscir = (_zmksbdo515ed495mkscir + 0)
+                  _xmksbd8515ed485mkschf.Size = Vector2.new(_mksbcr515ed474mkscg0, _mmksbdf515ed48cmksci0)
+                end
+                do
+                  local _mmksbdp515ed496mksciu = 1
+                  _mmksbdp515ed496mksciu = (_mmksbdp515ed496mksciu + 0)
+                  _xmksbd8515ed485mkschf.Color = _mksbdb515ed488mkscho
+                end
+                do
+                  local _mksbdq515ed497mkscix = 1
+                  _mksbdq515ed497mkscix = (_mksbdq515ed497mkscix + 0)
+                  _xmksbd8515ed485mkschf.Filled = true
+                end
+                do
+                  local __mksbdr515ed498mkscj0 = 1
+                  __mksbdr515ed498mkscj0 = (__mksbdr515ed498mkscj0 + 0)
+                  _xmksbd8515ed485mkschf.Transparency = 1
+                end
+                do
+                  local _xmksbds515ed499mkscj3 = 1
+                  _xmksbds515ed499mkscj3 = (_xmksbds515ed499mkscj3 + 0)
+                  _xmksbd8515ed485mkschf.Visible = true
+                end
+              end
+            end
+          end
+        end
+        do
+          local _xmksbe2515ed4a3mkscjx = 1
+          _xmksbe2515ed4a3mkscjx = (_xmksbe2515ed4a3mkscjx + 0)
+          if (((6 + 87) == 93) and __mksav5515ed1famksaz6.health.outline) then
+            do
+              local _mksbdv515ed49cmkscjc = 1
+              _mksbdv515ed49cmkscjc = (_mksbdv515ed49cmkscjc + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Position = Vector2.new(__mksbci515ed46bmkscf9, _xmksbcj515ed46cmkscfc)
+            end
+            do
+              local __mksbdw515ed49dmkscjf = 1
+              __mksbdw515ed49dmkscjf = (__mksbdw515ed49dmkscjf + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Size = Vector2.new(_mksbch515ed46amkscf6, _zmksbck515ed46dmkscff)
+            end
+            do
+              local _xmksbdx515ed49emkscji = 1
+              _xmksbdx515ed49emkscji = (_xmksbdx515ed49emkscji + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Color = Color3.fromRGB(0, 0, 0)
+            end
+            do
+              local _zmksbdy515ed49fmkscjl = 1
+              _zmksbdy515ed49fmkscjl = (_zmksbdy515ed49fmkscjl + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Thickness = 1
+            end
+            do
+              local _mmksbdz515ed4a0mkscjo = 1
+              _mmksbdz515ed4a0mkscjo = (_mmksbdz515ed4a0mkscjo + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Filled = false
+            end
+            do
+              local _mksbe0515ed4a1mkscjr = 1
+              _mksbe0515ed4a1mkscjr = (_mksbe0515ed4a1mkscjr + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Visible = true
+            end
+          else
+            do
+              local __mksbe1515ed4a2mkscju = 1
+              __mksbe1515ed4a2mkscju = (__mksbe1515ed4a2mkscju + 0)
+              _mmksb7q515ed3bfmksc0x.hp.outline.Visible = false
+            end
+          end
+        end
+        do
+          local _mksbef515ed4b0mkscl0 = 1
+          _mksbef515ed4b0mkscl0 = (_mksbef515ed4b0mkscl0 + 0)
+          if (((91 * 74) == (74 * 91)) and __mksav5515ed1famksaz6.health.text) then
+            local _zmksbe3515ed4a4mksck0 = string.format(_xmksat8515ed1b5mksatf({4, 68}, 63, 928), math.floor((_zmksbcf515ed468mkscf0 + 0.5)))
+            do
+              local _mmksbe4515ed4a5mksck3 = 1
+              _mmksbe4515ed4a5mksck3 = (_mmksbe4515ed4a5mksck3 + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Text = _zmksbe3515ed4a4mksck0
+            end
+            do
+              local _mksbe5515ed4a6mksck6 = 1
+              _mksbe5515ed4a6mksck6 = (_mksbe5515ed4a6mksck6 + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Color = __mksav5515ed1famksaz6.health.text_color
+            end
+            do
+              local __mksbe6515ed4a7mksck9 = 1
+              __mksbe6515ed4a7mksck9 = (__mksbe6515ed4a7mksck9 + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Size = ((__mksav5515ed1famksaz6.health.text_size or 13))
+            end
+            do
+              local _xmksbe7515ed4a8mksckc = 1
+              _xmksbe7515ed4a8mksckc = (_xmksbe7515ed4a8mksckc + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Center = false
+            end
+            local _zmksbe8515ed4a9mksckf = (((#_zmksbe3515ed4a4mksck0 * 6)) + 2)
+            do
+              local __mksbeb515ed4acmkscko = 1
+              __mksbeb515ed4acmkscko = (__mksbeb515ed4acmkscko + 0)
+              pcall(function()
+                do
+                  local _mksbea515ed4abmksckl = 1
+                  _mksbea515ed4abmksckl = (_mksbea515ed4abmksckl + 0)
+                  if (((24 + 96) == 120) and _mmksb7q515ed3bfmksc0x.hp.text.TextBounds) then
+                    do
+                      local _mmksbe9515ed4aamkscki = 1
+                      _mmksbe9515ed4aamkscki = (_mmksbe9515ed4aamkscki + 0)
+                      _zmksbe8515ed4a9mksckf = _mmksb7q515ed3bfmksc0x.hp.text.TextBounds.X
+                    end
+                  end
+                end
+              end)
+            end
+            do
+              local _xmksbec515ed4admksckr = 1
+              _xmksbec515ed4admksckr = (_xmksbec515ed4admksckr + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Position = Vector2.new(((__mksbci515ed46bmkscf9 - _zmksbe8515ed4a9mksckf) - 2), _xmksbcj515ed46cmkscfc)
+            end
+            do
+              local _zmksbed515ed4aemkscku = 1
+              _zmksbed515ed4aemkscku = (_zmksbed515ed4aemkscku + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Visible = true
+            end
+          else
+            do
+              local _mmksbee515ed4afmksckx = 1
+              _mmksbee515ed4afmksckx = (_mmksbee515ed4afmksckx + 0)
+              _mmksb7q515ed3bfmksc0x.hp.text.Visible = false
+            end
+          end
+        end
+      else
+        do
+          local __mksbeg515ed4b1mkscl3 = 1
+          __mksbeg515ed4b1mkscl3 = (__mksbeg515ed4b1mkscl3 + 0)
+          _mmksb7q515ed3bfmksc0x.hp.bg.Visible = false
+        end
+        do
+          local _xmksbeh515ed4b2mkscl6 = 1
+          _xmksbeh515ed4b2mkscl6 = (_xmksbeh515ed4b2mkscl6 + 0)
+          _mmksb7q515ed3bfmksc0x.hp.outline.Visible = false
+        end
+        do
+          local _zmksbei515ed4b3mkscl9 = 1
+          _zmksbei515ed4b3mkscl9 = (_zmksbei515ed4b3mkscl9 + 0)
+          _mmksb7q515ed3bfmksc0x.hp.text.Visible = false
+        end
+        do
+          local _xmksbem515ed4b7mkscll = 1
+          _xmksbem515ed4b7mkscll = (_xmksbem515ed4b7mkscll + 0)
+          for _mmksbej515ed4b4mksclc, _mksbek515ed4b5mksclf in ipairs(_mmksb7q515ed3bfmksc0x.hp.segs) do
+            do
+              local __mksbel515ed4b6mkscli = 1
+              __mksbel515ed4b6mkscli = (__mksbel515ed4b6mkscli + 0)
+              _mksbek515ed4b5mksclf.Visible = false
+            end
+          end
+        end
+      end
+    end
+    local _mmksbeo515ed4b9mksclr = (_mksb9k515ed401mksc6f - 15)
+    do
+      local __mksbev515ed4c0mkscmc = 1
+      __mksbev515ed4c0mkscmc = (__mksbev515ed4c0mkscmc + 0)
+      if (((95 + 7) == 102) and __mksav5515ed1famksaz6.flags.username) then
+        do
+          local _mksbep515ed4bamksclu = 1
+          _mksbep515ed4bamksclu = (_mksbep515ed4bamksclu + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Text = _zmksb7p515ed3bemksc0u.Name
+        end
+        do
+          local __mksbeq515ed4bbmksclx = 1
+          __mksbeq515ed4bbmksclx = (__mksbeq515ed4bbmksclx + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Color = __mksav5515ed1famksaz6.flags.username_color
+        end
+        do
+          local _xmksber515ed4bcmkscm0 = 1
+          _xmksber515ed4bcmkscm0 = (_xmksber515ed4bcmkscm0 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Size = (__mksav5515ed1famksaz6.flags.username_size or __mksav5515ed1famksaz6.flags.size)
+        end
+        do
+          local _zmksbes515ed4bdmkscm3 = 1
+          _zmksbes515ed4bdmkscm3 = (_zmksbes515ed4bdmkscm3 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Position = Vector2.new((_mmksb9j515ed400mksc6c + (__mksb9l515ed402mksc6i * 0.5)), _mmksbeo515ed4b9mksclr)
+        end
+        do
+          local _mmksbet515ed4bemkscm6 = 1
+          _mmksbet515ed4bemkscm6 = (_mmksbet515ed4bemkscm6 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Visible = true
+        end
+      else
+        do
+          local _mksbeu515ed4bfmkscm9 = 1
+          _mksbeu515ed4bfmkscm9 = (_mksbeu515ed4bfmkscm9 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.name.Visible = false
+        end
+      end
+    end
+    local _xmksbew515ed4c1mkscmf = ((_mksb9k515ed401mksc6f + _xmksb9m515ed403mksc6l) + 2)
+    do
+      local _mksbf4515ed4c9mkscn3 = 1
+      _mksbf4515ed4c9mkscn3 = (_mksbf4515ed4c9mkscn3 + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and __mksav5515ed1famksaz6.flags.distance) then
+        do
+          local _zmksbex515ed4c2mkscmi = 1
+          _zmksbex515ed4c2mkscmi = (_zmksbex515ed4c2mkscmi + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Text = string.format(_xmksat8515ed1b5mksatf({58, 5, 69, 79, 64}, 63, 928), math.floor((_xmksb83515ed3ccmksc20 + 0.5)))
+        end
+        do
+          local _mmksbey515ed4c3mkscml = 1
+          _mmksbey515ed4c3mkscml = (_mmksbey515ed4c3mkscml + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Color = __mksav5515ed1famksaz6.flags.distance_color
+        end
+        do
+          local _mksbez515ed4c4mkscmo = 1
+          _mksbez515ed4c4mkscmo = (_mksbez515ed4c4mkscmo + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Size = (__mksav5515ed1famksaz6.flags.distance_size or __mksav5515ed1famksaz6.flags.size)
+        end
+        do
+          local __mksbf0515ed4c5mkscmr = 1
+          __mksbf0515ed4c5mkscmr = (__mksbf0515ed4c5mkscmr + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Position = Vector2.new((_mmksb9j515ed400mksc6c + (__mksb9l515ed402mksc6i * 0.5)), _xmksbew515ed4c1mkscmf)
+        end
+        do
+          local _xmksbf1515ed4c6mkscmu = 1
+          _xmksbf1515ed4c6mkscmu = (_xmksbf1515ed4c6mkscmu + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Visible = true
+        end
+        do
+          local _zmksbf2515ed4c7mkscmx = 1
+          _zmksbf2515ed4c7mkscmx = (_zmksbf2515ed4c7mkscmx + 0)
+          _xmksbew515ed4c1mkscmf = (_xmksbew515ed4c1mkscmf + 14)
+        end
+      else
+        do
+          local _mmksbf3515ed4c8mkscn0 = 1
+          _mmksbf3515ed4c8mkscn0 = (_mmksbf3515ed4c8mkscn0 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.dist.Visible = false
+        end
+      end
+    end
+    do
+      local _xmksbfb515ed4d0mkscno = 1
+      _xmksbfb515ed4d0mkscno = (_xmksbfb515ed4d0mkscno + 0)
+      if (((95 + 93) == 188) and __mksav5515ed1famksaz6.flags.weapon) then
+        do
+          local __mksbf5515ed4camkscn6 = 1
+          __mksbf5515ed4camkscn6 = (__mksbf5515ed4camkscn6 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Text = _mmksawh515ed22amksb36(_mksb7r515ed3c0mksc10)
+        end
+        do
+          local _xmksbf6515ed4cbmkscn9 = 1
+          _xmksbf6515ed4cbmkscn9 = (_xmksbf6515ed4cbmkscn9 + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Color = __mksav5515ed1famksaz6.flags.weapon_color
+        end
+        do
+          local _zmksbf7515ed4ccmkscnc = 1
+          _zmksbf7515ed4ccmkscnc = (_zmksbf7515ed4ccmkscnc + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Size = (__mksav5515ed1famksaz6.flags.weapon_size or __mksav5515ed1famksaz6.flags.size)
+        end
+        do
+          local _mmksbf8515ed4cdmkscnf = 1
+          _mmksbf8515ed4cdmkscnf = (_mmksbf8515ed4cdmkscnf + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Position = Vector2.new((_mmksb9j515ed400mksc6c + (__mksb9l515ed402mksc6i * 0.5)), _xmksbew515ed4c1mkscmf)
+        end
+        do
+          local _mksbf9515ed4cemkscni = 1
+          _mksbf9515ed4cemkscni = (_mksbf9515ed4cemkscni + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Visible = true
+        end
+      else
+        do
+          local __mksbfa515ed4cfmkscnl = 1
+          __mksbfa515ed4cfmkscnl = (__mksbfa515ed4cfmkscnl + 0)
+          _mmksb7q515ed3bfmksc0x.flags.weapon.Visible = false
+        end
+      end
+    end
+  end
+  local function _zmksbfc515ed4d1mkscnr(_mmksbfd515ed4d2mkscnu)
+    do
+      local __mksbfk515ed4d9mkscof = 1
+      __mksbfk515ed4d9mkscof = (__mksbfk515ed4d9mkscof + 0)
+      if (((88 * 18) == (18 * 88)) and _xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu]) then
+        do
+          local _mksbfe515ed4d3mkscnx = 1
+          _mksbfe515ed4d3mkscnx = (_mksbfe515ed4d3mkscnx + 0)
+          _xmksay8515ed269mksb8f(_xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu].box)
+        end
+        do
+          local __mksbff515ed4d4mksco0 = 1
+          __mksbff515ed4d4mksco0 = (__mksbff515ed4d4mksco0 + 0)
+          _xmksay8515ed269mksb8f(_xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu].sk)
+        end
+        do
+          local _xmksbfg515ed4d5mksco3 = 1
+          _xmksbfg515ed4d5mksco3 = (_xmksbfg515ed4d5mksco3 + 0)
+          _xmksay8515ed269mksb8f(_xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu].tr)
+        end
+        do
+          local _zmksbfh515ed4d6mksco6 = 1
+          _zmksbfh515ed4d6mksco6 = (_zmksbfh515ed4d6mksco6 + 0)
+          _xmksay8515ed269mksb8f(_xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu].hp)
+        end
+        do
+          local _mmksbfi515ed4d7mksco9 = 1
+          _mmksbfi515ed4d7mksco9 = (_mmksbfi515ed4d7mksco9 + 0)
+          _xmksay8515ed269mksb8f(_xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu].flags)
+        end
+        do
+          local _mksbfj515ed4d8mkscoc = 1
+          _mksbfj515ed4d8mkscoc = (_mksbfj515ed4d8mkscoc + 0)
+          _xmksaw0515ed219mksb1r[_mmksbfd515ed4d2mkscnu] = nil
+        end
+      end
+    end
+    do
+      local _xmksbfl515ed4damkscoi = 1
+      _xmksbfl515ed4damkscoi = (_xmksbfl515ed4damkscoi + 0)
+      _zmksazs515ed2a1mksbd3(_mmksbfd515ed4d2mkscnu)
+    end
+  end
+  do
+    local _zmksbfm515ed4dbmkscol = 1
+    _zmksbfm515ed4dbmkscol = (_zmksbfm515ed4dbmkscol + 0)
+    Players.PlayerRemoving:Connect(_zmksbfc515ed4d1mkscnr)
+  end
+  local _mmksbfn515ed4dcmkscoo = false
+  local _mksbfo515ed4ddmkscor = 0
+  local __mksbfp515ed4demkscou = (1 / 120)
+  do
+    local _mksbgi515ed4fbmkscr9 = 1
+    _mksbgi515ed4fbmkscr9 = (_mksbgi515ed4fbmkscr9 + 0)
+    _zmksav2515ed1f7mksayx.Heartbeat:Connect(function()
+      do
+        local __mksbg4515ed4edmkscq3 = 1
+        __mksbg4515ed4edmkscq3 = (__mksbg4515ed4edmkscq3 + 0)
+        if (((93 + 80) == 173) and not __mksav5515ed1famksaz6.master) then
+          do
+            local _mksbg3515ed4ecmkscq0 = 1
+            _mksbg3515ed4ecmkscq0 = (_mksbg3515ed4ecmkscq0 + 0)
+            if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and not _mmksbfn515ed4dcmkscoo) then
+              do
+                local _zmksbg1515ed4eamkscpu = 1
+                _zmksbg1515ed4eamkscpu = (_zmksbg1515ed4eamkscpu + 0)
+                for _xmksbfq515ed4dfmkscox in pairs(_xmksaw0515ed219mksb1r) do
+                  local _zmksbfr515ed4e0mkscp0 = _xmksaw0515ed219mksb1r[_xmksbfq515ed4dfmkscox]
+                  do
+                    local _mksbfy515ed4e7mkscpl = 1
+                    _mksbfy515ed4e7mkscpl = (_mksbfy515ed4e7mkscpl + 0)
+                    if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and _zmksbfr515ed4e0mkscp0) then
+                      do
+                        local _mmksbfs515ed4e1mkscp3 = 1
+                        _mmksbfs515ed4e1mkscp3 = (_mmksbfs515ed4e1mkscp3 + 0)
+                        _zmksb7a515ed3afmksbzl(_zmksbfr515ed4e0mkscp0)
+                      end
+                      do
+                        local _mksbft515ed4e2mkscp6 = 1
+                        _mksbft515ed4e2mkscp6 = (_mksbft515ed4e2mkscp6 + 0)
+                        _xmksaxy515ed25fmksb7l(_zmksbfr515ed4e0mkscp0.sk.lines)
+                      end
+                      do
+                        local __mksbfu515ed4e3mkscp9 = 1
+                        __mksbfu515ed4e3mkscp9 = (__mksbfu515ed4e3mkscp9 + 0)
+                        _zmksbfr515ed4e0mkscp0.sk.dot.Visible = false
+                      end
+                      do
+                        local _xmksbfv515ed4e4mkscpc = 1
+                        _xmksbfv515ed4e4mkscpc = (_xmksbfv515ed4e4mkscpc + 0)
+                        _zmksbfr515ed4e0mkscp0.tr.line.Visible = false
+                      end
+                      do
+                        local _zmksbfw515ed4e5mkscpf = 1
+                        _zmksbfw515ed4e5mkscpf = (_zmksbfw515ed4e5mkscpf + 0)
+                        _zmksbfr515ed4e0mkscp0.tr.outline.Visible = false
+                      end
+                      do
+                        local _mmksbfx515ed4e6mkscpi = 1
+                        _mmksbfx515ed4e6mkscpi = (_mmksbfx515ed4e6mkscpi + 0)
+                        _xmksb6u515ed39fmksby9(_zmksbfr515ed4e0mkscp0)
+                      end
+                    end
+                  end
+                  do
+                    local _xmksbg0515ed4e9mkscpr = 1
+                    _xmksbg0515ed4e9mkscpr = (_xmksbg0515ed4e9mkscpr + 0)
+                    if (((46 + 28) == 74) and _zmksaw1515ed21amksb1u[_xmksbfq515ed4dfmkscox]) then
+                      do
+                        local __mksbfz515ed4e8mkscpo = 1
+                        __mksbfz515ed4e8mkscpo = (__mksbfz515ed4e8mkscpo + 0)
+                        _zmksazs515ed2a1mksbd3(_xmksbfq515ed4dfmkscox)
+                      end
+                    end
+                  end
+                end
+              end
+              do
+                local _mmksbg2515ed4ebmkscpx = 1
+                _mmksbg2515ed4ebmkscpx = (_mmksbg2515ed4ebmkscpx + 0)
+                _mmksbfn515ed4dcmkscoo = true
+              end
+            end
+          end
+          return
+        end
+      end
+      local _xmksbg5515ed4eemkscq6 = os.clock()
+      do
+        local _zmksbg6515ed4efmkscq9 = 1
+        _zmksbg6515ed4efmkscq9 = (_zmksbg6515ed4efmkscq9 + 0)
+        if ((((89 * 10) % 10) == 0) and ((_xmksbg5515ed4eemkscq6 - _mksbfo515ed4ddmkscor) < __mksbfp515ed4demkscou)) then
+          return
+        end
+      end
+      do
+        local _mmksbg7515ed4f0mkscqc = 1
+        _mmksbg7515ed4f0mkscqc = (_mmksbg7515ed4f0mkscqc + 0)
+        _mksbfo515ed4ddmkscor = _xmksbg5515ed4eemkscq6
+      end
+      do
+        local _mksbg8515ed4f1mkscqf = 1
+        _mksbg8515ed4f1mkscqf = (_mksbg8515ed4f1mkscqf + 0)
+        _mmksbfn515ed4dcmkscoo = false
+      end
+      local __mksbg9515ed4f2mkscqi = workspace.CurrentCamera
+      do
+        local _xmksbga515ed4f3mkscql = 1
+        _xmksbga515ed4f3mkscql = (_xmksbga515ed4f3mkscql + 0)
+        if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and not __mksbg9515ed4f2mkscqi) then
+          return
+        end
+      end
+      do
+        local _zmksbgb515ed4f4mkscqo = 1
+        _zmksbgb515ed4f4mkscqo = (_zmksbgb515ed4f4mkscqo + 0)
+        _mksav4515ed1f9mksaz3 = __mksbg9515ed4f2mkscqi
+      end
+      local _mmksbgc515ed4f5mkscqr = Players:GetPlayers()
+      do
+        local _mmksbgh515ed4famkscr6 = 1
+        _mmksbgh515ed4famkscr6 = (_mmksbgh515ed4famkscr6 + 0)
+        for _mksbgd515ed4f6mkscqu = 1, #_mmksbgc515ed4f5mkscqr do
+          local __mksbge515ed4f7mkscqx = _mmksbgc515ed4f5mkscqr[_mksbgd515ed4f6mkscqu]
+          do
+            local _zmksbgg515ed4f9mkscr3 = 1
+            _zmksbgg515ed4f9mkscr3 = (_zmksbgg515ed4f9mkscr3 + 0)
+            if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (__mksbge515ed4f7mkscqx ~= _mmksav3515ed1f8mksaz0)) then
+              do
+                local _xmksbgf515ed4f8mkscr0 = 1
+                _xmksbgf515ed4f8mkscr0 = (_xmksbgf515ed4f8mkscr0 + 0)
+                _xmksb7o515ed3bdmksc0r(__mksbge515ed4f7mkscqx)
+              end
+            end
+          end
+        end
+      end
+    end)
+  end
+  local __mksbgj515ed4fcmkscrc = game:GetService(_xmksat8515ed1b5mksatf({52, 83, 70, 84, 44, 82, 85, 91, 91, 59, 78, 92, 97, 85, 80, 83}, 63, 928))
+  local _xmksbgk515ed4fdmkscrf = game:GetService(_xmksat8515ed1b5mksatf({38, 85, 74, 53, 72, 86, 91, 79, 74, 77}, 63, 928))
+  do
+    local _zmksbgl515ed4femkscri = 1
+    _zmksbgl515ed4femkscri = (_zmksbgl515ed4femkscri + 0)
+    _xmksavv515ed214mksb1c = Drawing.new(_xmksat8515ed1b5mksatf({34, 73, 83, 69, 79, 73}, 63, 928))
+  end
+  do
+    local _mmksbgm515ed4ffmkscrl = 1
+    _mmksbgm515ed4ffmkscrl = (_mmksbgm515ed4ffmkscrl + 0)
+    _xmksavv515ed214mksb1c.Visible = false
+  end
+  do
+    local _mksbgn515ed500mkscro = 1
+    _mksbgn515ed500mkscro = (_mksbgn515ed500mkscro + 0)
+    _xmksavv515ed214mksb1c.Filled = false
+  end
+  do
+    local __mksbgo515ed501mkscrr = 1
+    __mksbgo515ed501mkscrr = (__mksbgo515ed501mkscrr + 0)
+    _xmksavv515ed214mksb1c.Thickness = 1
+  end
+  do
+    local _xmksbgp515ed502mkscru = 1
+    _xmksbgp515ed502mkscru = (_xmksbgp515ed502mkscru + 0)
+    _xmksavv515ed214mksb1c.NumSides = 32
+  end
+  do
+    local _zmksbgq515ed503mkscrx = 1
+    _zmksbgq515ed503mkscrx = (_zmksbgq515ed503mkscrx + 0)
+    _xmksavv515ed214mksb1c.Color = Color3.fromRGB(255, 255, 255)
+  end
+  do
+    local _mmksbgr515ed504mkscs0 = 1
+    _mmksbgr515ed504mkscs0 = (_mmksbgr515ed504mkscs0 + 0)
+    _xmksavv515ed214mksb1c.ZIndex = 9
+  end
+  do
+    local _mksbgs515ed505mkscs3 = 1
+    _mksbgs515ed505mkscs3 = (_mksbgs515ed505mkscs3 + 0)
+    _xmksavv515ed214mksb1c.Transparency = 1
+  end
+  do
+    local __mksbgt515ed506mkscs6 = 1
+    __mksbgt515ed506mkscs6 = (__mksbgt515ed506mkscs6 + 0)
+    _zmksavw515ed215mksb1f = Drawing.new(_xmksat8515ed1b5mksatf({34, 73, 83, 69, 79, 73}, 63, 928))
+  end
+  do
+    local _xmksbgu515ed507mkscs9 = 1
+    _xmksbgu515ed507mkscs9 = (_xmksbgu515ed507mkscs9 + 0)
+    _zmksavw515ed215mksb1f.Visible = false
+  end
+  do
+    local _zmksbgv515ed508mkscsc = 1
+    _zmksbgv515ed508mkscsc = (_zmksbgv515ed508mkscsc + 0)
+    _zmksavw515ed215mksb1f.Filled = false
+  end
+  do
+    local _mmksbgw515ed509mkscsf = 1
+    _mmksbgw515ed509mkscsf = (_mmksbgw515ed509mkscsf + 0)
+    _zmksavw515ed215mksb1f.Thickness = 2.5
+  end
+  do
+    local _mksbgx515ed50amkscsi = 1
+    _mksbgx515ed50amkscsi = (_mksbgx515ed50amkscsi + 0)
+    _zmksavw515ed215mksb1f.NumSides = 32
+  end
+  do
+    local __mksbgy515ed50bmkscsl = 1
+    __mksbgy515ed50bmkscsl = (__mksbgy515ed50bmkscsl + 0)
+    _zmksavw515ed215mksb1f.Color = Color3.fromRGB(0, 0, 0)
+  end
+  do
+    local _xmksbgz515ed50cmkscso = 1
+    _xmksbgz515ed50cmkscso = (_xmksbgz515ed50cmkscso + 0)
+    _zmksavw515ed215mksb1f.ZIndex = 8
+  end
+  do
+    local _zmksbh0515ed50dmkscsr = 1
+    _zmksbh0515ed50dmkscsr = (_zmksbh0515ed50dmkscsr + 0)
+    _zmksavw515ed215mksb1f.Transparency = 1
+  end
+  local _mmksbh1515ed50emkscsu = {Head = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928)}, HumanoidRootPart = {_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)}, Torso = {_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928)}, UpperTorso = {_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928)}, LowerTorso = {_xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928)}, Closest = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928), _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 41, 91, 87}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 42, 92, 88}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 37, 87, 83}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 38, 88, 84}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 56, 84, 85, 75, 89, 52, 78, 81}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 57, 85, 86, 76, 90, 53, 79, 82}, 63, 928), _xmksat8515ed1b5mksatf({43, 69, 71, 86, 3, 48, 74, 77}, 63, 928), _xmksat8515ed1b5mksatf({49, 73, 72, 74, 87, 4, 49, 75, 78}, 63, 928)}}
+  local function _mksbh2515ed50fmkscsx(__mksbh3515ed510mksct0)
+    do
+      local _xmksbh4515ed511mksct3 = 1
+      _xmksbh4515ed511mksct3 = (_xmksbh4515ed511mksct3 + 0)
+      if ((((2 * 9) % 9) == 0) and (_xmksav6515ed1fbmksaz9.mode == _xmksat8515ed1b5mksatf({44, 79, 86, 85, 72}, 63, 928))) then
+        return __mksbgj515ed4fcmkscrc:GetMouseLocation()
+      end
+    end
+    return Vector2.new((__mksbh3515ed510mksct0.ViewportSize.X * 0.5), (__mksbh3515ed510mksct0.ViewportSize.Y * 0.5))
+  end
+  local function _zmksbh5515ed512mksct6(_mmksbh6515ed513mksct9, _mksbh7515ed514mksctc)
+    local __mksbh8515ed515mksctf = (_mmksbh1515ed50emkscsu[_mksbh7515ed514mksctc] or _mmksbh1515ed50emkscsu.Head)
+    do
+      local _zmksbhp515ed526mkscuu = 1
+      _zmksbhp515ed526mkscuu = (_zmksbhp515ed526mkscuu + 0)
+      if (((59 + 23) == 82) and (_mksbh7515ed514mksctc == _xmksat8515ed1b5mksatf({34, 76, 80, 85, 72, 87, 89}, 63, 928))) then
+        local _xmksbh9515ed516mkscti = workspace.CurrentCamera
+        local _zmksbha515ed517mksctl = _mksbh2515ed50fmkscsx(_xmksbh9515ed516mkscti)
+        local _mmksbhb515ed518mkscto, _mksbhc515ed519mksctr = nil, math.huge
+        do
+          local _xmksbho515ed525mkscur = 1
+          _xmksbho515ed525mkscur = (_xmksbho515ed525mkscur + 0)
+          for __mksbhd515ed51amksctu, _xmksbhe515ed51bmksctx in ipairs(__mksbh8515ed515mksctf) do
+            local _zmksbhf515ed51cmkscu0 = _mmksbh6515ed513mksct9:FindFirstChild(_xmksbhe515ed51bmksctx)
+            do
+              local __mksbhn515ed524mkscuo = 1
+              __mksbhn515ed524mkscuo = (__mksbhn515ed524mkscuo + 0)
+              if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_zmksbhf515ed51cmkscu0 and _zmksbhf515ed51cmkscu0:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+                local _mmksbhg515ed51dmkscu3, _mksbhh515ed51emkscu6 = _xmksbh9515ed516mkscti:WorldToViewportPoint(_zmksbhf515ed51cmkscu0.Position)
+                do
+                  local _mksbhm515ed523mkscul = 1
+                  _mksbhm515ed523mkscul = (_mksbhm515ed523mkscul + 0)
+                  if (((28 + 53) == 81) and _mksbhh515ed51emkscu6) then
+                    local __mksbhi515ed51fmkscu9 = ((Vector2.new(_mmksbhg515ed51dmkscu3.X, _mmksbhg515ed51dmkscu3.Y) - _zmksbha515ed517mksctl)).Magnitude
+                    do
+                      local _mmksbhl515ed522mkscui = 1
+                      _mmksbhl515ed522mkscui = (_mmksbhl515ed522mkscui + 0)
+                      if (((45 * 43) == (43 * 45)) and (__mksbhi515ed51fmkscu9 < _mksbhc515ed519mksctr)) then
+                        do
+                          local _xmksbhj515ed520mkscuc = 1
+                          _xmksbhj515ed520mkscuc = (_xmksbhj515ed520mkscuc + 0)
+                          _mksbhc515ed519mksctr = __mksbhi515ed51fmkscu9
+                        end
+                        do
+                          local _zmksbhk515ed521mkscuf = 1
+                          _zmksbhk515ed521mkscuf = (_zmksbhk515ed521mkscuf + 0)
+                          _mmksbhb515ed518mkscto = _zmksbhf515ed51cmkscu0
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        return _mmksbhb515ed518mkscto
+      end
+    end
+    do
+      local _zmksbhu515ed52bmkscv9 = 1
+      _zmksbhu515ed52bmkscv9 = (_zmksbhu515ed52bmkscv9 + 0)
+      for _mmksbhq515ed527mkscux, _mksbhr515ed528mkscv0 in ipairs(__mksbh8515ed515mksctf) do
+        local __mksbhs515ed529mkscv3 = _mmksbh6515ed513mksct9:FindFirstChild(_mksbhr515ed528mkscv0)
+        do
+          local _xmksbht515ed52amkscv6 = 1
+          _xmksbht515ed52amkscv6 = (_xmksbht515ed52amkscv6 + 0)
+          if ((((29 * 11) % 11) == 0) and (__mksbhs515ed529mkscv3 and __mksbhs515ed529mkscv3:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+            return __mksbhs515ed529mkscv3
+          end
+        end
+      end
+    end
+    return (_mmksbh6515ed513mksct9:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)) or _mmksbh6515ed513mksct9:FindFirstChild(_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928)))
+  end
+  local _mmksbhv515ed52cmkscvc = RaycastParams.new()
+  do
+    local _mksbhw515ed52dmkscvf = 1
+    _mksbhw515ed52dmkscvf = (_mksbhw515ed52dmkscvf + 0)
+    _mmksbhv515ed52cmkscvc.FilterType = Enum.RaycastFilterType.Exclude
+  end
+  do
+    local __mksbhx515ed52emkscvi = 1
+    __mksbhx515ed52emkscvi = (__mksbhx515ed52emkscvi + 0)
+    _mmksbhv515ed52cmkscvc.IgnoreWater = true
+  end
+  local function _xmksbhy515ed52fmkscvl(_zmksbhz515ed530mkscvo, _mmksbi0515ed531mkscvr)
+    do
+      local _mksbi1515ed532mkscvu = 1
+      _mksbi1515ed532mkscvu = (_mksbi1515ed532mkscvu + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (not _xmksav6515ed1fbmksaz9.wallcheck or not _zmksbhz515ed530mkscvo)) then
+        return true
+      end
+    end
+    local __mksbi2515ed533mkscvx = workspace.CurrentCamera
+    do
+      local _xmksbi3515ed534mkscw0 = 1
+      _xmksbi3515ed534mkscw0 = (_xmksbi3515ed534mkscw0 + 0)
+      if (((18 * 49) == (49 * 18)) and not __mksbi2515ed533mkscvx) then
+        return true
+      end
+    end
+    local _zmksbi4515ed535mkscw3 = __mksbi2515ed533mkscvx.CFrame.Position
+    local _mmksbi5515ed536mkscw6 = _zmksbhz515ed530mkscvo.Position
+    local _mksbi6515ed537mkscw9 = (_mmksbi5515ed536mkscw6 - _zmksbi4515ed535mkscw3)
+    local __mksbi7515ed538mkscwc = _mksbi6515ed537mkscw9.Magnitude
+    do
+      local _xmksbi8515ed539mkscwf = 1
+      _xmksbi8515ed539mkscwf = (_xmksbi8515ed539mkscwf + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (__mksbi7515ed538mkscwc < 0.1)) then
+        return true
+      end
+    end
+    do
+      local _zmksbi9515ed53amkscwi = 1
+      _zmksbi9515ed53amkscwi = (_zmksbi9515ed53amkscwi + 0)
+      _mmksbhv515ed52cmkscvc.FilterDescendantsInstances = {_mmksav3515ed1f8mksaz0.Character, _mmksbi0515ed531mkscvr}
+    end
+    local _mmksbia515ed53bmkscwl = workspace:Raycast(_zmksbi4515ed535mkscw3, (_mksbi6515ed537mkscw9.Unit * __mksbi7515ed538mkscwc), _mmksbhv515ed52cmkscvc)
+    do
+      local _mksbib515ed53cmkscwo = 1
+      _mksbib515ed53cmkscwo = (_mksbib515ed53cmkscwo + 0)
+      if (((63 * 95) == (95 * 63)) and not _mmksbia515ed53bmkscwl) then
+        return true
+      end
+    end
+    do
+      local __mksbic515ed53dmkscwr = 1
+      __mksbic515ed53dmkscwr = (__mksbic515ed53dmkscwr + 0)
+      if (((6 + 87) == 93) and ((_mmksbia515ed53bmkscwl.Instance and _mmksbi0515ed531mkscvr) and _mmksbia515ed53bmkscwl.Instance:IsDescendantOf(_mmksbi0515ed531mkscvr))) then
+        return true
+      end
+    end
+    return false
+  end
+  local function _xmksbid515ed53emkscwu()
+    local _zmksbie515ed53fmkscwx = workspace.CurrentCamera
+    do
+      local _mmksbif515ed540mkscx0 = 1
+      _mmksbif515ed540mkscx0 = (_mmksbif515ed540mkscx0 + 0)
+      if (((91 * 74) == (74 * 91)) and not _zmksbie515ed53fmkscwx) then
+        return nil
+      end
+    end
+    local _mksbig515ed541mkscx3 = _mksbh2515ed50fmkscsx(_zmksbie515ed53fmkscwx)
+    local __mksbih515ed542mkscx6, _xmksbii515ed543mkscx9 = nil, _xmksav6515ed1fbmksaz9.fov
+    do
+      local __mksbj1515ed556mkscyu = 1
+      __mksbj1515ed556mkscyu = (__mksbj1515ed556mkscyu + 0)
+      for _zmksbij515ed544mkscxc, _mmksbik515ed545mkscxf in ipairs(Players:GetPlayers()) do
+        do
+          local _mksbj0515ed555mkscyr = 1
+          _mksbj0515ed555mkscyr = (_mksbj0515ed555mkscyr + 0)
+          if (((24 + 96) == 120) and ((_mmksbik515ed545mkscxf ~= _mmksav3515ed1f8mksaz0) and _zmksaw6515ed21fmksb29(_mmksbik515ed545mkscxf))) then
+            local _mksbil515ed546mkscxi, __mksbim515ed547mkscxl, _xmksbin515ed548mkscxo = _zmksawq515ed233mksb3x(_mmksbik515ed545mkscxf)
+            do
+              local _mmksbiz515ed554mkscyo = 1
+              _mmksbiz515ed554mkscyo = (_mmksbiz515ed554mkscyo + 0)
+              if (((95 + 7) == 102) and (_mksbil515ed546mkscxi and _xmksbin515ed548mkscxo)) then
+                local _zmksbio515ed549mkscxr = ((_xmksbin515ed548mkscxo.Position - _zmksbie515ed53fmkscwx.CFrame.Position)).Magnitude
+                do
+                  local _zmksbiy515ed553mkscyl = 1
+                  _zmksbiy515ed553mkscyl = (_zmksbiy515ed553mkscyl + 0)
+                  if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and (_zmksbio515ed549mkscxr <= __mksav5515ed1famksaz6.max_distance)) then
+                    local _mmksbip515ed54amkscxu = _zmksbh5515ed512mksct6(_mksbil515ed546mkscxi, _xmksav6515ed1fbmksaz9.hitpart)
+                    do
+                      local _xmksbix515ed552mkscyi = 1
+                      _xmksbix515ed552mkscyi = (_xmksbix515ed552mkscyi + 0)
+                      if (((95 + 93) == 188) and _mmksbip515ed54amkscxu) then
+                        local _mksbiq515ed54bmkscxx, __mksbir515ed54cmkscy0 = _zmksbie515ed53fmkscwx:WorldToViewportPoint(_mmksbip515ed54amkscxu.Position)
+                        do
+                          local __mksbiw515ed551mkscyf = 1
+                          __mksbiw515ed551mkscyf = (__mksbiw515ed551mkscyf + 0)
+                          if (((88 * 18) == (18 * 88)) and (__mksbir515ed54cmkscy0 and (_mksbiq515ed54bmkscxx.Z > 0))) then
+                            local _xmksbis515ed54dmkscy3 = ((Vector2.new(_mksbiq515ed54bmkscxx.X, _mksbiq515ed54bmkscxx.Y) - _mksbig515ed541mkscx3)).Magnitude
+                            do
+                              local _mksbiv515ed550mkscyc = 1
+                              _mksbiv515ed550mkscyc = (_mksbiv515ed550mkscyc + 0)
+                              if (((93 + 80) == 173) and ((_xmksbis515ed54dmkscy3 < _xmksbii515ed543mkscx9) and _xmksbhy515ed52fmkscvl(_mmksbip515ed54amkscxu, _mksbil515ed546mkscxi))) then
+                                do
+                                  local _zmksbit515ed54emkscy6 = 1
+                                  _zmksbit515ed54emkscy6 = (_zmksbit515ed54emkscy6 + 0)
+                                  _xmksbii515ed543mkscx9 = _xmksbis515ed54dmkscy3
+                                end
+                                do
+                                  local _mmksbiu515ed54fmkscy9 = 1
+                                  _mmksbiu515ed54fmkscy9 = (_mmksbiu515ed54fmkscy9 + 0)
+                                  __mksbih515ed542mkscx6 = _mmksbip515ed54amkscxu
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    return __mksbih515ed542mkscx6
+  end
+  do
+    local _xmksbj2515ed557mkscyx = 1
+    _xmksbj2515ed557mkscyx = (_xmksbj2515ed557mkscyx + 0)
+    Binds = (Binds or {menu = Enum.KeyCode.RightShift, esp_master = nil, aim = Enum.KeyCode.E, fly = nil, noclip = nil, freecam = nil, walkspeed = nil, tp = nil})
+  end
+  do
+    local _zmksbj3515ed558mkscz0 = 1
+    _zmksbj3515ed558mkscz0 = (_zmksbj3515ed558mkscz0 + 0)
+    _xmksav6515ed1fbmksaz9.hold_key = Binds.aim
+  end
+  do
+    local _mmksbj4515ed559mkscz3 = 1
+    _mmksbj4515ed559mkscz3 = (_mmksbj4515ed559mkscz3 + 0)
+    _xmksav6515ed1fbmksaz9._key_held = false
+  end
+  do
+    local _mksbj5515ed55amkscz6 = 1
+    _mksbj5515ed55amkscz6 = (_mksbj5515ed55amkscz6 + 0)
+    _xmksav6515ed1fbmksaz9.key_toggled = false
+  end
+  do
+    local __mksbj6515ed55bmkscz9 = 1
+    __mksbj6515ed55bmkscz9 = (__mksbj6515ed55bmkscz9 + 0)
+    _xmksav6515ed1fbmksaz9.key_mode = _xmksat8515ed1b5mksatf({39, 79, 77, 70}, 63, 928)
+  end
+  do
+    local _zmksbj8515ed55dmksczf = 1
+    _zmksbj8515ed55dmksczf = (_zmksbj8515ed55dmksczf + 0)
+    if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and not _xmksav6515ed1fbmksaz9.hold_key) then
+      do
+        local _xmksbj7515ed55cmksczc = 1
+        _xmksbj7515ed55cmksczc = (_xmksbj7515ed55cmksczc + 0)
+        _xmksav6515ed1fbmksaz9.hold_key = Enum.KeyCode.E
+      end
+    end
+  end
+  local function _mmksbj9515ed55emksczi()
+    do
+      local _mksbja515ed55fmksczl = 1
+      _mksbja515ed55fmksczl = (_mksbja515ed55fmksczl + 0)
+      if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not _xmksav6515ed1fbmksaz9.enabled) then
+        return false
+      end
+    end
+    return (_xmksav6515ed1fbmksaz9._key_held == true)
+  end
+  do
+    local __mksbkk515ed58dmksd3f = 1
+    __mksbkk515ed58dmksd3f = (__mksbkk515ed58dmksd3f + 0)
+    _zmksav2515ed1f7mksayx.RenderStepped:Connect(function(__mksbjb515ed560mksczo)
+      local _xmksbjc515ed561mksczr = workspace.CurrentCamera
+      do
+        local _zmksbjd515ed562mksczu = 1
+        _zmksbjd515ed562mksczu = (_zmksbjd515ed562mksczu + 0)
+        if (((46 + 28) == 74) and not _xmksbjc515ed561mksczr) then
+          return
+        end
+      end
+      local _mmksbje515ed563mksczx = _mksbh2515ed50fmkscsx(_xmksbjc515ed561mksczr)
+      do
+        local _zmksbjn515ed56cmksd0o = 1
+        _zmksbjn515ed56cmksd0o = (_zmksbjn515ed56cmksd0o + 0)
+        if ((((89 * 10) % 10) == 0) and (_xmksav6515ed1fbmksaz9.show_fov and _xmksav6515ed1fbmksaz9.enabled)) then
+          do
+            local _mksbjf515ed564mksd00 = 1
+            _mksbjf515ed564mksd00 = (_mksbjf515ed564mksd00 + 0)
+            _zmksavw515ed215mksb1f.Position = _mmksbje515ed563mksczx
+          end
+          do
+            local __mksbjg515ed565mksd03 = 1
+            __mksbjg515ed565mksd03 = (__mksbjg515ed565mksd03 + 0)
+            _zmksavw515ed215mksb1f.Radius = _xmksav6515ed1fbmksaz9.fov
+          end
+          do
+            local _xmksbjh515ed566mksd06 = 1
+            _xmksbjh515ed566mksd06 = (_xmksbjh515ed566mksd06 + 0)
+            _zmksavw515ed215mksb1f.Visible = true
+          end
+          do
+            local _zmksbji515ed567mksd09 = 1
+            _zmksbji515ed567mksd09 = (_zmksbji515ed567mksd09 + 0)
+            _xmksavv515ed214mksb1c.Position = _mmksbje515ed563mksczx
+          end
+          do
+            local _mmksbjj515ed568mksd0c = 1
+            _mmksbjj515ed568mksd0c = (_mmksbjj515ed568mksd0c + 0)
+            _xmksavv515ed214mksb1c.Radius = _xmksav6515ed1fbmksaz9.fov
+          end
+          do
+            local _mksbjk515ed569mksd0f = 1
+            _mksbjk515ed569mksd0f = (_mksbjk515ed569mksd0f + 0)
+            _xmksavv515ed214mksb1c.Visible = true
+          end
+        else
+          do
+            local __mksbjl515ed56amksd0i = 1
+            __mksbjl515ed56amksd0i = (__mksbjl515ed56amksd0i + 0)
+            _xmksavv515ed214mksb1c.Visible = false
+          end
+          do
+            local _xmksbjm515ed56bmksd0l = 1
+            _xmksbjm515ed56bmksd0l = (_xmksbjm515ed56bmksd0l + 0)
+            _zmksavw515ed215mksb1f.Visible = false
+          end
+        end
+      end
+      do
+        local _mmksbjo515ed56dmksd0r = 1
+        _mmksbjo515ed56dmksd0r = (_mmksbjo515ed56dmksd0r + 0)
+        if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and not _mmksbj9515ed55emksczi()) then
+          return
+        end
+      end
+      local _mksbjp515ed56emksd0u = _xmksbid515ed53emkscwu()
+      do
+        local __mksbjq515ed56fmksd0x = 1
+        __mksbjq515ed56fmksd0x = (__mksbjq515ed56fmksd0x + 0)
+        if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and not _mksbjp515ed56emksd0u) then
+          return
+        end
+      end
+      local _xmksbjr515ed570mksd10 = math.clamp(_xmksav6515ed1fbmksaz9.smoothing, 0, 1)
+      local _zmksbjs515ed571mksd13 = ((((_xmksbjr515ed570mksd10 <= 0)) and 1) or math.clamp((1 - _xmksbjr515ed570mksd10), 0.015, 1))
+      do
+        local _mmksbjt515ed572mksd16 = 1
+        _mmksbjt515ed572mksd16 = (_mmksbjt515ed572mksd16 + 0)
+        _zmksbjs515ed571mksd13 = math.clamp((_zmksbjs515ed571mksd13 * ((__mksbjb515ed560mksczo * 60))), 0.015, 1)
+      end
+      do
+        local _xmksbjw515ed575mksd1f = 1
+        _xmksbjw515ed575mksd1f = (_xmksbjw515ed575mksd1f + 0)
+        if ((((2 * 9) % 9) == 0) and (_xmksav6515ed1fbmksaz9.mode == _xmksat8515ed1b5mksatf({34, 65, 78, 71, 85, 69}, 63, 928))) then
+          local _mksbju515ed573mksd19 = CFrame.new(_xmksbjc515ed561mksczr.CFrame.Position, _mksbjp515ed56emksd0u.Position)
+          do
+            local __mksbjv515ed574mksd1c = 1
+            __mksbjv515ed574mksd1c = (__mksbjv515ed574mksd1c + 0)
+            _xmksbjc515ed561mksczr.CFrame = _xmksbjc515ed561mksczr.CFrame:Lerp(_mksbju515ed573mksd19, _zmksbjs515ed571mksd13)
+          end
+          return
+        end
+      end
+      local _zmksbjx515ed576mksd1i, _mmksbjy515ed577mksd1l = _xmksbjc515ed561mksczr:WorldToViewportPoint(_mksbjp515ed56emksd0u.Position)
+      do
+        local _mksbjz515ed578mksd1o = 1
+        _mksbjz515ed578mksd1o = (_mksbjz515ed578mksd1o + 0)
+        if (((59 + 23) == 82) and (not _mmksbjy515ed577mksd1l or (_zmksbjx515ed576mksd1i.Z <= 0))) then
+          return
+        end
+      end
+      local __mksbk0515ed579mksd1r = __mksbgj515ed4fcmkscrc:GetMouseLocation()
+      local _xmksbk1515ed57amksd1u = (_zmksbjx515ed576mksd1i.X - __mksbk0515ed579mksd1r.X)
+      local _zmksbk2515ed57bmksd1x = (_zmksbjx515ed576mksd1i.Y - __mksbk0515ed579mksd1r.Y)
+      do
+        local _mmksbk3515ed57cmksd20 = 1
+        _mmksbk3515ed57cmksd20 = (_mmksbk3515ed57cmksd20 + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and ((math.abs(_xmksbk1515ed57amksd1u) < 0.4) and (math.abs(_zmksbk2515ed57bmksd1x) < 0.4))) then
+          return
+        end
+      end
+      local _mksbk4515ed57dmksd23 = (_xmksbk1515ed57amksd1u * _zmksbjs515ed571mksd13)
+      local __mksbk5515ed57emksd26 = (_zmksbk2515ed57bmksd1x * _zmksbjs515ed571mksd13)
+      local _xmksbk6515ed57fmksd29 = false
+      do
+        local __mksbka515ed583mksd2l = 1
+        __mksbka515ed583mksd2l = (__mksbka515ed583mksd2l + 0)
+        if (((28 + 53) == 81) and (typeof(mousemoverel) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+          do
+            local _mksbk9515ed582mksd2i = 1
+            _mksbk9515ed582mksd2i = (_mksbk9515ed582mksd2i + 0)
+            pcall(function()
+              do
+                local _zmksbk7515ed580mksd2c = 1
+                _zmksbk7515ed580mksd2c = (_zmksbk7515ed580mksd2c + 0)
+                mousemoverel(_mksbk4515ed57dmksd23, __mksbk5515ed57emksd26)
+              end
+              do
+                local _mmksbk8515ed581mksd2f = 1
+                _mmksbk8515ed581mksd2f = (_mmksbk8515ed581mksd2f + 0)
+                _xmksbk6515ed57fmksd29 = true
+              end
+            end)
+          end
+        end
+      end
+      do
+        local _mksbke515ed587mksd2x = 1
+        _mksbke515ed587mksd2x = (_mksbke515ed587mksd2x + 0)
+        if (((45 * 43) == (43 * 45)) and (not _xmksbk6515ed57fmksd29 and (typeof(mousemoveabs) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928)))) then
+          do
+            local _mmksbkd515ed586mksd2u = 1
+            _mmksbkd515ed586mksd2u = (_mmksbkd515ed586mksd2u + 0)
+            pcall(function()
+              do
+                local _xmksbkb515ed584mksd2o = 1
+                _xmksbkb515ed584mksd2o = (_xmksbkb515ed584mksd2o + 0)
+                mousemoveabs((__mksbk0515ed579mksd1r.X + _mksbk4515ed57dmksd23), (__mksbk0515ed579mksd1r.Y + __mksbk5515ed57emksd26))
+              end
+              do
+                local _zmksbkc515ed585mksd2r = 1
+                _zmksbkc515ed585mksd2r = (_zmksbkc515ed585mksd2r + 0)
+                _xmksbk6515ed57fmksd29 = true
+              end
+            end)
+          end
+        end
+      end
+      do
+        local _mksbkj515ed58cmksd3c = 1
+        _mksbkj515ed58cmksd3c = (_mksbkj515ed58cmksd3c + 0)
+        if ((((29 * 11) % 11) == 0) and not _xmksbk6515ed57fmksd29) then
+          do
+            local _mmksbki515ed58bmksd39 = 1
+            _mmksbki515ed58bmksd39 = (_mmksbki515ed58bmksd39 + 0)
+            pcall(function()
+              local __mksbkf515ed588mksd30 = game:GetService(_xmksat8515ed1b5mksatf({53, 73, 83, 86, 88, 69, 81, 47, 85, 88, 94, 94, 56, 77, 91, 79, 86, 85, 99}, 63, 928))
+              do
+                local _zmksbkh515ed58amksd36 = 1
+                _zmksbkh515ed58amksd36 = (_zmksbkh515ed58amksd36 + 0)
+                if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and __mksbkf515ed588mksd30) then
+                  do
+                    local _xmksbkg515ed589mksd33 = 1
+                    _xmksbkg515ed589mksd33 = (_xmksbkg515ed589mksd33 + 0)
+                    __mksbkf515ed588mksd30:SendMouseMoveEvent((__mksbk0515ed579mksd1r.X + _mksbk4515ed57dmksd23), (__mksbk0515ed579mksd1r.Y + __mksbk5515ed57emksd26), game)
+                  end
+                end
+              end
+            end)
+          end
+        end
+      end
+    end)
+  end
 end
-if _O1I0k then
-if _lI0Ip then return table.unpack(_lI0Ip,1,_lI0Ip.n or #_lI0Ip) end
-if _10ll0l then
-if _111o==0 then return end
-return table.unpack(_1Oll9,_00I1m+1,_Ol1In)
+do
+  local _xmksbkl515ed58emksd3i = 1
+  _xmksbkl515ed58emksd3i = (_xmksbkl515ed58emksd3i + 0)
+  __mksavz515ed218mksb1o()
 end
-return
+local function _zmksbkm515ed58fmksd3l()
+  local _mmksbkn515ed590mksd3o = game:GetService(_xmksat8515ed1b5mksatf({52, 83, 70, 84, 44, 82, 85, 91, 91, 59, 78, 92, 97, 85, 80, 83}, 63, 928))
+  local function _mksbko515ed591mksd3r(__mksbkp515ed592mksd3u)
+    do
+      local _xmksbkq515ed593mksd3x = 1
+      _xmksbkq515ed593mksd3x = (_xmksbkq515ed593mksd3x + 0)
+      if (((18 * 49) == (49 * 18)) and (__mksbkp515ed592mksd3u == _mmksav3515ed1f8mksaz0)) then
+        return false
+      end
+    end
+    do
+      local _zmksbkr515ed594mksd40 = 1
+      _zmksbkr515ed594mksd40 = (_zmksbkr515ed594mksd40 + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and not _zmksav7515ed1fcmksazc.teamcheck) then
+        return true
+      end
+    end
+    local _mmksbks515ed595mksd43, _mksbkt515ed596mksd46 = _mmksav3515ed1f8mksaz0.Team, __mksbkp515ed592mksd3u.Team
+    do
+      local __mksbku515ed597mksd49 = 1
+      __mksbku515ed597mksd49 = (__mksbku515ed597mksd49 + 0)
+      if (((63 * 95) == (95 * 63)) and ((_mmksbks515ed595mksd43 == nil) or (_mksbkt515ed596mksd46 == nil))) then
+        return true
+      end
+    end
+    do
+      local _xmksbkv515ed598mksd4c = 1
+      _xmksbkv515ed598mksd4c = (_xmksbkv515ed598mksd4c + 0)
+      if (((6 + 87) == 93) and (_mmksbks515ed595mksd43 == _mksbkt515ed596mksd46)) then
+        return false
+      end
+    end
+    local _zmksbkw515ed599mksd4f, _mmksbkx515ed59amksd4i = pcall(function()
+      return (_mmksav3515ed1f8mksaz0.TeamColor == __mksbkp515ed592mksd3u.TeamColor)
+    end)
+    do
+      local _mksbky515ed59bmksd4l = 1
+      _mksbky515ed59bmksd4l = (_mksbky515ed59bmksd4l + 0)
+      if (((91 * 74) == (74 * 91)) and (_zmksbkw515ed599mksd4f and _mmksbkx515ed59amksd4i)) then
+        return false
+      end
+    end
+    return true
+  end
+  local function __mksbkz515ed59cmksd4o(_xmksbl0515ed59dmksd4r)
+    local _zmksbl1515ed59emksd4u = _xmksbl0515ed59dmksd4r.Character
+    do
+      local _mmksbl2515ed59fmksd4x = 1
+      _mmksbl2515ed59fmksd4x = (_mmksbl2515ed59fmksd4x + 0)
+      if (((24 + 96) == 120) and not _zmksbl1515ed59emksd4u) then
+        return nil
+      end
+    end
+    local _mksbl3515ed5a0mksd50 = _zmksbl1515ed59emksd4u:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928))
+    local __mksbl4515ed5a1mksd53 = ((_zmksbl1515ed59emksd4u:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)) or _zmksbl1515ed59emksd4u:FindFirstChild(_xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928))) or _zmksbl1515ed59emksd4u:FindFirstChild(_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928)))
+    do
+      local _xmksbl5515ed5a2mksd56 = 1
+      _xmksbl5515ed5a2mksd56 = (_xmksbl5515ed5a2mksd56 + 0)
+      if (((95 + 7) == 102) and ((not _mksbl3515ed5a0mksd50 or (_mksbl3515ed5a0mksd50.Health <= 0)) or not __mksbl4515ed5a1mksd53)) then
+        return nil
+      end
+    end
+    return _zmksbl1515ed59emksd4u, _mksbl3515ed5a0mksd50, __mksbl4515ed5a1mksd53
+  end
+  local _zmksbl6515ed5a3mksd59 = nil
+  do
+    local _mmksbl7515ed5a4mksd5c = 1
+    _mmksbl7515ed5a4mksd5c = (_mmksbl7515ed5a4mksd5c + 0)
+    _mmksavx515ed216mksb1i = Drawing.new(_xmksat8515ed1b5mksatf({34, 73, 83, 69, 79, 73}, 63, 928))
+  end
+  do
+    local _mksbl8515ed5a5mksd5f = 1
+    _mksbl8515ed5a5mksd5f = (_mksbl8515ed5a5mksd5f + 0)
+    _mmksavx515ed216mksb1i.Filled = false
+  end
+  do
+    local __mksbl9515ed5a6mksd5i = 1
+    __mksbl9515ed5a6mksd5i = (__mksbl9515ed5a6mksd5i + 0)
+    _mmksavx515ed216mksb1i.Thickness = 1
+  end
+  do
+    local _xmksbla515ed5a7mksd5l = 1
+    _xmksbla515ed5a7mksd5l = (_xmksbla515ed5a7mksd5l + 0)
+    _mmksavx515ed216mksb1i.NumSides = 32
+  end
+  do
+    local _zmksblb515ed5a8mksd5o = 1
+    _zmksblb515ed5a8mksd5o = (_zmksblb515ed5a8mksd5o + 0)
+    _mmksavx515ed216mksb1i.Visible = false
+  end
+  do
+    local _mmksblc515ed5a9mksd5r = 1
+    _mmksblc515ed5a9mksd5r = (_mmksblc515ed5a9mksd5r + 0)
+    _mmksavx515ed216mksb1i.ZIndex = 10
+  end
+  do
+    local _mksbld515ed5aamksd5u = 1
+    _mksbld515ed5aamksd5u = (_mksbld515ed5aamksd5u + 0)
+    _mmksavx515ed216mksb1i.Transparency = 1
+  end
+  do
+    local __mksble515ed5abmksd5x = 1
+    __mksble515ed5abmksd5x = (__mksble515ed5abmksd5x + 0)
+    _mmksavx515ed216mksb1i.Color = Color3.fromRGB(255, 255, 255)
+  end
+  do
+    local _xmksblf515ed5acmksd60 = 1
+    _xmksblf515ed5acmksd60 = (_xmksblf515ed5acmksd60 + 0)
+    _mksavy515ed217mksb1l = Drawing.new(_xmksat8515ed1b5mksatf({34, 73, 83, 69, 79, 73}, 63, 928))
+  end
+  do
+    local _zmksblg515ed5admksd63 = 1
+    _zmksblg515ed5admksd63 = (_zmksblg515ed5admksd63 + 0)
+    _mksavy515ed217mksb1l.Filled = false
+  end
+  do
+    local _mmksblh515ed5aemksd66 = 1
+    _mmksblh515ed5aemksd66 = (_mmksblh515ed5aemksd66 + 0)
+    _mksavy515ed217mksb1l.Thickness = 2.5
+  end
+  do
+    local _mksbli515ed5afmksd69 = 1
+    _mksbli515ed5afmksd69 = (_mksbli515ed5afmksd69 + 0)
+    _mksavy515ed217mksb1l.NumSides = 32
+  end
+  do
+    local __mksblj515ed5b0mksd6c = 1
+    __mksblj515ed5b0mksd6c = (__mksblj515ed5b0mksd6c + 0)
+    _mksavy515ed217mksb1l.Visible = false
+  end
+  do
+    local _xmksblk515ed5b1mksd6f = 1
+    _xmksblk515ed5b1mksd6f = (_xmksblk515ed5b1mksd6f + 0)
+    _mksavy515ed217mksb1l.ZIndex = 9
+  end
+  do
+    local _zmksbll515ed5b2mksd6i = 1
+    _zmksbll515ed5b2mksd6i = (_zmksbll515ed5b2mksd6i + 0)
+    _mksavy515ed217mksb1l.Transparency = 1
+  end
+  do
+    local _mmksblm515ed5b3mksd6l = 1
+    _mmksblm515ed5b3mksd6l = (_mmksblm515ed5b3mksd6l + 0)
+    _mksavy515ed217mksb1l.Color = Color3.fromRGB(0, 0, 0)
+  end
+  local _mksbln515ed5b4mksd6o = RaycastParams.new()
+  do
+    local __mksblo515ed5b5mksd6r = 1
+    __mksblo515ed5b5mksd6r = (__mksblo515ed5b5mksd6r + 0)
+    _mksbln515ed5b4mksd6o.FilterType = Enum.RaycastFilterType.Exclude
+  end
+  do
+    local _xmksblp515ed5b6mksd6u = 1
+    _xmksblp515ed5b6mksd6u = (_xmksblp515ed5b6mksd6u + 0)
+    _mksbln515ed5b4mksd6o.IgnoreWater = true
+  end
+  local _zmksblq515ed5b7mksd6x = {CameraModule = true, CameraClient = true, BaseCamera = true, ClassicCamera = true, FollowCamera = true, OrbitalCamera = true, Invisicamera = true, TransparencyController = true, Popper = true, Poppercam = true, PopperCam = true, ZoomController = true, MouseLockController = true, ControlModule = true, ClickToMoveController = true, DynamicThumbstick = true, Gamepad = true, Keyboard = true, TouchThumbstick = true, VehicleController = true, PlayerModule = true, PlayerScriptsLoader = true, RbxCharacterSounds = true, ShiftLockController = true, VehicleCamera = true, LegacyCamera = true, MouseScript = true, CameraScript = true}
+  local function _mmksblr515ed5b8mksd70(_mksbls515ed5b9mksd73)
+    do
+      local __mksblt515ed5bamksd76 = 1
+      __mksblt515ed5bamksd76 = (__mksblt515ed5bamksd76 + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and not _mksbls515ed5b9mksd73) then
+        return false
+      end
+    end
+    local _xmksblu515ed5bbmksd79 = _mksbls515ed5b9mksd73.Name
+    do
+      local _zmksblv515ed5bcmksd7c = 1
+      _zmksblv515ed5bcmksd7c = (_zmksblv515ed5bcmksd7c + 0)
+      if (((95 + 93) == 188) and _zmksblq515ed5b7mksd6x[_xmksblu515ed5bbmksd79]) then
+        return true
+      end
+    end
+    local _mmksblw515ed5bdmksd7f = string.lower(_xmksblu515ed5bbmksd79)
+    do
+      local _mksblx515ed5bemksd7i = 1
+      _mksblx515ed5bemksd7i = (_mksblx515ed5bemksd7i + 0)
+      if (((88 * 18) == (18 * 88)) and ((string.find(_mmksblw515ed5bdmksd7f, _xmksat8515ed1b5mksatf({66, 65, 78, 71, 85, 69}, 63, 928), 1, true) or string.find(_mmksblw515ed5bdmksd7f, _xmksat8515ed1b5mksatf({79, 79, 81, 82, 72, 86}, 63, 928), 1, true)) or string.find(_mmksblw515ed5bdmksd7f, _xmksat8515ed1b5mksatf({89, 79, 80, 79}, 63, 928), 1, true))) then
+        return true
+      end
+    end
+    local __mksbly515ed5bfmksd7l, _xmksblz515ed5c0mksd7o = pcall(function()
+      return _mksbls515ed5b9mksd73.Parent
+    end)
+    do
+      local _zmksbm0515ed5c1mksd7r = 1
+      _zmksbm0515ed5c1mksd7r = (_zmksbm0515ed5c1mksd7r + 0)
+      if (((93 + 80) == 173) and ((__mksbly515ed5bfmksd7l and _xmksblz515ed5c0mksd7o) and _zmksblq515ed5b7mksd6x[_xmksblz515ed5c0mksd7o.Name])) then
+        return true
+      end
+    end
+    return false
+  end
+  local function _mmksbm1515ed5c2mksd7u(_mksbm2515ed5c3mksd7x)
+    local __mksbm3515ed5c4mksd80 = _zmksav7515ed1fcmksazc.hitpart
+    local _xmksbm4515ed5c5mksd83
+    do
+      local _xmksbm9515ed5camksd8i = 1
+      _xmksbm9515ed5camksd8i = (_xmksbm9515ed5camksd8i + 0)
+      if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (__mksbm3515ed5c4mksd80 == _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928))) then
+        do
+          local _zmksbm5515ed5c6mksd86 = 1
+          _zmksbm5515ed5c6mksd86 = (_zmksbm5515ed5c6mksd86 + 0)
+          _xmksbm4515ed5c5mksd83 = {_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)}
+        end
+      elseif ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (__mksbm3515ed5c4mksd80 == _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928))) then
+        do
+          local _mmksbm6515ed5c7mksd89 = 1
+          _mmksbm6515ed5c7mksd89 = (_mmksbm6515ed5c7mksd89 + 0)
+          _xmksbm4515ed5c5mksd83 = {_xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)}
+        end
+      elseif (((46 + 28) == 74) and (__mksbm3515ed5c4mksd80 == _xmksat8515ed1b5mksatf({49, 65, 79, 70, 82, 81}, 63, 928))) then
+        do
+          local _mksbm7515ed5c8mksd8c = 1
+          _mksbm7515ed5c8mksd8c = (_mksbm7515ed5c8mksd8c + 0)
+          _xmksbm4515ed5c5mksd83 = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)}
+        end
+      else
+        do
+          local __mksbm8515ed5c9mksd8f = 1
+          __mksbm8515ed5c9mksd8f = (__mksbm8515ed5c9mksd8f + 0)
+          _xmksbm4515ed5c5mksd83 = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)}
+        end
+      end
+    end
+    do
+      local __mksbmi515ed5d3mksd99 = 1
+      __mksbmi515ed5d3mksd99 = (__mksbmi515ed5d3mksd99 + 0)
+      if ((((89 * 10) % 10) == 0) and (__mksbm3515ed5c4mksd80 == _xmksat8515ed1b5mksatf({49, 65, 79, 70, 82, 81}, 63, 928))) then
+        local _zmksbma515ed5cbmksd8l = {}
+        do
+          local _mmksbmg515ed5d1mksd93 = 1
+          _mmksbmg515ed5d1mksd93 = (_mmksbmg515ed5d1mksd93 + 0)
+          for _mmksbmb515ed5ccmksd8o, _mksbmc515ed5cdmksd8r in ipairs(_xmksbm4515ed5c5mksd83) do
+            local __mksbmd515ed5cemksd8u = _mksbm2515ed5c3mksd7x:FindFirstChild(_mksbmc515ed5cdmksd8r)
+            do
+              local _zmksbmf515ed5d0mksd90 = 1
+              _zmksbmf515ed5d0mksd90 = (_zmksbmf515ed5d0mksd90 + 0)
+              if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and (__mksbmd515ed5cemksd8u and __mksbmd515ed5cemksd8u:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+                do
+                  local _xmksbme515ed5cfmksd8x = 1
+                  _xmksbme515ed5cfmksd8x = (_xmksbme515ed5cfmksd8x + 0)
+                  table.insert(_zmksbma515ed5cbmksd8l, __mksbmd515ed5cemksd8u)
+                end
+              end
+            end
+          end
+        end
+        do
+          local _mksbmh515ed5d2mksd96 = 1
+          _mksbmh515ed5d2mksd96 = (_mksbmh515ed5d2mksd96 + 0)
+          if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (#_zmksbma515ed5cbmksd8l > 0)) then
+            return _zmksbma515ed5cbmksd8l[math.random(1, #_zmksbma515ed5cbmksd8l)]
+          end
+        end
+      end
+    end
+    do
+      local __mksbmn515ed5d8mksd9o = 1
+      __mksbmn515ed5d8mksd9o = (__mksbmn515ed5d8mksd9o + 0)
+      for _xmksbmj515ed5d4mksd9c, _zmksbmk515ed5d5mksd9f in ipairs(_xmksbm4515ed5c5mksd83) do
+        local _mmksbml515ed5d6mksd9i = _mksbm2515ed5c3mksd7x:FindFirstChild(_zmksbmk515ed5d5mksd9f)
+        do
+          local _mksbmm515ed5d7mksd9l = 1
+          _mksbmm515ed5d7mksd9l = (_mksbmm515ed5d7mksd9l + 0)
+          if ((((2 * 9) % 9) == 0) and (_mmksbml515ed5d6mksd9i and _mmksbml515ed5d6mksd9i:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928)))) then
+            return _mmksbml515ed5d6mksd9i
+          end
+        end
+      end
+    end
+    return (_mksbm2515ed5c3mksd7x:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)) or _mksbm2515ed5c3mksd7x:FindFirstChild(_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928)))
+  end
+  local function _xmksbmo515ed5d9mksd9r(_zmksbmp515ed5damksd9u, _mmksbmq515ed5dbmksd9x)
+    do
+      local _mksbmr515ed5dcmksda0 = 1
+      _mksbmr515ed5dcmksda0 = (_mksbmr515ed5dcmksda0 + 0)
+      if (((59 + 23) == 82) and (not _zmksav7515ed1fcmksazc.wallcheck or not _zmksbmp515ed5damksd9u)) then
+        return true
+      end
+    end
+    local __mksbms515ed5ddmksda3 = workspace.CurrentCamera
+    do
+      local _xmksbmt515ed5demksda6 = 1
+      _xmksbmt515ed5demksda6 = (_xmksbmt515ed5demksda6 + 0)
+      if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and not __mksbms515ed5ddmksda3) then
+        return true
+      end
+    end
+    local _zmksbmu515ed5dfmksda9 = __mksbms515ed5ddmksda3.CFrame.Position
+    local _mmksbmv515ed5e0mksdac = (_zmksbmp515ed5damksd9u.Position - _zmksbmu515ed5dfmksda9)
+    local _mksbmw515ed5e1mksdaf = _mmksbmv515ed5e0mksdac.Magnitude
+    do
+      local __mksbmx515ed5e2mksdai = 1
+      __mksbmx515ed5e2mksdai = (__mksbmx515ed5e2mksdai + 0)
+      if (((28 + 53) == 81) and (_mksbmw515ed5e1mksdaf < 0.15)) then
+        return true
+      end
+    end
+    do
+      local _xmksbmy515ed5e3mksdal = 1
+      _xmksbmy515ed5e3mksdal = (_xmksbmy515ed5e3mksdal + 0)
+      _mksbln515ed5b4mksd6o.FilterDescendantsInstances = {_mmksav3515ed1f8mksaz0.Character, _mmksbmq515ed5dbmksd9x}
+    end
+    local _zmksbmz515ed5e4mksdao = workspace:Raycast(_zmksbmu515ed5dfmksda9, (_mmksbmv515ed5e0mksdac.Unit * _mksbmw515ed5e1mksdaf), _mksbln515ed5b4mksd6o)
+    do
+      local _mmksbn0515ed5e5mksdar = 1
+      _mmksbn0515ed5e5mksdar = (_mmksbn0515ed5e5mksdar + 0)
+      if (((45 * 43) == (43 * 45)) and not _zmksbmz515ed5e4mksdao) then
+        return true
+      end
+    end
+    return ((_zmksbmz515ed5e4mksdao.Instance ~= nil) and _zmksbmz515ed5e4mksdao.Instance:IsDescendantOf(_mmksbmq515ed5dbmksd9x))
+  end
+  do
+    local _mksbo5515ed60emksde6 = 1
+    _mksbo5515ed60emksde6 = (_mksbo5515ed60emksde6 + 0)
+    _zmksav2515ed1f7mksayx.RenderStepped:Connect(function()
+      do
+        local _zmksbne515ed5f3mksdbx = 1
+        _zmksbne515ed5f3mksdbx = (_zmksbne515ed5f3mksdbx + 0)
+        if ((((29 * 11) % 11) == 0) and (((_zmksav7515ed1fcmksazc.show_fov and _zmksav7515ed1fcmksazc.enabled) and _mmksavx515ed216mksb1i) and _mksavy515ed217mksb1l)) then
+          local _mksbn1515ed5e6mksdau = _mmksbkn515ed590mksd3o:GetMouseLocation()
+          do
+            local __mksbn2515ed5e7mksdax = 1
+            __mksbn2515ed5e7mksdax = (__mksbn2515ed5e7mksdax + 0)
+            _mksavy515ed217mksb1l.Position = _mksbn1515ed5e6mksdau
+          end
+          do
+            local _xmksbn3515ed5e8mksdb0 = 1
+            _xmksbn3515ed5e8mksdb0 = (_xmksbn3515ed5e8mksdb0 + 0)
+            _mksavy515ed217mksb1l.Radius = _zmksav7515ed1fcmksazc.fov
+          end
+          do
+            local _zmksbn4515ed5e9mksdb3 = 1
+            _zmksbn4515ed5e9mksdb3 = (_zmksbn4515ed5e9mksdb3 + 0)
+            _mksavy515ed217mksb1l.Color = Color3.new(0, 0, 0)
+          end
+          do
+            local _mmksbn5515ed5eamksdb6 = 1
+            _mmksbn5515ed5eamksdb6 = (_mmksbn5515ed5eamksdb6 + 0)
+            _mksavy515ed217mksb1l.Visible = true
+          end
+          do
+            local _mksbn6515ed5ebmksdb9 = 1
+            _mksbn6515ed5ebmksdb9 = (_mksbn6515ed5ebmksdb9 + 0)
+            _mmksavx515ed216mksb1i.Position = _mksbn1515ed5e6mksdau
+          end
+          do
+            local __mksbn7515ed5ecmksdbc = 1
+            __mksbn7515ed5ecmksdbc = (__mksbn7515ed5ecmksdbc + 0)
+            _mmksavx515ed216mksb1i.Radius = _zmksav7515ed1fcmksazc.fov
+          end
+          do
+            local _xmksbn8515ed5edmksdbf = 1
+            _xmksbn8515ed5edmksdbf = (_xmksbn8515ed5edmksdbf + 0)
+            _mmksavx515ed216mksb1i.Color = (_zmksav7515ed1fcmksazc.fov_color or Color3.fromRGB(255, 255, 255))
+          end
+          do
+            local _zmksbn9515ed5eemksdbi = 1
+            _zmksbn9515ed5eemksdbi = (_zmksbn9515ed5eemksdbi + 0)
+            _mmksavx515ed216mksb1i.Visible = true
+          end
+        else
+          do
+            local _mksbnb515ed5f0mksdbo = 1
+            _mksbnb515ed5f0mksdbo = (_mksbnb515ed5f0mksdbo + 0)
+            if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and _mmksavx515ed216mksb1i) then
+              do
+                local _mmksbna515ed5efmksdbl = 1
+                _mmksbna515ed5efmksdbl = (_mmksbna515ed5efmksdbl + 0)
+                _mmksavx515ed216mksb1i.Visible = false
+              end
+            end
+          end
+          do
+            local _xmksbnd515ed5f2mksdbu = 1
+            _xmksbnd515ed5f2mksdbu = (_xmksbnd515ed5f2mksdbu + 0)
+            if (((18 * 49) == (49 * 18)) and _mksavy515ed217mksb1l) then
+              do
+                local __mksbnc515ed5f1mksdbr = 1
+                __mksbnc515ed5f1mksdbr = (__mksbnc515ed5f1mksdbr + 0)
+                _mksavy515ed217mksb1l.Visible = false
+              end
+            end
+          end
+        end
+      end
+      do
+        local _mksbng515ed5f5mksdc3 = 1
+        _mksbng515ed5f5mksdc3 = (_mksbng515ed5f5mksdc3 + 0)
+        if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and not _zmksav7515ed1fcmksazc.enabled) then
+          do
+            local _mmksbnf515ed5f4mksdc0 = 1
+            _mmksbnf515ed5f4mksdc0 = (_mmksbnf515ed5f4mksdc0 + 0)
+            _zmksbl6515ed5a3mksd59 = nil
+          end
+          return
+        end
+      end
+      local __mksbnh515ed5f6mksdc6 = workspace.CurrentCamera
+      do
+        local _zmksbnj515ed5f8mksdcc = 1
+        _zmksbnj515ed5f8mksdcc = (_zmksbnj515ed5f8mksdcc + 0)
+        if (((63 * 95) == (95 * 63)) and not __mksbnh515ed5f6mksdc6) then
+          do
+            local _xmksbni515ed5f7mksdc9 = 1
+            _xmksbni515ed5f7mksdc9 = (_xmksbni515ed5f7mksdc9 + 0)
+            _zmksbl6515ed5a3mksd59 = nil
+          end
+          return
+        end
+      end
+      local _mmksbnk515ed5f9mksdcf = _mmksbkn515ed590mksd3o:GetMouseLocation()
+      local _mksbnl515ed5famksdci, __mksbnm515ed5fbmksdcl = nil, _zmksav7515ed1fcmksazc.fov
+      do
+        local _zmksbo3515ed60cmksde0 = 1
+        _zmksbo3515ed60cmksde0 = (_zmksbo3515ed60cmksde0 + 0)
+        for _xmksbnn515ed5fcmksdco, _zmksbno515ed5fdmksdcr in ipairs(Players:GetPlayers()) do
+          do
+            local _xmksbo2515ed60bmksddx = 1
+            _xmksbo2515ed60bmksddx = (_xmksbo2515ed60bmksddx + 0)
+            if (((6 + 87) == 93) and ((_zmksbno515ed5fdmksdcr ~= _mmksav3515ed1f8mksaz0) and _mksbko515ed591mksd3r(_zmksbno515ed5fdmksdcr))) then
+              local _mmksbnp515ed5femksdcu, _mksbnq515ed5ffmksdcx, __mksbnr515ed600mksdd0 = __mksbkz515ed59cmksd4o(_zmksbno515ed5fdmksdcr)
+              do
+                local __mksbo1515ed60amksddu = 1
+                __mksbo1515ed60amksddu = (__mksbo1515ed60amksddu + 0)
+                if (((91 * 74) == (74 * 91)) and (_mmksbnp515ed5femksdcu and __mksbnr515ed600mksdd0)) then
+                  local _xmksbns515ed601mksdd3 = _mmksbm1515ed5c2mksd7u(_mmksbnp515ed5femksdcu)
+                  do
+                    local _mksbo0515ed609mksddr = 1
+                    _mksbo0515ed609mksddr = (_mksbo0515ed609mksddr + 0)
+                    if (((24 + 96) == 120) and _xmksbns515ed601mksdd3) then
+                      local _zmksbnt515ed602mksdd6, _mmksbnu515ed603mksdd9 = __mksbnh515ed5f6mksdc6:WorldToViewportPoint(_xmksbns515ed601mksdd3.Position)
+                      do
+                        local _mmksbnz515ed608mksddo = 1
+                        _mmksbnz515ed608mksddo = (_mmksbnz515ed608mksddo + 0)
+                        if (((95 + 7) == 102) and (_mmksbnu515ed603mksdd9 and (_zmksbnt515ed602mksdd6.Z > 0))) then
+                          local _mksbnv515ed604mksddc = ((Vector2.new(_zmksbnt515ed602mksdd6.X, _zmksbnt515ed602mksdd6.Y) - _mmksbnk515ed5f9mksdcf)).Magnitude
+                          do
+                            local _zmksbny515ed607mksddl = 1
+                            _zmksbny515ed607mksddl = (_zmksbny515ed607mksddl + 0)
+                            if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and ((_mksbnv515ed604mksddc <= __mksbnm515ed5fbmksdcl) and _xmksbmo515ed5d9mksd9r(_xmksbns515ed601mksdd3, _mmksbnp515ed5femksdcu))) then
+                              do
+                                local __mksbnw515ed605mksddf = 1
+                                __mksbnw515ed605mksddf = (__mksbnw515ed605mksddf + 0)
+                                __mksbnm515ed5fbmksdcl = _mksbnv515ed604mksddc
+                              end
+                              do
+                                local _xmksbnx515ed606mksddi = 1
+                                _xmksbnx515ed606mksddi = (_xmksbnx515ed606mksddi + 0)
+                                _mksbnl515ed5famksdci = _xmksbns515ed601mksdd3
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      do
+        local _mmksbo4515ed60dmksde3 = 1
+        _mmksbo4515ed60dmksde3 = (_mmksbo4515ed60dmksde3 + 0)
+        _zmksbl6515ed5a3mksd59 = _mksbnl515ed5famksdci
+      end
+    end)
+  end
+  do
+    local _mksbpe515ed63bmksdhx = 1
+    _mksbpe515ed63bmksdhx = (_mksbpe515ed63bmksdhx + 0)
+    do
+      local __mksbo6515ed60fmksde9 = false
+      local _xmksbo7515ed610mksdec = Random.new()
+      local function _zmksbo8515ed611mksdef(_mmksbo9515ed612mksdei, _mksboa515ed613mksdel)
+        return (((_mksboa515ed613mksdel.Position - _mmksbo9515ed612mksdei)).Unit * 1000)
+      end
+      local __mksbob515ed614mksdeo
+      do
+        local _mmksbpd515ed63amksdhu = 1
+        _mmksbpd515ed63amksdhu = (_mmksbpd515ed63amksdhu + 0)
+        __mksbob515ed614mksdeo = hookmetamethod(game, _xmksat8515ed1b5mksatf({62, 63, 79, 67, 80, 73, 72, 71, 83, 84}, 63, 928), newcclosure(function(...)
+          do
+            local _xmksboc515ed615mksder = 1
+            _xmksboc515ed615mksder = (_xmksboc515ed615mksder + 0)
+            if (((95 + 93) == 188) and __mksbo6515ed60fmksde9) then
+              return __mksbob515ed614mksdeo(...)
+            end
+          end
+          local _zmksbod515ed616mksdeu = getnamecallmethod()
+          local _mmksboe515ed617mksdex = {...}
+          local _mksbof515ed618mksdf0 = _mmksboe515ed617mksdex[1]
+          local __mksbog515ed619mksdf3 = nil
+          do
+            local _zmksboi515ed61bmksdf9 = 1
+            _zmksboi515ed61bmksdf9 = (_zmksboi515ed61bmksdf9 + 0)
+            pcall(function()
+              do
+                local _xmksboh515ed61amksdf6 = 1
+                _xmksboh515ed61amksdf6 = (_xmksboh515ed61amksdf6 + 0)
+                __mksbog515ed619mksdf3 = getcallingscript()
+              end
+            end)
+          end
+          do
+            local _mmksboj515ed61cmksdfc = 1
+            _mmksboj515ed61cmksdfc = (_mmksboj515ed61cmksdfc + 0)
+            if (((88 * 18) == (18 * 88)) and _mmksblr515ed5b8mksd70(__mksbog515ed619mksdf3)) then
+              return __mksbob515ed614mksdeo(...)
+            end
+          end
+          do
+            local _zmksbpc515ed639mksdhr = 1
+            _zmksbpc515ed639mksdhr = (_zmksbpc515ed639mksdhr + 0)
+            if (((93 + 80) == 173) and (((((_zmksav7515ed1fcmksazc.enabled and not checkcaller()) and (_mksbof515ed618mksdf0 == workspace)) and _zmksbl6515ed5a3mksd59) and _zmksbl6515ed5a3mksd59.Parent) and (((_xmksbo7515ed610mksdec:NextNumber() * 100)) <= _zmksav7515ed1fcmksazc.hitchance))) then
+              local _mksbok515ed61dmksdff = _zmksbl6515ed5a3mksd59
+              do
+                local _xmksbpb515ed638mksdho = 1
+                _xmksbpb515ed638mksdho = (_xmksbpb515ed638mksdho + 0)
+                if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (_zmksbod515ed616mksdeu == _xmksat8515ed1b5mksatf({49, 65, 90, 69, 68, 87, 89}, 63, 928))) then
+                  local __mksbol515ed61emksdfi = _mmksboe515ed617mksdex[2]
+                  do
+                    local _zmksbox515ed62amksdgi = 1
+                    _zmksbox515ed62amksdgi = (_zmksbox515ed62amksdgi + 0)
+                    if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (typeof(__mksbol515ed61emksdfi) == _xmksat8515ed1b5mksatf({53, 69, 68, 86, 82, 86, 24}, 63, 928))) then
+                      do
+                        local _xmksbom515ed61fmksdfl = 1
+                        _xmksbom515ed61fmksdfl = (_xmksbom515ed61fmksdfl + 0)
+                        _mmksboe515ed617mksdex[3] = _zmksbo8515ed611mksdef(__mksbol515ed61emksdfi, _mksbok515ed61dmksdff)
+                      end
+                      do
+                        local _zmksbon515ed620mksdfo = 1
+                        _zmksbon515ed620mksdfo = (_zmksbon515ed620mksdfo + 0)
+                        __mksbo6515ed60fmksde9 = true
+                      end
+                      local _mmksboo515ed621mksdfr, _mksbop515ed622mksdfu, __mksboq515ed623mksdfx, _xmksbor515ed624mksdg0, _zmksbos515ed625mksdg3, _mmksbot515ed626mksdg6, _mksbou515ed627mksdg9 = pcall(__mksbob515ed614mksdeo, table.unpack(_mmksboe515ed617mksdex))
+                      do
+                        local __mksbov515ed628mksdgc = 1
+                        __mksbov515ed628mksdgc = (__mksbov515ed628mksdgc + 0)
+                        __mksbo6515ed60fmksde9 = false
+                      end
+                      do
+                        local _xmksbow515ed629mksdgf = 1
+                        _xmksbow515ed629mksdgf = (_xmksbow515ed629mksdgf + 0)
+                        if (((46 + 28) == 74) and _mmksboo515ed621mksdfr) then
+                          return _mksbop515ed622mksdfu, __mksboq515ed623mksdfx, _xmksbor515ed624mksdg0, _zmksbos515ed625mksdg3, _mmksbot515ed626mksdg6, _mksbou515ed627mksdg9
+                        end
+                      end
+                    end
+                  end
+                elseif ((((89 * 10) % 10) == 0) and ((((_zmksbod515ed616mksdeu == _xmksat8515ed1b5mksatf({37, 73, 79, 70, 51, 69, 87, 90, 54, 86, 59, 75, 100, 67, 86, 98, 87, 57, 88, 96, 98, 102, 90, 66, 96, 107, 109}, 63, 928)) or (_zmksbod515ed616mksdeu == _xmksat8515ed1b5mksatf({37, 73, 79, 70, 51, 69, 87, 90, 54, 86, 59, 75, 100, 67, 86, 98, 87, 71, 89, 91, 103, 89, 97, 95, 106, 108}, 63, 928))) or (_zmksbod515ed616mksdeu == _xmksat8515ed1b5mksatf({37, 73, 79, 70, 51, 69, 87, 90, 54, 86, 59, 75, 100}, 63, 928))) or (_zmksbod515ed616mksdeu == _xmksat8515ed1b5mksatf({69, 73, 79, 70, 51, 69, 87, 90, 54, 86, 59, 75, 100}, 63, 928)))) then
+                  local _mmksboy515ed62bmksdgl = _mmksboe515ed617mksdex[2]
+                  do
+                    local __mksbpa515ed637mksdhl = 1
+                    __mksbpa515ed637mksdhl = (__mksbpa515ed637mksdhl + 0)
+                    if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and (typeof(_mmksboy515ed62bmksdgl) == _xmksat8515ed1b5mksatf({49, 65, 90}, 63, 928))) then
+                      do
+                        local _mksboz515ed62cmksdgo = 1
+                        _mksboz515ed62cmksdgo = (_mksboz515ed62cmksdgo + 0)
+                        _mmksboe515ed617mksdex[2] = Ray.new(_mmksboy515ed62bmksdgl.Origin, _zmksbo8515ed611mksdef(_mmksboy515ed62bmksdgl.Origin, _mksbok515ed61dmksdff))
+                      end
+                      do
+                        local __mksbp0515ed62dmksdgr = 1
+                        __mksbp0515ed62dmksdgr = (__mksbp0515ed62dmksdgr + 0)
+                        __mksbo6515ed60fmksde9 = true
+                      end
+                      local _xmksbp1515ed62emksdgu, _zmksbp2515ed62fmksdgx, _mmksbp3515ed630mksdh0, _mksbp4515ed631mksdh3, __mksbp5515ed632mksdh6, _xmksbp6515ed633mksdh9, _zmksbp7515ed634mksdhc = pcall(__mksbob515ed614mksdeo, table.unpack(_mmksboe515ed617mksdex))
+                      do
+                        local _mmksbp8515ed635mksdhf = 1
+                        _mmksbp8515ed635mksdhf = (_mmksbp8515ed635mksdhf + 0)
+                        __mksbo6515ed60fmksde9 = false
+                      end
+                      do
+                        local _mksbp9515ed636mksdhi = 1
+                        _mksbp9515ed636mksdhi = (_mksbp9515ed636mksdhi + 0)
+                        if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _xmksbp1515ed62emksdgu) then
+                          return _zmksbp2515ed62fmksdgx, _mmksbp3515ed630mksdh0, _mksbp4515ed631mksdh3, __mksbp5515ed632mksdh6, _xmksbp6515ed633mksdh9, _zmksbp7515ed634mksdhc
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+          return __mksbob515ed614mksdeo(...)
+        end))
+      end
+    end
+  end
 end
-return nil
+do
+  local __mksbpf515ed63cmksdi0 = 1
+  __mksbpf515ed63cmksdi0 = (__mksbpf515ed63cmksdi0 + 0)
+  _zmksbkm515ed58fmksd3l()
 end
-local _1l_24={122,77,98,77,64,115,76,115,79,85,122,78,118,91,95,77,122,73,121,12,79,-1,67,76,90,77,98,76,64,115,76,115,79,85,122,78,118,91,95,77,122,72,121,12,79,-1,67,76,90,77,98,79,64,115,76,115,79,85,122,78,118,91,95,77,122,75,121,12,79,-1,67,76,90,77,98,78,95,76,122,74,118,98,73,95,76,122,69,118,98,72,122,68,98,75,95,75,122,71,126,98,75,115,70,90,77,122,74,95,73,116,122,68,98,74,95,74,122,71,126,98,74,115,70,90,77,122,69,95,72,116,122,68,98,69,95,69,122,71,126,98,69,115,70,90,77,122,65,95,76,116,115,64,122,67,118,122,66,90,76,98,68,122,93,98,71,122,92,98,70,122,68,98,65,95,65,122,71,126,98,65,115,95,111,76,90,76,87,76,122,68,98,64,95,64,122,71,126,98,64,115,95,111,79,90,76,98,67,122,68,98,66,95,66,122,71,126,98,66,95,67,92,101,320,122,68,98,93,95,93,122,71,126,98,93,122,68,98,92,95,92,122,71,126,98,92,115,94,122,89,118,90,77,87,76,73,92,115,79,85,122,88,118,91,90,76,101,167,120,320,122,68,98,95,95,95,122,71,126,98,95,115,95,111,78,90,76,87,76,115,79,85,122,91,118,91,122,90,90,79,98,94,115,79,85,122,91,118,91,122,85,90,79,98,89,115,79,85,122,91,118,91,122,84,90,79,98,88,95,94,122,87,118,98,91,115,86,122,81,118,98,90,70,85,122,80,109,116,85,122,83,127,116,85,122,82,122,109,116,85,122,108,70,85,122,111,109,116,85,122,110,122,105,116,85,122,104,122,68,116,85,122,107,109,116,85,122,106,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,103,122,102,116,85,122,97,109,116,85,122,96,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,99,115,64,122,101,118,122,100,122,98,122,98,90,78,116,85,122,125,127,116,85,122,124,115,64,122,101,118,122,71,122,71,122,71,90,78,116,116,85,122,127,70,85,122,111,109,116,85,122,104,122,126,116,85,122,97,109,116,85,122,96,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,99,115,64,122,101,118,122,121,122,120,122,100,90,78,116,85,122,123,109,116,85,122,122,122,117,116,85,122,116,115,64,122,101,118,122,100,122,100,122,100,90,78,116,116,85,122,119,70,85,122,111,109,116,85,122,118,122,113,116,85,122,104,122,68,116,85,122,96,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,125,127,116,85,122,124,115,64,122,101,118,122,71,122,71,122,71,90,78,116,116,85,122,112,70,85,122,111,109,116,85,122,110,122,115,116,85,122,106,115,64,122,101,118,122,100,122,98,122,98,90,78,116,85,122,124,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,103,122,114,116,85,122,13,122,71,116,85,122,12,122,15,116,116,85,122,14,70,85,122,111,109,116,85,122,9,127,116,85,122,8,122,11,116,85,122,10,115,64,122,101,118,122,98,122,100,122,5,90,78,116,85,122,4,115,64,122,101,118,122,100,122,7,122,6,90,78,116,85,122,1,115,64,122,101,118,122,100,122,6,122,6,90,78,116,85,122,0,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,125,127,116,85,122,3,122,2,116,116,85,122,29,70,85,122,28,109,116,85,122,31,109,116,85,122,30,109,116,85,122,25,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,24,115,64,122,101,118,122,27,122,27,122,27,90,78,116,85,122,26,115,64,122,101,118,122,100,122,27,122,120,90,78,116,85,122,21,122,20,116,116,98,85,70,85,122,111,109,116,85,122,110,122,23,116,85,122,22,122,17,116,85,122,16,122,5,116,85,122,19,109,116,85,122,18,122,45,116,85,122,83,127,116,85,122,44,109,116,98,84,70,85,122,111,109,116,85,122,16,122,47,116,85,122,19,109,116,85,122,18,122,45,116,85,122,44,109,116,85,122,46,122,120,116,98,87,70,98,86,70,98,81,111,73,98,80,111,72,98,83,111,75,98,82,111,74,98,109,111,69,98,108,111,68,98,111,111,71,98,110,111,70,98,105,111,65,98,104,111,64,98,107,111,67,98,106,111,66,98,101,111,93,98,100,70,85,122,45,127,116,85,122,41,127,116,85,122,40,127,116,85,122,43,127,116,85,122,42,127,116,85,122,37,127,116,85,122,36,127,116,85,122,39,127,116,85,122,38,127,116,85,122,33,127,116,85,122,32,127,116,85,122,35,127,116,85,122,34,127,116,85,122,61,127,116,85,122,60,127,116,85,122,63,127,116,85,122,62,127,116,85,122,57,127,116,85,122,56,127,116,85,122,59,127,116,98,103,70,85,122,68,70,85,122,68,122,45,116,85,122,58,122,40,116,116,85,122,58,70,85,122,68,122,40,116,85,122,58,122,43,116,116,85,122,11,70,85,122,68,122,40,116,85,122,58,122,42,116,116,85,122,117,70,85,122,68,122,42,116,85,122,58,122,37,116,116,85,122,53,70,85,122,68,122,37,116,85,122,58,122,36,116,116,85,122,52,70,85,122,68,122,40,116,85,122,58,122,39,116,116,85,122,55,70,85,122,68,122,39,116,85,122,58,122,38,116,116,85,122,54,70,85,122,68,122,38,116,85,122,58,122,33,116,116,85,122,49,70,85,122,68,122,43,116,85,122,58,122,32,116,116,85,122,48,70,85,122,68,122,32,116,85,122,58,122,35,116,116,85,122,51,70,85,122,68,122,35,116,85,122,58,122,34,116,116,85,122,2,70,85,122,68,122,43,116,85,122,58,122,61,116,116,85,122,20,70,85,122,68,122,61,116,85,122,58,122,60,116,116,85,122,50,70,85,122,68,122,60,116,85,122,58,122,63,116,116,98,102,70,85,122,68,70,85,122,68,122,45,116,85,122,58,122,41,116,116,85,122,58,70,85,122,68,122,41,116,85,122,58,122,62,116,116,85,122,11,70,85,122,68,122,41,116,85,122,58,122,57,116,116,85,122,117,70,85,122,68,122,41,116,85,122,58,122,56,116,116,85,122,53,70,85,122,68,122,41,116,85,122,58,122,59,116,116,98,97,111,92,98,96,111,95,98,99,111,94,98,98,111,89,98,125,111,88,98,124,111,91,98,127,111,90,98,126,111,85,98,121,111,84,98,120,111,87,98,123,111,86,98,122,122,68,98,117,95,117,122,71,126,98,117,95,94,122,205,118,85,122,204,118,91,95,122,90,79,87,76,122,68,98,116,95,116,122,71,126,98,116,95,88,122,207,118,85,122,204,118,91,111,81,90,79,87,76,115,79,85,122,91,118,91,122,206,90,79,98,119,115,79,85,122,91,118,91,122,201,90,79,98,118,115,200,122,203,118,122,202,90,76,98,113,122,68,98,112,95,112,122,71,126,98,112,95,113,122,197,109,116,122,68,98,115,95,115,122,71,126,98,115,95,113,122,196,109,116,122,68,98,114,95,114,122,71,126,98,114,95,113,122,199,122,68,116,122,68,98,13,95,13,122,71,126,98,13,95,113,122,198,122,193,116,122,68,98,12,95,12,122,71,126,98,12,95,113,122,192,115,64,122,101,118,122,100,122,100,122,100,90,78,116,122,68,98,15,95,15,122,71,126,98,15,95,113,122,195,122,49,116,122,68,98,14,95,14,122,71,126,98,14,95,113,122,194,122,68,116,115,200,122,203,118,122,202,90,76,98,9,122,68,98,8,95,8,122,71,126,98,8,95,9,122,197,109,116,122,68,98,11,95,11,122,71,126,98,11,95,9,122,196,109,116,122,68,98,10,95,10,122,71,126,98,10,95,9,122,199,122,221,116,122,68,98,5,95,5,122,71,126,98,5,95,9,122,198,122,193,116,122,68,98,4,95,4,122,71,126,98,4,95,9,122,192,115,64,122,101,118,122,71,122,71,122,71,90,78,116,122,68,98,7,95,7,122,71,126,98,7,95,9,122,195,122,54,116,122,68,98,6,95,6,122,71,126,98,6,95,9,122,194,122,68,116,70,85,122,45,70,85,122,68,122,45,116,116,85,122,220,70,85,122,68,122,220,116,116,85,122,41,70,85,122,68,122,41,116,85,122,58,122,40,116,116,85,122,40,70,85,122,68,122,40,116,85,122,58,122,41,116,116,85,122,43,70,85,122,68,122,43,116,85,122,58,122,41,116,116,85,122,223,70,85,122,68,122,45,116,85,122,58,122,220,116,85,122,11,122,40,116,85,122,117,122,41,116,85,122,53,122,43,116,85,122,52,122,42,116,85,122,55,122,39,116,85,122,54,122,62,116,85,122,49,122,57,116,85,122,48,122,32,116,85,122,51,122,61,116,85,122,2,122,56,116,85,122,20,122,59,116,116,98,1,111,80,98,0,111,83,98,3,115,222,122,203,118,90,77,98,2,122,68,98,29,95,29,122,71,126,98,29,95,2,122,217,115,216,122,219,118,122,218,118,116,122,68,98,28,95,28,122,71,126,98,28,95,2,122,213,127,116,111,82,98,31,111,109,98,30,111,108,98,25,122,68,98,24,95,24,122,71,126,98,24,95,88,122,207,118,85,122,204,118,91,111,111,90,79,87,76,76,98,27,115,200,122,203,118,122,202,90,76,98,26,122,68,98,21,95,21,122,71,126,98,21,95,26,122,196,109,116,122,68,98,20,95,20,122,71,126,98,20,95,26,122,199,122,68,116,122,68,98,23,95,23,122,71,126,98,23,95,26,122,198,122,193,116,122,68,98,22,95,22,122,71,126,98,22,95,26,122,197,109,116,122,68,98,17,95,17,122,71,126,98,17,95,26,122,195,122,48,116,122,68,98,16,95,16,122,71,126,98,16,95,26,122,194,122,68,116,122,68,98,19,95,19,122,71,126,98,19,95,26,122,192,115,64,122,101,118,122,100,122,100,122,100,90,78,116,115,200,122,203,118,122,202,90,76,98,18,122,68,98,45,95,45,122,71,126,98,45,95,18,122,196,109,116,122,68,98,44,95,44,122,71,126,98,44,95,18,122,199,122,221,116,122,68,98,47,95,47,122,71,126,98,47,95,18,122,198,122,193,116,122,68,98,46,95,46,122,71,126,98,46,95,18,122,197,109,116,122,68,98,41,95,41,122,71,126,98,41,95,18,122,195,122,49,116,122,68,98,40,95,40,122,71,126,98,40,95,18,122,194,122,68,116,122,68,98,43,95,43,122,71,126,98,43,95,18,122,192,115,64,122,101,118,122,71,122,71,122,71,90,78,116,115,222,122,203,118,90,77,98,42,122,68,98,37,95,37,122,71,126,98,37,95,42,122,217,115,216,122,219,118,122,218,118,116,122,68,98,36,95,36,122,71,126,98,36,95,42,122,213,127,116,70,85,122,212,127,116,85,122,215,127,116,85,122,214,127,116,85,122,209,127,116,85,122,208,127,116,85,122,211,127,116,85,122,210,127,116,85,122,237,127,116,85,122,236,127,116,85,122,239,127,116,85,122,238,127,116,85,122,233,127,116,85,122,232,127,116,85,122,235,127,116,85,122,234,127,116,85,122,229,127,116,85,122,228,127,116,85,122,231,127,116,85,122,230,127,116,85,122,225,127,116,85,122,224,127,116,85,122,227,127,116,85,122,226,127,116,85,122,253,127,116,85,122,252,127,116,85,122,255,127,116,85,122,254,127,116,85,122,249,127,116,98,39,111,110,98,38,111,105,98,33,111,104,98,32,122,68,98,35,95,35,122,71,126,98,35,95,88,122,207,118,85,122,204,118,91,111,107,90,79,87,76,122,68,98,34,95,34,122,71,126,98,34,109,98,61,115,248,122,203,118,90,77,98,60,111,106,98,63,76,98,62,122,68,98,57,95,57,122,71,126,98,57,64,115,251,115,79,122,250,115,245,111,101,12,76,-1,67,76,98,62,95,76,85,122,244,118,91,70,85,122,247,122,246,116,85,122,241,122,240,116,85,122,243,95,71,116,85,122,242,115,141,122,140,118,122,143,122,143,90,79,116,85,122,142,127,116,85,122,137,127,116,85,122,136,127,116,85,122,139,122,138,116,85,122,133,127,116,85,122,132,127,116,85,122,135,127,116,85,122,134,127,116,85,122,129,122,128,116,85,122,131,122,128,116,85,122,130,127,116,85,122,157,115,141,122,140,118,122,156,122,159,90,79,116,90,79,98,56,95,56,85,122,158,118,91,70,85,122,153,122,152,116,85,122,243,122,155,116,85,122,154,122,149,116,90,79,98,59,95,56,85,122,158,118,91,70,85,122,153,122,148,116,85,122,243,122,151,116,85,122,154,122,150,116,90,79,98,58,95,56,85,122,158,118,91,70,85,122,153,122,145,116,85,122,243,122,144,116,85,122,154,122,147,116,90,79,98,53,95,56,85,122,158,118,91,70,85,122,153,122,146,116,85,122,243,122,173,116,85,122,154,122,172,116,90,79,98,52,95,56,85,122,158,118,91,70,85,122,153,122,175,116,85,122,243,122,108,116,85,122,154,122,174,116,90,79,98,55,122,68,98,54,95,54,122,71,126,98,54,115,95,111,100,90,76,87,76,122,68,98,49,95,49,122,71,126,98,49,95,59,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,170,116,85,122,165,122,164,116,85,122,154,122,167,116,90,79,98,48,122,68,98,51,95,51,122,71,126,98,51,95,48,85,122,166,118,91,122,161,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,103,116,90,78,85,122,188,118,91,122,191,70,85,122,162,122,190,116,85,122,185,122,184,116,85,122,160,122,170,116,85,122,187,109,116,85,122,186,109,116,90,78,87,76,122,68,98,50,95,50,122,71,126,98,50,95,48,85,122,181,118,91,122,180,70,85,122,160,122,185,116,85,122,183,70,85,122,68,122,23,116,85,122,58,122,182,116,116,85,122,162,122,23,116,85,122,189,111,102,116,90,78,87,76,122,68,98,205,95,205,122,71,126,98,205,95,48,85,122,177,118,91,122,176,70,85,122,160,122,179,116,85,122,162,122,17,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,97,116,90,78,87,76,122,68,98,204,95,204,122,71,126,98,204,95,48,85,122,177,118,91,122,335,70,85,122,160,122,334,116,85,122,162,122,5,116,85,122,178,122,329,116,85,122,333,122,328,116,85,122,332,122,71,116,85,122,189,111,96,116,90,78,87,76,122,68,98,207,95,207,122,71,126,98,207,95,48,85,122,166,118,91,122,331,70,85,122,160,122,330,116,85,122,162,109,116,85,122,189,111,99,116,90,78,85,122,325,118,91,122,324,70,85,122,162,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,247,122,334,116,85,122,189,111,98,116,90,78,87,76,122,68,98,206,95,206,122,71,126,98,206,95,48,85,122,181,118,91,122,327,70,85,122,160,122,326,116,85,122,183,70,85,122,68,122,45,116,85,122,58,122,220,116,85,122,11,122,41,116,85,122,117,122,40,116,85,122,53,122,43,116,85,122,52,122,223,116,116,85,122,162,122,45,116,85,122,189,111,125,116,90,78,87,76,122,68,98,201,95,201,122,71,126,98,201,95,48,85,122,166,118,91,122,321,70,85,122,160,122,320,116,85,122,162,109,116,85,122,189,111,124,116,90,78,87,76,122,68,98,200,95,200,122,71,126,98,200,95,59,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,323,116,85,122,165,122,322,116,85,122,154,122,349,116,90,79,98,203,122,68,98,202,95,202,122,71,126,98,202,95,203,85,122,166,118,91,122,348,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,127,116,90,78,87,76,122,68,98,197,95,197,122,71,126,98,197,95,203,85,122,181,118,91,122,351,70,85,122,160,122,326,116,85,122,183,70,85,122,68,122,45,116,85,122,58,122,220,116,85,122,11,122,41,116,85,122,117,122,248,116,116,85,122,162,122,45,116,85,122,189,111,126,116,90,78,87,76,122,68,98,196,95,196,122,71,126,98,196,95,203,85,122,177,118,91,122,350,70,85,122,160,122,334,116,85,122,162,122,47,116,85,122,178,122,48,116,85,122,333,122,328,116,85,122,332,122,71,116,85,122,189,111,121,116,90,78,87,76,122,68,98,199,95,199,122,71,126,98,199,95,203,85,122,166,118,91,122,345,70,85,122,160,122,330,116,85,122,162,109,116,85,122,189,111,120,116,90,78,85,122,325,118,91,122,344,70,85,122,162,115,64,122,101,118,122,5,122,121,122,100,90,78,116,85,122,247,122,334,116,85,122,189,111,123,116,90,78,87,76,122,68,98,198,95,198,122,71,126,98,198,95,203,85,122,166,118,91,122,347,70,85,122,160,122,320,116,85,122,162,109,116,85,122,189,111,122,116,90,78,87,76,122,68,98,193,95,193,122,71,126,98,193,95,203,85,122,177,118,91,122,346,70,85,122,160,122,341,116,85,122,162,122,120,116,85,122,178,122,71,116,85,122,333,122,120,116,85,122,332,122,71,116,85,122,189,111,117,116,90,78,87,76,122,68,98,192,95,192,122,71,126,98,192,95,58,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,340,116,85,122,165,122,343,116,85,122,154,122,342,116,90,79,98,195,122,68,98,194,95,194,122,71,126,98,194,95,195,85,122,166,118,91,122,337,70,85,122,160,122,336,116,85,122,162,109,116,85,122,189,111,116,116,90,78,85,122,188,118,91,122,339,70,85,122,162,122,338,116,85,122,185,122,365,116,85,122,160,122,336,116,85,122,186,109,116,85,122,187,127,116,90,78,87,76,122,68,98,221,95,221,122,71,126,98,221,95,195,85,122,166,118,91,122,364,70,85,122,160,122,367,116,85,122,162,127,116,85,122,189,111,119,116,90,78,87,76,122,68,98,220,95,220,122,71,126,98,220,95,195,85,122,177,118,91,122,366,70,85,122,160,122,361,116,85,122,162,122,109,116,85,122,178,122,360,116,85,122,333,122,363,116,85,122,332,122,71,116,85,122,189,111,118,116,90,78,87,76,122,68,98,223,95,223,122,71,126,98,223,95,58,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,362,116,85,122,165,122,108,116,85,122,154,122,357,116,90,79,98,222,122,68,98,217,95,217,122,71,126,98,217,95,222,85,122,166,118,91,122,356,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,113,116,90,78,85,122,325,118,91,122,359,70,85,122,162,95,85,122,108,118,122,96,118,116,85,122,247,122,358,116,85,122,189,111,112,116,90,78,85,122,325,118,91,122,353,70,85,122,162,95,85,122,108,118,122,99,118,116,85,122,247,122,352,116,85,122,189,111,115,116,90,78,87,76,122,68,98,216,95,216,122,71,126,98,216,95,222,85,122,181,118,91,122,355,70,85,122,160,122,185,116,85,122,183,70,85,122,68,122,105,116,85,122,58,122,354,116,116,85,122,162,122,105,116,85,122,189,111,114,116,90,78,87,76,122,68,98,219,95,219,122,71,126,98,219,95,222,85,122,166,118,91,122,381,70,85,122,160,122,380,116,85,122,162,109,116,85,122,189,111,13,116,90,78,85,122,325,118,91,122,383,70,85,122,162,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,247,122,380,116,85,122,189,111,12,116,90,78,87,76,122,68,98,218,95,218,122,71,126,98,218,95,222,85,122,177,118,91,122,382,70,85,122,160,122,377,116,85,122,162,122,102,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,15,116,90,78,87,76,122,68,98,213,95,213,122,71,126,98,213,95,222,85,122,166,118,91,122,376,70,85,122,160,122,379,116,85,122,162,109,116,85,122,189,111,14,116,90,78,87,76,122,68,98,212,95,212,122,71,126,98,212,95,222,85,122,177,118,91,122,378,70,85,122,160,122,199,116,85,122,162,122,68,116,85,122,178,122,68,116,85,122,333,122,117,116,85,122,332,122,68,116,85,122,189,111,9,116,90,78,87,76,122,68,98,215,95,215,122,71,126,98,215,95,222,85,122,166,118,91,122,373,70,85,122,160,122,372,116,85,122,162,127,116,85,122,189,111,8,116,90,78,85,122,325,118,91,122,375,70,85,122,162,95,85,122,108,118,122,124,118,116,85,122,247,122,372,116,85,122,189,111,11,116,90,78,87,76,122,68,98,214,95,214,122,71,126,98,214,95,58,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,374,116,85,122,165,122,369,116,85,122,154,122,127,116,90,79,98,209,122,68,98,208,95,208,122,71,126,98,208,95,209,85,122,166,118,91,122,368,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,10,116,90,78,85,122,325,118,91,122,371,70,85,122,162,95,85,122,127,118,122,96,118,116,85,122,247,122,370,116,85,122,189,111,5,116,90,78,85,122,325,118,91,122,269,70,85,122,162,95,85,122,127,118,122,99,118,116,85,122,247,122,379,116,85,122,189,111,4,116,90,78,87,76,122,68,98,211,95,211,122,71,126,98,211,95,209,85,122,177,118,91,122,268,70,85,122,160,122,199,116,85,122,162,122,126,116,85,122,178,122,271,116,85,122,333,122,53,116,85,122,332,122,68,116,85,122,189,111,7,116,90,78,87,76,122,68,98,210,95,210,122,71,126,98,210,95,209,85,122,166,118,91,122,270,70,85,122,160,122,379,116,85,122,162,109,116,85,122,189,111,6,116,90,78,87,76,122,68,98,237,95,237,122,71,126,98,237,95,209,85,122,166,118,91,122,265,70,85,122,160,122,264,116,85,122,162,109,116,85,122,189,111,1,116,90,78,85,122,325,118,91,122,267,70,85,122,162,95,85,122,127,118,122,116,118,116,85,122,247,122,264,116,85,122,189,111,0,116,90,78,87,76,122,68,98,236,95,236,122,71,126,98,236,95,209,85,122,177,118,91,122,266,70,85,122,160,122,261,116,85,122,162,122,117,116,85,122,178,122,68,116,85,122,333,122,2,116,85,122,332,122,71,116,85,122,189,111,3,116,90,78,87,76,122,68,98,239,95,239,122,71,126,98,239,95,58,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,260,116,85,122,165,122,263,116,85,122,154,122,262,116,90,79,98,238,122,68,98,233,95,233,122,71,126,98,233,95,238,85,122,166,118,91,122,257,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,2,116,90,78,85,122,325,118,91,122,256,70,85,122,162,95,85,122,119,118,122,96,118,116,85,122,247,122,259,116,85,122,189,111,29,116,90,78,87,76,122,68,98,232,95,232,122,71,126,98,232,95,238,85,122,181,118,91,122,258,70,85,122,160,122,285,116,85,122,183,70,85,122,68,122,113,116,85,122,58,122,142,116,85,122,11,122,284,116,85,122,117,122,182,116,116,85,122,162,122,113,116,85,122,189,111,28,116,90,78,87,76,122,68,98,235,95,235,122,71,126,98,235,95,238,85,122,177,118,91,122,287,70,85,122,160,122,199,116,85,122,162,122,68,116,85,122,178,122,271,116,85,122,333,122,117,116,85,122,332,122,68,116,85,122,189,111,31,116,90,78,87,76,122,68,98,234,95,234,122,71,126,98,234,95,238,85,122,166,118,91,122,286,70,85,122,160,122,372,116,85,122,162,127,116,85,122,189,111,30,116,90,78,85,122,325,118,91,122,281,70,85,122,162,95,85,122,119,118,122,124,118,116,85,122,247,122,372,116,85,122,189,111,25,116,90,78,87,76,122,68,98,229,95,229,122,71,126,98,229,95,58,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,280,116,85,122,165,122,283,116,85,122,154,122,112,116,90,79,98,228,122,68,98,231,95,231,122,71,126,98,231,95,228,85,122,166,118,91,122,282,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,24,116,90,78,85,122,325,118,91,122,277,70,85,122,162,95,85,122,112,118,122,106,118,116,85,122,247,122,380,116,85,122,189,111,27,116,90,78,85,122,325,118,91,122,276,70,85,122,162,95,85,122,112,118,122,124,118,116,85,122,247,122,372,116,85,122,189,111,26,116,90,78,87,76,122,68,98,230,95,230,122,71,126,98,230,95,228,85,122,181,118,91,122,279,70,85,122,160,122,185,116,85,122,183,70,85,122,68,122,115,116,85,122,58,122,278,116,116,85,122,162,122,115,116,85,122,189,111,21,116,90,78,87,76,122,68,98,225,95,225,122,71,126,98,225,95,228,85,122,181,118,91,122,273,70,85,122,160,122,272,116,85,122,183,70,85,122,68,122,15,116,85,122,58,122,275,116,116,85,122,162,122,15,116,85,122,189,111,20,116,90,78,87,76,122,68,98,224,95,224,122,71,126,98,224,95,228,85,122,177,118,91,122,274,70,85,122,160,122,377,116,85,122,162,122,114,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,23,116,90,78,87,76,122,68,98,227,95,227,122,71,126,98,227,95,228,85,122,177,118,91,122,301,70,85,122,160,122,300,116,85,122,162,122,71,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,22,116,90,78,87,76,122,68,98,226,95,226,122,71,126,98,226,95,58,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,303,116,85,122,165,122,302,116,85,122,154,122,297,116,90,79,98,253,122,68,98,252,95,252,122,71,126,98,252,95,253,85,122,166,118,91,122,296,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,17,116,90,78,85,122,325,118,91,122,299,70,85,122,162,115,64,122,101,118,122,98,122,100,122,5,90,78,116,85,122,247,122,298,116,85,122,189,111,16,116,90,78,85,122,325,118,91,122,293,70,85,122,162,115,64,122,101,118,122,100,122,7,122,6,90,78,116,85,122,247,122,292,116,85,122,189,111,19,116,90,78,85,122,325,118,91,122,295,70,85,122,162,115,64,122,101,118,122,100,122,6,122,6,90,78,116,85,122,247,122,294,116,85,122,189,111,18,116,90,78,87,76,122,68,98,255,95,255,122,71,126,98,255,95,253,85,122,166,118,91,122,289,70,85,122,160,122,288,116,85,122,162,127,116,85,122,189,111,45,116,90,78,85,122,325,118,91,122,291,70,85,122,162,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,247,122,290,116,85,122,189,111,44,116,90,78,87,76,122,68,98,254,95,254,122,71,126,98,254,95,253,85,122,177,118,91,122,317,70,85,122,160,122,316,116,85,122,162,122,11,116,85,122,178,122,58,116,85,122,333,122,54,116,85,122,332,122,71,116,85,122,189,111,47,116,90,78,87,76,122,68,98,249,95,249,122,71,126,98,249,95,253,85,122,166,118,91,122,319,70,85,122,160,122,318,116,85,122,162,127,116,85,122,189,111,46,116,90,78,87,76,122,68,98,248,95,248,122,71,126,98,248,95,58,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,313,116,85,122,165,122,312,116,85,122,154,122,315,116,90,79,98,251,122,68,98,250,95,250,122,71,126,98,250,95,251,85,122,166,118,91,122,314,70,85,122,160,122,309,116,85,122,162,109,116,85,122,189,111,41,116,90,78,85,122,325,118,91,122,308,70,85,122,162,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,247,122,153,116,85,122,189,111,40,116,90,78,87,76,122,68,98,245,95,245,122,71,126,98,245,95,251,85,122,166,118,91,122,311,70,85,122,160,122,310,116,85,122,162,109,116,85,122,189,111,43,116,90,78,85,122,325,118,91,122,305,70,85,122,162,115,64,122,101,118,122,27,122,27,122,27,90,78,116,85,122,247,122,310,116,85,122,189,111,42,116,90,78,87,76,122,68,98,244,95,244,122,71,126,98,244,95,251,85,122,166,118,91,122,304,70,85,122,160,122,307,116,85,122,162,109,116,85,122,189,111,37,116,90,78,85,122,325,118,91,122,306,70,85,122,162,115,64,122,101,118,122,100,122,27,122,120,90,78,116,85,122,247,122,307,116,85,122,189,111,36,116,90,78,87,76,122,68,98,247,95,247,122,71,126,98,247,95,251,85,122,177,118,91,122,461,70,85,122,160,122,460,116,85,122,162,122,20,116,85,122,178,122,48,116,85,122,333,122,329,116,85,122,332,122,71,116,85,122,189,111,39,116,90,78,87,76,115,79,85,122,91,118,91,122,206,90,79,98,246,115,79,85,122,91,118,91,122,463,90,79,98,241,70,85,122,462,70,85,122,111,109,116,85,122,110,122,162,116,85,122,457,122,456,116,85,122,459,122,456,116,116,85,122,458,70,85,122,111,109,116,85,122,457,122,360,116,85,122,459,122,360,116,85,122,453,109,116,116,85,122,452,70,85,122,111,109,116,85,122,457,122,455,116,85,122,459,122,455,116,116,85,122,454,70,85,122,111,109,116,85,122,449,122,360,116,85,122,448,76,116,85,122,451,76,116,116,85,122,450,70,85,122,31,122,329,116,116,85,122,477,70,85,122,111,109,116,116,98,240,111,38,98,243,70,98,242,122,68,98,141,95,141,122,71,126,98,141,95,246,122,476,118,85,122,204,118,91,111,33,90,79,87,76,122,68,98,140,95,140,122,71,126,98,140,95,246,122,479,118,85,122,204,118,91,111,32,90,79,87,76,109,98,143,111,35,98,142,111,34,98,137,122,68,98,136,95,136,122,71,126,98,136,95,88,122,207,118,85,122,204,118,91,111,61,90,79,87,76,111,60,98,139,111,63,98,138,111,62,98,133,122,68,98,132,95,132,122,71,126,98,132,95,53,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,478,116,85,122,165,122,473,116,85,122,154,122,472,116,90,79,98,135,122,68,98,134,95,134,122,71,126,98,134,95,135,85,122,166,118,91,122,475,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,57,116,90,78,87,76,122,68,98,129,95,129,122,71,126,98,129,95,135,85,122,177,118,91,122,474,70,85,122,160,122,469,116,85,122,162,122,456,116,85,122,178,122,68,116,85,122,333,122,468,116,85,122,332,122,71,116,85,122,189,111,56,116,90,78,87,76,122,68,98,128,95,128,122,71,126,98,128,95,135,85,122,181,118,91,122,471,70,85,122,160,122,185,116,85,122,183,70,85,122,68,122,162,116,85,122,58,122,470,116,116,85,122,162,122,162,116,85,122,189,111,59,116,90,78,87,76,122,68,98,131,95,131,122,71,126,98,131,95,53,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,465,116,85,122,165,122,464,116,85,122,154,122,467,116,90,79,98,130,122,68,98,157,95,157,122,71,126,98,157,95,130,85,122,166,118,91,122,466,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,58,116,90,78,87,76,122,68,98,156,95,156,122,71,126,98,156,95,130,85,122,177,118,91,122,493,70,85,122,160,122,492,116,85,122,162,122,360,116,85,122,178,122,68,116,85,122,333,122,495,116,85,122,332,122,71,116,85,122,189,111,53,116,90,78,87,76,122,68,98,159,95,159,122,71,126,98,159,95,130,85,122,166,118,91,122,494,70,85,122,160,122,489,116,85,122,162,109,116,85,122,189,111,52,116,90,78,87,76,122,68,98,158,95,158,122,71,126,98,158,95,53,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,488,116,85,122,165,122,491,116,85,122,154,122,490,116,90,79,98,153,122,68,98,152,95,152,122,71,126,98,152,95,153,85,122,166,118,91,122,485,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,55,116,90,78,87,76,122,68,98,155,95,155,122,71,126,98,155,95,153,85,122,177,118,91,122,484,70,85,122,160,122,488,116,85,122,162,122,487,116,85,122,178,122,71,116,85,122,333,122,328,116,85,122,332,122,71,116,85,122,189,111,54,116,90,78,87,76,122,68,98,154,95,154,122,71,126,98,154,95,53,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,486,116,85,122,165,122,481,116,85,122,154,122,480,116,90,79,98,149,122,68,98,148,95,148,122,71,126,98,148,95,149,85,122,166,118,91,122,483,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,49,116,90,78,87,76,122,68,98,151,95,151,122,71,126,98,151,95,149,85,122,177,118,91,122,482,70,85,122,160,122,509,116,85,122,162,122,360,116,85,122,178,122,53,116,85,122,333,122,495,116,85,122,332,122,71,116,85,122,189,111,48,116,90,78,87,76,122,68,98,150,95,150,122,71,126,98,150,95,53,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,508,116,85,122,165,122,511,116,85,122,154,122,450,116,90,79,98,145,122,68,98,144,95,144,122,71,126,98,144,95,145,85,122,177,118,91,122,510,70,85,122,160,122,310,116,85,122,162,122,329,116,85,122,178,122,68,116,85,122,333,122,495,116,85,122,332,122,71,116,85,122,189,111,51,116,90,78,87,76,122,68,98,147,95,147,122,71,126,98,147,95,145,85,122,505,118,91,70,85,122,160,122,504,116,90,79,85,122,188,118,91,122,507,70,85,122,162,122,506,116,85,122,186,109,116,85,122,160,122,501,116,85,122,185,122,500,116,85,122,189,111,50,116,90,78,87,76,122,68,98,146,95,146,122,71,126,98,146,95,53,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,503,116,85,122,165,122,108,116,85,122,154,122,502,116,90,79,98,173,122,68,98,172,95,172,122,71,126,98,172,95,173,85,122,166,118,91,122,497,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,205,116,90,78,87,76,70,85,122,16,70,85,122,111,109,116,85,122,457,122,496,116,85,122,459,122,496,116,116,85,122,499,122,68,116,85,122,498,70,85,122,111,109,116,85,122,449,122,397,116,85,122,396,76,116,116,85,122,399,70,85,122,111,109,116,85,122,398,122,71,116,85,122,393,122,495,116,116,98,175,122,68,98,174,95,174,122,71,126,98,174,115,95,111,204,90,76,87,76,122,71,122,71,76,109,98,170,98,171,98,168,98,169,76,76,98,164,98,165,111,207,98,167,111,206,98,166,122,68,98,161,95,161,122,71,126,98,161,95,88,85,122,392,118,91,122,395,115,216,122,394,118,122,23,118,122,389,118,122,53,126,111,201,90,73,87,76,122,68,98,160,95,160,122,71,126,98,160,95,88,122,207,118,85,122,204,118,91,111,200,90,79,87,76,122,68,98,163,95,163,122,71,126,98,163,95,88,122,207,118,85,122,204,118,91,111,203,90,79,87,76,122,68,98,162,95,162,122,71,126,98,162,95,55,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,388,116,85,122,165,122,391,116,85,122,154,122,390,116,90,79,98,189,122,68,98,188,95,188,122,71,126,98,188,95,189,85,122,166,118,91,122,385,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,202,116,90,78,87,76,122,68,98,191,95,191,122,71,126,98,191,95,189,85,122,177,118,91,122,384,70,85,122,160,122,334,116,85,122,162,122,496,116,85,122,178,122,68,116,85,122,333,122,5,116,85,122,332,122,71,116,85,122,189,111,197,116,90,78,87,76,122,68,98,190,95,190,122,71,126,98,190,95,55,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,387,116,85,122,165,122,386,116,85,122,154,122,413,116,90,79,98,185,122,68,98,184,95,184,122,71,126,98,184,95,185,85,122,177,118,91,122,412,70,85,122,160,122,387,116,85,122,162,122,68,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,196,116,90,78,87,76,122,68,98,187,95,187,122,71,126,98,187,95,55,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,415,116,85,122,165,122,414,116,85,122,154,122,409,116,90,79,98,186,122,68,98,181,95,181,122,71,126,98,181,95,186,85,122,166,118,91,122,408,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,199,116,90,78,87,76,122,68,98,180,95,180,122,71,126,98,180,95,186,85,122,505,118,91,70,85,122,160,122,411,116,90,79,85,122,188,118,91,122,410,70,85,122,162,122,405,116,85,122,186,109,116,85,122,160,122,415,116,85,122,185,122,500,116,85,122,189,111,198,116,90,78,87,76,122,68,98,183,95,183,122,71,126,98,183,95,186,85,122,177,118,91,122,404,70,85,122,160,122,469,116,85,122,162,122,397,116,85,122,178,122,53,116,85,122,333,122,468,116,85,122,332,122,71,116,85,122,189,111,193,116,90,78,87,76,122,68,98,182,95,182,122,71,126,98,182,95,55,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,407,116,85,122,165,122,406,116,85,122,154,122,401,116,90,79,98,177,122,68,98,176,95,176,122,71,126,98,176,95,177,85,122,166,118,91,122,400,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,192,116,90,78,87,76,122,68,98,179,95,179,122,71,126,98,179,95,177,85,122,177,118,91,122,403,70,85,122,160,122,402,116,85,122,162,122,71,116,85,122,178,122,71,116,85,122,333,122,120,116,85,122,332,122,71,116,85,122,189,111,195,116,90,78,87,76,122,68,98,178,95,178,122,71,126,98,178,95,177,85,122,177,118,91,122,429,70,85,122,160,122,428,116,85,122,162,122,495,116,85,122,178,122,120,116,85,122,333,122,431,116,85,122,332,122,71,116,85,122,189,111,194,116,90,78,87,76,70,85,122,430,115,216,122,425,118,122,430,118,116,85,122,424,115,216,122,425,118,122,424,118,116,98,333,70,85,122,427,70,85,122,426,122,421,116,85,122,420,122,423,116,85,122,422,122,417,116,85,122,416,122,419,116,85,122,418,122,445,116,85,122,444,122,447,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,442,70,85,122,426,122,437,116,85,122,420,122,436,116,85,122,422,122,439,116,85,122,416,122,438,116,85,122,418,122,433,116,85,122,444,122,432,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,435,70,85,122,426,122,434,116,85,122,420,122,589,116,85,122,422,122,588,116,85,122,416,122,591,116,85,122,418,122,590,116,85,122,444,122,585,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,584,70,85,122,426,122,587,116,85,122,420,122,586,116,85,122,422,122,587,116,85,122,416,122,587,116,85,122,418,122,587,116,85,122,444,122,581,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,580,70,85,122,426,122,583,116,85,122,420,122,582,116,85,122,422,122,577,116,85,122,416,122,576,116,85,122,418,122,579,116,85,122,444,122,578,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,605,70,85,122,426,122,604,116,85,122,420,122,607,116,85,122,422,122,606,116,85,122,416,122,601,116,85,122,418,122,600,116,85,122,444,122,603,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,602,70,85,122,426,122,597,116,85,122,420,122,596,116,85,122,422,122,599,116,85,122,416,122,598,116,85,122,418,122,593,116,85,122,444,122,592,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,595,70,85,122,426,122,594,116,85,122,420,122,621,116,85,122,422,122,620,116,85,122,416,122,594,116,85,122,418,122,594,116,85,122,444,122,623,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,622,70,85,122,426,122,617,116,85,122,420,122,616,116,85,122,422,122,619,116,85,122,416,122,618,116,85,122,418,122,613,116,85,122,444,122,612,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,615,70,85,122,426,122,614,116,85,122,420,122,609,116,85,122,422,122,608,116,85,122,416,122,611,116,85,122,418,122,610,116,85,122,444,122,637,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,636,70,85,122,426,122,639,116,85,122,420,122,638,116,85,122,422,122,633,116,85,122,416,122,632,116,85,122,418,122,635,116,85,122,444,122,634,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,629,70,85,122,426,122,628,116,85,122,420,122,631,116,85,122,422,122,630,116,85,122,416,122,625,116,85,122,418,122,624,116,85,122,444,122,627,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,626,70,85,122,426,122,525,116,85,122,420,122,524,116,85,122,422,122,527,116,85,122,416,122,526,116,85,122,418,122,521,116,85,122,444,122,520,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,523,70,85,122,426,122,522,116,85,122,420,122,517,116,85,122,422,122,516,116,85,122,416,122,519,116,85,122,418,122,518,116,85,122,444,122,513,116,85,122,446,122,441,116,85,122,440,122,443,116,116,85,122,512,70,85,122,426,122,515,116,85,122,420,122,514,116,85,122,422,122,541,116,85,122,416,122,540,116,85,122,418,122,543,116,85,122,444,122,542,116,85,122,446,122,441,116,85,122,440,122,443,116,116,98,332,70,98,335,122,68,98,334,95,334,122,71,126,98,334,115,537,95,332,12,76,78,98,331,98,328,98,329,93,329,328,331,73,330,95,329,95,328,95,331,12,79,76,98,330,95,330,98,331,95,330,76,100,101,9508,122,68,98,325,95,325,122,71,126,98,325,115,536,122,539,118,95,335,95,330,90,79,87,76,73,325,120,9595,122,68,98,324,95,324,122,71,126,98,324,115,536,122,538,118,95,335,90,76,87,76,70,85,122,533,109,116,85,122,532,95,89,122,535,118,116,85,122,534,95,89,122,529,118,116,85,122,528,95,89,122,531,118,116,85,122,530,95,89,122,557,118,116,85,122,556,95,89,122,559,118,116,85,122,558,95,89,122,553,118,116,85,122,552,95,89,122,555,118,116,85,122,554,95,89,122,549,118,116,85,122,548,95,89,122,551,118,116,85,122,550,95,89,122,545,118,116,85,122,544,122,430,116,85,122,547,109,116,85,122,546,122,573,116,85,122,572,122,71,116,85,122,575,115,64,122,101,118,122,574,122,574,122,574,90,78,116,85,122,569,115,64,122,101,118,122,568,122,6,122,20,90,78,116,85,122,571,122,71,116,85,122,570,122,71,116,85,122,565,109,116,85,122,564,122,71,116,85,122,567,122,71,116,85,122,566,122,71,116,85,122,561,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,560,109,116,85,122,563,122,17,116,85,122,562,122,68,116,85,122,717,109,116,85,122,716,122,427,116,85,122,719,122,718,116,85,122,713,122,712,116,85,122,715,122,51,116,85,122,714,95,89,122,709,118,116,85,122,708,109,116,85,122,711,122,68,116,85,122,710,76,116,85,122,705,76,116,85,122,704,76,116,85,122,707,76,116,85,122,706,76,116,85,122,733,122,496,116,85,122,732,122,68,116,85,122,735,109,116,85,122,734,109,116,85,122,729,109,116,85,122,728,70,85,122,535,95,89,122,535,118,116,85,122,529,95,89,122,529,118,116,85,122,531,95,89,122,531,118,116,85,122,557,95,89,122,557,118,116,85,122,559,95,89,122,559,118,116,85,122,553,95,89,122,553,118,116,85,122,555,95,89,122,555,118,116,85,122,549,95,89,122,549,118,116,85,122,551,95,89,122,551,118,116,85,122,545,95,89,122,545,118,116,85,122,709,95,89,122,709,118,116,116,98,327,111,221,98,326,111,220,98,321,111,223,98,320,111,222,98,323,111,217,98,322,122,68,98,349,95,349,122,71,126,98,349,95,88,122,731,118,85,122,204,118,91,111,216,90,79,87,76,111,219,98,348,111,218,98,351,111,213,98,350,111,212,98,345,111,215,98,344,122,68,98,347,95,347,122,71,126,98,347,95,88,122,731,118,85,122,204,118,91,111,214,90,79,87,76,111,209,98,346,70,70,76,98,343,98,340,98,341,70,98,342,111,208,98,337,111,211,98,336,122,68,98,339,95,339,122,71,126,98,339,95,88,122,207,118,85,122,204,118,91,111,210,90,79,87,76,122,68,98,338,95,338,122,71,126,98,338,95,52,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,85,116,85,122,165,122,730,116,85,122,154,122,725,116,90,79,98,365,122,68,98,364,95,364,122,71,126,98,364,95,365,85,122,166,118,91,122,724,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,237,116,90,78,87,76,122,68,98,367,95,367,122,71,126,98,367,95,365,85,122,166,118,91,122,727,70,85,122,160,122,726,116,85,122,162,127,116,85,122,189,111,236,116,90,78,87,76,122,68,98,366,95,366,122,71,126,98,366,95,365,85,122,181,118,91,122,721,70,85,122,160,122,720,116,85,122,183,70,85,122,68,122,430,116,85,122,58,122,424,116,116,85,122,162,122,430,116,85,122,189,111,239,116,90,78,87,76,122,68,98,361,95,361,122,71,126,98,361,95,365,85,122,505,118,91,122,535,90,79,85,122,325,118,91,122,723,70,85,122,162,95,89,122,535,118,116,85,122,247,122,535,116,85,122,189,111,238,116,90,78,87,76,122,68,98,360,95,360,122,71,126,98,360,95,365,85,122,505,118,91,122,722,90,79,85,122,325,118,91,122,749,70,85,122,162,95,89,122,529,118,116,85,122,247,122,748,116,85,122,189,111,233,116,90,78,87,76,122,68,98,363,95,363,122,71,126,98,363,95,365,85,122,505,118,91,122,751,90,79,85,122,325,118,91,122,750,70,85,122,162,95,89,122,531,118,116,85,122,247,122,751,116,85,122,189,111,232,116,90,78,87,76,122,68,98,362,95,362,122,71,126,98,362,95,365,85,122,505,118,91,122,745,90,79,85,122,325,118,91,122,744,70,85,122,162,95,89,122,557,118,116,85,122,247,122,745,116,85,122,189,111,235,116,90,78,87,76,122,68,98,357,95,357,122,71,126,98,357,95,365,85,122,177,118,91,122,747,70,85,122,160,122,746,116,85,122,162,122,71,116,85,122,178,122,11,80,116,85,122,333,122,11,116,85,122,332,122,58,116,85,122,189,111,234,116,90,78,87,76,122,68,98,356,95,356,122,71,126,98,356,95,365,85,122,177,118,91,122,741,70,85,122,160,122,553,116,85,122,162,122,58,116,85,122,178,122,71,116,85,122,333,122,48,116,85,122,332,122,58,116,85,122,189,111,229,116,90,78,87,76,122,68,98,359,95,359,122,71,126,98,359,95,365,85,122,177,118,91,122,740,70,85,122,160,122,743,116,85,122,162,122,742,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,228,116,90,78,87,76,122,68,98,358,95,358,122,71,126,98,358,95,365,85,122,177,118,91,122,737,70,85,122,160,122,736,116,85,122,162,122,68,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,231,116,90,78,87,76,122,68,98,353,95,353,122,71,126,98,353,95,365,85,122,177,118,91,122,739,70,85,122,160,122,738,116,85,122,162,122,68,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,230,116,90,78,87,76,122,68,98,352,95,352,122,71,126,98,352,95,52,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,765,116,85,122,165,122,764,116,85,122,154,122,767,116,90,79,98,355,122,68,98,354,95,354,122,71,126,98,354,95,355,85,122,166,118,91,122,766,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,225,116,90,78,87,76,122,68,98,381,95,381,122,71,126,98,381,95,355,85,122,177,118,91,122,761,70,85,122,160,122,760,116,85,122,162,122,573,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,11,116,85,122,189,111,224,116,90,78,87,76,122,68,98,380,95,380,122,71,126,98,380,95,355,85,122,177,118,91,122,763,70,85,122,160,122,762,116,85,122,162,122,71,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,227,116,90,78,87,76,122,68,98,383,95,383,122,71,126,98,383,95,355,85,122,505,118,91,122,192,90,79,85,122,325,118,91,122,757,70,85,122,162,115,64,122,101,118,122,574,122,574,122,574,90,78,116,85,122,247,122,192,116,85,122,189,111,226,116,90,78,87,76,122,68,98,382,95,382,122,71,126,98,382,95,355,85,122,505,118,91,122,756,90,79,85,122,325,118,91,122,759,70,85,122,162,115,64,122,101,118,122,568,122,6,122,20,90,78,116,85,122,247,122,756,116,85,122,189,111,253,116,90,78,87,76,122,68,98,377,95,377,122,71,126,98,377,95,355,85,122,177,118,91,122,758,70,85,122,160,122,753,116,85,122,162,122,71,116,85,122,178,122,71,116,85,122,333,122,48,116,85,122,332,122,58,116,85,122,189,111,252,116,90,78,87,76,122,68,98,376,95,376,122,71,126,98,376,95,355,85,122,177,118,91,122,752,70,85,122,160,122,755,116,85,122,162,122,71,116,85,122,178,122,71,116,85,122,333,122,48,116,85,122,332,122,58,116,85,122,189,111,255,116,90,78,87,76,122,68,98,379,95,379,122,71,126,98,379,95,52,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,754,116,85,122,165,122,653,116,85,122,154,122,652,116,90,79,98,378,122,68,98,373,95,373,122,71,126,98,373,95,378,85,122,166,118,91,122,655,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,254,116,90,78,87,76,122,68,98,372,95,372,122,71,126,98,372,95,378,85,122,177,118,91,122,654,70,85,122,160,122,553,116,85,122,162,122,71,116,85,122,178,122,68,80,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,249,116,90,78,87,76,122,68,98,375,95,375,122,71,126,98,375,95,378,85,122,177,118,91,122,649,70,85,122,160,122,648,116,85,122,162,122,71,116,85,122,178,122,68,80,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,248,116,90,78,87,76,122,68,98,374,95,374,122,71,126,98,374,95,378,85,122,177,118,91,122,651,70,85,122,160,122,650,116,85,122,162,122,71,116,85,122,178,122,68,80,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,251,116,90,78,87,76,122,68,98,369,95,369,122,71,126,98,369,95,378,85,122,505,118,91,122,645,90,79,85,122,325,118,91,122,644,70,85,122,162,115,64,122,101,118,122,100,122,100,122,100,90,78,116,85,122,247,122,645,116,85,122,189,111,250,116,90,78,87,76,122,68,98,368,95,368,122,71,126,98,368,95,52,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,647,116,85,122,165,122,730,116,85,122,154,122,646,116,90,79,98,371,122,68,98,370,95,370,122,71,126,98,370,95,371,85,122,166,118,91,122,641,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,245,116,90,78,87,76,122,68,98,269,95,269,122,71,126,98,269,95,371,85,122,177,118,91,122,640,70,85,122,160,122,643,116,85,122,162,122,17,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,244,116,90,78,87,76,122,68,98,268,95,268,122,71,126,98,268,95,371,85,122,177,118,91,122,642,70,85,122,160,122,669,116,85,122,162,122,68,116,85,122,178,122,71,116,85,122,333,122,68,116,85,122,332,122,58,116,85,122,189,111,247,116,90,78,87,76,122,68,98,271,95,271,122,71,126,98,271,95,52,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,668,116,85,122,165,122,764,116,85,122,154,122,671,116,90,79,98,270,122,68,98,265,95,265,122,71,126,98,265,95,270,85,122,166,118,91,122,670,70,85,122,160,122,163,116,85,122,162,109,116,85,122,189,111,246,116,90,78,87,76,122,68,98,264,95,264,122,71,126,98,264,95,270,85,122,181,118,91,122,665,70,85,122,160,122,668,116,85,122,183,95,335,116,85,122,162,122,427,116,85,122,189,111,241,116,90,78,87,76,122,68,98,267,95,267,122,71,126,98,267,95,270,85,122,177,118,91,122,664,70,85,122,160,122,667,116,85,122,162,122,50,116,85,122,178,122,71,116,85,122,333,122,666,116,85,122,332,122,68,116,85,122,189,111,240,116,90,78,87,76,122,68,98,266,95,266,122,71,126,98,266,95,270,85,122,177,118,91,122,661,70,85,122,160,122,660,116,85,122,162,122,718,116,85,122,178,122,71,116,85,122,333,122,363,116,85,122,332,122,71,116,85,122,189,111,243,116,90,78,87,76,122,68,98,261,95,261,122,71,126,98,261,95,270,85,122,177,118,91,122,663,70,85,122,160,122,662,116,85,122,162,122,712,116,85,122,178,122,71,116,85,122,333,122,6,116,85,122,332,122,68,116,85,122,189,111,242,116,90,78,87,76,122,68,98,260,95,260,122,71,126,98,260,95,270,85,122,177,118,91,122,657,70,85,122,160,122,656,116,85,122,162,122,51,116,85,122,178,122,71,116,85,122,333,122,6,116,85,122,332,122,68,116,85,122,189,111,141,116,90,78,87,76,122,68,98,263,95,263,122,71,126,98,263,95,270,85,122,166,118,91,122,659,70,85,122,160,122,658,116,85,122,162,109,116,85,122,189,111,140,116,90,78,87,76,122,68,98,262,95,262,122,71,126,98,262,95,270,85,122,177,118,91,122,685,70,85,122,160,122,684,116,85,122,162,122,68,116,85,122,178,122,687,116,85,122,333,122,48,116,85,122,332,122,68,116,85,122,189,111,143,116,90,78,87,76,122,68,98,257,95,257,122,71,126,98,257,95,52,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,686,116,85,122,165,122,681,116,85,122,154,122,680,116,90,79,98,256,122,68,98,259,95,259,122,71,126,98,259,95,256,85,122,166,118,91,122,683,70,85,122,160,122,682,116,85,122,162,109,116,85,122,189,111,142,116,90,78,87,76,70,85,122,677,109,116,85,122,676,109,116,98,258,76,70,122,71,76,98,286,98,287,98,284,98,285,111,137,98,281,111,136,98,280,111,139,98,283,111,138,98,282,111,133,98,277,111,132,98,276,95,55,85,122,169,118,91,70,85,122,168,122,171,116,85,122,153,122,679,116,85,122,154,122,678,116,85,122,165,122,673,116,85,122,672,127,116,85,122,675,127,116,90,79,98,279,95,279,85,122,505,118,91,122,674,70,85,122,160,122,701,116,85,122,700,127,116,85,122,157,122,20,116,90,78,98,278,122,68,98,273,95,273,122,71,126,98,273,115,95,111,135,90,76,87,76,111,134,98,272,122,68,98,275,95,275,122,71,126,98,275,115,94,122,703,118,111,129,90,76,87,76,122,68,98,274,95,274,122,71,126,98,274,95,94,122,702,118,85,122,204,118,91,111,128,90,79,87,76,122,68,98,301,95,301,122,71,126,98,301,95,94,122,205,118,85,122,204,118,91,111,131,90,79,87,76,122,68,98,300,95,300,122,71,126,98,300,95,55,85,122,169,118,91,70,85,122,168,122,138,116,85,122,153,122,697,116,85,122,165,122,473,116,85,122,154,122,696,116,90,79,98,303,122,68,98,302,95,302,122,71,126,98,302,95,303,85,122,181,118,91,122,699,70,85,122,160,122,698,116,85,122,183,95,281,90,77,116,85,122,162,122,68,116,90,78,87,76,122,68,98,297,95,297,122,71,126,98,297,95,303,85,122,693,118,91,70,85,122,160,122,692,116,85,122,695,111,130,116,90,79,87,76,122,68,98,296,95,296,122,71,126,98,296,95,303,85,122,693,118,91,70,85,122,160,122,694,116,85,122,695,111,157,116,90,79,87,76,122,68,98,299,95,299,122,71,126,98,299,95,303,85,122,166,118,91,122,677,70,85,122,160,122,689,116,85,122,162,109,116,85,122,189,111,156,116,90,78,87,76,122,68,98,298,95,298,122,71,126,98,298,95,303,85,122,166,118,91,122,676,70,85,122,160,122,688,116,85,122,162,109,116,85,122,189,111,159,116,90,78,87,76,122,68,98,293,95,293,122,71,126,98,293,115,94,122,691,118,111,158,90,76,87,76,122,68,98,292,95,292,122,71,126,98,292,115,94,122,691,118,111,153,90,76,87,76,122,68,98,295,95,295,122,71,126,98,295,115,94,122,691,118,111,152,90,76,87,76,122,68,98,294,95,294,122,71,126,98,294,115,70,90,77,122,690,70,85,122,845,95,56,116,85,122,844,95,85,116,85,122,847,95,84,116,85,122,846,95,87,116,85,122,841,95,59,116,85,122,840,95,58,116,85,122,843,95,53,116,85,122,842,95,52,116,85,122,837,95,55,116,85,122,836,95,327,116,116,122,68,98,289,95,289,122,71,126,98,289,95,76,85,122,839,118,91,70,85,122,247,122,838,116,85,122,154,122,833,116,85,122,832,122,11,116,90,79,87,76,119,77}
-local _IO123={{19,21,51,93,96,195,240,234,217,240,0,115,36,64,123,157,174,163,210,254,22,43,92,74,101,133,178,211,215,167,12,58,86,14,99,136,186,207,246,225,8,62,90,110,108,135,160,154,212,227,20,36,87,112,158,139,228,220,246,20,13,102},{16,13,41,74,103,142,146,175,194,245},{26,2,36,74},{54,16,62,64,81,153,150},{51,12,41,67,118,143,154,231,195,224,26},{225,2,40,93,118,141,203,158,216,243,17,7,5,79,122,155,135,163,222,188,20,43,37},{224,3,41,92,119,140,202,152,208,225,24,46,40,65,116,156,132,181,131,255,12,62},{205,24,58,93,117,110,149},{215,6,40,82,119,100,148},1,0,{225,9,38,95,123,106,156},{203,4,49,75,126,119,146},{203,1,56,85,82,53},{239,29,58,86,105,98,149},{201,49,19,120,18,74},81753502655837,{249,28,49,72,65,120,131,183,208},{253,16,56,83,73},{250,21,41,43},{248,20,50,53},{217,5,16,45,73,106,145,190},{214,18,41,16,76,125,131,178,162,194},{194,20,63,61,79,98,133},{223,16,56,45,95,120,153,186},{198,15,14,21,73,96,142,183,167,207},{217,20,2,38,65,67,149,190,188,206,227},{225,19,16,35,93,100,155,131,163},{212,8,17,59,74,123,143,162,166,192,246,11,62},{245,31,23,62,85,100},{237,26,4,38,82,127,152,128,162},{247,225,30,19,86,113,141,144,171,222,245,25},1000,{254,237,16},{248,237,8,45,89,126,101},{243,235,14,53},{217,240,7,61},{212,238,5,49,83,112,97,153,163},{199,238,1,63},{196,225,2,56,101,67,105,128,189,202},{197,251,0,56,105,102,69},255,{195,226,29,59,98,87,123,142,187,200,209,230,31,54,87,124,124},0.7,{192,255,18,61,86,64,101,133},{203,225,24,53,50},{202,224,25,52,51,21},80,{196,228,3,49,42,71,106},{195,231,12,50,45,68,117,169,191,173,196,225,6},{222,248,28,51,32,95,126,153},1.5,180,100,{217,242,28,7,45,64,97},{218,253,31,0,46,95,98,163,145,161,212,241},4,{220,255,225,2,40,93,108,161,135,165,220,249,14},{193,233,224,4,40,65},{217,238,235,15,39,90},{245,242,247,29,32,88},{219,246,229,7,35},{241,246,226,3,61,94,122,107,157},0.55,{212,212,243,1,58,87,122,90,159,163,214,243,240,25,46,71,126,111,132,180},{216,199,248,26,60,101,77,105,136,183},{252,207,254,14,44,72,110,105,185,188,201},{214,193,235,28,34,84},{203,192,243,5},{183,207,232,6,48},3,{161,199,226,27,40,31,78,101,149,176},120,{167,197,252,25,46,29,69,103,144},220,60,{164,194,255,22,45,26,71,126,128},{188,203,236,14,63,37,67,126,151,172},{186,202,242,22,4,41,89,96},12,{173,221,246,26,16},{185,193,253,12,10,43,93,115},{169,218,234,11,4,37,82,114},{185,209,251,240,9,34},{186,198,254,243,9,44,94,124,160,134,164,221,248,15},{180,223,239,246,9,32,87,127,95,133,163,222,247,12},200,{165,221,255,244,5,62,105,127,109,132,161,198},{160,208,229,224},13,{150,218,204,226,31,50},{165,209,205,231,26,60,83,78,97},0.25,{190,209,210},{170,215,202,252,46,49,82,85},{178,169,210,252,19,42,74},{147,164,198,233},{171,163,196,226,23,50,37,69,103},130,{182,173,222,243,30,61,44,75,107},{139,170,217,226,24},{181,182,220,247,10,10,43,88,99,153},{173,168,218,246,11,11,42,89,98,152},{174,173,200,224,47,16,54,73,96,185,172,169},{175,172,201,225,55,14,48,72,97,184,173,168},{168,175,214,226,52,3,38,74},{183,162,214,255,9,54,57,95,112,137,160,181,192},{180,165,213,240,10,40,37,71,115,142,163,186,195},{181,164,212,241,11,45,42,95,115},{164,171,210,238,213,22,60,87,106,178,129,173},{165,170,211,239,205,8,58,86,107,179,128,172},{166,181,208,232,196,7,33,64},{185,184,208,245,247,60,63,69,126,115,171,168,212},{190,187,223,246,240,38,63,65,121,112,164,171,211},{191,186,222,247,241,45,62,88,105},{162,177,220,212,166,45,32,85},{189,188,220,201,243,77,18,75,114},{188,179,218,214,168,34,49,93},{163,190,218,203,253,79,25,94,70},2,5,6,7,8,9,10,11,14,{171,141,166,212,246,11,13,32,70,126,129,180,173,206},{191,141,166,192,241,25,20},{175,134,167,203,240,9,50,51,72,99,137,186,161},{171,151,175,194,223,18,18,61,90,71,159,146,176,197,241,29},{184,144,162,226,242,15,21,32,76,112},{68,148,173,197,241,16,3},{111,130,186},{65,129,188,215,246,229},{85,128,188,220,249,237,2},{66,131,188,218,249,230},{81,131,184,212,246,237,12,60,70},{72,153,191,235,247,224,15,35},64,{75,129,184,213,210},{83,166,187,223,196,255},{94,130,183,210,209,248,15,38,95,78,101,149},2.5,{68,135,181,223,202,229,25,50,110,77,103,154,132,219,210,242},{78,159,182,204,192,248,5},{92,149,163,163,199,255,6,8,95,86,107,157,165},{73,156,183,181,194,255,39,32,79,64},{85,152,169,175},{67,150,164,160,200,252,1,29,40,75,121,150,171,235,220,251,20},{87,128,189,168,223,244,19},{90,158,177,170,217,244,32,60,55,76,125},{87,155,141,163,222,243,53,49,32,95,124,147},{86,154,140,162,223,242,58,51,44,78,127,131},{84,157,145,173,237,245,23,5,52,77},{84,145,130,186,220,252,24,34,38,64,118,139,190},{94,145,136,166,223,225,63,3,37,75,102,155},{86,141,135,162,197,246,17,32,40,66,112,137,128},{83,110,144,165,193,241,29,5,39,85,100,157},{79,115,134,163,192,233,30,23,46,95,116,132,160,166,193,225,9,14,43,65,118,139},{76,109,152,190,209,232},{77,108,153,191,208,233,226,6,32},{78,107,154,160,211,238,193,9,35},{69,106,132,188,244,242,237,29,61,90,119,109,130,191},{109,105,153,161,221,210,235,9,59,117,115,108,156,188,219,246,236,3,62},{98,104,131,167,203,240,233,38,62,83,104,111,140},{97,100,135,183,209,244,233,33,61,78,123,71,133,190,194,238,237,4,34,81,104},{103,112,129,180,214,200,228,57,59,76,114,103,152,165,222,254,232},{99,107,157,179,204,195,236},{110,110,136,181,210,194,251,11},{114,99,135,187,214,240,226,5,59,94,81,124,135,183,209},{113,104,155,176,220,201,238,50,56,83,87,123,128,185,215,196,245},{120,98,149,163,165,212,193,29,60,75,72,111},{121,99,148,162,164,213,222,16,43,86,85,127,130,155,210,194,237,10,39},{120,114,142,159,170,201,252,21,57,52,67,126,161,183,203,202,238,3},{120,121,158,187,183,229,224,22,48,2,72,99,135,171,208,201,231,20,37},{122,119,144,183,167,198,245,53,61,47,77,124,149},{97,118,158,190,166,210,210,22,48,38,91,110},{99,123,143,147,163,255,241,10,55,52,94},{108,116,150,132,181,204,192,26,45,44,91,101},{98,119,146,134,167,195},{89,120,146,136,164,202,225,26,12,34,89,123,150,187},{109,71,144,133,167,213,245,29,14,36},{93,124,136,134,168,221,248,14,22,59,74},{119,104,101,135,184,215,207,23,10,46,95,97},{97,114,117,139,168},{},{113,114,108,157,170,199},{122,107,109,134,180,140,188,209,28,47,90,126,97,148,168},{112,124,106,133},{115,67,105,130,129,209,228,225},{110,101,110,128,225},{90,80,103,131,155,220,198,245,9,38},40,{125,65,100,132,179,206},{126,80,127,158,132,213,204,254},{18,67,127,155,162,223,198,230,21},{15,72,121,154,191,198,246,226,21,50},{16,65,105,156,174},{16,65,96,130,152,180,212,249,28,52,124,80,121,130,184,207},{7,69,125,134,189,161,220},{0,69,112,149,177,166,234,224,24,43,32,68,121,154,183,216},{21,69,118,157,188,165,216,211,25,49,50,73,109,128,191,164},{20,68,119,156,189,164,217,210,24,48,51,72,108,129,140,168,195,249,27},48,{4,70,123,168,136,163,200,241,24,45,18,66,117,131,181},{13,92,121,158,131,164,253,241,27,18,37,68},{24,88,109,152},700,520,{15,80,126,84,135,174},{1,84,118,100},{19,89,113,96,137,186},{51,88,106,46,136,189,199,244,246},{22,93,109,103,152,185,198,232,235,7,32},{50,80,114,37,138,162,196,244,240,29,99,21,104,104,139,168,221,237,95,4,34,92},{2,83,83,115,141,190,203},{48,66,68},{52,83,90,36,206,167,209,197,234,9,38,87,112,40,202,179,222,253,239,27,98,20,114,101,135,160,198,240,28,5,56,28,54,154,142,169,201,231},{7,81,66,112,138,167},{45,77,65,120},{46,94,73,96,130,167,216,198,237,67,117,93,77,126,193,243,211,239,169,75,54,69,124,117,197,239,219,244,226,11,36,67,53,223,145,174,221,242,13,12,59,91},{13,47,84,96,150},{60,45,72,111,150},{48,43,79,102,128,179,174,193,160,82,43,85,93,104,159,174,144,130,233,26,57,85,83,118,132,183,202,251,168,74,35,67,114,112,137,183,199},{16,42,90,108},{61,37,71,117,132,189,238,136,250,6,53,44,74,101,156,191,146,132,250,28,55,69,71,122,130,189,201,212},{30,33,79,86,133,178,182,217,237,26,35},{51,47,72,119},{45,34,75,103},{35,33,67,52,187,147,181,197,225,12},{42,42,64,123,181,128,170,200},{16,43,66,113,153,150},{9,46,86,126,137,195,168,198,248,25,14,51},{39,40,86,76,145,131,173,220,243},{38,4,126,70,186,139,170,211,251,24,7},{60,43,76,110},{44,33,84,121,109,130,169},{46,53,80,125,119,132,186},{40,48,91,113,97,136,172,222},{45,54,92,85,97,147,128,223,255,233,13,60},{44,26,116,64,78,142,168},{43},{34,58,95,68},{56,57,80,70},{34,46,83,64,93,128,178,220,205,226,62,39,88,107,96},{60,55,107,109},{50,61,91,97,121,158,167,217,204,254,1},{53,19,13,121,65,157,188,219},{35,58,45,82,104,128},{59,51,55,91,107},{54,57,39,122,99,156,191,164,213},{57,23,9,117,67,155,179,173,220,230},{42,50,42,68,101,159,180,173,206},{55,9,40},{54,0,63},{46,13,61,64,112,147,142,161},{60,42,4,112,83,180,183},{56,43,28},20,600,{192,46,0,108,74,151,138,188,247,216,43},{209,0,33,67,58,70,169,154},{194,13,43,118,116,109,136,191,227,240,28,14,46,67},{197,35,29,105,90,77,190,141,219,246,239,20},{196,34,28,104,85,106,157,191,212,233,245},{206,5,38,24,78,101,152,164},{198,36,30,102,72,100,135,189,212,245,230,10,36},{223,15,56,86,0,69,132,183,219,245},{218,6,57,94,79,115,205,146,208,242},{233,2,57,79,81,96,143,189,200},{233,29,54,73,66,103,155,245,218,200,234,15,60,77},{223,59,20,123,106,94,175,147,210,195,234,2,49,94},{222,58,21,122,107,95,174,159,212,215,249,14,39,79},{221,61,22,5,104,88,173,158,241,242},{220,60,23,4,105,89,172,138,215,202,252,55,24,107},{195,63,16,7,102,90,171,156,143,240,207,29,52,81,86},{194,62,17,6,103,91,170,140,160,203,225,16,49,90,70,96},{193,49,18,1,100,68,169,148,171,220,205,28,59,46,69,105},{219,16,43,101,104,121,150,179,160,204},{209,41,48,102,97,115,139,170,161,216},{230,30,21,51,68,125,158,172,232,153},{245,19,12,46,71,115,143,146,163,140,247,11,46},{210,46,51,22,98,116,136,149,162,223},{213,31,23,62,85,100,220,167,155,254},{220,44,53,20,124,118,142,151,172,221,222,30,24},{192},{207,238,0,42,95,124},{217,209,56,17,96,127,97,139,143,218,253,29,15},{201,230,8,34,21,88,105,130,174,216},{219,215,58,15,114,117,113,156,175,218,249,229},{210,228,19,113,115,116,112,157,174,219,248,228},50,5000,{224,231,22,116,127,115,86},{193,230,23,48,72},{225,217,32,9,126,77,112},{224,216,33,8,127,76,113,172,186,215,206,245},{228,227,10},{226,222,35,6,125,74,115,178,184,209,204,251,93},{234,225,12,122,7,84,109,150,177,219,202,254},{236,220,37,4,3,72,117,190,182,219,192},{233,255,4,50,39,90},{238,194,39,2,1,70,119,179,178,173,203},{234,251,20,50},{232,192,41,0,7,68,105,177,180,175,197,204,26,55,46,85},{235,199,42,63,4,67,106,190,183,168,198,196},{233,252,23,13,103,121,97,152,177,182,219,240,5,56,45,74,118},{245,197,44,61,10,65,108,189,146,167,200,251,29,48,48},{246,229,28,7,32,74,123,143},{247,203,46,59,8,95,110,168,138,161,205,255},{246,202,47,58,9,94,111,178,150,189,195,252,21,4},{251,239,244,10,37,92,125},{240,200,209,56,15,92,97,176,144,191,221,254,19,6,10,64,121,148,147},{229,247,231,4,43,64,117,110,198,137,225,200},{213,242,237,12},{253,205,212,53,3,93,121,110},{252,204,213,52,2,92,120,111,170,160,217,244,243},{233,203,227,0,55,76,113,106},{254,242,215,50,0,82,122,105,168,190,219,242,241,91},{249,241,216,49,7,81,69,106,184,186,209,253,239},0.5,{251,247,218,47,5,87,71,100,169,166,219,196,239,9,60,76},{250,246,219,46,31,88,66,109,171,186,207},{136,195,237,22,120,122,75,126},{132,244,221,44,17,90,68,111,181,184,201,224,230,3,58,73},{135,251,222,43,18,37,71,104,182,183,202,247,227,10,51},{139,204,238,17,123,5,72,121,211,138,214,223,238},{144,216,241,21,57,48,8,75,167,138},{168,196,231,18,112,54,89,34,135,178,166,207,249},{181,194,243,8,126,40,67,126,147,175},{130,254,195,38,11,55,74,114,146,175},{141,253,196,37,52,52,77,113,157,172,135,197,252,25,46},{157,221,244,24,4,53},{143,227,198,35,54,58,79,119,159,146,137,222,251,31,55,42},{132,195,254,26,10,39},{152,221,232},{136,224,201,32,49,57,80,116,152,145,157,199,252,24,10},{139,231,202,223,50,62,83,123,155,150,133,197,226,16,11,38,75},{138,230,203,222,51,63,82,122,154,151,132,196,227,17,10,39,74,86,148,141,168,223},{147,222,253,239,27,110,113,73,80},{189,214,228,230,27,60},{151,235,206,219,41,56,87,113,113},{150,234,207,218,40,57,86,112,112,175,166,217,247},{145,233,240,217,47,58,89,115,119,165,165,194,240,235,6,43},{144,232,241,216,46,59,88,114,118,166,190,211,248},{148,211,218,192,15,58,94,76,99,173,182,215,236,234,7,53,88,104},{146,238,243,214,44,61,90,76,116,169,182,201,235,237},{156,219,212,254,24},{150,220,198,231,4,51,88,71},{159,147,246,211,49,48,95,73,121,182,191,208,206,220},{158,146,247,210,48,49,94,72,120,190,162,201,207,224,1,48,111},{147,183,220,226,29,52,37,6,88,128,185,208,215,250,17,36,89,76,107,151},{149,166,200,227,1,51,35,70,127},{182,161,203,226,2},{183,181},{165,149,252,205,48,59,37,70,100,158},{164,148,253,204,49,47,13,66,118,159},{170,161,201,252},{166,154,255,202,51,17,10,68,119},{169,163,212},{160,152,225,200,53,19,5,64,98},{170,163,197},{162,158,227,198,55,0,42,93,99,149,183,172,215,225},{160,171,213,246,244,14,108,102,125,134,144},{172,156,229,196,201,23,25,86,97,139,166,164,221,248,15},{162,128,150,200,231,16,58},{174,130,231,194,203,25,24,92,127,117,143},{174,179,202,190,211,3,52,66,116},{168,128,233,192,205,27,30,66,105,111,128,161,208},{172,181,200,128,201,25,38,84,119,106,143},{169,185,218,198,244},{150,186,221,197},{159,182,208,198,165,79,49,72,85,43,205,164,220,254,245,4,63},{183,139,238,251,204,28,55,91,108,105,131,177},{166,170,218,215,229,16,58,88},{177,137,144,249,202,30,57,89,106,107,157,179,255,205,228,1,38},{176,136,145,248,203,31,56,88,97,98,130,163},{178,181,177,220,239,26,57,37},{178,142,147,246,201,25,58,38,99,100,128,173,252,202,231,30,37},{189,141,148,245,214,26,61,37,127,107,149,170,175,200},{174,186,164,219,254,25},{191,179,150,243,212,20,63,35,125,117,151,172,173,198,205,27,54,47,84},{190,178,151,242,213,21,62,34,120,120,141,184},{168,135,176,218,180,41,9,60,73},{169,148,172,202,251,40,4,53,91,122,154,186},{137,133,166,219,229,12,7,45,74},{137,132,167,196,242},16,{101,130,171,210,236,19,17},{104,157,163,196},{106,135,169,220,245,232,19,40},{99,152,177,192,245,246,17},196.2,{96,128,171},{116,157,182,220,251},{87,140,164},{86,141,163},{126,128},{101,158,180,209,202,249},{69,156,168,203,208,200,21,49,93,76},{68,157,169,202,209,206,31,51,88,71},{89,149,182,171,213,252,23,61,90},{117,148,171},{125,153,170,167,197,235,26,46,96,85,124,151,189,218},{65,187,130,148,200,227,30,30,47,70,111,159,188,219},{66,180,129,147,203,252,29,15,50,77,107,144},{64,137,186,160,207},300,{69,183,190,144,204,255,18,18,42,79,116},{85,186,144,169,195,241},{93,136,142,185},{123,150,129,188,194,249,18,17,101,91,100},{115,143,201,235,216,249,27,67,35,95},{74,76,185,134,199,245,14,33,36,81,116,144,135,172},{75,77,184,135,198,244,15,53,36,70,114,143},{86,119,133,190,148,202,239,17,41,64},500,{78,72,181,153,216,250,200,29,35,68},{86,107,141,184,217,244,247,12,111,127,110,108,151},{103,116,141,164,209,234,253},{64,117,159,188,206,178,225,4,38,89},{69,122,143,162,211,212,255,76,61,78,123,118,152,185,210,249},{115,69,176,146,201,192,241,40,61,88,125,105,142,181},{116,70,175,145,206,195,254,7,32,67},196,{96,96,139},{73,108,133,176,216,196,255,24,56,83},{78,98,141,250,161,212,227,7,54,90,4,99,151},{121,67,170,157,173,222,200,29,56,93,73,110,149},{122,92,169,154,174,209,221,4,63,37,66},{109,125,142,253,144,217,234,16,63},{120,119,148,187,180,197,226,2},{94,120,144,175,232,205,254,5,42,34,91,107},{126,88,165,180,182,232,251,11,42},{110,113,159,173,166,207,246,21},{100,70,220,169,173,215,246,19,14,34},{97,91,162,183,185,237,252,21,5},{106},{103,124,147,128,187,222,229,9,67,15,64,103,140,128,181,201},{100,104,101,149,191},{123,116,98,139,164,195},{65,125,110,131,238,192,242,242,9,57,85,112,222,147,171,220,250,15},{103,81,92,167,160,214,247,232,23},70,{75,122,118,132,189,194,233,234,6,33},{92,82,99,137,177,217,243},30,{99,81,105,152,177,222,244,255,28,55},{72,77,101,128,182,208,219,232,2,62},{83,77,100},{82,68,115},{2,79,98,150,140,209,246,239,30,50,89,80,91,154,177,202},{0,83,98,158,176,220,227,249,20,50,94,66,100},{16,77,96,144,191,178,246,254,27,55,76,77,126,137},{21,72,99,128,190},{2,101,70,214,159,170,201,224,19,63,50},{36,91,116,133,169,182,219,234},{37,89,97,140,177,169,138,246,25,42},{10,100,64,186,128,131,196,231,50,51,34,75,99,144,191},{5,103,71,185,191,128,195,228,46,63,40,95,117},{27,74,102,148,141,178,217,250,22,49},{39,95,120,149,150,167,220},{63,89,126,158,136},{1,123,75,189,187,152,213,229,19,14,61,90,125,149,142},{11,65,124,154,134,170,220},{45,85,119,101,148,173},{36,92,117,101,134,237,209,236,24,2,50,17,113,143,134,172,204,244,22},{29,127,79,65,183,136,198,255,229,5,45,95},{23,69,120,102,138,174,216,187,202,2,52},{31,113,77,71,181,150,196,249,231,11,47,89,81,101,159},{5},{25,115,115,69,179,148,202,251,225,9,49,91,79,114,141,171,208},{0,85,77,104,142,184,153,220,228,6,52,69,124},{59,93,90,97,131,189,192,197},{34,83,79,102,140,190,200,129,228,12,62},{21,119,119,73,175,131,210,206,231,13,63,96,79,105,129},{20,118,118,72,174,141,210,204,228,34,60,85},{23,41,72,44,168,183,209,201},{22,8,116,78,172,131,208,202,230,60,54,69},{17,35,80,46,174,181,175,203},2000,{12,33,75,124,159,175,182,193,237},{19,44,76,121,131,180,173,206,220,1,34,45,66},{51,41,74,102},{47,40,67,118},{17,35,87,118,149,152,153,206,243,27,53},{17,43,87,116,136,146,162,217,250,29,101,106,4,32,195,236,247,158,183,77,106,118,30,63},{23,33,73,116,147,154,151,202,251,13,14},{23,41,73,118,142,144,172,219,252,31,91,104,2,34,205,238,241,156,169,79,111,114,29,54},{21,39,75,122,145,156,149,214,228,19,12,60},{21,47,75,120,140,150,174,197,254,25,89,102,0,36,207,208,243,154,171,65,109,114,29,32},{27,37,77,120,111,158,147,222,253,24,16},{27,45,77,122,114,148,168,199,240,27,95,100,30,38,201,210,253,152,173,67,82,119,20,34},{25,59,79,126,109,144,145,198,243,231,14,56},{25,51,79,124,112,154,170,193,242,229,93,98,28,40,203,212,255,134,175,69,81,125,31,32},{31,57,65,124,107,146,143,195,236},{31,49,65,126,118,152,180,195,244,231,83,96,26,42,53,214,249,132,161,71,84,121,8,32},{29,33,84,127,114,137,170,204,235,246,15},{29,55,67,64,116,158,182,205,165,170,68,34,92,100,44,154,186,219,181,235,23,42},{29,57,83,76,87,154,177,194,212,243,30,55},{3,53,69,66,122,156,176,207,155,168,66,32,82,102,42,134,190,216,243,173,3,63,82},{51,45,76,75,120,145},{1,59,71,68,120,130,178,201,202,237,85,122,20,16,54,219,230,138,172,182,88,102,4,46,51,220,247,129},{6,56,56,71,127,129,189,202,205,238,74,121,19,26,56,222,225,142,145,182,90,99,0,41,53,221,225},{7,57,57,70,126,128,188,203,204,239,75,120,18,26,61,219,224,130,144,180,84,97,14,47,60,223,226},{4,62,58,73,125,135,191,180,207,232,72,119,17,21,59,198,229,138,154,177,87,109,12,24,54,219,235,137},{5,63,59,72,124,134,190,181,206,233,73,118,16,20,57,196,224,136,155,184,95,97,10,24,49,222,226,139},{10,60,60,75,99,133,185,182,193,234,78,117,111,23,60,197,232,136,148,184,66,96,8,22,59,215,226,141},{59,62,49,95,125,146,175,172,202,228},{8,2,62,77,97,139,187,176,195,244,76,115,109,25,61,197,235,243,144,190,74,108,13,20,60,201,231,139},{9,3,63,76,96,138,186,177,194,245,77,114,108,17,54,192,235,244,158,186,68,107,15,18,62,194,230},{14,0,48,79,103,137,133,178,197,246,66,113,107,27,36,198,236,251,145,188,64,105,117,18,52,195,232,140},{15,1,49,78,102,136,132,179,196,247,67,112,106,26,35,198,235,244,159,190,67,98,121,21,60,194,233,143},{12,6,50,81,101,143,135,188,199,240,64,79,105,21,37,201,230,247,146,168,64,110,118,25,58,192,237},{13,7,51,80,100,142,134,189,198,241,65,78,104,28,35,206,238,247,147,167,69,109,113,25,62,192,238,247},{194,3,45,81,112,222,166,165,199,250},{243,5,53,82,106,140,128,191,216,243,71,76,102,23,36,195,209,243,156,160,77,105,117,26,35,192,236},{240,10,54,85,105,115,131,184,219,252,68,75,101,9,36,207,219,253,157,162,78,81,127,26,43,203,236},{241,11,55,84,104,114,130,185,218,253,69,74,100,0,38,196,211,241,150,172,77,85,127,29,32,201,233,240},{198,31,63,79,60,64,137,189,209},{247,9,41,86,110,112,140,187,220,255,187,72,98,2,42,202,213,250,134,161,69,86,125,29,36,195,217,255},{244,14,42,89,109,119,143,164,223,248,184,71,97,3,44,54,215,252,130,172,74,80,115,5,32,206,215},{245,15,43,88,108,118,142,165,222,249,185,70,96,13,34,55,208,248,135,168,76,81,120,9,34,202,212},{250,12,44,91,83,117,137,166,209,250,190,69,127,7,47,58,219,254,131,170,184,81,116,1,47,204,211,243},{251,13,45,90,82,116,136,167,208,251,191,68,126,6,46,53,222,253,134,174,181,80,125,2,41,200,213,252},{248,18,46,93,81,123,139,160,211,196,188,67,125,0,45,48,218,228,142,171,186,81,127,0,34,51,222},{200,29,56,94,72,126,128,167,208},{254,16,32,95,87,121,149,162,213,198,178,65,123,2,22,52,212,230,143,168,181,91,105,5,46,48,222},{255,17,33,94,86,120,148,163,212,199,179,64,122,10,16,54,217,225,140,169,179,88,103,4,44,53,219,253},{252,22,34,33,85,127,151,172,215,192,176,95,121,13,19,61,216,228,140,147,176,90,106,0,40,60,221,227},{253,23,35,32,84,126,150,173,214,193,177,94,120,12,17,62,221,237,140,149,191,85,96,11,42,53,221,225},{226,20,36,35,91,125,145,174,169,194,182,93,119,15,22,60,200,226,136,147,189,94,101,11,19,50,222,225},{227,21,37,34,90,124,144,175,168,195,183,92,118,8,17,62,192,231,138,155,176,93,101,15,18,50,223},{214,25,44,47,10,93,151,168,182,205,252},{225,27,39,36,88,98,146,169,170,205,181,90,116,120,16,59,193,224,137,156,184,69,98,13,26,59,221},{230,24,24,39,95,97,157,170,173,206,170,89,115,123,31,54,205,226,243,159,186,68,97,14,22,57,194},{231,25,25,38,94,96,156,171,172,207,171,88,114,114,26,59,194,238,244,151,190,64,109,14,29,59,201,227},{228,30,26,41,93,103,159,148,175,200,168,87,113,117,27,40,196,237,251,153,186,71,109,112,17,53,199,238},{229,31,27,40,92,102,158,149,174,201,169,86,112,116,26,37,206,233,243,153,185,64,110,121,31,58,196,236},{234,28,28,43,67,101,153,150,161,202,174,85,79,127,25,38,203,238,253,154,168,79,104,113,26,56,199},{223,19,4,56,89,55,191,143,168,204,254},{232,226,30,45,65,107,155,144,163,212,172,83,77,127,22,32,200,214,254,159,167,78,107,112,25,37,197},{233,227,31,44,64,106,154,145,162,213,173,82,76,127,29,36,200,211,246,149,165,76,110},{238,224,16,47,71,105,101,146,165,214,162,81,75,125,1,47,203,210,241,150,166,67,87,112,27,32,202},{239,225,17,46,70,104,100,147,164,215,163,80,74,122,2,47,205,211,253,151,163,77,82,112,28,36,200,232},{217,236,5,35,66,112,123},{237,231,19,48,68,110,102,157,166,209,161,174,72,124,2,40,202,213,253,134,163,78,83,125,23,36,195,210},{210,228,20,51,75,109,97,158,185,210,166,173,71,118,2,43,57,222,253,139,174,77,80,114,2,36,196},{211,229,21,50,74,108,96,159,184,211,167,172,70,119,3,41,55,210,248,130,173,78,83,124,2,39,207},{208,234,22,53,73,83,99,152,187,220,164,171,69,97,6,44,48,221,249,141,175,185,82,124,7,44,202,209},{209,235,23,52,72,82,98,153,186,221,165,170,68,102,6,36,48,220,254,133,170,184,82,126,2,43,207},{214,232,8,55,79,81,109,154,189,222,154,169,67,99,11,44,52,219,225,134,164,187,90,124,7,46,57,222},{226,228,30,51,29,102,110,136},{212,238,10,57,77,87,111,132,191,216,152,167,65,109,14,22,62,221,225,128,175,189,89,99,6,45,48},{213,239,11,56,76,86,110,133,190,217,153,166,64,98,14,25,51,222,235,138,167,177,93,104,15,45,53},{218,236,12,59,51,85,105,134,177,218,158,165,95,111,11,26,49,223,237,143,151,178,91,97,10,43,61},{219,237,13,58,50,84,104,135,176,219,159,164,94,102,13,17,48,216,228,142,144,191,84,101,12,43,60,223},{216,242,14,61,49,91,107,128,179,164,156,163,93,97,10,17,50,200,238,133,146,177,88,100,13,23,51},{217,243,15,60,48,90,106,129,178,165,157,162,92,104,13,18,56,199,239,133,148,184,90,99,2,25,54,216},{225,247,20,42,61,10,93,153,176,182,205,224},{223,241,1,62,54,88,116,131,180,167,147,160,90,106,114,22,57,197,234,134,149,188,68,101,10,21,61,214},{220,246,2,1,53,95,119,140,183,160,144,191,89,109,115,30,63,193,238,241,144,184,65,105,15,16,56,192},{221,247,3,0,52,94,118,141,182,161,145,190,88,108,114,26,63,194,236,247,159,180,67,104,9,23,60,201},{194,244,4,3,59,93,113,142,137,162,150,189,87,105,125,19,40,194,239,244,159,187,69,105,121,22,53},{195,245,5,2,58,92,112,143,136,163,151,188,86,103,119,24,40,194,236,250,156,184,70,108,117,31,57},{192,250,6,5,57,67,115,136,139,172,148,187,85,81,119,27,39,203,238,245,154,166,65,108,114,27,59,196},{224,241,22,19,46,67,117,136,145,167},{198,248,248,7,63,65,125,138,141,174,138,185,83,83,121,29,34,201,214,246,159,162,64,109,125,19,41,199},{199,249,249,6,62,64,124,139,140,175,139,184,82,82,120,23,37,201,214,245,155,171,72,104,124,31,40,206},{196,254,250,9,61,71,127,116,143,168,136,183,81,83,124,4,38,201,210,249,158,172,78,87,118,30,43},{197,255,251,8,60,70,126,117,142,169,137,182,80,84,122,3,39,201,215,250,154,166,72,84,117,27,43,193},{202,252,252,11,35,69,121,118,129,170,142,181,175,87,126,3,40,201,220,252,128,162,73,85,122,29,33,207},{203,253,253,10,34,68,120,119,128,171,143,180,174,86,126,1,45,199,211,249,136,162,73,80,123,24,39,204},{233,208,239,2,114,124,119,99},{201,195,255,12,32,74,122,113,130,181,141,178,172,88,125,1,41,48,214,252,130,168,76,83,125,6,34,201},{206,192,240,15,39,73,69,114,133,182,130,177,171,91,98,6,40,59,217,249,141,175,178,84,124,6,43,207},{207,193,241,14,38,72,68,115,132,183,131,176,170,90,98,7,44,50,208,253,130,162,176,86,124,3,44,202},{204,198,242,17,37,79,71,124,135,176,128,143,169,91,98,15,42,54,220,231,135,175,177,89,123,2,40},{205,199,243,16,36,78,70,125,134,177,129,142,168,90,101,12,46,51,211,227,129,170,186,88,118,1,43},{178,196,244,19,43,77,65,126,153,178,134,141,167,95,100,10,18,52,213,225,137,174,177,92,103,1,41,51},{146,208,232,22,45,31,104,114,130,163,216,209,240},{176,202,246,21,41,51,67,120,155,188,132,139,165,65,102,11,16,62,218,236,131,151,179,94,98,10,41,51},{177,203,247,20,40,50,66,121,154,189,133,138,164,64,100,8,21,58,216,236,143,151,181,90,100,15,44,61},{182,200,232,23,47,49,77,122,157,190,250,137,163,67,107,11,19,58,197,228,137,144,191,86,98,10,20,62},{183,201,233,22,46,48,76,123,156,191,251,136,162,66,104,6,19,61,198,225,141,151,188,94,98,12,21,48},{180,206,234,25,45,55,79,100,159,184,248,135,161,67,111,121,22,56,193,232,141,148,184,71,102,5,16},{181,207,235,24,44,54,78,101,158,185,249,134,160,76,108,113,22,60,194,237,137,157,185,67,96,12,21},{156,203,230,8,1,37,73,50,188,177,169,207},{187,205,237,26,18,52,72,103,144,187,255,132,190,78,101,117,17,59,196,235,241,151,188,69,108,14,21},{184,210,238,29,17,59,75,96,147,132,252,131,189,73,110,124,25,37,194,236,246,152,189,65,108,117,20,61},{185,211,239,28,16,58,74,97,146,133,253,130,188,64,106,114,25,34,193,239,250,159,188,64,99,116,21},{190,208,224,31,23,57,85,98,149,134,242,129,187,75,80,112,30,36,193,238,242,158,169,69,101,122,27,57},{191,209,225,30,22,56,84,99,148,135,243,128,186,74,82,113,31,32,205,235,244,158,161,64,100,116,29,59},{188,214,226,225,21,63,87,108,151,128,240,159,185,75,87,123,22,33,195,214,244,155,170,72,102,115,18},{191,212,242,243,20},{164,215,254,238,13},{184,217,238,230,27,59},{161,215,236,240},{191,208,248,237,31,56,89,122,92,140,161,212,249,237,2,41},{181,215,194,239,9,60,76,65,103,133,188,217,238},{148,214,195,238,8,61,77},{185,201,214,236,1,59,72,127,103,129,176,209,251,234,30,15,85,115,110,135,188},{152,200,215,237,0,58,73,96,106,143,186,220,241,241},{171,214,205,236,4,9,72,77,120},{154,208,201,228,3,4,85,74,111,155,138,239,206,247},{169,168,207,234,6,7,92,75,126,132,185,209},{152,174,203,226,1,10,87,76,109,133,136,255,204,253,27,58,86},{185,186,216,225,7,47,50,67},{152,187,217,224,6,46,51,66,78,156,180,207,192,229,2,54,73,74,102,129},{188,182,195,247,30,40,44,77,125,135},{157,183,194,246,31,41,45,76,124,134},{147,174,205,246,23,41,27,89,127,144,168,172,205,253,7},{178,175,204,247,22,40,22,68,119,131,179,166,218,252},{134,161,200,242,15,19,35,115,97,155,191,168,207},{166,167,217,252,9,14,41,64,118,151,171,129,194,247,17,40,48,76,92,150,186,173,194},{151,186,213,245,9,14,41,92,75,137,131,167,192,247},{160,165,199,254,15,12,39,66,112,149,149,148,221,246,26,42,41,74,99,164,190,162,197,234},{129,160,221,250,31,8,21,67,126,157,134,167,217,231},{160,161,220,251,30,9,24,89,118,153,140,190,220},{132,167,211,242,244,15,34,85,71,141,144,179,220,243},{136,187,216,244,242,23,37,86,107,154,186,174,223,246,31,15,44,75},{142,181,216,239,235,28,55},0.3,{131,180,222,237,225,30},{140,167,212,192,230,4,61,88,111},199,{139,176,216,192,254},92,{150,187,220,209,236},{154,185,196,193},{144,186,224,192,229,16,53,81,70,109},{151,185,159,196,254,27,63,86,80,100,149,165,207},{150,184,158,196,226,29,45,77,68,120,133},{149,191,157,219,239,0,47,50,71,120,155,183,208},{148,190,156,221,230,27,47},{139,171,170,216,241,15,47,29,77,96,149,184,172,195,232},{138,170,171,217,240,14,46,28,64,97,129,190,175,212,228,7,32},{137,149,168,222,243,1,45,27,89,96,132,185,163,204},{136,138,190,207,252,1,0,32,69,112,149,177,166,205},{143,137,177,204,251,2,63,48,77,126,141,187},{142,151,168,221,202,24,14,50,67,103},3000,{140,144,165,238,246,19,4,60,67,116,137,190,180,196,233,28},21,{108,136,162,221,198,30,11,44,68,123,156,145,150,220,252,1,4},{97,132,161,215,241,244,15,33,87},{64,133,160,214,240,213,14,32,86},{101,159,164,217,195,240,7,58,85,110,101},{100,158,165,216,194,241,6,59,84,111,100,184,190,195,252,26,1},{103,153,166,215,193,246,5,36,87,104,103,183,173,219,244,238},{107,132,180,209,235,236,5,54,104,110,104,144,173,218,227},{100,135,179,210,212,239,2,53,103,127,112,135,191,197,236,234,13,60,81},{101,134,178,211,213,238,3,52,102,124,102},{102,153,177,212,214,225,0,51,101,83,115,130,160,217,231,247},{104,144,186,216,209,232,48,51,84,87},{111,147,181,219,214,235,47,36,89,81,103,130,161,206,201,233,2},{107,131,170,224,199,228,30,36,73},{81,146,181,182,249,237,17,44,87,82,111},{80,145,190,163,200,248,29,58,90},{79,153,174,171,207},{89,146,188,177,221,237,16,58,53},{97,141,176},{127,144,184,173,223,248,25,58},{67,149,146,170,200,222,17,57,44,94,121,152,187,135,198,239,22,54,37,66},{66,148,147,171,201,212,21,48,39,74,125,164,181,162,205,224,2,40},{81,144,141,170,207,248,90,51,46,77,118,151,169,183},{64,146,145,165,203,217,18,6,47,89,122,151,184,150,223,232,27,56},{84,151,131,162,196,255,18,5,104,125,96,131,140,163},{78,144,151,167,213,214,16,1,32,74,123,143},{85,117,146,168,221,247,12,68,11,93,116,149,135,166,218},{76,110,149,161,215,214,10,17,47,94,120,143,162,164,205,252,30,15,51},{83,119,156,170,219,245,242},{78,107,128,169,193,187,213,8,61},{73,107,152,188,210,207,234,1,40,64,78,111,150},{76,109,130,183,195,189,193,6,59,65,116,108},{119,105,158,190,220,205,236,3,54,66,94,109,156,186,219,247},{118,104,159,191,221,218,253,27,62,68,104,113,140},{103,112,158,187,201,213,244,9},{116,102,157,185,223,227,245,4,52,81,107,107,142,162,196},{115,101,130,186,216,241,224,15,48,85,87,85,131,180,204,240,225,25,35},{118,99,144,179,210,212,169,60,58,93,85,105,136,160,202},0.2,{112,98,129,181,219,225,226,23,49,72,80,108},{108,103,146,188,181,213,233,82,11,93,69,102,149},{126,96,135,183,165,244,253,22,58,74,73,106,131},{121,96,147,191,183,196,239,6,122,19,69,109,158,189},{106,101,154,178,176,217,231,16,41,36},{79,126,151,171,160},{76,103,148,176,182,219,249,18,47,38},{121,123,136,140,162,237,230,21,49,55,90,120,147,174,167,237,224,21,56,44,67,104},{120,122,137,141,163,236,231,20,27,32,69,98,158,169,186},{116,115,146,145,161,218,237},{102,120,143,143,173,238,225,22,46,33,75,96,156,171},{125,126,152,151,175,196},{100,118,141,137,175,240,227,16,32,38,67,122,137},{112,127,99,135,181},{98,116,115,139,169,242,237,18,33,46,82,118,132},{97,115,112,132,170,245,238,237,33,32,83,106,155},{112,113,98,155,170},{111,113,118,134,180,247,232,239,32,47,78,127},{113,126,127,142},{121,79,106,131,160,152,221,235,24,34,83,127,118,129,161,218},{75,64,107,136,167,205,250},{95,65},{106,76,123,131,177,248,226,194,3,50,91,115,96,143},{105,75,120,156,178,255,225,202,28,61,93,72,114,130,183,203,237},{104,74,121,157,179,254,224,202,0,59,79,83,102,158,167},{3,73,98,134,170,223,215,254},{22,72,127,159,189,252,230,216,16,35,72,81,104,155,188,212,207},{17,73,122,129,168,161,210,229,29,54},{23,64,97,129},{19,69,98,154,184,129,235,218,29,52,52},{22,94,127,165,188,186,218},{53,89,124,138,191,189,217},{16,66,97,149,187,150,222,255,37,60,58,90},{31,65,102,150,132,149,217,252,49,48,48,79,126,133,181,182,209},{0,65,97,158,143,180,196,231,0},{29,95,100,144,134,155,219,250,41,16,52,73,115,156},{24,65,101,152,130,173},{31,89,97,156,139,178},{62,88,96},{25,91,104,108,130,159,217,225,59,10,43,82,122,153,134},{24,90,105,109,131,158,216,224,29,10,51},{7,89,110,110,140,141,216,245,227,13,24,91,117,155},{18,91,114,96,130,239,225,242,236,2},24,{4,86,109,105,143,130,195,252,241,42,32,64,117,117},{7,78,65,116,204,145,215,235,234,30},{2,84,83,107,137,128,204,241,214,2,43,82},{5,73,76,40,175,186,221,213,234,13,32,24,77,109,144,181},{0,82,81,101,139,152,212,206,233,62,58,67,122},{21,81,75,100,208,151,210,197,253,2,53,72,0,85,133,168,221},{14,80,87,103,149,132,214,218,200,26,33,84,115,104,153,178,205,250},{27,53,82,99,210,138,209,208,235,4,51},{12,46,85,97,151,138,212,220,217,30,35,92,87,108,188,165,222,196,227},{14,45,92,111,128,191,224,245,252,23,61,90},0.1,{14,33,88,118,153,174,175,201,224,23,63},{56,36,94,118,146},{6,54,95},{54,40,95,127,157,153,181,216,211,24,50,48,93},{36,24,125,52,184,143,169,223,230,88,118,20,70,113,133,168,171,203,167},{43,60,66,101,171,141,166,212,246,11},{55,58,89,120,172,142,169,215,241,8},{53,39,80,110,152,145,233,195,252,8,21},{18,35,70,121,146,196,186,220,247,5,7,58,93,52,218,208},{18,62,86,107,140},{56,33,68,85,117,146},{45,38,70,122,99,139,168,240,246,19,9,42,65,100,148,141,174},{58,60,87,101,103,154,130,221,233,244},{7,62,86,121,106,135,168,149,235,237,6,52,86,107,140,203,229,159},{40,61,93,109,83,152,177,198},{30,35,88,104,107},{62,56,91,89,99,158,147,220,250,225,14},{59,39,84,77,107,132,189,222},{0,58,93,91,109,156,244,206,210,233,0,62,81,112,99},{37,37,82,79,101,187,180,201,198,226,25},{38,57,76,67,111,132,246,204,206,233,23,49,72},{50,61,91,103,126,133,163,210,205},{38,63,38,84,105,129,176,158,212,230,17,47,89,80,123},{51,46,47,68},{48,48,43,70,105},{4,41,42,74,100,213,175,174,135,249,18,43,88,64,127},{43,46,45,68,48,153,178,226,220,239,6,61,37,82},{29,58,35,78,99},{59,20,41,65,123,155,139,170,195,230,19,46,49,73,98},{44,8,41,73,124,142},{57,49,24},{60,42,4},{45,45,6,117,88,168},{60,10,38,83,118,137,183,168,205},{214,15,63,71,121,146,151,158,209,244},{209,11,44,74,124,141,177,170,211},{213,7,60,88,126,84,135,174},{206,0,60,86,79,96,133},{243,5,34,90,120},{203,4,37,94,123,122},{211,2,59,78,123,118,153,177,218},{235,2,50,93,122,97,197,255},{220,7,57,95}}
-local __1125={{K={1,0,{59,12,59,76,112,184,137,162,206,248,27,48,61},{45,12,37,71,66,147,133,175,194,241,60,18,39,65,119,177,176,143,207,233,20,53,44,76,125},{44,6,35,84,122,152},{193,5,47,87,118,138,167,165,220,249,14},{199,8,35,71,90,144,137,164,195},{193,7,34,91,104,51},{229,27,32,88,73,70,165},235,{200,10,56,89,94,108,133,160,199},28,32,{202,15,55,81,71,116,131,167,214,250,199,5,60,89,110},16,18,{196,4,35,81,74,103,138,150,212,205,232,31},48,54,{219,4,62,33,82,105,177,183,210,203,248,3,3,79,75,102,137,134,223,199,239,31,38,74,103}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,109,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,78,127,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,118,101,134,122,77,98,78,95,78,122,76,126,98,78,112,77,122,73,118,122,72,112,76,116,122,77,98,73,95,73,122,76,126,98,73,112,77,122,73,118,122,75,115,74,122,69,118,122,68,122,68,122,68,90,78,116,122,77,98,72,95,72,122,76,126,98,72,112,77,122,73,118,122,71,115,74,122,69,118,122,70,122,70,122,65,90,78,116,122,77,98,75,95,75,122,76,126,98,75,112,77,122,73,118,122,64,115,74,122,69,118,122,67,122,67,122,66,90,78,116,122,77,98,74,95,74,122,76,126,98,74,112,77,122,73,118,122,93,115,74,122,69,118,122,92,122,92,122,95,90,78,116,120,134,122,77,98,69,95,69,122,76,126,98,69,112,77,122,72,112,76,116,122,77,98,68,95,68,122,76,126,98,68,112,77,122,94,118,101,330,122,77,98,71,95,71,122,76,126,98,71,112,77,85,122,94,118,91,90,76,87,76,120,330,119,77},P={},U={{1,1},{1,9}},nParams=0},{K={1,0,{26,2,36,74},{55,23,6,95,119,152,135,172},{51,10,42,85,114,153},{215,7,37,70}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,122,78,118,85,101,82,87,76,115,79,85,122,78,118,91,90,76,92,101,113,122,77,98,76,95,76,122,76,126,98,76,115,79,122,73,118,85,122,72,118,91,90,76,87,76,120,113,119,77},P={},U=nil,nParams=0},{K={1,0,{9,26,57,74},{13,1,62,86,102,143,129,169,222},{25,16,37,82,99,148,140,167}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,115,78,90,76,122,73,88,101,102,122,77,98,76,95,76,122,76,126,98,76,115,78,122,76,90,76,87,76,120,102,119,77},P={},U=nil,nParams=0},{K={{44,14,53,65,119,173,176,147,194,244,0,45,44,91,123,165,180,168,201,249},{42,7,43,90,123,136,210},{19,6,62},{38},{38},{218}},C={112,77,85,122,77,118,91,95,77,12,79,79,98,79,98,76,115,76,122,79,118,95,76,122,78,118,95,76,122,73,118,90,79,95,79,95,76,122,72,118,119,78},P={},U={{1,23}},nParams=1},{K={1,0,{9,6,40,66,118,147,132,164,198},{42,1,43,93},{15,6,42,93,123}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,112,77,88,101,90,109,119,76,120,90,122,77,98,79,95,79,122,76,126,98,79,112,76,122,79,118,92,101,98,127,119,76,120,98,112,77,122,78,118,95,77,122,78,118,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,95,78,76,88,85,92,101,27,87,76,95,73,76,88,101,16,127,119,76,120,16,122,77,98,75,95,75,122,76,126,98,75,95,78,95,73,88,101,57,109,119,76,120,57,115,73,111,76,12,76,79,98,69,98,74,122,77,98,68,95,68,122,76,126,98,68,95,74,85,101,222,87,76,95,69,101,215,109,119,76,120,215,127,119,76},P={{K={{47,4,38,64,80,150,179,170,217}},C={112,77,122,77,118,112,76,122,77,118,88,119,76},P={},U={{0,0},{1,0}},nParams=0}},U={{1,22},{1,24}},nParams=1},{K={1,0,{51,12,39,74},{56,13,36,84,80,149,144,187,218,215,18,9,42,72,93,158,157,168,203,227,5},{43,10,36,93},{206,7,33,87},{232,23,44,90,107,140},{197,13,58,119,114,105,138,168,192,253,16},{202,26,14}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,91,122,79,119,76,120,91,95,77,85,122,78,118,91,122,73,90,79,98,79,122,77,98,78,95,78,122,76,126,98,78,95,79,101,118,95,79,122,72,118,119,76,120,118,122,77,98,73,95,73,122,76,126,98,73,64,115,75,95,77,85,122,74,118,91,12,76,-1,67,78,98,74,98,75,98,72,93,72,75,74,73,69,73,68,95,72,95,75,95,74,12,79,79,98,68,98,69,95,69,98,74,95,69,76,100,101,210,122,77,98,71,95,71,122,76,126,98,71,95,68,85,122,69,118,91,122,73,90,79,101,214,95,68,122,72,118,119,76,120,214,73,71,120,18,122,79,119,76},P={},U=nil,nParams=1},{K={{56,9,38,95,114,154,171,160,217},1,0,{56,13,36,84,80,149,144,187,218,215,18,9,42,72,93,158,157,168,203,227,5},{55,16,38,80,121,146,138,173},{198,15,34,86,94,151,150,185,196,213,20,11,36,74},{201,18,32,82,119,144,140,175,227,248,18,23,25,78,103,143},{214,7,60,71,117},{214,25,63,80,105,85,136,191,192,246},{204,15,49,90,104,106}},C={95,77,122,77,118,98,76,122,76,98,79,95,79,122,79,126,98,79,95,76,92,101,81,76,119,76,120,81,95,76,85,122,78,118,91,122,73,90,79,98,78,95,76,85,122,72,118,91,122,75,90,79,85,92,101,8,87,76,95,76,85,122,72,118,91,122,74,90,79,85,92,101,27,87,76,95,76,85,122,72,118,91,122,69,90,79,98,73,122,76,98,72,95,72,122,79,126,98,72,95,78,92,85,92,101,57,87,76,95,78,122,68,118,122,79,69,85,92,101,48,87,76,95,73,92,101,201,76,119,76,120,201,95,76,95,78,95,73,119,78},P={},U=nil,nParams=1},{K={{63,19,38,90,122,151,184},{18,7,63},{49,10,39,74},1,0,{214,15,63,91,122,146,129},{213,15,36,80,114,145,128,184,194},{193,7,34,91,104},{192,6,35,90,105,50},{222,35,62,82,121,122},2,{210,30,51,86,109,116,139,162,211,242,225,17}},C={115,77,122,76,118,122,79,90,76,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,122,72,109,116,122,78,98,79,95,79,122,73,126,98,79,95,77,122,75,122,78,116,122,78,98,78,95,78,122,73,126,98,78,95,77,122,74,115,69,122,76,118,122,78,122,78,122,78,90,78,116,122,78,98,73,95,73,122,73,126,98,73,95,77,122,68,122,71,116,122,78,98,72,95,72,122,73,126,98,72,95,77,122,70,122,78,116,95,77,119,76},P={},U=nil,nParams=0},{K={{63,19,38,90,122,151,184},{18,7,63},{46,18,60,78,103,158},1,0,{214,15,63,91,122,146,129},{213,15,36,80,114,145,128,184,194},{196,1,34,88,127,100},{192,6,35,90,105},{199,5,60,89,110,49},{223,34,63,83,120,123},2,{211,31,50,87,108,117,138,163,210,243,224,16}},C={115,77,122,76,118,122,79,90,76,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,122,72,109,116,122,78,98,79,95,79,122,73,126,98,79,95,77,122,75,122,78,116,122,78,98,78,95,78,122,73,126,98,78,95,77,122,74,109,116,122,78,98,73,95,73,122,73,126,98,73,95,77,122,69,115,68,122,76,118,122,78,122,78,122,78,90,78,116,122,78,98,72,95,72,122,73,126,98,72,95,77,122,71,122,70,116,122,78,98,75,95,75,122,73,126,98,75,95,77,122,65,122,78,116,95,77,119,76},P={},U=nil,nParams=0},{K={{63,19,38,90,122,151,184},{18,7,63},{62,10,59,76,121,158},1,0,{214,15,63,91,122,146,129},{213,15,36,80,114,145,128,184,194},{196,1,34,88,127,100},{205,28,34,102,114,101,130,190},16,{215,10,53,94,104,112},3,{196,2,63,86,109},{203,1,56,85,82,53},{211,38,59,95,68,127},{222,2,55,82,81,120,143,166,223,206,229,21}},C={115,77,122,76,118,122,79,90,76,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,122,72,109,116,122,78,98,79,95,79,122,73,126,98,79,95,77,122,75,122,78,116,122,78,98,78,95,78,122,73,126,98,78,95,77,122,74,127,116,122,78,98,73,95,73,122,73,126,98,73,95,77,122,69,122,68,116,122,78,98,72,95,72,122,73,126,98,72,95,77,122,71,122,70,116,122,78,98,75,95,75,122,73,126,98,75,95,77,122,65,115,64,122,76,118,122,78,122,78,122,78,90,78,116,122,78,98,74,95,74,122,73,126,98,74,95,77,122,67,122,70,116,122,78,98,69,95,69,122,73,126,98,69,95,77,122,66,122,78,116,95,77,119,76},P={},U=nil,nParams=0},{K={{63,19,38,90,122,151,184},{18,7,63},{41,6,49,91},1,0,{214,15,63,91,122,146,129},{194,2,35,71,124,141},{205,29,58,88,115,110,131},{204,28,59,89,114,111,130,142,220,245,16,23},{199,5,60,89,110,49},{214,2,43,82},13,{196,2,63,86,109},{206,1,58,78},2,{208,57,56,88,71,112},4,{216,0,57,80,87,122,145,164,217,204,235,23},{}},C={115,77,122,76,118,122,79,90,76,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,122,72,109,116,122,78,98,79,95,79,122,73,126,98,79,95,77,122,75,127,116,122,78,98,78,95,78,122,73,126,98,78,95,77,122,74,127,116,122,78,98,73,95,73,122,73,126,98,73,95,77,122,69,115,68,122,76,118,122,73,122,73,122,73,90,78,116,122,78,98,72,95,72,122,73,126,98,72,95,77,122,71,122,70,116,122,78,98,75,95,75,122,73,126,98,75,95,77,122,65,115,68,122,76,118,122,78,122,78,122,78,90,78,116,122,78,98,74,95,74,122,73,126,98,74,95,77,122,64,122,67,116,122,78,98,69,95,69,122,73,126,98,69,95,77,122,66,122,93,116,122,78,98,68,95,68,122,73,126,98,68,95,77,122,92,122,78,116,122,78,98,71,95,71,122,73,126,98,71,95,77,122,79,122,95,116,95,77,119,76},P={},U=nil,nParams=0},{K={1,0,{13,2,32,93,102},{10,29,58,85},{11,4,41,93,114},{244,31,60,87,119,152},{200,9,62,71,120,145,134,174},{242,11,47,88,118}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,115,79,95,77,12,76,78,98,72,98,73,98,78,93,78,73,72,73,75,73,74,95,78,95,73,95,72,12,79,79,98,74,98,75,95,75,98,72,95,75,76,100,101,211,122,77,98,69,95,69,122,76,126,98,69,115,78,95,74,90,76,122,73,88,101,59,122,77,98,68,95,68,122,76,126,98,68,112,77,95,74,90,76,87,76,120,219,115,72,95,74,90,76,122,75,88,101,206,120,219,122,77,98,71,95,71,122,76,126,98,71,115,74,111,76,90,76,87,76,73,69,73,68,73,71,120,125,119,77},P={{K={1,0,{43,10,58,70,119,151,132}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,109,116,119,77},P={},U={{1,7}},nParams=0}},U={{1,37}},nParams=1},{K={1,0,{13,2,32,93,102},{10,29,58,85},{11,4,41,93,114},{240,5,45,94,116}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,115,79,95,77,12,76,78,98,72,98,73,98,78,93,78,73,72,73,75,73,74,95,78,95,73,95,72,12,79,79,98,74,98,75,95,75,98,72,95,75,76,100,101,233,122,77,98,69,95,69,122,76,126,98,69,115,78,95,74,90,76,122,73,88,101,59,122,77,98,68,95,68,122,76,126,98,68,112,77,95,74,90,76,87,76,120,196,122,77,98,71,95,71,122,76,126,98,71,115,72,111,76,90,76,87,76,122,77,98,70,95,70,122,76,126,98,70,95,77,95,75,76,116,73,69,73,68,73,71,73,70,120,125,119,77},P={{K={1,0,{47,6,36,64,99,158}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{1,7}},nParams=0}},U={{1,38}},nParams=1},{K={1,0,{31,12,49},{24,13,38,92},{26,1,44,84},{229,2,43,87,87},{226},{225,7},{240,2},{232,3,62,83,111},{225,4,37},{242,30},{235,4,61,92},{231,27,32,86,73,104,137},20,{208,57,56,88,71,112},3,2,{232,23,62,90,107},8,24,4,{249,7},{240,31},{231,28,39,49},{231,31,7,53},{211,18,13,43,72,119},{197,21,24,45},11,{219,27,10,62,85,100},5,16,{253,237,6,42,64},{242,227,5,43},{249,234,26,59},{233,225,11,32,89,114},13,12},C={122,77,98,76,95,76,122,76,126,98,76,112,77,95,77,118,101,86,112,77,95,77,118,119,76,120,86,70,85,122,79,70,85,122,78,112,76,90,77,116,85,122,73,70,116,85,122,72,70,116,85,122,75,70,116,85,122,74,70,116,116,85,122,69,70,85,122,68,70,116,85,122,71,112,79,90,77,116,116,85,122,70,70,85,122,65,112,78,90,77,116,85,122,64,112,78,90,77,116,116,98,79,122,67,98,78,122,77,98,73,95,73,122,76,126,98,73,122,77,98,72,95,78,98,75,122,77,98,74,95,74,122,76,71,101,220,95,72,95,75,69,101,340,120,213,95,72,95,75,110,101,340,73,69,95,72,98,69,122,77,98,68,95,68,122,76,126,98,68,95,79,122,79,118,122,73,118,95,69,112,78,90,77,116,122,77,98,71,95,71,122,76,126,98,71,95,79,122,79,118,122,73,118,95,69,118,122,66,122,93,116,122,77,98,70,95,70,122,76,126,98,70,95,79,122,79,118,122,72,118,95,69,112,78,90,77,116,122,77,98,65,95,65,122,76,126,98,65,95,79,122,79,118,122,72,118,95,69,118,122,66,122,92,116,73,68,73,71,73,70,73,65,95,72,95,74,126,98,72,120,204,122,77,98,64,95,64,122,76,126,98,64,95,79,122,79,118,122,95,95,78,116,122,77,98,67,95,67,122,76,126,98,67,122,77,98,66,122,94,98,93,122,77,98,92,95,92,122,76,71,101,280,95,66,95,93,69,101,400,120,273,95,66,95,93,110,101,400,73,95,95,66,98,95,122,77,98,94,95,94,122,76,126,98,94,95,79,122,79,118,122,75,118,95,95,112,78,90,77,116,122,77,98,89,95,89,122,76,126,98,89,95,79,122,79,118,122,75,118,95,95,118,122,66,122,93,116,122,77,98,88,95,88,122,76,126,98,88,95,79,122,79,118,122,74,118,95,95,112,78,90,77,116,122,77,98,91,95,91,122,76,126,98,91,95,79,122,79,118,122,74,118,95,95,118,122,66,122,92,116,73,94,73,89,73,88,73,91,95,66,95,92,126,98,66,120,264,122,77,98,90,95,90,122,76,126,98,90,95,79,122,79,118,122,78,118,122,66,122,77,116,122,77,98,85,95,85,122,76,126,98,85,95,79,122,70,118,122,64,118,122,66,122,92,116,122,77,98,84,95,84,122,76,126,98,84,95,79,122,70,118,122,65,118,122,66,122,93,116,122,77,98,87,95,87,122,76,126,98,87,122,77,98,86,122,89,98,81,122,77,98,80,95,80,122,76,71,101,513,95,86,95,81,69,101,726,120,542,95,86,95,81,110,101,726,73,83,95,86,98,83,122,77,98,82,95,82,122,76,126,98,82,95,79,122,69,118,122,68,118,95,83,112,78,90,77,116,122,77,98,109,95,109,122,76,126,98,109,95,79,122,69,118,122,68,118,95,83,118,122,66,122,93,116,73,82,73,109,95,86,95,80,126,98,86,120,625,122,77,98,108,95,108,122,76,126,98,108,95,79,122,69,118,122,71,118,122,66,122,88,116,122,77,98,111,95,111,122,76,126,98,111,95,79,122,91,70,85,122,90,112,76,90,77,116,85,122,64,112,76,90,77,116,85,122,85,112,73,90,77,116,85,122,84,70,116,116,122,77,98,110,95,110,122,76,126,98,110,95,79,122,91,118,122,90,118,122,87,127,116,122,77,98,105,95,105,122,76,126,98,105,95,79,122,91,118,122,90,118,122,66,122,92,116,122,77,98,104,95,104,122,76,126,98,104,95,79,122,91,118,122,64,118,122,87,109,116,122,77,98,107,95,107,122,76,126,98,107,95,79,122,91,118,122,64,118,122,66,122,88,116,122,77,98,106,95,106,122,76,126,98,106,95,79,122,91,118,122,85,118,122,86,122,81,116,122,77,98,101,95,101,122,76,126,98,101,95,79,122,91,118,122,85,118,122,80,109,116,122,77,98,100,95,100,122,76,126,98,100,95,79,122,91,118,122,85,118,122,66,122,83,116,122,77,98,103,95,103,122,76,126,98,103,122,77,98,102,122,82,98,97,122,77,98,96,95,96,122,76,71,101,992,95,102,95,97,69,101,1089,120,1017,95,102,95,97,110,101,1089,73,99,95,102,98,99,112,76,90,77,98,98,122,77,98,125,95,125,122,76,126,98,125,95,98,122,87,127,116,122,77,98,124,95,124,122,76,126,98,124,95,98,122,66,122,93,116,122,77,98,127,95,127,122,76,126,98,127,95,79,122,91,118,122,84,118,95,99,95,98,116,73,98,73,125,73,124,73,127,95,102,95,96,126,98,102,120,976,122,77,98,126,95,126,122,76,126,98,126,95,79,122,109,70,85,122,108,112,73,90,77,116,85,122,111,112,73,90,77,116,85,122,110,112,73,90,77,116,116,122,77,98,121,95,121,122,76,126,98,121,95,79,122,109,118,122,108,118,122,86,122,105,116,122,77,98,120,95,120,122,76,126,98,120,95,79,122,109,118,122,111,118,122,86,122,104,116,122,77,98,123,95,123,122,76,126,98,123,95,79,122,109,118,122,110,118,122,86,122,104,116,122,77,98,122,95,122,122,76,126,98,122,112,77,95,77,95,79,116,95,79,119,76},P={},U={{1,27},{1,34},{1,35},{1,33},{1,36}},nParams=1},{K={1,0,{20,19,40,70,103,136},{17,6,32,67},{15,6,42,93,123}},C={112,77,95,77,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,101,86,119,77,120,86,122,77,98,78,95,78,122,76,126,98,78,115,79,95,76,122,78,118,85,92,101,121,87,76,70,12,76,78,98,75,98,72,98,73,93,73,72,75,73,74,73,69,95,73,95,72,95,75,12,79,79,98,69,98,74,95,74,98,75,95,74,76,100,101,62,122,77,98,68,95,68,122,76,126,98,68,115,73,111,76,90,76,87,76,73,68,120,12,122,77,98,71,95,71,122,76,126,98,71,112,77,95,77,76,116,119,77},P={{K={1,0,{57,6,58,91,103,148,152}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{1,8}},nParams=0}},U={{1,28}},nParams=1},{K={{24,9,38,64,96},1,0,{27,10,43,82,122,153,134},{18,4,56,69,114,143},{237,9,40,87},{201,14,42,91,117,150,130,163,197},{237,10,36,71},{211,8,61,80,117,117},{205,4,35,66,125,108,139,171},{235,14,38},{200,13,63,93},{198,25,60,84,118,102,168,185,214,240,240},{201,10,59,72,78,99,137},{207,6,57,87,98,104,129,188,203},{236,25,58,80,125,107,129,184,213,210},{196,4,35,81,74,103,138,150,212,205,232,31},{227,7,44,82,77,100,149,137,223,205,228,1,38},{203,26,53,83,113,121,144,185,206,211,232,29,48,85,66,126},{232,29,54,44,121,120,128,185,208,215,250,17,36,89,76,107,151},{192,0,47,45,78,99,150,141,205,196,229,2,39,92,81,108,129,182,194},{255,3,40,46,65,96,145,133,180,212,237,28,43,78,69,120,149,184,223,219},{213,18,45,55,65,66,154,191,164},{246,29,46,48,66,79,155,179,166,205},{220,26,60,41,94,117,146,185},{209,20,21,43},{221,18,6,47,65,122,158,183,177,239,244,7,41,43,100,96,145,190},{215,16,21,41,87,103,181,142,146,195,226},{196,24,15,44,76,97,146,142,169,239,252,1},{212,23,10,47,100,126,149,129,163,192,241,9,19},0.03,{217,239,10,35,64,43},{207,243,6,35,64,105,158,151,174,223,244,4},{207,247,26,40,85,121,101,165,163,222,247,12,87},{206,246,27,41,84,120,100,179,191,210,247,12,21,42,67,114,147,128,176},{220,235,18,24,87,114,102,132,171,245,254,239,20,34,95,125,144,144},{246,245,10,56,69,110},{231,227,24,22,93,109,103,143,190,210,253,236,28,61},{232,244,44},{224,233,29,49,106,65,116,152},{235,252,2,52,85,78,110,137,129,214,240,241,59,48,69,105},{254,195,30,50,89,90},5,{245,229,8,61},{211,236,17,53,90},{193,224,7,63,50,82},{234,246,25,50,47,67,104,129,145,222,203,239,29,50,124,71,102,157,187,214,196,233,25},{226,245,31,59,42,92},{198,240,3,53},{193,243,0},{245},{247},{245},{226,247,24,11,61,93},{220,254,19},0.35},C={112,77,122,77,118,98,79,122,76,98,78,95,78,122,79,126,98,78,95,79,122,78,118,92,85,92,101,105,87,76,112,77,122,73,118,92,101,112,122,76,98,73,95,73,122,79,126,98,73,112,76,95,77,90,76,87,76,119,77,120,112,112,79,95,77,118,98,72,122,76,98,75,95,75,122,79,126,98,75,95,72,85,101,44,87,76,95,72,122,72,118,95,79,122,72,118,100,101,203,122,76,98,74,95,74,122,79,126,98,74,112,76,95,77,90,76,87,76,122,76,98,69,95,69,122,79,126,98,69,76,98,72,120,203,122,76,98,68,95,68,122,79,126,98,68,95,79,122,72,118,122,75,88,101,420,95,72,85,101,231,87,76,95,72,122,74,118,122,76,118,98,71,122,76,98,70,95,70,122,79,126,98,70,95,71,92,85,92,101,139,87,76,95,71,122,69,118,92,101,257,122,76,98,65,95,65,122,79,126,98,65,112,76,95,77,90,76,87,76,122,76,98,64,95,64,122,79,126,98,64,115,68,122,71,118,122,75,12,76,76,98,71,122,76,98,67,95,67,122,79,126,98,67,95,71,122,70,122,65,116,122,76,98,66,95,66,122,79,126,98,66,95,71,122,64,95,76,116,122,76,98,93,95,93,122,79,126,98,93,95,71,122,69,95,76,116,122,76,98,92,95,92,122,79,126,98,92,112,79,95,77,70,85,122,72,122,75,116,85,122,74,70,85,122,76,95,71,116,116,116,120,275,122,76,98,95,95,95,122,79,126,98,95,95,71,122,64,95,76,116,122,76,98,94,95,94,122,79,126,98,94,95,71,122,67,95,79,122,66,118,116,122,76,98,89,95,89,122,79,126,98,89,95,71,122,93,95,79,122,92,118,116,122,76,98,88,95,88,122,79,126,98,88,95,71,122,95,95,79,122,94,118,116,122,76,98,91,95,91,122,79,126,98,91,95,71,122,89,95,79,122,88,118,116,122,76,98,90,95,90,122,79,126,98,90,95,71,122,91,95,79,122,90,118,122,85,88,85,101,411,87,76,115,84,122,87,118,122,85,118,85,92,101,425,87,76,115,84,122,87,118,122,86,118,116,119,77,120,420,122,76,98,85,95,85,122,79,126,98,85,95,79,122,72,118,122,81,88,101,870,95,72,85,101,576,87,76,95,72,122,74,118,122,76,118,98,84,122,76,98,87,95,87,122,79,126,98,87,95,84,92,85,92,101,612,87,76,95,84,122,69,118,92,101,652,122,76,98,86,95,86,122,79,126,98,86,112,76,95,77,90,76,87,76,122,76,98,81,95,81,122,79,126,98,81,115,68,122,71,118,122,81,12,76,76,98,84,122,76,98,80,95,80,122,79,126,98,80,95,84,122,70,122,65,116,122,76,98,83,95,83,122,79,126,98,83,95,84,122,64,95,76,116,122,76,98,82,95,82,122,79,126,98,82,95,84,122,80,122,83,116,122,76,98,109,95,109,122,79,126,98,109,95,84,122,69,95,76,116,122,76,98,108,95,108,122,79,126,98,108,112,79,95,77,70,85,122,72,122,81,116,85,122,74,70,85,122,76,95,84,116,116,116,120,670,122,76,98,111,95,111,122,79,126,98,111,95,84,122,64,95,76,116,122,76,98,110,95,110,122,79,126,98,110,95,84,122,82,95,79,122,92,118,116,122,76,98,105,95,105,122,79,126,98,105,95,84,122,109,95,79,122,88,118,116,122,76,98,104,95,104,122,79,126,98,104,95,84,122,108,95,79,122,66,118,116,122,76,98,107,95,107,122,79,126,98,107,95,84,122,111,95,79,122,94,118,116,119,77,120,870,122,76,98,106,95,106,122,79,126,98,106,95,79,122,72,118,122,110,88,101,1526,122,76,98,101,95,101,122,79,126,98,101,95,72,92,85,92,101,785,87,76,95,72,122,72,118,122,110,100,101,1182,122,76,98,100,95,100,122,79,126,98,100,112,76,95,77,90,76,87,76,70,98,103,122,76,98,102,95,102,122,79,126,98,102,64,115,105,95,76,85,122,104,118,91,12,76,-1,67,78,98,99,98,96,98,97,93,97,96,99,73,98,73,125,95,97,95,96,95,99,12,79,79,98,125,98,98,95,98,98,99,95,98,76,100,101,1273,122,76,98,124,95,124,122,79,126,98,124,95,125,85,122,107,118,91,122,106,90,79,85,101,923,87,76,95,125,122,70,118,122,101,100,101,1233,115,68,122,71,118,122,110,90,76,98,127,122,76,98,126,95,126,122,79,126,98,126,95,127,122,70,122,65,116,122,76,98,121,95,121,122,79,126,98,121,95,127,122,64,95,125,116,122,76,98,120,95,120,122,79,126,98,120,95,127,122,86,95,79,122,90,118,122,86,88,116,122,76,98,123,95,123,122,79,126,98,123,95,127,122,100,122,103,116,122,76,98,122,95,122,122,79,126,98,122,95,127,122,102,95,125,122,102,118,116,122,76,98,117,95,117,122,79,126,98,117,95,127,122,82,95,79,122,66,118,116,122,76,98,116,95,116,122,79,126,98,116,95,127,122,109,95,79,122,94,118,116,122,76,98,119,95,119,122,79,126,98,119,95,127,122,69,95,125,116,122,76,98,118,95,118,122,79,126,98,118,115,97,122,96,118,95,103,95,127,90,79,87,76,120,1233,73,124,73,127,73,126,73,121,73,120,73,123,73,122,73,117,73,116,73,119,73,118,120,981,122,76,98,113,95,113,122,79,126,98,113,112,79,95,77,70,85,122,72,122,110,116,85,122,74,95,103,116,116,120,1530,122,76,98,112,95,112,122,79,126,98,112,115,105,95,72,122,74,118,12,76,78,98,13,98,114,98,115,93,115,114,13,73,12,73,15,95,115,95,114,95,13,12,79,79,98,15,98,12,95,12,98,13,95,12,76,100,101,1530,122,76,98,14,95,14,122,79,126,98,14,95,15,85,101,1385,87,76,95,15,122,69,118,101,1508,122,76,98,9,95,9,122,79,126,98,9,95,15,122,82,95,79,122,66,118,116,122,76,98,8,95,8,122,79,126,98,8,95,15,122,109,95,79,122,94,118,116,122,76,98,11,95,11,122,79,126,98,11,95,15,122,86,95,79,122,90,118,122,86,88,116,122,76,98,10,95,10,122,79,126,98,10,95,15,122,64,118,85,101,1478,87,76,95,15,122,64,118,85,122,107,118,91,122,106,90,79,101,1514,122,76,98,5,95,5,122,79,126,98,5,95,15,122,102,95,15,122,64,118,122,102,118,116,120,1514,120,1508,73,14,73,9,73,8,73,11,73,10,73,5,120,1215,119,77,120,1526,122,76,98,4,95,4,122,79,126,98,4,95,79,122,72,118,122,99,88,101,2167,122,76,98,7,95,7,122,79,126,98,7,95,72,92,85,92,101,1441,87,76,95,72,122,72,118,122,99,100,101,2008,122,76,98,6,95,6,122,79,126,98,6,112,76,95,77,90,76,87,76,70,98,1,122,76,98,0,95,0,122,79,126,98,0,64,115,105,95,76,85,122,104,118,91,12,76,-1,67,78,98,29,98,2,98,3,93,3,2,29,73,28,73,31,95,3,95,2,95,29,12,79,79,98,31,98,28,95,28,98,29,95,28,76,100,101,1851,122,76,98,30,95,30,122,79,126,98,30,95,31,85,122,107,118,91,122,106,90,79,85,101,1579,87,76,95,31,122,70,118,122,101,100,101,1811,115,68,122,71,118,122,99,90,76,98,25,122,76,98,24,95,24,122,79,126,98,24,95,25,122,70,122,65,116,122,76,98,27,95,27,122,79,126,98,27,95,25,122,64,95,31,116,122,76,98,26,95,26,122,79,126,98,26,95,25,122,86,95,79,122,90,118,122,86,88,116,122,76,98,21,95,21,122,79,126,98,21,95,25,122,98,115,125,122,124,118,95,31,122,102,118,122,127,118,95,31,122,102,118,122,126,118,95,31,122,102,118,122,121,118,90,78,116,122,76,98,20,95,20,122,79,126,98,20,95,25,122,120,115,125,122,123,118,95,31,122,102,118,122,127,118,95,31,122,102,118,122,121,118,90,79,122,122,106,116,122,76,98,23,95,23,122,79,126,98,23,95,25,122,82,95,79,122,66,118,116,122,76,98,22,95,22,122,79,126,98,22,95,25,122,109,95,79,122,94,118,116,122,76,98,17,95,17,122,79,126,98,17,95,25,122,69,95,31,116,122,76,98,16,95,16,122,79,126,98,16,115,97,122,96,118,95,1,95,25,90,79,87,76,120,1811,73,30,73,25,73,24,73,27,73,26,73,21,73,20,73,23,73,22,73,17,73,16,120,1637,122,76,98,19,95,19,122,79,126,98,19,112,79,95,77,70,85,122,72,122,99,116,85,122,74,95,1,116,116,120,2171,122,76,98,18,95,18,122,79,126,98,18,115,105,95,72,122,74,118,12,76,78,98,47,98,44,98,45,93,45,44,47,73,46,73,41,95,45,95,44,95,47,12,79,79,98,41,98,46,95,46,98,47,95,46,76,100,101,2171,122,76,98,40,95,40,122,79,126,98,40,95,41,85,101,1963,87,76,95,41,122,69,118,101,2145,122,76,98,43,95,43,122,79,126,98,43,95,41,122,82,95,79,122,66,118,116,122,76,98,42,95,42,122,79,126,98,42,95,41,122,109,95,79,122,94,118,116,122,76,98,37,95,37,122,79,126,98,37,95,41,122,86,95,79,122,90,118,122,86,88,116,120,2145,73,40,73,43,73,42,73,37,120,2041,119,77,120,2167,119,77},P={},U={{1,24},{1,40},{1,28}},nParams=2},{K={1,0,{59,10,39,75,83,146,147,180,217,208,17,54,41,79},{55,23,11},{61,4,56,84,71,156,145,189},{233,22,45,91,106,141},{198,2,57,119,124,140,134,174,223,243,28,13,61,92},{204,9,35,81},{197,0,33,81,93,104,149,190,199,216,17,6,46,66,99,146,145,134,201,214,23,0,52,94},{197,9,51,83,111,113,135,188,205},{196,8,50,88,104,119,155,170,216,254,239,19},{210,3,61,84}},C={122,77,98,79,95,79,122,76,126,98,79,112,77,95,76,118,92,101,85,76,119,76,120,85,95,77,85,122,79,118,91,95,76,90,79,98,78,122,77,98,73,95,73,122,76,126,98,73,95,78,85,101,15,87,76,95,78,85,122,78,118,91,122,73,90,79,101,7,95,78,119,76,120,7,122,77,98,72,95,72,122,76,126,98,72,64,115,72,95,77,85,122,75,118,91,12,76,-1,67,78,98,69,98,74,98,75,93,75,74,69,73,68,73,71,95,75,95,74,95,69,12,79,79,98,71,98,68,95,68,98,69,95,68,76,100,101,186,122,77,98,70,95,70,122,76,126,98,70,95,71,122,74,118,95,76,88,85,101,225,87,76,95,71,85,122,78,118,91,122,73,90,79,101,188,122,77,98,65,95,65,122,76,126,98,65,95,71,85,122,69,118,91,122,68,90,79,92,85,101,155,87,76,95,71,85,122,69,118,91,122,71,90,79,92,85,101,170,87,76,95,71,85,122,69,118,91,122,70,90,79,92,101,162,95,71,119,76,120,162,120,188,73,70,73,65,120,35,76,119,76},P={},U={{1,42}},nParams=2},{K={{46,17,55,72,97,173,176,183,216,254},{48,7,46,90,65,138,144,163,222,211,10,51},{41,12,59,92,122},{50,1,44,68,54,189,144,165},1,0,{232,23,44,90,107,140},2,{247,8,45,89,126},{237,4,35,83,110,118},3},C={112,77,95,77,122,77,90,79,98,79,112,77,95,77,122,76,90,79,98,78,112,77,95,77,122,79,90,79,98,73,112,77,95,77,122,78,90,79,98,72,76,98,75,122,73,98,74,95,74,122,72,126,98,74,95,79,85,101,114,87,76,95,78,101,31,122,73,98,69,95,69,122,72,126,98,69,112,76,98,75,120,223,95,73,85,101,22,87,76,95,72,101,35,122,73,98,68,95,68,122,72,126,98,68,112,79,98,75,120,223,95,79,101,206,122,73,98,71,95,71,122,72,126,98,71,112,76,98,75,120,223,122,73,98,70,95,70,122,72,126,98,70,112,79,98,75,70,98,65,122,73,98,64,95,64,122,72,126,98,64,115,75,95,75,12,76,78,98,93,98,66,98,67,93,67,66,93,73,92,73,95,95,67,95,66,95,93,12,79,79,98,95,98,92,95,92,98,93,95,92,76,100,101,358,112,77,95,77,95,95,122,73,118,90,79,98,94,112,77,95,77,95,95,122,74,118,90,79,98,89,122,73,98,88,95,88,122,72,126,98,88,95,94,85,101,183,87,76,95,89,101,364,122,73,98,91,95,91,122,72,126,98,91,115,69,122,68,118,95,65,70,85,122,73,95,94,116,85,122,74,95,89,116,90,79,87,76,120,364,73,94,73,89,73,88,73,91,120,252,122,73,98,90,95,90,122,72,126,98,90,95,65,83,122,71,78,85,101,267,87,76,95,75,112,79,100,101,419,122,73,98,85,95,85,122,72,126,98,85,70,98,65,122,73,98,84,95,84,122,72,126,98,84,115,75,112,79,12,76,78,98,81,98,86,98,87,93,87,86,81,73,80,73,83,95,87,95,86,95,81,12,79,79,98,83,98,80,95,80,98,81,95,80,76,100,101,417,112,77,95,77,95,83,122,73,118,90,79,98,82,112,77,95,77,95,83,122,74,118,90,79,98,109,122,73,98,108,95,108,122,72,126,98,108,95,82,85,101,502,87,76,95,109,101,431,122,73,98,111,95,111,122,72,126,98,111,115,69,122,68,118,95,65,70,85,122,73,95,82,116,85,122,74,95,109,116,90,79,87,76,120,431,73,82,73,109,73,108,73,111,120,319,120,419,95,65,119,76},P={},U={{1,45},{1,43},{1,44}},nParams=2},{K={{56,14,43,66,97,202},{18,7,63},{47},{57},{61}},C={115,77,122,76,118,95,77,122,79,118,95,76,122,79,118,95,77,122,79,118,113,95,79,106,126,95,77,122,78,118,95,76,122,78,118,95,77,122,78,118,113,95,79,106,126,95,77,122,73,118,95,76,122,73,118,95,77,122,73,118,113,95,79,106,126,12,78,-1,119,-1},P={},U=nil,nParams=3},{K={1,0,{16,2,61,71},{29,8,43,93,102},0.5,2},C={122,77,98,73,95,73,122,76,126,98,73,115,79,122,78,118,95,78,122,76,122,77,12,78,76,98,78,122,77,98,72,95,72,122,76,126,98,72,95,78,122,73,78,101,114,112,77,95,77,95,76,95,78,122,72,106,12,78,-1,119,-1,120,114,112,77,95,76,95,79,95,78,122,73,113,122,72,106,12,78,-1,119,-1},P={},U={{1,47}},nParams=4},{K={{22,0,51,69},{31,14,41,67,100},{16,10,39},0.25,4,18,1,{212,13,45,64,117,114,212},{237,12,56},2,3,5,6,7,8,0,{233,30,47},{239,29},{238},{200,6,53,45},{219,26},{211,25,48,45,90},{197,31,52,32,66,97,144,168,178},{200,49,48,32,79,104},{197,16,44,44,73,125,146}},C={115,77,122,76,118,115,77,122,79,118,95,78,95,73,90,79,122,78,106,122,73,122,72,90,78,98,71,70,85,122,75,70,85,122,75,115,74,122,69,118,95,76,95,79,90,79,116,85,122,68,115,74,122,69,118,95,76,95,71,126,95,79,90,79,116,85,122,71,95,72,116,116,85,122,68,70,85,122,75,115,74,122,69,118,95,76,95,79,90,79,116,85,122,68,115,74,122,69,118,95,76,95,79,95,71,126,90,79,116,85,122,71,95,72,116,116,85,122,71,70,85,122,75,115,74,122,69,118,95,76,95,78,126,95,79,90,79,116,85,122,68,115,74,122,69,118,95,76,95,78,126,95,71,113,95,79,90,79,116,85,122,71,95,72,116,116,85,122,73,70,85,122,75,115,74,122,69,118,95,76,95,78,126,95,79,90,79,116,85,122,68,115,74,122,69,118,95,76,95,78,126,95,79,95,71,126,90,79,116,85,122,71,95,72,116,116,85,122,70,70,85,122,75,115,74,122,69,118,95,76,95,79,95,73,126,90,79,116,85,122,68,115,74,122,69,118,95,76,95,71,126,95,79,95,73,126,90,79,116,85,122,71,95,75,116,116,85,122,65,70,85,122,75,115,74,122,69,118,95,76,95,79,95,73,126,90,79,116,85,122,68,115,74,122,69,118,95,76,95,79,95,73,126,95,71,113,90,79,116,85,122,71,95,75,116,116,85,122,64,70,85,122,75,115,74,122,69,118,95,76,95,78,126,95,79,95,73,126,90,79,116,85,122,68,115,74,122,69,118,95,76,95,78,126,95,71,113,95,79,95,73,126,90,79,116,85,122,71,95,75,116,116,85,122,67,70,85,122,75,115,74,122,69,118,95,76,95,78,126,95,79,95,73,126,90,79,116,85,122,68,115,74,122,69,118,95,76,95,78,126,95,79,95,73,126,95,71,113,90,79,116,85,122,71,95,75,116,116,98,70,122,75,98,65,95,65,122,66,126,98,65,122,75,98,64,122,67,98,67,122,75,98,66,95,66,122,66,71,101,408,95,64,95,67,69,101,777,120,401,95,64,95,67,110,101,777,73,93,95,64,98,93,95,70,95,93,118,122,75,118,95,70,95,93,118,122,68,118,95,70,95,93,118,122,71,118,98,94,98,95,98,92,95,77,122,93,118,122,92,118,95,93,118,98,89,95,77,122,93,118,122,95,118,95,93,118,98,88,122,75,98,91,95,91,122,66,126,98,91,95,69,101,724,122,75,98,90,95,90,122,66,126,98,90,95,89,122,94,95,92,116,122,75,98,85,95,85,122,66,126,98,85,95,89,122,89,95,95,116,122,75,98,84,95,84,122,66,126,98,84,95,89,122,88,95,68,116,122,75,98,87,95,87,122,66,126,98,87,95,89,122,91,95,74,122,68,126,116,122,75,98,86,95,86,122,66,126,98,86,95,89,122,90,122,68,116,122,75,98,81,95,81,122,66,126,98,81,95,89,122,85,127,116,120,743,122,75,98,80,95,80,122,66,126,98,80,95,89,122,85,109,116,122,75,98,83,95,83,122,66,126,98,83,95,88,122,94,95,92,116,122,75,98,82,95,82,122,66,126,98,82,95,88,122,89,95,95,116,122,75,98,109,95,109,122,66,126,98,109,95,88,122,88,95,94,116,122,75,98,108,95,108,122,66,126,98,108,95,88,122,91,95,74,116,122,75,98,111,95,111,122,66,126,98,111,95,88,122,90,122,71,116,122,75,98,110,95,110,122,66,126,98,110,95,88,122,85,127,116,73,92,73,95,73,94,73,89,73,88,73,91,73,90,73,85,73,84,73,87,73,86,73,81,73,80,73,83,73,82,73,109,73,108,73,111,73,110,95,64,95,66,126,98,64,120,392,119,77},P={},U=nil,nParams=10},{K={1,0,{59,17,38,66},{42,11},{60,10,39,94,101},{212,14,37,81,115,144,129,185,195},2,{216,33,32,80,127,120},{213,0,60,92,121,109,130},3},C={122,77,98,69,95,69,122,76,126,98,69,95,75,85,101,89,87,76,95,76,101,203,122,77,98,68,95,68,122,76,126,98,68,95,76,122,79,95,79,116,122,77,98,71,95,71,122,76,126,98,71,95,76,122,78,95,78,116,122,77,98,70,95,70,122,76,126,98,70,95,76,122,73,95,74,116,122,77,98,65,95,65,122,76,126,98,65,95,76,122,72,95,72,122,75,126,116,122,77,98,64,95,64,122,76,126,98,64,95,76,122,74,122,75,116,122,77,98,67,95,67,122,76,126,98,67,95,76,122,69,127,116,120,208,95,76,101,208,122,77,98,66,95,66,122,76,126,98,66,95,76,122,69,109,116,120,208,122,77,98,93,95,93,122,76,126,98,93,95,77,122,79,95,79,116,122,77,98,92,95,92,122,76,126,98,92,95,77,122,78,95,78,116,122,77,98,95,95,95,122,76,126,98,95,95,77,122,73,95,73,116,122,77,98,94,95,94,122,76,126,98,94,95,77,122,72,95,72,116,122,77,98,89,95,89,122,76,126,98,89,95,77,122,74,122,68,116,122,77,98,88,95,88,122,76,126,98,88,95,77,122,69,127,116,119,77},P={},U=nil,nParams=8},{K={{45,4,36,89,124,139,237},{18,7,63},{31,12,49},{27,0,45,85,88},{26,1,44,84},1,0,{212,1,61,93,120,108,131},{230,13,40,80,84},8,0.5},C={115,77,122,76,118,95,76,95,79,90,79,98,70,115,77,122,76,118,95,76,95,78,126,95,79,90,79,98,65,115,77,122,76,118,95,76,95,79,95,73,126,90,79,98,64,115,77,122,76,118,95,76,95,78,126,95,79,95,73,126,90,79,98,67,95,77,122,79,118,122,78,118,85,92,101,26,87,76,95,77,122,79,118,122,73,118,83,98,66,122,72,98,93,95,93,122,75,126,98,93,122,72,98,92,95,66,98,95,122,72,98,94,95,94,122,75,71,101,205,95,92,95,95,69,101,131,120,202,95,92,95,95,110,101,131,73,89,95,92,98,89,122,72,98,88,95,88,122,75,126,98,88,95,77,122,79,118,122,73,118,95,89,118,122,74,109,116,122,72,98,91,95,91,122,75,126,98,91,95,77,122,79,118,122,69,118,95,89,118,122,74,109,116,73,88,73,91,95,92,95,94,126,98,92,120,61,122,72,98,90,122,72,98,85,95,85,122,75,126,98,85,112,77,95,77,122,79,118,122,73,118,95,90,118,95,77,122,79,118,122,69,118,95,90,118,95,70,95,65,95,72,95,74,95,69,95,68,90,69,87,76,122,72,98,84,95,84,122,75,126,98,84,95,90,122,72,126,98,90,122,72,98,87,95,87,122,75,126,98,87,112,77,95,77,122,79,118,122,73,118,95,90,118,95,77,122,79,118,122,69,118,95,90,118,95,64,95,67,95,71,85,101,266,87,76,95,75,85,92,101,258,87,76,95,72,95,74,95,69,95,68,90,69,87,76,122,72,98,86,95,86,122,75,126,98,86,95,90,122,72,126,98,90,95,71,85,101,313,87,76,122,68,85,92,101,305,87,76,122,72,98,81,122,72,98,80,95,80,122,75,126,98,80,122,75,98,83,95,81,122,72,113,98,82,122,72,98,109,95,109,122,75,71,101,485,95,83,95,82,69,101,687,120,482,95,83,95,82,110,101,687,73,108,95,83,98,108,95,108,95,81,123,98,111,95,108,122,72,126,95,81,123,98,110,95,71,85,101,400,87,76,112,76,95,72,95,75,95,111,95,110,126,122,71,106,90,78,85,92,101,424,87,76,95,72,98,105,115,77,122,76,118,95,76,95,79,95,73,95,111,106,126,90,79,98,104,115,77,122,76,118,95,76,95,79,95,73,95,110,106,126,90,79,98,107,122,72,98,106,95,106,122,75,126,98,106,112,77,95,77,122,79,118,122,73,118,95,90,118,95,77,122,79,118,122,69,118,95,90,118,95,104,95,107,95,105,95,74,95,69,95,68,90,69,87,76,122,72,98,101,95,101,122,75,126,98,101,95,90,122,72,126,98,90,115,77,122,76,118,95,76,95,78,126,95,79,95,73,95,111,106,126,90,79,98,100,115,77,122,76,118,95,76,95,78,126,95,79,95,73,95,110,106,126,90,79,98,103,122,72,98,102,95,102,122,75,126,98,102,112,77,95,77,122,79,118,122,73,118,95,90,118,95,77,122,79,118,122,69,118,95,90,118,95,100,95,103,95,105,95,74,95,69,95,68,90,69,87,76,122,72,98,97,95,97,122,75,126,98,97,95,90,122,72,126,98,90,73,111,73,110,73,105,73,104,73,107,73,106,73,101,73,100,73,103,73,102,73,97,95,83,95,109,126,98,83,120,469,119,77},P={},U={{1,50},{1,47}},nParams=11},{K={1,0,{21,19},{28,3},{41,12,56,88,117,145,134},{239,19,56,94,113,144,129},{245,2,53,71},{241,13,41,71},{234,25,46,92,105,114},{226,6,49,81,111},{235,10,60,82},{226,5,33,76},{240,8,50,73,112,107}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,95,77,122,79,118,101,155,122,77,98,78,95,78,122,76,126,98,78,95,77,122,79,118,122,78,118,122,73,109,116,122,77,98,73,95,73,122,76,126,98,73,95,77,122,79,118,122,72,118,122,73,109,116,122,77,98,72,95,72,122,76,126,98,72,95,77,122,79,118,122,75,118,122,73,109,116,122,77,98,75,95,75,122,76,126,98,75,95,77,122,79,118,122,74,118,101,153,122,77,98,74,95,74,122,76,126,98,74,115,69,95,77,122,79,118,122,74,118,12,76,78,98,71,98,68,98,69,93,69,68,71,73,70,73,65,95,69,95,68,95,71,12,79,79,98,65,98,70,95,70,98,71,95,70,76,100,101,159,122,77,98,64,95,64,122,76,126,98,64,95,65,122,73,109,116,73,64,120,239,120,153,120,155,122,77,98,67,95,67,122,76,126,98,67,95,77,122,68,118,101,354,122,77,98,66,95,66,122,76,126,98,66,95,77,122,68,118,122,71,118,122,73,109,116,122,77,98,93,95,93,122,76,126,98,93,95,77,122,68,118,122,70,118,122,73,109,116,122,77,98,92,95,92,122,76,126,98,92,95,77,122,68,118,122,65,118,122,73,109,116,120,354,119,77},P={},U=nil,nParams=1},{K={1,0,{31,12,49},{24,13,38,92},{41,12,56,88,117,145,134},{229,2,43,87,86},{228,3,42,86},{231,12,41,81,85},8,{231},{230,4}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,122,79,118,122,78,118,122,73,109,116,95,77,122,79,118,122,72,118,85,92,101,99,87,76,95,77,122,79,118,122,75,118,83,98,79,122,77,98,78,95,78,122,76,126,98,78,122,77,98,73,95,79,98,72,122,77,98,75,95,75,122,76,71,101,26,95,73,95,72,69,101,144,120,19,95,73,95,72,110,101,144,73,74,95,73,98,74,122,77,98,69,95,69,122,76,126,98,69,95,77,122,79,118,122,75,118,95,74,118,101,213,122,77,98,68,95,68,122,76,126,98,68,95,77,122,79,118,122,75,118,95,74,118,122,73,109,116,120,213,122,77,98,71,95,71,122,76,126,98,71,95,77,122,79,118,122,74,118,95,74,118,101,129,122,77,98,70,95,70,122,76,126,98,70,95,77,122,79,118,122,74,118,95,74,118,122,73,109,116,120,129,73,69,73,68,73,71,73,70,95,73,95,75,126,98,73,120,10,122,77,98,65,95,65,122,76,126,98,65,122,77,98,64,122,69,98,67,122,77,98,66,95,66,122,76,71,101,329,95,64,95,67,69,101,287,120,326,95,64,95,67,110,101,287,73,93,95,64,98,93,122,77,98,92,95,92,122,76,126,98,92,95,77,122,79,118,122,68,118,95,93,118,122,73,109,116,122,77,98,95,95,95,122,76,126,98,95,95,77,122,79,118,122,71,118,95,93,118,122,73,109,116,73,92,73,95,95,64,95,66,126,98,64,120,185,119,77},P={},U=nil,nParams=1},{K={1,0,{16,2,58,91,112,137},{13,15},{19,12,37,84,100},{228,9,56},{215,14,62,90,123,147,128},{246,26},{239,0,33,80},{235,31,36,90,117,108,141},{213,4,34,94,105,106,134,161},{197,42,32,89,115,97},{202,12,52,87,118,113,158,181,210},{229,15,44,101,68,111,159,166,217,240,231,15},{254,0,39,80,82,119,140,176,220},{201,5,36,78,71,102,154,151,219,205,227,30,51},{230,16,35,85},{228,7,63,91},{228,3,56,86,87,120},{201,17,46,3,78,101,158,188,204,193,228},{198,6,26},{210,23,47,39,120,111,134,174},{194,30,39,38},2,{253,28,40},{204},0.5,{207},{205},{245,23,10},{244,30,29},{248,239,30},{254,239,6,47,95,124,155},{232,240,9,45,81,104},{254,236,5,32,71},{249,246,11,52,95,121,108,156},{252,234,7,62,69,47},{212,238,5,49,83,112,97,153,163},{204,232,9,54},{225,231,28,58,95,82},{198,237,8,48,117},{193,238,23,51},{192,239,22,50,114},{201,249,6,52,87,74,111,175,181,211,206,231,28},8,{203},{202,224},{204,249,26,48},{253,244,20,41,44,91,61},{234,251,20,50,33,78},{238,252,21,48,55},{200,253,22,12,25,79,125,148,177,182},{245,220,21,5,34,85},{228,228,29,12,59,94,117,136,133,168,207,235},{210,251,28,14,57},{212,241,18,8,21,68,100,157,140,187,222,245,8,5,40,79,107},0.05,{199,241,229,10,41,70,119,144},{243,233,238,10},{226,243},{227,245,234,10,36,91,126,114,148},{208,251,229,14,52,89,104},{241,250,228,15},{232,193,226,5,39,75},{211,196,230,9,55,86,107,90,152,184,205,248},{212,199,233,10,48,85,84,89,143,189,212,241,246},{235,202,236,24,37,84,83,115,190,186,195,250},{209,214,227,23,63,82},{252,192,229,5,50,79},{148,201,252},{140,200,248,0,60},{133,205,250,57,53,53,85,105},{164,200,226,16},{131,207,228,37,57,48,94,103,151,191},{130,222,248,36,56,49,95,102,150,190},{129,201,230,63,43,45,99,126,133,185,182},3,{171,198,245,23,19},{161,202,244,23,21,47},{135,209,238,52,7,41,66,96,146},{131,212,246,17,23,33},{187,219,252,10,12},5,{189,209,253,237,3,34,70,107},12,4,16,{186,200},{160,220,248,246},{182,221},{150,212,205,232,31,96},{176,206,205,229,60,19,120},20,0.4,{191,211,202,228,3},0.000001,0.999,{191,173,196,225,6,5,44,73,123},{190,172,197,224,7,4,44,78,105},{189,171,198,255,4,3,42,65,105,156},{171,160,211,229},{147,178,222,251,22,57},{135,168,223,254,24,43},{199,172},{183,172,215,225},{144,175,200,226,35,1,39,66,123,136},11,6,{151,174,210,245,19},15,{143,163,212,252,242},{159,163,211,238,236,9,35,81},{133,176,218,248},{162,179,213,251},{152,160,220,237,235,10,60,82,66,96,134,163,218,233},{157,189,192,197},{139,188,200,213,230,3,48,92},{148,191,207,214},{170,242,217,206,212},{150,177,205,208,235,30,53,89,125,107,129,184,213,210},14,{131,191,161,214,227,28},{130,190,160,215,226,29,6,92,74,103,158,165}},C={112,77,95,77,118,98,76,112,76,95,77,12,76,78,98,73,98,78,98,79,122,77,98,72,95,72,122,76,126,98,72,112,79,122,79,118,92,85,92,101,99,87,76,95,79,92,85,92,101,118,87,76,112,78,95,77,90,76,92,101,164,122,77,98,75,95,75,122,76,126,98,75,95,76,101,159,122,77,98,74,95,74,122,76,126,98,74,112,73,95,76,90,76,87,76,122,77,98,69,95,69,122,76,126,98,69,112,72,95,76,122,78,118,122,73,118,90,76,87,76,122,77,98,68,95,68,122,76,126,98,68,95,76,122,78,118,122,72,118,122,75,109,116,122,77,98,71,95,71,122,76,126,98,71,95,76,122,74,118,122,69,118,122,75,109,116,122,77,98,70,95,70,122,76,126,98,70,95,76,122,74,118,122,68,118,122,75,109,116,122,77,98,65,95,65,122,76,126,98,65,112,75,95,76,90,76,87,76,120,159,122,77,98,64,95,64,122,76,126,98,64,112,74,95,77,90,76,87,76,119,77,120,164,95,73,122,71,118,112,69,122,70,118,122,71,118,113,122,65,118,98,67,122,77,98,66,95,66,122,76,126,98,66,95,67,112,79,122,64,118,71,101,496,122,77,98,93,95,93,122,76,126,98,93,95,76,101,491,122,77,98,92,95,92,122,76,126,98,92,112,73,95,76,90,76,87,76,122,77,98,95,95,95,122,76,126,98,95,112,72,95,76,122,78,118,122,73,118,90,76,87,76,122,77,98,94,95,94,122,76,126,98,94,95,76,122,78,118,122,72,118,122,75,109,116,122,77,98,89,95,89,122,76,126,98,89,95,76,122,74,118,122,69,118,122,75,109,116,122,77,98,88,95,88,122,76,126,98,88,95,76,122,74,118,122,68,118,122,75,109,116,122,77,98,91,95,91,122,76,126,98,91,112,75,95,76,90,76,87,76,120,491,122,77,98,90,95,90,122,76,126,98,90,112,74,95,77,90,76,87,76,119,77,120,496,122,77,98,85,95,85,122,76,126,98,85,112,68,95,77,12,76,76,98,76,122,77,98,84,95,84,122,76,126,98,84,115,67,122,66,118,13,69,115,93,122,92,118,115,93,122,92,118,115,93,122,92,118,80,115,93,122,92,118,80,98,80,98,81,98,86,98,87,109,98,83,122,77,98,82,95,82,122,76,126,98,82,64,115,95,95,79,85,122,94,118,91,12,76,-1,67,78,98,111,98,108,98,109,93,109,108,111,73,110,73,105,95,109,95,108,95,111,12,79,79,98,105,98,110,95,110,98,111,95,110,76,100,101,1265,122,77,98,104,95,104,122,76,126,98,104,95,105,85,122,89,118,91,122,88,90,79,101,1075,95,105,122,70,118,95,105,122,91,118,98,106,98,107,122,77,98,101,95,101,122,76,126,98,101,115,95,70,85,122,77,122,77,80,116,85,122,90,122,77,116,12,76,78,98,102,98,103,98,100,93,100,103,102,73,97,73,96,95,100,95,103,95,102,12,79,79,98,96,98,97,95,97,98,102,95,97,76,100,101,1073,122,77,98,99,95,99,122,76,126,98,99,115,95,70,85,122,77,122,77,80,116,85,122,90,122,77,116,12,76,78,98,124,98,125,98,98,93,98,125,124,73,127,73,126,95,98,95,125,95,124,12,79,79,98,126,98,127,95,127,98,124,95,127,76,100,101,1053,122,77,98,121,95,121,122,76,126,98,121,115,95,70,85,122,77,122,77,80,116,85,122,90,122,77,116,12,76,78,98,122,98,123,98,120,93,120,123,122,73,117,73,116,95,120,95,123,95,122,12,79,79,98,116,98,117,95,117,98,122,95,117,76,100,101,1149,95,107,115,70,122,85,118,95,96,95,106,122,84,118,106,122,87,106,95,126,95,106,122,86,118,106,122,87,106,95,116,95,106,122,81,118,106,122,87,106,90,78,106,122,71,118,98,119,112,71,95,119,12,76,79,98,113,98,118,122,77,98,112,95,112,122,76,126,98,112,95,113,85,101,967,87,76,95,118,122,84,118,95,118,122,84,118,88,85,101,983,87,76,95,118,122,86,118,95,118,122,86,118,88,101,1105,122,77,98,115,95,115,122,76,126,98,115,127,98,83,122,77,98,114,95,114,122,76,126,98,114,115,93,122,80,118,95,87,95,118,122,84,118,12,79,76,98,87,122,77,98,13,95,13,122,76,126,98,13,115,93,122,80,118,95,86,95,118,122,86,118,12,79,76,98,86,122,77,98,12,95,12,122,76,126,98,12,115,93,122,83,118,95,81,95,118,122,84,118,12,79,76,98,81,122,77,98,15,95,15,122,76,126,98,15,115,93,122,83,118,95,80,95,118,122,86,118,12,79,76,98,80,120,1105,73,119,73,118,73,113,73,112,73,115,73,114,73,13,73,12,73,15,120,858,73,121,73,120,73,123,73,122,73,117,73,116,73,119,73,118,73,113,73,112,73,115,73,114,73,13,73,12,73,15,120,665,73,99,73,98,73,125,73,124,73,127,73,126,73,121,73,120,73,123,73,122,73,117,73,116,73,119,73,118,73,113,73,112,73,115,73,114,73,13,73,12,73,15,120,732,120,1075,73,104,73,107,73,106,73,101,73,100,73,103,73,102,73,97,73,96,73,99,73,98,73,125,73,124,73,127,73,126,73,121,73,120,73,123,73,122,73,117,73,116,73,119,73,118,73,113,73,112,73,115,73,114,73,13,73,12,73,15,120,613,95,83,85,101,1172,87,76,112,79,122,82,118,122,109,118,85,92,101,1172,87,76,112,79,122,108,118,122,109,118,98,14,95,87,95,86,95,81,95,87,113,95,80,95,86,113,98,10,98,11,98,8,98,9,122,77,98,5,95,5,122,76,126,98,5,112,79,122,82,118,122,109,118,85,101,1350,87,76,95,83,85,101,1368,87,76,95,11,122,77,71,85,101,1362,87,76,95,10,122,77,71,101,1953,112,79,122,82,118,122,111,118,98,4,112,79,122,82,118,122,110,118,85,101,1293,87,76,112,79,122,82,118,122,105,118,85,92,101,1283,87,76,112,79,122,82,118,122,111,118,98,7,115,93,122,83,118,112,79,122,82,118,122,104,118,122,77,90,79,98,6,122,77,98,1,95,1,122,76,126,98,1,112,79,122,82,118,122,107,118,122,106,88,101,1649,95,76,122,82,118,122,101,118,85,92,101,1503,87,76,95,76,122,82,118,122,100,118,83,98,0,122,77,98,3,95,3,122,76,126,98,3,122,77,98,2,95,0,98,29,122,77,98,28,95,28,122,76,71,101,1526,95,2,95,29,69,101,1604,120,1423,95,2,95,29,110,101,1604,73,31,95,2,98,31,122,77,98,30,95,30,122,76,126,98,30,95,76,122,82,118,122,100,118,95,31,118,122,75,109,116,122,77,98,25,95,25,122,76,126,98,25,95,76,122,82,118,122,103,118,95,31,118,122,75,109,116,73,30,73,25,95,2,95,28,126,98,2,120,1510,122,77,98,24,95,24,122,76,126,98,24,112,70,95,76,95,9,95,8,95,11,95,10,95,4,95,7,95,6,112,79,122,82,118,122,68,118,112,79,122,82,118,122,102,118,90,71,87,76,120,1703,122,77,98,27,95,27,122,76,126,98,27,122,77,98,26,122,97,98,21,122,77,98,20,95,20,122,76,71,101,1582,95,26,95,21,69,101,1788,120,1575,95,26,95,21,110,101,1788,73,23,95,26,98,23,122,77,98,22,95,22,122,76,126,98,22,95,76,122,82,118,122,96,118,95,23,118,122,75,109,116,122,77,98,17,95,17,122,76,126,98,17,95,76,122,82,118,122,99,118,95,23,118,122,75,109,116,73,22,73,17,95,26,95,20,126,98,26,120,1566,122,77,98,16,95,16,122,76,126,98,16,112,65,95,76,95,9,95,8,95,11,95,10,95,4,95,7,95,6,112,79,122,82,118,122,68,118,112,79,122,82,118,122,102,118,112,79,122,82,118,122,110,118,90,70,87,76,122,77,98,19,95,19,122,76,126,98,19,112,79,122,82,118,122,98,118,101,1950,122,77,98,18,95,18,122,76,126,98,18,95,76,122,82,118,122,98,118,122,71,115,125,122,85,118,95,9,95,8,90,79,116,122,77,98,45,95,45,122,76,126,98,45,95,76,122,82,118,122,98,118,122,91,115,125,122,85,118,95,11,95,10,90,79,116,122,77,98,44,95,44,122,76,126,98,44,95,76,122,82,118,122,98,118,122,124,127,116,122,77,98,47,95,47,122,76,126,98,47,95,76,122,82,118,122,98,118,122,127,112,79,122,82,118,122,126,118,116,122,77,98,46,95,46,122,76,126,98,46,95,76,122,82,118,122,98,118,122,121,122,77,116,122,77,98,41,95,41,122,76,126,98,41,95,76,122,82,118,122,98,118,122,120,115,93,122,123,118,122,77,112,79,122,82,118,122,122,118,113,122,117,122,77,90,78,116,122,77,98,40,95,40,122,76,126,98,40,95,76,122,82,118,122,98,118,122,75,127,116,120,1959,122,77,98,43,95,43,122,76,126,98,43,95,76,122,82,118,122,98,118,122,75,109,116,120,1970,122,77,98,42,95,42,122,76,126,98,42,112,73,95,76,90,76,87,76,122,77,98,37,95,37,122,76,126,98,37,112,79,122,116,118,122,109,118,101,2909,112,64,95,79,95,78,90,79,98,36,122,77,98,39,95,39,122,76,126,98,39,122,77,98,38,95,76,122,78,118,122,73,118,83,98,33,122,77,98,32,95,32,122,76,71,101,2049,95,38,95,33,69,101,2099,120,2078,95,38,95,33,110,101,2099,73,35,95,38,98,35,122,77,98,34,95,34,122,76,126,98,34,95,76,122,78,118,122,73,118,95,35,118,122,75,109,116,73,34,95,38,95,32,126,98,38,120,2161,122,77,98,61,95,61,122,76,126,98,61,115,95,95,36,12,76,78,98,62,98,63,98,60,93,60,63,62,73,57,73,56,95,60,95,63,95,62,12,79,79,98,56,98,57,95,57,98,62,95,57,76,100,101,2624,95,76,122,78,118,122,73,118,95,57,118,98,59,122,77,98,58,95,58,122,76,126,98,58,95,59,92,101,2203,120,2624,120,2203,95,56,122,77,118,95,56,122,90,118,98,52,98,53,122,77,98,55,95,55,122,76,126,98,55,95,53,85,101,2229,87,76,95,52,101,2474,112,71,95,53,122,71,118,12,76,79,98,49,98,54,112,71,95,52,122,71,118,12,76,79,98,51,98,48,122,77,98,50,95,50,122,76,126,98,50,95,49,85,101,2407,87,76,95,51,101,2472,112,79,122,116,118,122,111,118,98,205,122,77,98,204,95,204,122,76,126,98,204,112,79,122,116,118,122,110,118,101,2505,122,77,98,207,95,207,122,76,126,98,207,112,67,112,79,122,116,118,122,111,118,112,79,122,116,118,122,105,118,95,57,122,77,113,115,93,122,83,118,95,36,83,122,77,113,122,77,90,79,123,12,78,76,98,205,120,2505,122,77,98,206,95,206,122,76,126,98,206,95,59,122,119,95,54,116,122,77,98,201,95,201,122,76,126,98,201,95,59,122,118,95,48,116,122,77,98,200,95,200,122,76,126,98,200,95,59,122,127,95,205,116,122,77,98,203,95,203,122,76,126,98,203,95,59,122,113,112,79,122,116,118,122,104,118,116,122,77,98,202,95,202,122,76,126,98,202,95,59,122,75,127,116,120,2472,120,2474,73,59,73,58,73,53,73,52,73,55,73,54,73,49,73,48,73,51,73,50,73,205,73,204,73,207,73,206,73,201,73,200,73,203,73,202,120,2263,122,77,98,197,95,197,122,76,126,98,197,112,79,122,116,118,122,112,118,101,2746,112,66,95,79,122,115,90,79,98,196,122,77,98,199,95,199,122,76,126,98,199,95,196,101,2707,112,71,95,196,122,71,118,12,76,79,98,193,98,198,122,77,98,192,95,192,122,76,126,98,192,95,193,101,2696,122,77,98,195,95,195,122,76,126,98,195,95,76,122,78,118,122,72,118,122,71,95,198,116,122,77,98,194,95,194,122,76,126,98,194,95,76,122,78,118,122,72,118,122,114,112,79,122,116,118,122,13,118,116,122,77,98,221,95,221,122,76,126,98,221,95,76,122,78,118,122,72,118,122,127,112,79,122,116,118,122,12,118,116,122,77,98,220,95,220,122,76,126,98,220,95,76,122,78,118,122,72,118,122,75,127,116,120,2705,122,77,98,223,95,223,122,76,126,98,223,95,76,122,78,118,122,72,118,122,75,109,116,120,2744,122,77,98,222,95,222,122,76,126,98,222,95,76,122,78,118,122,72,118,122,75,109,116,120,2883,122,77,98,217,95,217,122,76,126,98,217,95,76,122,78,118,122,72,118,122,75,109,116,120,2829,122,77,98,216,95,216,122,76,126,98,216,112,72,95,76,122,78,118,122,73,118,90,76,87,76,122,77,98,219,95,219,122,76,126,98,219,95,76,122,78,118,122,72,118,122,75,109,116,122,77,98,218,95,218,122,76,126,98,218,112,79,122,108,118,122,109,118,85,101,2839,87,76,95,83,101,3578,76,98,213,112,69,122,15,118,98,212,122,77,98,215,95,215,122,76,126,98,215,112,79,122,108,118,122,14,118,122,9,88,101,3039,122,77,98,214,95,214,122,76,126,98,214,95,212,122,90,123,98,213,120,3196,112,79,122,108,118,122,14,118,122,8,88,101,2957,122,77,98,209,95,209,122,76,126,98,209,115,125,122,85,118,95,212,122,84,118,122,90,123,122,76,12,79,76,98,213,120,3196,112,79,122,108,118,122,14,118,122,11,88,101,3138,112,93,85,122,10,118,91,90,76,98,208,122,77,98,211,95,211,122,76,126,98,211,115,125,122,85,118,95,208,122,84,118,95,208,122,86,118,115,5,85,122,4,118,91,122,7,90,79,85,122,6,118,91,90,76,122,86,118,126,12,79,76,98,213,120,3196,122,77,98,210,95,210,122,76,126,98,210,115,125,122,85,118,95,212,122,84,118,122,90,123,95,212,122,86,118,12,79,76,98,213,115,125,122,85,118,95,9,95,11,122,90,123,126,95,8,95,10,126,90,79,98,237,115,93,122,83,118,112,79,122,108,118,122,104,118,122,77,90,79,98,236,122,77,98,239,95,239,122,76,126,98,239,112,79,122,108,118,122,68,118,101,3396,122,77,98,238,95,238,122,76,126,98,238,95,76,122,74,118,122,68,118,122,119,95,213,116,122,77,98,233,95,233,122,76,126,98,233,95,76,122,74,118,122,68,118,122,118,95,237,116,122,77,98,232,95,232,122,76,126,98,232,95,76,122,74,118,122,68,118,122,127,112,79,122,108,118,122,102,118,116,122,77,98,235,95,235,122,76,126,98,235,95,76,122,74,118,122,68,118,122,113,95,236,122,90,126,116,122,77,98,234,95,234,122,76,126,98,234,95,76,122,74,118,122,68,118,122,121,122,90,116,122,77,98,229,95,229,122,76,126,98,229,95,76,122,74,118,122,68,118,122,75,127,116,120,3437,122,77,98,228,95,228,122,76,126,98,228,95,76,122,74,118,122,68,118,122,75,109,116,122,77,98,231,95,231,122,76,126,98,231,95,76,122,74,118,122,69,118,122,119,95,213,116,122,77,98,230,95,230,122,76,126,98,230,95,76,122,74,118,122,69,118,122,118,95,237,116,122,77,98,225,95,225,122,76,126,98,225,95,76,122,74,118,122,69,118,122,127,112,79,122,108,118,122,111,118,116,122,77,98,224,95,224,122,76,126,98,224,95,76,122,74,118,122,69,118,122,113,95,236,116,122,77,98,227,95,227,122,76,126,98,227,95,76,122,74,118,122,69,118,122,121,122,1,116,122,77,98,226,95,226,122,76,126,98,226,95,76,122,74,118,122,69,118,122,75,127,116,120,3496,122,77,98,253,95,253,122,76,126,98,253,95,76,122,74,118,122,69,118,122,75,109,116,122,77,98,252,95,252,122,76,126,98,252,95,76,122,74,118,122,68,118,122,75,109,116,122,77,98,255,95,255,122,76,126,98,255,112,79,122,0,118,122,109,118,101,3676,122,77,98,254,95,254,122,76,126,98,254,112,92,95,77,95,79,90,79,87,76,120,3689,122,77,98,249,95,249,122,76,126,98,249,112,74,95,77,90,76,87,76,122,77,98,248,95,248,122,76,126,98,248,95,83,92,85,92,101,3696,87,76,95,11,122,77,78,85,92,101,3589,87,76,95,10,122,77,78,101,3628,122,77,98,251,95,251,122,76,126,98,251,112,75,95,76,90,76,87,76,119,77,120,3628,122,77,98,250,95,250,122,76,126,98,250,112,79,122,3,118,122,109,118,101,5349,115,93,122,83,118,95,78,122,2,118,122,77,90,79,98,245,115,93,122,123,118,95,78,122,29,118,122,76,95,245,90,78,98,244,115,93,122,123,118,95,244,95,245,123,122,76,122,77,90,78,98,247,115,93,122,83,118,112,79,122,3,118,122,28,118,122,90,90,79,98,246,95,9,95,246,113,122,31,113,98,241,95,8,98,240,95,10,98,243,115,93,122,123,118,112,79,122,3,118,122,30,118,85,92,101,3753,87,76,122,25,122,24,122,27,90,78,98,242,122,77,98,141,95,141,122,76,126,98,141,95,242,95,76,122,26,118,122,21,118,83,71,101,3920,122,77,98,140,95,140,122,76,126,98,140,95,76,122,26,118,122,21,118,83,98,242,120,3920,122,77,98,143,95,241,95,143,126,98,142,95,240,95,143,126,98,137,115,93,122,83,118,95,246,95,143,122,90,106,113,122,77,90,79,98,136,115,93,122,83,118,95,243,95,143,122,90,106,113,122,77,90,79,98,139,122,77,98,138,95,138,122,76,126,98,138,95,76,122,26,118,122,20,118,122,71,115,125,122,85,118,95,241,95,240,90,79,116,122,77,98,133,95,133,122,76,126,98,133,95,76,122,26,118,122,20,118,122,91,115,125,122,85,118,95,246,95,243,90,79,116,122,77,98,132,95,132,122,76,126,98,132,95,76,122,26,118,122,20,118,122,127,115,23,122,22,118,122,17,122,17,122,17,90,78,116,122,77,98,135,95,135,122,76,126,98,135,95,76,122,26,118,122,20,118,122,120,122,16,116,122,77,98,134,95,134,122,76,126,98,134,95,76,122,26,118,122,20,118,122,124,127,116,122,77,98,129,95,129,122,76,126,98,129,95,76,122,26,118,122,20,118,122,75,127,116,122,77,98,128,95,128,122,76,126,98,128,122,77,98,131,95,76,122,26,118,122,21,118,83,98,130,122,77,98,157,95,157,122,76,71,101,4195,95,131,95,130,69,101,4141,120,4216,95,131,95,130,110,101,4141,73,156,95,131,98,156,122,77,98,159,95,159,122,76,126,98,159,95,76,122,26,118,122,21,118,95,156,118,122,75,109,116,73,159,95,131,95,157,126,98,131,120,4179,115,93,122,19,118,95,242,95,247,106,122,18,126,90,76,98,158,122,77,98,153,95,153,122,76,126,98,153,95,247,122,76,71,85,101,4294,87,76,95,158,122,77,78,101,4307,122,77,98,152,95,152,122,76,126,98,152,122,77,98,158,120,4307,122,77,98,155,95,155,122,76,126,98,155,95,247,122,45,110,101,4236,122,77,98,154,95,154,122,76,126,98,154,95,242,98,158,120,4236,122,77,98,149,95,149,122,76,126,98,149,122,77,98,148,95,158,98,151,122,77,98,150,95,150,122,76,71,101,4261,95,148,95,151,69,101,4744,120,4258,95,148,95,151,110,101,4744,73,145,95,148,98,145,95,76,122,26,118,122,21,118,95,145,118,98,144,122,77,98,147,95,147,122,76,126,98,147,95,144,92,101,4443,120,4744,120,4443,95,145,122,87,113,95,242,123,98,146,112,95,112,79,122,3,118,122,44,118,112,79,122,3,118,122,47,118,112,79,122,3,118,122,46,118,95,146,90,73,98,173,115,93,122,19,118,95,145,122,77,113,95,139,106,95,242,123,90,76,98,172,115,93,122,19,118,95,145,95,139,106,95,242,123,90,76,98,175,95,137,95,139,126,95,175,113,98,174,95,175,95,172,113,98,169,122,77,98,168,95,168,122,76,126,98,168,95,169,122,77,78,101,4564,122,77,98,171,95,171,122,76,126,98,171,122,77,98,169,120,4564,122,77,98,170,95,170,122,76,126,98,170,95,174,95,137,78,101,4508,122,77,98,165,95,165,122,76,126,98,165,95,169,95,137,95,174,113,113,98,169,122,77,98,164,95,164,122,76,126,98,164,95,137,98,174,120,4508,122,77,98,167,95,167,122,76,126,98,167,95,174,95,169,126,95,137,95,139,126,71,101,4685,122,77,98,166,95,166,122,76,126,98,166,95,137,95,139,126,95,174,113,98,169,120,4685,122,77,98,161,95,161,122,76,126,98,161,95,169,122,76,71,101,4829,122,77,98,160,95,160,122,76,126,98,160,95,144,122,71,115,125,122,85,118,95,142,95,174,90,79,116,122,77,98,163,95,163,122,76,126,98,163,95,144,122,91,115,125,122,85,118,95,136,95,169,90,79,116,122,77,98,162,95,162,122,76,126,98,162,95,144,122,127,95,173,116,122,77,98,189,95,189,122,76,126,98,189,95,144,122,124,127,116,122,77,98,188,95,188,122,76,126,98,188,95,144,122,120,122,77,116,122,77,98,191,95,191,122,76,126,98,191,95,144,122,75,127,116,120,4829,73,144,73,147,73,146,73,173,73,172,73,175,73,174,73,169,73,168,73,171,73,170,73,165,73,164,73,167,73,166,73,161,73,160,73,163,73,162,73,189,73,188,73,191,95,148,95,150,126,98,148,120,4245,122,77,98,190,95,190,122,76,126,98,190,112,79,122,3,118,122,68,118,101,5066,122,77,98,185,95,185,122,76,126,98,185,95,76,122,26,118,122,68,118,122,71,115,125,122,85,118,95,241,95,240,90,79,116,122,77,98,184,95,184,122,76,126,98,184,95,76,122,26,118,122,68,118,122,91,115,125,122,85,118,95,246,95,243,90,79,116,122,77,98,187,95,187,122,76,126,98,187,95,76,122,26,118,122,68,118,122,127,115,23,122,22,118,122,76,122,76,122,76,90,78,116,122,77,98,186,95,186,122,76,126,98,186,95,76,122,26,118,122,68,118,122,113,122,77,116,122,77,98,181,95,181,122,76,126,98,181,95,76,122,26,118,122,68,118,122,124,109,116,122,77,98,180,95,180,122,76,126,98,180,95,76,122,26,118,122,68,118,122,75,127,116,120,5075,122,77,98,183,95,183,122,76,126,98,183,95,76,122,26,118,122,68,118,122,75,109,116,122,77,98,182,95,182,122,76,126,98,182,112,79,122,3,118,122,41,118,101,5314,64,115,40,122,43,118,122,42,115,93,122,19,118,95,244,122,87,126,12,76,-1,67,76,98,177,122,77,98,176,95,176,122,76,126,98,176,95,76,122,26,118,122,41,118,122,37,95,177,116,122,77,98,179,95,179,122,76,126,98,179,95,76,122,26,118,122,41,118,122,127,112,79,122,3,118,122,36,118,116,122,77,98,178,95,178,122,76,126,98,178,95,76,122,26,118,122,41,118,122,91,122,39,116,122,77,98,333,95,333,122,76,126,98,333,95,76,122,26,118,122,41,118,122,9,109,116,95,177,83,122,38,106,122,90,126,98,332,122,77,98,335,95,335,122,76,126,98,335,115,33,111,76,90,76,87,76,122,77,98,334,95,334,122,76,126,98,334,95,76,122,26,118,122,41,118,122,71,115,125,122,85,118,95,241,95,332,113,122,90,113,95,240,90,79,116,122,77,98,329,95,329,122,76,126,98,329,95,76,122,26,118,122,41,118,122,75,127,116,120,5355,122,77,98,328,95,328,122,76,126,98,328,95,76,122,26,118,122,41,118,122,75,109,116,120,5490,122,77,98,331,95,331,122,76,126,98,331,95,76,122,26,118,122,20,118,122,75,109,116,122,77,98,330,95,330,122,76,126,98,330,95,76,122,26,118,122,68,118,122,75,109,116,122,77,98,325,95,325,122,76,126,98,325,95,76,122,26,118,122,41,118,122,75,109,116,122,77,98,324,95,324,122,76,126,98,324,115,95,95,76,122,26,118,122,21,118,12,76,78,98,321,98,326,98,327,93,327,326,321,73,320,73,323,95,327,95,326,95,321,12,79,79,98,323,98,320,95,320,98,321,95,320,76,100,101,5490,122,77,98,322,95,322,122,76,126,98,322,95,323,122,75,109,116,73,322,120,5442,95,8,122,32,113,98,349,122,77,98,348,95,348,122,76,126,98,348,112,79,122,35,118,122,34,118,101,5567,122,77,98,351,95,351,122,76,126,98,351,95,76,122,35,118,122,61,118,122,37,95,77,122,60,118,116,122,77,98,350,95,350,122,76,126,98,350,95,76,122,35,118,122,61,118,122,127,112,79,122,35,118,122,63,118,116,122,77,98,345,95,345,122,76,126,98,345,95,76,122,35,118,122,61,118,122,91,112,79,122,35,118,122,62,118,116,122,77,98,344,95,344,122,76,126,98,344,95,76,122,35,118,122,61,118,122,71,115,125,122,85,118,95,9,95,11,122,87,106,126,95,349,90,79,116,122,77,98,347,95,347,122,76,126,98,347,95,76,122,35,118,122,61,118,122,75,127,116,120,5700,122,77,98,346,95,346,122,76,126,98,346,95,76,122,35,118,122,61,118,122,75,109,116,95,8,95,10,126,122,90,126,98,341,122,77,98,340,95,340,122,76,126,98,340,112,79,122,35,118,122,57,118,101,5806,122,77,98,343,95,343,122,76,126,98,343,95,76,122,35,118,122,56,118,122,37,64,115,40,122,43,118,122,59,115,93,122,19,118,95,67,122,87,126,12,76,-1,67,76,116,122,77,98,342,95,342,122,76,126,98,342,95,76,122,35,118,122,56,118,122,127,112,79,122,35,118,122,58,118,116,122,77,98,337,95,337,122,76,126,98,337,95,76,122,35,118,122,56,118,122,91,112,79,122,35,118,122,62,118,116,122,77,98,336,95,336,122,76,126,98,336,95,76,122,35,118,122,56,118,122,71,115,125,122,85,118,95,9,95,11,122,87,106,126,95,341,90,79,116,122,77,98,339,95,339,122,76,126,98,339,95,76,122,35,118,122,56,118,122,75,127,116,122,77,98,338,95,338,122,76,126,98,338,95,341,122,53,126,98,341,120,5815,122,77,98,365,95,365,122,76,126,98,365,95,76,122,35,118,122,56,118,122,75,109,116,122,77,98,364,95,364,122,76,126,98,364,112,79,122,35,118,122,52,118,101,6122,122,77,98,367,95,367,122,76,126,98,367,95,76,122,35,118,122,52,118,122,37,112,94,95,79,90,76,116,122,77,98,366,95,366,122,76,126,98,366,95,76,122,35,118,122,52,118,122,127,112,79,122,35,118,122,55,118,116,122,77,98,361,95,361,122,76,126,98,361,95,76,122,35,118,122,52,118,122,91,112,79,122,35,118,122,62,118,116,122,77,98,360,95,360,122,76,126,98,360,95,76,122,35,118,122,52,118,122,71,115,125,122,85,118,95,9,95,11,122,87,106,126,95,341,90,79,116,122,77,98,363,95,363,122,76,126,98,363,95,76,122,35,118,122,52,118,122,75,127,116,120,6131,122,77,98,362,95,362,122,76,126,98,362,95,76,122,35,118,122,52,118,122,75,109,116,119,77},P={{K={1,0,{21,19},{10,1,50,68},{43,0,51,69,85,146,150,167,203,230},{216}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,118,122,73,118,101,120,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,118,122,73,118,122,72,118,13,76,120,120,119,77},P={},U={{1,1},{1,257}},nParams=0}},U={{1,27},{1,32},{1,24},{1,30},{1,53},{1,37},{1,52},{1,40},{1,23},{1,39},{1,29},{1,49},{1,51},{1,46},{1,47},{1,45},{1,22},{1,41},{1,48},{1,31}},nParams=1},{K={1,0,{31,12,49},{13,15},{11,23},{232,22},{231,11,44,84,106}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,95,77,118,101,239,122,77,98,79,95,79,122,76,126,98,79,112,76,112,77,95,77,118,122,79,118,90,76,87,76,122,77,98,78,95,78,122,76,126,98,78,112,76,112,77,95,77,118,122,78,118,90,76,87,76,122,77,98,73,95,73,122,76,126,98,73,112,76,112,77,95,77,118,122,73,118,90,76,87,76,122,77,98,72,95,72,122,76,126,98,72,112,76,112,77,95,77,118,122,72,118,90,76,87,76,122,77,98,75,95,75,122,76,126,98,75,112,76,112,77,95,77,118,122,75,118,90,76,87,76,122,77,98,74,95,74,122,76,126,98,74,112,77,95,77,76,116,120,239,122,77,98,69,95,69,122,76,126,98,69,112,79,95,77,90,76,87,76,119,77},P={},U={{1,27},{1,38},{1,40}},nParams=1},{K={1,0,{16,2,58,91,112,137},{14,5,35,66,101},{12,14},{236,15,34,87,107},{229,8,57},{212,1,61,93,120,108,131},{247,27},{232,3,62,83},{234,30,37,91,116,109,140},{239,28,51,81,108,119},{192,8,39,105,115,100,146,180,197,238},{248,13,53,86,76}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,92,101,320,122,77,98,76,95,76,122,76,126,98,76,115,78,112,76,12,76,78,98,73,98,78,98,79,93,79,78,73,73,72,95,79,95,78,95,73,12,79,76,98,72,95,72,98,73,95,72,76,100,101,324,112,76,95,72,118,98,75,122,77,98,74,95,74,122,76,126,98,74,95,75,101,175,122,77,98,69,95,69,122,76,126,98,69,112,79,95,75,90,76,87,76,122,77,98,68,95,68,122,76,126,98,68,112,78,95,75,122,73,118,122,72,118,90,76,87,76,122,77,98,71,95,71,122,76,126,98,71,95,75,122,73,118,122,75,118,122,74,109,116,122,77,98,70,95,70,122,76,126,98,70,95,75,122,69,118,122,68,118,122,74,109,116,122,77,98,65,95,65,122,76,126,98,65,95,75,122,69,118,122,71,118,122,74,109,116,122,77,98,64,95,64,122,76,126,98,64,112,73,95,75,90,76,87,76,120,175,122,77,98,67,95,67,122,76,126,98,67,112,72,95,72,90,76,87,76,73,75,73,74,73,69,73,68,73,71,73,70,73,65,73,64,73,67,120,98,119,77,120,320,122,77,98,66,95,66,122,76,126,98,66,64,115,70,112,75,85,122,65,118,91,12,76,-1,67,78,98,95,98,92,98,93,93,93,92,95,73,94,73,89,95,93,95,92,95,95,12,79,79,98,89,98,94,95,94,98,95,95,94,76,100,101,310,122,77,98,88,95,88,122,76,126,98,88,95,89,112,74,100,101,312,122,77,98,91,95,91,122,76,126,98,91,115,64,112,69,95,89,90,79,87,76,120,312,73,88,73,91,120,380,119,77},P={},U={{1,24},{1,27},{1,53},{1,37},{1,52},{1,40},{1,19},{1,22},{1,54}},nParams=0},{K={1,0,{16,12,45,74},{51,11,63,67,115},{56,0,63,124,120,136,144,172,227,250,24,0,51,68,124,151},{214,3,47,70,119,140,214},{239,2,58},{212,1,43,67,106,111,148,184,225,241,4,1},{219},0.5,{220}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,88,101,110,112,76,85,122,73,118,91,12,76,-1,119,-1,120,110,115,72,122,75,118,95,77,122,74,118,122,69,118,122,68,106,95,77,122,74,118,122,71,118,122,68,106,12,79,-1,119,-1},P={},U={{1,25},{1,58}},nParams=1},{K={{51,4,38,73},1,0,{61,8,37,67,115,143,150},{8,10,57,90,100,141,130,170,202},{195,19,62,64,125,144,144,137,209,251,25,16,41},{236,6,57,91},{234,29,41,81},{234,25,46,92,105,114},{194,3,62,82,90,107,154,189,192,217,232,15,32,86},{204,24,16},{196,13,33,93,78,101,152,164},{208,2,33,85,123,81,132,135,222,248,244,25,32,71,111,81,136,164,221,237},{216,1,39,83,84,111,131,188},{223,10,54,79,78,117,223},{228,21,33},{211},{213},{192,18,62,81,76,127,132,179,216},{198,1,55,33,72,99,155,188,236,203,229,4,6,93,80,124}},C={112,77,95,76,118,85,92,101,93,87,76,112,77,122,77,118,98,79,122,76,98,78,95,78,122,79,126,98,78,95,76,122,78,88,101,358,115,73,122,72,118,98,73,112,76,95,73,90,76,98,72,76,115,75,122,74,118,98,74,98,75,122,76,98,69,95,69,122,79,126,98,69,115,69,95,79,12,76,78,98,70,98,71,98,68,93,68,71,70,73,65,73,64,95,68,95,71,95,70,12,79,79,98,64,98,65,95,65,98,70,95,65,76,100,101,360,95,77,85,122,68,118,91,95,64,90,79,98,67,122,76,98,66,95,66,122,79,126,98,66,95,67,85,101,211,87,76,95,67,85,122,71,118,91,122,70,90,79,101,348,95,73,85,122,65,118,91,95,67,122,64,118,12,79,79,98,92,98,93,122,76,98,95,95,95,122,79,126,98,95,95,92,101,322,115,67,122,66,118,95,93,122,93,118,95,93,122,92,118,90,79,95,72,113,122,95,118,98,94,122,76,98,89,95,89,122,79,126,98,89,95,94,95,74,78,101,320,122,76,98,88,95,88,122,79,126,98,88,95,94,98,74,122,76,98,91,95,91,122,79,126,98,91,95,67,98,75,120,320,120,322,120,348,73,67,73,66,73,93,73,92,73,95,73,94,73,89,73,88,73,91,120,20,95,75,119,76,120,358,122,76,98,90,95,90,122,79,126,98,90,115,69,95,79,12,76,78,98,87,98,84,98,85,93,85,84,87,73,86,73,81,95,85,95,84,95,87,12,79,79,98,81,98,86,95,86,98,87,95,86,76,100,101,471,95,77,85,122,68,118,91,95,81,90,79,98,80,122,76,98,83,95,83,122,79,126,98,83,95,80,85,101,449,87,76,95,80,85,122,71,118,91,122,70,90,79,101,473,95,80,119,76,120,473,73,80,73,83,120,266,95,77,85,122,68,118,91,122,94,90,79,85,92,101,507,87,76,95,77,85,122,68,118,91,122,77,90,79,119,76},P={},U={{1,76},{1,77}},nParams=2},{K={1,0,{10,2,37,67,118,147,132,164,198},{9,11,56,91,101,140,131,171,203},{60,16,57,67,114,147,151,138,206,248,30,19,38},{195,32,62,83,117,155},{209,8,62,90,109,150,138,165},{207,9,41,90,115,116,147,168,215},0.1,{194,3,60,66,121,112,172,171,199,249,229,8,40,83,118,138,151,131,222,229,8,3,38,77,113,137},{198,3,48,69,124,96,157,170,199},2,{213,12,42,90,126,118,159},{221,0,61,78},{192,1,38,79,64,105,142,182},{195,3,18,89,81,107,139,186,222,193,232,24,29,94}},C={122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,118,92,85,92,101,87,87,76,95,77,92,101,108,127,119,76,120,108,115,78,122,73,118,98,78,122,77,98,73,95,73,122,76,126,98,73,95,78,92,101,112,127,119,76,120,112,95,78,122,72,118,122,75,118,98,72,95,77,122,75,118,98,75,95,75,95,72,113,98,74,95,74,122,74,118,98,69,122,77,98,68,95,68,122,76,126,98,68,95,69,122,69,78,101,62,127,119,76,120,62,122,77,98,71,95,71,122,76,126,98,71,112,76,122,68,70,85,122,77,112,79,122,71,118,116,85,122,70,95,76,116,116,115,78,85,122,65,118,91,95,72,95,74,122,64,118,95,69,106,112,76,90,73,98,70,122,77,98,65,95,65,122,76,126,98,65,95,70,92,101,242,127,119,76,120,242,122,77,98,64,95,64,122,76,126,98,64,95,70,122,67,118,85,101,155,87,76,95,76,85,101,164,87,76,95,70,122,67,118,85,122,66,118,91,95,76,90,79,101,189,127,119,76,120,189,109,119,76},P={},U={{1,25},{1,79},{1,22}},nParams=2},{K={{12,14,53,70,96,137,190,166,206},{63,23,58,92,113,148,148,133,205,255,29,44,37},1,0,{25,10,61},{233,22,45,91,106,141},{198,2,57,99,117,158,156,174,195,228},{210,7,61,93,110,105,137,162},{192,47,61,84,118,100},{201,11,55,88,117,118,157,170,209},{232,10,41,104,121,106,154,187,212,245,226,2},{238,5,38,72,127,118,158},{208,2,33,85,123,81,132,135,222,248,244,25,32,71,111,81,136,164,221,237},{210},{223,10,54,79,78,117,223},{228,21,33},{211},{213}},C={115,77,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,101,81,76,119,76,120,81,112,77,95,77,90,76,98,79,76,112,76,122,73,118,98,73,98,78,122,79,98,72,95,72,122,78,126,98,72,64,115,72,112,79,85,122,75,118,91,12,76,-1,67,78,98,69,98,74,98,75,93,75,74,69,73,68,73,71,95,75,95,74,95,69,12,79,79,98,71,98,68,95,68,98,69,95,68,76,100,101,489,122,79,98,70,95,70,122,78,126,98,70,95,71,112,78,100,85,101,197,87,76,112,73,95,71,90,76,101,463,112,72,95,71,12,76,78,98,67,98,64,98,65,122,79,98,66,95,66,122,78,126,98,66,95,65,85,101,230,87,76,95,67,101,461,95,67,122,74,118,95,77,122,69,118,122,74,118,113,122,68,118,98,93,122,79,98,92,95,92,122,78,126,98,92,95,93,112,75,122,71,118,69,101,307,112,74,95,65,112,76,122,70,118,90,79,98,95,122,79,98,94,95,94,122,78,126,98,94,95,95,101,305,95,77,85,122,65,118,91,95,95,122,74,118,12,79,79,98,88,98,89,122,79,98,91,95,91,122,78,126,98,91,95,88,85,101,339,87,76,95,89,122,64,118,122,78,71,101,311,115,67,122,66,118,95,89,122,93,118,95,89,122,92,118,90,79,95,79,113,122,68,118,98,90,122,79,98,85,95,85,122,78,126,98,85,95,90,95,73,78,85,101,283,87,76,112,69,95,95,95,65,90,79,101,309,122,79,98,84,95,84,122,78,126,98,84,95,90,98,73,122,79,98,87,95,87,122,78,126,98,87,95,95,98,78,120,309,120,311,120,305,120,307,120,461,120,463,73,70,73,65,73,64,73,67,73,66,73,93,73,92,73,95,73,94,73,89,73,88,73,91,73,90,73,85,73,84,73,87,120,31,95,78,119,76},P={},U={{1,77},{1,25},{1,19},{1,22},{1,30},{1,32},{1,24},{1,78},{1,82}},nParams=0},{K={1,0,{24,13,40,77,121,158,133},{63,45,7,111,93,153,155},{15,6,42,93,123}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,92,101,85,109,119,76,120,85,112,76,122,78,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,101,121,127,119,76,120,121,115,73,111,76,12,76,79,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,95,78,92,101,25,127,119,76,120,25,95,73,85,101,17,87,76,127,85,92,101,46,87,76,109,119,76},P={{K={{60,4,51,126,103,152,171,160}},C={112,77,85,122,77,118,91,12,76,-1,119,-1},P={},U={{1,1}},nParams=0}},U={{1,25},{1,4}},nParams=0},{K={{12,14,53,70,96,137,190,166,206},{63,23,58,92,113,148,148,133,205,255,29,44,37},1,0,{12,13,36,70,72,155,140,191},{229,8,45,80,116,155,128},{209,8,62,90,109,150,138,165},{208,9,42,93,111,115},{229,6,57},{210,3,35,95,126,110,141},{232,10,37,95},{229,0,51,85,110},{244,0,60,86,107,109,130,191,208},0.015,60,{231,31,50,89},{200,16,58,88,81,104},{207,52,42,95,73,111},{227,22,46},{194,17,40,48},{216,26,41,45,67,89,156,143,214,192,252,1,56,79,87,89,128,188,213,213},{202},{214,18,41,14,70,122,134,190,141,200,238,18,45,86,74,101},{202},{202},{245,24,19},0.4,{226,5,18,45,65,114},{250,18,22,58,74,120,148,151,162,223,246,21},{254,11,10,41,68,127,147,140},{233,28,4,39,93},{247,239,19,63,87,117,145,146,175,209,244,15}},C={115,77,122,76,118,98,76,122,79,98,79,95,79,122,78,126,98,79,95,76,92,101,86,119,77,120,86,112,77,95,76,90,76,98,78,122,79,98,73,95,73,122,78,126,98,73,112,76,122,73,118,85,101,112,87,76,112,76,122,72,118,101,252,122,79,98,72,95,72,122,78,126,98,72,112,79,122,75,95,78,116,122,79,98,75,95,75,122,78,126,98,75,112,79,122,74,112,76,122,69,118,116,122,79,98,74,95,74,122,78,126,98,74,112,79,122,68,127,116,122,79,98,69,95,69,122,78,126,98,69,112,78,122,75,95,78,116,122,79,98,68,95,68,122,78,126,98,68,112,78,122,74,112,76,122,69,118,116,122,79,98,71,95,71,122,78,126,98,71,112,78,122,68,127,116,120,158,122,79,98,70,95,70,122,78,126,98,70,112,78,122,68,109,116,122,79,98,65,95,65,122,78,126,98,65,112,79,122,68,109,116,122,79,98,64,95,64,122,78,126,98,64,112,73,90,77,92,101,164,119,77,120,164,112,72,90,77,98,67,122,79,98,66,95,66,122,78,126,98,66,95,67,92,101,334,119,77,120,334,115,71,122,70,118,112,76,122,65,118,122,78,122,79,90,78,98,93,95,93,122,78,69,85,101,364,87,76,122,79,85,92,101,378,87,76,115,71,122,70,118,122,79,95,93,113,122,64,122,79,90,78,98,92,122,79,98,95,95,95,122,78,126,98,95,115,71,122,70,118,95,92,95,77,122,67,106,106,122,64,122,79,12,78,76,98,92,122,79,98,94,95,94,122,78,126,98,94,112,76,122,66,118,122,93,88,101,484,115,92,122,95,118,95,76,122,92,118,122,75,118,95,67,122,75,118,90,79,98,89,122,79,98,88,95,88,122,78,126,98,88,95,76,122,92,95,76,122,92,118,85,122,94,118,91,95,89,95,92,90,78,116,119,77,120,484,95,76,85,122,89,118,91,95,67,122,75,118,12,79,79,98,90,98,91,122,79,98,85,95,85,122,78,126,98,85,95,90,92,85,92,101,405,87,76,95,91,122,88,118,122,78,69,101,403,119,77,120,403,112,75,85,122,91,118,91,90,76,98,84,95,91,122,90,118,95,84,122,90,118,113,98,87,95,91,122,85,118,95,84,122,85,118,113,98,86,122,79,98,81,95,81,122,78,126,98,81,115,71,122,84,118,95,87,90,76,122,87,78,85,101,614,87,76,115,71,122,84,118,95,86,90,76,122,87,78,101,636,119,77,120,636,95,87,95,92,106,98,80,95,86,95,92,106,98,83,109,98,82,122,79,98,109,95,109,122,78,126,98,109,115,86,115,81,90,76,122,80,88,101,544,122,79,98,108,95,108,122,78,126,98,108,115,83,111,76,90,76,87,76,120,544,122,79,98,111,95,111,122,78,126,98,111,95,82,92,85,101,708,87,76,115,86,115,82,90,76,122,80,88,101,749,122,79,98,110,95,110,122,78,126,98,110,115,83,111,79,90,76,87,76,120,749,122,79,98,105,95,105,122,78,126,98,105,95,82,92,101,648,122,79,98,104,95,104,122,78,126,98,104,115,83,111,78,90,76,87,76,120,648,119,77},P={{K={1,0,{16,12,60,92,112,150,142,177,200,225,28,51}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,112,77,112,76,90,79,87,76,122,77,98,76,95,76,122,76,126,98,76,127,13,79,119,77},P={},U={{1,29},{1,30},{1,31}},nParams=0},{K={1,0,{16,12,60,92,112,150,142,177,200,242,27,44},{38},{38}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,112,77,122,78,118,112,76,126,112,77,122,73,118,112,79,126,90,79,87,76,122,77,98,76,95,76,122,76,126,98,76,127,13,78,119,77},P={},U={{1,25},{1,29},{1,30},{1,31}},nParams=0},{K={{28,0,42,72},{59,7,60,125,113,136,150,175,207,247},{43,10,59,91,96,154,141,142,195,227,12,43,8,74,127,150,186,166,219},1,0,{211,3,34,86,85,145,145,185,213,219,19,20,45,107,98,159,142,178},{217},{219}},C={115,77,85,122,76,118,91,122,79,90,79,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,101,11,122,78,98,79,95,79,122,73,126,98,79,95,77,85,122,72,118,91,112,77,122,75,118,112,76,126,112,77,122,74,118,112,79,126,115,77,90,73,87,76,120,11,119,77},P={},U={{1,25},{1,29},{1,30}},nParams=0}},U={{1,77},{1,25},{1,68},{1,60},{1,84},{1,83},{1,58}},nParams=1},{K={1,0,{51,2,36,74},{13,16,56,89,120,155},{19,10,60,84,101},{230,15,34,86},{226,6,32,86,107,158},{242,7,62,68,127,114},{249,6,32,88},{244,9,49,90,112}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,88,109,119,76,120,88,95,77,122,79,118,98,79,122,77,98,78,95,78,122,76,126,98,78,112,77,95,79,118,101,126,127,119,76,120,126,115,78,122,73,118,95,79,90,76,98,73,122,77,98,72,95,72,122,76,126,98,72,115,78,122,72,118,95,73,122,75,122,77,127,90,73,85,92,101,38,87,76,115,78,122,72,118,95,73,122,74,122,77,127,90,73,85,92,101,50,87,76,115,78,122,72,118,95,73,122,69,122,77,127,90,73,101,203,127,119,76,120,203,115,68,111,76,12,76,79,98,74,98,75,122,77,98,69,95,69,122,76,126,98,69,95,75,85,101,232,87,76,95,74,85,101,255,87,76,112,77,95,74,122,79,118,118,101,244,127,119,76,120,244,109,119,76},P={{K={{43,0,53,72,125,141}},C={112,77,122,77,118,119,76},P={},U={{1,0}},nParams=0}},U={{1,106}},nParams=1},{K={{19,8,51,93,114,139,171},1,0,{54,17,39,81,120,147,139,172,252,251,21,20,22,77,96,140},{43,10,57,66,120},{213,22,60,87,106,170,139,184,195,249},2,3,{209,8,33,81,116,108},{204,15,49,82},{236,27,48,94,111,112},{192,5,60,92,88,109,152,163,194,223,234,1,34,80},{206,30,18},{202,15,39,95,112,103,158,166},{253,14,55,87,68},{227,30,37,89,80,124},{230,16,35,85},{254,19,54,90,75,103}},C={112,77,122,77,118,98,76,76,98,79,122,76,98,78,95,78,122,79,126,98,78,95,76,122,78,88,101,127,122,76,98,73,95,73,122,79,126,98,73,70,85,122,76,122,78,116,98,79,120,213,95,76,122,73,88,101,22,122,76,98,72,95,72,122,79,126,98,72,70,85,122,76,122,72,116,85,122,75,122,73,116,85,122,74,122,78,116,98,79,120,213,95,76,122,69,88,101,51,122,76,98,75,95,75,122,79,126,98,75,70,85,122,76,122,68,116,85,122,75,122,78,116,98,79,120,213,122,76,98,74,95,74,122,79,126,98,74,70,85,122,76,122,68,116,85,122,75,122,78,116,98,79,122,76,98,69,95,69,122,79,126,98,69,95,76,122,69,88,101,279,70,98,68,122,76,98,71,95,71,122,79,126,98,71,115,71,95,79,12,76,78,98,64,98,65,98,70,93,70,65,64,73,67,73,66,95,70,95,65,95,64,12,79,79,98,66,98,67,95,67,98,64,95,67,76,100,101,383,95,77,85,122,70,118,91,95,66,90,79,98,93,122,76,98,92,95,92,122,79,126,98,92,95,93,85,101,323,87,76,95,93,85,122,65,118,91,122,64,90,79,101,359,122,76,98,95,95,95,122,79,126,98,95,115,67,122,66,118,95,68,95,93,90,79,87,76,120,359,73,93,73,92,73,95,120,132,122,76,98,94,95,94,122,79,126,98,94,95,68,83,122,79,71,101,277,95,68,115,93,122,92,118,122,76,95,68,83,90,79,118,119,76,120,277,120,279,122,76,98,89,95,89,122,79,126,98,89,115,71,95,79,12,76,78,98,90,98,91,98,88,93,88,91,90,73,85,73,84,95,88,95,91,95,90,12,79,79,98,84,98,85,95,85,98,90,95,85,76,100,101,388,95,77,85,122,70,118,91,95,84,90,79,98,87,122,76,98,86,95,86,122,79,126,98,86,95,87,85,101,502,87,76,95,87,85,122,65,118,91,122,64,90,79,101,398,95,87,119,76,120,398,73,87,73,86,120,315,95,77,85,122,70,118,91,122,78,90,79,85,92,101,424,87,76,95,77,85,122,70,118,91,122,68,90,79,119,76},P={},U={{1,26}},nParams=1},{K={1,0,{10,2,37,67,118,147,132,164,198},{9,11,56,91,101,140,131,171,203},{60,16,57,67,114,147,151,138,206,248,30,19,38},{195,32,62,83,117,155},{209,8,62,90,109,150,138,165},{207,9,41,90,115,116,147,168,215},0.15,{194,3,60,66,121,112,172,171,199,249,229,8,40,83,118,138,151,131,222,229,8,3,38,77,113,137},{198,3,48,69,124,96,157,170,199},2,{213,12,42,90,126,118,159},{221,0,61,78},{192,1,38,79,64,105,142,182},{195,3,18,89,81,107,139,186,222,193,232,24,29,94}},C={122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,118,92,85,92,101,87,87,76,95,77,92,101,108,127,119,76,120,108,115,78,122,73,118,98,78,122,77,98,73,95,73,122,76,126,98,73,95,78,92,101,112,127,119,76,120,112,95,78,122,72,118,122,75,118,98,72,95,77,122,75,118,95,72,113,98,75,95,75,122,74,118,98,74,122,77,98,69,95,69,122,76,126,98,69,95,74,122,69,78,101,34,127,119,76,120,34,122,77,98,68,95,68,122,76,126,98,68,112,76,122,68,70,85,122,77,112,79,122,71,118,116,85,122,70,95,76,116,116,115,78,85,122,65,118,91,95,72,95,75,122,64,118,95,74,106,112,76,90,73,98,71,122,77,98,70,95,70,122,76,126,98,70,95,71,92,101,246,127,119,76,120,246,95,71,122,67,118,76,100,85,101,152,87,76,95,71,122,67,118,85,122,66,118,91,95,76,90,79,119,76},P={},U={{1,26},{1,103},{1,22}},nParams=2},{K={1,0,{14,11,38,88,74,157,142,177},{27,10,43,82,122,153,134},{56,0,63,124,120,136,144,172,227,250,24,0,51,68,124,151},{208,9,63,91,108,151,139,164},{211,6,41,90,108,140},{228,7,56},{213,0,60,92,121,109,130},{243,5,34,93,111,114,137,173,209},{198,30,35,69,120,109,157,140,212,246,228,21,44},{239,28,51,81,108,119},{192,8,39,105,115,100,146,180,197,238},{223,1,38,86,68,82,131,132,209,251,243,26,63,68,104,82,135,167,218,238},{211},{220,21,53,72,77,122,220},{229,20,32},{212},{212},{195,21,61,46,79,120,135,188,219}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,85,101,87,87,76,112,77,122,78,118,101,212,112,76,85,122,73,118,91,90,76,98,76,122,77,98,79,95,79,122,76,126,98,79,112,79,122,72,95,76,116,122,77,98,78,95,78,122,76,126,98,78,112,79,122,75,112,77,122,74,118,116,122,77,98,73,95,73,122,76,126,98,73,112,79,122,69,127,116,122,77,98,72,95,72,122,76,126,98,72,112,78,122,72,95,76,116,122,77,98,75,95,75,122,76,126,98,75,112,78,122,75,112,77,122,74,118,116,122,77,98,74,95,74,122,76,126,98,74,112,78,122,69,127,116,120,246,122,77,98,69,95,69,122,76,126,98,69,112,78,122,69,109,116,122,77,98,68,95,68,122,76,126,98,68,112,79,122,69,109,116,122,77,98,71,95,71,122,76,126,98,71,112,77,122,78,118,92,101,173,122,77,98,70,95,70,122,76,126,98,70,76,13,73,119,77,120,173,115,68,122,71,118,98,65,122,77,98,64,95,64,122,76,126,98,64,95,65,92,101,324,122,77,98,67,95,67,122,76,126,98,67,76,13,73,119,77,120,324,112,76,85,122,73,118,91,90,76,98,66,76,112,77,122,74,118,98,92,98,93,122,77,98,95,95,95,122,76,126,98,95,64,115,70,112,72,85,122,65,118,91,12,76,-1,67,78,98,88,98,89,98,94,93,94,89,88,73,91,73,90,95,94,95,89,95,88,12,79,79,98,90,98,91,95,91,98,88,95,91,76,100,101,556,122,77,98,85,95,85,122,76,126,98,85,95,90,112,75,100,85,101,309,87,76,112,74,95,90,90,76,101,526,112,69,95,90,12,76,78,98,86,98,87,98,84,122,77,98,81,95,81,122,76,126,98,81,95,84,85,101,470,87,76,95,86,101,524,112,68,95,84,90,76,98,80,122,77,98,83,95,83,122,76,126,98,83,95,80,101,626,95,65,85,122,64,118,91,95,80,122,72,118,12,79,79,98,109,98,82,122,77,98,108,95,108,122,76,126,98,108,95,109,85,101,428,87,76,95,82,122,67,118,122,76,71,101,624,115,66,122,93,118,95,82,122,92,118,95,82,122,95,118,90,79,95,66,113,122,94,118,98,111,122,77,98,110,95,110,122,76,126,98,110,95,111,95,92,69,85,101,596,87,76,112,71,95,80,95,84,90,79,101,630,122,77,98,105,95,105,122,76,126,98,105,95,111,98,92,122,77,98,104,95,104,122,76,126,98,104,95,80,98,93,120,630,120,624,120,626,120,524,120,526,73,85,73,84,73,87,73,86,73,81,73,80,73,83,73,82,73,109,73,108,73,111,73,110,73,105,73,104,120,271,122,77,98,107,95,107,122,76,126,98,107,95,93,13,73,119,77},P={},U={{1,26},{1,58},{1,95},{1,87},{1,86},{1,19},{1,22},{1,30},{1,32},{1,108},{1,109}},nParams=0},{K={{43,14,52,68,103,144,176,171},{41,12,33,90},1000},C={95,76,122,77,118,95,77,113,122,76,118,122,79,106,119,76},P={},U=nil,nParams=2},{K={1,0,{26,6,61,65,116,150,132,164,204,255,21,50,32,95,121,152,185},{14,7,43,92,122},{26,11,42,83,123,152,135},{227,14,41,81,115,157,133,166,220,243,14},{246,8,63,88,106,143,132,168,212},{210,9,60,81,116,116},{205,12,55,65,85,116,138,175,214,235},100,{237,2,37,84,117,98,135,172,208},{212,13,43,91,127,119,158},2,{252,23,36,95,79,96},{223,10,54,79,78,117,222},3,{255,16,53,81,70},{249,28,40,95,71,97},{203,26,55,91,117,106,131,163,242,205,219,14,44,108,72,115,133,154,222,241,234,25,52,123,116,112,157},{200,29,52,36,118,109,128,172,241,202,216,17,47,107,75,124,134,131,210,201,242,9,62,81,109,112},{201,28,53,37,119,108,129,173,240,203,217,16,46},{246,31,50,38,120,111,134,174,143,200,222,19,33},{195,22,36},{252,29,41},{220,11,54,34,66,127}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,101,87,64,112,76,105,-1,67,-1,119,-1,120,87,115,79,90,77,98,76,70,64,105,-1,102,76,98,79,95,79,122,77,118,98,78,76,98,73,122,77,98,72,95,72,122,76,126,98,72,115,78,111,76,90,76,87,76,122,77,98,75,95,75,122,76,126,98,75,112,79,95,73,90,76,101,46,64,112,76,105,-1,67,-1,119,-1,120,46,122,77,98,74,95,74,122,76,126,98,74,112,78,122,73,118,85,101,48,87,76,115,72,90,77,92,85,101,202,87,76,95,78,115,75,88,85,101,195,87,76,112,73,85,101,213,87,76,112,73,122,74,118,85,101,226,87,76,112,72,85,122,69,118,91,90,76,122,68,106,112,78,122,71,118,69,101,613,112,73,98,69,122,77,98,68,95,68,122,76,126,98,68,95,76,122,70,88,101,279,95,79,122,65,118,98,71,122,77,98,70,95,70,122,76,126,98,70,115,64,95,71,90,76,122,67,88,101,277,122,77,98,65,95,65,122,76,126,98,65,95,79,122,66,112,75,95,71,95,69,90,79,116,122,77,98,64,95,64,122,76,126,98,64,127,13,77,64,115,78,112,76,115,93,122,92,118,95,79,12,76,-1,67,74,98,89,98,94,98,95,98,92,98,93,98,66,98,67,122,77,98,88,95,88,122,76,126,98,88,109,13,77,122,77,98,91,95,91,122,76,126,98,91,95,67,101,283,95,66,95,93,95,92,95,95,95,94,95,89,119,75,120,283,120,277,120,619,95,76,122,95,88,85,92,101,295,87,76,95,76,122,94,88,85,92,101,312,87,76,95,76,122,89,88,85,92,101,461,87,76,95,76,122,88,88,101,619,95,79,122,65,118,98,90,122,77,98,85,95,85,122,76,126,98,85,115,64,95,90,90,76,122,91,88,101,617,122,77,98,84,95,84,122,76,126,98,84,95,79,122,65,64,115,91,122,90,118,95,90,122,85,118,112,75,95,90,122,85,118,95,69,12,79,-1,67,76,116,122,77,98,87,95,87,122,76,126,98,87,127,13,77,64,115,78,112,76,115,93,122,92,118,95,79,12,76,-1,67,74,98,108,98,109,98,82,98,83,98,80,98,81,98,86,122,77,98,111,95,111,122,76,126,98,111,109,13,77,122,77,98,110,95,110,122,76,126,98,110,95,86,101,623,95,81,95,80,95,83,95,82,95,109,95,108,119,75,120,623,120,617,120,619,120,613,64,112,76,105,-1,67,-1,119,-1},P={{K={1,0,{26,6,61,76,116,151,141,174,195,244,10,60,55,66,97,131}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,12,77,76,13,77,119,77},P={},U={{1,4}},nParams=0}},U={{1,112},{1,115},{1,107},{1,26},{1,86},{1,113},{1,114}},nParams=0},{K={1,0,{54,6,48,77,124,149,133,129,223,242,20,58},{40,13,57,89,116,144,135}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,127,116,119,77},P={},U={{1,1}},nParams=0},{K={1,0,{24,13,40,77,121,158,133},{40,13,57,89,116,144,135}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,11,122,77,98,78,95,78,122,76,126,98,78,112,76,122,78,109,116,122,77,98,73,95,73,122,76,126,98,73,112,79,122,78,109,116,120,11,119,77},P={},U={{1,25},{1,60},{1,68}},nParams=1},{K={1,0,{16,12,45,74}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{14,14,38,64,97,147,136,169,202}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{27,12,63}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{14,11,38,88,74,157,142,177}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{62,12,37,64,103}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,60}},nParams=1},{K={1,0,{21,10,61,95,116,137,149}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{10,2,37,67,118,147,132,164,198}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,25}},nParams=1},{K={1,0,{24,13,40,77,121,158,133},{40,13,57,89,116,144,135}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,11,122,77,98,78,95,78,122,76,126,98,78,112,76,122,78,109,116,122,77,98,73,95,73,122,76,126,98,73,112,79,122,78,109,116,120,11,119,77},P={},U={{1,26},{1,87},{1,95}},nParams=1},{K={1,0,{21,10,61,95,116,137,149}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,26}},nParams=1},{K={1,0,{27,12,63}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,26}},nParams=1},{K={1,0,{14,11,38,88,74,157,142,177}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,26}},nParams=1},{K={1,0,{62,12,37,64,103}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,87}},nParams=1},{K={1,0,{10,2,37,67,118,147,132,164,198}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,26}},nParams=1},{K={1,0,{21,10,61,76,125,154,143,164,200}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,26}},nParams=1},{K={1,0,{16,2,58,91,112,137}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,6,40,66,118,147,132,164,198}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{16,2,49,112,113,146,146,179,204,253,26,58}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{29,11,38,95,100}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{29,11,38,95,100,206}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{19,11,46,85}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{24,13,38,92}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{24,13,38,92,73,159,141,164,193,230}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{24,13,38,92,73,136,144,169,192,231,10,1,52,73,124,155,167}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{25,22,43,84,127,153,140,188}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{10,12,35,83,125,146,135,187,221}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{17,17,62,92,127,146,135}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{31,12,49},{17,17,62,92,127,146,135,151,205,251,22,15,52}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{29,11,38,95,100}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{29,11,38,95,100,206}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{10,12,35,83,125,146,135,187,221}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{25,22,43,84,127,153,140,188}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{22,1,43,84,114,147,150}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{22,1,43,84,114,147,150,151,205,251,22,15,52}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{14,8,44,67,112,143,142,169},{22,1,43,84,114,147,150,151,221,253,0,5}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{29,11,38,95,100}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{17,22,35,87,127,146}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{10,12,35,83,125,146,135,187,221}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{17,17,62,92,127,146,135}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{9,17,40,76,112,137},{17,17,62,92,127,146,135,151,205,251,22,15,52}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{30,11,40,66,102},{27,10,43,82,122,153,134},{22,21,42,88,101,142},{199,3,56,98,116,159,157,175,194,229}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,48,122,77,98,78,95,78,122,76,126,98,78,64,115,73,112,76,85,122,72,118,91,12,76,-1,67,78,98,75,98,72,98,73,93,73,72,75,73,74,73,69,95,73,95,72,95,75,12,79,79,98,69,98,74,95,74,98,75,95,74,76,100,101,54,122,77,98,68,95,68,122,76,126,98,68,112,79,95,69,90,76,87,76,73,68,120,4,120,48,119,77},P={},U={{1,24},{1,19},{1,40}},nParams=1},{K={1,0,{30,11,40,66,102},{24,13,38,92,73,159,141,164,193,230}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{30,11,40,66,102},{17,17,62,92,127,146,135,151,205,251,22,15,52}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{30,11,40,66,102},{19,11,46,85},{22,21,42,88,101,142},{199,3,56,98,116,159,157,175,194,229}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,64,115,73,112,76,85,122,72,118,91,12,76,-1,67,78,98,72,98,73,98,78,93,78,73,72,73,75,73,74,95,78,95,73,95,72,12,79,79,98,74,98,75,95,75,98,72,95,75,76,100,101,38,122,77,98,69,95,69,122,76,126,98,69,112,79,95,74,90,76,87,76,73,69,120,116,119,77},P={},U={{1,24},{1,19},{1,40}},nParams=1},{K={1,0,{30,11,40,66,102},{26,1,58,68,126,163,143,167,202,241}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{30,11,40,66,102},{24,13,38,92,73,136,144,169,192,231,10,1,52,73,124,155,167}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{30,11,40,66,102},{17,17,62,92,127,146,135,151,218,230,27,14,53,92,115,138,187,170,201,233}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{29,11,38,95,100,163,138,161,201,252}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{29,11,38,95,100,163,143,161,202}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{29,11,38,95,100,163,142,167,217}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{10,1,50,68}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{10,1,50,68,73,159,141,164,193,230}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{9,13,46,68,126}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{21,6,40,67,97,147},{17,17,62,92,127,146,135}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{11,23,47,66,120,157,143,173}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{11,23,47,66,120,157,143,173,241,247,21,12,41,94}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{26,13,57,68,119,146,129,173}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{26,13,57,68,119,146,129,173,241,247,21,12,41,94}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{9,1,43,64,121,146}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{9,1,43,64,121,146,189,171,193,248,21,18}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={1,0,{27,15,40,72,102},{13,13,48,85}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,24}},nParams=1},{K={{56,9,38,95,114,154,171,160,217},1,0,{56,13,36,84,80,149,144,187,218,215,18,9,42,72,93,158,157,168,203,227,5},{55,16,38,80,121,146,138,173},{198,15,34,86,94,151,150,185,196,213,20,11,36,74},{201,18,32,82,119,144,140,175,227,248,18,23,25,78,103,143}},C={112,77,122,77,118,98,77,122,76,98,76,95,76,122,79,126,98,76,95,77,92,101,81,76,119,76,120,81,95,77,85,122,78,118,91,122,73,90,79,98,79,95,77,85,122,72,118,91,122,75,90,79,98,78,95,77,95,79,95,78,119,78},P={},U={{1,22}},nParams=0},{K={1,0,{40,16,44,93,92,149,145,178,217,199,0,47,32},{59,10,63,93},{52,0,50,83,120,156,145,173},{203,3,53,113,119,154,129}},C={122,77,98,79,95,79,122,76,126,98,79,95,77,122,79,118,115,78,122,79,118,122,73,118,88,101,124,122,77,98,78,95,78,122,76,126,98,78,112,77,95,77,122,72,118,127,116,120,124,119,77},P={},U={{1,191}},nParams=2},{K={1,0,{40,16,44,93,92,149,145,178,217,199,0,47,32},{59,10,63,93},{52,0,50,83,120,156,145,173},{203,3,53,113,119,154,129}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,122,79,118,115,78,122,79,118,122,73,118,88,101,124,122,77,98,79,95,79,122,76,126,98,79,112,77,95,77,122,72,118,76,116,120,124,119,77},P={},U={{1,191}},nParams=1},{K={1,0,{63,10,39,75,65,148,179,162,195,247,28,45,22,95,116,135},{63,16,37,93,127,159,161,142,253,228,31,5,34},{58,11,62,92},{210,3,34,86,125,140,180,184,217,249,14,11,60,87},{200,9,61,70,109},{212,9,34,65,127}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,101,94,119,77,120,94,122,77,98,76,95,76,122,76,126,98,76,127,13,77,122,77,98,79,95,79,122,76,126,98,79,112,76,85,122,79,118,91,122,78,115,73,122,72,118,122,75,118,122,74,118,122,77,126,111,76,90,73,87,76,119,77},P={{K={1,0,{10,2,37,68,102,139,132,162,201},{27,10,43,82,122,153,134},{18,10,47,84},{195,32,62,83,117,155},{214,6,33,88,74,143,128,174,213},{230,13,40,85,111,108,146},{194,28,59,90,73,110,147,172,199,252},{209,4,50,95,114,102,174,188,219,247,210,3,34,86,125,140,183,190,213,230},{196,31,62,90,116,96,170,137,230,235,228,2,41},{241,3,32,83,109,116,139,179,211},{196,24,33,75,122,107,159,146,214,240,230,27,46},{254,15,56,79,69},{197,0,58,80,119,98,142,167,214,237},{216,25,49,84,86,94,139,183,206,207,244},{221,20,52,73,76,123,220},{226,23,47},{213},{212},{194,20,60,47,78,121,134,189,218},{197,24,53,54},{212,25,40,46},{217,29,39,7,69,116,147},{196},{199},{212},{210},{199,18,16,32,91,124,148,143}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,118,92,85,92,101,104,87,76,112,77,122,79,118,122,73,118,122,72,100,101,217,112,76,12,77,79,98,78,98,79,122,77,98,73,95,73,122,76,126,98,73,95,78,101,39,122,77,98,72,95,72,122,76,126,98,72,95,78,122,75,112,77,122,79,118,122,74,118,116,122,77,98,75,95,75,122,76,126,98,75,95,78,122,69,127,116,120,39,122,77,98,74,95,74,122,76,126,98,74,109,13,79,122,77,98,69,95,69,122,76,126,98,69,112,78,85,122,68,118,91,122,71,90,79,87,76,119,77,120,217,112,76,12,77,78,98,70,98,71,98,68,122,77,98,65,95,65,122,76,126,98,65,95,68,92,85,92,101,251,87,76,95,71,92,85,92,101,242,87,76,95,70,92,101,136,119,77,120,136,122,77,98,64,95,64,122,76,126,98,64,95,71,122,75,122,76,116,122,77,98,67,95,67,122,76,126,98,67,95,71,122,69,109,116,115,70,122,65,118,98,66,112,77,122,79,118,122,64,118,95,77,106,98,93,95,66,122,72,118,122,67,118,98,92,95,66,122,72,118,122,66,118,98,95,115,93,122,92,118,95,92,122,95,118,122,76,95,92,122,94,118,90,78,98,94,115,93,122,92,118,95,95,122,95,118,122,76,95,95,122,94,118,90,78,98,89,122,77,98,88,95,88,122,76,126,98,88,95,94,122,89,118,122,76,71,101,302,122,77,98,91,95,91,122,76,126,98,91,95,94,122,88,118,98,94,120,302,122,77,98,90,95,90,122,76,126,98,90,95,89,122,89,118,122,76,71,101,449,122,77,98,85,95,85,122,76,126,98,85,95,89,122,88,118,98,89,120,449,115,93,122,92,118,90,77,98,84,122,77,98,87,95,87,122,76,126,98,87,112,73,115,91,122,90,118,122,85,118,118,101,393,122,77,98,86,95,86,122,76,126,98,86,95,84,95,94,95,93,106,126,98,84,120,393,122,77,98,81,95,81,122,76,126,98,81,112,73,115,91,122,90,118,122,84,118,118,101,446,122,77,98,80,95,80,122,76,126,98,80,95,84,95,94,95,93,106,113,98,84,120,446,122,77,98,83,95,83,122,76,126,98,83,112,73,115,91,122,90,118,122,87,118,118,101,623,122,77,98,82,95,82,122,76,126,98,82,95,84,95,89,95,93,106,113,98,84,120,623,122,77,98,109,95,109,122,76,126,98,109,112,73,115,91,122,90,118,122,86,118,118,101,540,122,77,98,108,95,108,122,76,126,98,108,95,84,95,89,95,93,106,126,98,84,120,540,122,77,98,111,95,111,122,76,126,98,111,95,84,122,89,118,122,76,71,101,723,95,70,122,81,118,95,84,126,98,110,95,70,122,72,118,95,70,122,72,118,122,81,118,113,98,105,122,77,98,104,95,104,122,76,126,98,104,95,70,122,72,115,72,122,92,118,95,110,90,76,95,105,106,116,120,723,119,77},P={},U={{0,2},{0,3},{0,0},{0,1},{0,4}},nParams=1}},U={{1,194},{1,21},{1,189},{1,190},{1,191}},nParams=0},{K={1,0,{40,13,43,70,123,159,167,181,194,254,43,58,43,79,116,133,142,183,204,255},{63,16,37,93,127,159,161,142,253,228,31,5,34},{40,4,39,90,68,141,134,172,203},{247,7,32,89,107,142,129,175,212},{229,2,43,82,108,147,145},{195,29,58,91,72,111,146,173,198,253}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,92,101,89,119,77,120,89,122,77,98,76,95,76,122,76,126,98,76,112,76,85,122,79,118,91,122,78,90,79,87,76,122,77,98,79,95,79,122,76,126,98,79,109,13,77,112,79,12,77,79,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,95,73,101,48,122,77,98,75,95,75,122,76,126,98,75,95,73,122,73,112,78,122,72,118,122,75,118,116,122,77,98,74,95,74,122,76,126,98,74,95,73,122,74,127,116,120,48,119,77},P={},U={{1,194},{1,21},{1,190},{1,189}},nParams=0},{K={1,0,{10,2,37,68,102,139,132,162,201},{27,10,43,82,122,153,134},{18,10,47,84},{196,3,42,83,109,146,144},{214,6,33,88,74,143,128,174,213},{244,9,34,65,127},{194,28,59,90,73,110,147,172,199,252},{224,15,54,87,105,110,156},{239,30,60,71},{204,25,63,72,78,107,157,181,196},{238,3,53,80,113,108,159,180},{203,6,53,84,71,99,191,166,217,234,225},{204,1,32,86},{194,5,59,93,76,103,135,176,233,212,231,24,55,108,103,116,143},{193,4,58,77,74,103,136},{251,29,42,85,87,122,145,181,217},{202,1,56,73,76,127,136},{233,6,59,54,79,120,139},{225,26,56,45,78,125},{249,6,61,43,90,125},{214,18,41,7,76,124,150,190,175,195,236,29,45,76},{219,11,31},{209,24,44,32,123,112,133,169},{215,27,14,5,67,126,148,183,160,207}},C={112,77,12,77,78,98,78,98,79,98,76,122,77,98,73,95,73,122,76,126,98,73,95,76,92,85,92,101,111,87,76,95,79,92,85,92,101,102,87,76,95,78,92,101,124,119,77,120,124,122,77,98,72,95,72,122,76,126,98,72,112,76,122,79,118,122,78,118,101,224,122,77,98,75,95,75,122,76,126,98,75,112,76,122,79,118,122,73,118,122,72,88,101,215,122,77,98,74,95,74,122,76,126,98,74,112,79,90,77,87,76,122,77,98,69,95,69,122,76,126,98,69,95,79,122,75,112,76,122,79,118,122,74,118,116,122,77,98,68,95,68,122,76,126,98,68,95,79,122,69,127,116,120,230,122,77,98,71,95,71,122,76,126,98,71,112,78,90,77,87,76,120,170,122,77,98,70,95,70,122,76,126,98,70,112,79,90,77,87,76,122,77,98,65,95,65,122,76,126,98,65,95,79,122,75,112,76,122,79,118,122,68,118,116,122,77,98,64,95,64,122,76,126,98,64,95,79,122,69,127,116,122,77,98,67,95,67,122,76,126,98,67,112,76,122,71,118,122,78,118,101,347,122,77,98,66,95,66,122,76,126,98,66,95,79,122,70,112,76,122,71,118,122,74,118,116,120,355,122,77,98,93,95,93,122,76,126,98,93,95,79,122,70,112,76,122,71,118,122,68,118,116,122,77,98,92,95,92,122,76,126,98,92,112,76,122,71,118,122,65,118,101,302,122,77,98,95,95,95,122,76,126,98,95,95,79,85,122,64,118,91,115,67,122,66,118,122,93,118,90,79,87,76,120,302,122,77,98,94,95,94,122,76,126,98,94,115,92,122,95,112,76,122,94,118,122,78,118,85,101,458,87,76,112,76,122,94,118,122,74,118,85,92,101,472,87,76,112,76,122,94,118,122,68,118,116,122,77,98,89,95,89,122,76,126,98,89,112,76,122,89,118,122,78,118,101,592,122,77,98,88,95,88,122,76,126,98,88,64,115,88,95,76,85,122,91,118,91,12,76,-1,67,78,98,85,98,90,98,91,93,91,90,85,73,84,73,87,95,91,95,90,95,85,12,79,79,98,87,98,84,95,84,98,85,95,84,76,100,101,598,122,77,98,86,95,86,122,76,126,98,86,95,87,85,122,90,118,91,122,85,90,79,101,600,122,77,98,81,95,81,122,76,126,98,81,95,87,122,84,109,116,120,600,73,86,73,81,120,386,120,592,119,77},P={},U={{1,190},{1,189},{1,196},{1,195}},nParams=1},{K={1,0,{45,15,40,91,115,148,147,170,254,231,24,49,33},{55,10,57,68,119,146,129,173},{17,0,60},{194,9,40,75,72,145,151,163,196,255,19,12},{204,6,53,117,118,141,134,174},{212,13,45,64,117,114,213},100000,{212,5,35,95,104,107,135,160},{213},10000,{195},1000,{217,14,39,94,79,115},{200,31,50,69,101,113,156,187},{198,16,47,105,76,123,158,160,222},{207,52,42,95,73,111},{235,31,32},{209,22,42},{208,23,60},{210,31,50,38,124,97,166,191,174,194,233,0,11,74,65,122},{208,3,50,46,64,108,179,183,184},{215,22,43,41},{193,28,49,33,78,99,167,175,170,198,253,28,47,56},{215,27,13,35,94,115},{195,26,13,50,72}},C={112,77,12,77,78,98,79,98,76,98,77,122,77,98,78,95,78,122,76,126,98,78,95,77,92,85,92,101,111,87,76,95,79,92,101,101,119,77,120,101,122,77,98,73,95,73,122,76,126,98,73,95,76,122,79,127,116,115,78,122,73,118,122,72,90,76,98,72,122,77,98,75,95,75,122,76,126,98,75,95,72,122,75,115,74,122,73,118,122,69,122,69,122,69,90,78,116,122,77,98,74,95,74,122,76,126,98,74,95,72,122,68,95,79,122,68,118,116,122,77,98,69,95,69,122,76,126,98,69,95,72,122,71,122,70,116,122,77,98,68,95,68,122,76,126,98,68,95,72,122,65,122,64,116,122,77,98,71,95,71,122,76,126,98,71,95,72,122,67,95,79,116,115,78,122,73,118,122,66,90,76,98,70,122,77,98,65,95,65,122,76,126,98,65,95,70,122,93,115,74,122,73,118,122,69,122,69,122,69,90,78,116,122,77,98,64,95,64,122,76,126,98,64,95,70,122,92,95,79,122,92,118,116,122,77,98,67,95,67,122,76,126,98,67,95,70,122,71,122,70,116,122,77,98,66,95,66,122,76,126,98,66,95,70,122,65,122,64,116,122,77,98,93,95,93,122,76,126,98,93,95,70,122,67,95,79,116,122,77,98,92,95,92,122,76,126,98,92,112,76,122,95,118,122,94,95,72,116,122,77,98,95,95,95,122,76,126,98,95,112,76,122,95,118,122,89,95,70,116,122,77,98,94,95,94,122,76,126,98,94,112,79,85,122,88,118,91,122,91,115,90,122,85,118,122,84,118,122,87,118,122,77,126,111,76,90,73,87,76,119,77},P={{K={1,0,{27,15,48},{27,10,43,82,122,153,134},{42,11,41,88,121,153,165,187,192,248,41,4,41,73,118,139,140,177,206,225},{193,18,35,95,113,157,162,166,201},{246,8,63,88,106,143,132,168,212},{193,29,60,70,127,110,146,143,211,245,27,22,43},{240,25,42,80,127},{210,15,51,66,115,112,219},{235,14,38},{195,2,39,85},{204,8,42,122,112,97,142},{223},{202,41,39,90,76,98},{198,31,57,87,116,109,141,160,213,210},{216},{205},{223,26,62,87,81,93,148,180,201,204,251},{202},{220,5,58,34,66},{220,19,58,54,123,102,157,188,180},{193,24,46,42,93,102,154,181}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,118,92,101,127,122,77,98,79,95,79,122,76,126,98,79,112,76,85,122,73,118,91,122,72,90,79,87,76,119,77,120,127,112,79,12,77,78,98,72,98,73,98,78,122,77,98,75,95,75,122,76,126,98,75,95,78,92,85,92,101,25,87,76,95,72,92,101,23,119,77,120,23,115,75,122,74,118,98,74,112,77,122,79,118,122,69,118,95,77,106,98,69,115,68,122,71,118,90,77,98,68,122,77,98,71,95,71,122,76,126,98,71,112,78,115,70,122,65,118,122,64,118,118,101,225,122,77,98,70,95,70,122,76,126,98,70,95,68,95,74,122,67,118,122,66,118,95,69,106,126,98,68,120,225,122,77,98,65,95,65,122,76,126,98,65,112,78,115,70,122,65,118,122,93,118,118,101,172,122,77,98,64,95,64,122,76,126,98,64,95,68,95,74,122,67,118,122,66,118,95,69,106,113,98,68,120,172,122,77,98,67,95,67,122,76,126,98,67,112,78,115,70,122,65,118,122,92,118,118,101,347,122,77,98,66,95,66,122,76,126,98,66,95,68,95,74,122,67,118,122,95,118,95,69,106,113,98,68,120,347,122,77,98,93,95,93,122,76,126,98,93,112,78,115,70,122,65,118,122,94,118,118,101,262,122,77,98,92,95,92,122,76,126,98,92,95,68,95,74,122,67,118,122,95,118,95,69,106,126,98,68,120,262,122,77,98,95,95,95,122,76,126,98,95,112,78,115,70,122,65,118,122,89,118,118,101,456,122,77,98,94,95,94,122,76,126,98,94,95,68,115,68,122,71,118,122,76,122,77,122,76,90,78,95,69,106,126,98,68,120,456,122,77,98,89,95,89,122,76,126,98,89,112,78,115,70,122,65,118,122,88,118,118,101,498,122,77,98,88,95,88,122,76,126,98,88,95,68,115,68,122,71,118,122,76,122,77,122,76,90,78,95,69,106,113,98,68,120,498,122,77,98,91,95,91,122,76,126,98,91,112,73,122,91,112,73,122,91,118,95,68,126,116,122,77,98,90,95,90,122,76,126,98,90,112,72,122,67,95,74,122,67,118,116,119,77},P={},U={{0,1},{0,2},{0,0},{0,3},{1,5},{1,11}},nParams=1}},U={{1,190},{1,189},{1,21},{1,191}},nParams=0},{K={1,0,{40,13,43,70,123,159,167,181,194,254,43,58,43,79,116,133,142,183,204,255},{63,16,37,93,127,159,164,164,215},{25,9,50},{223,4,60},{241,4,44,95,117},{221,10,41},{211,5,46,65,125,110,149,160,224,237,30,11,47}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,122,78,90,79,87,76,112,76,12,77,78,98,78,98,79,98,76,122,77,98,73,95,73,122,76,126,98,73,112,79,122,73,118,122,72,118,101,44,122,77,98,72,95,72,122,76,126,98,72,115,75,111,76,90,76,87,76,122,77,98,75,95,75,122,76,126,98,75,112,79,122,73,118,122,72,76,116,120,44,122,77,98,74,95,74,122,76,126,98,74,112,79,122,73,118,122,74,118,101,210,122,77,98,69,95,69,122,76,126,98,69,115,75,111,79,90,76,87,76,122,77,98,68,95,68,122,76,126,98,68,112,79,122,73,118,122,74,76,116,120,210,122,77,98,71,95,71,122,76,126,98,71,95,79,101,140,122,77,98,70,95,70,122,76,126,98,70,95,79,122,69,109,116,120,140,119,77},P={{K={1,0,{27,15,48},{33,6,58},{59,0,56,69,101,146,154}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,118,85,122,73,118,91,90,76,87,76,119,77},P={},U={{0,2}},nParams=0},{K={1,0,{27,15,48},{33,6,45},{59,0,56,69,101,146,154}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,118,85,122,73,118,91,90,76,87,76,119,77},P={},U={{0,2}},nParams=0}},U={{1,21},{1,190},{1,189}},nParams=0},{K={1,0,{10,12,59,68,102,139,128,164,200},{61,17,56,66,115,146,150,139,207,249,31,18,39},{60,35,57,80,122,152},{204,9,35,89,78,155,135,190,223,228},{245,23},{230,1,61,64,123,110,133,169},{213,12,44,65,116,115,212},{234,15,39},{221},{220}},C={112,77,12,77,78,98,79,98,76,98,77,122,77,98,78,95,78,122,76,126,98,78,95,79,92,101,82,119,77,120,82,115,79,122,78,118,98,73,95,73,122,73,118,122,72,118,112,76,122,75,118,122,74,118,106,98,72,122,77,98,75,95,75,122,76,126,98,75,95,79,122,73,95,79,122,73,118,115,69,122,68,118,95,72,122,71,118,122,76,95,72,122,70,118,90,78,126,116,119,77},P={},U={{1,190},{1,189}},nParams=0},{K={1,0,{10,2,37,68,102,139,132,162,201},{27,10,43,82,122,153,134},{40,4,39,90,68,141,134,172,203},{228,3,42,83,109,146,144}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,20,112,76,12,77,79,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,95,73,101,26,122,77,98,75,95,75,122,76,126,98,75,95,73,122,73,112,77,122,79,118,122,72,118,116,120,26,120,20,119,77},P={},U={{1,189},{1,190}},nParams=1},{K={1,0,{10,2,37,68,102,139,132,162,201},{8,5,38,69,115}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{10,2,37,68,102,139,132,162,201},{19,11,46,85}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{23,22,36,95},{27,10,43,82,122,153,134},{53,16,38,65,71,146,148,172,221},{228,3,42,83,109,146,144}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,20,112,76,12,77,79,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,95,73,101,26,122,77,98,75,95,75,122,76,126,98,75,95,73,122,73,112,77,122,79,118,122,72,118,116,120,26,120,20,119,77},P={},U={{1,189},{1,190}},nParams=1},{K={1,0,{23,22,36,95},{8,5,38,69,115}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{23,22,36,95},{23,10,44,89,120,149,150,173}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{26,17,40,89,124,143,152},{27,10,43,82,122,153,134},{8,10,57,90,100,141,130,170,202},{199,20,45,68,113,138,157},{229,2,43,82,108,147,145}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,114,122,77,98,78,95,78,122,76,126,98,78,115,73,122,72,112,77,122,79,118,122,75,118,116,120,114,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{26,17,40,89,124,143,152},{8,5,38,69,115}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{27,15,48},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,101,122,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,5,122,77,98,73,95,73,122,76,126,98,73,112,79,90,77,87,76,119,77},P={},U={{1,189},{1,198},{1,199}},nParams=1},{K={1,0,{27,15,48},{13,20,47,85,114}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0,{9,19},{26,13,57,68,119,146,129,173}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,189}},nParams=1},{K={1,0},C={122,77,98,77,95,77,122,76,126,98,77,112,77,90,77,87,76,119,77},P={},U={{1,200}},nParams=0},{K={1,0,{19,12,42,67,124,139},{27,10,43,82,122,153,134},{22,21,42,88,101,142},{199,3,56,118,125,141,135,175,222,242,29,12,60,93},{200,20,12},{192,9,61,81,74,97,148,184},{192,8,33,118,116,109,139,164,215,252}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,227,112,76,90,77,98,78,122,77,98,73,95,73,122,76,126,98,73,95,78,101,225,122,77,98,72,95,72,122,76,126,98,72,64,115,73,95,78,85,122,72,118,91,12,76,-1,67,78,98,69,98,74,98,75,93,75,74,69,73,68,73,71,95,75,95,74,95,69,12,79,79,98,71,98,68,95,68,98,69,95,68,76,100,101,231,122,77,98,70,95,70,122,76,126,98,70,95,71,85,122,75,118,91,122,74,90,79,101,233,122,77,98,65,95,65,122,76,126,98,65,95,71,122,69,127,116,120,233,73,70,73,65,120,19,120,225,120,227,119,77},P={},U={{1,189},{1,190}},nParams=1},{K={1,0,{27,12,63},{26,1,44,81,99,144,150},{8,10,57,90,100,141,130,170,202},{195,19,62,64,125,144,144,137,209,251,25,16,41},{199,14,40,95,125,176,131,157,216,242,10}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,115,73,122,72,118,122,75,118,116,119,77},P={},U={{1,226}},nParams=0},{K={{12,14,53,70,96,137,190,166,206},{63,23,58,92,113,148,148,133,205,255,29,44,37},1,0,{25,23,46,84,116,156,142},{223,21,45,68,125,154,176,179,192,243},{194,6,32,86,107,158,177,178,193,242},{193,9,35,81,104,97,181,185,208,242,27,7,62},{243,10,46,89,119},{193,4,37,91},{214,8,35,94,109,119,136,173,217,254},{197,42,32,89,115,97},{215,2,32,80,107,108,132,191},{196,1,59,81,118,99,143,166,215,236},{228,14,33,83},{235,4,55,82,16},{211},{214},{236,0,48,81},{237,24,59,45,86},{214}},C={115,77,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,101,86,119,77,120,86,122,79,98,79,95,79,122,78,126,98,79,112,77,122,73,118,122,72,95,77,122,75,118,116,122,79,98,78,95,78,122,78,126,98,78,95,77,122,74,118,13,76,122,79,98,73,95,73,122,78,126,98,73,115,69,111,76,90,76,87,76,122,79,98,72,95,72,122,78,126,98,72,95,77,122,75,115,68,122,75,118,122,71,118,116,122,79,98,75,95,75,122,78,126,98,75,95,77,122,74,76,116,95,77,122,70,118,98,74,122,79,98,69,95,69,122,78,126,98,69,95,74,122,65,118,13,73,95,74,122,64,118,98,68,122,79,98,71,95,71,122,78,126,98,71,115,67,122,66,118,95,68,122,93,118,80,95,68,122,92,118,80,12,79,76,13,72,122,79,98,70,95,70,122,78,126,98,70,64,115,67,122,95,118,115,67,122,94,118,95,68,122,89,118,122,79,80,122,79,12,78,-1,67,76,13,75,122,79,98,65,95,65,122,78,126,98,65,115,69,111,79,90,76,87,76,122,79,98,64,95,64,122,78,126,98,64,127,13,74,119,77},P={{K={1,0,{48,12,60,92,112,185,132,175,204,229,16,48,55}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,13,76,119,77},P={},U={{0,2},{0,3}},nParams=0},{K={1,0,{48,12,60,92,112,185,132,175,204,229,16,48,55},{59,10,63,93},{51,10,40,90,84,152,141,189,202,231}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,115,78,122,79,118,122,73,118,116,119,77},P={},U={{0,2}},nParams=0}},U={{1,226},{1,232},{1,187},{1,233},{1,230},{1,228},{1,229},{1,231}},nParams=0},{K={1,0,{10,12,59,68,102,139,128,164,200},{61,17,56,66,115,146,150,139,207,249,31,18,39},{60,4,38,84,101,156,183,176,223,240},{230,20,41,87,123,159,137},{222,20,44,69,124,155,177,178,193,242},{199,6,59,89},{192,28,60,65,116,108},{199,11,61,83,110,99,187,187,214,240,229,5,56},{198,3,48,69,124,96,157,170,199},{192,5,60,92,88,109,152,163,194,223,234,1,34,80,85,102,165,160,211,235,13},{207,24,62,88,113,106,130,181},{248,13,53,86,76}},C={122,77,98,77,95,77,122,76,126,98,77,109,13,77,115,79,122,78,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,101,225,122,77,98,78,95,78,122,76,126,98,78,95,76,122,73,112,76,122,72,118,122,75,118,85,92,101,4,87,76,115,74,122,73,118,122,69,118,116,122,77,98,73,95,73,122,76,126,98,73,112,79,101,32,122,77,98,72,95,72,122,76,126,98,72,95,76,122,68,112,79,116,120,231,112,78,122,71,118,85,101,200,87,76,112,78,122,71,118,85,122,70,118,91,122,65,90,79,98,75,122,77,98,74,95,74,122,76,126,98,74,95,75,101,231,122,77,98,69,95,69,122,76,126,98,69,95,76,122,68,95,75,116,120,231,120,225,122,77,98,68,95,68,122,76,126,98,68,115,64,111,76,90,76,87,76,122,77,98,71,95,71,122,76,126,98,71,76,13,75,119,77},P={{K={1,0,{48,12,60,92,112,185,132,175,204,229,16,48,55},{59,10,63,93},{59,0,45,80,98,145,151}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,85,92,101,82,87,76,115,78,122,79,118,122,73,118,116,119,77},P={},U={{0,4},{0,5}},nParams=0}},U={{1,231},{1,226},{1,232},{1,22},{1,187},{1,233},{1,230}},nParams=0},{K={1,0,{27,17,44,74,118,154,140},{27,10,43,82,122,153,134},{8,10,57,90,100,141,130,170,202},{195,19,62,64,125,144,144,137,209,251,25,16,41},{194,6,32,86,107,158,177,178,193,242},{199,6,59,89},{208,10,61,92,107,117,134,175,223,252},{199,11,61,83,110,99,187,187,214,240,229,5,56},{245,8,48,91,113},{193,9,38,117,113,113,153,181,242,249,238,28,47},{223},0.004,{228,14,33,83},{233,28,55,81,82},{210},1.45,{206,53,43,94,72,110},{232,6,53,45,99,121,158,189,204,229,228,23,58,89,81,81,182,142},{223,26,40,40,83,100,156,183},{227,6,57,39,76},30,{217,29,39,7,69,116,147},{223,28,57,49,120,121,158,187,183},{216,31,6,50,111,125,150,170,182,197,252},2,{192,25,1,60,65,102,201},{249,24,20},{212,17,11,33,102,115,159,150,167,220},{203,22,2,35,69,65,152,128,189,192,231},{205},{200},{221},{217},{205,244,11,51,83},{218},{242,239,11,58,76,93,107,132,164,196,243,238},{240}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,118,92,101,113,122,77,98,79,95,79,122,76,126,98,79,112,76,101,117,122,77,98,78,95,78,122,76,126,98,78,112,79,90,77,87,76,120,117,119,77,120,113,122,77,98,73,95,73,122,76,126,98,73,112,76,92,101,18,122,77,98,72,95,72,122,76,126,98,72,112,78,90,77,87,76,120,18,115,73,122,72,118,98,75,122,77,98,74,95,74,122,76,126,98,74,95,75,92,101,55,119,77,120,55,122,77,98,69,95,69,122,76,126,98,69,95,75,122,75,118,115,74,122,75,118,122,69,118,100,101,141,122,77,98,68,95,68,122,76,126,98,68,95,75,122,75,115,74,122,75,118,122,69,118,116,122,77,98,71,95,71,122,76,126,98,71,95,75,122,68,76,116,120,141,122,77,98,70,95,70,122,76,126,98,70,115,71,111,76,90,76,87,76,112,73,85,122,70,118,91,90,76,98,65,122,77,98,64,95,64,122,76,126,98,64,112,72,95,65,122,65,118,122,64,106,113,13,72,122,77,98,67,95,67,122,76,126,98,67,115,67,122,66,118,112,75,95,65,122,93,118,122,64,106,113,122,92,80,122,92,12,78,76,13,75,115,95,122,94,118,112,75,112,72,122,76,90,78,98,66,122,77,98,93,95,93,122,76,126,98,93,112,74,92,101,284,122,77,98,92,95,92,122,76,126,98,92,95,75,122,95,118,122,89,118,13,74,120,284,112,77,122,79,118,122,88,118,85,92,101,300,87,76,122,91,95,77,106,98,95,122,77,98,94,95,94,122,76,126,98,94,112,69,115,74,122,90,118,122,85,118,118,85,101,448,87,76,112,69,115,74,122,90,118,122,84,118,118,92,101,494,122,77,98,89,95,89,122,76,126,98,89,95,95,122,87,106,98,95,120,494,115,86,122,81,118,90,77,98,88,95,66,122,80,118,95,66,122,83,118,98,90,98,91,122,77,98,85,95,85,122,76,126,98,85,112,69,115,74,122,90,118,122,82,118,118,101,420,122,77,98,84,95,84,122,76,126,98,84,95,88,95,91,95,95,106,126,98,88,120,420,122,77,98,87,95,87,122,76,126,98,87,112,69,115,74,122,90,118,122,109,118,118,101,597,122,77,98,86,95,86,122,76,126,98,86,95,88,95,91,95,95,106,113,98,88,120,597,122,77,98,81,95,81,122,76,126,98,81,112,69,115,74,122,90,118,122,108,118,118,101,522,122,77,98,80,95,80,122,76,126,98,80,95,88,95,90,95,95,106,113,98,88,120,522,122,77,98,83,95,83,122,76,126,98,83,112,69,115,74,122,90,118,122,111,118,118,101,571,122,77,98,82,95,82,122,76,126,98,82,95,88,95,90,95,95,106,126,98,88,120,571,122,77,98,109,95,109,122,76,126,98,109,112,69,115,74,122,90,118,122,110,118,118,85,92,101,720,87,76,112,69,115,74,122,90,118,122,105,118,118,101,652,122,77,98,108,95,108,122,76,126,98,108,95,88,115,86,122,81,118,122,76,122,77,122,76,90,78,95,95,106,126,98,88,120,652,122,77,98,111,95,111,122,76,126,98,111,112,69,115,74,122,90,118,122,84,118,118,85,92,101,677,87,76,112,69,115,74,122,90,118,122,104,118,118,85,92,101,692,87,76,112,69,115,74,122,90,118,122,107,118,118,101,848,122,77,98,110,95,110,122,76,126,98,110,95,88,115,86,122,81,118,122,76,122,77,122,76,90,78,95,95,106,113,98,88,120,848,122,77,98,105,95,105,122,76,126,98,105,112,74,95,88,126,13,74,122,77,98,104,95,104,122,76,126,98,104,95,75,122,95,115,95,122,81,118,112,74,90,76,95,66,106,116,119,77},P={{K={1,0,{48,12,60,92,112,185,132,175,204,229,16,48,55},{59,10,63,93},{51,10,40,90,84,152,141,189,202,231}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,115,78,122,79,118,122,73,118,100,101,120,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,115,78,122,79,118,122,73,118,116,120,120,119,77},P={},U={{0,4}},nParams=0}},U={{1,226},{1,231},{1,235},{1,234},{1,187},{1,228},{1,229},{1,230},{1,191}},nParams=1},{K={{12,14,53,70,96,137,190,166,206},{63,23,58,92,113,148,148,133,205,255,29,44,37},1,0,{25,10,61},{229,8,45,80,116,155,128},{199,14,40,95,125,176,131,157,216,242,10},{244,9,34,65,127},{241,12,60,90,119,116,147,164,220,247},{240,19,32,83},{235,30,60,85,120,113},{197,42,32,89,115,97},{233,8,36}},C={115,77,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,101,86,119,77,120,86,122,79,98,79,95,79,122,78,126,98,79,112,77,122,73,118,122,72,118,101,7,122,79,98,78,95,78,122,78,126,98,78,95,77,122,75,112,77,122,73,118,122,74,118,116,120,7,112,77,122,69,118,98,73,122,79,98,72,95,72,122,78,126,98,72,115,68,95,73,90,76,122,71,88,85,101,34,87,76,95,73,122,79,100,101,229,122,79,98,75,95,75,122,78,126,98,75,95,77,122,70,95,77,122,70,118,115,70,122,65,118,122,78,122,78,122,78,122,79,122,78,122,78,122,78,95,73,122,78,122,78,122,78,122,79,90,65,106,116,120,229,119,77},P={},U={{1,226}},nParams=0},{K={1,0,{8,13,37,64,118,144,155,168,194,254},{27,10,43,82,122,153,134},{8,10,57,90,100,141,130,170,202},{195,19,62,64,125,144,144,137,209,251,25,16,41},{241,4,44,95,117}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,122,78,118,92,101,87,119,77,120,87,115,73,122,72,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,101,120,119,77,120,120,122,77,98,78,95,78,122,76,126,98,78,115,75,111,76,90,76,87,76,122,77,98,73,95,73,122,76,126,98,73,115,75,111,79,90,76,87,76,122,77,98,72,95,72,122,76,126,98,72,115,75,111,78,90,76,87,76,122,77,98,75,95,75,122,76,126,98,75,115,75,111,73,90,76,87,76,119,77},P={{K={{61,8,41,73,85,144,173,182,223,210,31,52,47,77,64,147,152,173,198,254,0},{38,13,39,67,87,149,142,178,222,253,20,50,33,88},{59,10,39,75,83,146,147,180,217,208,17,54,41,79},1,0,{196,3,63,70,106,145,157}},C={112,77,85,122,77,118,91,122,76,90,79,85,92,101,81,87,76,112,77,85,122,79,118,91,122,76,90,79,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,101,8,122,78,98,79,95,79,122,73,126,98,79,95,77,85,122,72,118,91,90,76,87,76,120,8,119,77},P={},U={{1,1}},nParams=0},{K={{43,13,38,84,118,139,140,166,217,248,7,41,48},{58,11,38,74,82,147,146,181,216,209,16,55,40,78},{45,15,40,86,112,137,172,168,201,230,21,58},1,0,{195,7,33,87,106,159,169,165,212,227,16,7},{219,8,34,94,90,144,139,191,195,248,17,15,44,93},{198,13,61,64,104,111,159}},C={112,77,122,77,118,85,122,76,118,91,122,79,90,79,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,92,101,105,119,77,120,105,95,77,85,122,76,118,91,122,72,127,90,78,98,79,122,78,98,78,95,78,122,73,126,98,78,95,79,92,101,11,119,77,120,11,95,79,85,122,76,118,91,122,75,127,90,78,98,73,122,78,98,72,95,72,122,73,126,98,72,95,73,101,54,122,78,98,75,95,75,122,73,126,98,75,95,73,85,122,74,118,91,90,76,87,76,120,54,119,77},P={},U={{0,1}},nParams=0},{K={{28,0,42,72},{59,7,60,125,113,136,150,175,207,247},{46,23,40,93,97,158,147,151,193,242,0,58,55},1,0,{195,7,33,87,106,159,169,163,222,204,19,13,37,106,125,137,148,167,194,241,29},{244,9,33,92,122,148,159,164,222,250},{239,1,32},{192,8,34,80,105,96,170,172,203,195,16,10,38,117,126,142,151,168,193,246,30},{233,11,40}},C={115,77,85,122,76,118,91,122,79,90,79,98,77,122,78,98,76,95,76,122,73,126,98,76,95,77,122,72,112,77,122,75,118,122,74,118,116,122,78,98,79,95,79,122,73,126,98,79,95,77,122,69,112,77,122,75,118,122,68,118,116,119,77},P={},U={{0,0}},nParams=0},{K={1,0,{62,2,36,74,103,154,172,174,195,201,22,48,40,111,120,132,169,162,199,236,16},{11,10,38,95,117,151,152,167,193,249},{18,12,37},{195,7,33,87,106,159,169,171,200,204,19,13,37,106,125,137,148,167,194,241,29},{236,6,53}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,122,78,118,122,73,118,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,72,112,76,122,78,118,122,75,118,116,119,77},P={},U={{0,1},{0,0}},nParams=0}},U={{1,226},{1,22}},nParams=0},{K={1,0,{27,12,63},{27,10,43,82,122,153,134},{15,6,42,93,123}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,119,122,77,98,78,95,78,122,76,126,98,78,115,73,111,76,90,76,87,76,120,119,119,77},P={{K={1,0,{10,12,59,68,102,139,128,164,200},{61,17,56,66,115,146,150,139,207,249,31,18,39},{57,12,46,93,115,178,133,159,198,240,12},{230,9,58},{229,2,43,82,108,147,145}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,122,78,118,122,73,112,77,122,72,118,122,75,118,116,119,77},P={},U={{0,0}},nParams=0}},U={{1,226}},nParams=1},{K={1,0,{27,12,63},{8,5,38,69,115}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,226}},nParams=1},{K={1,0,{15,6,58,64,121,142,149,174,194,253}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,226}},nParams=1},{K={1,0,{27,17,44,74,118,154,140},{27,10,43,82,122,153,134}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,85,101,87,87,76,127,85,92,101,108,87,76,109,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,118,122,78,118,101,7,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,22,122,77,98,73,95,73,122,76,126,98,73,112,79,90,77,87,76,119,77},P={},U={{1,226},{1,234},{1,235}},nParams=1},{K={{54,40,20,110,76,191,173,160,206,242,22,48},1,0,{45,1,62,102,119,144,151,173},{41,4,39,68,114}},C={112,77,85,101,65,87,76,112,77,122,77,118,98,77,122,76,98,76,95,76,122,79,126,98,76,95,77,101,118,122,76,98,79,95,79,122,79,126,98,79,95,77,85,122,78,118,91,95,77,122,73,118,92,90,79,87,76,120,118,119,77},P={},U={{1,5}},nParams=0},{K={1,0,{27,17,44,74,118,154,140},{13,20,47,85,114}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,226}},nParams=1},{K={1,0,{8,13,37,64,118,144,155,168,194,254},{27,10,43,82,122,153,134},{15,6,42,93,123}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,92,101,119,122,77,98,78,95,78,122,76,126,98,78,115,73,111,76,90,76,87,76,120,119,119,77},P={{K={1,0,{62,2,36,74,103,154,172,174,195,201,22,48,40,111,120,132,169,162,199,236,16},0.5,{60,4,38,84,101,156,174,168,215,207,20,14,42,105,122,138,171,164,197,242,18},400},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,122,78,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,73,122,72,116,119,77},P={},U={{0,1}},nParams=0}},U={{1,226},{1,22}},nParams=1},{K={1,0,{8,13,37,64,118,144,155,168,194,254},{19,13,36}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,226}},nParams=1},{K={1,0,{8,13,37,64,118,144,155,168,194,254},{19,5,50}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,95,77,116,119,77},P={},U={{1,226}},nParams=1},{K={1,0,{17,10,46,71,97,146,143,160,242,246,23,62,39,71,116,147},{33,0,47,82,121,137,140,171,203},{62,8,41,88,114,147,151},{225,11,46,91,125,144,144,149,211,249,16,13,58},{206,18,57,87,118,144,151,138,220,245,20,6,39,91},{237,29,58,80,117,111,148,147,211,245,28,13,47,94,98,163,129,167,194,251,8},{192,6,35,90,105,82,143,164,213,237,32,49,36,65},{247,2,57,80,104,93,156,161,196},{198,4,61,88,111,80,129,166,211,239,222,37,34,71,109,144,136},{245,4,59,94,106,91,136,191,194,232,237,5},{194,21,35,86,108,112,153,180,244,242,238,25,42,91,104,96,147,164,220,247},{237,22,36,85,83,115,158,183},{203,29,60,92,73,115,131,182,202,236},{232,2,63,91,74,124,128,177,201,211},{216,25,54,89,76,126,188,186,221,213,233,8,32,74},{255,26,57,90,75,125,175,165,211,196,252,0,49,73,83},{200,29,47,86,87,100,159,186,216,205,253,43,60,93,71,114,158,182,234,252,228,7,52},{234,29,60,38,83,127,151,135,205,199,235,28,51},{202,27,45,40,85,98,157,180,218,203,255,34,39,88,64,124,131,180,201,242,228,12,63,92},{227,6,57,33,93,98,149,168,159,213,239,19,52,91},{214,27,50,33,72,99,166,179,160,195,226,4,42},{245,20,49,38,75,124,169,175,170,201,234,27,45,51},{227,26,62,41,71}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,92,101,90,119,77,120,90,122,77,98,76,95,76,122,76,126,98,76,112,77,122,78,127,116,122,77,98,79,95,79,122,76,126,98,79,112,76,122,73,112,77,122,72,118,116,122,77,98,78,95,78,122,76,126,98,78,112,76,122,75,112,77,122,74,118,116,122,77,98,73,95,73,122,76,126,98,73,112,76,122,69,112,77,122,68,118,116,122,77,98,72,95,72,122,76,126,98,72,112,76,122,71,112,77,122,70,118,116,122,77,98,75,95,75,122,76,126,98,75,112,76,122,65,112,77,122,64,118,116,122,77,98,74,95,74,122,76,126,98,74,112,76,122,67,112,77,122,66,118,116,122,77,98,69,95,69,122,76,126,98,69,112,76,122,93,112,77,122,92,118,116,122,77,98,68,95,68,122,76,126,98,68,112,76,122,95,112,77,122,94,118,116,122,77,98,71,95,71,122,76,126,98,71,112,76,122,89,112,77,122,88,118,116,122,77,98,70,95,70,122,76,126,98,70,112,76,122,91,112,77,122,90,118,116,122,77,98,65,95,65,122,76,126,98,65,115,85,111,76,90,76,87,76,122,77,98,64,95,64,122,76,126,98,64,112,77,122,78,109,116,119,77},P={{K={1,0,{49,10,46,71,97,146,143,160,254,231,0,51,32},{18,13,45,88,98,149,140,175,241,231,14,25,42,73},{58,11,62,92},{210,3,45,94,113,141,144,163,211}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,112,79,122,78,118,118,85,92,101,104,87,76,115,73,122,79,118,122,72,118,116,119,77},P={},U={{0,1},{0,2},{0,0}},nParams=0}},U={{1,266},{1,20},{1,256}},nParams=0},{K={{36,14,53,68,116},1,0,{63,9,40,89,115,146,150},{48,16,63,85,120,146,145,136,194,247,18,4,41,89},{195,9,32,93,106,173,140,163,214,226,35,54,39,94},{194,8,33,92,107,172,141,162,215,227,34,33,38,91,97,148,140},{199,16,62,91,105,117,148,169,241,247,19,20,47,94,101,157,150,161,193,250},{193,27,38,82,115,117,137,168,192,234},{215,2,49,82,115,117,187,161,210,238,238,3,63,65},{192,5,39,94,111,108,135,162,208,245,245,35,36,85,127,138,150,174,226,244,28,15,44},{195,2,36,81,108,107,132,189,211,242,246,59,62,81,121,117,138,173,192,203,29,5,38,85},{192,1,60,91,126,105,184,185,214,249,236,30,60},{203,2,59,89,75,82,133,191,221}},C={112,77,122,77,118,98,77,122,76,98,76,95,76,122,79,126,98,76,112,76,122,78,95,77,122,78,118,116,122,76,98,79,95,79,122,79,126,98,79,112,76,122,73,95,77,122,73,118,116,122,76,98,78,95,78,122,79,126,98,78,112,76,122,72,95,77,122,72,118,116,122,76,98,73,95,73,122,79,126,98,73,112,76,122,75,95,77,122,75,118,116,122,76,98,72,95,72,122,79,126,98,72,112,76,122,74,95,77,122,74,118,116,122,76,98,75,95,75,122,79,126,98,75,112,76,122,69,95,77,122,69,118,116,122,76,98,74,95,74,122,79,126,98,74,112,76,122,68,95,77,122,68,118,116,122,76,98,69,95,69,122,79,126,98,69,112,76,122,71,95,77,122,71,118,116,122,76,98,68,95,68,122,79,126,98,68,112,76,122,70,95,77,122,70,118,116,122,76,98,71,95,71,122,79,126,98,71,112,76,122,65,95,77,122,65,118,116,122,76,98,70,95,70,122,79,126,98,70,112,76,122,64,95,77,122,64,118,116,119,77},P={},U={{1,266},{1,20}},nParams=0},{K={{23,8,32,69,103,144,177,162,244,240,3,48,44,90,127,157,190,179,194},1,0,{46,5,56,85,120,136},{57,12,37,85,81,148,145,186,219,214,19,8,43,73},{193,18,35,95,113,157,165,190,221,249,15,18,32,75,102,159},{200,20,12},{195,28,35,91,105,112,142,169,192,253},{197,0,33,81,93,104,149,190,199,218,23,12,39,85,88,155,160,165,206,230,8},{202,11,61,83},{218,10,37,90,66,108,155,166,210},{194,9,60,75,119,112,147},{200,11,53,74,122,113},{203,1,56,85,82},{205,10,54,90,88},{205,28,55,78,71},{195,16,45,88},{197,28,43,74,69,100,147,179},{227,22,46},0.3,{204,26,55,46,85,62},{246,4,51,47,122,73,182},199,92,60,13},C={112,77,122,77,118,98,77,122,76,98,76,95,76,122,79,126,98,76,95,77,85,101,83,87,76,95,77,122,78,118,101,107,95,77,119,76,120,107,122,76,98,79,95,79,122,79,126,98,79,112,76,85,122,73,118,91,122,72,12,79,76,98,77,122,76,98,78,95,78,122,79,126,98,78,95,77,85,101,17,87,76,95,77,85,122,75,118,91,122,74,90,79,101,59,122,76,98,73,95,73,122,79,126,98,73,112,77,122,77,95,77,116,95,77,119,76,120,59,122,76,98,72,95,72,122,79,126,98,72,112,76,85,122,69,118,91,122,74,12,79,76,98,77,122,76,98,75,95,75,122,79,126,98,75,95,77,101,343,122,76,98,74,95,74,122,79,126,98,74,95,77,122,68,122,72,116,122,76,98,69,95,69,122,79,126,98,69,112,77,122,77,95,77,116,122,76,98,68,95,68,122,79,126,98,68,112,77,122,71,112,77,122,71,118,85,92,101,350,87,76,70,85,122,70,95,77,122,70,118,116,85,122,65,95,77,122,65,118,116,85,122,64,95,77,122,64,118,116,85,122,67,95,77,122,67,118,116,85,122,66,95,77,122,66,118,116,85,122,93,95,77,122,93,118,116,116,95,77,119,76,120,343,122,76,98,71,95,71,122,79,126,98,71,115,92,122,95,118,122,74,12,76,76,98,77,122,76,98,70,95,70,122,79,126,98,70,95,77,122,68,122,72,116,122,76,98,65,95,65,122,79,126,98,65,95,77,122,78,112,76,116,122,76,98,64,95,64,122,79,126,98,64,112,77,122,77,95,77,116,122,76,98,67,95,67,122,79,126,98,67,112,77,122,71,112,77,122,71,118,85,92,101,497,87,76,70,85,122,70,122,94,116,85,122,65,122,79,116,85,122,64,115,89,122,88,118,122,91,122,91,122,91,90,78,116,85,122,67,115,89,122,88,118,122,90,122,85,122,84,90,78,116,85,122,66,122,79,116,85,122,93,122,79,116,116,95,77,119,76},P={},U={{1,266},{1,20}},nParams=0},{K={1,0,{13,0,40,67,121}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,115,79,111,76,90,76,87,76,119,77},P={{K={1,0,{57,6,39,92,124,143,152},{26,1,36,67,127,136,155},{48,3,45,66,114,137},{239,0,42,65,125,138},{194,8,33,92,107},{227,28,35,107,121,111,138,163,192},{199,12,44,84,98},{224,15,51,87,101},{194,7,48,69,120},{225,0,51,74,123},{207,12,41,92},{224,15,46,95}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,122,78,118,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,73,112,76,122,72,118,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,75,112,76,122,74,118,116,122,77,98,78,95,78,122,76,126,98,78,112,77,122,69,112,76,122,68,118,116,122,77,98,73,95,73,122,76,126,98,73,112,77,122,71,112,76,122,70,118,116,122,77,98,72,95,72,122,76,126,98,72,112,77,122,65,112,76,122,64,118,116,119,77},P={},U={{1,0},{0,0}},nParams=0}},U={{1,266}},nParams=1},{K={1,0,{28,23,36,64,102,139,137,162,223,246,38,58,43,74,115,155,184,167},{18,13,45,88,98,149,140,175,241,245,14,13,41,95,98,144,187,182,207},{57,12,37,85,81,148,145,186,219,214,19,8,43,73,92,159,156,169,202,226,4},{193,18,33,93,107,142,140,175,194,243},{222,6,57,94,70,144,151,162,214},{242,11,47,88,118}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,92,101,16,112,77,122,78,118,85,92,101,100,87,76,112,76,85,122,73,118,91,122,72,90,79,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,85,101,15,87,76,112,77,122,75,118,101,20,122,77,98,78,95,78,122,76,126,98,78,115,74,111,76,90,76,87,76,120,20,119,77,120,16,122,77,98,73,95,73,122,76,126,98,73,64,112,79,112,78,12,77,-1,67,76,87,76,119,77},P={{K={1,0,{57,6,39,92,124,143,152},{33,5,62,93,73,147,144,161,201},{48,3,45,66,114,137},{195,9,32,93,106},{197,2,46,82,96},{197,4,47,70,127},{203,8,53,80}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,122,78,118,122,79,118,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,73,112,76,122,78,118,122,73,118,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,72,112,76,122,78,118,122,72,118,116,122,77,98,78,95,78,122,76,126,98,78,112,77,122,75,112,76,122,78,118,122,75,118,116,122,77,98,73,95,73,122,76,126,98,73,112,77,122,74,112,76,122,78,118,122,74,118,116,122,77,98,72,95,72,122,76,126,98,72,112,77,122,69,112,76,122,78,118,122,69,118,116,119,77},P={},U={{1,1},{0,0}},nParams=0}},U={{1,266},{1,20},{1,270},{1,269}},nParams=0},{K={1,0,{28,23,36,64,102,139,137,162,223,246,38,58,43,74,115,155,184,167},{18,13,45,88,98,149,140,175,241,245,14,13,41,95,98,144,187,182,207},{47,4,57,84,121,137}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,19,112,77,122,78,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,85,92,101,126,87,76,95,76,122,73,118,92,101,4,122,77,98,78,95,78,122,76,126,98,78,112,76,12,77,76,98,76,120,4,122,77,98,73,95,73,122,76,126,98,73,112,79,95,76,90,76,87,76,120,19,119,77},P={},U={{1,266},{1,269},{1,270}},nParams=0},{K={1,0,{17,10,46,71,97,146,143,160,242,240,26},{46,5,56,85,120,136},{57,12,37,85,81,148,145,186,219,214,19,8,43,73},{193,18,35,95,113,157,167,137},{200,9,62,71,120,145,134,174},{236,13,57},{192,6,35,90,105,66,136,191,193,252,28,17,34,94,121,184,133,175,202,246,15},{202,11,61,83},{192,5,48,85,113,102,141},{229,15,13,93,112,101,136,188,211,248},{197,31,58,94,119,113,133,180,196,238},{235,13,11,88,82,111,139,186,204,240,225,25,35},{202,0,59,79,83,102,158,167},{233,19,9,95,77,102,154,166,219,211,242},{216,16,35,72,81,104,155,188,212,207},{239,17,7,77,69,126,133,164,221,214,225,1,58},{217,26,55,75,102,100,157,184,207},{237,23,5,52,79,98,134}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,76,88,85,92,101,108,87,76,112,77,122,79,118,122,78,118,92,101,52,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,112,76,85,122,73,118,91,122,72,90,79,85,92,101,1,87,76,115,75,122,74,118,122,69,90,76,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,118,122,68,122,72,116,122,77,98,78,95,78,122,76,126,98,78,112,77,122,79,118,122,78,112,76,116,120,52,122,77,98,73,95,73,122,76,126,98,73,112,77,122,79,118,122,71,112,77,122,70,118,116,122,77,98,72,95,72,122,76,126,98,72,112,77,122,79,118,122,65,112,77,122,64,118,116,122,77,98,75,95,75,122,76,126,98,75,112,77,122,79,118,122,67,112,77,122,66,118,116,122,77,98,74,95,74,122,76,126,98,74,112,77,122,79,118,122,93,112,77,122,92,118,116,122,77,98,69,95,69,122,76,126,98,69,112,77,122,79,118,122,95,112,77,122,94,118,116,119,77},P={},U={{1,266},{1,20}},nParams=0},{K={1,0,{17,10,46,71,97,146,143,160,242,224,12,49,55,74,104,132},{46,5,56,85,120,136},{57,12,37,85,81,148,145,186,219,214,19,8,43,73},{193,18,35,95,113,157,183,191,222,196,29,27,59},{199,14,35,87,95,150,151,184,197,212,21,10,37,75,90,157,162,171,204,224,10},{209,29,32,102,123,121,149,137,212,254,27,7,62},{205,8,34,80},{205,4,35,66,125,108,139,171},{235,14,38},{195,2,51,90,114,97,142},{244,24,61,75,126,124,152,142,210,243,226,11,35,80,127},{193,0,32,95,78,117,133,166,193},{250,26,59,73,64,126,158,140,208,241,241,14,63,68,116,119,144},{217,0,36,89,67,108},{248,4,57,79,66,112,156,138,200,209,245,8,50,93}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,76,88,85,92,101,108,87,76,112,77,122,79,118,122,78,118,92,101,246,112,76,85,122,73,118,91,122,72,90,79,85,92,101,114,87,76,112,76,85,122,75,118,91,122,74,90,79,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,101,59,122,77,98,78,95,78,122,76,126,98,78,95,76,122,69,122,72,116,122,77,98,73,95,73,122,76,126,98,73,112,77,122,79,95,76,116,120,244,122,77,98,72,95,72,122,76,126,98,72,112,77,122,79,115,68,122,71,118,122,74,90,76,116,122,77,98,75,95,75,122,76,126,98,75,112,77,122,79,118,122,69,122,72,116,122,77,98,74,95,74,122,76,126,98,74,112,77,122,79,118,122,78,112,76,116,120,246,122,77,98,69,95,69,122,76,126,98,69,112,77,122,79,118,122,70,112,77,122,65,118,116,122,77,98,68,95,68,122,76,126,98,68,112,77,122,79,118,122,64,112,77,122,67,118,116,122,77,98,71,95,71,122,76,126,98,71,112,77,122,79,118,122,66,112,77,122,93,118,116,119,77},P={},U={{1,266},{1,20}},nParams=0},{K={{23,8,32,69,103,144,177,162,244,226,28,36,33,70,119},1,0,{46,5,56,85,120,136},{57,12,37,85,81,148,145,186,219,214,19,8,43,73},{193,18,35,95,113,157,183,161,201},{200,20,12},{209,3,55},{197,0,33,81,93,104,149,190,199,218,23,12,39,85,88,155,160,165,206,230,8},{202,11,61,83},{204,5,34,67,124,109,138,170},{232,9,37}},C={112,77,122,77,118,98,77,122,76,98,76,95,76,122,79,126,98,76,95,77,85,101,83,87,76,95,77,122,78,118,101,107,95,77,119,76,120,107,122,76,98,79,95,79,122,79,126,98,79,112,76,85,122,73,118,91,122,72,12,79,76,98,77,122,76,98,78,95,78,122,79,126,98,78,95,77,85,101,17,87,76,95,77,85,122,75,118,91,122,74,90,79,101,59,122,76,98,73,95,73,122,79,126,98,73,112,77,122,77,95,77,116,95,77,119,76,120,59,122,76,98,72,95,72,122,79,126,98,72,112,76,85,122,69,118,91,122,74,12,79,76,98,77,122,76,98,75,95,75,122,79,126,98,75,95,77,101,133,122,76,98,74,95,74,122,79,126,98,74,95,77,122,68,122,72,116,122,76,98,69,95,69,122,79,126,98,69,112,77,122,77,95,77,116,95,77,119,76,120,133,122,76,98,68,95,68,122,79,126,98,68,115,71,122,70,118,122,74,12,76,76,98,77,122,76,98,71,95,71,122,79,126,98,71,95,77,122,68,122,72,116,122,76,98,70,95,70,122,79,126,98,70,95,77,122,78,112,76,116,122,76,98,65,95,65,122,79,126,98,65,112,77,122,77,95,77,116,95,77,119,76},P={},U={{1,266},{1,20}},nParams=0},{K={1,0,{14,8,48,77,122,131,190,177,204,255,12,58},{48,11,36,85},{15,6,42,93,123},{195,10,35,81,115,170,141,167,213},{226,11,34,80,114,139,140,166,212}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,112,77,112,76,122,79,118,118,85,92,101,106,87,76,112,77,122,78,118,85,92,101,99,87,76,70,98,79,122,77,98,78,95,78,122,76,126,98,78,115,73,111,76,90,76,87,76,122,77,98,73,95,73,122,76,126,98,73,112,79,122,72,112,76,122,75,118,116,119,77},P={{K={1,0,{46,8,48,77,122,131,163,172},{13,15,51,82,121,132,189,170,207,247,17},{44,14,50,83,120,133,167,167},{243,13,53,80,119,134,187,174,223,225,18},{210,12,52,81,118,135,163,191},{241,3,55,86,117,120,185,170,192,247,16,16},{208,2,54,87,116,121,171,171},{247,1,41,84,115,122,183,162,209,252,244},{214,0,40,85,114,123,187,187},{245,7,43,90,113,124,181,162,223,251,234,28},{212,6,42,91,112,125,190,161},{251,5,45,88,79,126,179,167,200},{250,26,59,100,85,98,149,167,204,237,224},{217,5,56,104,71,112,154,161,200,197,207,8},{230,30,56,83,124,125,138,173,207,212,245,8},{193,29,55,80,112,111,136,162,201,208,237,39,48},{222,7,56,77,102,100,132,185,201},{253,0,59,50,121,111,157,173,208,208},{220,0,53,0,73,106,134,181,222,215,216,24,45,88},{227,3,50,29,73,96,147,175,172,199,254,45,43,87,94,111},{220,24,50,45,104,97,146,174,173,198,255,32,48,69,64},{255,23,49,42,117,113,152,187,183,196,239,6,5,51,79,118,151}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,122,78,118,85,92,101,82,87,76,112,77,122,79,118,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,73,112,76,122,72,118,85,92,101,114,87,76,112,77,122,73,118,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,75,112,76,122,74,118,85,92,101,18,87,76,112,77,122,75,118,116,122,77,98,78,95,78,122,76,126,98,78,112,77,122,69,112,76,122,68,118,85,92,101,50,87,76,112,77,122,69,118,116,122,77,98,73,95,73,122,76,126,98,73,112,77,122,71,112,76,122,70,118,85,92,101,210,87,76,112,77,122,71,118,116,122,77,98,72,95,72,122,76,126,98,72,112,77,122,65,112,76,122,64,118,85,92,101,242,87,76,112,77,122,65,118,116,122,77,98,75,95,75,122,76,126,98,75,112,76,122,67,118,101,164,122,77,98,74,95,74,122,76,126,98,74,112,77,122,66,112,76,122,67,118,116,120,164,122,77,98,69,95,69,122,76,126,98,69,112,76,122,93,118,101,351,122,77,98,68,95,68,122,76,126,98,68,112,77,122,92,112,76,122,93,118,116,120,351,122,77,98,71,95,71,122,76,126,98,71,112,77,122,95,112,79,122,94,118,116,122,77,98,70,95,70,122,76,126,98,70,112,77,122,89,112,79,122,88,118,116,122,77,98,65,95,65,122,76,126,98,65,112,77,122,91,112,79,122,90,118,116,119,77},P={},U={{1,0},{1,2},{0,1}},nParams=0}},U={{1,257},{1,266},{1,20}},nParams=1},{K={1,0,{14,8,48,77,122,131,190,162,195,242,27,51,32,79},{61,8,37,83,125,168,139,165,203},{32,10,57,88,112}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,92,101,98,122,77,98,76,95,76,122,76,126,98,76,112,76,122,78,112,77,122,73,118,122,78,118,116,119,77,120,98,122,77,98,79,95,79,122,76,126,98,79,64,112,79,112,78,12,77,-1,67,76,87,76,119,77},P={},U={{1,266},{1,20},{1,276},{1,275}},nParams=0},{K={1,0,{14,8,48,77,122,131,190,162,195,242,27,51,32,79},{18,13,45,88,98,149,140,175,241,231,17,25,36,67,106},{47,4,57,84,121,137}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,19,112,77,122,78,118,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,85,92,101,126,87,76,95,76,122,73,118,92,101,4,122,77,98,78,95,78,122,76,126,98,78,112,76,12,77,76,98,76,120,4,122,77,98,73,95,73,122,76,126,98,73,112,79,95,76,90,76,87,76,120,19,119,77},P={},U={{1,266},{1,275},{1,276}},nParams=0},{K={1,0,{28,22,61,64,74,137,142,179,204,231,28,0,38,68,127,153},{14,7,43,92,122},{12,14,50,83,120,133,188,172,193,244,25,13,34,73},{225,19,56,93,71,140,139,190,209,226,25},{237,14,42,91,109,150,139,172,238,228,22,26,43,64,109},{202,13,47,70,110,98,131,173,198},{192,6,33,91,126,98,147}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,117,122,77,98,76,95,76,122,76,126,98,76,115,78,111,76,90,76,87,76,122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,76,116,120,117,122,77,98,78,95,78,122,76,126,98,78,112,77,122,73,118,92,85,92,101,24,87,76,112,77,122,72,118,92,101,22,119,77,120,22,122,77,98,73,95,73,122,76,126,98,73,112,77,122,75,118,76,88,101,207,122,77,98,72,95,72,122,76,126,98,72,112,76,90,77,87,76,120,207,122,77,98,75,95,75,122,76,126,98,75,112,77,122,79,112,79,122,74,118,85,122,69,118,91,111,79,90,79,116,119,77},P={{K={1,0,{28,22,61,64,74,137,142,179,204,231,28,0,38,68,127,153},{58,13,57,83,121,146,140,173,205,224}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,85,122,78,118,91,90,76,87,76,119,77},P={},U={{0,0}},nParams=0},{K={1,0,{17,10,46,71,97,146,143,160,242,224,18,38,39,68,105},{45,15,51,82,121,132,173,186,199,241,20,20,39,88,123,151,176},{41,0,40,69,120,143,208},{238,3,59},{216},{227,29,58,91,69,114,137,184,211,236,27,59,57,64,115,153,134},10},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,92,101,90,119,77,120,90,112,77,122,79,118,122,78,118,98,79,122,77,98,78,95,78,122,76,126,98,78,112,77,122,79,118,122,78,115,73,122,72,118,122,76,95,79,122,75,118,95,77,112,77,122,74,118,106,122,69,106,126,122,76,90,78,116,119,77},P={},U={{0,0}},nParams=1}},U={{1,266},{1,277},{1,21}},nParams=0},{K={1,0,{52,16,8},{60,5,57,85,70,157,144,188},{50,4,63,84,101,148,130,165},{195,7,63,70,75,150,133,174,223,225},{241,4,44,95,117},{207,13,61,92,74,97,148,184},{215,12,55,65,110,115,130,132,247},{192,15,51,87,112},{209,14,41,67,104,113,140},{213,25,32,94,127,103,143,145,198,236,231,9,60,85,116,99,131},{212,29,54,90,118,100,135,156,210,238,235},{220,11,44,78,85,116,137,155,220}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,95,77,85,122,79,118,91,122,78,90,79,101,148,122,77,98,78,95,78,122,76,126,98,78,112,77,95,77,118,76,88,101,33,122,77,98,73,95,73,122,76,126,98,73,112,77,95,77,95,77,122,73,118,116,122,77,98,72,95,72,122,76,126,98,72,112,76,95,77,95,77,122,72,118,116,120,33,122,77,98,75,95,75,122,76,126,98,75,115,75,111,76,90,76,87,76,122,77,98,74,95,74,122,76,126,98,74,95,77,85,122,79,118,91,122,74,90,79,101,154,122,77,98,69,95,69,122,76,126,98,69,112,79,95,77,118,76,88,101,143,122,77,98,68,95,68,122,76,126,98,68,112,79,95,77,95,77,122,69,118,116,120,143,122,77,98,71,95,71,122,76,126,98,71,115,75,111,79,90,76,87,76,120,154,120,384,95,77,85,122,79,118,91,122,68,90,79,85,92,101,184,87,76,95,77,85,122,79,118,91,122,71,90,79,101,378,122,77,98,70,95,70,122,76,126,98,70,112,79,95,77,118,76,88,101,367,122,77,98,65,95,65,122,76,126,98,65,112,79,95,77,95,77,122,71,118,116,120,367,122,77,98,64,95,64,122,76,126,98,64,115,75,111,78,90,76,87,76,120,384,95,77,85,122,79,118,91,122,70,90,79,101,461,122,77,98,67,95,67,122,76,126,98,67,112,79,95,77,118,76,88,101,294,122,77,98,66,95,66,122,76,126,98,66,112,79,95,77,127,116,120,294,122,77,98,93,95,93,122,76,126,98,93,115,75,111,73,90,76,87,76,120,384,95,77,85,122,79,118,91,122,65,90,79,101,384,122,77,98,92,95,92,122,76,126,98,92,112,79,95,77,118,76,88,101,501,122,77,98,95,95,95,122,76,126,98,95,112,79,95,77,95,77,122,64,118,116,120,501,122,77,98,94,95,94,122,76,126,98,94,115,75,111,72,90,76,87,76,120,384,119,77},P={{K={1,0,{48,2,61,74,103,146,128,171},{59,10,63,93},{47,9,42,66,99,148,128},{205,7,56,87,106,151,133,166,230,247,14,11,41,64,96},{},{193,9,61,64,73,104,135,168,221,239},{209,12,41,89,126,98,147,172,221,250,26}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,115,78,122,79,118,122,73,118,116,122,77,98,76,95,76,122,76,126,98,76,112,77,122,72,122,75,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,74,109,116,122,77,98,78,95,78,122,76,126,98,78,112,77,122,69,122,76,116,119,77},P={},U={{1,0}},nParams=0},{K={1,0,{41,6,49,91,96,137,132,142,233},{}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,122,78,116,119,77},P={},U={{1,0}},nParams=0},{K={1,0,{41,17,40,65,102,139,128,181,200,253,26,38}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,122,77,116,119,77},P={},U={{1,0}},nParams=0},{K={1,0,{56,13,40,77,121,158,133}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,109,116,119,77},P={},U={{1,0}},nParams=0},{K={1,0,{41,6,49,91,96,137,132,142,201},{}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,122,78,116,119,77},P={},U={{1,0}},nParams=0}},U={{1,280},{1,281},{1,283}},nParams=1},{K={1,0,{13,0,40,67,121},{23,20,43,89,100,143},{8,10,57,90,100,141,130,170,202},{199,3,56,118,125,141,135,175,222,242,29,12,60,93},{222,1,61,64,90,144,139,165},{198,13,61,87,127,110,130,173,220,236,63,0,46,85,114},{192,6,33,91,126,98,147},{219,12,32,69,80,109,135,190},{241,10,34,92},{245,28,51,79,112},{247,12,58,75,108},{216,15,38,95,78,114}},C={122,77,98,76,95,76,122,76,126,98,76,95,77,101,164,122,77,98,79,95,79,122,76,126,98,79,115,79,111,76,90,76,87,76,122,77,98,78,95,78,122,76,126,98,78,64,115,78,115,73,85,122,72,118,91,12,76,-1,67,78,98,75,98,72,98,73,93,73,72,75,73,74,73,69,95,73,95,72,95,75,12,79,79,98,69,98,74,95,74,98,75,95,74,76,100,101,53,122,77,98,68,95,68,122,76,126,98,68,112,79,95,69,90,76,87,76,73,68,120,11,122,77,98,71,95,71,122,76,126,98,71,112,78,122,75,118,92,101,230,122,77,98,70,95,70,122,76,126,98,70,112,78,122,75,115,73,122,74,118,85,122,69,118,91,111,79,90,79,116,120,230,122,77,98,65,95,65,122,76,126,98,65,112,78,122,68,118,92,101,170,122,77,98,64,95,64,122,76,126,98,64,112,78,122,68,127,116,122,77,98,67,95,67,122,76,126,98,67,115,71,122,70,118,111,78,90,76,87,76,120,170,120,595,122,77,98,66,95,66,122,76,126,98,66,115,65,112,73,12,76,78,98,95,98,92,98,93,93,93,92,95,73,94,73,89,95,93,95,92,95,95,12,79,79,98,89,98,94,95,94,98,95,95,94,76,100,101,281,122,77,98,88,95,88,122,76,126,98,88,95,94,85,101,378,87,76,95,94,122,64,118,101,259,122,77,98,91,95,91,122,76,126,98,91,115,79,111,73,90,76,87,76,120,259,73,88,73,91,120,328,122,77,98,90,95,90,122,76,126,98,90,115,65,112,75,12,76,78,98,87,98,84,98,85,93,85,84,87,73,86,73,81,95,85,95,84,95,87,12,79,79,98,81,98,86,95,86,98,87,95,86,76,100,101,498,122,77,98,80,95,80,122,76,126,98,80,95,86,85,101,495,87,76,95,86,122,64,118,101,500,122,77,98,83,95,83,122,76,126,98,83,115,79,111,72,90,76,87,76,120,500,73,80,73,83,120,317,122,77,98,82,95,82,122,76,126,98,82,70,70,70,13,75,13,72,13,73,122,77,98,109,95,109,122,76,126,98,109,115,79,111,75,90,76,87,76,122,77,98,108,95,108,122,76,126,98,108,112,78,122,75,118,101,595,122,77,98,111,95,111,122,76,126,98,111,115,79,111,74,90,76,87,76,122,77,98,110,95,110,122,76,126,98,110,112,78,122,75,76,116,120,595,119,77},P={{K={1,0,{41,6,42,71,123,148,141,168,202,234},{57,8,37,82,119,144,177,160,207,240,21,23,53},{58,11,62,92},{204,3,43,83,123,135}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,76,88,101,104,122,77,98,76,95,76,122,76,126,98,76,112,76,122,79,118,13,77,120,104,122,77,98,79,95,79,122,76,126,98,79,112,76,122,78,109,116,122,77,98,78,95,78,122,76,126,98,78,112,76,122,79,115,73,122,79,118,122,72,118,116,119,77},P={},U={{0,0},{0,1}},nParams=0},{K={1,0,{27,19,58,112,119,148,142,180,217}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,101,106,122,77,98,79,95,79,122,76,126,98,79,112,76,95,77,90,76,87,76,120,106,119,77},P={},U={{0,3},{0,2}},nParams=1},{K={1,0,{9,2,58,68},{9,5,35,68},2,{230,22,63,109,122,145,139,185,196},{232,23,44,90,107,140},{245,7,60,95,105,112,135,175,215},{196,12,59,113,126,114,132,168,221,253,30,11,63,66}},C={122,77,98,77,95,77,122,76,126,98,77,127,101,239,122,77,98,76,95,76,122,76,126,98,76,115,79,122,78,118,122,73,90,76,87,76,122,77,98,79,95,79,122,76,126,98,79,112,77,122,72,118,101,195,122,77,98,78,95,78,122,76,126,98,78,64,115,75,115,74,85,122,69,118,91,12,76,-1,67,78,98,75,98,72,98,73,93,73,72,75,73,74,73,69,95,73,95,72,95,75,12,79,79,98,69,98,74,95,74,98,75,95,74,76,100,101,193,122,77,98,68,95,68,122,76,126,98,68,112,76,95,69,90,76,87,76,73,68,120,23,120,195,73,76,73,79,73,78,73,73,73,72,73,75,73,74,73,69,73,68,120,70,119,77},P={},U={{0,3},{0,2}},nParams=0},{K={1,0,{48,2,61,74,103,146,128,171},{61,5,57,68,69,148,131,172,193,227}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,112,76,116,122,77,98,76,95,76,122,76,126,98,76,112,79,112,77,118,76,100,101,112,122,77,98,79,95,79,122,76,126,98,79,112,77,122,78,112,79,112,77,118,116,120,112,119,77},P={},U={{1,19},{1,20},{0,5}},nParams=0},{K={1,0,{52,16,8},{51,1,57,88,70,157,144,188},{43,0,51,69,98,143,134,128,235},{196,3,47,83,116},{213,2,53,71,108,141,128},{214,26,47,90,105,112,135,190,215,246,29,29},{208,28,61,83,122,98,130,140,195,233,26,4,57,80,121,158,134},{193,4,49,84,112,103,140},{214,27,52,84,116,98,133,130,208,232,233},{210,9,42,76,107,118,143,153,210}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,122,78,90,79,101,97,122,77,98,76,95,76,122,76,126,98,76,112,77,122,73,112,76,116,120,210,112,77,85,122,79,118,91,122,72,90,79,85,92,101,5,87,76,112,77,85,122,79,118,91,122,75,90,79,101,19,122,77,98,79,95,79,122,76,126,98,79,112,77,122,74,122,76,116,120,210,112,77,85,122,79,118,91,122,69,90,79,101,51,122,77,98,78,95,78,122,76,126,98,78,112,77,122,68,127,116,120,210,112,77,85,122,79,118,91,122,71,90,79,101,210,122,77,98,73,95,73,122,76,126,98,73,112,77,122,70,112,76,116,120,210,119,77},P={},U={{1,27},{1,28}},nParams=0},{K={1,0,{41,6,42,71,123,148,141,168,202,234},{57,8,37,82,119,144,177,160,207,240,21,23,53},{32,10,57,88,112}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,101,110,122,77,98,76,95,76,122,76,126,98,76,112,76,122,79,112,77,116,120,110,122,77,98,79,95,79,122,76,126,98,79,112,76,122,78,112,79,122,73,118,122,78,118,116,119,77},P={},U={{0,0},{0,1},{0,3}},nParams=0},{K={1,0,{34,5,57,92,86,148,143,169},{58,13,57,83,121,146,140,173,205,224}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,85,122,78,118,91,90,76,87,76,119,77},P={},U={{0,3}},nParams=0}},U={{1,282},{1,20},{1,284},{1,266},{1,280},{1,281},{1,283}},nParams=1},{K={{12,14,53,70,96,137,190,166,206},{63,23,58,92,113,148,148,133,205,255,29,44,37},1,0,{32,3,36,71,72,156,128,189,198,227,30},{198,15,41,94,124,177,130,156,217,243,11},{226,6,32,86,107,158,186,173,222,225},{225,9,35,81,104,97,185,190,215,235,17,8,63,68,127,147,140},{247,16,63,80},{234,31,61,84,121,112},{198,45,35,86,112,102},{232,9,37},{244,6,42,91,112,125,180,180,217,252,225,5,42,81},{203,2,59,89,75,82,133,191,221},{234,3,58,88,74,115,132,190,220}},C={115,77,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,101,86,119,77,120,86,122,79,98,79,95,79,122,78,126,98,79,112,77,122,73,118,101,9,122,79,98,78,95,78,122,78,126,98,78,95,77,122,72,112,77,122,75,118,116,120,9,112,77,122,74,118,98,73,122,79,98,72,95,72,122,78,126,98,72,115,69,95,73,90,76,122,68,88,85,101,36,87,76,95,73,122,79,100,101,239,122,79,98,75,95,75,122,78,126,98,75,95,77,122,71,95,77,122,71,118,115,71,122,70,118,122,78,122,78,122,78,122,79,122,78,122,78,122,78,95,73,122,78,122,78,122,78,122,79,90,65,106,116,120,239,122,79,98,74,95,74,122,78,126,98,74,112,77,122,65,118,101,134,122,79,98,69,95,69,122,78,126,98,69,112,76,122,64,112,77,122,67,118,116,120,134,119,77},P={},U={{1,266},{1,20}},nParams=0},{K={1,0,{17,10,46,71,97,146,143,160,242,246,23,62,39,71,116,147}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,95,77,101,121,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,8,122,77,98,73,95,73,122,76,126,98,73,112,79,90,77,87,76,119,77},P={},U={{1,266},{1,267},{1,268}},nParams=1},{K={1,0,{26,15,38,77,116,151,190,180,197,242,29,48,50,88}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{17,10,46,71,97,146,143,160,242,224,13,38,41,78}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{30,8,41,88,114,147,151,150,204,250,23,14,53}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{16,16,63,85,120,146,145,150,206,248,25,8,34,67,103,166,188,170,199,254,5}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{12,13,34,87,99,162,151,166,223}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{12,13,34,87,99,162,129,166,219,225,20,12}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{24,27,57,64,102,142,147,162}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{31,17,32,72,125,143,143,162,222,224}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{14,11,40,75,122,140,190,180,194,245,13,49,32,88,98}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{25,10,47,73,96,136,132,152,222,240,24,51,32}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{14,19,44,76,96,151,128,181,242,224,26,62,41,78}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,267}},nParams=1},{K={1,0,{28,23,36,64,102,139,137,162,223,246,38,58,43,74,115,155,184,167}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{25,6,39,92,124,143,152}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{18,5,47,92,112,143}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{30,17,38,110,116,146,143,166,221}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{27,0,40,80,110}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{26,15,40,93,112}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{21,2,51,74}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,271}},nParams=1},{K={1,0,{30,0,22,74,123,154,131,171,200,247}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,273}},nParams=1},{K={1,0,{30,0,22,77,103,146,134,175,217,253,28,44,54}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,273}},nParams=1},{K={1,0,{30,0,22,76,122,149,149,181,204,224,13}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,273}},nParams=1},{K={1,0,{30,0,22,92,116,143,148,181,204,231,16,48,43}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,273}},nParams=1},{K={1,0,{9,26,57,74,122,157},{61,11,38,95,100,207},{28,6,20,69,126,147,151}},C={122,77,98,76,95,76,122,76,126,98,76,115,79,95,77,90,76,122,78,88,101,118,122,77,98,79,95,79,122,76,126,98,79,112,77,122,73,95,77,116,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,118,119,77},P={},U={{1,266},{1,273}},nParams=1},{K={1,0,{14,22,39,93,116,130,146,152,200,253,24,61,41,78,117}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,274}},nParams=1},{K={1,0,{14,22,39,93,116,130,146,152,196,253,13,58,43,88,120,131,164}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,274}},nParams=1},{K={1,0,{14,22,39,93,116,130,146,152,222,227,11,58,36,79}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,274}},nParams=1},{K={1,0,{14,8,48,77,122,131,190,162,195,242,27,51,32,79}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,122,77,98,78,95,78,122,76,126,98,78,112,79,90,77,87,76,119,77},P={},U={{1,266},{1,277},{1,279}},nParams=1},{K={1,0,{14,8,48,77,122,131,190,177,204,255,12,58}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,277}},nParams=1},{K={1,0,{30,15,38,76,126,143,136,170,200},{13,15,51,82,121,132,189,173,192,245,24,12,35,72},{60,9,36,82,124,169,138,164,202}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,78,118,101,117,122,77,98,78,95,78,122,76,126,98,78,112,76,122,73,95,77,116,120,117,119,77},P={},U={{1,266},{1,20}},nParams=1},{K={1,0,{14,23,40,93,74,152,142,178,195,231}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,277}},nParams=1},{K={1,0,{14,22,39,112,116,149,134,178,193,242,11,0,54,66,107,146}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,277}},nParams=1},{K={1,0,{16,12,38,65,74,154,143,160,216,255,24,45,26,88,120,141,184}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,277}},nParams=1},{K={1,0,{28,22,61,64,74,137,142,179,204,231,28}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77},P={},U={{1,266},{1,279}},nParams=1},{K={1,0,{28,22,61,64,74,137,142,179,204,231,28,0,54,91,116,146,185}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,119,77},P={},U={{1,266}},nParams=1},{K={1,0,{27,19,58,112,119,148,142,180,217}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,116,122,77,98,79,95,79,122,76,126,98,79,112,76,95,77,90,76,87,76,119,77},P={},U={{1,266},{1,285}},nParams=1},{K={1,{47,7,36,75,119,142,192,182,192,243,1,59,54},0,{23,20,43,89,100,143},{56,0,63,97,123,156,154,172,221,230},{244,7,46,94,125},{232,9,62,86,107,139},{204,9,35,81}},C={70,85,122,77,122,76,116,98,77,122,77,98,76,95,76,122,79,126,98,76,64,115,78,112,77,85,122,73,118,91,12,76,-1,67,78,98,73,98,78,98,79,93,79,78,73,73,72,73,75,95,79,95,78,95,73,12,79,79,98,75,98,72,95,72,98,73,95,72,76,100,101,48,122,77,98,74,95,74,122,79,126,98,74,95,75,112,76,100,101,58,122,77,98,69,95,69,122,79,126,98,69,115,72,122,75,118,95,77,95,75,122,74,118,90,79,87,76,120,58,73,74,73,69,120,96,95,77,119,76},P={},U={{1,19},{1,22}},nParams=0},{K={{47,19,40,65,127,173,190,183,204,244,3},{42,3,36,91,113},1,0,{44,0,39,84,116,137,195,185,195,244,2,4,53},{198,15,34,86,94,151,150,185,196,213,20,11,36,74},{194,15,44,65,120,156,145,174,195}},C={112,77,122,77,118,85,101,95,87,76,112,77,122,77,118,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,85,92,101,96,87,76,95,77,122,73,88,101,121,76,119,76,120,121,112,76,85,122,72,118,91,95,77,90,79,98,79,95,79,85,101,0,87,76,95,79,122,75,118,85,101,25,87,76,95,79,85,92,101,22,87,76,76,119,76},P={},U={{1,4},{1,19}},nParams=0},{K={1,0,{13,0,40,67,121},{14,5,35,66,101}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,101,127,122,77,98,76,95,76,122,76,126,98,76,115,79,111,76,90,76,87,76,122,77,98,79,95,79,122,76,126,98,79,76,13,77,120,127,122,77,98,78,95,78,122,76,126,98,78,115,78,112,76,12,76,78,98,75,98,72,98,73,93,73,72,75,73,74,73,69,95,73,95,72,95,75,12,79,79,98,69,98,74,95,74,98,75,95,74,76,100,101,205,122,77,98,68,95,68,122,76,126,98,68,115,79,111,79,90,76,87,76,73,68,120,3,122,77,98,71,95,71,122,76,126,98,71,70,13,76,119,77},P={{K={1,0,{46,23,38,95},{58,1,57,68,100,147,155}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,122,77,98,76,95,76,122,76,126,98,76,112,77,85,122,78,118,91,90,76,87,76,119,77},P={},U={{0,0}},nParams=0},{K={1,0,{57,6,58,91,103,148,152}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{1,8}},nParams=0}},U={{1,336},{1,337}},nParams=0},{K={1,0,{62,11,40,93,116,152,149,162,223},{56,13,36,84,80,149,144,187,218,215,18,9,42,72},{55,16,38,80,121,146,138,173,253,250,20,21,23,76,97,141},{195,32,62,83,117,155},{239,2,58},2.2,{202,7,60,65,122,111,132,168},{197,30,36,87,127,106,133,171,218,238},{213,4,34,94,105,106,134,161},{208,9,49,76,113,118,217},{215,12,33,92,113,113},{201,2,61,93,78,86,131,161,209,234,237,5,62},{200,27,33,90,66,111,128,182,215,235,181},{203,4,34,93,65,96,131,177,212,212,183},{198,16,47,123,76,123,140,176},100000,{192,18,33,105,64,103,158,180,212,215,240},80,{221,16,40,49,72,99,128,176,201,192,229,20,36,78},40,{208,27,52,36,71,64,135,178,164,201,249,18,45,86,74,101},{223,25,38,16,69,98,135,169,167},{222,24,39,4,69,118,130,177,162,219,217,16,55,46,68,100,135,160},30,2,3,4,{222,23,10,46,118,127,142,145,188,237,252,19,12,34,99,116,187,178,165,217,227},{209,10,8,42,95,120,148,135},{219,238,15,33,83,108,145,150},{218,239,14,32,82,109,150,138,165},{221,236,1,35,85,110,105,137,162,251,252},{239,225,17,46,70,104,100,147,164,215,163,80,74,126,8,38,200,212,254,156,165,79,82},{238,231,11,60,90},{211,234,4,33,82,121},{240,234,13,43},{224,227,7,38,74,107,86,155,180,210,249},3.5},C={122,77,98,77,95,77,122,76,126,98,77,112,77,90,77,87,76,112,76,90,77,98,76,122,77,98,79,95,79,122,76,126,98,79,95,76,92,101,102,119,77,120,102,112,79,122,79,118,85,101,14,87,76,112,79,122,79,118,85,122,78,118,91,122,73,90,79,98,78,95,76,122,79,118,85,101,16,87,76,95,76,122,79,118,85,122,78,118,91,122,73,90,79,98,73,122,77,98,72,95,72,122,76,126,98,72,95,78,92,85,92,101,59,87,76,95,73,92,101,49,119,77,120,49,122,77,98,75,95,75,122,76,126,98,75,95,78,122,72,95,73,122,72,118,115,72,122,75,118,122,76,122,76,122,74,90,78,106,116,115,69,122,75,118,122,68,90,76,98,74,122,77,98,69,95,69,122,76,126,98,69,95,74,122,71,115,70,122,75,118,122,76,122,76,122,74,90,78,116,122,77,98,68,95,68,122,76,126,98,68,95,74,122,65,95,73,116,115,69,122,75,118,122,68,90,76,98,71,122,77,98,70,95,70,122,76,126,98,70,95,71,122,65,95,78,116,115,69,122,75,118,122,64,90,76,98,65,122,77,98,64,95,64,122,76,126,98,64,95,65,122,67,95,71,116,122,77,98,67,95,67,122,76,126,98,67,95,65,122,66,95,74,116,122,77,98,66,95,66,122,76,126,98,66,95,65,122,93,122,92,116,122,77,98,93,95,93,122,76,126,98,93,95,65,122,95,122,94,116,122,77,98,92,95,92,122,76,126,98,92,95,65,122,89,122,88,116,122,77,98,95,95,95,122,76,126,98,95,95,65,122,65,95,78,116,115,69,122,75,118,122,91,90,76,98,94,122,77,98,89,95,89,122,76,126,98,89,95,94,122,67,95,71,116,122,77,98,88,95,88,122,76,126,98,88,95,94,122,66,95,74,116,122,77,98,91,95,91,122,76,126,98,91,95,94,122,90,122,92,116,122,77,98,90,95,90,122,76,126,98,90,95,94,122,85,122,84,116,122,77,98,85,95,85,122,76,126,98,85,95,94,122,89,122,84,116,122,77,98,84,95,84,122,76,126,98,84,95,94,122,65,95,78,116,122,77,98,87,95,87,122,76,126,98,87,70,85,122,77,95,74,116,85,122,87,95,71,116,85,122,86,95,65,116,85,122,81,95,94,116,13,78,112,79,122,79,118,85,122,80,118,91,122,83,90,79,98,86,95,86,85,101,609,87,76,95,86,85,122,80,118,91,122,82,90,79,98,81,122,77,98,80,95,80,122,76,126,98,80,95,81,101,640,115,69,122,75,118,122,109,90,76,98,83,122,77,98,82,95,82,122,76,126,98,82,95,83,122,108,122,111,116,115,110,111,76,12,76,79,98,108,98,109,122,77,98,111,95,111,122,76,126,98,111,95,109,85,101,564,87,76,95,108,101,646,122,77,98,110,95,110,122,76,126,98,110,95,108,122,105,127,116,122,77,98,105,95,105,122,76,126,98,105,95,108,85,122,104,118,91,90,76,87,76,122,77,98,104,95,104,122,76,126,98,104,95,108,85,122,107,118,91,122,106,90,79,87,76,122,77,98,107,95,107,122,76,126,98,107,95,108,13,73,120,646,120,640,119,77},P={{K={{55,14,38,73,82,151,182,168,202,229,30,50,45}},C={112,77,85,122,77,118,91,112,76,12,79,-1,119,-1},P={},U={{1,28},{1,30}},nParams=0}},U={{1,342},{1,341},{1,22},{1,337},{1,336}},nParams=0},{K={1,0,{13,0,40,67,121}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,101,127,122,77,98,76,95,76,122,76,126,98,76,115,79,111,76,90,76,87,76,122,77,98,79,95,79,122,76,126,98,79,76,13,77,120,127,119,77},P={{K={1,0,{57,10,58,76,122,149,143,162,206,231}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{0,0}},nParams=0}},U={{1,339}},nParams=0},{K={1,0,{47,6,39,75,112,137,178,179,200,227,9,58,33},{61,11,36,94,115,159,150}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,90,77,87,76,122,77,98,76,95,76,122,76,126,98,76,122,76,13,76,122,77,98,79,95,79,122,76,126,98,79,112,79,122,79,118,85,122,78,118,91,111,76,12,79,76,13,75,119,77},P={{K={1,0,{46,19,32,65,69,151,128,190,200,225},{61,12,43,66,119,159,150,173,220},{57,12,37,85,81,148,145,186,219,214,19,8,43,73},{200,19,33,83,118,145,141,174,226,249,19,22,24,79,102,142},5,2,{238,8,59,93},{244,3},{211,14,50,67,114,113,218},{232,9,37},{228,2,32},4,{250,6,59},{201,54,36,93,79,109},{219,30,36,84,87,96,128,187}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,92,101,101,122,77,98,79,95,79,122,76,126,98,79,112,76,90,77,87,76,119,77,120,101,112,79,90,77,98,78,122,77,98,73,95,73,122,76,126,98,73,95,78,92,101,15,119,77,120,15,112,78,122,78,118,85,101,23,87,76,112,78,122,78,118,85,122,73,118,91,122,72,90,79,98,72,95,78,122,78,118,85,101,57,87,76,95,78,122,78,118,85,122,73,118,91,122,72,90,79,98,75,122,77,98,74,95,74,122,76,126,98,74,95,72,92,85,92,101,192,87,76,95,75,92,101,222,119,77,120,222,122,77,98,69,95,69,122,76,126,98,69,112,73,95,77,122,75,106,126,122,74,115,69,122,68,118,106,84,13,73,115,71,122,70,118,115,69,122,65,118,112,73,90,76,122,64,106,122,76,115,69,122,67,118,112,73,90,76,122,64,106,90,78,98,68,122,77,98,71,95,71,122,76,126,98,71,95,72,122,66,115,66,122,70,118,95,75,122,93,118,95,68,126,95,75,122,93,118,90,79,116,119,77},P={},U={{0,3},{0,0},{0,4},{0,5},{0,1}},nParams=1}},U={{1,344},{1,338},{1,21},{1,335},{1,341},{1,22},{1,339}},nParams=0},{K={1,0,{45,12,57,96,96,143,164,169,204,241,21,58,33},{45,1,62,96,121,140,146,173,202,219,15,20},{42,33,34,92,37},{230,20,35,95,87,152,130,185,213,226},16,80},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,76,100,101,106,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,127,116,120,106,122,77,98,79,95,79,122,76,126,98,79,112,77,122,78,118,101,18,122,77,98,78,95,78,122,76,126,98,78,64,112,77,85,122,78,118,91,127,115,73,122,72,118,122,75,122,74,12,79,-1,67,76,87,76,120,18,119,77},P={},U={{1,346}},nParams=0},{K={1,0,{58,6,61,127,121,154,152,162,223,224},{14,7,43,92,122},{67,3,36,95,99,221,128,166,195,250,9,92,101,95,116,155,247,240,158,189,66,104,111,28,58,220,249,255,69,25,243,187,171,165,233,101,87,95,55,9,141,193,187,195,147,109,49,45,31,103,255,209,213,137,131,11,91,53,121,21,231,175,167,153,29,113,75,83,3,253,129,221,175,247,111,97,37,57,19,155,203,197,201,133,119,63,87,41,109,225,219,163,179,141,17,77,63,71,31,241,181,169,163,235,123,85,89,53,7,143,199,185,253,145,107,51,35,29,97,253,207,215,143,129,219,226,213,246,17,17,117},{233,22,45,91,106,141},{245,6,47,95,124},{235,6,61,81,104,116},{174},{199,2,49,68,125,97,156,171,198},{195,2,63,83,91,106,155,188,193,216,233,14,33,87,86,153,166,167,208,228,14},{206,25,63,89,112,107,131,180},{244,25,33,80,113,98},{238,1,38,87,65,114},{172,11,122,30,69},{231,17,34,84},{237,29,56,82,81},{196,23,57,82,80,98},{192,18,33,119,64,106,157,163,213},{200,29,52,36,96,101,128,171,202,231,226,25,58,88},{199,0,54,32,73,98,154,189,237,202,228,5,7,92,81,125},{181,18,49},{193,24,46,42,93,102,154,181},{223,25,57,42,67,100,131,184,167},{179,89,119,28,100,68,222},{},{169,25,95,98,94,47,214,189,251,142,226,125,125,99,9,47,213,231,167,200,227,7,121,92,74,103,158,165,128,129,251,8,55,19,19,55,221,255,139,175,181,71,99,7,45,42,203,241,144,232,189,72,43,92,119,139,219,235,145,183,93,95,47,64,123,143,193,164,194,255,22,45,120,9,99,144,191,235,152,183,69,119,112,31,61,223,232,135,149,162,83,105,24,80,53,192,179,212,207,243,83},{216,29,15,45}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,92,101,89,119,77,120,89,112,76,85,122,79,118,91,90,76,98,76,122,77,98,79,95,79,122,76,126,98,79,115,78,111,76,90,76,87,76,70,122,73,98,73,98,78,122,77,98,72,95,72,122,76,126,98,72,115,72,95,76,12,76,78,98,69,98,74,98,75,93,75,74,69,73,68,73,71,95,75,95,74,95,69,12,79,79,98,71,98,68,95,68,98,69,95,68,76,100,101,422,122,77,98,70,95,70,122,76,126,98,70,95,68,122,77,71,101,209,122,77,98,65,95,65,122,76,126,98,65,115,75,122,74,118,95,78,95,73,90,79,87,76,120,209,122,69,122,69,98,67,98,64,95,71,122,68,118,98,66,122,77,98,93,95,93,122,76,126,98,93,95,66,101,327,95,66,85,122,71,118,91,122,70,90,79,98,92,122,77,98,95,95,95,122,76,126,98,95,95,92,101,325,122,77,98,94,95,94,122,76,126,98,94,64,115,65,122,64,118,122,67,115,66,122,93,118,95,92,122,92,118,90,76,115,66,122,93,118,95,92,122,95,118,12,76,-1,67,76,98,64,120,325,120,327,122,77,98,89,95,89,122,76,126,98,89,95,66,85,101,364,87,76,112,78,122,68,118,101,458,95,66,85,122,94,118,91,122,89,90,79,98,88,112,78,122,68,118,85,122,94,118,91,122,89,90,79,98,91,122,77,98,90,95,90,122,76,126,98,90,95,88,85,101,281,87,76,95,91,101,456,122,77,98,85,95,85,122,76,126,98,85,64,115,65,122,64,118,122,88,115,66,122,93,118,95,88,122,91,118,95,91,122,91,118,113,122,90,118,12,76,-1,67,76,98,67,120,456,120,458,95,71,112,78,88,85,101,478,87,76,122,85,85,92,101,470,87,76,122,84,98,84,122,77,98,87,95,87,122,76,126,98,87,64,115,75,122,74,118,95,78,115,65,122,64,118,122,87,95,71,122,86,118,95,84,95,64,95,67,12,72,-1,67,76,87,76,73,70,73,65,73,64,73,67,73,66,73,93,73,92,73,95,73,94,73,89,73,88,73,91,73,90,73,85,73,84,73,87,120,24,122,77,98,86,95,86,122,76,126,98,86,115,78,111,79,90,76,87,76,119,77},P={{K={1,0,{46,6,61,107,112,136,130,181,196,227,13,54,42,69},{13,16,56,89,120,155},{25,10,57,92,118,137},{244,9,56,83,116,222,148,166,209,239,25,16,59,14,52,223,132}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,117,122,77,98,76,95,76,122,76,126,98,76,64,112,77,85,122,79,118,91,115,78,122,73,118,122,72,112,76,83,12,79,-1,67,76,87,76,120,117,119,77},P={},U={{0,2},{1,1}},nParams=0},{K={1,0,{46,6,61,123,112,131,149},{10,5,40,92,115},{28,10,37,82,118,137},{138}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,122,122,77,98,76,95,76,122,76,126,98,76,64,112,77,85,122,79,118,91,115,78,122,73,118,112,76,122,72,12,79,-1,67,76,87,76,120,122,119,77},P={},U={{0,0},{1,3}},nParams=0}},U={{1,347},{1,19},{1,346},{1,22}},nParams=0},{K={1,0,{9,2,58,68},{9,5,35,68},0.5},C={122,77,98,77,95,77,122,76,126,98,77,127,101,118,122,77,98,76,95,76,122,76,126,98,76,112,77,90,77,87,76,122,77,98,79,95,79,122,76,126,98,79,115,79,122,78,118,122,73,90,76,87,76,73,76,73,79,120,70,119,77},P={},U={{1,349}},nParams=0},{K={1,0,{9,2,58,68},{26,1,44,85,100}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,122,78,118,112,77,90,76,87,76,119,77},P={},U={{1,349}},nParams=0},{K={1,0,{9,2,58,68},{26,1,44,85,100}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,122,78,118,112,77,90,76,87,76,119,77},P={},U={{1,349}},nParams=0},{K={1,0,{41,17,38,67,121,175,128,181,202,246,13},{45,1,62,102,119,144,151,173,221}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,126,122,77,98,76,95,76,122,76,126,98,76,64,112,77,122,79,118,85,122,78,118,91,112,76,12,77,-1,67,76,87,76,120,126,119,77},P={},U={{1,4},{1,340}},nParams=0},{K={{47,19,40,65,127,173,190,183,204,244,3},{42,3,36,91,113},1,0,{44,0,39,84,116,137,195,185,195,244,2,4,53},{198,15,34,86,94,151,150,185,196,213,20,11,36,74},{194,15,44,65,120,156,145,174,195},{196,1,32,80,92,105,148,191,198,219,22,13,38,84,89,154,161,164,207,231,9},{203,28,34,84,117,110,142,169},{214,5,63,66,76,99,154,186},{241,10,34,92},{245,28,51,79,112}},C={112,77,122,77,118,85,101,95,87,76,112,77,122,77,118,122,76,118,98,77,122,79,98,76,95,76,122,78,126,98,76,95,77,92,85,92,101,96,87,76,95,77,122,73,88,101,126,119,77,120,126,112,76,85,122,72,118,91,95,77,90,79,98,79,122,79,98,78,95,78,122,78,126,98,78,95,79,92,85,92,101,23,87,76,95,79,122,75,118,92,101,45,119,77,120,45,112,79,122,75,118,98,73,95,73,85,101,52,87,76,95,73,85,122,74,118,91,122,69,90,79,98,72,95,72,85,101,202,87,76,95,72,122,68,118,98,75,95,79,122,75,118,85,122,74,118,91,122,69,90,79,98,74,95,74,85,101,232,87,76,95,74,122,68,118,98,69,122,79,98,68,95,68,122,78,126,98,68,95,75,92,85,92,101,243,87,76,95,69,92,101,137,119,77,120,137,122,79,98,71,95,71,122,78,126,98,71,115,71,122,70,118,111,76,90,76,87,76,119,77},P={{K={{45,4,43,66,112,144,171,188},{49,3,47,64,125,142,149,162,201},50,{61,34,56,81,123,153},{54,11,56,69,118,147,128,172},{238,3,59},{195,8,41,74,79,154,137,164,210,254,9,26},1,0,{210,15,51,66,115,112,219},{200,10,41,113,114,113,138,170},9000000000,{215,12,33,92,113,113},{219,11,32,105,84,103,152,183,253,240,229,8,60,83,120},{204,1,32,86},{194,5,59,93,76,103,135,176,233,212,231,24,55,108,103,116,143},{216,20,54,73,70,109},{251,29,42,85,87,122,145,181,217},{203,18,53,83,64,101,161,182,207,215,250,43,48,72,85,117,130,170,241,250,236,12,57,67},{250,29,57,43},100,{192,25,47,43,92,103,155,180},1.5,{211,22,57,40,79,99},{254,24,43,45},{230,27,4},90000000,900000000,{197,18,23,31,74,121,148,130,174,217,234},{236,31,23,33},{238,30,12,63},2,{235,226,6,33,95}},C={112,77,122,77,118,122,76,118,122,79,78,85,101,88,87,76,112,77,122,78,118,85,92,101,81,87,76,76,98,77,115,73,122,72,118,122,75,90,76,98,76,122,74,98,79,95,79,122,69,126,98,79,95,76,122,77,115,68,122,72,118,90,77,116,122,74,98,78,95,78,122,69,126,98,78,95,76,122,71,115,68,122,72,118,122,70,122,70,122,70,90,78,116,122,74,98,73,95,73,122,69,126,98,73,95,76,122,65,112,77,116,122,74,98,72,95,72,122,69,126,98,72,112,76,85,122,64,118,91,115,67,122,66,118,122,93,118,109,90,78,87,76,115,92,122,95,118,98,75,122,74,98,74,95,74,122,69,126,98,74,115,92,122,95,122,69,122,69,123,116,115,94,90,77,122,69,98,68,98,69,122,74,98,71,95,71,122,69,126,98,71,122,74,98,70,95,70,122,69,126,98,70,112,77,85,101,158,87,76,112,79,101,299,122,74,98,65,95,65,122,69,126,98,65,95,68,122,89,126,98,68,115,78,122,72,118,112,79,122,88,118,90,76,115,78,122,72,118,122,69,122,91,122,69,90,78,106,115,78,122,90,118,115,85,122,84,118,95,68,90,76,122,69,122,69,90,78,106,98,64,122,74,98,67,95,67,122,69,126,98,67,112,77,122,78,95,64,116,122,74,98,66,95,66,122,69,126,98,66,112,77,122,77,115,68,122,72,118,122,87,122,86,122,87,90,78,116,122,74,98,93,95,93,122,69,126,98,93,112,77,122,81,115,68,122,72,118,122,86,122,86,122,86,90,78,116,120,299,122,74,98,92,95,92,122,69,126,98,92,115,80,122,83,118,90,77,87,76,73,70,73,65,73,64,73,67,73,66,73,93,73,92,95,69,122,82,126,115,94,90,77,78,85,92,101,470,87,76,112,77,92,85,92,101,490,87,76,112,77,122,65,118,92,101,242,122,74,98,95,95,95,122,69,126,98,95,115,109,111,76,90,76,87,76,122,74,98,94,95,94,122,69,126,98,94,112,76,85,122,64,118,91,115,67,122,66,118,122,93,118,127,90,78,87,76,122,74,98,89,95,89,122,69,126,98,89,95,77,85,101,418,87,76,112,77,101,638,122,74,98,88,95,88,122,69,126,98,88,112,77,122,78,95,77,116,122,74,98,91,95,91,122,69,126,98,91,112,77,122,77,115,68,122,72,118,90,77,116,122,74,98,90,95,90,122,69,126,98,90,112,77,122,81,115,68,122,72,118,90,77,116,120,638,122,74,98,85,95,85,122,69,126,98,85,115,92,122,95,95,75,116,119,77},P={{K={1,0,{57,6,58,91,103,148,152}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{1,1}},nParams=0}},U={{1,6},{1,5},{1,8}},nParams=0}},U={{1,4},{1,19},{1,22}},nParams=0},{K={1,0,{53,22,36,95,69,151,128,190,200,225}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,127,88,116,122,77,98,79,95,79,122,76,126,98,79,95,77,101,123,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,10,122,77,98,73,95,73,122,76,126,98,73,112,79,90,77,87,76,119,77},P={},U={{1,335},{1,343},{1,342}},nParams=1},{K={1,0,{46,19,32,65,69,151,128,190,200,225}},C={122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,95,77,127,88,116,122,77,98,79,95,79,122,76,126,98,79,95,77,101,123,122,77,98,78,95,78,122,76,126,98,78,112,76,90,77,87,76,120,10,122,77,98,73,95,73,122,76,126,98,73,112,79,90,77,87,76,119,77},P={},U={{1,335},{1,345},{1,344}},nParams=1},{K={1,0,{13,0,40,67,121}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,111,76,90,76,87,76,119,77},P={{K={{58,5,35,121,114,155},{50,3,37,75},{46,6,61,91,124,149,134,180},{55,7,37,94},{12,0,63,69,126,147,132,186},{196,3,63,81,106,151,148,190,217,249,18},{236,2,35,70,57,140,128,191,197,254,19,4,58},{195,12,42,115,104,111,147,188,208,247,6},{208,0,43,80},{200,15,54,66},{232,14,63,66},{207,15,61,86,80,101,135,181},{236,8,42,91,112,100,153,181},{229,11,58,79,0,109,137,171,218,247,234,14},1,0,{202,21,51,113,66,107,138,185},{225,23,54,75,4,104,153,184,216},{204,23,61,116,64,114,161,190,222,200,236,29},{195,17,52,53,109,105,139,186,215,202,238},{203,16,61,32,82,97,135},{194,31,59,42,92,93,156,179,166,210},{223,24,8,10},{198,29,38,48},{222,28,49,48,11,122,146,164,161,192,225,17},{213,30,4,4,89,102,140,177,170},{192,21,13,40,76,119},{208,9,12,43},{195,18,4,46,67,112,176,132,190,207,250,23,59},{203,27,16,6,89,116,142,131,186,215},{208,24,11,36,67,114,169,139,172,194,240,40,4,51,89,122,151,184,182},{201,229,18,5,85,118,145,150,175,249,248,24,7,48,75,103},{200,228,19,11,92,117,155,128,185},{236,240,7,36,81,121,116,185,173,198,247,19,13,41},{237,241,6,37,80,120,117,184,172,199,246,18,12,40,30,98,147,138,191,202,231,8,0,43},{220,241,3,60,82,95,109,134,168,221,253,211,3,47,70,113,145,138},{222,245,27,61,78,73,108,189,174,215},{208,229,13,62,84}},C={112,77,85,122,77,118,91,70,85,122,76,122,79,116,85,122,78,122,73,116,85,122,72,122,75,116,90,79,98,77,95,77,85,122,74,118,91,70,85,122,69,122,68,116,85,122,76,122,71,116,85,122,70,122,65,116,85,122,72,122,64,116,90,79,98,76,122,67,98,79,95,79,122,66,126,98,79,95,76,85,122,93,118,91,122,92,90,79,85,122,95,118,91,122,94,70,85,122,89,122,88,116,85,122,91,127,116,85,122,90,122,85,116,90,78,87,76,122,67,98,78,95,78,122,66,126,98,78,95,76,85,122,84,118,91,70,85,122,90,122,87,116,85,122,86,111,76,116,90,79,87,76,122,67,98,73,95,73,122,66,126,98,73,112,78,122,81,112,73,122,94,118,116,122,67,98,72,95,72,122,66,126,98,72,112,72,85,122,80,118,91,112,78,90,79,87,76,122,67,98,75,95,75,122,66,126,98,75,112,75,85,122,80,118,91,112,78,90,79,87,76,122,67,98,74,95,74,122,66,126,98,74,112,75,85,122,83,118,91,90,76,87,76,122,67,98,69,95,69,122,66,126,98,69,112,75,85,122,82,118,91,70,85,122,67,122,94,116,90,79,87,76,122,67,98,68,95,68,122,66,126,98,68,112,72,85,122,109,118,91,122,108,90,79,87,76,122,67,98,71,95,71,122,66,126,98,71,112,75,85,122,109,118,91,122,111,90,79,87,76,122,67,98,70,95,70,122,66,126,98,70,112,75,85,122,110,118,91,95,77,90,79,87,76,122,67,98,65,95,65,122,66,126,98,65,112,72,85,122,105,118,91,95,77,90,79,87,76,122,67,98,64,95,64,122,66,126,98,64,115,104,111,79,90,76,87,76,119,77},P={{K={1,0,{13,2,32,93,102},{43,10,38,95,119,152}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,112,77,12,76,78,98,78,98,79,98,76,93,76,79,78,73,73,95,76,95,79,95,78,12,79,76,98,73,95,73,98,78,95,73,76,100,101,7,122,77,98,72,95,72,122,76,126,98,72,112,76,95,73,90,76,87,76,73,72,120,81,122,77,98,75,95,75,122,76,126,98,75,112,79,85,122,78,118,91,90,76,87,76,119,77},P={},U={{0,1},{0,2},{0,3}},nParams=0},{K={1,0,{49,12,40,75,84,142,149,168,193,252,24,59,6,68,127,145,180,164}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,90,76,87,76,119,77},P={},U={{0,6}},nParams=0}},U={{0,0},{0,1},{0,2},{0,3},{0,4},{0,5},{0,6}},nParams=0}},U={{1,117},{1,27},{1,55},{1,1},{1,4},{1,2},{1,3}},nParams=0},{K={1,0,{13,0,40,67,121}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,111,76,90,76,87,76,119,77},P={{K={{28,0,42,72},{59,7,60,125,113,136,150,175,207,247},{46,23,40,91,102},{63,0,46,116,100,157,133,175,207,246,22,5,10,77,112,157,178},0,{204,3,42,70},1,{209,13,58,98,115,115,143,174,222,253},{243,10,46,89,119},{240,3,51,93},60,{212,9,60,92,123,118,185,164,211,236,242,13,42},{196,2,61,87,122,102,159}},C={115,77,85,122,76,118,91,122,79,90,79,98,77,111,76,98,76,112,76,85,122,78,118,91,95,76,122,73,122,73,90,79,112,79,122,72,90,73,98,79,122,75,98,78,95,78,122,73,126,98,78,95,79,85,122,74,118,91,127,90,79,87,76,122,75,98,73,95,73,122,73,126,98,73,115,69,111,79,90,76,87,76,115,68,90,77,122,73,122,71,98,74,98,75,98,72,122,75,98,69,95,69,122,73,126,98,69,112,78,122,70,118,85,122,65,118,91,111,78,90,79,87,76,119,77},P={{K={{8,21,53,68,125,158},{26,13,58,67,117,142},{45,17,38,69,112,152,149,231,145,245,22,49,49,11,114,152,177,172,219,178,87,120,2,102,72,183,233,253,135,181,48,35,82,78,96,140,233,148,199,232,3,39,7,63,121,203,244,196,189,255,73,106,81,59,103,151,190,147,229,95,64,47,17,122,142},{19,5,62,88},{25,9,36,94,101}},C={64,115,77,122,76,118,122,79,112,77,115,78,122,73,118,95,77,90,76,115,78,122,73,118,95,76,12,76,-1,67,-1,119,-1},P={},U={{0,0}},nParams=2},{K={1,0,{49,2,43,74,121},{44,13,41,88,66,153,154,188}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,101,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,127,116,120,101,119,77},P={},U={{1,2}},nParams=0},{K={1,0,{9,10,42,68},{14,7,43,92,122}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,77,126,13,77,122,77,98,76,95,76,122,76,126,98,76,115,79,90,77,112,76,113,122,77,110,101,239,122,77,98,79,95,79,122,76,126,98,79,112,77,13,79,122,77,98,78,95,78,122,76,126,98,78,115,79,12,77,76,13,76,122,77,98,73,95,73,122,76,126,98,73,122,76,13,77,122,76,98,72,122,77,98,75,95,75,122,76,126,98,75,115,78,111,76,90,76,87,76,112,73,112,79,95,72,90,79,98,74,122,77,98,69,95,69,122,76,126,98,69,115,78,111,79,90,76,87,76,122,77,98,68,95,68,122,76,126,98,68,115,78,111,78,90,76,87,76,120,239,119,77},P={{K={1,0,{16,2,61,71},{24,8,37,95,100},{49,0,63,70,120,143,136},{211,3,62,68,125,140,183,190,209,226,15,43,60,75,121},{197,6,57,82,57,175,140,165,214},{197,13,58,98,123,108,147,169}},C={122,77,98,77,95,77,122,76,126,98,77,64,115,79,122,78,118,112,77,122,73,118,122,72,118,122,75,118,85,122,74,118,91,12,76,-1,67,76,13,76,119,77},P={},U={{0,3},{1,5}},nParams=0},{K={1,0,{46,6,61,123,112,131,149}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,85,122,79,118,91,112,76,90,79,87,76,119,77},P={},U={{0,5},{1,7}},nParams=0},{K={1,0,{49,2,43,74,121},{44,13,41,88,66,153,154,188},{43,0,51,69}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,122,79,118,101,112,122,77,98,76,95,76,122,76,126,98,76,112,77,122,79,118,122,78,127,116,122,77,98,79,95,79,122,76,126,98,79,112,77,122,79,118,122,73,112,76,116,120,112,119,77},P={},U={{0,5},{1,7}},nParams=0}},U={{1,6},{1,5},{1,7},{1,0},{1,1},{1,2}},nParams=0}},U={{0,0},{0,1},{0,2},{0,3}},nParams=0}},U={{1,11},{1,1},{1,10},{1,21}},nParams=0},{K={1,0,{13,0,40,67,121}},C={122,77,98,77,95,77,122,76,126,98,77,115,79,111,76,90,76,87,76,119,77},P={{K={1,0,{46,0,59,74,112,149,166,178,196},{10,5,57,91},{27,0,39,80,110},0.35},C={111,76,98,77,122,77,98,76,95,76,122,76,126,98,76,95,77,112,77,122,79,118,90,76,87,76,122,77,98,79,95,79,122,76,126,98,79,115,78,122,73,118,122,72,111,79,90,79,87,76,122,77,98,78,95,78,122,76,126,98,78,115,78,122,73,118,122,77,111,78,90,79,87,76,119,77},P={{K={1,0,{20,19,40,70,103,136},{57,1,62,116,115,143,129,173,192,240,27,14,50,95},{54,22,10},{212,3,52,70,84,159,134,175,220},{213,2,53,71,91,138,145,191,222,249},{212,1,61,93,120,108,131},{240,29,61,92,117,102},{232,5,39,83,110},{241,4,34,67,111,106,135,168},{210,9,42,76},{},{235,1,57,88,65,114},{255,6,38,78,64,107,158},{250,28,55,69,71,122},{252,30,37,81,71},{225,27,43,93},{254,22,45,75,76,101,150,164},{222,21,40,37,72,120},{255,22,58,45,75},{200},56},C={122,77,98,76,95,76,122,76,126,98,76,95,77,92,101,89,119,77,120,89,122,77,98,79,95,79,122,76,126,98,79,64,115,79,95,77,85,122,78,118,91,12,76,-1,67,78,98,72,98,73,98,78,93,78,73,72,73,75,73,74,95,78,95,73,95,72,12,79,79,98,74,98,75,95,75,98,72,95,75,76,100,101,316,122,77,98,69,95,69,122,76,126,98,69,95,74,85,122,73,118,91,122,72,90,79,85,92,101,55,87,76,95,74,85,122,73,118,91,122,75,90,79,85,101,201,87,76,95,74,122,74,118,101,272,64,115,69,122,68,118,115,71,95,74,122,70,118,85,92,101,214,87,76,122,65,12,76,-1,67,76,98,68,95,68,122,64,88,85,92,101,255,87,76,95,68,122,67,88,85,92,101,240,87,76,95,68,122,66,88,85,92,101,133,87,76,95,68,122,93,88,85,92,101,158,87,76,95,68,122,92,88,85,92,101,147,87,76,95,68,122,95,88,98,71,122,77,98,70,95,70,122,76,126,98,70,95,71,85,101,186,87,76,95,74,122,94,118,101,278,115,89,111,76,12,76,79,98,64,98,65,122,77,98,67,95,67,122,76,126,98,67,95,65,85,101,341,87,76,95,64,85,101,360,87,76,95,64,122,88,118,122,76,71,85,101,383,87,76,95,64,122,88,118,122,91,69,101,276,122,77,98,66,95,66,122,76,126,98,66,95,74,122,70,122,65,116,122,77,98,93,95,93,122,76,126,98,93,95,74,122,74,109,116,120,276,120,278,120,272,73,69,73,68,73,71,73,70,73,65,73,64,73,67,73,66,73,93,120,117,119,77},P={{K={{43,0,53,72,125,141},{61,0,59,65,120,143,148,163,255,251,2,59}},C={112,77,122,77,118,122,76,118,119,76},P={},U={{1,7}},nParams=0}},U=nil,nParams=1},{K={1,0,{46,0,59,74,112,149,166,178,196}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,112,76,122,79,118,90,76,87,76,119,77},P={},U={{1,0},{0,0}},nParams=0},{K={1,0,{46,0,59,74,112,149,166,178,196}},C={122,77,98,77,95,77,122,76,126,98,77,112,77,112,76,122,79,118,90,76,87,76,119,77},P={},U={{1,0},{0,0}},nParams=0}},U={{0,0}},nParams=0}},U={{1,1}},nParams=0}}
-return _0_lO00(_IO123,_1l_24,_lO111,__1125)
+local function _xmksbpg515ed63dmksdi3()
+  local _zmksbph515ed63emksdi6 = game:GetService(_xmksat8515ed1b5mksatf({52, 83, 70, 84, 44, 82, 85, 91, 91, 59, 78, 92, 97, 85, 80, 83}, 63, 928))
+  local _mmksbpi515ed63fmksdi9 = game:GetService(_xmksat8515ed1b5mksatf({51, 87, 70, 71, 81, 55, 74, 88, 93, 81, 76, 79}, 63, 928))
+  do
+    local _mksbpj515ed640mksdic = 1
+    _mksbpj515ed640mksdic = (_mksbpj515ed640mksdic + 0)
+    _mmksav8515ed1fdmksazf = {walkspeed = {enabled = false, mode = _xmksat8515ed1b5mksatf({35, 69, 71, 67, 88, 80, 89}, 63, 928), value = 16, default = 16}, jump = {enabled = false, value = 50, default = 50, infinite = false}, gravity = {enabled = false, value = 196.2, default = 196.2}, fly = {enabled = false, speed = 50, _bp = nil, _bv = nil}, tp = {enabled = false, distance = 20}, noclip = {enabled = false}}
+  end
+  local function __mksbpk515ed641mksdif()
+    local _xmksbpl515ed642mksdii = _mmksav3515ed1f8mksaz0.Character
+    do
+      local _zmksbpm515ed643mksdil = 1
+      _zmksbpm515ed643mksdil = (_zmksbpm515ed643mksdil + 0)
+      if ((((2 * 9) % 9) == 0) and not _xmksbpl515ed642mksdii) then
+        return nil
+      end
+    end
+    local _mmksbpn515ed644mksdio = _xmksbpl515ed642mksdii:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928))
+    local _mksbpo515ed645mksdir = _xmksbpl515ed642mksdii:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928))
+    return _xmksbpl515ed642mksdii, _mmksbpn515ed644mksdio, _mksbpo515ed645mksdir
+  end
+  local __mksbpp515ed646mksdiu = {}
+  do
+    local __mksbpu515ed64bmksdj9 = 1
+    __mksbpu515ed64bmksdj9 = (__mksbpu515ed64bmksdj9 + 0)
+    _zmksbph515ed63emksdi6.InputBegan:Connect(function(_xmksbpq515ed647mksdix, _zmksbpr515ed648mksdj0)
+      do
+        local _mksbpt515ed64amksdj6 = 1
+        _mksbpt515ed64amksdj6 = (_mksbpt515ed64amksdj6 + 0)
+        if (((59 + 23) == 82) and (_xmksbpq515ed647mksdix.UserInputType == Enum.UserInputType.Keyboard)) then
+          do
+            local _mmksbps515ed649mksdj3 = 1
+            _mmksbps515ed649mksdj3 = (_mmksbps515ed649mksdj3 + 0)
+            __mksbpp515ed646mksdiu[_xmksbpq515ed647mksdix.KeyCode] = true
+          end
+        end
+      end
+    end)
+  end
+  do
+    local _mksbpy515ed64fmksdjl = 1
+    _mksbpy515ed64fmksdjl = (_mksbpy515ed64fmksdjl + 0)
+    _zmksbph515ed63emksdi6.InputEnded:Connect(function(_xmksbpv515ed64cmksdjc)
+      do
+        local _mmksbpx515ed64emksdji = 1
+        _mmksbpx515ed64emksdji = (_mmksbpx515ed64emksdji + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_xmksbpv515ed64cmksdjc.UserInputType == Enum.UserInputType.Keyboard)) then
+          do
+            local _zmksbpw515ed64dmksdjf = 1
+            _zmksbpw515ed64dmksdjf = (_zmksbpw515ed64dmksdjf + 0)
+            __mksbpp515ed646mksdiu[_xmksbpv515ed64cmksdjc.KeyCode] = nil
+          end
+        end
+      end
+    end)
+  end
+  local __mksbpz515ed650mksdjo = false
+  local function _xmksbq0515ed651mksdjr()
+    do
+      local _zmksbq1515ed652mksdju = 1
+      _zmksbq1515ed652mksdju = (_zmksbq1515ed652mksdju + 0)
+      if (((28 + 53) == 81) and __mksbpz515ed650mksdjo) then
+        return
+      end
+    end
+    do
+      local _mmksbq2515ed653mksdjx = 1
+      _mmksbq2515ed653mksdjx = (_mmksbq2515ed653mksdjx + 0)
+      __mksbpz515ed650mksdjo = true
+    end
+    do
+      local _zmksbr5515ed67amksdn6 = 1
+      _zmksbr5515ed67amksdn6 = (_zmksbr5515ed67amksdn6 + 0)
+      _zmksav2515ed1f7mksayx:BindToRenderStep(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 39, 43, 57, 87, 77, 78, 78}, 63, 928), (Enum.RenderPriority.Input.Value + 1), function(_mksbq3515ed654mksdk0)
+        do
+          local _zmksbqb515ed65cmksdko = 1
+          _zmksbqb515ed65cmksdko = (_zmksbqb515ed65cmksdko + 0)
+          if (((45 * 43) == (43 * 45)) and (not _mmksav8515ed1fdmksazf.walkspeed.enabled or (_mmksav8515ed1fdmksazf.walkspeed.mode ~= _xmksat8515ed1b5mksatf({34, 38, 83, 67, 80, 73}, 63, 928)))) then
+            local __mksbq4515ed655mksdk3, _xmksbq5515ed656mksdk6 = __mksbpk515ed641mksdif()
+            do
+              local _mksbq8515ed659mksdkf = 1
+              _mksbq8515ed659mksdkf = (_mksbq8515ed659mksdkf + 0)
+              if ((((29 * 11) % 11) == 0) and _xmksbq5515ed656mksdk6) then
+                do
+                  local _zmksbq6515ed657mksdk9 = 1
+                  _zmksbq6515ed657mksdk9 = (_zmksbq6515ed657mksdk9 + 0)
+                  _xmksbq5515ed656mksdk6.WalkSpeed = _mmksav8515ed1fdmksazf.walkspeed.default
+                end
+                do
+                  local _mmksbq7515ed658mksdkc = 1
+                  _mmksbq7515ed658mksdkc = (_mmksbq7515ed658mksdkc + 0)
+                  _xmksbq5515ed656mksdk6.AutoRotate = true
+                end
+              end
+            end
+            do
+              local __mksbq9515ed65amksdki = 1
+              __mksbq9515ed65amksdki = (__mksbq9515ed65amksdki + 0)
+              __mksbpz515ed650mksdjo = false
+            end
+            do
+              local _xmksbqa515ed65bmksdkl = 1
+              _xmksbqa515ed65bmksdkl = (_xmksbqa515ed65bmksdkl + 0)
+              _zmksav2515ed1f7mksayx:UnbindFromRenderStep(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 39, 43, 57, 87, 77, 78, 78}, 63, 928))
+            end
+            return
+          end
+        end
+        local _mmksbqc515ed65dmksdkr, _mksbqd515ed65emksdku, __mksbqe515ed65fmksdkx = __mksbpk515ed641mksdif()
+        do
+          local _xmksbqf515ed660mksdl0 = 1
+          _xmksbqf515ed660mksdl0 = (_xmksbqf515ed660mksdl0 + 0)
+          if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and ((not _mmksbqc515ed65dmksdkr or not _mksbqd515ed65emksdku) or not __mksbqe515ed65fmksdkx)) then
+            return
+          end
+        end
+        do
+          local _zmksbqg515ed661mksdl3 = 1
+          _zmksbqg515ed661mksdl3 = (_zmksbqg515ed661mksdl3 + 0)
+          _mksbqd515ed65emksdku.WalkSpeed = 0
+        end
+        do
+          local _mmksbqh515ed662mksdl6 = 1
+          _mmksbqh515ed662mksdl6 = (_mmksbqh515ed662mksdl6 + 0)
+          _mksbqd515ed65emksdku.AutoRotate = false
+        end
+        local _mksbqi515ed663mksdl9 = workspace.CurrentCamera
+        local __mksbqj515ed664mksdlc = (_mmksav8515ed1fdmksazf.walkspeed.value * _mksbq3515ed654mksdk0)
+        local _xmksbqk515ed665mksdlf = _mksbqi515ed663mksdl9.CFrame.LookVector
+        local _zmksbql515ed666mksdli = _mksbqi515ed663mksdl9.CFrame.RightVector
+        local _mmksbqm515ed667mksdll = Vector3.new(_xmksbqk515ed665mksdlf.X, 0, _xmksbqk515ed665mksdlf.Z)
+        local _mksbqn515ed668mksdlo = Vector3.new(_zmksbql515ed666mksdli.X, 0, _zmksbql515ed666mksdli.Z)
+        do
+          local _xmksbqp515ed66amksdlu = 1
+          _xmksbqp515ed66amksdlu = (_xmksbqp515ed66amksdlu + 0)
+          if (((18 * 49) == (49 * 18)) and (_mmksbqm515ed667mksdll.Magnitude > 0)) then
+            do
+              local __mksbqo515ed669mksdlr = 1
+              __mksbqo515ed669mksdlr = (__mksbqo515ed669mksdlr + 0)
+              _mmksbqm515ed667mksdll = _mmksbqm515ed667mksdll.Unit
+            end
+          end
+        end
+        do
+          local _mmksbqr515ed66cmksdm0 = 1
+          _mmksbqr515ed66cmksdm0 = (_mmksbqr515ed66cmksdm0 + 0)
+          if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (_mksbqn515ed668mksdlo.Magnitude > 0)) then
+            do
+              local _zmksbqq515ed66bmksdlx = 1
+              _zmksbqq515ed66bmksdlx = (_zmksbqq515ed66bmksdlx + 0)
+              _mksbqn515ed668mksdlo = _mksbqn515ed668mksdlo.Unit
+            end
+          end
+        end
+        local _mksbqs515ed66dmksdm3 = Vector3.new()
+        do
+          local _xmksbqu515ed66fmksdm9 = 1
+          _xmksbqu515ed66fmksdm9 = (_xmksbqu515ed66fmksdm9 + 0)
+          if (((63 * 95) == (95 * 63)) and __mksbpp515ed646mksdiu[Enum.KeyCode.W]) then
+            do
+              local __mksbqt515ed66emksdm6 = 1
+              __mksbqt515ed66emksdm6 = (__mksbqt515ed66emksdm6 + 0)
+              _mksbqs515ed66dmksdm3 = (_mksbqs515ed66dmksdm3 + (_mmksbqm515ed667mksdll * __mksbqj515ed664mksdlc))
+            end
+          end
+        end
+        do
+          local _mmksbqw515ed671mksdmf = 1
+          _mmksbqw515ed671mksdmf = (_mmksbqw515ed671mksdmf + 0)
+          if (((6 + 87) == 93) and __mksbpp515ed646mksdiu[Enum.KeyCode.S]) then
+            do
+              local _zmksbqv515ed670mksdmc = 1
+              _zmksbqv515ed670mksdmc = (_zmksbqv515ed670mksdmc + 0)
+              _mksbqs515ed66dmksdm3 = (_mksbqs515ed66dmksdm3 - (_mmksbqm515ed667mksdll * __mksbqj515ed664mksdlc))
+            end
+          end
+        end
+        do
+          local __mksbqy515ed673mksdml = 1
+          __mksbqy515ed673mksdml = (__mksbqy515ed673mksdml + 0)
+          if (((91 * 74) == (74 * 91)) and __mksbpp515ed646mksdiu[Enum.KeyCode.A]) then
+            do
+              local _mksbqx515ed672mksdmi = 1
+              _mksbqx515ed672mksdmi = (_mksbqx515ed672mksdmi + 0)
+              _mksbqs515ed66dmksdm3 = (_mksbqs515ed66dmksdm3 - (_mksbqn515ed668mksdlo * __mksbqj515ed664mksdlc))
+            end
+          end
+        end
+        do
+          local _zmksbr0515ed675mksdmr = 1
+          _zmksbr0515ed675mksdmr = (_zmksbr0515ed675mksdmr + 0)
+          if (((24 + 96) == 120) and __mksbpp515ed646mksdiu[Enum.KeyCode.D]) then
+            do
+              local _xmksbqz515ed674mksdmo = 1
+              _xmksbqz515ed674mksdmo = (_xmksbqz515ed674mksdmo + 0)
+              _mksbqs515ed66dmksdm3 = (_mksbqs515ed66dmksdm3 + (_mksbqn515ed668mksdlo * __mksbqj515ed664mksdlc))
+            end
+          end
+        end
+        do
+          local _xmksbr4515ed679mksdn3 = 1
+          _xmksbr4515ed679mksdn3 = (_xmksbr4515ed679mksdn3 + 0)
+          if (((95 + 7) == 102) and (_mksbqs515ed66dmksdm3.Magnitude > 0)) then
+            local _mmksbr1515ed676mksdmu = (__mksbqe515ed65fmksdkx.Position + _mksbqs515ed66dmksdm3)
+            local _mksbr2515ed677mksdmx = (__mksbqe515ed65fmksdkx.CFrame - __mksbqe515ed65fmksdkx.CFrame.Position)
+            do
+              local __mksbr3515ed678mksdn0 = 1
+              __mksbr3515ed678mksdn0 = (__mksbr3515ed678mksdn0 + 0)
+              __mksbqe515ed65fmksdkx.CFrame = (CFrame.new(_mmksbr1515ed676mksdmu) * _mksbr2515ed677mksdmx)
+            end
+          end
+        end
+      end)
+    end
+  end
+  local function _mmksbr6515ed67bmksdn9()
+    do
+      local _mksbr7515ed67cmksdnc = 1
+      _mksbr7515ed67cmksdnc = (_mksbr7515ed67cmksdnc + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and not __mksbpz515ed650mksdjo) then
+        return
+      end
+    end
+    do
+      local __mksbr8515ed67dmksdnf = 1
+      __mksbr8515ed67dmksdnf = (__mksbr8515ed67dmksdnf + 0)
+      _zmksav2515ed1f7mksayx:UnbindFromRenderStep(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 39, 43, 57, 87, 77, 78, 78}, 63, 928))
+    end
+    do
+      local _xmksbr9515ed67emksdni = 1
+      _xmksbr9515ed67emksdni = (_xmksbr9515ed67emksdni + 0)
+      __mksbpz515ed650mksdjo = false
+    end
+    local _zmksbra515ed67fmksdnl, _mmksbrb515ed680mksdno = __mksbpk515ed641mksdif()
+    do
+      local _xmksbre515ed683mksdnx = 1
+      _xmksbre515ed683mksdnx = (_xmksbre515ed683mksdnx + 0)
+      if (((95 + 93) == 188) and _mmksbrb515ed680mksdno) then
+        do
+          local _mksbrc515ed681mksdnr = 1
+          _mksbrc515ed681mksdnr = (_mksbrc515ed681mksdnr + 0)
+          _mmksbrb515ed680mksdno.WalkSpeed = _mmksav8515ed1fdmksazf.walkspeed.default
+        end
+        do
+          local __mksbrd515ed682mksdnu = 1
+          __mksbrd515ed682mksdnu = (__mksbrd515ed682mksdnu + 0)
+          _mmksbrb515ed680mksdno.AutoRotate = true
+        end
+      end
+    end
+  end
+  do
+    local _xmksbs8515ed6a1mksdqf = 1
+    _xmksbs8515ed6a1mksdqf = (_xmksbs8515ed6a1mksdqf + 0)
+    _zmksav2515ed1f7mksayx.RenderStepped:Connect(function(_zmksbrf515ed684mksdo0)
+      local _mmksbrg515ed685mksdo3, _mksbrh515ed686mksdo6, __mksbri515ed687mksdo9 = __mksbpk515ed641mksdif()
+      do
+        local _xmksbrj515ed688mksdoc = 1
+        _xmksbrj515ed688mksdoc = (_xmksbrj515ed688mksdoc + 0)
+        if (((88 * 18) == (18 * 88)) and ((not _mmksbrg515ed685mksdo3 or not _mksbrh515ed686mksdo6) or not __mksbri515ed687mksdo9)) then
+          return
+        end
+      end
+      do
+        local __mksbrs515ed691mksdp3 = 1
+        __mksbrs515ed691mksdp3 = (__mksbrs515ed691mksdp3 + 0)
+        if (((93 + 80) == 173) and _mmksav8515ed1fdmksazf.walkspeed.enabled) then
+          do
+            local _xmksbro515ed68dmksdor = 1
+            _xmksbro515ed68dmksdor = (_xmksbro515ed68dmksdor + 0)
+            if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (_mmksav8515ed1fdmksazf.walkspeed.mode == _xmksat8515ed1b5mksatf({35, 69, 71, 67, 88, 80, 89}, 63, 928))) then
+              do
+                local _zmksbrk515ed689mksdof = 1
+                _zmksbrk515ed689mksdof = (_zmksbrk515ed689mksdof + 0)
+                _mmksbr6515ed67bmksdn9()
+              end
+              do
+                local _mmksbrl515ed68amksdoi = 1
+                _mmksbrl515ed68amksdoi = (_mmksbrl515ed68amksdoi + 0)
+                _mksbrh515ed686mksdo6.WalkSpeed = _mmksav8515ed1fdmksazf.walkspeed.value
+              end
+              do
+                local _mksbrm515ed68bmksdol = 1
+                _mksbrm515ed68bmksdol = (_mksbrm515ed68bmksdol + 0)
+                _mksbrh515ed686mksdo6.AutoRotate = true
+              end
+            else
+              do
+                local __mksbrn515ed68cmksdoo = 1
+                __mksbrn515ed68cmksdoo = (__mksbrn515ed68cmksdoo + 0)
+                _xmksbq0515ed651mksdjr()
+              end
+            end
+          end
+        else
+          do
+            local _zmksbrp515ed68emksdou = 1
+            _zmksbrp515ed68emksdou = (_zmksbrp515ed68emksdou + 0)
+            _mmksbr6515ed67bmksdn9()
+          end
+          do
+            local _mmksbrq515ed68fmksdox = 1
+            _mmksbrq515ed68fmksdox = (_mmksbrq515ed68fmksdox + 0)
+            _mksbrh515ed686mksdo6.WalkSpeed = _mmksav8515ed1fdmksazf.walkspeed.default
+          end
+          do
+            local _mksbrr515ed690mksdp0 = 1
+            _mksbrr515ed690mksdp0 = (_mksbrr515ed690mksdp0 + 0)
+            _mksbrh515ed686mksdo6.AutoRotate = true
+          end
+        end
+      end
+      do
+        local _mmksbs0515ed699mksdpr = 1
+        _mmksbs0515ed699mksdpr = (_mmksbs0515ed699mksdpr + 0)
+        if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and _mmksav8515ed1fdmksazf.jump.enabled) then
+          local _xmksbrt515ed692mksdp6 = (tonumber(_mmksav8515ed1fdmksazf.jump.value) or 50)
+          do
+            local _zmksbrz515ed698mksdpo = 1
+            _zmksbrz515ed698mksdpo = (_zmksbrz515ed698mksdpo + 0)
+            pcall(function()
+              do
+                local _zmksbru515ed693mksdp9 = 1
+                _zmksbru515ed693mksdp9 = (_zmksbru515ed693mksdp9 + 0)
+                _mksbrh515ed686mksdo6.UseJumpPower = true
+              end
+              do
+                local _mmksbrv515ed694mksdpc = 1
+                _mmksbrv515ed694mksdpc = (_mmksbrv515ed694mksdpc + 0)
+                _mksbrh515ed686mksdo6.JumpPower = _xmksbrt515ed692mksdp6
+              end
+              local _mksbrw515ed695mksdpf = workspace.Gravity
+              do
+                local _xmksbry515ed697mksdpl = 1
+                _xmksbry515ed697mksdpl = (_xmksbry515ed697mksdpl + 0)
+                if (((46 + 28) == 74) and (_mksbrw515ed695mksdpf > 1)) then
+                  do
+                    local __mksbrx515ed696mksdpi = 1
+                    __mksbrx515ed696mksdpi = (__mksbrx515ed696mksdpi + 0)
+                    _mksbrh515ed686mksdo6.JumpHeight = math.clamp((((_xmksbrt515ed692mksdp6 * _xmksbrt515ed692mksdp6)) / ((2 * _mksbrw515ed695mksdpf))), 0.1, 500)
+                  end
+                end
+              end
+            end)
+          end
+        end
+      end
+      do
+        local _mksbs1515ed69amksdpu = 1
+        _mksbs1515ed69amksdpu = (_mksbs1515ed69amksdpu + 0)
+        workspace.Gravity = ((_mmksav8515ed1fdmksazf.gravity.enabled and _mmksav8515ed1fdmksazf.gravity.value) or _mmksav8515ed1fdmksazf.gravity.default)
+      end
+      do
+        local __mksbs7515ed6a0mksdqc = 1
+        __mksbs7515ed6a0mksdqc = (__mksbs7515ed6a0mksdqc + 0)
+        if ((((89 * 10) % 10) == 0) and _mmksav8515ed1fdmksazf.noclip.enabled) then
+          do
+            local _mksbs6515ed69fmksdq9 = 1
+            _mksbs6515ed69fmksdq9 = (_mksbs6515ed69fmksdq9 + 0)
+            for __mksbs2515ed69bmksdpx, _xmksbs3515ed69cmksdq0 in ipairs(_mmksbrg515ed685mksdo3:GetDescendants()) do
+              do
+                local _mmksbs5515ed69emksdq6 = 1
+                _mmksbs5515ed69emksdq6 = (_mmksbs5515ed69emksdq6 + 0)
+                if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _xmksbs3515ed69cmksdq0:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928))) then
+                  do
+                    local _zmksbs4515ed69dmksdq3 = 1
+                    _zmksbs4515ed69dmksdq3 = (_zmksbs4515ed69dmksdq3 + 0)
+                    _xmksbs3515ed69cmksdq0.CanCollide = false
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end)
+  end
+  do
+    local _mmksbsu515ed6b7mksds9 = 1
+    _mmksbsu515ed6b7mksds9 = (_mmksbsu515ed6b7mksds9 + 0)
+    pcall(function()
+      local _zmksbs9515ed6a2mksdqi = game:GetService(_xmksat8515ed1b5mksatf({52, 83, 70, 84, 44, 82, 85, 91, 91, 59, 78, 92, 97, 85, 80, 83}, 63, 928))
+      local function _mmksbsa515ed6a3mksdql()
+        local _mksbsb515ed6a4mksdqo = _mmksav3515ed1f8mksaz0.Character
+        do
+          local __mksbsc515ed6a5mksdqr = 1
+          __mksbsc515ed6a5mksdqr = (__mksbsc515ed6a5mksdqr + 0)
+          if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and not _mksbsb515ed6a4mksdqo) then
+            return
+          end
+        end
+        local _xmksbsd515ed6a6mksdqu = _mksbsb515ed6a4mksdqo:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928))
+        local _zmksbse515ed6a7mksdqx = _mksbsb515ed6a4mksdqo:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928))
+        do
+          local _mmksbsf515ed6a8mksdr0 = 1
+          _mmksbsf515ed6a8mksdr0 = (_mmksbsf515ed6a8mksdr0 + 0)
+          if ((((2 * 9) % 9) == 0) and ((not _xmksbsd515ed6a6mksdqu or not _zmksbse515ed6a7mksdqx) or (_xmksbsd515ed6a6mksdqu.Health <= 0))) then
+            return
+          end
+        end
+        local _mksbsg515ed6a9mksdr3 = 50
+        do
+          local _xmksbsi515ed6abmksdr9 = 1
+          _xmksbsi515ed6abmksdr9 = (_xmksbsi515ed6abmksdr9 + 0)
+          if (((59 + 23) == 82) and _mmksav8515ed1fdmksazf.jump.enabled) then
+            do
+              local __mksbsh515ed6aamksdr6 = 1
+              __mksbsh515ed6aamksdr6 = (__mksbsh515ed6aamksdr6 + 0)
+              _mksbsg515ed6a9mksdr3 = (tonumber(_mmksav8515ed1fdmksazf.jump.value) or 50)
+            end
+          end
+        end
+        do
+          local _mksbsl515ed6aemksdri = 1
+          _mksbsl515ed6aemksdri = (_mksbsl515ed6aemksdri + 0)
+          pcall(function()
+            do
+              local _zmksbsj515ed6acmksdrc = 1
+              _zmksbsj515ed6acmksdrc = (_zmksbsj515ed6acmksdrc + 0)
+              _xmksbsd515ed6a6mksdqu.UseJumpPower = true
+            end
+            do
+              local _mmksbsk515ed6admksdrf = 1
+              _mmksbsk515ed6admksdrf = (_mmksbsk515ed6admksdrf + 0)
+              _xmksbsd515ed6a6mksdqu.JumpPower = _mksbsg515ed6a9mksdr3
+            end
+          end)
+        end
+        do
+          local _zmksbso515ed6b1mksdrr = 1
+          _zmksbso515ed6b1mksdrr = (_zmksbso515ed6b1mksdrr + 0)
+          pcall(function()
+            local __mksbsm515ed6afmksdrl = _zmksbse515ed6a7mksdqx.AssemblyLinearVelocity
+            do
+              local _xmksbsn515ed6b0mksdro = 1
+              _xmksbsn515ed6b0mksdro = (_xmksbsn515ed6b0mksdro + 0)
+              _zmksbse515ed6a7mksdqx.AssemblyLinearVelocity = Vector3.new(__mksbsm515ed6afmksdrl.X, _mksbsg515ed6a9mksdr3, __mksbsm515ed6afmksdrl.Z)
+            end
+          end)
+        end
+        do
+          local _mksbsq515ed6b3mksdrx = 1
+          _mksbsq515ed6b3mksdrx = (_mksbsq515ed6b3mksdrx + 0)
+          pcall(function()
+            do
+              local _mmksbsp515ed6b2mksdru = 1
+              _mmksbsp515ed6b2mksdru = (_mmksbsp515ed6b2mksdru + 0)
+              _xmksbsd515ed6a6mksdqu:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+          end)
+        end
+      end
+      do
+        local _zmksbst515ed6b6mksds6 = 1
+        _zmksbst515ed6b6mksds6 = (_zmksbst515ed6b6mksds6 + 0)
+        _zmksbs9515ed6a2mksdqi.JumpRequest:Connect(function()
+          do
+            local _xmksbss515ed6b5mksds3 = 1
+            _xmksbss515ed6b5mksds3 = (_xmksbss515ed6b5mksds3 + 0)
+            if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_mmksav8515ed1fdmksazf.jump.enabled or _mmksav8515ed1fdmksazf.jump.infinite)) then
+              do
+                local __mksbsr515ed6b4mksds0 = 1
+                __mksbsr515ed6b4mksds0 = (__mksbsr515ed6b4mksds0 + 0)
+                _mmksbsa515ed6a3mksdql()
+              end
+            end
+          end
+        end)
+      end
+    end)
+  end
+  do
+    local _mmksbu3515ed6e4mksdw0 = 1
+    _mmksbu3515ed6e4mksdw0 = (_mmksbu3515ed6e4mksdw0 + 0)
+    function _mmksavd515ed202mksazu()
+      local _mksbsv515ed6b8mksdsc, __mksbsw515ed6b9mksdsf, _xmksbsx515ed6bamksdsi = __mksbpk515ed641mksdif()
+      do
+        local _zmksbsy515ed6bbmksdsl = 1
+        _zmksbsy515ed6bbmksdsl = (_zmksbsy515ed6bbmksdsl + 0)
+        if (((28 + 53) == 81) and (not _mksbsv515ed6b8mksdsc or not _xmksbsx515ed6bamksdsi)) then
+          return
+        end
+      end
+      do
+        local _mmksbsz515ed6bcmksdso = 1
+        _mmksbsz515ed6bcmksdso = (_mmksbsz515ed6bcmksdso + 0)
+        __mksbsw515ed6b9mksdsf.PlatformStand = true
+      end
+      local _mksbt0515ed6bdmksdsr = Instance.new(_xmksat8515ed1b5mksatf({33, 79, 69, 91, 51, 83, 88, 79, 91, 81, 88, 88}, 63, 928))
+      do
+        local __mksbt1515ed6bemksdsu = 1
+        __mksbt1515ed6bemksdsu = (__mksbt1515ed6bemksdsu + 0)
+        _mksbt0515ed6bdmksdsr.MaxForce = Vector3.new(1e5, 1e5, 1e5)
+      end
+      do
+        local _xmksbt2515ed6bfmksdsx = 1
+        _xmksbt2515ed6bfmksdsx = (_xmksbt2515ed6bfmksdsx + 0)
+        _mksbt0515ed6bdmksdsr.Position = _xmksbsx515ed6bamksdsi.Position
+      end
+      do
+        local _zmksbt3515ed6c0mksdt0 = 1
+        _zmksbt3515ed6c0mksdt0 = (_zmksbt3515ed6c0mksdt0 + 0)
+        _mksbt0515ed6bdmksdsr.P = 1e4
+      end
+      do
+        local _mmksbt4515ed6c1mksdt3 = 1
+        _mmksbt4515ed6c1mksdt3 = (_mmksbt4515ed6c1mksdt3 + 0)
+        _mksbt0515ed6bdmksdsr.D = 1e3
+      end
+      do
+        local _mksbt5515ed6c2mksdt6 = 1
+        _mksbt5515ed6c2mksdt6 = (_mksbt5515ed6c2mksdt6 + 0)
+        _mksbt0515ed6bdmksdsr.Parent = _xmksbsx515ed6bamksdsi
+      end
+      local __mksbt6515ed6c3mksdt9 = Instance.new(_xmksat8515ed1b5mksatf({33, 79, 69, 91, 42, 93, 87, 85}, 63, 928))
+      do
+        local _xmksbt7515ed6c4mksdtc = 1
+        _xmksbt7515ed6c4mksdtc = (_xmksbt7515ed6c4mksdtc + 0)
+        __mksbt6515ed6c3mksdt9.MaxTorque = Vector3.new(1e5, 1e5, 1e5)
+      end
+      do
+        local _zmksbt8515ed6c5mksdtf = 1
+        _zmksbt8515ed6c5mksdtf = (_zmksbt8515ed6c5mksdtf + 0)
+        __mksbt6515ed6c3mksdt9.CFrame = _xmksbsx515ed6bamksdsi.CFrame
+      end
+      do
+        local _mmksbt9515ed6c6mksdti = 1
+        _mmksbt9515ed6c6mksdti = (_mmksbt9515ed6c6mksdti + 0)
+        __mksbt6515ed6c3mksdt9.P = 1e4
+      end
+      do
+        local _mksbta515ed6c7mksdtl = 1
+        _mksbta515ed6c7mksdtl = (_mksbta515ed6c7mksdtl + 0)
+        __mksbt6515ed6c3mksdt9.D = 1e3
+      end
+      do
+        local __mksbtb515ed6c8mksdto = 1
+        __mksbtb515ed6c8mksdto = (__mksbtb515ed6c8mksdto + 0)
+        __mksbt6515ed6c3mksdt9.Parent = _xmksbsx515ed6bamksdsi
+      end
+      do
+        local _xmksbtc515ed6c9mksdtr = 1
+        _xmksbtc515ed6c9mksdtr = (_xmksbtc515ed6c9mksdtr + 0)
+        _mmksav8515ed1fdmksazf.fly._bp = _mksbt0515ed6bdmksdsr
+      end
+      do
+        local _zmksbtd515ed6camksdtu = 1
+        _zmksbtd515ed6camksdtu = (_zmksbtd515ed6camksdtu + 0)
+        _mmksav8515ed1fdmksazf.fly._bg = __mksbt6515ed6c3mksdt9
+      end
+      do
+        local _zmksbu2515ed6e3mksdvx = 1
+        _zmksbu2515ed6e3mksdvx = (_zmksbu2515ed6e3mksdvx + 0)
+        _zmksav2515ed1f7mksayx:BindToRenderStep(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 43, 82, 96}, 63, 928), (Enum.RenderPriority.Camera.Value + 1), function(_mmksbte515ed6cbmksdtx)
+          do
+            local __mksbtg515ed6cdmksdu3 = 1
+            __mksbtg515ed6cdmksdu3 = (__mksbtg515ed6cdmksdu3 + 0)
+            if (((45 * 43) == (43 * 45)) and not _mmksav8515ed1fdmksazf.fly.enabled) then
+              do
+                local _mksbtf515ed6ccmksdu0 = 1
+                _mksbtf515ed6ccmksdu0 = (_mksbtf515ed6ccmksdu0 + 0)
+                _zmksav2515ed1f7mksayx:UnbindFromRenderStep(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 43, 82, 96}, 63, 928))
+              end
+              return
+            end
+          end
+          local _xmksbth515ed6cemksdu6, _zmksbti515ed6cfmksdu9, _mmksbtj515ed6d0mksduc = __mksbpk515ed641mksdif()
+          do
+            local _mksbtk515ed6d1mksduf = 1
+            _mksbtk515ed6d1mksduf = (_mksbtk515ed6d1mksduf + 0)
+            if ((((29 * 11) % 11) == 0) and (not _xmksbth515ed6cemksdu6 or not _mmksbtj515ed6d0mksduc)) then
+              return
+            end
+          end
+          local __mksbtl515ed6d2mksdui = workspace.CurrentCamera
+          local _xmksbtm515ed6d3mksdul = (_mmksav8515ed1fdmksazf.fly.speed * _mmksbte515ed6cbmksdtx)
+          local _zmksbtn515ed6d4mksduo = Vector3.new()
+          do
+            local _mksbtp515ed6d6mksduu = 1
+            _mksbtp515ed6d6mksduu = (_mksbtp515ed6d6mksduu + 0)
+            if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and __mksbpp515ed646mksdiu[Enum.KeyCode.W]) then
+              do
+                local _mmksbto515ed6d5mksdur = 1
+                _mmksbto515ed6d5mksdur = (_mmksbto515ed6d5mksdur + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo + (__mksbtl515ed6d2mksdui.CFrame.LookVector * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local _xmksbtr515ed6d8mksdv0 = 1
+            _xmksbtr515ed6d8mksdv0 = (_xmksbtr515ed6d8mksdv0 + 0)
+            if (((18 * 49) == (49 * 18)) and __mksbpp515ed646mksdiu[Enum.KeyCode.S]) then
+              do
+                local __mksbtq515ed6d7mksdux = 1
+                __mksbtq515ed6d7mksdux = (__mksbtq515ed6d7mksdux + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo - (__mksbtl515ed6d2mksdui.CFrame.LookVector * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local _mmksbtt515ed6damksdv6 = 1
+            _mmksbtt515ed6damksdv6 = (_mmksbtt515ed6damksdv6 + 0)
+            if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and __mksbpp515ed646mksdiu[Enum.KeyCode.A]) then
+              do
+                local _zmksbts515ed6d9mksdv3 = 1
+                _zmksbts515ed6d9mksdv3 = (_zmksbts515ed6d9mksdv3 + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo - (__mksbtl515ed6d2mksdui.CFrame.RightVector * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local __mksbtv515ed6dcmksdvc = 1
+            __mksbtv515ed6dcmksdvc = (__mksbtv515ed6dcmksdvc + 0)
+            if (((63 * 95) == (95 * 63)) and __mksbpp515ed646mksdiu[Enum.KeyCode.D]) then
+              do
+                local _mksbtu515ed6dbmksdv9 = 1
+                _mksbtu515ed6dbmksdv9 = (_mksbtu515ed6dbmksdv9 + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo + (__mksbtl515ed6d2mksdui.CFrame.RightVector * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local _zmksbtx515ed6demksdvi = 1
+            _zmksbtx515ed6demksdvi = (_zmksbtx515ed6demksdvi + 0)
+            if (((6 + 87) == 93) and __mksbpp515ed646mksdiu[Enum.KeyCode.Space]) then
+              do
+                local _xmksbtw515ed6ddmksdvf = 1
+                _xmksbtw515ed6ddmksdvf = (_xmksbtw515ed6ddmksdvf + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo + (Vector3.new(0, 1, 0) * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local _mksbtz515ed6e0mksdvo = 1
+            _mksbtz515ed6e0mksdvo = (_mksbtz515ed6e0mksdvo + 0)
+            if (((91 * 74) == (74 * 91)) and __mksbpp515ed646mksdiu[Enum.KeyCode.LeftShift]) then
+              do
+                local _mmksbty515ed6dfmksdvl = 1
+                _mmksbty515ed6dfmksdvl = (_mmksbty515ed6dfmksdvl + 0)
+                _zmksbtn515ed6d4mksduo = (_zmksbtn515ed6d4mksduo - (Vector3.new(0, 1, 0) * _xmksbtm515ed6d3mksdul))
+              end
+            end
+          end
+          do
+            local __mksbu0515ed6e1mksdvr = 1
+            __mksbu0515ed6e1mksdvr = (__mksbu0515ed6e1mksdvr + 0)
+            _mksbt0515ed6bdmksdsr.Position = (_mksbt0515ed6bdmksdsr.Position + _zmksbtn515ed6d4mksduo)
+          end
+          do
+            local _xmksbu1515ed6e2mksdvu = 1
+            _xmksbu1515ed6e2mksdvu = (_xmksbu1515ed6e2mksdvu + 0)
+            __mksbt6515ed6c3mksdt9.CFrame = __mksbtl515ed6d2mksdui.CFrame
+          end
+        end)
+      end
+    end
+  end
+  do
+    local _mmksbui515ed6f3mksdx9 = 1
+    _mmksbui515ed6f3mksdx9 = (_mmksbui515ed6f3mksdx9 + 0)
+    function _mksave515ed203mksazx()
+      do
+        local _mksbu4515ed6e5mksdw3 = 1
+        _mksbu4515ed6e5mksdw3 = (_mksbu4515ed6e5mksdw3 + 0)
+        _zmksav2515ed1f7mksayx:UnbindFromRenderStep(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 43, 82, 96}, 63, 928))
+      end
+      local __mksbu5515ed6e6mksdw6, _xmksbu6515ed6e7mksdw9, _zmksbu7515ed6e8mksdwc = __mksbpk515ed641mksdif()
+      do
+        local _xmksbub515ed6ecmksdwo = 1
+        _xmksbub515ed6ecmksdwo = (_xmksbub515ed6ecmksdwo + 0)
+        if (((24 + 96) == 120) and _mmksav8515ed1fdmksazf.fly._bp) then
+          do
+            local _mksbu9515ed6eamksdwi = 1
+            _mksbu9515ed6eamksdwi = (_mksbu9515ed6eamksdwi + 0)
+            pcall(function()
+              do
+                local _mmksbu8515ed6e9mksdwf = 1
+                _mmksbu8515ed6e9mksdwf = (_mmksbu8515ed6e9mksdwf + 0)
+                _mmksav8515ed1fdmksazf.fly._bp:Destroy()
+              end
+            end)
+          end
+          do
+            local __mksbua515ed6ebmksdwl = 1
+            __mksbua515ed6ebmksdwl = (__mksbua515ed6ebmksdwl + 0)
+            _mmksav8515ed1fdmksazf.fly._bp = nil
+          end
+        end
+      end
+      do
+        local __mksbuf515ed6f0mksdx0 = 1
+        __mksbuf515ed6f0mksdx0 = (__mksbuf515ed6f0mksdx0 + 0)
+        if (((95 + 7) == 102) and _mmksav8515ed1fdmksazf.fly._bg) then
+          do
+            local _mmksbud515ed6eemksdwu = 1
+            _mmksbud515ed6eemksdwu = (_mmksbud515ed6eemksdwu + 0)
+            pcall(function()
+              do
+                local _zmksbuc515ed6edmksdwr = 1
+                _zmksbuc515ed6edmksdwr = (_zmksbuc515ed6edmksdwr + 0)
+                _mmksav8515ed1fdmksazf.fly._bg:Destroy()
+              end
+            end)
+          end
+          do
+            local _mksbue515ed6efmksdwx = 1
+            _mksbue515ed6efmksdwx = (_mksbue515ed6efmksdwx + 0)
+            _mmksav8515ed1fdmksazf.fly._bg = nil
+          end
+        end
+      end
+      do
+        local _zmksbuh515ed6f2mksdx6 = 1
+        _zmksbuh515ed6f2mksdx6 = (_zmksbuh515ed6f2mksdx6 + 0)
+        if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and _xmksbu6515ed6e7mksdw9) then
+          do
+            local _xmksbug515ed6f1mksdx3 = 1
+            _xmksbug515ed6f1mksdx3 = (_xmksbug515ed6f1mksdx3 + 0)
+            _xmksbu6515ed6e7mksdw9.PlatformStand = false
+          end
+        end
+      end
+    end
+  end
+  do
+    local _xmksbuq515ed6fbmksdxx = 1
+    _xmksbuq515ed6fbmksdxx = (_xmksbuq515ed6fbmksdxx + 0)
+    function _zmksavh515ed206mksb06()
+      local _mksbuj515ed6f4mksdxc, __mksbuk515ed6f5mksdxf, _xmksbul515ed6f6mksdxi = __mksbpk515ed641mksdif()
+      do
+        local _zmksbum515ed6f7mksdxl = 1
+        _zmksbum515ed6f7mksdxl = (_zmksbum515ed6f7mksdxl + 0)
+        if (((95 + 93) == 188) and not _xmksbul515ed6f6mksdxi) then
+          return
+        end
+      end
+      local _mmksbun515ed6f8mksdxo = workspace.CurrentCamera
+      local _mksbuo515ed6f9mksdxr = (_mmksbun515ed6f8mksdxo.CFrame.LookVector * _mmksav8515ed1fdmksazf.tp.distance)
+      do
+        local __mksbup515ed6famksdxu = 1
+        __mksbup515ed6famksdxu = (__mksbup515ed6famksdxu + 0)
+        _xmksbul515ed6f6mksdxi.CFrame = (_xmksbul515ed6f6mksdxi.CFrame + Vector3.new(_mksbuo515ed6f9mksdxr.X, 0, _mksbuo515ed6f9mksdxr.Z))
+      end
+    end
+  end
+  do
+    local _mmksbux515ed702mksdyi = 1
+    _mmksbux515ed702mksdyi = (_mmksbux515ed702mksdyi + 0)
+    _zmksbph515ed63emksdi6.InputBegan:Connect(function(_zmksbur515ed6fcmksdy0, _mmksbus515ed6fdmksdy3)
+      do
+        local _mksbut515ed6femksdy6 = 1
+        _mksbut515ed6femksdy6 = (_mksbut515ed6femksdy6 + 0)
+        if (((88 * 18) == (18 * 88)) and _mmksbus515ed6fdmksdy3) then
+          return
+        end
+      end
+      do
+        local __mksbuu515ed6ffmksdy9 = 1
+        __mksbuu515ed6ffmksdy9 = (__mksbuu515ed6ffmksdy9 + 0)
+        if (((93 + 80) == 173) and not _mmksav8515ed1fdmksazf.tp.enabled) then
+          return
+        end
+      end
+      do
+        local _zmksbuw515ed701mksdyf = 1
+        _zmksbuw515ed701mksdyf = (_zmksbuw515ed701mksdyf + 0)
+        if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (_zmksbur515ed6fcmksdy0.KeyCode == Enum.KeyCode.T)) then
+          do
+            local _xmksbuv515ed700mksdyc = 1
+            _xmksbuv515ed700mksdyc = (_xmksbuv515ed700mksdyc + 0)
+            pcall(_zmksavh515ed206mksb06)
+          end
+        end
+      end
+    end)
+  end
+  do
+    local _mksbuy515ed703mksdyl = 1
+    _mksbuy515ed703mksdyl = (_mksbuy515ed703mksdyl + 0)
+    __mksava515ed1ffmksazl = {fov = {enabled = false, value = 70, default = 70}, resolution = 1, freecam = {enabled = false, speed = 30, _savedType = nil}, unlockzoom = {enabled = false, min = 0, max = 500}}
+  end
+  do
+    local _xmksbv0515ed705mksdyr = 1
+    _xmksbv0515ed705mksdyr = (_xmksbv0515ed705mksdyr + 0)
+    pcall(function()
+      do
+        local __mksbuz515ed704mksdyo = 1
+        __mksbuz515ed704mksdyo = (__mksbuz515ed704mksdyo + 0)
+        __mksava515ed1ffmksazl.fov.default = workspace.CurrentCamera.FieldOfView
+      end
+    end)
+  end
+  local _zmksbv1515ed706mksdyu, _mmksbv2515ed707mksdyx, _mksbv3515ed708mksdz0, __mksbv4515ed709mksdz3 = 0, 0, nil, false
+  local _xmksbv5515ed70amksdz6, _zmksbv6515ed70bmksdz9 = nil, nil
+  do
+    local _mksbvn515ed71cmkse0o = 1
+    _mksbvn515ed71cmkse0o = (_mksbvn515ed71cmkse0o + 0)
+    function __mksavf515ed204mksb00()
+      local _mmksbv7515ed70cmksdzc = workspace.CurrentCamera
+      do
+        local _mksbv8515ed70dmksdzf = 1
+        _mksbv8515ed70dmksdzf = (_mksbv8515ed70dmksdzf + 0)
+        if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not _mmksbv7515ed70cmksdzc) then
+          return
+        end
+      end
+      do
+        local __mksbv9515ed70emksdzi = 1
+        __mksbv9515ed70emksdzi = (__mksbv9515ed70emksdzi + 0)
+        __mksava515ed1ffmksazl.freecam._savedType = _mmksbv7515ed70cmksdzc.CameraType
+      end
+      do
+        local _xmksbva515ed70fmksdzl = 1
+        _xmksbva515ed70fmksdzl = (_xmksbva515ed70fmksdzl + 0)
+        _xmksbv5515ed70amksdz6 = _mmksbv7515ed70cmksdzc.CameraSubject
+      end
+      do
+        local _mmksbvc515ed711mksdzr = 1
+        _mmksbvc515ed711mksdzr = (_mmksbvc515ed711mksdzr + 0)
+        pcall(function()
+          do
+            local _zmksbvb515ed710mksdzo = 1
+            _zmksbvb515ed710mksdzo = (_zmksbvb515ed710mksdzo + 0)
+            _zmksbv6515ed70bmksdz9 = _zmksbph515ed63emksdi6.MouseBehavior
+          end
+        end)
+      end
+      do
+        local _mksbvd515ed712mksdzu = 1
+        _mksbvd515ed712mksdzu = (_mksbvd515ed712mksdzu + 0)
+        _mmksbv7515ed70cmksdzc.CameraType = Enum.CameraType.Scriptable
+      end
+      do
+        local __mksbve515ed713mksdzx = 1
+        __mksbve515ed713mksdzx = (__mksbve515ed713mksdzx + 0)
+        _mmksbv7515ed70cmksdzc.CameraSubject = nil
+      end
+      local _xmksbvf515ed714mkse00 = _mmksbv7515ed70cmksdzc.CFrame
+      do
+        local _zmksbvg515ed715mkse03 = 1
+        _zmksbvg515ed715mkse03 = (_zmksbvg515ed715mkse03 + 0)
+        _mksbv3515ed708mksdz0 = _xmksbvf515ed714mkse00.Position
+      end
+      local _mmksbvh515ed716mkse06 = _xmksbvf515ed714mkse00.LookVector
+      do
+        local _mksbvi515ed717mkse09 = 1
+        _mksbvi515ed717mkse09 = (_mksbvi515ed717mkse09 + 0)
+        _zmksbv1515ed706mksdyu = math.atan2(-_mmksbvh515ed716mkse06.X, -_mmksbvh515ed716mkse06.Z)
+      end
+      do
+        local __mksbvj515ed718mkse0c = 1
+        __mksbvj515ed718mkse0c = (__mksbvj515ed718mkse0c + 0)
+        _mmksbv2515ed707mksdyx = math.asin(math.clamp(_mmksbvh515ed716mkse06.Y, -1, 1))
+      end
+      do
+        local _zmksbvl515ed71amkse0i = 1
+        _zmksbvl515ed71amkse0i = (_zmksbvl515ed71amkse0i + 0)
+        pcall(function()
+          do
+            local _xmksbvk515ed719mkse0f = 1
+            _xmksbvk515ed719mkse0f = (_xmksbvk515ed719mkse0f + 0)
+            _zmksbph515ed63emksdi6.MouseBehavior = Enum.MouseBehavior.LockCenter
+          end
+        end)
+      end
+      do
+        local _mmksbvm515ed71bmkse0l = 1
+        _mmksbvm515ed71bmkse0l = (_mmksbvm515ed71bmkse0l + 0)
+        __mksbv4515ed709mksdz3 = true
+      end
+    end
+  end
+  do
+    local _zmksbw0515ed729mkse1r = 1
+    _zmksbw0515ed729mkse1r = (_zmksbw0515ed729mkse1r + 0)
+    function _xmksavg515ed205mksb03()
+      do
+        local __mksbvo515ed71dmkse0r = 1
+        __mksbvo515ed71dmkse0r = (__mksbvo515ed71dmkse0r + 0)
+        __mksbv4515ed709mksdz3 = false
+      end
+      local _xmksbvp515ed71emkse0u = workspace.CurrentCamera
+      do
+        local _mmksbvw515ed725mkse1f = 1
+        _mmksbvw515ed725mkse1f = (_mmksbvw515ed725mkse1f + 0)
+        if (((46 + 28) == 74) and _xmksbvp515ed71emkse0u) then
+          do
+            local _zmksbvq515ed71fmkse0x = 1
+            _zmksbvq515ed71fmkse0x = (_zmksbvq515ed71fmkse0x + 0)
+            _xmksbvp515ed71emkse0u.CameraType = (__mksava515ed1ffmksazl.freecam._savedType or Enum.CameraType.Custom)
+          end
+          do
+            local _zmksbvv515ed724mkse1c = 1
+            _zmksbvv515ed724mkse1c = (_zmksbvv515ed724mkse1c + 0)
+            if ((((89 * 10) % 10) == 0) and _xmksbv5515ed70amksdz6) then
+              do
+                local _mmksbvr515ed720mkse10 = 1
+                _mmksbvr515ed720mkse10 = (_mmksbvr515ed720mkse10 + 0)
+                _xmksbvp515ed71emkse0u.CameraSubject = _xmksbv5515ed70amksdz6
+              end
+            else
+              local _mksbvs515ed721mkse13 = (_mmksav3515ed1f8mksaz0.Character and _mmksav3515ed1f8mksaz0.Character:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928)))
+              do
+                local _xmksbvu515ed723mkse19 = 1
+                _xmksbvu515ed723mkse19 = (_xmksbvu515ed723mkse19 + 0)
+                if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _mksbvs515ed721mkse13) then
+                  do
+                    local __mksbvt515ed722mkse16 = 1
+                    __mksbvt515ed722mkse16 = (__mksbvt515ed722mkse16 + 0)
+                    _xmksbvp515ed71emkse0u.CameraSubject = _mksbvs515ed721mkse13
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      do
+        local __mksbvy515ed727mkse1l = 1
+        __mksbvy515ed727mkse1l = (__mksbvy515ed727mkse1l + 0)
+        pcall(function()
+          do
+            local _mksbvx515ed726mkse1i = 1
+            _mksbvx515ed726mkse1i = (_mksbvx515ed726mkse1i + 0)
+            _zmksbph515ed63emksdi6.MouseBehavior = (_zmksbv6515ed70bmksdz9 or Enum.MouseBehavior.Default)
+          end
+        end)
+      end
+      do
+        local _xmksbvz515ed728mkse1o = 1
+        _xmksbvz515ed728mkse1o = (_xmksbvz515ed728mkse1o + 0)
+        _mksbv3515ed708mksdz0 = nil
+      end
+    end
+  end
+  do
+    local _mmksbx5515ed752mkse56 = 1
+    _mmksbx5515ed752mkse56 = (_mmksbx5515ed752mkse56 + 0)
+    _zmksav2515ed1f7mksayx:BindToRenderStep(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 43, 88, 76, 77, 76, 75, 88}, 63, 928), (Enum.RenderPriority.Camera.Value + 5), function(_mmksbw1515ed72amkse1u)
+      do
+        local _xmksbw4515ed72dmkse23 = 1
+        _xmksbw4515ed72dmkse23 = (_xmksbw4515ed72dmkse23 + 0)
+        if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and not __mksava515ed1ffmksazl.freecam.enabled) then
+          do
+            local __mksbw3515ed72cmkse20 = 1
+            __mksbw3515ed72cmkse20 = (__mksbw3515ed72cmkse20 + 0)
+            if ((((2 * 9) % 9) == 0) and __mksbv4515ed709mksdz3) then
+              do
+                local _mksbw2515ed72bmkse1x = 1
+                _mksbw2515ed72bmkse1x = (_mksbw2515ed72bmkse1x + 0)
+                _xmksavg515ed205mksb03()
+              end
+            end
+          end
+          return
+        end
+      end
+      do
+        local _mmksbw6515ed72fmkse29 = 1
+        _mmksbw6515ed72fmkse29 = (_mmksbw6515ed72fmkse29 + 0)
+        if (((59 + 23) == 82) and not __mksbv4515ed709mksdz3) then
+          do
+            local _zmksbw5515ed72emkse26 = 1
+            _zmksbw5515ed72emkse26 = (_zmksbw5515ed72emkse26 + 0)
+            __mksavf515ed204mksb00()
+          end
+        end
+      end
+      local _mksbw7515ed730mkse2c = workspace.CurrentCamera
+      do
+        local __mksbw8515ed731mkse2f = 1
+        __mksbw8515ed731mkse2f = (__mksbw8515ed731mkse2f + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and not _mksbw7515ed730mkse2c) then
+          return
+        end
+      end
+      do
+        local _mmksbwb515ed734mkse2o = 1
+        _mmksbwb515ed734mkse2o = (_mmksbwb515ed734mkse2o + 0)
+        if (((28 + 53) == 81) and (_mksbw7515ed730mkse2c.CameraType ~= Enum.CameraType.Scriptable)) then
+          do
+            local _xmksbw9515ed732mkse2i = 1
+            _xmksbw9515ed732mkse2i = (_xmksbw9515ed732mkse2i + 0)
+            _mksbw7515ed730mkse2c.CameraType = Enum.CameraType.Scriptable
+          end
+          do
+            local _zmksbwa515ed733mkse2l = 1
+            _zmksbwa515ed733mkse2l = (_zmksbwa515ed733mkse2l + 0)
+            _mksbw7515ed730mkse2c.CameraSubject = nil
+          end
+        end
+      end
+      do
+        local _xmksbwe515ed737mkse2x = 1
+        _xmksbwe515ed737mkse2x = (_xmksbwe515ed737mkse2x + 0)
+        pcall(function()
+          do
+            local __mksbwd515ed736mkse2u = 1
+            __mksbwd515ed736mkse2u = (__mksbwd515ed736mkse2u + 0)
+            if (((45 * 43) == (43 * 45)) and (_zmksbph515ed63emksdi6.MouseBehavior ~= Enum.MouseBehavior.LockCenter)) then
+              do
+                local _mksbwc515ed735mkse2r = 1
+                _mksbwc515ed735mkse2r = (_mksbwc515ed735mkse2r + 0)
+                _zmksbph515ed63emksdi6.MouseBehavior = Enum.MouseBehavior.LockCenter
+              end
+            end
+          end
+        end)
+      end
+      local _zmksbwf515ed738mkse30 = _zmksbph515ed63emksdi6:GetMouseDelta()
+      do
+        local _mmksbwg515ed739mkse33 = 1
+        _mmksbwg515ed739mkse33 = (_mmksbwg515ed739mkse33 + 0)
+        _zmksbv1515ed706mksdyu = (_zmksbv1515ed706mksdyu - (_zmksbwf515ed738mkse30.X * 0.004))
+      end
+      do
+        local _mksbwh515ed73amkse36 = 1
+        _mksbwh515ed73amkse36 = (_mksbwh515ed73amkse36 + 0)
+        _mmksbv2515ed707mksdyx = math.clamp((_mmksbv2515ed707mksdyx - (_zmksbwf515ed738mkse30.Y * 0.004)), -1.45, 1.45)
+      end
+      local __mksbwi515ed73bmkse39 = CFrame.fromEulerAnglesYXZ(_mmksbv2515ed707mksdyx, _zmksbv1515ed706mksdyu, 0)
+      do
+        local _zmksbwk515ed73dmkse3f = 1
+        _zmksbwk515ed73dmkse3f = (_zmksbwk515ed73dmkse3f + 0)
+        if ((((29 * 11) % 11) == 0) and not _mksbv3515ed708mksdz0) then
+          do
+            local _xmksbwj515ed73cmkse3c = 1
+            _xmksbwj515ed73cmkse3c = (_xmksbwj515ed73cmkse3c + 0)
+            _mksbv3515ed708mksdz0 = _mksbw7515ed730mkse2c.CFrame.Position
+          end
+        end
+      end
+      local _mmksbwl515ed73emkse3i = (((__mksava515ed1ffmksazl.freecam.speed or 30)) * _mmksbw1515ed72amkse1u)
+      do
+        local __mksbwn515ed740mkse3o = 1
+        __mksbwn515ed740mkse3o = (__mksbwn515ed740mkse3o + 0)
+        if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (__mksbpp515ed646mksdiu[Enum.KeyCode.LeftShift] and not __mksbpp515ed646mksdiu[Enum.KeyCode.LeftControl])) then
+          do
+            local _mksbwm515ed73fmkse3l = 1
+            _mksbwm515ed73fmkse3l = (_mksbwm515ed73fmkse3l + 0)
+            _mmksbwl515ed73emkse3i = (_mmksbwl515ed73emkse3i * 2)
+          end
+        end
+      end
+      local _xmksbwo515ed741mkse3r = Vector3.new()
+      local _zmksbwp515ed742mkse3u, _mmksbwq515ed743mkse3x = __mksbwi515ed73bmkse39.LookVector, __mksbwi515ed73bmkse39.RightVector
+      do
+        local __mksbws515ed745mkse43 = 1
+        __mksbws515ed745mkse43 = (__mksbws515ed745mkse43 + 0)
+        if (((18 * 49) == (49 * 18)) and __mksbpp515ed646mksdiu[Enum.KeyCode.W]) then
+          do
+            local _mksbwr515ed744mkse40 = 1
+            _mksbwr515ed744mkse40 = (_mksbwr515ed744mkse40 + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r + (_zmksbwp515ed742mkse3u * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local _zmksbwu515ed747mkse49 = 1
+        _zmksbwu515ed747mkse49 = (_zmksbwu515ed747mkse49 + 0)
+        if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and __mksbpp515ed646mksdiu[Enum.KeyCode.S]) then
+          do
+            local _xmksbwt515ed746mkse46 = 1
+            _xmksbwt515ed746mkse46 = (_xmksbwt515ed746mkse46 + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r - (_zmksbwp515ed742mkse3u * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local _mksbww515ed749mkse4f = 1
+        _mksbww515ed749mkse4f = (_mksbww515ed749mkse4f + 0)
+        if (((63 * 95) == (95 * 63)) and __mksbpp515ed646mksdiu[Enum.KeyCode.A]) then
+          do
+            local _mmksbwv515ed748mkse4c = 1
+            _mmksbwv515ed748mkse4c = (_mmksbwv515ed748mkse4c + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r - (_mmksbwq515ed743mkse3x * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local _xmksbwy515ed74bmkse4l = 1
+        _xmksbwy515ed74bmkse4l = (_xmksbwy515ed74bmkse4l + 0)
+        if (((6 + 87) == 93) and __mksbpp515ed646mksdiu[Enum.KeyCode.D]) then
+          do
+            local __mksbwx515ed74amkse4i = 1
+            __mksbwx515ed74amkse4i = (__mksbwx515ed74amkse4i + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r + (_mmksbwq515ed743mkse3x * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local _mmksbx0515ed74dmkse4r = 1
+        _mmksbx0515ed74dmkse4r = (_mmksbx0515ed74dmkse4r + 0)
+        if (((91 * 74) == (74 * 91)) and (__mksbpp515ed646mksdiu[Enum.KeyCode.Space] or __mksbpp515ed646mksdiu[Enum.KeyCode.E])) then
+          do
+            local _zmksbwz515ed74cmkse4o = 1
+            _zmksbwz515ed74cmkse4o = (_zmksbwz515ed74cmkse4o + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r + (Vector3.new(0, 1, 0) * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local __mksbx2515ed74fmkse4x = 1
+        __mksbx2515ed74fmkse4x = (__mksbx2515ed74fmkse4x + 0)
+        if (((24 + 96) == 120) and ((__mksbpp515ed646mksdiu[Enum.KeyCode.LeftControl] or __mksbpp515ed646mksdiu[Enum.KeyCode.RightControl]) or __mksbpp515ed646mksdiu[Enum.KeyCode.Q])) then
+          do
+            local _mksbx1515ed74emkse4u = 1
+            _mksbx1515ed74emkse4u = (_mksbx1515ed74emkse4u + 0)
+            _xmksbwo515ed741mkse3r = (_xmksbwo515ed741mkse3r - (Vector3.new(0, 1, 0) * _mmksbwl515ed73emkse3i))
+          end
+        end
+      end
+      do
+        local _xmksbx3515ed750mkse50 = 1
+        _xmksbx3515ed750mkse50 = (_xmksbx3515ed750mkse50 + 0)
+        _mksbv3515ed708mksdz0 = (_mksbv3515ed708mksdz0 + _xmksbwo515ed741mkse3r)
+      end
+      do
+        local _zmksbx4515ed751mkse53 = 1
+        _zmksbx4515ed751mkse53 = (_zmksbx4515ed751mkse53 + 0)
+        _mksbw7515ed730mkse2c.CFrame = (CFrame.new(_mksbv3515ed708mksdz0) * __mksbwi515ed73bmkse39)
+      end
+    end)
+  end
+  do
+    local _mksbxg515ed75dmkse63 = 1
+    _mksbxg515ed75dmkse63 = (_mksbxg515ed75dmkse63 + 0)
+    _zmksav2515ed1f7mksayx.RenderStepped:Connect(function()
+      local _mksbx6515ed753mkse59 = workspace.CurrentCamera
+      do
+        local __mksbx7515ed754mkse5c = 1
+        __mksbx7515ed754mkse5c = (__mksbx7515ed754mkse5c + 0)
+        if (((95 + 7) == 102) and not _mksbx6515ed753mkse59) then
+          return
+        end
+      end
+      local _xmksbx8515ed755mkse5f = __mksava515ed1ffmksazl.fov.enabled
+      local _zmksbx9515ed756mkse5i = __mksava515ed1ffmksazl.resolution
+      local _mmksbxa515ed757mkse5l = ((type(_zmksbx9515ed756mkse5i) == _xmksat8515ed1b5mksatf({77, 85, 78, 68, 72, 86}, 63, 928)) and (_zmksbx9515ed756mkse5i ~= 1))
+      do
+        local _mksbxb515ed758mkse5o = 1
+        _mksbxb515ed758mkse5o = (_mksbxb515ed758mkse5o + 0)
+        if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and (not _xmksbx8515ed755mkse5f and not _mmksbxa515ed757mkse5l)) then
+          return
+        end
+      end
+      do
+        local _xmksbxd515ed75amkse5u = 1
+        _xmksbxd515ed75amkse5u = (_xmksbxd515ed75amkse5u + 0)
+        if (((95 + 93) == 188) and _xmksbx8515ed755mkse5f) then
+          do
+            local __mksbxc515ed759mkse5r = 1
+            __mksbxc515ed759mkse5r = (__mksbxc515ed759mkse5r + 0)
+            _mksbx6515ed753mkse59.FieldOfView = __mksava515ed1ffmksazl.fov.value
+          end
+        end
+      end
+      do
+        local _mmksbxf515ed75cmkse60 = 1
+        _mmksbxf515ed75cmkse60 = (_mmksbxf515ed75cmkse60 + 0)
+        if (((88 * 18) == (18 * 88)) and _mmksbxa515ed757mkse5l) then
+          do
+            local _zmksbxe515ed75bmkse5x = 1
+            _zmksbxe515ed75bmkse5x = (_zmksbxe515ed75bmkse5x + 0)
+            _mksbx6515ed753mkse59.CFrame = (_mksbx6515ed753mkse59.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, _zmksbx9515ed756mkse5i, 0, 0, 0, 1))
+          end
+        end
+      end
+    end)
+  end
+  do
+    local _mksbxl515ed762mkse6i = 1
+    _mksbxl515ed762mkse6i = (_mksbxl515ed762mkse6i + 0)
+    _zmksav2515ed1f7mksayx.Heartbeat:Connect(function()
+      do
+        local __mksbxh515ed75emkse66 = 1
+        __mksbxh515ed75emkse66 = (__mksbxh515ed75emkse66 + 0)
+        if (((93 + 80) == 173) and not __mksava515ed1ffmksazl.unlockzoom.enabled) then
+          return
+        end
+      end
+      do
+        local _mmksbxk515ed761mkse6f = 1
+        _mmksbxk515ed761mkse6f = (_mmksbxk515ed761mkse6f + 0)
+        pcall(function()
+          do
+            local _xmksbxi515ed75fmkse69 = 1
+            _xmksbxi515ed75fmkse69 = (_xmksbxi515ed75fmkse69 + 0)
+            _mmksav3515ed1f8mksaz0.CameraMinZoomDistance = __mksava515ed1ffmksazl.unlockzoom.min
+          end
+          do
+            local _zmksbxj515ed760mkse6c = 1
+            _zmksbxj515ed760mkse6c = (_zmksbxj515ed760mkse6c + 0)
+            _mmksav3515ed1f8mksaz0.CameraMaxZoomDistance = __mksava515ed1ffmksazl.unlockzoom.max
+          end
+        end)
+      end
+    end)
+  end
+end
+do
+  local __mksbxm515ed763mkse6l = 1
+  __mksbxm515ed763mkse6l = (__mksbxm515ed763mkse6l + 0)
+  _xmksbpg515ed63dmksdi3()
+end
+local function _xmksbxn515ed764mkse6o()
+  local _zmksbxo515ed765mkse6r = {Realistic = Enum.LightingStyle.Realistic, Soft = Enum.LightingStyle.Soft}
+  local _mmksbxp515ed766mkse6u = {[_xmksat8515ed1b5mksatf({45, 79, 79, 71}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 36, 43, 46, 40}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 37, 37, 41, 47}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 37, 43, 43, 39}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 38, 36, 46, 39}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 37, 40, 37, 43}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 31, 35, 39, 41, 42, 36, 38, 46, 45}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({32, 85, 83, 81, 85, 69}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 36, 35, 36, 37, 38, 43, 40, 41, 39, 45, 49, 46}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 29, 30, 36, 36, 34, 34, 41, 37, 45, 45, 40, 47, 42}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 33, 34, 36, 41, 34, 37, 44, 38, 44, 38, 48, 44, 44}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 34, 38, 41, 43, 44, 45, 43, 46, 39, 47, 50, 43}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 35, 38, 37, 41, 35, 35, 40, 38, 47, 45, 43, 42, 44}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 37, 31, 38, 33, 36, 37, 42, 41, 42, 42, 49, 47, 49}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({33, 65, 85, 86, 79, 73, 87, 85, 74, 83}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 31, 32, 35, 39, 36, 43, 40, 40, 38, 45, 49, 42, 49}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 38, 35, 31, 37, 42, 41, 42, 38, 37, 45, 44, 43, 42}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 33, 30, 31, 41, 42, 36, 39, 39, 42, 42, 47, 41, 41, 44}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 31, 37, 39, 39, 35, 41, 45, 45, 40, 40, 41, 41, 42}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 36, 31, 39, 35, 41, 42, 41, 38, 41, 39, 43, 44, 48}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 37, 32, 34, 41, 40, 37, 36, 39, 38, 40, 45, 46, 48}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({33, 69, 66, 69, 75, 4, 39, 85, 94, 84}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 31, 36, 34, 37, 39, 42, 37, 39, 41, 47, 42}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 31, 33, 40, 37, 36, 40, 39, 37, 46, 44, 48, 43, 43}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 31, 36, 34, 37, 39, 42, 37, 39, 41, 47, 42}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 31, 36, 34, 37, 39, 42, 37, 39, 41, 47, 42}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 31, 36, 34, 37, 39, 42, 37, 39, 41, 47, 42}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 39, 31, 40, 42, 43, 41, 40, 45, 38, 42, 40, 47, 47}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({33, 85, 80, 91, 3, 38, 70, 89, 76}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 35, 31, 33, 40, 40, 43, 41, 41, 40, 40, 48, 49, 50}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 35, 36, 32, 32, 33, 38, 39, 40, 46, 43, 45, 42, 46}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 38, 36, 38, 37, 37, 35, 38, 40, 40, 46, 44, 47, 48}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 38, 34, 32, 40, 34, 43, 43, 45, 41, 46, 42, 48, 51}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 36, 38, 34, 36, 39, 39, 43, 37, 39, 39, 47, 41, 49}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 32, 34, 31, 36, 41, 41, 43, 45, 38, 42, 47, 43, 49}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({34, 76, 80, 69, 78, 91, 84, 88, 82}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 35, 32, 39, 36, 40, 40, 36, 37, 46, 41, 41, 42, 47}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 31, 35, 34, 38, 40, 41, 39, 43, 41, 40, 46, 43, 44}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 35, 37, 32, 39, 37, 41, 42, 45, 46, 45, 48, 48, 45}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 37, 33, 40, 40, 38, 43, 44, 40, 40, 44, 40, 47, 42}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 36, 39, 36, 37, 35, 40, 36, 38, 39, 42, 44, 43, 45}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 33, 35, 32, 32, 40, 42, 44, 38, 37, 42, 42, 45, 43}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({35, 65, 83, 77, 3, 49, 70, 90, 91, 77, 91}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 36, 36, 33, 41, 39, 43, 38, 40, 42, 38, 48, 42, 43}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 36, 38, 40, 40, 36, 43, 41, 42, 46, 38, 41, 43, 43}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 34, 38, 37, 38, 34, 38, 39, 41, 39, 47, 40, 49, 46}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 38, 33, 33, 42, 35, 39, 39, 44, 38, 46, 49, 46, 48}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 34, 40, 36, 33, 34, 41, 41, 42, 46, 47, 47, 48, 47}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 34, 34, 34, 32, 42, 34, 43, 45, 41, 41, 41, 46, 44}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({37, 76, 66, 85, 75, 4, 39, 82, 72, 75, 84}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 37, 34, 33, 38, 41, 37, 40, 42, 42, 42, 42, 45, 44}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 34, 31, 31, 34, 34, 34, 42, 41, 41, 38}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 30, 39, 38, 32, 42, 42, 37, 45, 44, 44, 46, 42, 43}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 37, 34, 33, 38, 41, 37, 40, 42, 42, 42, 42, 45, 44}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 37, 34, 33, 38, 41, 37, 40, 42, 42, 42, 42, 45, 44}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 38, 31, 32, 37, 42, 41, 42, 40, 45, 40, 47, 42, 49}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({38, 72, 80, 85, 87, 80, 94}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 31, 36, 32, 39, 41, 39, 39, 37, 42, 47, 41, 49, 45}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 35, 31, 40, 40, 34, 43, 41, 39, 41, 46, 41, 42, 49}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 35, 32, 37, 37, 38, 35, 39, 37, 43, 45, 42, 40, 43}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 30, 33, 37, 40, 43, 40, 45, 41, 38, 44, 44, 45, 47}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 30, 39, 34, 37, 34, 34, 36, 45, 42, 41, 40, 42, 41}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 32, 31, 33, 34, 34, 43, 45, 39, 40, 42, 44, 50, 50}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({38, 79, 80, 70, 3, 41, 76, 77}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 33, 36, 39, 33, 36, 42, 36, 45, 40, 41, 39, 41, 43}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 34, 38, 35, 35, 41, 37, 43, 40, 43, 47, 47, 40, 47}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 36, 38, 40, 33, 42, 39, 42, 40, 44, 41, 41, 45, 50}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 32, 40, 39, 34, 39, 36, 44, 46, 44, 44, 44, 50, 46}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 33, 35, 39, 40, 41, 43, 35, 45, 43, 38, 46, 47, 46}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 37, 34, 38, 41, 42, 42, 37, 42, 44, 48, 48, 42, 47}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({44, 69, 77, 86, 92, 4, 50, 85, 83, 92, 78, 88}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 31, 35, 38, 36, 43, 35, 43, 42, 40, 46, 46, 45, 51}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 32, 37, 37, 35, 41, 40, 40, 39, 40, 44, 43, 42}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 33, 31, 39, 40, 40, 43, 45, 37, 39, 45, 42, 48, 50}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 38, 39, 39, 36, 36, 40, 42, 41, 38, 41, 48, 40, 50}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 31, 33, 40, 37, 34, 43, 40, 43, 40, 45, 43, 48, 45}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 37, 36, 35, 33, 35, 35, 42, 44, 38, 39, 43, 46, 42}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({50, 72, 74, 88, 72, 86, 71, 91, 89, 86}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 33, 37, 35, 39, 34, 38, 36, 45, 41, 48, 49, 50, 43}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 38, 31, 34, 40, 36, 41, 44, 38, 45, 48, 44, 50, 51}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 35, 34, 31, 37, 33, 35, 35, 44, 41, 45, 39, 42, 50}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 32, 31, 36, 37, 37, 40, 39, 40, 43, 41, 46, 49, 50}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 31, 31, 39, 41, 40, 35, 40, 42, 45, 41, 43, 46, 47}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 32, 35, 40, 39, 36, 44, 41, 41, 41, 41, 47, 43, 49}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({50, 80, 74, 80, 3, 40, 78, 77}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 34, 33, 33, 34, 35, 36, 37, 40, 44, 45, 47, 46, 46}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 30, 35, 41, 34, 41, 44, 41, 39, 40, 39, 44, 44, 43}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 30, 32, 33, 42, 36, 42, 45, 38, 39, 40, 40, 46, 47}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 29, 37, 35, 34, 39, 41, 36, 39, 40, 39, 44, 46, 43}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 35, 35, 32, 38, 41, 36, 41, 43, 46, 39, 48, 44, 41}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 30, 33, 34, 42, 37, 36, 36, 42, 44, 46, 47, 46, 43}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({50, 87, 70, 71, 87, 4, 50, 95, 90, 92, 78, 92, 100}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 37, 33, 38, 37, 42, 44, 43, 42, 40, 39, 42, 48, 49}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 35, 37, 35, 40, 43, 39, 42, 39, 45, 46, 46, 44, 50}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 35, 38, 32, 38, 36, 40, 38, 44, 46, 45, 40, 45, 50}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 39, 37, 38, 40, 40, 35, 40, 42, 39, 46, 47, 45, 49}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 34, 39, 31, 36, 36, 34, 38, 36, 39, 45, 39, 49, 43}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 36, 30, 32, 33, 34, 38, 41, 44, 39, 40, 46, 41, 47}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}, [_xmksat8515ed1b5mksatf({51, 69, 83, 84, 68, 71, 74, 6, 43, 87, 86, 79}, 63, 928)] = {skybox_back = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 37, 36, 39, 36, 34, 34, 35, 36, 38, 44, 44, 41, 41}, 63, 928), skybox_down = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 38, 34, 37, 37, 34, 39, 36, 40, 43, 45, 45, 43, 43}, 63, 928), skybox_front = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 34, 37, 33, 35, 39, 36, 44, 42, 40, 43, 47, 45, 43}, 63, 928), skybox_left = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 36, 33, 38, 42, 34, 41, 40, 46, 41, 48, 48, 44, 49}, 63, 928), skybox_right = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 36, 33, 35, 37, 38, 36, 41, 37, 45, 48, 47, 45, 46}, 63, 928), skybox_up = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 34, 33, 39, 37, 42, 40, 37, 43, 45, 38, 47, 47, 49}, 63, 928), sun_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 97, 100, 94, 31, 92, 99, 91}, 63, 928), moon_texture = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 33, 23, 24, 93, 86, 101, 28, 91, 94, 95, 95, 32, 93, 100, 92}, 63, 928)}}
+  do
+    local _mksbxq515ed767mkse6x = 1
+    _mksbxq515ed767mkse6x = (_mksbxq515ed767mkse6x + 0)
+    _zmksavc515ed201mksazr = {}
+  end
+  do
+    local _mmksbxu515ed76bmkse79 = 1
+    _mmksbxu515ed76bmkse79 = (_mmksbxu515ed76bmkse79 + 0)
+    for __mksbxr515ed768mkse70 in pairs(_mmksbxp515ed766mkse6u) do
+      do
+        local _zmksbxt515ed76amkse76 = 1
+        _zmksbxt515ed76amkse76 = (_zmksbxt515ed76amkse76 + 0)
+        if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (__mksbxr515ed768mkse70 ~= _xmksat8515ed1b5mksatf({45, 79, 79, 71}, 63, 928))) then
+          do
+            local _xmksbxs515ed769mkse73 = 1
+            _xmksbxs515ed769mkse73 = (_xmksbxs515ed769mkse73 + 0)
+            table.insert(_zmksavc515ed201mksazr, __mksbxr515ed768mkse70)
+          end
+        end
+      end
+    end
+  end
+  do
+    local _mksbxv515ed76cmkse7c = 1
+    _mksbxv515ed76cmkse7c = (_mksbxv515ed76cmkse7c + 0)
+    table.sort(_zmksavc515ed201mksazr)
+  end
+  do
+    local __mksbxw515ed76dmkse7f = 1
+    __mksbxw515ed76dmkse7f = (__mksbxw515ed76dmkse7f + 0)
+    _mksav9515ed1femksazi = {lighting_enabled = false, ambient_color = _xmksav1515ed1f6mksayu.Ambient, outdoor_ambient_color = _xmksav1515ed1f6mksayu.OutdoorAmbient, shift_top = _xmksav1515ed1f6mksayu.ColorShift_Top, shift_bottom = _xmksav1515ed1f6mksayu.ColorShift_Bottom, exposure = _xmksav1515ed1f6mksayu.ExposureCompensation, brightness = _xmksav1515ed1f6mksayu.Brightness, shadow_softness = _xmksav1515ed1f6mksayu.ShadowSoftness, diffuse_scale = _xmksav1515ed1f6mksayu.EnvironmentDiffuseScale, specular_scale = _xmksav1515ed1f6mksayu.EnvironmentSpecularScale, global_shadows = _xmksav1515ed1f6mksayu.GlobalShadows, lighting_style = _xmksat8515ed1b5mksatf({49, 69, 66, 78, 76, 87, 89, 79, 74}, 63, 928), atmosphere_enabled = false, density = 0.3, offset = 0, atm_color = Color3.fromRGB(199, 199, 199), decay = Color3.fromRGB(92, 60, 13), glare = 0, haze = 0, cc_enabled = false, cc_brightness = 0, cc_contrast = 0, cc_saturation = 0, cc_tint = Color3.fromRGB(255, 255, 255), sunrays_enabled = false, sunrays_intensity = 0.25, sunrays_spread = 1, skybox_enabled = false, skybox_value = _xmksat8515ed1b5mksatf({32, 85, 83, 81, 85, 69}, 63, 928), star_count = 3000, sun_angular_size = 21, moon_angular_size = 11, clocktime = _xmksav1515ed1f6mksayu.ClockTime, auto_rotate = false, auto_rotate_speed = 1, auto_rotate_conn = nil, lighting_skybox = nil, lighting_atmosphere = nil, lighting_cc = nil, lighting_sunrays = nil, camera_fov = 70, camera_resolution = 1, fps_boost = false, _fov_active = false, _debounce = false, _orig = {Ambient = _xmksav1515ed1f6mksayu.Ambient, OutdoorAmbient = _xmksav1515ed1f6mksayu.OutdoorAmbient, ColorShift_Top = _xmksav1515ed1f6mksayu.ColorShift_Top, ColorShift_Bottom = _xmksav1515ed1f6mksayu.ColorShift_Bottom, ExposureCompensation = _xmksav1515ed1f6mksayu.ExposureCompensation, Brightness = _xmksav1515ed1f6mksayu.Brightness, ShadowSoftness = _xmksav1515ed1f6mksayu.ShadowSoftness, EnvironmentDiffuseScale = _xmksav1515ed1f6mksayu.EnvironmentDiffuseScale, EnvironmentSpecularScale = _xmksav1515ed1f6mksayu.EnvironmentSpecularScale, GlobalShadows = _xmksav1515ed1f6mksayu.GlobalShadows, ClockTime = _xmksav1515ed1f6mksayu.ClockTime}}
+  end
+  do
+    local _xmksbyc515ed77dmkse8r = 1
+    _xmksbyc515ed77dmkse8r = (_xmksbyc515ed77dmkse8r + 0)
+    function _mmksavi515ed207mksb09()
+      do
+        local _xmksbxx515ed76emkse7i = 1
+        _xmksbxx515ed76emkse7i = (_xmksbxx515ed76emkse7i + 0)
+        if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not _mksav9515ed1femksazi.lighting_enabled) then
+          return
+        end
+      end
+      do
+        local _zmksbxy515ed76fmkse7l = 1
+        _zmksbxy515ed76fmkse7l = (_zmksbxy515ed76fmkse7l + 0)
+        _mksav9515ed1femksazi._debounce = true
+      end
+      do
+        local _mmksbxz515ed770mkse7o = 1
+        _mmksbxz515ed770mkse7o = (_mmksbxz515ed770mkse7o + 0)
+        _xmksav1515ed1f6mksayu.Ambient = _mksav9515ed1femksazi.ambient_color
+      end
+      do
+        local _mksby0515ed771mkse7r = 1
+        _mksby0515ed771mkse7r = (_mksby0515ed771mkse7r + 0)
+        _xmksav1515ed1f6mksayu.OutdoorAmbient = _mksav9515ed1femksazi.outdoor_ambient_color
+      end
+      do
+        local __mksby1515ed772mkse7u = 1
+        __mksby1515ed772mkse7u = (__mksby1515ed772mkse7u + 0)
+        _xmksav1515ed1f6mksayu.ColorShift_Top = _mksav9515ed1femksazi.shift_top
+      end
+      do
+        local _xmksby2515ed773mkse7x = 1
+        _xmksby2515ed773mkse7x = (_xmksby2515ed773mkse7x + 0)
+        _xmksav1515ed1f6mksayu.ColorShift_Bottom = _mksav9515ed1femksazi.shift_bottom
+      end
+      do
+        local _zmksby3515ed774mkse80 = 1
+        _zmksby3515ed774mkse80 = (_zmksby3515ed774mkse80 + 0)
+        _xmksav1515ed1f6mksayu.ExposureCompensation = _mksav9515ed1femksazi.exposure
+      end
+      do
+        local _mmksby4515ed775mkse83 = 1
+        _mmksby4515ed775mkse83 = (_mmksby4515ed775mkse83 + 0)
+        _xmksav1515ed1f6mksayu.Brightness = _mksav9515ed1femksazi.brightness
+      end
+      do
+        local _mksby5515ed776mkse86 = 1
+        _mksby5515ed776mkse86 = (_mksby5515ed776mkse86 + 0)
+        _xmksav1515ed1f6mksayu.ShadowSoftness = _mksav9515ed1femksazi.shadow_softness
+      end
+      do
+        local __mksby6515ed777mkse89 = 1
+        __mksby6515ed777mkse89 = (__mksby6515ed777mkse89 + 0)
+        _xmksav1515ed1f6mksayu.EnvironmentDiffuseScale = _mksav9515ed1femksazi.diffuse_scale
+      end
+      do
+        local _xmksby7515ed778mkse8c = 1
+        _xmksby7515ed778mkse8c = (_xmksby7515ed778mkse8c + 0)
+        _xmksav1515ed1f6mksayu.EnvironmentSpecularScale = _mksav9515ed1femksazi.specular_scale
+      end
+      do
+        local _zmksby8515ed779mkse8f = 1
+        _zmksby8515ed779mkse8f = (_zmksby8515ed779mkse8f + 0)
+        _xmksav1515ed1f6mksayu.GlobalShadows = _mksav9515ed1femksazi.global_shadows
+      end
+      do
+        local _mksbya515ed77bmkse8l = 1
+        _mksbya515ed77bmkse8l = (_mksbya515ed77bmkse8l + 0)
+        pcall(function()
+          do
+            local _mmksby9515ed77amkse8i = 1
+            _mmksby9515ed77amkse8i = (_mmksby9515ed77amkse8i + 0)
+            _xmksav1515ed1f6mksayu.LightingStyle = (_zmksbxo515ed765mkse6r[_mksav9515ed1femksazi.lighting_style] or Enum.LightingStyle.Realistic)
+          end
+        end)
+      end
+      do
+        local __mksbyb515ed77cmkse8o = 1
+        __mksbyb515ed77cmkse8o = (__mksbyb515ed77cmkse8o + 0)
+        _mksav9515ed1femksazi._debounce = false
+      end
+    end
+  end
+  do
+    local _mksbyp515ed78amkse9u = 1
+    _mksbyp515ed78amkse9u = (_mksbyp515ed78amkse9u + 0)
+    function _mksavj515ed208mksb0c()
+      local _zmksbyd515ed77emkse8u = _mksav9515ed1femksazi._orig
+      do
+        local _mmksbye515ed77fmkse8x = 1
+        _mmksbye515ed77fmkse8x = (_mmksbye515ed77fmkse8x + 0)
+        _xmksav1515ed1f6mksayu.Ambient = _zmksbyd515ed77emkse8u.Ambient
+      end
+      do
+        local _mksbyf515ed780mkse90 = 1
+        _mksbyf515ed780mkse90 = (_mksbyf515ed780mkse90 + 0)
+        _xmksav1515ed1f6mksayu.OutdoorAmbient = _zmksbyd515ed77emkse8u.OutdoorAmbient
+      end
+      do
+        local __mksbyg515ed781mkse93 = 1
+        __mksbyg515ed781mkse93 = (__mksbyg515ed781mkse93 + 0)
+        _xmksav1515ed1f6mksayu.ColorShift_Top = _zmksbyd515ed77emkse8u.ColorShift_Top
+      end
+      do
+        local _xmksbyh515ed782mkse96 = 1
+        _xmksbyh515ed782mkse96 = (_xmksbyh515ed782mkse96 + 0)
+        _xmksav1515ed1f6mksayu.ColorShift_Bottom = _zmksbyd515ed77emkse8u.ColorShift_Bottom
+      end
+      do
+        local _zmksbyi515ed783mkse99 = 1
+        _zmksbyi515ed783mkse99 = (_zmksbyi515ed783mkse99 + 0)
+        _xmksav1515ed1f6mksayu.ExposureCompensation = _zmksbyd515ed77emkse8u.ExposureCompensation
+      end
+      do
+        local _mmksbyj515ed784mkse9c = 1
+        _mmksbyj515ed784mkse9c = (_mmksbyj515ed784mkse9c + 0)
+        _xmksav1515ed1f6mksayu.Brightness = _zmksbyd515ed77emkse8u.Brightness
+      end
+      do
+        local _mksbyk515ed785mkse9f = 1
+        _mksbyk515ed785mkse9f = (_mksbyk515ed785mkse9f + 0)
+        _xmksav1515ed1f6mksayu.ShadowSoftness = _zmksbyd515ed77emkse8u.ShadowSoftness
+      end
+      do
+        local __mksbyl515ed786mkse9i = 1
+        __mksbyl515ed786mkse9i = (__mksbyl515ed786mkse9i + 0)
+        _xmksav1515ed1f6mksayu.EnvironmentDiffuseScale = _zmksbyd515ed77emkse8u.EnvironmentDiffuseScale
+      end
+      do
+        local _xmksbym515ed787mkse9l = 1
+        _xmksbym515ed787mkse9l = (_xmksbym515ed787mkse9l + 0)
+        _xmksav1515ed1f6mksayu.EnvironmentSpecularScale = _zmksbyd515ed77emkse8u.EnvironmentSpecularScale
+      end
+      do
+        local _zmksbyn515ed788mkse9o = 1
+        _zmksbyn515ed788mkse9o = (_zmksbyn515ed788mkse9o + 0)
+        _xmksav1515ed1f6mksayu.GlobalShadows = _zmksbyd515ed77emkse8u.GlobalShadows
+      end
+      do
+        local _mmksbyo515ed789mkse9r = 1
+        _mmksbyo515ed789mkse9r = (_mmksbyo515ed789mkse9r + 0)
+        _xmksav1515ed1f6mksayu.ClockTime = _zmksbyd515ed77emkse8u.ClockTime
+      end
+    end
+  end
+  local function __mksbyq515ed78bmkse9x()
+    local _xmksbyr515ed78cmksea0 = _mksav9515ed1femksazi.lighting_atmosphere
+    do
+      local _zmksbys515ed78dmksea3 = 1
+      _zmksbys515ed78dmksea3 = (_zmksbys515ed78dmksea3 + 0)
+      if (((46 + 28) == 74) and (_xmksbyr515ed78cmksea0 and _xmksbyr515ed78cmksea0.Parent)) then
+        return _xmksbyr515ed78cmksea0
+      end
+    end
+    do
+      local _mmksbyt515ed78emksea6 = 1
+      _mmksbyt515ed78emksea6 = (_mmksbyt515ed78emksea6 + 0)
+      _xmksbyr515ed78cmksea0 = _xmksav1515ed1f6mksayu:FindFirstChild(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 38, 90, 84, 87, 92, 90, 83, 81, 95, 83}, 63, 928))
+    end
+    do
+      local __mksbyv515ed790mkseac = 1
+      __mksbyv515ed790mkseac = (__mksbyv515ed790mkseac + 0)
+      if ((((89 * 10) % 10) == 0) and (_xmksbyr515ed78cmksea0 and _xmksbyr515ed78cmksea0:IsA(_xmksat8515ed1b5mksatf({32, 84, 78, 81, 86, 84, 77, 75, 89, 77}, 63, 928)))) then
+        do
+          local _mksbyu515ed78fmksea9 = 1
+          _mksbyu515ed78fmksea9 = (_mksbyu515ed78fmksea9 + 0)
+          _mksav9515ed1femksazi.lighting_atmosphere = _xmksbyr515ed78cmksea0
+        end
+        return _xmksbyr515ed78cmksea0
+      end
+    end
+    do
+      local _xmksbyw515ed791mkseaf = 1
+      _xmksbyw515ed791mkseaf = (_xmksbyw515ed791mkseaf + 0)
+      _xmksbyr515ed78cmksea0 = _xmksav1515ed1f6mksayu:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({32, 84, 78, 81, 86, 84, 77, 75, 89, 77}, 63, 928))
+    end
+    do
+      local __mksbz0515ed795mksear = 1
+      __mksbz0515ed795mksear = (__mksbz0515ed795mksear + 0)
+      if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _xmksbyr515ed78cmksea0) then
+        do
+          local _zmksbyx515ed792mkseai = 1
+          _zmksbyx515ed792mkseai = (_zmksbyx515ed792mkseai + 0)
+          _xmksbyr515ed78cmksea0.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 38, 90, 84, 87, 92, 90, 83, 81, 95, 83}, 63, 928)
+        end
+        do
+          local _mmksbyy515ed793mkseal = 1
+          _mmksbyy515ed793mkseal = (_mmksbyy515ed793mkseal + 0)
+          _mksav9515ed1femksazi.lighting_atmosphere = _xmksbyr515ed78cmksea0
+        end
+        do
+          local _mksbyz515ed794mkseao = 1
+          _mksbyz515ed794mkseao = (_mksbyz515ed794mkseao + 0)
+          _mksav9515ed1femksazi._atm_orig = (_mksav9515ed1femksazi._atm_orig or {Density = _xmksbyr515ed78cmksea0.Density, Offset = _xmksbyr515ed78cmksea0.Offset, Color = _xmksbyr515ed78cmksea0.Color, Decay = _xmksbyr515ed78cmksea0.Decay, Glare = _xmksbyr515ed78cmksea0.Glare, Haze = _xmksbyr515ed78cmksea0.Haze})
+        end
+        return _xmksbyr515ed78cmksea0
+      end
+    end
+    do
+      local _xmksbz1515ed796mkseau = 1
+      _xmksbz1515ed796mkseau = (_xmksbz1515ed796mkseau + 0)
+      _xmksbyr515ed78cmksea0 = Instance.new(_xmksat8515ed1b5mksatf({32, 84, 78, 81, 86, 84, 77, 75, 89, 77}, 63, 928))
+    end
+    do
+      local _zmksbz2515ed797mkseax = 1
+      _zmksbz2515ed797mkseax = (_zmksbz2515ed797mkseax + 0)
+      _xmksbyr515ed78cmksea0.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 38, 90, 84, 87, 92, 90, 83, 81, 95, 83}, 63, 928)
+    end
+    do
+      local _mmksbz3515ed798mkseb0 = 1
+      _mmksbz3515ed798mkseb0 = (_mmksbz3515ed798mkseb0 + 0)
+      _xmksbyr515ed78cmksea0.Parent = _xmksav1515ed1f6mksayu
+    end
+    do
+      local _mksbz4515ed799mkseb3 = 1
+      _mksbz4515ed799mkseb3 = (_mksbz4515ed799mkseb3 + 0)
+      _mksav9515ed1femksazi.lighting_atmosphere = _xmksbyr515ed78cmksea0
+    end
+    do
+      local __mksbz5515ed79amkseb6 = 1
+      __mksbz5515ed79amkseb6 = (__mksbz5515ed79amkseb6 + 0)
+      _mksav9515ed1femksazi._atm_orig = (_mksav9515ed1femksazi._atm_orig or {Density = 0.3, Offset = 0, Color = Color3.fromRGB(199, 199, 199), Decay = Color3.fromRGB(92, 60, 13), Glare = 0, Haze = 0})
+    end
+    return _xmksbyr515ed78cmksea0
+  end
+  local function _xmksbz6515ed79bmkseb9(_zmksbz7515ed79cmksebc)
+    do
+      local _mmksbz8515ed79dmksebf = 1
+      _mmksbz8515ed79dmksebf = (_mmksbz8515ed79dmksebf + 0)
+      if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and not _zmksbz7515ed79cmksebc) then
+        return
+      end
+    end
+    do
+      local __mksbzf515ed7a4mksec0 = 1
+      __mksbzf515ed7a4mksec0 = (__mksbzf515ed7a4mksec0 + 0)
+      pcall(function()
+        do
+          local _mksbz9515ed79emksebi = 1
+          _mksbz9515ed79emksebi = (_mksbz9515ed79emksebi + 0)
+          _zmksbz7515ed79cmksebc.Density = _mksav9515ed1femksazi.density
+        end
+        do
+          local __mksbza515ed79fmksebl = 1
+          __mksbza515ed79fmksebl = (__mksbza515ed79fmksebl + 0)
+          _zmksbz7515ed79cmksebc.Offset = _mksav9515ed1femksazi.offset
+        end
+        do
+          local _xmksbzb515ed7a0mksebo = 1
+          _xmksbzb515ed7a0mksebo = (_xmksbzb515ed7a0mksebo + 0)
+          _zmksbz7515ed79cmksebc.Color = _mksav9515ed1femksazi.atm_color
+        end
+        do
+          local _zmksbzc515ed7a1mksebr = 1
+          _zmksbzc515ed7a1mksebr = (_zmksbzc515ed7a1mksebr + 0)
+          _zmksbz7515ed79cmksebc.Decay = _mksav9515ed1femksazi.decay
+        end
+        do
+          local _mmksbzd515ed7a2mksebu = 1
+          _mmksbzd515ed7a2mksebu = (_mmksbzd515ed7a2mksebu + 0)
+          _zmksbz7515ed79cmksebc.Glare = _mksav9515ed1femksazi.glare
+        end
+        do
+          local _mksbze515ed7a3mksebx = 1
+          _mksbze515ed7a3mksebx = (_mksbze515ed7a3mksebx + 0)
+          _zmksbz7515ed79cmksebc.Haze = _mksav9515ed1femksazi.haze
+        end
+      end)
+    end
+  end
+  do
+    local _zmksbzr515ed7b0mksed0 = 1
+    _zmksbzr515ed7b0mksed0 = (_zmksbzr515ed7b0mksed0 + 0)
+    function __mksavk515ed209mksb0f()
+      do
+        local __mksbzp515ed7aemksecu = 1
+        __mksbzp515ed7aemksecu = (__mksbzp515ed7aemksecu + 0)
+        if ((((2 * 9) % 9) == 0) and not _mksav9515ed1femksazi.atmosphere_enabled) then
+          local _xmksbzg515ed7a5mksec3 = (_mksav9515ed1femksazi.lighting_atmosphere or _xmksav1515ed1f6mksayu:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({32, 84, 78, 81, 86, 84, 77, 75, 89, 77}, 63, 928)))
+          do
+            local _mksbzo515ed7admksecr = 1
+            _mksbzo515ed7admksecr = (_mksbzo515ed7admksecr + 0)
+            if (((59 + 23) == 82) and (_xmksbzg515ed7a5mksec3 and _mksav9515ed1femksazi._atm_orig)) then
+              do
+                local _mmksbzn515ed7acmkseco = 1
+                _mmksbzn515ed7acmkseco = (_mmksbzn515ed7acmkseco + 0)
+                pcall(function()
+                  do
+                    local _zmksbzh515ed7a6mksec6 = 1
+                    _zmksbzh515ed7a6mksec6 = (_zmksbzh515ed7a6mksec6 + 0)
+                    _xmksbzg515ed7a5mksec3.Density = _mksav9515ed1femksazi._atm_orig.Density
+                  end
+                  do
+                    local _mmksbzi515ed7a7mksec9 = 1
+                    _mmksbzi515ed7a7mksec9 = (_mmksbzi515ed7a7mksec9 + 0)
+                    _xmksbzg515ed7a5mksec3.Offset = _mksav9515ed1femksazi._atm_orig.Offset
+                  end
+                  do
+                    local _mksbzj515ed7a8mksecc = 1
+                    _mksbzj515ed7a8mksecc = (_mksbzj515ed7a8mksecc + 0)
+                    _xmksbzg515ed7a5mksec3.Color = _mksav9515ed1femksazi._atm_orig.Color
+                  end
+                  do
+                    local __mksbzk515ed7a9mksecf = 1
+                    __mksbzk515ed7a9mksecf = (__mksbzk515ed7a9mksecf + 0)
+                    _xmksbzg515ed7a5mksec3.Decay = _mksav9515ed1femksazi._atm_orig.Decay
+                  end
+                  do
+                    local _xmksbzl515ed7aamkseci = 1
+                    _xmksbzl515ed7aamkseci = (_xmksbzl515ed7aamkseci + 0)
+                    _xmksbzg515ed7a5mksec3.Glare = _mksav9515ed1femksazi._atm_orig.Glare
+                  end
+                  do
+                    local _zmksbzm515ed7abmksecl = 1
+                    _zmksbzm515ed7abmksecl = (_zmksbzm515ed7abmksecl + 0)
+                    _xmksbzg515ed7a5mksec3.Haze = _mksav9515ed1femksazi._atm_orig.Haze
+                  end
+                end)
+              end
+            end
+          end
+          return
+        end
+      end
+      do
+        local _xmksbzq515ed7afmksecx = 1
+        _xmksbzq515ed7afmksecx = (_xmksbzq515ed7afmksecx + 0)
+        _xmksbz6515ed79bmkseb9(__mksbyq515ed78bmkse9x())
+      end
+    end
+  end
+  do
+    local _zmksc01515ed7bamksedu = 1
+    _zmksc01515ed7bamksedu = (_zmksc01515ed7bamksedu + 0)
+    function _xmksavl515ed20amksb0i()
+      do
+        local _xmksbzv515ed7b4mksedc = 1
+        _xmksbzv515ed7b4mksedc = (_xmksbzv515ed7b4mksedc + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and ((_mksav9515ed1femksazi.lighting_cc == nil) or not _mksav9515ed1femksazi.lighting_cc.Parent)) then
+          do
+            local _mmksbzs515ed7b1mksed3 = 1
+            _mmksbzs515ed7b1mksed3 = (_mmksbzs515ed7b1mksed3 + 0)
+            _mksav9515ed1femksazi.lighting_cc = (_xmksav1515ed1f6mksayu:FindFirstChild(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 41}, 63, 928)) or Instance.new(_xmksat8515ed1b5mksatf({34, 79, 77, 81, 85, 39, 84, 88, 89, 77, 76, 94, 84, 91, 91, 51, 85, 86, 86, 85, 103}, 63, 928)))
+          end
+          do
+            local _mksbzt515ed7b2mksed6 = 1
+            _mksbzt515ed7b2mksed6 = (_mksbzt515ed7b2mksed6 + 0)
+            _mksav9515ed1femksazi.lighting_cc.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 40, 41}, 63, 928)
+          end
+          do
+            local __mksbzu515ed7b3mksed9 = 1
+            __mksbzu515ed7b3mksed9 = (__mksbzu515ed7b3mksed9 + 0)
+            _mksav9515ed1femksazi.lighting_cc.Parent = _xmksav1515ed1f6mksayu
+          end
+        end
+      end
+      do
+        local _zmksbzw515ed7b5mksedf = 1
+        _zmksbzw515ed7b5mksedf = (_zmksbzw515ed7b5mksedf + 0)
+        _mksav9515ed1femksazi.lighting_cc.Enabled = _mksav9515ed1femksazi.cc_enabled
+      end
+      do
+        local _mmksbzx515ed7b6mksedi = 1
+        _mmksbzx515ed7b6mksedi = (_mmksbzx515ed7b6mksedi + 0)
+        _mksav9515ed1femksazi.lighting_cc.Brightness = _mksav9515ed1femksazi.cc_brightness
+      end
+      do
+        local _mksbzy515ed7b7mksedl = 1
+        _mksbzy515ed7b7mksedl = (_mksbzy515ed7b7mksedl + 0)
+        _mksav9515ed1femksazi.lighting_cc.Contrast = _mksav9515ed1femksazi.cc_contrast
+      end
+      do
+        local __mksbzz515ed7b8mksedo = 1
+        __mksbzz515ed7b8mksedo = (__mksbzz515ed7b8mksedo + 0)
+        _mksav9515ed1femksazi.lighting_cc.Saturation = _mksav9515ed1femksazi.cc_saturation
+      end
+      do
+        local _xmksc00515ed7b9mksedr = 1
+        _xmksc00515ed7b9mksedr = (_xmksc00515ed7b9mksedr + 0)
+        _mksav9515ed1femksazi.lighting_cc.TintColor = _mksav9515ed1femksazi.cc_tint
+      end
+    end
+  end
+  do
+    local _mksc0d515ed7c6mkseeu = 1
+    _mksc0d515ed7c6mkseeu = (_mksc0d515ed7c6mkseeu + 0)
+    function _zmksavm515ed20bmksb0l()
+      do
+        local __mksc09515ed7c2mkseei = 1
+        __mksc09515ed7c2mkseei = (__mksc09515ed7c2mkseei + 0)
+        if (((28 + 53) == 81) and ((_mksav9515ed1femksazi.lighting_sunrays == nil) or not _mksav9515ed1femksazi.lighting_sunrays.Parent)) then
+          local _mmksc02515ed7bbmksedx = (_xmksav1515ed1f6mksayu:FindFirstChild(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 91, 85, 58, 74, 99, 94}, 63, 928)) or _xmksav1515ed1f6mksayu:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({50, 85, 79, 52, 68, 93, 88, 43, 77, 78, 78, 77, 95}, 63, 928)))
+          do
+            local _mksc08515ed7c1mkseef = 1
+            _mksc08515ed7c1mkseef = (_mksc08515ed7c1mkseef + 0)
+            if (((45 * 43) == (43 * 45)) and _mmksc02515ed7bbmksedx) then
+              do
+                local _mksc03515ed7bcmksee0 = 1
+                _mksc03515ed7bcmksee0 = (_mksc03515ed7bcmksee0 + 0)
+                _mmksc02515ed7bbmksedx.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 91, 85, 58, 74, 99, 94}, 63, 928)
+              end
+              do
+                local __mksc04515ed7bdmksee3 = 1
+                __mksc04515ed7bdmksee3 = (__mksc04515ed7bdmksee3 + 0)
+                _mksav9515ed1femksazi.lighting_sunrays = _mmksc02515ed7bbmksedx
+              end
+            else
+              do
+                local _xmksc05515ed7bemksee6 = 1
+                _xmksc05515ed7bemksee6 = (_xmksc05515ed7bemksee6 + 0)
+                _mksav9515ed1femksazi.lighting_sunrays = Instance.new(_xmksat8515ed1b5mksatf({50, 85, 79, 52, 68, 93, 88, 43, 77, 78, 78, 77, 95}, 63, 928))
+              end
+              do
+                local _zmksc06515ed7bfmksee9 = 1
+                _zmksc06515ed7bfmksee9 = (_zmksc06515ed7bfmksee9 + 0)
+                _mksav9515ed1femksazi.lighting_sunrays.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 91, 85, 58, 74, 99, 94}, 63, 928)
+              end
+              do
+                local _mmksc07515ed7c0mkseec = 1
+                _mmksc07515ed7c0mkseec = (_mmksc07515ed7c0mkseec + 0)
+                _mksav9515ed1femksazi.lighting_sunrays.Parent = _xmksav1515ed1f6mksayu
+              end
+            end
+          end
+        end
+      end
+      do
+        local _xmksc0a515ed7c3mkseel = 1
+        _xmksc0a515ed7c3mkseel = (_xmksc0a515ed7c3mkseel + 0)
+        _mksav9515ed1femksazi.lighting_sunrays.Enabled = _mksav9515ed1femksazi.sunrays_enabled
+      end
+      do
+        local _zmksc0b515ed7c4mkseeo = 1
+        _zmksc0b515ed7c4mkseeo = (_zmksc0b515ed7c4mkseeo + 0)
+        _mksav9515ed1femksazi.lighting_sunrays.Intensity = _mksav9515ed1femksazi.sunrays_intensity
+      end
+      do
+        local _mmksc0c515ed7c5mkseer = 1
+        _mmksc0c515ed7c5mkseer = (_mmksc0c515ed7c5mkseer + 0)
+        _mksav9515ed1femksazi.lighting_sunrays.Spread = _mksav9515ed1femksazi.sunrays_spread
+      end
+    end
+  end
+  local function __mksc0e515ed7c7mkseex(_xmksc0f515ed7c8mksef0)
+    do
+      local _zmksc0g515ed7c9mksef3 = 1
+      _zmksc0g515ed7c9mksef3 = (_zmksc0g515ed7c9mksef3 + 0)
+      if ((((29 * 11) % 11) == 0) and not _xmksc0f515ed7c8mksef0) then
+        return nil
+      end
+    end
+    return {SkyboxBk = _xmksc0f515ed7c8mksef0.SkyboxBk, SkyboxDn = _xmksc0f515ed7c8mksef0.SkyboxDn, SkyboxFt = _xmksc0f515ed7c8mksef0.SkyboxFt, SkyboxLf = _xmksc0f515ed7c8mksef0.SkyboxLf, SkyboxRt = _xmksc0f515ed7c8mksef0.SkyboxRt, SkyboxUp = _xmksc0f515ed7c8mksef0.SkyboxUp, SunTextureId = _xmksc0f515ed7c8mksef0.SunTextureId, MoonTextureId = _xmksc0f515ed7c8mksef0.MoonTextureId, StarCount = _xmksc0f515ed7c8mksef0.StarCount, SunAngularSize = _xmksc0f515ed7c8mksef0.SunAngularSize, MoonAngularSize = _xmksc0f515ed7c8mksef0.MoonAngularSize}
+  end
+  local function _mmksc0h515ed7camksef6()
+    local _mksc0i515ed7cbmksef9 = _mksav9515ed1femksazi.lighting_skybox
+    do
+      local __mksc0j515ed7ccmksefc = 1
+      __mksc0j515ed7ccmksefc = (__mksc0j515ed7ccmksefc + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (_mksc0i515ed7cbmksef9 and _mksc0i515ed7cbmksef9.Parent)) then
+        return _mksc0i515ed7cbmksef9
+      end
+    end
+    do
+      local _xmksc0k515ed7cdmkseff = 1
+      _xmksc0k515ed7cdmkseff = (_xmksc0k515ed7cdmkseff + 0)
+      _mksc0i515ed7cbmksef9 = _xmksav1515ed1f6mksayu:FindFirstChild(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 81, 96}, 63, 928))
+    end
+    do
+      local _mmksc0m515ed7cfmksefl = 1
+      _mmksc0m515ed7cfmksefl = (_mmksc0m515ed7cfmksefl + 0)
+      if (((18 * 49) == (49 * 18)) and (_mksc0i515ed7cbmksef9 and _mksc0i515ed7cbmksef9:IsA(_xmksat8515ed1b5mksatf({50, 75, 90}, 63, 928)))) then
+        do
+          local _zmksc0l515ed7cemksefi = 1
+          _zmksc0l515ed7cemksefi = (_zmksc0l515ed7cemksefi + 0)
+          _mksav9515ed1femksazi.lighting_skybox = _mksc0i515ed7cbmksef9
+        end
+        return _mksc0i515ed7cbmksef9
+      end
+    end
+    do
+      local _mksc0n515ed7d0mksefo = 1
+      _mksc0n515ed7d0mksefo = (_mksc0n515ed7d0mksefo + 0)
+      _mksc0i515ed7cbmksef9 = _xmksav1515ed1f6mksayu:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({50, 75, 90}, 63, 928))
+    end
+    do
+      local _mksc0s515ed7d5mkseg3 = 1
+      _mksc0s515ed7d5mkseg3 = (_mksc0s515ed7d5mkseg3 + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and _mksc0i515ed7cbmksef9) then
+        do
+          local _xmksc0p515ed7d2mksefu = 1
+          _xmksc0p515ed7d2mksefu = (_xmksc0p515ed7d2mksefu + 0)
+          if (((63 * 95) == (95 * 63)) and not _mksav9515ed1femksazi._sky_orig) then
+            do
+              local __mksc0o515ed7d1mksefr = 1
+              __mksc0o515ed7d1mksefr = (__mksc0o515ed7d1mksefr + 0)
+              _mksav9515ed1femksazi._sky_orig = __mksc0e515ed7c7mkseex(_mksc0i515ed7cbmksef9)
+            end
+          end
+        end
+        do
+          local _zmksc0q515ed7d3mksefx = 1
+          _zmksc0q515ed7d3mksefx = (_zmksc0q515ed7d3mksefx + 0)
+          _mksc0i515ed7cbmksef9.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 81, 96}, 63, 928)
+        end
+        do
+          local _mmksc0r515ed7d4mkseg0 = 1
+          _mmksc0r515ed7d4mkseg0 = (_mmksc0r515ed7d4mkseg0 + 0)
+          _mksav9515ed1femksazi.lighting_skybox = _mksc0i515ed7cbmksef9
+        end
+        return _mksc0i515ed7cbmksef9
+      end
+    end
+    do
+      local __mksc0t515ed7d6mkseg6 = 1
+      __mksc0t515ed7d6mkseg6 = (__mksc0t515ed7d6mkseg6 + 0)
+      _mksc0i515ed7cbmksef9 = Instance.new(_xmksat8515ed1b5mksatf({50, 75, 90}, 63, 928))
+    end
+    do
+      local _xmksc0u515ed7d7mkseg9 = 1
+      _xmksc0u515ed7d7mkseg9 = (_xmksc0u515ed7d7mkseg9 + 0)
+      _mksc0i515ed7cbmksef9.Name = _xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 81, 96}, 63, 928)
+    end
+    do
+      local _zmksc0v515ed7d8mksegc = 1
+      _zmksc0v515ed7d8mksegc = (_zmksc0v515ed7d8mksegc + 0)
+      _mksc0i515ed7cbmksef9.Parent = _xmksav1515ed1f6mksayu
+    end
+    do
+      local _mmksc0w515ed7d9mksegf = 1
+      _mmksc0w515ed7d9mksegf = (_mmksc0w515ed7d9mksegf + 0)
+      _mksav9515ed1femksazi.lighting_skybox = _mksc0i515ed7cbmksef9
+    end
+    do
+      local _mksc0x515ed7damksegi = 1
+      _mksc0x515ed7damksegi = (_mksc0x515ed7damksegi + 0)
+      _mksav9515ed1femksazi._sky_created = true
+    end
+    return _mksc0i515ed7cbmksef9
+  end
+  local function __mksc0y515ed7dbmksegl(_xmksc0z515ed7dcmksego)
+    do
+      local _zmksc10515ed7ddmksegr = 1
+      _zmksc10515ed7ddmksegr = (_zmksc10515ed7ddmksegr + 0)
+      if (((6 + 87) == 93) and not _xmksc0z515ed7dcmksego) then
+        return
+      end
+    end
+    local _mmksc11515ed7demksegu = ((_mmksbxp515ed766mkse6u[_mksav9515ed1femksazi.skybox_value] or _mmksbxp515ed766mkse6u[_xmksat8515ed1b5mksatf({32, 85, 83, 81, 85, 69}, 63, 928)]) or {})
+    do
+      local _zmksc1f515ed7ecmksei0 = 1
+      _zmksc1f515ed7ecmksei0 = (_zmksc1f515ed7ecmksei0 + 0)
+      pcall(function()
+        do
+          local _mksc12515ed7dfmksegx = 1
+          _mksc12515ed7dfmksegx = (_mksc12515ed7dfmksegx + 0)
+          _xmksc0z515ed7dcmksego.SkyboxBk = (_mmksc11515ed7demksegu.skybox_back or _xmksc0z515ed7dcmksego.SkyboxBk)
+        end
+        do
+          local __mksc13515ed7e0mkseh0 = 1
+          __mksc13515ed7e0mkseh0 = (__mksc13515ed7e0mkseh0 + 0)
+          _xmksc0z515ed7dcmksego.SkyboxDn = (_mmksc11515ed7demksegu.skybox_down or _xmksc0z515ed7dcmksego.SkyboxDn)
+        end
+        do
+          local _xmksc14515ed7e1mkseh3 = 1
+          _xmksc14515ed7e1mkseh3 = (_xmksc14515ed7e1mkseh3 + 0)
+          _xmksc0z515ed7dcmksego.SkyboxFt = (_mmksc11515ed7demksegu.skybox_front or _xmksc0z515ed7dcmksego.SkyboxFt)
+        end
+        do
+          local _zmksc15515ed7e2mkseh6 = 1
+          _zmksc15515ed7e2mkseh6 = (_zmksc15515ed7e2mkseh6 + 0)
+          _xmksc0z515ed7dcmksego.SkyboxLf = (_mmksc11515ed7demksegu.skybox_left or _xmksc0z515ed7dcmksego.SkyboxLf)
+        end
+        do
+          local _mmksc16515ed7e3mkseh9 = 1
+          _mmksc16515ed7e3mkseh9 = (_mmksc16515ed7e3mkseh9 + 0)
+          _xmksc0z515ed7dcmksego.SkyboxRt = (_mmksc11515ed7demksegu.skybox_right or _xmksc0z515ed7dcmksego.SkyboxRt)
+        end
+        do
+          local _mksc17515ed7e4mksehc = 1
+          _mksc17515ed7e4mksehc = (_mksc17515ed7e4mksehc + 0)
+          _xmksc0z515ed7dcmksego.SkyboxUp = (_mmksc11515ed7demksegu.skybox_up or _xmksc0z515ed7dcmksego.SkyboxUp)
+        end
+        do
+          local _xmksc19515ed7e6mksehi = 1
+          _xmksc19515ed7e6mksehi = (_xmksc19515ed7e6mksehi + 0)
+          if (((91 * 74) == (74 * 91)) and _mmksc11515ed7demksegu.sun_texture) then
+            do
+              local __mksc18515ed7e5mksehf = 1
+              __mksc18515ed7e5mksehf = (__mksc18515ed7e5mksehf + 0)
+              _xmksc0z515ed7dcmksego.SunTextureId = _mmksc11515ed7demksegu.sun_texture
+            end
+          end
+        end
+        do
+          local _mmksc1b515ed7e8mkseho = 1
+          _mmksc1b515ed7e8mkseho = (_mmksc1b515ed7e8mkseho + 0)
+          if (((24 + 96) == 120) and _mmksc11515ed7demksegu.moon_texture) then
+            do
+              local _zmksc1a515ed7e7mksehl = 1
+              _zmksc1a515ed7e7mksehl = (_zmksc1a515ed7e7mksehl + 0)
+              _xmksc0z515ed7dcmksego.MoonTextureId = _mmksc11515ed7demksegu.moon_texture
+            end
+          end
+        end
+        do
+          local _mksc1c515ed7e9mksehr = 1
+          _mksc1c515ed7e9mksehr = (_mksc1c515ed7e9mksehr + 0)
+          _xmksc0z515ed7dcmksego.StarCount = _mksav9515ed1femksazi.star_count
+        end
+        do
+          local __mksc1d515ed7eamksehu = 1
+          __mksc1d515ed7eamksehu = (__mksc1d515ed7eamksehu + 0)
+          _xmksc0z515ed7dcmksego.SunAngularSize = _mksav9515ed1femksazi.sun_angular_size
+        end
+        do
+          local _xmksc1e515ed7ebmksehx = 1
+          _xmksc1e515ed7ebmksehx = (_xmksc1e515ed7ebmksehx + 0)
+          _xmksc0z515ed7dcmksego.MoonAngularSize = _mksav9515ed1femksazi.moon_angular_size
+        end
+      end)
+    end
+  end
+  local function _mmksc1g515ed7edmksei3()
+    do
+      local _mksc1h515ed7eemksei6 = 1
+      _mksc1h515ed7eemksei6 = (_mksc1h515ed7eemksei6 + 0)
+      _mksavo515ed20dmksb0r()
+    end
+    local __mksc1i515ed7efmksei9 = ((_mksav9515ed1femksazi.lighting_skybox or _xmksav1515ed1f6mksayu:FindFirstChild(_xmksat8515ed1b5mksatf({32, 84, 80, 79, 76, 71, 56, 81, 96}, 63, 928))) or _xmksav1515ed1f6mksayu:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({50, 75, 90}, 63, 928)))
+    do
+      local __mksc22515ed803mksejx = 1
+      __mksc22515ed803mksejx = (__mksc22515ed803mksejx + 0)
+      if (((95 + 7) == 102) and __mksc1i515ed7efmksei9) then
+        do
+          local _mksc21515ed802mkseju = 1
+          _mksc21515ed802mkseju = (_mksc21515ed802mkseju + 0)
+          if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and _mksav9515ed1femksazi._sky_created) then
+            do
+              local _zmksc1k515ed7f1mkseif = 1
+              _zmksc1k515ed7f1mkseif = (_zmksc1k515ed7f1mkseif + 0)
+              pcall(function()
+                do
+                  local _xmksc1j515ed7f0mkseic = 1
+                  _xmksc1j515ed7f0mkseic = (_xmksc1j515ed7f0mkseic + 0)
+                  __mksc1i515ed7efmksei9:Destroy()
+                end
+              end)
+            end
+          elseif (((95 + 93) == 188) and _mksav9515ed1femksazi._sky_orig) then
+            local _mmksc1l515ed7f2mkseii = _mksav9515ed1femksazi._sky_orig
+            do
+              local _xmksc1y515ed7ffmksejl = 1
+              _xmksc1y515ed7ffmksejl = (_xmksc1y515ed7ffmksejl + 0)
+              pcall(function()
+                do
+                  local _mksc1m515ed7f3mkseil = 1
+                  _mksc1m515ed7f3mkseil = (_mksc1m515ed7f3mkseil + 0)
+                  __mksc1i515ed7efmksei9.SkyboxBk = _mmksc1l515ed7f2mkseii.SkyboxBk
+                end
+                do
+                  local __mksc1n515ed7f4mkseio = 1
+                  __mksc1n515ed7f4mkseio = (__mksc1n515ed7f4mkseio + 0)
+                  __mksc1i515ed7efmksei9.SkyboxDn = _mmksc1l515ed7f2mkseii.SkyboxDn
+                end
+                do
+                  local _xmksc1o515ed7f5mkseir = 1
+                  _xmksc1o515ed7f5mkseir = (_xmksc1o515ed7f5mkseir + 0)
+                  __mksc1i515ed7efmksei9.SkyboxFt = _mmksc1l515ed7f2mkseii.SkyboxFt
+                end
+                do
+                  local _zmksc1p515ed7f6mkseiu = 1
+                  _zmksc1p515ed7f6mkseiu = (_zmksc1p515ed7f6mkseiu + 0)
+                  __mksc1i515ed7efmksei9.SkyboxLf = _mmksc1l515ed7f2mkseii.SkyboxLf
+                end
+                do
+                  local _mmksc1q515ed7f7mkseix = 1
+                  _mmksc1q515ed7f7mkseix = (_mmksc1q515ed7f7mkseix + 0)
+                  __mksc1i515ed7efmksei9.SkyboxRt = _mmksc1l515ed7f2mkseii.SkyboxRt
+                end
+                do
+                  local _mksc1r515ed7f8mksej0 = 1
+                  _mksc1r515ed7f8mksej0 = (_mksc1r515ed7f8mksej0 + 0)
+                  __mksc1i515ed7efmksei9.SkyboxUp = _mmksc1l515ed7f2mkseii.SkyboxUp
+                end
+                do
+                  local __mksc1s515ed7f9mksej3 = 1
+                  __mksc1s515ed7f9mksej3 = (__mksc1s515ed7f9mksej3 + 0)
+                  __mksc1i515ed7efmksei9.SunTextureId = _mmksc1l515ed7f2mkseii.SunTextureId
+                end
+                do
+                  local _xmksc1t515ed7famksej6 = 1
+                  _xmksc1t515ed7famksej6 = (_xmksc1t515ed7famksej6 + 0)
+                  __mksc1i515ed7efmksei9.MoonTextureId = _mmksc1l515ed7f2mkseii.MoonTextureId
+                end
+                do
+                  local _zmksc1u515ed7fbmksej9 = 1
+                  _zmksc1u515ed7fbmksej9 = (_zmksc1u515ed7fbmksej9 + 0)
+                  __mksc1i515ed7efmksei9.StarCount = _mmksc1l515ed7f2mkseii.StarCount
+                end
+                do
+                  local _mmksc1v515ed7fcmksejc = 1
+                  _mmksc1v515ed7fcmksejc = (_mmksc1v515ed7fcmksejc + 0)
+                  __mksc1i515ed7efmksei9.SunAngularSize = _mmksc1l515ed7f2mkseii.SunAngularSize
+                end
+                do
+                  local _mksc1w515ed7fdmksejf = 1
+                  _mksc1w515ed7fdmksejf = (_mksc1w515ed7fdmksejf + 0)
+                  __mksc1i515ed7efmksei9.MoonAngularSize = _mmksc1l515ed7f2mkseii.MoonAngularSize
+                end
+                do
+                  local __mksc1x515ed7femkseji = 1
+                  __mksc1x515ed7femkseji = (__mksc1x515ed7femkseji + 0)
+                  __mksc1i515ed7efmksei9.Name = _xmksat8515ed1b5mksatf({50, 75, 90}, 63, 928)
+                end
+              end)
+            end
+          else
+            do
+              local _mmksc20515ed801mksejr = 1
+              _mmksc20515ed801mksejr = (_mmksc20515ed801mksejr + 0)
+              pcall(function()
+                do
+                  local _zmksc1z515ed800mksejo = 1
+                  _zmksc1z515ed800mksejo = (_zmksc1z515ed800mksejo + 0)
+                  __mksc1i515ed7efmksei9:Destroy()
+                end
+              end)
+            end
+          end
+        end
+      end
+    end
+    do
+      local _xmksc23515ed804mksek0 = 1
+      _xmksc23515ed804mksek0 = (_xmksc23515ed804mksek0 + 0)
+      _mksav9515ed1femksazi.lighting_skybox = nil
+    end
+    do
+      local _zmksc24515ed805mksek3 = 1
+      _zmksc24515ed805mksek3 = (_zmksc24515ed805mksek3 + 0)
+      _mksav9515ed1femksazi._sky_created = false
+    end
+    do
+      local _mksc26515ed807mksek9 = 1
+      _mksc26515ed807mksek9 = (_mksc26515ed807mksek9 + 0)
+      pcall(function()
+        do
+          local _mmksc25515ed806mksek6 = 1
+          _mmksc25515ed806mksek6 = (_mmksc25515ed806mksek6 + 0)
+          _xmksav1515ed1f6mksayu.ClockTime = _mksav9515ed1femksazi._orig.ClockTime
+        end
+      end)
+    end
+  end
+  do
+    local _mmksc2a515ed80bmksekl = 1
+    _mmksc2a515ed80bmksekl = (_mmksc2a515ed80bmksekl + 0)
+    function _mmksavn515ed20cmksb0o()
+      do
+        local _xmksc28515ed809mksekf = 1
+        _xmksc28515ed809mksekf = (_xmksc28515ed809mksekf + 0)
+        if (((88 * 18) == (18 * 88)) and not _mksav9515ed1femksazi.skybox_enabled) then
+          do
+            local __mksc27515ed808mksekc = 1
+            __mksc27515ed808mksekc = (__mksc27515ed808mksekc + 0)
+            _mmksc1g515ed7edmksei3()
+          end
+          return
+        end
+      end
+      do
+        local _zmksc29515ed80amkseki = 1
+        _zmksc29515ed80amkseki = (_zmksc29515ed80amkseki + 0)
+        __mksc0y515ed7dbmksegl(_mmksc0h515ed7camksef6())
+      end
+    end
+  end
+  do
+    local _xmksc2n515ed818mkselo = 1
+    _xmksc2n515ed818mkselo = (_xmksc2n515ed818mkselo + 0)
+    function _mksavo515ed20dmksb0r()
+      do
+        local _zmksc2e515ed80fmksekx = 1
+        _zmksc2e515ed80fmksekx = (_zmksc2e515ed80fmksekx + 0)
+        if (((93 + 80) == 173) and _mksav9515ed1femksazi.auto_rotate_conn) then
+          do
+            local __mksc2c515ed80dmksekr = 1
+            __mksc2c515ed80dmksekr = (__mksc2c515ed80dmksekr + 0)
+            pcall(function()
+              do
+                local _mksc2b515ed80cmkseko = 1
+                _mksc2b515ed80cmkseko = (_mksc2b515ed80cmkseko + 0)
+                _mksav9515ed1femksazi.auto_rotate_conn:Disconnect()
+              end
+            end)
+          end
+          do
+            local _xmksc2d515ed80emkseku = 1
+            _xmksc2d515ed80emkseku = (_xmksc2d515ed80emkseku + 0)
+            _mksav9515ed1femksazi.auto_rotate_conn = nil
+          end
+        end
+      end
+      do
+        local _mmksc2f515ed810mksel0 = 1
+        _mmksc2f515ed810mksel0 = (_mmksc2f515ed810mksel0 + 0)
+        if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (not _mksav9515ed1femksazi.skybox_enabled or not _mksav9515ed1femksazi.auto_rotate)) then
+          return
+        end
+      end
+      do
+        local __mksc2h515ed812mksel6 = 1
+        __mksc2h515ed812mksel6 = (__mksc2h515ed812mksel6 + 0)
+        if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (_mksav9515ed1femksazi.lighting_skybox == nil)) then
+          do
+            local _mksc2g515ed811mksel3 = 1
+            _mksc2g515ed811mksel3 = (_mksc2g515ed811mksel3 + 0)
+            _mmksavn515ed20cmksb0o()
+          end
+        end
+      end
+      do
+        local __mksc2m515ed817mksell = 1
+        __mksc2m515ed817mksell = (__mksc2m515ed817mksell + 0)
+        _mksav9515ed1femksazi.auto_rotate_conn = _zmksav2515ed1f7mksayx.Heartbeat:Connect(function(_xmksc2i515ed813mksel9)
+          do
+            local _zmksc2j515ed814mkselc = 1
+            _zmksc2j515ed814mkselc = (_zmksc2j515ed814mkselc + 0)
+            if (((46 + 28) == 74) and not _mksav9515ed1femksazi.lighting_skybox) then
+              return
+            end
+          end
+          local _mmksc2k515ed815mkself = _mksav9515ed1femksazi.lighting_skybox.SkyboxOrientation
+          do
+            local _mksc2l515ed816mkseli = 1
+            _mksc2l515ed816mkseli = (_mksc2l515ed816mkseli + 0)
+            _mksav9515ed1femksazi.lighting_skybox.SkyboxOrientation = Vector3.new(0, (_mmksc2k515ed815mkself.Y + ((_xmksc2i515ed813mksel9 * _mksav9515ed1femksazi.auto_rotate_speed) * 10)), 0)
+          end
+        end)
+      end
+    end
+  end
+  local _zmksc2o515ed819mkselr, _mmksc2p515ed81amkselu, _mksc2q515ed81bmkselx = {}, {}, nil
+  local __mksc2r515ed81cmksem0 = {}
+  local function _xmksc2s515ed81dmksem3(_zmksc2t515ed81emksem6)
+    do
+      local _mmksc2u515ed81fmksem9 = 1
+      _mmksc2u515ed81fmksem9 = (_mmksc2u515ed81fmksem9 + 0)
+      if ((((89 * 10) % 10) == 0) and not _zmksc2t515ed81emksem6) then
+        return
+      end
+    end
+    do
+      local _mksc3k515ed839mkseof = 1
+      _mksc3k515ed839mkseof = (_mksc3k515ed839mkseof + 0)
+      if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({33, 65, 84, 71, 51, 69, 87, 90}, 63, 928))) then
+        do
+          local _xmksc2x515ed822mksemi = 1
+          _xmksc2x515ed822mksemi = (_xmksc2x515ed822mksemi + 0)
+          if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (_zmksc2o515ed819mkselr[_zmksc2t515ed81emksem6] == nil)) then
+            do
+              local _mksc2v515ed820mksemc = 1
+              _mksc2v515ed820mksemc = (_mksc2v515ed820mksemc + 0)
+              _zmksc2o515ed819mkselr[_zmksc2t515ed81emksem6] = _zmksc2t515ed81emksem6.Material
+            end
+            do
+              local __mksc2w515ed821mksemf = 1
+              __mksc2w515ed821mksemf = (__mksc2w515ed821mksemf + 0)
+              _mmksc2p515ed81amkselu[_zmksc2t515ed81emksem6] = _zmksc2t515ed81emksem6.CastShadow
+            end
+          end
+        end
+        do
+          local _xmksc32515ed827mksemx = 1
+          _xmksc32515ed827mksemx = (_xmksc32515ed827mksemx + 0)
+          pcall(function()
+            do
+              local _zmksc2y515ed823mkseml = 1
+              _zmksc2y515ed823mkseml = (_zmksc2y515ed823mkseml + 0)
+              _zmksc2t515ed81emksem6.Material = Enum.Material.Plastic
+            end
+            do
+              local _mmksc2z515ed824mksemo = 1
+              _mmksc2z515ed824mksemo = (_mmksc2z515ed824mksemo + 0)
+              _zmksc2t515ed81emksem6.MaterialVariant = ""
+            end
+            do
+              local _mksc30515ed825mksemr = 1
+              _mksc30515ed825mksemr = (_mksc30515ed825mksemr + 0)
+              _zmksc2t515ed81emksem6.CastShadow = false
+            end
+            do
+              local __mksc31515ed826mksemu = 1
+              __mksc31515ed826mksemu = (__mksc31515ed826mksemu + 0)
+              _zmksc2t515ed81emksem6.Reflectance = 0
+            end
+          end)
+        end
+        do
+          local _xmksc37515ed82cmksenc = 1
+          _xmksc37515ed82cmksenc = (_xmksc37515ed82cmksenc + 0)
+          if ((((2 * 9) % 9) == 0) and _zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({44, 69, 84, 74, 51, 69, 87, 90}, 63, 928))) then
+            do
+              local _mmksc34515ed829mksen3 = 1
+              _mmksc34515ed829mksen3 = (_mmksc34515ed829mksen3 + 0)
+              if (((59 + 23) == 82) and (__mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] == nil)) then
+                do
+                  local _zmksc33515ed828mksen0 = 1
+                  _zmksc33515ed828mksen0 = (_zmksc33515ed828mksen0 + 0)
+                  __mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] = _zmksc2t515ed81emksem6.TextureID
+                end
+              end
+            end
+            do
+              local __mksc36515ed82bmksen9 = 1
+              __mksc36515ed82bmksen9 = (__mksc36515ed82bmksen9 + 0)
+              pcall(function()
+                do
+                  local _mksc35515ed82amksen6 = 1
+                  _mksc35515ed82amksen6 = (_mksc35515ed82amksen6 + 0)
+                  _zmksc2t515ed81emksem6.TextureID = ""
+                end
+              end)
+            end
+          end
+        end
+      elseif ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({35, 69, 68, 67, 79}, 63, 928)) or _zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({51, 69, 89, 86, 88, 86, 74}, 63, 928)))) then
+        do
+          local _mmksc39515ed82emkseni = 1
+          _mmksc39515ed82emkseni = (_mmksc39515ed82emkseni + 0)
+          if (((28 + 53) == 81) and (__mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] == nil)) then
+            do
+              local _zmksc38515ed82dmksenf = 1
+              _zmksc38515ed82dmksenf = (_zmksc38515ed82dmksenf + 0)
+              __mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] = _zmksc2t515ed81emksem6.Texture
+            end
+          end
+        end
+        do
+          local __mksc3b515ed830mkseno = 1
+          __mksc3b515ed830mkseno = (__mksc3b515ed830mkseno + 0)
+          pcall(function()
+            do
+              local _mksc3a515ed82fmksenl = 1
+              _mksc3a515ed82fmksenl = (_mksc3a515ed82fmksenl + 0)
+              _zmksc2t515ed81emksem6.Transparency = 1
+            end
+          end)
+        end
+      elseif (((45 * 43) == (43 * 45)) and _zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({50, 85, 83, 72, 68, 71, 74, 39, 87, 88, 78, 75, 93, 77, 91, 81, 84}, 63, 928))) then
+        do
+          local _zmksc3d515ed832mksenu = 1
+          _zmksc3d515ed832mksenu = (_zmksc3d515ed832mksenu + 0)
+          if ((((29 * 11) % 11) == 0) and (__mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] == nil)) then
+            do
+              local _xmksc3c515ed831mksenr = 1
+              _xmksc3c515ed831mksenr = (_xmksc3c515ed831mksenr + 0)
+              __mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] = true
+            end
+          end
+        end
+        do
+          local _mksc3f515ed834mkseo0 = 1
+          _mksc3f515ed834mkseo0 = (_mksc3f515ed834mkseo0 + 0)
+          pcall(function()
+            do
+              local _mmksc3e515ed833mksenx = 1
+              _mmksc3e515ed833mksenx = (_mmksc3e515ed833mksenx + 0)
+              _zmksc2t515ed81emksem6.Enabled = false
+            end
+          end)
+        end
+      elseif ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and _zmksc2t515ed81emksem6:IsA(_xmksat8515ed1b5mksatf({50, 80, 70, 69, 76, 69, 81, 51, 76, 91, 81}, 63, 928))) then
+        do
+          local _xmksc3h515ed836mkseo6 = 1
+          _xmksc3h515ed836mkseo6 = (_xmksc3h515ed836mkseo6 + 0)
+          if (((18 * 49) == (49 * 18)) and (__mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] == nil)) then
+            do
+              local __mksc3g515ed835mkseo3 = 1
+              __mksc3g515ed835mkseo3 = (__mksc3g515ed835mkseo3 + 0)
+              __mksc2r515ed81cmksem0[_zmksc2t515ed81emksem6] = _zmksc2t515ed81emksem6.TextureId
+            end
+          end
+        end
+        do
+          local _mmksc3j515ed838mkseoc = 1
+          _mmksc3j515ed838mkseoc = (_mmksc3j515ed838mkseoc + 0)
+          pcall(function()
+            do
+              local _zmksc3i515ed837mkseo9 = 1
+              _zmksc3i515ed837mkseo9 = (_zmksc3i515ed837mkseo9 + 0)
+              _zmksc2t515ed81emksem6.TextureId = ""
+            end
+          end)
+        end
+      end
+    end
+  end
+  do
+    local _mmksc52515ed86fmksesx = 1
+    _mmksc52515ed86fmksesx = (_mmksc52515ed86fmksesx + 0)
+    function __mksavp515ed20emksb0u(__mksc3l515ed83amkseoi)
+      do
+        local _zmksc51515ed86emksesu = 1
+        _zmksc51515ed86emksesu = (_zmksc51515ed86emksesu + 0)
+        if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and __mksc3l515ed83amkseoi) then
+          do
+            local __mksc3q515ed83fmkseox = 1
+            __mksc3q515ed83fmkseox = (__mksc3q515ed83fmkseox + 0)
+            pcall(function()
+              do
+                local _zmksc3n515ed83cmkseoo = 1
+                _zmksc3n515ed83cmkseoo = (_zmksc3n515ed83cmkseoo + 0)
+                if (((63 * 95) == (95 * 63)) and (_mksc2q515ed81bmkselx == nil)) then
+                  do
+                    local _xmksc3m515ed83bmkseol = 1
+                    _xmksc3m515ed83bmkseol = (_xmksc3m515ed83bmkseol + 0)
+                    _mksc2q515ed81bmkselx = _xmksav1515ed1f6mksayu.Technology
+                  end
+                end
+              end
+              do
+                local _mmksc3o515ed83dmkseor = 1
+                _mmksc3o515ed83dmkseor = (_mmksc3o515ed83dmkseor + 0)
+                _xmksav1515ed1f6mksayu.GlobalShadows = false
+              end
+              do
+                local _mksc3p515ed83emkseou = 1
+                _mksc3p515ed83emkseou = (_mksc3p515ed83emkseou + 0)
+                _xmksav1515ed1f6mksayu.Technology = Enum.Technology.Legacy
+              end
+            end)
+          end
+          do
+            local _mksc3u515ed843mksep9 = 1
+            _mksc3u515ed843mksep9 = (_mksc3u515ed843mksep9 + 0)
+            for _xmksc3r515ed840mksep0, _zmksc3s515ed841mksep3 in ipairs(workspace:GetDescendants()) do
+              do
+                local _mmksc3t515ed842mksep6 = 1
+                _mmksc3t515ed842mksep6 = (_mmksc3t515ed842mksep6 + 0)
+                _xmksc2s515ed81dmksem3(_zmksc3s515ed841mksep3)
+              end
+            end
+          end
+          do
+            local _mksc3z515ed848mksepo = 1
+            _mksc3z515ed848mksepo = (_mksc3z515ed848mksepo + 0)
+            if (((6 + 87) == 93) and not _mksav9515ed1femksazi._fpsConn) then
+              do
+                local _mmksc3y515ed847mksepl = 1
+                _mmksc3y515ed847mksepl = (_mmksc3y515ed847mksepl + 0)
+                _mksav9515ed1femksazi._fpsConn = workspace.DescendantAdded:Connect(function(__mksc3v515ed844mksepc)
+                  do
+                    local _zmksc3x515ed846mksepi = 1
+                    _zmksc3x515ed846mksepi = (_zmksc3x515ed846mksepi + 0)
+                    if (((91 * 74) == (74 * 91)) and _mksav9515ed1femksazi.fps_boost) then
+                      do
+                        local _xmksc3w515ed845mksepf = 1
+                        _xmksc3w515ed845mksepf = (_xmksc3w515ed845mksepf + 0)
+                        _xmksc2s515ed81dmksem3(__mksc3v515ed844mksepc)
+                      end
+                    end
+                  end
+                end)
+              end
+            end
+          end
+          do
+            local _mksc49515ed852mkseqi = 1
+            _mksc49515ed852mkseqi = (_mksc49515ed852mkseqi + 0)
+            if (((24 + 96) == 120) and not _mksav9515ed1femksazi._fpsLoop) then
+              do
+                local __mksc40515ed849mksepr = 1
+                __mksc40515ed849mksepr = (__mksc40515ed849mksepr + 0)
+                _mksav9515ed1femksazi._fpsLoop = true
+              end
+              do
+                local _mmksc48515ed851mkseqf = 1
+                _mmksc48515ed851mkseqf = (_mmksc48515ed851mkseqf + 0)
+                task.spawn(function()
+                  do
+                    local _zmksc47515ed850mkseqc = 1
+                    _zmksc47515ed850mkseqc = (_zmksc47515ed850mkseqc + 0)
+                    while (((95 + 7) == 102) and true) do
+                      do
+                        local _xmksc41515ed84amksepu = 1
+                        _xmksc41515ed84amksepu = (_xmksc41515ed84amksepu + 0)
+                        task.wait(2)
+                      end
+                      do
+                        local _xmksc46515ed84fmkseq9 = 1
+                        _xmksc46515ed84fmkseq9 = (_xmksc46515ed84fmkseq9 + 0)
+                        if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and _mksav9515ed1femksazi.fps_boost) then
+                          do
+                            local __mksc45515ed84emkseq6 = 1
+                            __mksc45515ed84emkseq6 = (__mksc45515ed84emkseq6 + 0)
+                            for _zmksc42515ed84bmksepx, _mmksc43515ed84cmkseq0 in ipairs(workspace:GetDescendants()) do
+                              do
+                                local _mksc44515ed84dmkseq3 = 1
+                                _mksc44515ed84dmkseq3 = (_mksc44515ed84dmkseq3 + 0)
+                                _xmksc2s515ed81dmksem3(_mmksc43515ed84cmkseq0)
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end)
+              end
+            end
+          end
+        else
+          do
+            local _zmksc4h515ed85amkser6 = 1
+            _zmksc4h515ed85amkser6 = (_zmksc4h515ed85amkser6 + 0)
+            for __mksc4a515ed853mkseql, _xmksc4b515ed854mkseqo in pairs(_zmksc2o515ed819mkselr) do
+              do
+                local _xmksc4g515ed859mkser3 = 1
+                _xmksc4g515ed859mkser3 = (_xmksc4g515ed859mkser3 + 0)
+                if (((95 + 93) == 188) and (__mksc4a515ed853mkseql and __mksc4a515ed853mkseql.Parent)) then
+                  do
+                    local __mksc4f515ed858mkser0 = 1
+                    __mksc4f515ed858mkser0 = (__mksc4f515ed858mkser0 + 0)
+                    pcall(function()
+                      do
+                        local _zmksc4c515ed855mkseqr = 1
+                        _zmksc4c515ed855mkseqr = (_zmksc4c515ed855mkseqr + 0)
+                        __mksc4a515ed853mkseql.Material = _xmksc4b515ed854mkseqo
+                      end
+                      do
+                        local _mksc4e515ed857mkseqx = 1
+                        _mksc4e515ed857mkseqx = (_mksc4e515ed857mkseqx + 0)
+                        if (((88 * 18) == (18 * 88)) and (_mmksc2p515ed81amkselu[__mksc4a515ed853mkseql] ~= nil)) then
+                          do
+                            local _mmksc4d515ed856mksequ = 1
+                            _mmksc4d515ed856mksequ = (_mmksc4d515ed856mksequ + 0)
+                            __mksc4a515ed853mkseql.CastShadow = _mmksc2p515ed81amkselu[__mksc4a515ed853mkseql]
+                          end
+                        end
+                      end
+                    end)
+                  end
+                end
+              end
+            end
+          end
+          do
+            local _zmksc4r515ed864mkses0 = 1
+            _zmksc4r515ed864mkses0 = (_zmksc4r515ed864mkses0 + 0)
+            for _mmksc4i515ed85bmkser9, _mksc4j515ed85cmkserc in pairs(__mksc2r515ed81cmksem0) do
+              do
+                local _xmksc4q515ed863mkserx = 1
+                _xmksc4q515ed863mkserx = (_xmksc4q515ed863mkserx + 0)
+                if (((93 + 80) == 173) and (_mmksc4i515ed85bmkser9 and _mmksc4i515ed85bmkser9.Parent)) then
+                  do
+                    local __mksc4p515ed862mkseru = 1
+                    __mksc4p515ed862mkseru = (__mksc4p515ed862mkseru + 0)
+                    pcall(function()
+                      do
+                        local _mksc4o515ed861mkserr = 1
+                        _mksc4o515ed861mkserr = (_mksc4o515ed861mkserr + 0)
+                        if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and _mmksc4i515ed85bmkser9:IsA(_xmksat8515ed1b5mksatf({44, 69, 84, 74, 51, 69, 87, 90}, 63, 928))) then
+                          do
+                            local __mksc4k515ed85dmkserf = 1
+                            __mksc4k515ed85dmkserf = (__mksc4k515ed85dmkserf + 0)
+                            _mmksc4i515ed85bmkser9.TextureID = _mksc4j515ed85cmkserc
+                          end
+                        elseif ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (_mmksc4i515ed85bmkser9:IsA(_xmksat8515ed1b5mksatf({35, 69, 68, 67, 79}, 63, 928)) or _mmksc4i515ed85bmkser9:IsA(_xmksat8515ed1b5mksatf({51, 69, 89, 86, 88, 86, 74}, 63, 928)))) then
+                          do
+                            local _xmksc4l515ed85emkseri = 1
+                            _xmksc4l515ed85emkseri = (_xmksc4l515ed85emkseri + 0)
+                            _mmksc4i515ed85bmkser9.Transparency = 0
+                          end
+                        elseif (((46 + 28) == 74) and _mmksc4i515ed85bmkser9:IsA(_xmksat8515ed1b5mksatf({50, 85, 83, 72, 68, 71, 74, 39, 87, 88, 78, 75, 93, 77, 91, 81, 84}, 63, 928))) then
+                          do
+                            local _zmksc4m515ed85fmkserl = 1
+                            _zmksc4m515ed85fmkserl = (_zmksc4m515ed85fmkserl + 0)
+                            _mmksc4i515ed85bmkser9.Enabled = true
+                          end
+                        elseif ((((89 * 10) % 10) == 0) and _mmksc4i515ed85bmkser9:IsA(_xmksat8515ed1b5mksatf({50, 80, 70, 69, 76, 69, 81, 51, 76, 91, 81}, 63, 928))) then
+                          do
+                            local _mmksc4n515ed860mksero = 1
+                            _mmksc4n515ed860mksero = (_mmksc4n515ed860mksero + 0)
+                            _mmksc4i515ed85bmkser9.TextureId = _mksc4j515ed85cmkserc
+                          end
+                        end
+                      end
+                    end)
+                  end
+                end
+              end
+            end
+          end
+          do
+            local _mmksc4s515ed865mkses3 = 1
+            _mmksc4s515ed865mkses3 = (_mmksc4s515ed865mkses3 + 0)
+            _zmksc2o515ed819mkselr, _mmksc2p515ed81amkselu, __mksc2r515ed81cmksem0 = {}, {}, {}
+          end
+          do
+            local _zmksc4w515ed869mksesf = 1
+            _zmksc4w515ed869mksesf = (_zmksc4w515ed869mksesf + 0)
+            pcall(function()
+              do
+                local __mksc4u515ed867mkses9 = 1
+                __mksc4u515ed867mkses9 = (__mksc4u515ed867mkses9 + 0)
+                if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _mksc2q515ed81bmkselx) then
+                  do
+                    local _mksc4t515ed866mkses6 = 1
+                    _mksc4t515ed866mkses6 = (_mksc4t515ed866mkses6 + 0)
+                    _xmksav1515ed1f6mksayu.Technology = _mksc2q515ed81bmkselx
+                  end
+                end
+              end
+              do
+                local _xmksc4v515ed868mksesc = 1
+                _xmksc4v515ed868mksesc = (_xmksc4v515ed868mksesc + 0)
+                _xmksav1515ed1f6mksayu.GlobalShadows = _mksav9515ed1femksazi._orig.GlobalShadows
+              end
+            end)
+          end
+          do
+            local _xmksc50515ed86dmksesr = 1
+            _xmksc50515ed86dmksesr = (_xmksc50515ed86dmksesr + 0)
+            if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _mksav9515ed1femksazi._fpsConn) then
+              do
+                local _mksc4y515ed86bmksesl = 1
+                _mksc4y515ed86bmksesl = (_mksc4y515ed86bmksesl + 0)
+                pcall(function()
+                  do
+                    local _mmksc4x515ed86amksesi = 1
+                    _mmksc4x515ed86amksesi = (_mmksc4x515ed86amksesi + 0)
+                    _mksav9515ed1femksazi._fpsConn:Disconnect()
+                  end
+                end)
+              end
+              do
+                local __mksc4z515ed86cmkseso = 1
+                __mksc4z515ed86cmkseso = (__mksc4z515ed86cmkseso + 0)
+                _mksav9515ed1femksazi._fpsConn = nil
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  do
+    local _mmksc5c515ed879mksetr = 1
+    _mmksc5c515ed879mksetr = (_mmksc5c515ed879mksetr + 0)
+    _zmksav2515ed1f7mksayx.RenderStepped:Connect(function()
+      local _mksc53515ed870mkset0 = workspace.CurrentCamera
+      do
+        local __mksc54515ed871mkset3 = 1
+        __mksc54515ed871mkset3 = (__mksc54515ed871mkset3 + 0)
+        if ((((2 * 9) % 9) == 0) and not _mksc53515ed870mkset0) then
+          return
+        end
+      end
+      do
+        local _zmksc56515ed873mkset9 = 1
+        _zmksc56515ed873mkset9 = (_zmksc56515ed873mkset9 + 0)
+        if (((59 + 23) == 82) and _mksav9515ed1femksazi._fov_active) then
+          do
+            local _xmksc55515ed872mkset6 = 1
+            _xmksc55515ed872mkset6 = (_xmksc55515ed872mkset6 + 0)
+            _mksc53515ed870mkset0.FieldOfView = _mksav9515ed1femksazi.camera_fov
+          end
+        end
+      end
+      local _mmksc57515ed874mksetc = _mksav9515ed1femksazi.camera_resolution
+      do
+        local __mksc59515ed876mkseti = 1
+        __mksc59515ed876mkseti = (__mksc59515ed876mkseti + 0)
+        if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and ((type(_mmksc57515ed874mksetc) == _xmksat8515ed1b5mksatf({77, 85, 78, 68, 72, 86}, 63, 928)) and (_mmksc57515ed874mksetc ~= 1))) then
+          do
+            local _mksc58515ed875mksetf = 1
+            _mksc58515ed875mksetf = (_mksc58515ed875mksetf + 0)
+            _mksc53515ed870mkset0.CFrame = (_mksc53515ed870mkset0.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, _mmksc57515ed874mksetc, 0, 0, 0, 1))
+          end
+        end
+      end
+      do
+        local _zmksc5b515ed878mkseto = 1
+        _zmksc5b515ed878mkseto = (_zmksc5b515ed878mkseto + 0)
+        if (((28 + 53) == 81) and _mksav9515ed1femksazi.skybox_enabled) then
+          do
+            local _xmksc5a515ed877mksetl = 1
+            _xmksc5a515ed877mksetl = (_xmksc5a515ed877mksetl + 0)
+            _xmksav1515ed1f6mksayu.ClockTime = _mksav9515ed1femksazi.clocktime
+          end
+        end
+      end
+    end)
+  end
+  do
+    local _mksc5d515ed87amksetu = 1
+    _mksc5d515ed87amksetu = (_mksc5d515ed87amksetu + 0)
+    _xmksavb515ed200mksazo = {HumpPlayer = false, SpinPlayer = false}
+  end
+  local __mksc5e515ed87bmksetx, _xmksc5f515ed87cmkseu0, _zmksc5g515ed87dmkseu3, _mmksc5h515ed87emkseu6 = nil, {}, 0, nil
+  do
+    local __mksc5o515ed885mkseur = 1
+    __mksc5o515ed885mkseur = (__mksc5o515ed885mkseur + 0)
+    function __mksavu515ed213mksb19()
+      local _mksc5i515ed87fmkseu9 = {_xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 5, 86, 83, 73, 98, 79, 93}, 63, 928)}
+      do
+        local _mksc5n515ed884mkseuo = 1
+        _mksc5n515ed884mkseuo = (_mksc5n515ed884mkseuo + 0)
+        for __mksc5j515ed880mkseuc, _xmksc5k515ed881mkseuf in ipairs(Players:GetPlayers()) do
+          do
+            local _mmksc5m515ed883mkseul = 1
+            _mmksc5m515ed883mkseul = (_mmksc5m515ed883mkseul + 0)
+            if (((45 * 43) == (43 * 45)) and (_xmksc5k515ed881mkseuf ~= _mmksav3515ed1f8mksaz0)) then
+              do
+                local _zmksc5l515ed882mkseui = 1
+                _zmksc5l515ed882mkseui = (_zmksc5l515ed882mkseui + 0)
+                table.insert(_mksc5i515ed87fmkseu9, _xmksc5k515ed881mkseuf.Name)
+              end
+            end
+          end
+        end
+      end
+      return _mksc5i515ed87fmkseu9
+    end
+  end
+  do
+    local _xmksc5p515ed886mkseuu = 1
+    _xmksc5p515ed886mkseuu = (_xmksc5p515ed886mkseuu + 0)
+    _xmksavb515ed200mksazo.target = _xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 5, 86, 83, 73, 98, 79, 93}, 63, 928)
+  end
+  local function _zmksc5q515ed887mkseux()
+    local _mmksc5r515ed888mksev0 = _xmksavb515ed200mksazo.target
+    do
+      local _mksc5s515ed889mksev3 = 1
+      _mksc5s515ed889mksev3 = (_mksc5s515ed889mksev3 + 0)
+      if ((((29 * 11) % 11) == 0) and (not _mmksc5r515ed888mksev0 or (_mmksc5r515ed888mksev0 == _xmksat8515ed1b5mksatf({50, 69, 77, 71, 70, 88, 5, 86, 83, 73, 98, 79, 93}, 63, 928)))) then
+        return nil
+      end
+    end
+    local __mksc5t515ed88amksev6 = Players:FindFirstChild(_mmksc5r515ed888mksev0)
+    return ((((__mksc5t515ed88amksev6 and __mksc5t515ed88amksev6.Character)) and __mksc5t515ed88amksev6) or nil)
+  end
+  do
+    local _zmksc65515ed896mksew6 = 1
+    _zmksc65515ed896mksew6 = (_zmksc65515ed896mksew6 + 0)
+    function _zmksavr515ed210mksb10()
+      do
+        local __mksc5y515ed88fmksevl = 1
+        __mksc5y515ed88fmksevl = (__mksc5y515ed88fmksevl + 0)
+        if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and __mksc5e515ed87bmksetx) then
+          do
+            local _mmksc5w515ed88dmksevf = 1
+            _mmksc5w515ed88dmksevf = (_mmksc5w515ed88dmksevf + 0)
+            pcall(function()
+              do
+                local _xmksc5u515ed88bmksev9 = 1
+                _xmksc5u515ed88bmksev9 = (_xmksc5u515ed88bmksev9 + 0)
+                __mksc5e515ed87bmksetx:Stop()
+              end
+              do
+                local _zmksc5v515ed88cmksevc = 1
+                _zmksc5v515ed88cmksevc = (_zmksc5v515ed88cmksevc + 0)
+                __mksc5e515ed87bmksetx:Destroy()
+              end
+            end)
+          end
+          do
+            local _mksc5x515ed88emksevi = 1
+            _mksc5x515ed88emksevi = (_mksc5x515ed88emksevi + 0)
+            __mksc5e515ed87bmksetx = nil
+          end
+        end
+      end
+      do
+        local __mksc63515ed894mksew0 = 1
+        __mksc63515ed894mksew0 = (__mksc63515ed894mksew0 + 0)
+        for _xmksc5z515ed890mksevo, _zmksc60515ed891mksevr in pairs(_xmksc5f515ed87cmkseu0) do
+          do
+            local _mksc62515ed893mksevx = 1
+            _mksc62515ed893mksevx = (_mksc62515ed893mksevx + 0)
+            pcall(function()
+              do
+                local _mmksc61515ed892mksevu = 1
+                _mmksc61515ed892mksevu = (_mmksc61515ed892mksevu + 0)
+                _zmksc60515ed891mksevr:Destroy()
+              end
+            end)
+          end
+        end
+      end
+      do
+        local _xmksc64515ed895mksew3 = 1
+        _xmksc64515ed895mksew3 = (_xmksc64515ed895mksew3 + 0)
+        _xmksc5f515ed87cmkseu0 = {}
+      end
+    end
+  end
+  do
+    local _zmksc79515ed8bemksezi = 1
+    _zmksc79515ed8bemksezi = (_zmksc79515ed8bemksezi + 0)
+    function _xmksavq515ed20fmksb0x()
+      do
+        local _mmksc66515ed897mksew9 = 1
+        _mmksc66515ed897mksew9 = (_mmksc66515ed897mksew9 + 0)
+        _zmksavr515ed210mksb10()
+      end
+      local _mksc67515ed898mksewc = _zmksc5q515ed887mkseux()
+      do
+        local __mksc68515ed899mksewf = 1
+        __mksc68515ed899mksewf = (__mksc68515ed899mksewf + 0)
+        if (((18 * 49) == (49 * 18)) and not _mksc67515ed898mksewc) then
+          return
+        end
+      end
+      local _xmksc69515ed89amksewi = (_mmksav3515ed1f8mksaz0.Character and _mmksav3515ed1f8mksaz0.Character:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))
+      local _zmksc6a515ed89bmksewl = (_mksc67515ed898mksewc.Character and _mksc67515ed898mksewc.Character:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))
+      do
+        local _mmksc6b515ed89cmksewo = 1
+        _mmksc6b515ed89cmksewo = (_mmksc6b515ed89cmksewo + 0)
+        if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (not _xmksc69515ed89amksewi or not _zmksc6a515ed89bmksewl)) then
+          return
+        end
+      end
+      do
+        local _mksc6c515ed89dmksewr = 1
+        _mksc6c515ed89dmksewr = (_mksc6c515ed89dmksewr + 0)
+        _xmksc69515ed89amksewi.CFrame = (_zmksc6a515ed89bmksewl.CFrame * CFrame.new(0, 0, 2.2))
+      end
+      local __mksc6d515ed89emksewu = Instance.new(_xmksat8515ed1b5mksatf({32, 84, 85, 67, 70, 76, 82, 75, 85, 92}, 63, 928))
+      do
+        local _xmksc6e515ed89fmksewx = 1
+        _xmksc6e515ed89fmksewx = (_xmksc6e515ed89fmksewx + 0)
+        __mksc6d515ed89emksewu.Position = Vector3.new(0, 0, 2.2)
+      end
+      do
+        local _zmksc6f515ed8a0mksex0 = 1
+        _zmksc6f515ed8a0mksex0 = (_zmksc6f515ed8a0mksex0 + 0)
+        __mksc6d515ed89emksewu.Parent = _zmksc6a515ed89bmksewl
+      end
+      local _mmksc6g515ed8a1mksex3 = Instance.new(_xmksat8515ed1b5mksatf({32, 84, 85, 67, 70, 76, 82, 75, 85, 92}, 63, 928))
+      do
+        local _mksc6h515ed8a2mksex6 = 1
+        _mksc6h515ed8a2mksex6 = (_mksc6h515ed8a2mksex6 + 0)
+        _mmksc6g515ed8a1mksex3.Parent = _xmksc69515ed89amksewi
+      end
+      local __mksc6i515ed8a3mksex9 = Instance.new(_xmksat8515ed1b5mksatf({32, 76, 74, 73, 81, 52, 84, 89, 80, 92, 82, 89, 89}, 63, 928))
+      do
+        local _xmksc6j515ed8a4mksexc = 1
+        _xmksc6j515ed8a4mksexc = (_xmksc6j515ed8a4mksexc + 0)
+        __mksc6i515ed8a3mksex9.Attachment0 = _mmksc6g515ed8a1mksex3
+      end
+      do
+        local _zmksc6k515ed8a5mksexf = 1
+        _zmksc6k515ed8a5mksexf = (_zmksc6k515ed8a5mksexf + 0)
+        __mksc6i515ed8a3mksex9.Attachment1 = __mksc6d515ed89emksewu
+      end
+      do
+        local _mmksc6l515ed8a6mksexi = 1
+        _mmksc6l515ed8a6mksexi = (_mmksc6l515ed8a6mksexi + 0)
+        __mksc6i515ed8a3mksex9.MaxForce = 1e5
+      end
+      do
+        local _mksc6m515ed8a7mksexl = 1
+        _mksc6m515ed8a7mksexl = (_mksc6m515ed8a7mksexl + 0)
+        __mksc6i515ed8a3mksex9.MaxVelocity = 80
+      end
+      do
+        local __mksc6n515ed8a8mksexo = 1
+        __mksc6n515ed8a8mksexo = (__mksc6n515ed8a8mksexo + 0)
+        __mksc6i515ed8a3mksex9.Responsiveness = 40
+      end
+      do
+        local _xmksc6o515ed8a9mksexr = 1
+        _xmksc6o515ed8a9mksexr = (_xmksc6o515ed8a9mksexr + 0)
+        __mksc6i515ed8a3mksex9.Parent = _xmksc69515ed89amksewi
+      end
+      local _zmksc6p515ed8aamksexu = Instance.new(_xmksat8515ed1b5mksatf({32, 76, 74, 73, 81, 51, 87, 79, 76, 86, 93, 75, 95, 85, 92, 92}, 63, 928))
+      do
+        local _mmksc6q515ed8abmksexx = 1
+        _mmksc6q515ed8abmksexx = (_mmksc6q515ed8abmksexx + 0)
+        _zmksc6p515ed8aamksexu.Attachment0 = _mmksc6g515ed8a1mksex3
+      end
+      do
+        local _mksc6r515ed8acmksey0 = 1
+        _mksc6r515ed8acmksey0 = (_mksc6r515ed8acmksey0 + 0)
+        _zmksc6p515ed8aamksexu.Attachment1 = __mksc6d515ed89emksewu
+      end
+      do
+        local __mksc6s515ed8admksey3 = 1
+        __mksc6s515ed8admksey3 = (__mksc6s515ed8admksey3 + 0)
+        _zmksc6p515ed8aamksexu.MaxTorque = 1e5
+      end
+      do
+        local _xmksc6t515ed8aemksey6 = 1
+        _xmksc6t515ed8aemksey6 = (_xmksc6t515ed8aemksey6 + 0)
+        _zmksc6p515ed8aamksexu.MaxAngularVelocity = 30
+      end
+      do
+        local _zmksc6u515ed8afmksey9 = 1
+        _zmksc6u515ed8afmksey9 = (_zmksc6u515ed8afmksey9 + 0)
+        _zmksc6p515ed8aamksexu.Responsiveness = 30
+      end
+      do
+        local _mmksc6v515ed8b0mkseyc = 1
+        _mmksc6v515ed8b0mkseyc = (_mmksc6v515ed8b0mkseyc + 0)
+        _zmksc6p515ed8aamksexu.Parent = _xmksc69515ed89amksewi
+      end
+      do
+        local _mksc6w515ed8b1mkseyf = 1
+        _mksc6w515ed8b1mkseyf = (_mksc6w515ed8b1mkseyf + 0)
+        _xmksc5f515ed87cmkseu0 = {__mksc6d515ed89emksewu, _mmksc6g515ed8a1mksex3, __mksc6i515ed8a3mksex9, _zmksc6p515ed8aamksexu}
+      end
+      local __mksc6x515ed8b2mkseyi = _mmksav3515ed1f8mksaz0.Character:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928))
+      local _xmksc6y515ed8b3mkseyl = (__mksc6x515ed8b2mkseyi and __mksc6x515ed8b2mkseyi:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({32, 78, 74, 79, 68, 88, 84, 88}, 63, 928)))
+      do
+        local _xmksc78515ed8bdmksezf = 1
+        _xmksc78515ed8bdmksezf = (_xmksc78515ed8bdmksezf + 0)
+        if (((63 * 95) == (95 * 63)) and _xmksc6y515ed8b3mkseyl) then
+          local _zmksc6z515ed8b4mkseyo = Instance.new(_xmksat8515ed1b5mksatf({32, 78, 74, 79, 68, 88, 78, 85, 85}, 63, 928))
+          do
+            local _mmksc70515ed8b5mkseyr = 1
+            _mmksc70515ed8b5mkseyr = (_mmksc70515ed8b5mkseyr + 0)
+            _zmksc6z515ed8b4mkseyo.AnimationId = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 33, 38, 31, 36, 39, 40, 37, 35, 40, 40}, 63, 928)
+          end
+          local _mksc71515ed8b6mkseyu, __mksc72515ed8b7mkseyx = pcall(function()
+            return _xmksc6y515ed8b3mkseyl:LoadAnimation(_zmksc6z515ed8b4mkseyo)
+          end)
+          do
+            local __mksc77515ed8bcmksezc = 1
+            __mksc77515ed8bcmksezc = (__mksc77515ed8bcmksezc + 0)
+            if (((6 + 87) == 93) and (_mksc71515ed8b6mkseyu and __mksc72515ed8b7mkseyx)) then
+              do
+                local _xmksc73515ed8b8mksez0 = 1
+                _xmksc73515ed8b8mksez0 = (_xmksc73515ed8b8mksez0 + 0)
+                __mksc72515ed8b7mkseyx.Looped = true
+              end
+              do
+                local _zmksc74515ed8b9mksez3 = 1
+                _zmksc74515ed8b9mksez3 = (_zmksc74515ed8b9mksez3 + 0)
+                __mksc72515ed8b7mkseyx:Play()
+              end
+              do
+                local _mmksc75515ed8bamksez6 = 1
+                _mmksc75515ed8bamksez6 = (_mmksc75515ed8bamksez6 + 0)
+                __mksc72515ed8b7mkseyx:AdjustSpeed(3.5)
+              end
+              do
+                local _mksc76515ed8bbmksez9 = 1
+                _mksc76515ed8bbmksez9 = (_mksc76515ed8bbmksez9 + 0)
+                __mksc5e515ed87bmksetx = __mksc72515ed8b7mkseyx
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  do
+    local _zmksc7e515ed8c3mksezx = 1
+    _zmksc7e515ed8c3mksezx = (_zmksc7e515ed8c3mksezx + 0)
+    function _mksavt515ed212mksb16()
+      do
+        local _xmksc7d515ed8c2mksezu = 1
+        _xmksc7d515ed8c2mksezu = (_xmksc7d515ed8c2mksezu + 0)
+        if (((91 * 74) == (74 * 91)) and _mmksc5h515ed87emkseu6) then
+          do
+            local _mksc7b515ed8c0mksezo = 1
+            _mksc7b515ed8c0mksezo = (_mksc7b515ed8c0mksezo + 0)
+            pcall(function()
+              do
+                local _mmksc7a515ed8bfmksezl = 1
+                _mmksc7a515ed8bfmksezl = (_mmksc7a515ed8bfmksezl + 0)
+                _mmksc5h515ed87emkseu6:Disconnect()
+              end
+            end)
+          end
+          do
+            local __mksc7c515ed8c1mksezr = 1
+            __mksc7c515ed8c1mksezr = (__mksc7c515ed8c1mksezr + 0)
+            _mmksc5h515ed87emkseu6 = nil
+          end
+        end
+      end
+    end
+  end
+  do
+    local _zmksc7t515ed8d2mksf16 = 1
+    _zmksc7t515ed8d2mksf16 = (_zmksc7t515ed8d2mksf16 + 0)
+    function _mmksavs515ed211mksb13()
+      do
+        local _mmksc7f515ed8c4mksf00 = 1
+        _mmksc7f515ed8c4mksf00 = (_mmksc7f515ed8c4mksf00 + 0)
+        _mksavt515ed212mksb16()
+      end
+      do
+        local _mksc7g515ed8c5mksf03 = 1
+        _mksc7g515ed8c5mksf03 = (_mksc7g515ed8c5mksf03 + 0)
+        _zmksc5g515ed87dmkseu3 = 0
+      end
+      do
+        local _xmksc7s515ed8d1mksf13 = 1
+        _xmksc7s515ed8d1mksf13 = (_xmksc7s515ed8d1mksf13 + 0)
+        _mmksc5h515ed87emkseu6 = _zmksav2515ed1f7mksayx.RenderStepped:Connect(function(__mksc7h515ed8c6mksf06)
+          do
+            local _zmksc7j515ed8c8mksf0c = 1
+            _zmksc7j515ed8c8mksf0c = (_zmksc7j515ed8c8mksf0c + 0)
+            if (((24 + 96) == 120) and not _xmksavb515ed200mksazo.SpinPlayer) then
+              do
+                local _xmksc7i515ed8c7mksf09 = 1
+                _xmksc7i515ed8c7mksf09 = (_xmksc7i515ed8c7mksf09 + 0)
+                _mksavt515ed212mksb16()
+              end
+              return
+            end
+          end
+          local _mmksc7k515ed8c9mksf0f = _zmksc5q515ed887mkseux()
+          do
+            local _mksc7l515ed8camksf0i = 1
+            _mksc7l515ed8camksf0i = (_mksc7l515ed8camksf0i + 0)
+            if (((95 + 7) == 102) and not _mmksc7k515ed8c9mksf0f) then
+              return
+            end
+          end
+          local __mksc7m515ed8cbmksf0l = (_mmksav3515ed1f8mksaz0.Character and _mmksav3515ed1f8mksaz0.Character:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))
+          local _xmksc7n515ed8ccmksf0o = (_mmksc7k515ed8c9mksf0f.Character and _mmksc7k515ed8c9mksf0f.Character:FindFirstChild(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928)))
+          do
+            local _zmksc7o515ed8cdmksf0r = 1
+            _zmksc7o515ed8cdmksf0r = (_zmksc7o515ed8cdmksf0r + 0)
+            if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and (not __mksc7m515ed8cbmksf0l or not _xmksc7n515ed8ccmksf0o)) then
+              return
+            end
+          end
+          do
+            local _mmksc7p515ed8cemksf0u = 1
+            _mmksc7p515ed8cemksf0u = (_mmksc7p515ed8cemksf0u + 0)
+            _zmksc5g515ed87dmkseu3 = (((_zmksc5g515ed87dmkseu3 + (__mksc7h515ed8c6mksf06 * 5))) % ((2 * math.pi)))
+          end
+          local _mksc7q515ed8cfmksf0x = Vector3.new((math.cos(_zmksc5g515ed87dmkseu3) * 4), 0, (math.sin(_zmksc5g515ed87dmkseu3) * 4))
+          do
+            local __mksc7r515ed8d0mksf10 = 1
+            __mksc7r515ed8d0mksf10 = (__mksc7r515ed8d0mksf10 + 0)
+            __mksc7m515ed8cbmksf0l.CFrame = CFrame.new((_xmksc7n515ed8ccmksf0o.Position + _mksc7q515ed8cfmksf0x), _xmksc7n515ed8ccmksf0o.Position)
+          end
+        end)
+      end
+    end
+  end
+end
+do
+  local _mmksc7u515ed8d3mksf19 = 1
+  _mmksc7u515ed8d3mksf19 = (_mmksc7u515ed8d3mksf19 + 0)
+  _xmksbxn515ed764mkse6o()
+end
+do
+  local _zmksc92515ed8ffmksf4x = 1
+  _zmksc92515ed8ffmksf4x = (_zmksc92515ed8ffmksf4x + 0)
+  do
+    local _mksc7v515ed8d4mksf1c = game:GetService(_xmksat8515ed1b5mksatf({52, 83, 70, 84, 44, 82, 85, 91, 91, 59, 78, 92, 97, 85, 80, 83}, 63, 928))
+    local function __mksc7w515ed8d5mksf1f()
+      local _xmksc7x515ed8d6mksf1i, _zmksc7y515ed8d7mksf1l = pcall(function()
+        return _mksc7v515ed8d4mksf1c:GetFocusedTextBox()
+      end)
+      return (_xmksc7x515ed8d6mksf1i and (_zmksc7y515ed8d7mksf1l ~= nil))
+    end
+    local function _mmksc7z515ed8d8mksf1o(_mksc80515ed8d9mksf1r, __mksc81515ed8damksf1u)
+      do
+        local _xmksc82515ed8dbmksf1x = 1
+        _xmksc82515ed8dbmksf1x = (_xmksc82515ed8dbmksf1x + 0)
+        if (((95 + 93) == 188) and (not __mksc81515ed8damksf1u or not _mksc80515ed8d9mksf1r)) then
+          return false
+        end
+      end
+      do
+        local _zmksc83515ed8dcmksf20 = 1
+        _zmksc83515ed8dcmksf20 = (_zmksc83515ed8dcmksf20 + 0)
+        if (((88 * 18) == (18 * 88)) and ((_mksc80515ed8d9mksf1r.KeyCode and (_mksc80515ed8d9mksf1r.KeyCode ~= Enum.KeyCode.Unknown)) and (_mksc80515ed8d9mksf1r.KeyCode == __mksc81515ed8damksf1u))) then
+          return true
+        end
+      end
+      return false
+    end
+    do
+      local _xmksc8w515ed8f9mksf4f = 1
+      _xmksc8w515ed8f9mksf4f = (_xmksc8w515ed8f9mksf4f + 0)
+      _mksc7v515ed8d4mksf1c.InputBegan:Connect(function(_mmksc84515ed8ddmksf23, _mksc85515ed8demksf26)
+        do
+          local __mksc86515ed8dfmksf29 = 1
+          __mksc86515ed8dfmksf29 = (__mksc86515ed8dfmksf29 + 0)
+          if (((93 + 80) == 173) and (_mmksc84515ed8ddmksf23.UserInputType ~= Enum.UserInputType.Keyboard)) then
+            return
+          end
+        end
+        do
+          local _xmksc87515ed8e0mksf2c = 1
+          _xmksc87515ed8e0mksf2c = (_xmksc87515ed8e0mksf2c + 0)
+          if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and __mksc7w515ed8d5mksf1f()) then
+            return
+          end
+        end
+        do
+          local _mmksc89515ed8e2mksf2i = 1
+          _mmksc89515ed8e2mksf2i = (_mmksc89515ed8e2mksf2i + 0)
+          if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, (_xmksav6515ed1fbmksaz9.hold_key or Binds.aim))) then
+            do
+              local _zmksc88515ed8e1mksf2f = 1
+              _zmksc88515ed8e1mksf2f = (_zmksc88515ed8e1mksf2f + 0)
+              _xmksav6515ed1fbmksaz9._key_held = true
+            end
+          end
+        end
+        do
+          local _zmksc8d515ed8e6mksf2u = 1
+          _zmksc8d515ed8e6mksf2u = (_zmksc8d515ed8e6mksf2u + 0)
+          if (((46 + 28) == 74) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.menu)) then
+            do
+              local _xmksc8c515ed8e5mksf2r = 1
+              _xmksc8c515ed8e5mksf2r = (_xmksc8c515ed8e5mksf2r + 0)
+              pcall(function()
+                do
+                  local __mksc8b515ed8e4mksf2o = 1
+                  __mksc8b515ed8e4mksf2o = (__mksc8b515ed8e4mksf2o + 0)
+                  if ((((89 * 10) % 10) == 0) and (getgenv().VantaUniversal and getgenv().VantaUniversal.Window)) then
+                    do
+                      local _mksc8a515ed8e3mksf2l = 1
+                      _mksc8a515ed8e3mksf2l = (_mksc8a515ed8e3mksf2l + 0)
+                      getgenv().VantaUniversal.Window:Toggle()
+                    end
+                  end
+                end
+              end)
+            end
+          end
+        end
+        do
+          local _mksc8f515ed8e8mksf30 = 1
+          _mksc8f515ed8e8mksf30 = (_mksc8f515ed8e8mksf30 + 0)
+          if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.esp_master)) then
+            do
+              local _mmksc8e515ed8e7mksf2x = 1
+              _mmksc8e515ed8e7mksf2x = (_mmksc8e515ed8e7mksf2x + 0)
+              __mksav5515ed1famksaz6.master = not __mksav5515ed1famksaz6.master
+            end
+          end
+        end
+        do
+          local _mksc8k515ed8edmksf3f = 1
+          _mksc8k515ed8edmksf3f = (_mksc8k515ed8edmksf3f + 0)
+          if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.fly)) then
+            do
+              local __mksc8g515ed8e9mksf33 = 1
+              __mksc8g515ed8e9mksf33 = (__mksc8g515ed8e9mksf33 + 0)
+              _mmksav8515ed1fdmksazf.fly.enabled = not _mmksav8515ed1fdmksazf.fly.enabled
+            end
+            do
+              local _mmksc8j515ed8ecmksf3c = 1
+              _mmksc8j515ed8ecmksf3c = (_mmksc8j515ed8ecmksf3c + 0)
+              if ((((2 * 9) % 9) == 0) and _mmksav8515ed1fdmksazf.fly.enabled) then
+                do
+                  local _xmksc8h515ed8eamksf36 = 1
+                  _xmksc8h515ed8eamksf36 = (_xmksc8h515ed8eamksf36 + 0)
+                  pcall(_mmksavd515ed202mksazu)
+                end
+              else
+                do
+                  local _zmksc8i515ed8ebmksf39 = 1
+                  _zmksc8i515ed8ebmksf39 = (_zmksc8i515ed8ebmksf39 + 0)
+                  pcall(_mksave515ed203mksazx)
+                end
+              end
+            end
+          end
+        end
+        do
+          local _xmksc8m515ed8efmksf3l = 1
+          _xmksc8m515ed8efmksf3l = (_xmksc8m515ed8efmksf3l + 0)
+          if (((59 + 23) == 82) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.noclip)) then
+            do
+              local __mksc8l515ed8eemksf3i = 1
+              __mksc8l515ed8eemksf3i = (__mksc8l515ed8eemksf3i + 0)
+              _mmksav8515ed1fdmksazf.noclip.enabled = not _mmksav8515ed1fdmksazf.noclip.enabled
+            end
+          end
+        end
+        do
+          local _xmksc8r515ed8f4mksf40 = 1
+          _xmksc8r515ed8f4mksf40 = (_xmksc8r515ed8f4mksf40 + 0)
+          if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.freecam)) then
+            do
+              local _zmksc8n515ed8f0mksf3o = 1
+              _zmksc8n515ed8f0mksf3o = (_zmksc8n515ed8f0mksf3o + 0)
+              __mksava515ed1ffmksazl.freecam.enabled = not __mksava515ed1ffmksazl.freecam.enabled
+            end
+            do
+              local __mksc8q515ed8f3mksf3x = 1
+              __mksc8q515ed8f3mksf3x = (__mksc8q515ed8f3mksf3x + 0)
+              if (((28 + 53) == 81) and __mksava515ed1ffmksazl.freecam.enabled) then
+                do
+                  local _mmksc8o515ed8f1mksf3r = 1
+                  _mmksc8o515ed8f1mksf3r = (_mmksc8o515ed8f1mksf3r + 0)
+                  pcall(__mksavf515ed204mksb00)
+                end
+              else
+                do
+                  local _mksc8p515ed8f2mksf3u = 1
+                  _mksc8p515ed8f2mksf3u = (_mksc8p515ed8f2mksf3u + 0)
+                  pcall(_xmksavg515ed205mksb03)
+                end
+              end
+            end
+          end
+        end
+        do
+          local _mmksc8t515ed8f6mksf46 = 1
+          _mmksc8t515ed8f6mksf46 = (_mmksc8t515ed8f6mksf46 + 0)
+          if (((45 * 43) == (43 * 45)) and _mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.walkspeed)) then
+            do
+              local _zmksc8s515ed8f5mksf43 = 1
+              _zmksc8s515ed8f5mksf43 = (_zmksc8s515ed8f5mksf43 + 0)
+              _mmksav8515ed1fdmksazf.walkspeed.enabled = not _mmksav8515ed1fdmksazf.walkspeed.enabled
+            end
+          end
+        end
+        do
+          local __mksc8v515ed8f8mksf4c = 1
+          __mksc8v515ed8f8mksf4c = (__mksc8v515ed8f8mksf4c + 0)
+          if ((((29 * 11) % 11) == 0) and (_mmksc7z515ed8d8mksf1o(_mmksc84515ed8ddmksf23, Binds.tp) and _mmksav8515ed1fdmksazf.tp.enabled)) then
+            do
+              local _mksc8u515ed8f7mksf49 = 1
+              _mksc8u515ed8f7mksf49 = (_mksc8u515ed8f7mksf49 + 0)
+              pcall(_zmksavh515ed206mksb06)
+            end
+          end
+        end
+      end)
+    end
+    do
+      local _xmksc91515ed8femksf4u = 1
+      _xmksc91515ed8femksf4u = (_xmksc91515ed8femksf4u + 0)
+      _mksc7v515ed8d4mksf1c.InputEnded:Connect(function(_zmksc8x515ed8famksf4i)
+        do
+          local _mmksc8y515ed8fbmksf4l = 1
+          _mmksc8y515ed8fbmksf4l = (_mmksc8y515ed8fbmksf4l + 0)
+          if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and (_zmksc8x515ed8famksf4i.UserInputType ~= Enum.UserInputType.Keyboard)) then
+            return
+          end
+        end
+        do
+          local __mksc90515ed8fdmksf4r = 1
+          __mksc90515ed8fdmksf4r = (__mksc90515ed8fdmksf4r + 0)
+          if (((18 * 49) == (49 * 18)) and _mmksc7z515ed8d8mksf1o(_zmksc8x515ed8famksf4i, (_xmksav6515ed1fbmksaz9.hold_key or Binds.aim))) then
+            do
+              local _mksc8z515ed8fcmksf4o = 1
+              _mksc8z515ed8fcmksf4o = (_mksc8z515ed8fcmksf4o + 0)
+              _xmksav6515ed1fbmksaz9._key_held = false
+            end
+          end
+        end
+      end)
+    end
+  end
+end
+local _mmksc93515ed900mksf50 = Enum.KeyCode.RightShift
+do
+  local _mmksc9i515ed90fmksf69 = 1
+  _mmksc9i515ed90fmksf69 = (_mmksc9i515ed90fmksf69 + 0)
+  do
+    do
+      local _mksc94515ed901mksf53 = 1
+      _mksc94515ed901mksf53 = (_mksc94515ed901mksf53 + 0)
+      _zmksaud515ed1demksawu:PreloadIcons({_xmksat8515ed1b5mksatf({43, 85, 68, 75, 71, 73}, 63, 928), _xmksat8515ed1b5mksatf({44, 65, 85, 71, 85, 77, 70, 82}, 63, 928), _xmksat8515ed1b5mksatf({47, 72, 80, 85, 83, 76, 84, 88}, 63, 928), _xmksat8515ed1b5mksatf({50, 38}, 63, 928)})
+    end
+    local __mksc95515ed902mksf56 = {_xmksat8515ed1b5mksatf({43, 85, 68, 75, 71, 73}, 63, 928), _xmksat8515ed1b5mksatf({44, 65, 85, 71, 85, 77, 70, 82}, 63, 928), _xmksat8515ed1b5mksatf({47, 72, 80, 85, 83, 76, 84, 88}, 63, 928), _xmksat8515ed1b5mksatf({50, 38}, 63, 928)}
+    do
+      local __mksc9a515ed907mksf5l = 1
+      __mksc9a515ed907mksf5l = (__mksc9a515ed907mksf5l + 0)
+      for _xmksc96515ed903mksf59, _zmksc97515ed904mksf5c in ipairs(__mksc95515ed902mksf56) do
+        do
+          local _mksc99515ed906mksf5i = 1
+          _mksc99515ed906mksf5i = (_mksc99515ed906mksf5i + 0)
+          pcall(function()
+            do
+              local _mmksc98515ed905mksf5f = 1
+              _mmksc98515ed905mksf5f = (_mmksc98515ed905mksf5f + 0)
+              _zmksaud515ed1demksawu:GetIcon(_xmksat8515ed1b5mksatf({71, 79, 86, 85, 72}, 63, 928), _zmksc97515ed904mksf5c)
+            end
+          end)
+        end
+      end
+    end
+    local _xmksc9b515ed908mksf5o = os.clock()
+    do
+      local _zmksc9h515ed90emksf66 = 1
+      _zmksc9h515ed90emksf66 = (_zmksc9h515ed90emksf66 + 0)
+      while ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and ((os.clock() - _xmksc9b515ed908mksf5o) < 12)) do
+        local _zmksc9c515ed909mksf5r = ""
+        do
+          local _mksc9e515ed90bmksf5x = 1
+          _mksc9e515ed90bmksf5x = (_mksc9e515ed90bmksf5x + 0)
+          pcall(function()
+            do
+              local _mmksc9d515ed90amksf5u = 1
+              _mmksc9d515ed90amksf5u = (_mmksc9d515ed90amksf5u + 0)
+              _zmksc9c515ed909mksf5r = _zmksaud515ed1demksawu:GetIcon(_xmksat8515ed1b5mksatf({82, 80, 66, 84, 78, 80, 74, 89}, 63, 928), _xmksat8515ed1b5mksatf({43, 85, 68, 75, 71, 73}, 63, 928))
+            end
+          end)
+        end
+        do
+          local __mksc9f515ed90cmksf60 = 1
+          __mksc9f515ed90cmksf60 = (__mksc9f515ed90cmksf60 + 0)
+          if (((63 * 95) == (95 * 63)) and (((type(_zmksc9c515ed909mksf5r) == _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928)) and (_zmksc9c515ed909mksf5r ~= "")) and _zmksc9c515ed909mksf5r:find(_xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76}, 63, 928)))) then
+            break
+          end
+        end
+        do
+          local _xmksc9g515ed90dmksf63 = 1
+          _xmksc9g515ed90dmksf63 = (_xmksc9g515ed90dmksf63 + 0)
+          task.wait(0.05)
+        end
+      end
+    end
+  end
+end
+local _mksc9j515ed910mksf6c = {sparkles = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 30, 37, 32, 35, 38, 37, 41, 39, 38, 40, 43, 42, 45}, 63, 928), house = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 37, 39, 40, 42, 42, 41, 38, 41, 43, 42, 41, 46, 43}, 63, 928), [_xmksat8515ed1b5mksatf({75, 65, 90, 81, 88, 88, 18, 74, 72, 91, 81, 76, 90, 77, 95, 82}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 37, 39, 40, 42, 42, 41, 38, 41, 43, 42, 41, 46, 43}, 63, 928), star = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 30, 37, 32, 35, 38, 37, 41, 39, 38, 40, 43, 42, 45}, 63, 928), [_xmksat8515ed1b5mksatf({76, 69, 84, 85, 68, 75, 74, 19, 74, 81, 91, 77, 87, 81}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 32, 40, 39, 36, 41, 35, 42, 39, 41, 39, 42, 46, 45}, 63, 928), crosshair = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 34, 40, 34, 42, 34, 36, 43, 39, 46, 46, 49, 45, 47}, 63, 928), eye = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 39, 38, 34, 35, 37, 37, 45, 38, 46, 48, 44, 44, 42}, 63, 928), user = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 40, 41, 41, 39, 41, 44, 41, 43, 44, 40, 44}, 63, 928), box = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 34, 41, 34, 35, 40, 45, 46, 38, 48, 43, 50, 50}, 63, 928), zap = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 38, 35, 35, 38, 42, 38, 35, 41, 43, 43, 39, 42, 42}, 63, 928), target = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 30, 34, 37, 41, 40, 42, 39, 37, 46, 40, 43, 49}, 63, 928), globe = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 31, 36, 39, 41, 41, 43, 39, 40, 38, 46, 40, 50, 45}, 63, 928), bot = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 32, 40, 39, 36, 41, 35, 42, 39, 41, 39, 42, 46, 45}, 63, 928), cloud = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 35, 37, 40, 39, 36, 41, 40, 37, 39, 43, 43, 46, 50}, 63, 928), [_xmksat8515ed1b5mksatf({76, 85, 84, 75, 70, 17, 23}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 33, 32, 40, 40, 34, 38, 43, 39, 43, 46, 41, 46, 45}, 63, 928), keyboard = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 37, 30, 33, 33, 37, 41, 44, 44, 39, 39, 45, 44, 46}, 63, 928), palette = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 31, 35, 40, 32, 33, 35, 44, 36, 42, 47, 48, 47, 50}, 63, 928), square = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 35, 34, 39, 41, 40, 36, 41, 38, 43, 43, 40, 49, 50}, 63, 928), heart = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 31, 33, 40, 37, 35, 40, 41, 42, 39, 44, 45, 50, 50}, 63, 928), flag = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 29, 31, 37, 37, 35, 36, 43, 43, 37, 47, 46, 49, 41}, 63, 928), sun = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 38, 39, 31, 33, 38, 36, 44, 40, 43, 43, 39, 49, 47}, 63, 928), plane = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 37, 34, 41, 41, 36, 39, 39, 37, 43, 42, 40, 45, 45}, 63, 928), save = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 36, 38, 40, 39, 34, 43, 37, 45, 39, 47, 49, 45, 45}, 63, 928), settings = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 35, 38, 36, 42, 43, 39, 45, 38, 44, 44, 43, 44}, 63, 928), [_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89, 20, 26}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 35, 38, 36, 42, 43, 39, 45, 38, 44, 44, 43, 44}, 63, 928), house = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 37, 39, 40, 42, 42, 41, 38, 41, 43, 42, 41, 46, 43}, 63, 928), camera = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 34, 40, 34, 42, 34, 36, 43, 39, 46, 46, 49, 45, 47}, 63, 928), video = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 39, 38, 34, 35, 37, 37, 45, 38, 46, 48, 44, 44, 42}, 63, 928), monitor = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 34, 41, 34, 35, 40, 45, 46, 38, 48, 43, 50, 50}, 63, 928), [_xmksat8515ed1b5mksatf({89, 79, 80, 79, 16, 77, 83}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 32, 39, 38, 34, 35, 37, 37, 45, 38, 46, 48, 44, 44, 42}, 63, 928), [_xmksat8515ed1b5mksatf({64, 82, 83, 81, 90, 17, 90, 86}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 32, 32, 38, 38, 37, 44, 43, 44, 45, 44, 47, 48, 49}, 63, 928), [_xmksat8515ed1b5mksatf({64, 82, 83, 81, 90, 17, 73, 85, 94, 86}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 34, 37, 36, 40, 41, 42, 44, 42, 45, 45, 46, 48, 47}, 63, 928), move = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 38, 40, 38, 40, 38, 41, 43, 46, 47, 49, 41, 47}, 63, 928), footprints = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 40, 41, 41, 39, 41, 44, 41, 43, 44, 40, 44}, 63, 928), [_xmksat8515ed1b5mksatf({79, 69, 83, 85, 82, 82, 18, 89, 91, 73, 87, 78, 84, 90, 84}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 40, 41, 41, 39, 41, 44, 41, 43, 44, 40, 44}, 63, 928), layers = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 34, 41, 34, 35, 40, 45, 46, 38, 48, 43, 50, 50}, 63, 928), [_xmksat8515ed1b5mksatf({76, 79, 87, 71, 16, 72, 84, 93, 85}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 34, 37, 36, 40, 41, 42, 44, 42, 45, 45, 46, 48, 47}, 63, 928), image = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 35, 31, 35, 40, 32, 33, 35, 44, 36, 42, 47, 48, 47, 50}, 63, 928), gauge = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 38, 40, 38, 40, 38, 41, 43, 46, 47, 49, 41, 47}, 63, 928), smile = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 40, 41, 41, 39, 41, 44, 41, 43, 44, 40, 44}, 63, 928), [_xmksat8515ed1b5mksatf({81, 79, 85, 67, 87, 73, 18, 73, 94}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 38, 35, 35, 38, 42, 38, 35, 41, 43, 43, 39, 42, 42}, 63, 928), users = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 36, 30, 38, 40, 41, 41, 39, 41, 44, 41, 43, 44, 40, 44}, 63, 928), [_xmksat8515ed1b5mksatf({81, 69, 71, 84, 72, 87, 77, 19, 74, 95}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 30, 36, 38, 40, 38, 40, 38, 41, 43, 46, 47, 49, 41, 47}, 63, 928), list = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 31, 34, 41, 34, 35, 40, 45, 46, 38, 48, 43, 50, 50}, 63, 928), [_xmksat8515ed1b5mksatf({69, 79, 77, 70, 72, 86, 18, 85, 87, 77, 87}, 63, 928)] = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 36, 38, 40, 39, 34, 43, 37, 45, 39, 47, 49, 45, 45}, 63, 928), file = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 31, 36, 38, 40, 39, 34, 43, 37, 45, 39, 47, 49, 45, 45}, 63, 928), circle = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 37, 35, 34, 39, 41, 40, 36, 41, 38, 43, 43, 40, 49, 50}, 63, 928)}
+local function __mksc9k515ed911mksf6f(_xmksc9l515ed912mksf6i)
+  local _zmksc9m515ed913mksf6l = _zmksaud515ed1demksawu:GetIcon(_xmksc9l515ed912mksf6i, _xmksat8515ed1b5mksatf({43, 85, 68, 75, 71, 73}, 63, 928))
+  do
+    local _mmksc9n515ed914mksf6o = 1
+    _mmksc9n515ed914mksf6o = (_mmksc9n515ed914mksf6o + 0)
+    if (((6 + 87) == 93) and ((type(_zmksc9m515ed913mksf6l) == _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928)) and (_zmksc9m515ed913mksf6l ~= ""))) then
+      return _zmksc9m515ed913mksf6l
+    end
+  end
+  return (_mksc9j515ed910mksf6c[_xmksc9l515ed912mksf6i] or ((_xmksat8515ed1b5mksatf({43, 85, 68, 75, 71, 73, 31}, 63, 928) .. _xmksc9l515ed912mksf6i)))
+end
+local _mksc9o515ed915mksf6r = _zmksaud515ed1demksawu:CreateWindow({Title = _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 4, 58, 84, 80, 94, 78, 92, 94, 77, 89}, 63, 928), Subtitle = _xmksat8515ed1b5mksatf({53, 69, 83, 85, 76, 83, 83, 32, 7, 94, 27, 24, 27, 28}, 63, 928), Icon = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 37, 31, 36, 34, 34, 43, 38, 38, 38, 47, 45, 42, 43}, 63, 928), Size = UDim2.fromOffset(680, 480), MinSize = Vector2.new(520, 380), Draggable = true, Resizable = true, UseBlur = true, DefaultTab = _xmksat8515ed1b5mksatf({39, 79, 78, 71}, 63, 928), ToggleKeybind = _mmksc93515ed900mksf50})
+do
+  local __mksc9p515ed916mksf6u = 1
+  __mksc9p515ed916mksf6u = (__mksc9p515ed916mksf6u + 0)
+  getgenv().VantaUniversal = (getgenv().VantaUniversal or {})
+end
+do
+  local _xmksc9q515ed917mksf6x = 1
+  _xmksc9q515ed917mksf6x = (_xmksc9q515ed917mksf6x + 0)
+  getgenv().VantaUniversal.Window = _mksc9o515ed915mksf6r
+end
+do
+  local _zmksc9r515ed918mksf70 = 1
+  _zmksc9r515ed918mksf70 = (_zmksc9r515ed918mksf70 + 0)
+  getgenv().VantaUniversal.VindUI = _zmksaud515ed1demksawu
+end
+do
+  local _mmkscam515ed937mksf9l = 1
+  _mmkscam515ed937mksf9l = (_mmkscam515ed937mksf9l + 0)
+  pcall(function()
+    local _mmksc9s515ed919mksf73 = _zmksaud515ed1demksawu._Root
+    do
+      local _xmksca0515ed921mksf7r = 1
+      _xmksca0515ed921mksf7r = (_xmksca0515ed921mksf7r + 0)
+      if (((91 * 74) == (74 * 91)) and not _mmksc9s515ed919mksf73) then
+        do
+          local __mksc9z515ed920mksf7o = 1
+          __mksc9z515ed920mksf7o = (__mksc9z515ed920mksf7o + 0)
+          pcall(function()
+            do
+              local _mksc9y515ed91fmksf7l = 1
+              _mksc9y515ed91fmksf7l = (_mksc9y515ed91fmksf7l + 0)
+              if (((24 + 96) == 120) and gethui) then
+                do
+                  local _mmksc9x515ed91emksf7i = 1
+                  _mmksc9x515ed91emksf7i = (_mmksc9x515ed91emksf7i + 0)
+                  for _mksc9t515ed91amksf76, __mksc9u515ed91bmksf79 in ipairs(gethui():GetChildren()) do
+                    do
+                      local _zmksc9w515ed91dmksf7f = 1
+                      _zmksc9w515ed91dmksf7f = (_zmksc9w515ed91dmksf7f + 0)
+                      if (((95 + 7) == 102) and ((__mksc9u515ed91bmksf79.Name == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46}, 63, 928)) or (__mksc9u515ed91bmksf79.Name == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928)))) then
+                        do
+                          local _xmksc9v515ed91cmksf7c = 1
+                          _xmksc9v515ed91cmksf7c = (_xmksc9v515ed91cmksf7c + 0)
+                          _mmksc9s515ed919mksf73 = __mksc9u515ed91bmksf79
+                        end
+                        break
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end)
+        end
+      end
+    end
+    do
+      local _zmksca1515ed922mksf7u = 1
+      _zmksca1515ed922mksf7u = (_zmksca1515ed922mksf7u + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and not _mmksc9s515ed919mksf73) then
+        return
+      end
+    end
+    do
+      local _zmkscal515ed936mksf9i = 1
+      _zmkscal515ed936mksf9i = (_zmkscal515ed936mksf9i + 0)
+      for _mmksca2515ed923mksf7x, _mksca3515ed924mksf80 in ipairs(_mmksc9s515ed919mksf73:GetDescendants()) do
+        do
+          local _xmkscak515ed935mksf9f = 1
+          _xmkscak515ed935mksf9f = (_xmkscak515ed935mksf9f + 0)
+          if (((95 + 93) == 188) and ((_mksca3515ed924mksf80.Name == _xmksat8515ed1b5mksatf({54, 73, 79, 70, 82, 91, 46, 73, 86, 86}, 63, 928)) and _mksca3515ed924mksf80:IsA(_xmksat8515ed1b5mksatf({40, 77, 66, 73, 72, 48, 70, 72, 76, 84}, 63, 928)))) then
+            do
+              local __mksca4515ed925mksf83 = 1
+              __mksca4515ed925mksf83 = (__mksca4515ed925mksf83 + 0)
+              _mksca3515ed924mksf80.Image = _xmksat8515ed1b5mksatf({81, 66, 89, 67, 86, 87, 74, 90, 80, 76, 35, 25, 26, 29, 29, 37, 31, 36, 34, 34, 43, 38, 38, 38, 47, 45, 42, 43}, 63, 928)
+            end
+            do
+              local _xmksca5515ed926mksf86 = 1
+              _xmksca5515ed926mksf86 = (_xmksca5515ed926mksf86 + 0)
+              _mksca3515ed924mksf80.Size = UDim2.fromOffset(30, 30)
+            end
+            do
+              local _zmksca6515ed927mksf89 = 1
+              _zmksca6515ed927mksf89 = (_zmksca6515ed927mksf89 + 0)
+              _mksca3515ed924mksf80.ScaleType = Enum.ScaleType.Fit
+            end
+            do
+              local _mmksca7515ed928mksf8c = 1
+              _mmksca7515ed928mksf8c = (_mmksca7515ed928mksf8c + 0)
+              _mksca3515ed924mksf80.ResampleMode = Enum.ResamplerMode.Default
+            end
+            do
+              local _mksca8515ed929mksf8f = 1
+              _mksca8515ed929mksf8f = (_mksca8515ed929mksf8f + 0)
+              _mksca3515ed924mksf80.ImageColor3 = Color3.new(1, 1, 1)
+            end
+            do
+              local __mksca9515ed92amksf8i = 1
+              __mksca9515ed92amksf8i = (__mksca9515ed92amksf8i + 0)
+              _mksca3515ed924mksf80.ImageTransparency = 0
+            end
+            do
+              local _xmkscaa515ed92bmksf8l = 1
+              _xmkscaa515ed92bmksf8l = (_xmkscaa515ed92bmksf8l + 0)
+              _mksca3515ed924mksf80.BackgroundTransparency = 1
+            end
+            local _zmkscab515ed92cmksf8o = _mksca3515ed924mksf80.Parent
+            do
+              local __mkscaj515ed934mksf9c = 1
+              __mkscaj515ed934mksf9c = (__mkscaj515ed934mksf9c + 0)
+              if (((88 * 18) == (18 * 88)) and _zmkscab515ed92cmksf8o) then
+                local _mmkscac515ed92dmksf8r = _zmkscab515ed92cmksf8o:FindFirstChild(_xmksat8515ed1b5mksatf({51, 73, 85, 78, 72}, 63, 928))
+                local _mkscad515ed92emksf8u = _zmkscab515ed92cmksf8o:FindFirstChild(_xmksat8515ed1b5mksatf({50, 85, 67, 86, 76, 88, 81, 75}, 63, 928))
+                local __mkscae515ed92fmksf8x = ((_mksca3515ed924mksf80.Position.X.Offset + 30) + 10)
+                do
+                  local _zmkscag515ed931mksf93 = 1
+                  _zmkscag515ed931mksf93 = (_zmkscag515ed931mksf93 + 0)
+                  if (((93 + 80) == 173) and _mmkscac515ed92dmksf8r) then
+                    do
+                      local _xmkscaf515ed930mksf90 = 1
+                      _xmkscaf515ed930mksf90 = (_xmkscaf515ed930mksf90 + 0)
+                      _mmkscac515ed92dmksf8r.Position = UDim2.new(0, __mkscae515ed92fmksf8x, _mmkscac515ed92dmksf8r.Position.Y.Scale, _mmkscac515ed92dmksf8r.Position.Y.Offset)
+                    end
+                  end
+                end
+                do
+                  local _mkscai515ed933mksf99 = 1
+                  _mkscai515ed933mksf99 = (_mkscai515ed933mksf99 + 0)
+                  if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and _mkscad515ed92emksf8u) then
+                    do
+                      local _mmkscah515ed932mksf96 = 1
+                      _mmkscah515ed932mksf96 = (_mmkscah515ed932mksf96 + 0)
+                      _mkscad515ed92emksf8u.Position = UDim2.new(0, __mkscae515ed92fmksf8x, _mkscad515ed92emksf8u.Position.Y.Scale, _mkscad515ed92emksf8u.Position.Y.Offset)
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end)
+end
+do
+  local _mkscan515ed938mksf9o = 1
+  _mkscan515ed938mksf9o = (_mkscan515ed938mksf9o + 0)
+  _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({51, 72, 66, 80, 78, 87, 5, 76, 86, 90, 9, 95, 94, 85, 91, 85, 15, 70, 82, 96, 103, 85, 22}, 63, 928), Text = (_xmksat8515ed1b5mksatf({67, 73, 84, 69, 82, 86, 73, 20, 78, 79, 24, 81, 80, 96, 99, 79, 93, 100, 82, 18, 25, 20, 92, 91, 107, 110, 90, 104, 111, 93, 43, 100, 116, 110, 33}, 63, 928) .. (_mmksc93515ed900mksf50.Name .. _xmksat8515ed1b5mksatf({255, 84, 80, 2, 87, 83, 76, 77, 83, 77, 9, 94, 83, 81, 13, 91, 84, 94, 102}, 63, 928))), Type = _xmksat8515ed1b5mksatf({82, 85, 68, 69, 72, 87, 88}, 63, 928), Duration = 4})
+end
+local __mkscao515ed939mksf9r = (((getgenv().VantaOpenRouterKey or getgenv().OpenRouterApiKey) or _xmksat8515ed1b5mksatf({82, 75, 14, 81, 85, 17, 91, 23, 20, 32, 31, 33, 78, 79, 79, 36, 81, 41, 85, 35, 88, 40, 38, 91, 44, 45, 48, 42, 92, 52, 50, 99, 54, 99, 101, 59, 101, 57, 62, 105, 59, 62, 66, 112, 61, 113, 70, 70, 70, 117, 73, 120, 67, 76, 69, 78, 80, 122, 82, 74, 129, 126, 84, 131, 83, 89, 130, 83, 132, 87, 93, 139, 139}, 63, 928)))
+local _xmkscap515ed93amksf9u = table.concat({_xmksat8515ed1b5mksatf({56, 79, 86, 2, 68, 86, 74, 6, 61, 73, 87, 94, 76, 24, 13, 79, 15, 86, 93, 91, 101, 104, 110, 22, 101, 93, 94, 94, 116, 28, 100, 103, 113, 108, 33, 67, 76, 36, 102, 121, 122, 113, 124, 126, 108, 122, 129, 46, 117, 127, 131, 50, 105, 117, 131, 138, 120, 56, 110, 136, 132, 146, 130, 144, 146, 129, 141, 66, 75, 118, 148, 136, 147, 151, 161, 74, 158, 143, 159, 151, 159, 164, 154, 160, 154, 93, 99, 86, 138, 167, 159, 174, 103, 92, 176, 179, 161, 173, 170, 181, 182, 173, 187, 171, 115, 104, 188, 182, 180, 179, 181, 194, 187, 201, 113, 180, 197, 181, 201, 202, 208, 133, 188, 207, 207, 193, 125, 114, 127, 195, 194, 206, 207, 132, 217, 206, 204, 136, 222, 221, 208, 222, 141, 210, 208, 212, 213, 235, 147, 227, 219, 234, 220, 230, 167, 154, 208, 239, 226, 158, 244, 247, 246, 174, 163, 190, 184, 178, 167, 6, 169, 253, 251, 237, 255, 247, 253, 247, 253, 11, 193, 180, 224, 251, 252, 8, 185, 12, 0, 12, 9, 7, 4, 19, 193, 21, 11, 19, 23, 26, 225, 200, 15, 22, 20, 30, 33, 39, 207, 28, 26, 32, 24, 212, 224, 214, 41, 29, 26, 38, 219, 36, 34, 42, 47, 238}, 63, 928), _xmksat8515ed1b5mksatf({56, 79, 86, 2, 38, 37, 51, 6, 72, 86, 77, 10, 62, 52, 60, 67, 59, 52, 17, 85, 98, 98, 105, 104, 102, 100, 25, 110, 99, 97, 29, 112, 100, 97, 109, 34, 88, 77, 37, 125, 112, 124, 113, 42, 127, 123, 124, 122, 130, 48, 136, 122, 120, 130, 53, 122, 120, 124, 125, 147, 59, 125, 144, 137, 146, 64, 149, 145, 67, 135, 141, 135, 149, 143, 142, 74, 158, 145, 161, 162, 152, 158, 152, 165, 95, 84, 162, 151, 162, 157, 89, 155, 91, 159, 172, 172, 165, 169, 168, 110, 99, 169, 179, 167, 169, 180, 174, 106, 177, 177, 174, 194, 196, 194, 182, 197, 127, 116, 196, 200, 119, 203, 190, 206, 123, 199, 194, 215, 193, 201, 207, 198, 214, 146}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 80, 78, 86, 30, 5, 82, 80, 91, 93, 73, 96, 85, 76, 83, 91, 85, 94, 87, 97, 104, 104, 22, 31, 107, 94, 95, 27, 98, 105, 95, 102, 115, 48, 120, 100, 112, 122, 107, 122, 49, 53, 42, 126, 113, 129, 109, 132, 121, 112, 119, 127, 121, 130, 123, 133, 140, 120, 144, 124, 136, 146, 131, 63, 72, 132, 138, 132, 146, 140, 139, 71, 156, 152, 145, 146, 152, 146, 93, 162, 156, 154, 150, 152, 166, 100, 154, 169, 167, 169, 158, 170, 179, 171, 109, 179, 165, 185, 182, 165, 179, 189, 117, 178, 173, 194, 172, 180, 186, 177, 110, 177, 201, 113, 152, 191, 181, 188, 127, 131, 120, 204, 191, 199, 193, 192, 210, 190, 212, 194, 196, 143, 132, 216, 203, 211, 205, 204, 222, 202, 223, 226, 208, 227, 209, 211, 158, 147, 218, 222, 228, 219, 215, 218, 232, 223, 219, 229, 231, 230, 232, 237, 235, 234, 236, 249, 229, 236, 244, 238, 247, 240, 250, 1, 186, 175, 241, 1, 2, 255, 13, 244, 12, 248, 6, 13, 251, 250, 12, 15, 3, 18, 5, 21, 194, 203, 16, 10, 13, 16, 28, 216, 28, 12, 19, 18, 221, 30, 22, 23, 17, 41, 29, 40, 43, 24, 36, 44, 233, 42, 34, 35, 29, 34, 47, 46, 36, 36, 56, 238, 242, 231, 59, 42, 64, 48, 43, 59, 47, 60, 53, 53, 49, 54, 67, 67, 60, 64, 63, 5, 250, 71, 75, 62, 66, 62, 78, 66, 79, 72, 72, 68, 73, 86, 86, 79, 83, 82, 26}, 63, 928), _xmksat8515ed1b5mksatf({54, 79, 83, 77, 73, 80, 84, 93, 33, 8, 79, 89, 93, 12, 90, 99, 91, 100, 90, 31, 102, 89, 105, 106, 96, 102, 96, 26, 109, 97, 110, 115, 100, 115, 117, 117, 47, 36, 104, 103, 115, 116, 41, 118, 116, 127, 129, 109, 132, 121, 112, 119, 127, 121, 130, 123, 133, 140, 140, 58, 132, 130, 61, 147, 141, 147, 150, 148, 136, 68, 148, 140, 71, 142, 149, 139, 146, 76, 155, 143, 156, 149, 164, 94, 83, 168, 157, 155, 165, 88, 172, 159, 175, 155, 178, 167, 158, 165, 173, 167, 176, 169, 179, 186, 166, 190, 170, 182, 192, 177, 109, 180, 190, 194, 113, 183, 180, 183, 189, 118, 186, 192, 186, 200, 194, 193, 139, 126, 175, 210, 198, 200, 200, 214, 133, 199, 215, 216, 213, 227, 202, 226, 206, 220, 227, 209, 208, 226, 229, 217, 232, 219, 235, 152, 223, 233, 237, 156, 164, 234, 228, 231, 234, 246, 163, 231, 244, 244, 237, 241, 240, 177, 171, 187, 173, 181, 1, 241, 248, 247, 179, 247, 4, 4, 253, 1, 0, 193, 187, 203, 189, 18, 20, 18, 15, 194, 25, 13, 24, 27, 8, 20, 28, 202, 26, 30, 205, 17, 30, 29, 19, 19, 39, 212, 36, 28, 29, 230}, 63, 928), _xmksat8515ed1b5mksatf({40, 77, 81, 81, 85, 88, 70, 84, 91, 8, 47, 86, 76, 83, 96, 14, 23, 85, 105, 83, 96, 100, 97, 91, 106, 33, 51, 26, 60, 69, 74, 93, 68, 110, 98, 100, 111, 105, 105, 50, 39, 73, 82, 87, 106, 87, 114, 135, 59, 48, 82, 91, 96, 115, 98, 133, 123, 125, 69, 58, 92, 101, 106, 125, 101, 111, 119, 78, 67, 101, 110, 115, 134, 123, 145, 153, 162, 114, 124, 132, 91, 80, 114, 123, 128, 147, 136, 163, 166, 167, 173, 162, 103, 92, 126, 135, 140, 159, 137, 171, 183, 148, 166, 184, 187, 116, 105, 139, 148, 153, 172, 165, 176, 188, 189, 126, 115, 149, 158, 163, 182, 172, 190, 187, 200, 151, 125, 177, 168, 172, 166, 176, 183, 195, 170, 212, 200, 202, 213, 207, 207, 152, 141, 193, 184, 188, 182, 192, 199, 211, 187, 197, 205, 164, 153, 205, 196, 200, 194, 204, 211, 223, 201, 235, 247, 199, 237, 231, 245, 235, 238, 182, 171, 223, 214, 218, 212, 222, 229, 241, 219, 253, 9, 230, 248, 10, 13, 198, 187, 239, 230, 234, 228, 238, 245, 1, 250, 5, 17, 18, 211, 200, 252, 243, 247, 241, 251, 2, 14, 4, 22, 19, 32, 239, 213, 251, 10, 8, 24, 7, 28, 47, 49, 35, 49, 236, 225, 7, 22, 20, 36, 19, 40, 59, 61, 47, 61, 23, 50, 71, 251, 240, 22, 37, 35, 51, 23, 69, 79, 4, 249, 31, 46, 44, 60, 49, 74, 69, 77, 14, 3, 41, 56, 54, 70, 54, 74, 87, 80, 24, 13, 51, 66, 64, 80, 58, 88, 85, 97, 106, 95, 36, 25, 63, 78, 76, 92, 66, 104, 115, 117, 99, 113, 103, 106, 50, 39, 77, 92, 90, 106, 96, 114, 111, 124, 83, 121, 119, 118, 127, 80, 54, 103, 132, 122, 147, 128, 142, 61, 132, 139, 129, 136, 149, 67, 138, 148, 152, 71, 155, 153, 143, 144, 144, 92, 148, 155, 169, 96, 160, 162, 151, 161, 159, 167, 88, 176, 162, 160, 170, 93, 174, 177, 165, 180, 167, 177, 184, 115}, 63, 928), _xmksat8515ed1b5mksatf({42, 69, 90, 68, 76, 82, 73, 89, 33, 8, 47, 86, 76, 83, 13, 25, 15, 91, 86, 107, 19, 98, 86, 99, 92, 24, 108, 110, 109, 101, 107, 101, 31, 108, 106, 109, 104, 36, 72, 50, 39, 89, 53, 42, 87, 113, 115, 130, 82, 127, 127, 134, 133, 131, 129, 66, 55, 106, 130, 129, 131, 144, 112, 134, 136, 134, 149, 80, 67, 103, 148, 146, 150, 154, 156, 100, 75, 161, 160, 147, 79, 83, 131, 132, 122, 123, 119, 120, 87, 167, 171, 90, 169, 157, 170, 163, 178, 96, 179, 167, 167, 115, 181, 187, 185, 184, 181, 175, 122, 175, 198, 175, 189, 112, 101, 114, 193, 185, 203, 187, 201, 120, 201, 198, 188, 197, 203, 126, 214, 207, 211, 198, 214, 132, 220, 207, 219, 208, 216, 223, 223, 140, 144, 142, 216, 214, 145, 231, 225, 231, 234, 232, 220, 166, 153, 206, 234, 227, 228, 234, 228, 243, 187, 162, 229, 243, 244, 242, 236, 233, 247, 170, 255, 254, 2, 243, 190, 246, 242, 254, 6, 249, 181, 5, 5, 4, 18, 200, 187, 239, 9, 7, 3, 5, 19, 21, 221, 196, 19, 27, 20, 10, 14, 28, 30, 204, 28, 28, 27, 41, 223}, 63, 928), _xmksat8515ed1b5mksatf({32, 70, 85, 71, 85, 4, 89, 85, 86, 84, 92, 10, 93, 97, 91, 26, 15, 100, 99, 103, 102, 104, 21, 106, 102, 103, 101, 26, 109, 97, 112, 115, 107, 116, 116, 34, 114, 114, 113, 127, 39, 28, 41, 115, 113, 44, 110, 46, 131, 127, 128, 126, 51, 121, 135, 136, 134, 138, 140, 70, 59, 143, 126, 151, 63, 137, 149, 66, 137, 133, 142, 146, 140, 140, 73, 139, 153, 144, 77, 160, 148, 164, 163, 171, 83, 151, 164, 168, 169, 157, 156, 174, 167, 181, 107, 94, 131, 175, 97, 176, 178, 184, 101, 169, 179, 169, 178, 183, 107, 173, 109, 193, 180, 196, 197, 187, 193, 187, 117, 185, 191, 185, 199, 193, 192, 192, 125, 211, 205, 204, 198, 213, 214, 132, 217, 206, 204, 136, 221, 217, 218, 216, 141, 224, 212, 228, 230, 228, 225, 217, 217, 150, 230, 227, 167}, 63, 928), _xmksat8515ed1b5mksatf({50, 76, 74, 70, 72, 86, 88, 32, 7, 86, 94, 87, 77, 81, 95, 97, 29, 16, 69, 97, 90, 91, 97, 91, 106, 50, 25, 110, 109, 113, 98, 45, 101, 97, 109, 117, 104, 50, 37, 74, 121, 119, 121, 110, 122, 131, 123, 129, 73, 48, 118, 138, 116, 119, 137, 54, 134, 136, 141, 131, 138, 138, 61, 145, 147, 146, 138, 144, 138, 82}, 63, 928), _xmksat8515ed1b5mksatf({47, 50, 38, 47, 44, 57, 50, 21, 50, 45, 66, 61, 11, 20, 93, 96, 84, 93, 90, 103, 96, 32, 21, 97, 92, 113, 25, 95, 115, 108, 102, 112, 104, 110, 104, 46, 35, 118, 106, 116, 108, 127, 53, 42, 119, 117, 112, 115, 125, 131, 118, 59, 77, 52, 137, 123, 131, 132, 57, 142, 131, 129, 138, 62, 134, 133, 149, 152, 132, 146, 153, 135, 85, 142, 158, 152, 89, 76, 128, 131, 127, 128, 128, 132, 135, 99, 121, 127, 138, 123, 136, 140, 127, 107, 126, 133, 132, 142, 149, 124, 99, 168, 174, 185, 170, 183, 187, 174, 121, 179, 180, 125, 197, 177, 191, 198, 180, 186, 202, 196, 133, 120, 167, 191, 209, 193, 207, 126, 210, 193, 218, 130, 177, 217, 209, 210, 188, 177, 137, 126, 139, 219, 219, 218, 232, 144, 199, 211, 225, 232, 214, 164, 151, 198, 222, 240, 224, 238, 157, 223, 242, 235, 161, 232, 242, 246, 165, 199, 215, 209, 169, 245, 240, 5, 0, 188}, 63, 928), _xmksat8515ed1b5mksatf({32, 76, 88, 67, 92, 87, 5, 91, 90, 77, 9, 94, 90, 91, 89, 97, 15, 100, 96, 18, 84, 87, 105, 107, 88, 100, 101, 115, 27, 93, 109, 110, 107, 121, 33, 101, 107, 101, 115, 109, 108, 123, 41, 129, 115, 113, 123, 46, 112, 131, 124, 119, 119, 52, 41, 54, 123, 135, 57, 136, 138, 144, 61, 141, 141, 140, 154, 66, 135, 137, 152, 137, 153, 145, 139, 143, 75, 159, 146, 162, 163, 153, 159, 153, 166, 84, 158, 156, 87, 177, 168, 175, 91, 159, 158, 172, 95, 179, 166, 182, 99, 184, 173, 171, 180, 118}, 63, 928)}, _xmksat8515ed1b5mksatf({255}, 63, 928))
+local _zmkscaq515ed93bmksf9x = {}
+do
+  local _mkscas515ed93dmksfa3 = 1
+  _mkscas515ed93dmksfa3 = (_mkscas515ed93dmksfa3 + 0)
+  pcall(function()
+    do
+      local _mmkscar515ed93cmksfa0 = 1
+      _mmkscar515ed93cmksfa0 = (_mmkscar515ed93cmksfa0 + 0)
+      _zmkscaq515ed93bmksf9x = (_mksc9o515ed915mksf6r:_BuildDefaultChatTools() or {})
+    end
+  end)
+end
+local __mkscat515ed93emksfa6 = {red = Color3.fromRGB(255, 70, 70), green = Color3.fromRGB(80, 220, 120), blue = Color3.fromRGB(80, 140, 255), purple = Color3.fromRGB(160, 90, 255), pink = Color3.fromRGB(255, 120, 200), yellow = Color3.fromRGB(255, 220, 80), orange = Color3.fromRGB(255, 160, 60), cyan = Color3.fromRGB(80, 220, 255), white = Color3.fromRGB(255, 255, 255), black = Color3.fromRGB(20, 20, 20), gray = Color3.fromRGB(140, 140, 140), grey = Color3.fromRGB(140, 140, 140)}
+local function _xmkscau515ed93fmksfa9(_zmkscav515ed940mksfac)
+  do
+    local _mmkscaw515ed941mksfaf = 1
+    _mmkscaw515ed941mksfaf = (_mmkscaw515ed941mksfaf + 0)
+    if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and (typeof(_zmkscav515ed940mksfac) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+      return _zmkscav515ed940mksfac
+    end
+  end
+  local _mkscax515ed942mksfai = tostring((_zmkscav515ed940mksfac or "")):gsub(_xmksat8515ed1b5mksatf({4, 83, 12}, 63, 928), "")
+  do
+    local __mkscay515ed943mksfal = 1
+    __mkscay515ed943mksfal = (__mkscay515ed943mksfal + 0)
+    if (((46 + 28) == 74) and ((_mkscax515ed942mksfai == "") or (_mkscax515ed942mksfai:lower() == _xmksat8515ed1b5mksatf({77, 79, 79, 71}, 63, 928)))) then
+      return nil
+    end
+  end
+  do
+    local _xmkscaz515ed944mksfao = 1
+    _xmkscaz515ed944mksfao = (_xmkscaz515ed944mksfao + 0)
+    _mkscax515ed942mksfai = _mkscax515ed942mksfai:gsub(_xmksat8515ed1b5mksatf({61, 37, 79, 87, 80, 9, 19, 49, 76, 97, 44, 89, 79, 81, 18, 28}, 63, 928), ""):gsub(_xmksat8515ed1b5mksatf({61, 43, 70, 91, 38, 83, 73, 75, 12, 22}, 63, 928), "")
+  end
+  local _zmkscb0515ed945mksfar, _mmkscb1515ed946mksfau = pcall(function()
+    return Enum.KeyCode[_mkscax515ed942mksfai]
+  end)
+  do
+    local _mkscb2515ed947mksfax = 1
+    _mkscb2515ed947mksfax = (_mkscb2515ed947mksfax + 0)
+    if ((((89 * 10) % 10) == 0) and (_zmkscb0515ed945mksfar and _mmkscb1515ed946mksfau)) then
+      return _mmkscb1515ed946mksfau
+    end
+  end
+  local __mkscb3515ed948mksfb0 = _mkscax515ed942mksfai:lower()
+  do
+    local _mkscb7515ed94cmksfbc = 1
+    _mkscb7515ed94cmksfbc = (_mkscb7515ed94cmksfbc + 0)
+    for _xmkscb4515ed949mksfb3, _zmkscb5515ed94amksfb6 in ipairs(Enum.KeyCode:GetEnumItems()) do
+      do
+        local _mmkscb6515ed94bmksfb9 = 1
+        _mmkscb6515ed94bmksfb9 = (_mmkscb6515ed94bmksfb9 + 0)
+        if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and (_zmkscb5515ed94amksfb6.Name:lower() == __mkscb3515ed948mksfb0)) then
+          return _zmkscb5515ed94amksfb6
+        end
+      end
+    end
+  end
+  return nil
+end
+local function __mkscb8515ed94dmksfbf(_xmkscb9515ed94emksfbi)
+  do
+    local _zmkscba515ed94fmksfbl = 1
+    _zmkscba515ed94fmksfbl = (_zmkscba515ed94fmksfbl + 0)
+    if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (typeof(_xmkscb9515ed94emksfbi) == _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85, 23}, 63, 928))) then
+      return _xmkscb9515ed94emksfbi
+    end
+  end
+  do
+    local _mmkscbb515ed950mksfbo = 1
+    _mmkscbb515ed950mksfbo = (_mmkscbb515ed950mksfbo + 0)
+    if ((((2 * 9) % 9) == 0) and ((((type(_xmkscb9515ed94emksfbi) == _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928)) and _xmkscb9515ed94emksfbi.R) and _xmkscb9515ed94emksfbi.G) and _xmkscb9515ed94emksfbi.B)) then
+      return Color3.new(_xmkscb9515ed94emksfbi.R, _xmkscb9515ed94emksfbi.G, _xmkscb9515ed94emksfbi.B)
+    end
+  end
+  local _mkscbc515ed951mksfbr = tostring((_xmkscb9515ed94emksfbi or "")):lower():gsub(_xmksat8515ed1b5mksatf({4, 83, 12}, 63, 928), "")
+  do
+    local __mkscbd515ed952mksfbu = 1
+    __mkscbd515ed952mksfbu = (__mkscbd515ed952mksfbu + 0)
+    if (((59 + 23) == 82) and __mkscat515ed93emksfa6[_mkscbc515ed951mksfbr]) then
+      return __mkscat515ed93emksfa6[_mkscbc515ed951mksfbr]
+    end
+  end
+  local _xmkscbe515ed953mksfbx = _mkscbc515ed951mksfbr:match(_xmksat8515ed1b5mksatf({61, 3, 32, 10, 8, 92, 10, 94, 12, 96, 14, 98, 16, 100, 18, 102, 24, 20}, 63, 928))
+  do
+    local __mkscbi515ed957mksfc9 = 1
+    __mkscbi515ed957mksfc9 = (__mkscbi515ed957mksfc9 + 0)
+    if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and _xmkscbe515ed953mksfbx) then
+      local _zmkscbf515ed954mksfc0 = (tonumber(_xmkscbe515ed953mksfbx:sub(1, 2), 16) / 255)
+      local _mmkscbg515ed955mksfc3 = (tonumber(_xmkscbe515ed953mksfbx:sub(3, 4), 16) / 255)
+      local _mkscbh515ed956mksfc6 = (tonumber(_xmkscbe515ed953mksfbx:sub(5, 6), 16) / 255)
+      return Color3.new(_zmkscbf515ed954mksfc0, _mmkscbg515ed955mksfc3, _mkscbh515ed956mksfc6)
+    end
+  end
+  local _xmkscbj515ed958mksfcc, _zmkscbk515ed959mksfcf, _mmkscbl515ed95amksfci = _mkscbc515ed951mksfbr:match(_xmksat8515ed1b5mksatf({61, 8, 6, 70, 14, 13, 17, 14, 12, 76, 20, 19, 23, 20, 18, 82, 26, 25, 21}, 63, 928))
+  do
+    local _mkscbm515ed95bmksfcl = 1
+    _mkscbm515ed95bmksfcl = (_mkscbm515ed95bmksfcl + 0)
+    if (((28 + 53) == 81) and _xmkscbj515ed958mksfcc) then
+      return Color3.fromRGB(tonumber(_xmkscbj515ed958mksfcc), tonumber(_zmkscbk515ed959mksfcf), tonumber(_mmkscbl515ed95amksfci))
+    end
+  end
+  return nil
+end
+local function __mkscbn515ed95cmksfco(_xmkscbo515ed95dmksfcr, _zmkscbp515ed95emksfcu)
+  do
+    local _mmkscbq515ed95fmksfcx = 1
+    _mmkscbq515ed95fmksfcx = (_mmkscbq515ed95fmksfcx + 0)
+    _xmkscbo515ed95dmksfcr = tostring((_xmkscbo515ed95dmksfcr or ""))
+  end
+  do
+    local _mkscc1515ed96amksfdu = 1
+    _mkscc1515ed96amksfdu = (_mkscc1515ed96amksfdu + 0)
+    if (((45 * 43) == (43 * 45)) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73}, 63, 928))) then
+      do
+        local _mkscbr515ed960mksfd0 = 1
+        _mkscbr515ed960mksfd0 = (_mkscbr515ed960mksfd0 + 0)
+        if ((((29 * 11) % 11) == 0) and ((_zmkscbp515ed95emksfcu == true) or (_zmkscbp515ed95emksfcu == false))) then
+          return _zmkscbp515ed95emksfcu
+        end
+      end
+      local __mkscbs515ed961mksfd3 = string.lower(tostring(_zmkscbp515ed95emksfcu))
+      do
+        local _xmkscbt515ed962mksfd6 = 1
+        _xmkscbt515ed962mksfd6 = (_xmkscbt515ed962mksfd6 + 0)
+        if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and ((((((__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({83, 82, 86, 71}, 63, 928)) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({78, 78}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({16}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({88, 69, 84}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({68, 78, 66, 68, 79, 73}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({68, 78, 66, 68, 79, 73, 73}, 63, 928)))) then
+          return true
+        end
+      end
+      do
+        local _zmkscbu515ed963mksfd9 = 1
+        _zmkscbu515ed963mksfd9 = (_zmkscbu515ed963mksfd9 + 0)
+        if (((18 * 49) == (49 * 18)) and ((((((__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({69, 65, 77, 85, 72}, 63, 928)) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({78, 70, 71}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({15}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({77, 79}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({67, 73, 84, 67, 69, 80, 74}, 63, 928))) or (__mkscbs515ed961mksfd3 == _xmksat8515ed1b5mksatf({67, 73, 84, 67, 69, 80, 74, 74}, 63, 928)))) then
+          return false
+        end
+      end
+      return nil, _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 5, 84, 76, 77, 77, 93, 11, 96, 95, 99, 84, 31, 87, 83, 95, 103, 90}, 63, 928)
+    elseif ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({50, 76, 74, 70, 72, 86}, 63, 928))) then
+      local _mmkscbv515ed964mksfdc = tonumber(_zmkscbp515ed95emksfcu)
+      do
+        local _mkscbw515ed965mksfdf = 1
+        _mkscbw515ed965mksfdf = (_mkscbw515ed965mksfdf + 0)
+        if (((63 * 95) == (95 * 63)) and (_mmkscbv515ed964mksfdc == nil)) then
+          return nil, _xmksat8515ed1b5mksatf({50, 76, 74, 70, 72, 86, 5, 84, 76, 77, 77, 93, 11, 77, 13, 92, 100, 93, 83, 87, 101}, 63, 928)
+        end
+      end
+      return _mmkscbv515ed964mksfdc
+    elseif (((6 + 87) == 93) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85, 52, 78, 73, 82, 77, 91}, 63, 928))) then
+      local __mkscbx515ed966mksfdi = __mkscb8515ed94dmksfbf(_zmkscbp515ed95emksfcu)
+      do
+        local _xmkscby515ed967mksfdl = 1
+        _xmkscby515ed967mksfdl = (_xmkscby515ed967mksfdl + 0)
+        if (((91 * 74) == (74 * 91)) and not __mkscbx515ed966mksfdi) then
+          return nil, _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85, 4, 83, 75, 76, 76, 92, 10, 46, 91, 89, 93, 97, 35, 29, 18, 22, 92, 90, 110, 35, 24, 107, 38, 98, 40, 95, 42, 31, 111, 115, 34, 100, 36, 115, 103, 116, 109, 41, 118, 116, 119, 114, 46, 127, 133, 131, 130, 127, 121}, 63, 928)
+        end
+      end
+      return __mkscbx515ed966mksfdi
+    elseif (((24 + 96) == 120) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({42, 69, 90, 68, 76, 82, 73}, 63, 928))) then
+      local _zmkscbz515ed968mksfdo = _xmkscau515ed93fmksfa9(_zmkscbp515ed95emksfcu)
+      do
+        local _mmkscc0515ed969mksfdr = 1
+        _mmkscc0515ed969mksfdr = (_mmkscc0515ed969mksfdr + 0)
+        if (((95 + 7) == 102) and ((((_zmkscbp515ed95emksfcu ~= nil) and (tostring(_zmkscbp515ed95emksfcu) ~= "")) and (tostring(_zmkscbp515ed95emksfcu):lower() ~= _xmksat8515ed1b5mksatf({77, 79, 79, 71}, 63, 928))) and not _zmkscbz515ed968mksfdo)) then
+          return nil, (_xmksat8515ed1b5mksatf({52, 78, 76, 80, 82, 91, 83, 6, 82, 77, 98, 36, 11}, 63, 928) .. tostring(_zmkscbp515ed95emksfcu))
+        end
+      end
+      return _zmkscbz515ed968mksfdo
+    elseif ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({35, 82, 80, 82, 71, 83, 92, 84}, 63, 928))) then
+      return tostring(_zmkscbp515ed95emksfcu)
+    elseif (((95 + 93) == 188) and (_xmkscbo515ed95dmksfcr == _xmksat8515ed1b5mksatf({51, 69, 89, 86, 69, 83, 93}, 63, 928))) then
+      return tostring(_zmkscbp515ed95emksfcu)
+    end
+  end
+  do
+    local __mkscc2515ed96bmksfdx = 1
+    __mkscc2515ed96bmksfdx = (__mkscc2515ed96bmksfdx + 0)
+    if (((88 * 18) == (18 * 88)) and ((_zmkscbp515ed95emksfcu == true) or (_zmkscbp515ed95emksfcu == false))) then
+      return _zmkscbp515ed95emksfcu
+    end
+  end
+  do
+    local _xmkscc3515ed96cmksfe0 = 1
+    _xmkscc3515ed96cmksfe0 = (_xmkscc3515ed96cmksfe0 + 0)
+    if (((93 + 80) == 173) and ((tonumber(_zmkscbp515ed95emksfcu) ~= nil) and (type(_zmkscbp515ed95emksfcu) ~= _xmksat8515ed1b5mksatf({65, 79, 80, 78, 72, 69, 83}, 63, 928)))) then
+      return tonumber(_zmkscbp515ed95emksfcu)
+    end
+  end
+  return _zmkscbp515ed95emksfcu
+end
+local function _zmkscc4515ed96dmksfe3(_mmkscc5515ed96emksfe6, _mkscc6515ed96fmksfe9)
+  do
+    local __mkscc7515ed970mksfec = 1
+    __mkscc7515ed970mksfec = (__mkscc7515ed970mksfec + 0)
+    _mmkscc5515ed96emksfe6 = tostring((_mmkscc5515ed96emksfe6 or ""))
+  end
+  local _xmkscc8515ed971mksfef = (((_zmksaud515ed1demksawu and _zmksaud515ed1demksawu.Flags)) or {})
+  local _zmkscc9515ed972mksfei = _xmkscc8515ed971mksfef[_mmkscc5515ed96emksfe6]
+  do
+    local _mmkscca515ed973mksfel = 1
+    _mmkscca515ed973mksfel = (_mmkscca515ed973mksfel + 0)
+    if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and (not _zmkscc9515ed972mksfei or not _zmkscc9515ed972mksfei.Set)) then
+      return false, (_xmksat8515ed1b5mksatf({52, 78, 76, 80, 82, 91, 83, 6, 77, 84, 74, 81, 37, 12}, 63, 928) .. (_mmkscc5515ed96emksfe6 .. _xmksat8515ed1b5mksatf({255, 8, 54, 43, 3, 81, 70, 95, 7, 86, 88, 94, 11, 78, 82, 14, 91, 95, 82, 86, 88, 88, 21, 111, 92, 108, 34}, 63, 928)))
+    end
+  end
+  local _mksccb515ed974mksfeo, __mksccc515ed975mksfer = __mkscbn515ed95cmksfco(_zmkscc9515ed972mksfei.Kind, _mkscc6515ed96fmksfe9)
+  do
+    local _xmksccd515ed976mksfeu = 1
+    _xmksccd515ed976mksfeu = (_xmksccd515ed976mksfeu + 0)
+    if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and __mksccc515ed975mksfer) then
+      return false, __mksccc515ed975mksfer
+    end
+  end
+  local _mmksccf515ed978mksff0, _mksccg515ed979mksff3 = pcall(function()
+    do
+      local _zmkscce515ed977mksfex = 1
+      _zmkscce515ed977mksfex = (_zmkscce515ed977mksfex + 0)
+      _zmkscc9515ed972mksfei:Set(_mksccb515ed974mksfeo, false)
+    end
+  end)
+  do
+    local __mkscch515ed97amksff6 = 1
+    __mkscch515ed97amksff6 = (__mkscch515ed97amksff6 + 0)
+    if (((46 + 28) == 74) and not _mmksccf515ed978mksff0) then
+      return false, tostring(_mksccg515ed979mksff3)
+    end
+  end
+  local _xmkscci515ed97bmksff9 = nil
+  do
+    local _mmkscck515ed97dmksfff = 1
+    _mmkscck515ed97dmksfff = (_mmkscck515ed97dmksfff + 0)
+    pcall(function()
+      do
+        local _zmksccj515ed97cmksffc = 1
+        _zmksccj515ed97cmksffc = (_zmksccj515ed97cmksffc + 0)
+        _xmkscci515ed97bmksff9 = _zmkscc9515ed972mksfei:Get()
+      end
+    end)
+  end
+  return true, nil, _xmkscci515ed97bmksff9, _zmkscc9515ed972mksfei.Kind, _zmkscc9515ed972mksfei.Label
+end
+do
+  local _xmksccx515ed98amksfgi = 1
+  _xmksccx515ed98amksfgi = (_xmksccx515ed98amksfgi + 0)
+  for _mksccl515ed97emksffi, __mksccm515ed97fmksffl in ipairs(_zmkscaq515ed93bmksf9x) do
+    do
+      local __mksccw515ed989mksfgf = 1
+      __mksccw515ed989mksfgf = (__mksccw515ed989mksfgf + 0)
+      if ((((89 * 10) % 10) == 0) and (__mksccm515ed97fmksffl.Name == _xmksat8515ed1b5mksatf({82, 69, 85, 65, 88, 77, 68, 75, 83, 77, 86, 79, 89, 96, 76, 100, 80, 92, 102, 87}, 63, 928))) then
+        do
+          local _mksccv515ed988mksfgc = 1
+          _mksccv515ed988mksfgc = (_mksccv515ed988mksfgc + 0)
+          _zmkscaq515ed93bmksf9x[_mksccl515ed97emksffi] = {Name = _xmksat8515ed1b5mksatf({82, 69, 85, 65, 88, 77, 68, 75, 83, 77, 86, 79, 89, 96, 76, 100, 80, 92, 102, 87}, 63, 928), Description = _xmksat8515ed1b5mksatf({50, 69, 85, 85, 3, 69, 5, 59, 48, 8, 78, 86, 80, 89, 82, 92, 99, 16, 83, 107, 19, 58, 97, 87, 94, 38, 25, 78, 106, 99, 100, 106, 100, 115, 59, 34, 119, 118, 122, 107, 54, 110, 106, 118, 126, 113, 59, 46, 98, 124, 122, 118, 120, 134, 136, 80, 55, 134, 142, 135, 125, 129, 143, 76, 63, 99, 144, 142, 146, 150, 152, 96, 71, 75, 145, 143, 163, 76, 156, 160, 79, 158, 146, 159, 152, 84, 93, 166, 172, 170, 169, 166, 160, 104, 93, 176, 164, 164, 111, 112, 113, 109, 115, 102, 146, 173, 194, 172, 180, 186, 177, 193, 137, 112, 188, 183, 204, 116, 195, 183, 196, 189, 121, 198, 196, 199, 194, 126, 162, 140, 129, 179, 143, 132, 177, 203, 205, 220, 172, 217, 217, 224, 223, 221, 219, 158, 145, 179, 223, 235, 214, 239, 234, 152, 229, 227, 238, 240, 220, 243, 232, 223, 230, 238, 232, 241, 234, 244, 251, 251, 169, 240, 244, 254, 0, 2, 175, 249, 247, 178, 8, 2, 8, 11, 9, 253, 199}, 63, 928), Parameters = {type = _xmksat8515ed1b5mksatf({78, 66, 75, 71, 70, 88}, 63, 928), properties = {flag = {type = _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928), description = _xmksat8515ed1b5mksatf({37, 76, 66, 73, 3, 82, 70, 83, 76, 8, 78, 24, 82, 26, 13, 51, 66, 64, 80, 63, 84, 103, 105, 91, 105, 36, 25, 59, 68, 73, 92, 67, 109, 97, 99, 110, 104, 104, 49, 38, 72, 81, 86, 105, 81, 91, 99}, 63, 928)}, value = {description = _xmksat8515ed1b5mksatf({45, 69, 88, 2, 89, 69, 81, 91, 76, 8, 86, 75, 95, 79, 85, 87, 93, 87, 17, 102, 91, 89, 21, 89, 102, 102, 109, 108, 106, 104, 29, 114, 120, 112, 102}, 63, 928)}}, required = {_xmksat8515ed1b5mksatf({69, 76, 66, 73}, 63, 928), _xmksat8515ed1b5mksatf({85, 65, 77, 87, 72}, 63, 928)}}, Handler = function(_xmksccn515ed980mksffo)
+            local _zmkscco515ed981mksffr, _mmksccp515ed982mksffu, _mksccq515ed983mksffx, __mksccr515ed984mksfg0, _xmksccs515ed985mksfg3 = _zmkscc4515ed96dmksfe3((_xmksccn515ed980mksffo and _xmksccn515ed980mksffo.flag), (_xmksccn515ed980mksffo and _xmksccn515ed980mksffo.value))
+            do
+              local _mmksccu515ed987mksfg9 = 1
+              _mmksccu515ed987mksfg9 = (_mmksccu515ed987mksfg9 + 0)
+              if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and not _zmkscco515ed981mksffr) then
+                do
+                  local _zmkscct515ed986mksfg6 = 1
+                  _zmkscct515ed986mksfg6 = (_zmkscct515ed986mksfg6 + 0)
+                  error((_mmksccp515ed982mksffu or _xmksat8515ed1b5mksatf({50, 69, 85, 2, 73, 69, 78, 82, 76, 76}, 63, 928)), 0)
+                end
+              end
+            end
+            return {ok = true, flag = _xmksccn515ed980mksffo.flag, kind = __mksccr515ed984mksfg0, label = _xmksccs515ed985mksfg3, value = (((typeof(_mksccq515ed983mksffx) == _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85, 23}, 63, 928)) and string.format(_xmksat8515ed1b5mksatf({81, 71, 67, 10, 8, 72, 17, 11, 75, 20, 14, 78, 20}, 63, 928), (_mksccq515ed983mksffx.R * 255), (_mksccq515ed983mksffx.G * 255), (_mksccq515ed983mksffx.B * 255))) or ((((typeof(_mksccq515ed983mksffx) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928)) and _mksccq515ed983mksffx.Name) or _mksccq515ed983mksffx)))}
+          end}
+        end
+        break
+      end
+    end
+  end
+end
+do
+  local _mmksced515ed9bemksfku = 1
+  _mmksced515ed9bemksfku = (_mmksced515ed9bemksfku + 0)
+  table.insert(_zmkscaq515ed93bmksf9x, {Name = _xmksat8515ed1b5mksatf({64, 80, 81, 78, 92, 67, 91, 71, 85, 92, 74, 73, 91, 94, 82, 97, 84, 100}, 63, 928), Description = _xmksat8515ed1b5mksatf({32, 80, 81, 78, 92, 4, 70, 6, 73, 93, 82, 86, 95, 25, 86, 92, 15, 70, 82, 96, 103, 85, 21, 102, 105, 93, 108, 95, 111, 28, 102, 108, 31, 111, 111, 103, 35, 119, 109, 117, 123, 54, 41, 122, 125, 113, 128, 115, 131, 74, 49, 126, 120, 123, 126, 138, 55, 148, 57, 140, 124, 131, 130, 62, 155, 64, 144, 136, 137, 131, 155, 143, 154, 157, 138, 150, 158, 76, 169, 78, 158, 150, 151, 145, 150, 163, 162, 152, 152, 172}, 63, 928), Parameters = {type = _xmksat8515ed1b5mksatf({78, 66, 75, 71, 70, 88}, 63, 928), properties = {preset = {type = _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928), description = _xmksat8515ed1b5mksatf({75, 69, 72, 75, 87, 4, 97, 6, 89, 73, 80, 79, 11, 104, 13, 93, 85, 86, 80, 104, 92, 103, 106, 87, 99, 107, 25, 118, 27, 107, 99, 100, 94, 99, 112, 111, 101, 101, 121}, 63, 928)}}, required = {_xmksat8515ed1b5mksatf({79, 82, 70, 85, 72, 88}, 63, 928)}}, Handler = function(_zmksccy515ed98bmksfgl)
+    local _mmksccz515ed98cmksfgo = string.lower(tostring((((_zmksccy515ed98bmksfgl and _zmksccy515ed98bmksfgl.preset)) or "")))
+    local _mkscd0515ed98dmksfgr, __mkscd1515ed98emksfgu = {}, {}
+    local function _xmkscd2515ed98fmksfgx(_zmkscd3515ed990mksfh0, _mmkscd4515ed991mksfh3)
+      local _mkscd5515ed992mksfh6, __mkscd6515ed993mksfh9 = _zmkscc4515ed96dmksfe3(_zmkscd3515ed990mksfh0, _mmkscd4515ed991mksfh3)
+      do
+        local _mmkscd9515ed996mksfhi = 1
+        _mmkscd9515ed996mksfhi = (_mmkscd9515ed996mksfhi + 0)
+        if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and _mkscd5515ed992mksfh6) then
+          do
+            local _xmkscd7515ed994mksfhc = 1
+            _xmkscd7515ed994mksfhc = (_xmkscd7515ed994mksfhc + 0)
+            table.insert(_mkscd0515ed98dmksfgr, _zmkscd3515ed990mksfh0)
+          end
+        else
+          do
+            local _zmkscd8515ed995mksfhf = 1
+            _zmkscd8515ed995mksfhf = (_zmkscd8515ed995mksfhf + 0)
+            table.insert(__mkscd1515ed98emksfgu, (_zmkscd3515ed990mksfh0 .. (_xmksat8515ed1b5mksatf({25}, 63, 928) .. tostring(__mkscd6515ed993mksfh9))))
+          end
+        end
+      end
+    end
+    do
+      local _zmkscec515ed9bdmksfkr = 1
+      _zmkscec515ed9bdmksfkr = (_zmkscec515ed9bdmksfkr + 0)
+      if ((((2 * 9) % 9) == 0) and (_mmksccz515ed98cmksfgo == _xmksat8515ed1b5mksatf({75, 69, 72, 75, 87}, 63, 928))) then
+        do
+          local _mkscda515ed997mksfhl = 1
+          _mkscda515ed997mksfhl = (_mkscda515ed997mksfhl + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 40, 82, 70, 72, 83, 77, 77}, 63, 928), true)
+        end
+        do
+          local __mkscdb515ed998mksfho = 1
+          __mkscdb515ed998mksfho = (__mkscdb515ed998mksfho + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 41, 51, 59}, 63, 928), 75)
+        end
+        do
+          local _xmkscdc515ed999mksfhr = 1
+          _xmkscdc515ed999mksfhr = (_xmkscdc515ed999mksfhr + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 81, 84, 85, 91, 80}, 63, 928), 0.35)
+        end
+        do
+          local _zmkscdd515ed99amksfhu = 1
+          _zmkscdd515ed99amksfhu = (_zmkscdd515ed99amksfhu + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 76, 84, 93, 45, 55, 63}, 63, 928), false)
+        end
+        do
+          local _mmkscde515ed99bmksfhx = 1
+          _mmkscde515ed99bmksfhx = (_mmkscde515ed99bmksfhx + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 58, 69, 81, 82}, 63, 928), true)
+        end
+        do
+          local _mkscdf515ed99cmksfi0 = 1
+          _mkscdf515ed99cmksfi0 = (_mkscdf515ed99cmksfi0 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 43, 85, 73, 75, 86, 80, 80}, 63, 928), true)
+        end
+        do
+          local __mkscdg515ed99dmksfi3 = 1
+          __mkscdg515ed99dmksfi3 = (__mkscdg515ed99dmksfi3 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 44, 54, 62}, 63, 928), 60)
+        end
+        do
+          local _xmkscdh515ed99emksfi6 = 1
+          _xmkscdh515ed99emksfi6 = (_xmkscdh515ed99emksfi6 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 46, 80, 92, 44, 82, 76, 90, 80, 83}, 63, 928), 55)
+        end
+        do
+          local _zmkscdi515ed99fmksfi9 = 1
+          _zmkscdi515ed99fmksfi9 = (_zmkscdi515ed99fmksfi9 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 57, 79, 87, 96, 48, 58, 66}, 63, 928), false)
+        end
+        do
+          local _mmkscdj515ed9a0mksfic = 1
+          _mmkscdj515ed9a0mksfic = (_mmkscdj515ed9a0mksfic + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 61, 72, 84, 85}, 63, 928), true)
+        end
+        do
+          local _mkscdk515ed9a1mksfif = 1
+          _mkscdk515ed9a1mksfif = (_mkscdk515ed9a1mksfif + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 48, 69, 88, 90, 76, 90}, 63, 928), true)
+        end
+        do
+          local __mkscdl515ed9a2mksfii = 1
+          __mkscdl515ed9a2mksfii = (__mkscdl515ed9a2mksfii + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93}, 63, 928), true)
+        end
+        do
+          local _xmkscdm515ed9a3mksfil = 1
+          _xmkscdm515ed9a3mksfil = (_xmkscdm515ed9a3mksfil + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82}, 63, 928), false)
+        end
+        do
+          local _zmkscdn515ed9a4mksfio = 1
+          _zmkscdn515ed9a4mksfio = (_zmkscdn515ed9a4mksfio + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 44, 80, 84, 85}, 63, 928), false)
+        end
+      elseif (((59 + 23) == 82) and (_mmksccz515ed98cmksfgo == _xmksat8515ed1b5mksatf({81, 65, 72, 71}, 63, 928))) then
+        do
+          local _mmkscdo515ed9a5mksfir = 1
+          _mmkscdo515ed9a5mksfir = (_mmkscdo515ed9a5mksfir + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 40, 82, 70, 72, 83, 77, 77}, 63, 928), true)
+        end
+        do
+          local _mkscdp515ed9a6mksfiu = 1
+          _mkscdp515ed9a6mksfiu = (_mkscdp515ed9a6mksfiu + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 41, 51, 59}, 63, 928), 180)
+        end
+        do
+          local __mkscdq515ed9a7mksfix = 1
+          __mkscdq515ed9a7mksfix = (__mkscdq515ed9a7mksfix + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 81, 84, 85, 91, 80}, 63, 928), 0.05)
+        end
+        do
+          local _xmkscdr515ed9a8mksfj0 = 1
+          _xmkscdr515ed9a8mksfj0 = (_xmkscdr515ed9a8mksfj0 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 76, 84, 93, 45, 55, 63}, 63, 928), true)
+        end
+        do
+          local _zmkscds515ed9a9mksfj3 = 1
+          _zmkscds515ed9a9mksfj3 = (_zmkscds515ed9a9mksfj3 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 58, 69, 81, 82}, 63, 928), false)
+        end
+        do
+          local _mmkscdt515ed9aamksfj6 = 1
+          _mmkscdt515ed9aamksfj6 = (_mmkscdt515ed9aamksfj6 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 43, 85, 73, 75, 86, 80, 80}, 63, 928), true)
+        end
+        do
+          local _mkscdu515ed9abmksfj9 = 1
+          _mkscdu515ed9abmksfj9 = (_mkscdu515ed9abmksfj9 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 44, 54, 62}, 63, 928), 250)
+        end
+        do
+          local __mkscdv515ed9acmksfjc = 1
+          __mkscdv515ed9acmksfjc = (__mkscdv515ed9acmksfjc + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 46, 80, 92, 44, 82, 76, 90, 80, 83}, 63, 928), 100)
+        end
+        do
+          local _xmkscdw515ed9admksfjf = 1
+          _xmkscdw515ed9admksfjf = (_xmkscdw515ed9admksfjf + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 57, 79, 87, 96, 48, 58, 66}, 63, 928), true)
+        end
+        do
+          local _zmkscdx515ed9aemksfji = 1
+          _zmkscdx515ed9aemksfji = (_zmkscdx515ed9aemksfji + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 61, 72, 84, 85}, 63, 928), false)
+        end
+        do
+          local _mmkscdy515ed9afmksfjl = 1
+          _mmkscdy515ed9afmksfjl = (_mmkscdy515ed9afmksfjl + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 48, 69, 88, 90, 76, 90}, 63, 928), true)
+        end
+        do
+          local _mkscdz515ed9b0mksfjo = 1
+          _mkscdz515ed9b0mksfjo = (_mkscdz515ed9b0mksfjo + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93}, 63, 928), true)
+        end
+        do
+          local __mksce0515ed9b1mksfjr = 1
+          __mksce0515ed9b1mksfjr = (__mksce0515ed9b1mksfjr + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82}, 63, 928), true)
+        end
+        do
+          local _xmksce1515ed9b2mksfju = 1
+          _xmksce1515ed9b2mksfju = (_xmksce1515ed9b2mksfju + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 44, 80, 84, 85}, 63, 928), true)
+        end
+      elseif ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and (_mmksccz515ed98cmksfgo == _xmksat8515ed1b5mksatf({78, 70, 71, 65, 89, 77, 88, 91, 72, 84, 92}, 63, 928))) then
+        do
+          local _zmksce2515ed9b3mksfjx = 1
+          _zmksce2515ed9b3mksfjx = (_zmksce2515ed9b3mksfjx + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 48, 69, 88, 90, 76, 90}, 63, 928), false)
+        end
+        do
+          local _mmksce3515ed9b4mksfk0 = 1
+          _mmksce3515ed9b4mksfk0 = (_mmksce3515ed9b4mksfk0 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93}, 63, 928), false)
+        end
+        do
+          local _mksce4515ed9b5mksfk3 = 1
+          _mksce4515ed9b5mksfk3 = (_mksce4515ed9b5mksfk3 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82}, 63, 928), false)
+        end
+        do
+          local __mksce5515ed9b6mksfk6 = 1
+          __mksce5515ed9b6mksfk6 = (__mksce5515ed9b6mksfk6 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 76, 84, 93, 45, 55, 63}, 63, 928), false)
+        end
+        do
+          local _xmksce6515ed9b7mksfk9 = 1
+          _xmksce6515ed9b7mksfk9 = (_xmksce6515ed9b7mksfk9 + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 57, 79, 87, 96, 48, 58, 66}, 63, 928), false)
+        end
+      elseif (((28 + 53) == 81) and (_mmksccz515ed98cmksfgo == _xmksat8515ed1b5mksatf({78, 70, 71, 65, 70, 83, 82, 72, 72, 92}, 63, 928))) then
+        do
+          local _zmksce7515ed9b8mksfkc = 1
+          _zmksce7515ed9b8mksfkc = (_zmksce7515ed9b8mksfkc + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 40, 82, 70, 72, 83, 77, 77}, 63, 928), false)
+        end
+        do
+          local _mmksce8515ed9b9mksfkf = 1
+          _mmksce8515ed9b9mksfkf = (_mmksce8515ed9b9mksfkf + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 43, 85, 73, 75, 86, 80, 80}, 63, 928), false)
+        end
+        do
+          local _mksce9515ed9bamksfki = 1
+          _mksce9515ed9bamksfki = (_mksce9515ed9bamksfki + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 76, 84, 93, 45, 55, 63}, 63, 928), false)
+        end
+        do
+          local __mkscea515ed9bbmksfkl = 1
+          __mkscea515ed9bbmksfkl = (__mkscea515ed9bbmksfkl + 0)
+          _xmkscd2515ed98fmksfgx(_xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 57, 79, 87, 96, 48, 58, 66}, 63, 928), false)
+        end
+      else
+        do
+          local _xmksceb515ed9bcmksfko = 1
+          _xmksceb515ed9bcmksfko = (_xmksceb515ed9bcmksfko + 0)
+          error(_xmksat8515ed1b5mksatf({52, 78, 76, 80, 82, 91, 83, 6, 87, 90, 78, 93, 80, 96, 27, 14, 68, 99, 86, 18, 95, 89, 92, 95, 107, 36, 25, 108, 92, 99, 98, 42, 31, 111, 103, 104, 98, 122, 110, 121, 124, 105, 117, 125, 55, 44, 124, 128, 47, 127, 119, 120, 114, 119, 132, 131, 121, 121, 141, 72}, 63, 928), 0)
+        end
+      end
+    end
+    return {preset = _mmksccz515ed98cmksfgo, applied = _mkscd0515ed98dmksfgr, failed = __mkscd1515ed98emksfgu}
+  end})
+end
+do
+  local _mkscet515ed9cemksfm6 = 1
+  _mkscet515ed9cemksfm6 = (_mkscet515ed9cemksfm6 + 0)
+  table.insert(_zmkscaq515ed93bmksf9x, {Name = _xmksat8515ed1b5mksatf({82, 65, 87, 71, 66, 82, 70, 83, 76, 76, 72, 77, 90, 90, 83, 87, 86}, 63, 928), Description = _xmksat8515ed1b5mksatf({50, 65, 87, 71, 3, 71, 90, 88, 89, 77, 87, 94, 11, 65, 54, 14, 85, 92, 82, 89, 102, 20, 86, 105, 23, 89, 25, 102, 106, 95, 94, 106, 31, 110, 98, 111, 104, 104, 37, 105, 118, 118, 111, 115, 114, 58}, 63, 928), Parameters = {type = _xmksat8515ed1b5mksatf({78, 66, 75, 71, 70, 88}, 63, 928), properties = {name = {type = _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928), description = _xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 5, 84, 72, 85, 78}, 63, 928)}}, required = {_xmksat8515ed1b5mksatf({77, 65, 78, 71}, 63, 928)}}, Handler = function(_mkscee515ed9bfmksfkx)
+    local __mkscef515ed9c0mksfl0 = tostring((((_mkscee515ed9bfmksfkx and _mkscee515ed9bfmksfkx.name)) or _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68}, 63, 928))):gsub(_xmksat8515ed1b5mksatf({58, 62, 6, 89, 66, 9, 18, 6, 68}, 63, 928), _xmksat8515ed1b5mksatf({62}, 63, 928))
+    do
+      local _zmksceh515ed9c2mksfl6 = 1
+      _zmksceh515ed9c2mksfl6 = (_zmksceh515ed9c2mksfl6 + 0)
+      if (((45 * 43) == (43 * 45)) and (__mkscef515ed9c0mksfl0 == "")) then
+        do
+          local _xmksceg515ed9c1mksfl3 = 1
+          _xmksceg515ed9c1mksfl3 = (_xmksceg515ed9c1mksfl3 + 0)
+          __mkscef515ed9c0mksfl0 = _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68}, 63, 928)
+        end
+      end
+    end
+    local _mmkscei515ed9c3mksfl9 = _zmksaud515ed1demksawu:GetConfig()
+    do
+      local __mkscek515ed9c5mksflf = 1
+      __mkscek515ed9c5mksflf = (__mkscek515ed9c5mksflf + 0)
+      if ((((29 * 11) % 11) == 0) and (type(_mmkscei515ed9c3mksfl9) ~= _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928))) then
+        do
+          local _mkscej515ed9c4mksflc = 1
+          _mkscej515ed9c4mksflc = (_mkscej515ed9c4mksflc + 0)
+          error(_xmksat8515ed1b5mksatf({34, 79, 86, 78, 71, 4, 83, 85, 91, 8, 91, 79, 76, 80, 13, 81, 94, 94, 87, 91, 90, 20, 91, 98, 88, 95, 108}, 63, 928), 0)
+        end
+      end
+    end
+    do
+      local _zmkscem515ed9c7mksfll = 1
+      _zmkscem515ed9c7mksfll = (_zmkscem515ed9c7mksfll + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and not writefile) then
+        do
+          local _xmkscel515ed9c6mksfli = 1
+          _xmkscel515ed9c6mksfli = (_xmkscel515ed9c6mksfli + 0)
+          error(_xmksat8515ed1b5mksatf({36, 88, 70, 69, 88, 88, 84, 88, 7, 75, 74, 88, 89, 91, 97, 14, 102, 98, 90, 102, 88, 20, 91, 95, 99, 93, 108}, 63, 928), 0)
+        end
+      end
+    end
+    do
+      local _zmkscer515ed9ccmksfm0 = 1
+      _zmkscer515ed9ccmksfm0 = (_zmkscer515ed9ccmksfm0 + 0)
+      pcall(function()
+        do
+          local _mksceo515ed9c9mksflr = 1
+          _mksceo515ed9c9mksflr = (_mksceo515ed9c9mksflr + 0)
+          if (((18 * 49) == (49 * 18)) and (isfolder and not isfolder(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928)))) then
+            do
+              local _mmkscen515ed9c8mksflo = 1
+              _mmkscen515ed9c8mksflo = (_mmkscen515ed9c8mksflo + 0)
+              makefolder(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928))
+            end
+          end
+        end
+        do
+          local _xmksceq515ed9cbmksflx = 1
+          _xmksceq515ed9cbmksflx = (_xmksceq515ed9cbmksflx + 0)
+          if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and (isfolder and not isfolder(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 85, 85, 78, 82, 81, 94}, 63, 928)))) then
+            do
+              local __mkscep515ed9camksflu = 1
+              __mkscep515ed9camksflu = (__mkscep515ed9camksflu + 0)
+              makefolder(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 85, 85, 78, 82, 81, 94}, 63, 928))
+            end
+          end
+        end
+      end)
+    end
+    do
+      local _mmksces515ed9cdmksfm3 = 1
+      _mmksces515ed9cdmksfm3 = (_mmksces515ed9cdmksfm3 + 0)
+      writefile((_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 85, 85, 78, 82, 81, 94, 27}, 63, 928) .. (__mkscef515ed9c0mksfl0 .. _xmksat8515ed1b5mksatf({13, 74, 84, 81, 81}, 63, 928))), game:GetService(_xmksat8515ed1b5mksatf({39, 84, 85, 82, 54, 73, 87, 92, 80, 75, 78}, 63, 928)):JSONEncode(_mmkscei515ed9c3mksfl9))
+    end
+    return (_xmksat8515ed1b5mksatf({50, 65, 87, 71, 71, 4, 72, 85, 85, 78, 82, 81, 37, 12}, 63, 928) .. __mkscef515ed9c0mksfl0)
+  end})
+end
+do
+  local _zmkscfg515ed9e5mksfo3 = 1
+  _zmkscfg515ed9e5mksfo3 = (_zmkscfg515ed9e5mksfo3 + 0)
+  table.insert(_zmkscaq515ed93bmksf9x, {Name = _xmksat8515ed1b5mksatf({75, 79, 66, 70, 66, 82, 70, 83, 76, 76, 72, 77, 90, 90, 83, 87, 86}, 63, 928), Description = _xmksat8515ed1b5mksatf({43, 79, 66, 70, 3, 69, 5, 89, 72, 94, 78, 78, 11, 88, 92, 81, 80, 92, 17, 96, 84, 97, 90, 90, 23, 91, 104, 104, 97, 101, 100, 30, 96, 110, 101, 34, 100, 116, 117, 114, 128, 40, 106, 118, 119, 44, 115, 122, 112, 119, 132, 64}, 63, 928), Parameters = {type = _xmksat8515ed1b5mksatf({78, 66, 75, 71, 70, 88}, 63, 928), properties = {name = {type = _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928), description = _xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 5, 84, 72, 85, 78}, 63, 928)}}, required = {_xmksat8515ed1b5mksatf({77, 65, 78, 71}, 63, 928)}}, Handler = function(__mksceu515ed9cfmksfm9)
+    local _xmkscev515ed9d0mksfmc = tostring((((__mksceu515ed9cfmksfm9 and __mksceu515ed9cfmksfm9.name)) or _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68}, 63, 928))):gsub(_xmksat8515ed1b5mksatf({58, 62, 6, 89, 66, 9, 18, 6, 68}, 63, 928), _xmksat8515ed1b5mksatf({62}, 63, 928))
+    local _zmkscew515ed9d1mksfmf = (_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 19, 40, 85, 85, 78, 82, 81, 94, 27}, 63, 928) .. (_xmkscev515ed9d0mksfmc .. _xmksat8515ed1b5mksatf({13, 74, 84, 81, 81}, 63, 928)))
+    do
+      local _mkscey515ed9d3mksfml = 1
+      _mkscey515ed9d3mksfml = (_mkscey515ed9d3mksfml + 0)
+      if (((63 * 95) == (95 * 63)) and not ((isfile and isfile(_zmkscew515ed9d1mksfmf)))) then
+        do
+          local _mmkscex515ed9d2mksfmi = 1
+          _mmkscex515ed9d2mksfmi = (_mmkscex515ed9d2mksfmi + 0)
+          error((_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 5, 84, 86, 92, 9, 80, 90, 97, 91, 82, 41, 16}, 63, 928) .. _xmkscev515ed9d0mksfmc), 0)
+        end
+      end
+    end
+    local __mkscez515ed9d4mksfmo = game:GetService(_xmksat8515ed1b5mksatf({39, 84, 85, 82, 54, 73, 87, 92, 80, 75, 78}, 63, 928)):JSONDecode(readfile(_zmkscew515ed9d1mksfmf))
+    do
+      local _zmkscf1515ed9d6mksfmu = 1
+      _zmkscf1515ed9d6mksfmu = (_zmkscf1515ed9d6mksfmu + 0)
+      if (((6 + 87) == 93) and (type(__mkscez515ed9d4mksfmo) ~= _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928))) then
+        do
+          local _xmkscf0515ed9d5mksfmr = 1
+          _xmkscf0515ed9d5mksfmr = (_xmkscf0515ed9d5mksfmr + 0)
+          error(_xmksat8515ed1b5mksatf({33, 65, 69, 2, 70, 83, 83, 76, 80, 79, 9, 80, 84, 88, 82}, 63, 928), 0)
+        end
+      end
+    end
+    local _mmkscf2515ed9d7mksfmx, _mkscf3515ed9d8mksfn0 = {}, {}
+    do
+      local _xmkscff515ed9e4mksfo0 = 1
+      _xmkscff515ed9e4mksfo0 = (_xmkscff515ed9e4mksfo0 + 0)
+      for __mkscf4515ed9d9mksfn3, _xmkscf5515ed9damksfn6 in pairs(__mkscez515ed9d4mksfmo) do
+        local _zmkscf6515ed9dbmksfn9, _mmkscf7515ed9dcmksfnc = _zmkscc4515ed96dmksfe3(__mkscf4515ed9d9mksfn3, _xmkscf5515ed9damksfn6)
+        do
+          local __mkscfe515ed9e3mksfnx = 1
+          __mkscfe515ed9e3mksfnx = (__mkscfe515ed9e3mksfnx + 0)
+          if (((91 * 74) == (74 * 91)) and not _zmkscf6515ed9dbmksfn9) then
+            local __mkscf9515ed9demksfni = pcall(function()
+              do
+                local _mkscf8515ed9ddmksfnf = 1
+                _mkscf8515ed9ddmksfnf = (_mkscf8515ed9ddmksfnf + 0)
+                _zmksaud515ed1demksawu:SetUIElementValue(__mkscf4515ed9d9mksfn3, _xmkscf5515ed9damksfn6)
+              end
+            end)
+            do
+              local _mmkscfc515ed9e1mksfnr = 1
+              _mmkscfc515ed9e1mksfnr = (_mmkscfc515ed9e1mksfnr + 0)
+              if (((24 + 96) == 120) and __mkscf9515ed9demksfni) then
+                do
+                  local _xmkscfa515ed9dfmksfnl = 1
+                  _xmkscfa515ed9dfmksfnl = (_xmkscfa515ed9dfmksfnl + 0)
+                  table.insert(_mmkscf2515ed9d7mksfmx, __mkscf4515ed9d9mksfn3)
+                end
+              else
+                do
+                  local _zmkscfb515ed9e0mksfno = 1
+                  _zmkscfb515ed9e0mksfno = (_zmkscfb515ed9e0mksfno + 0)
+                  table.insert(_mkscf3515ed9d8mksfn0, (__mkscf4515ed9d9mksfn3 .. (_xmksat8515ed1b5mksatf({25}, 63, 928) .. tostring(_mmkscf7515ed9dcmksfnc))))
+                end
+              end
+            end
+          else
+            do
+              local _mkscfd515ed9e2mksfnu = 1
+              _mkscfd515ed9e2mksfnu = (_mkscfd515ed9e2mksfnu + 0)
+              table.insert(_mmkscf2515ed9d7mksfmx, __mkscf4515ed9d9mksfn3)
+            end
+          end
+        end
+      end
+    end
+    return {loaded = _xmkscev515ed9d0mksfmc, applied = #_mmkscf2515ed9d7mksfmx, failed = _mkscf3515ed9d8mksfn0}
+  end})
+end
+local _mmkscfh515ed9e6mksfo6 = _zmksaud515ed1demksawu:CreateAIAssistant({Providers = {{Name = _xmksat8515ed1b5mksatf({46, 80, 70, 80, 53, 83, 90, 90, 76, 90}, 63, 928), Endpoint = _xmksat8515ed1b5mksatf({71, 84, 85, 82, 86, 30, 20, 21, 86, 88, 78, 88, 93, 91, 98, 98, 84, 98, 31, 83, 92, 35, 86, 102, 96, 39, 111, 43, 42, 95, 101, 95, 115, 47, 100, 113, 112, 116, 113, 107, 123, 113, 120, 120, 126}, 63, 928), ApiKey = __mkscao515ed939mksf9r, Model = _xmksat8515ed1b5mksatf({78, 80, 70, 80, 85, 83, 90, 90, 76, 90, 24, 80, 93, 81, 82}, 63, 928)}}, Window = _mksc9o515ed915mksf6r, Tools = _zmkscaq515ed93bmksf9x, Persist = _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 17, 72, 78, 72, 92, 22, 96, 30}, 63, 928), SystemPrompt = _xmkscap515ed93amksf9u, MaxRounds = 10, MaxTokens = 1200})
+do
+  local __mkscfj515ed9e8mksfoc = 1
+  __mkscfj515ed9e8mksfoc = (__mkscfj515ed9e8mksfoc + 0)
+  pcall(function()
+    do
+      local _mkscfi515ed9e7mksfo9 = 1
+      _mkscfi515ed9e7mksfo9 = (_mkscfi515ed9e7mksfo9 + 0)
+      _mmkscfh515ed9e6mksfo6:Reset()
+    end
+  end)
+end
+do
+  local _xmkscfk515ed9e9mksfof = 1
+  _xmkscfk515ed9e9mksfof = (_xmkscfk515ed9e9mksfof + 0)
+  _mksc9o515ed915mksf6r:AddSpotifyPanel({Title = _xmksat8515ed1b5mksatf({50, 80, 80, 86, 76, 74, 94}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 85, 84, 75, 70, 17, 23}, 63, 928)), BridgeUrl = "", ConnectUrl = "", EmbedMode = true, AutoConnect = false})
+end
+local _zmkscfl515ed9eamksfoi, _mmkscfm515ed9ebmksfol
+local _mmkscg6515ed9ffmksfq9 = _mksc9o515ed915mksf6r:AddChatPanel({Title = _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 4, 38, 89, 90, 81, 92, 94, 76, 90, 97, 14, 74, 50, 54, 70, 52, 81}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({65, 79, 85}, 63, 928)), Placeholder = _xmksat8515ed1b5mksatf({32, 83, 76, 2, 71, 69, 73, 74, 96, 15, 92, 10, 65, 77, 91, 98, 80, 16, 82, 96, 108, 104, 93, 95, 101, 95, 119, 40, 41, 42}, 63, 928), Tools = _zmkscaq515ed93bmksf9x, OnToggle = function(_mkscfn515ed9ecmksfoo)
+  do
+    local _xmkscfp515ed9eemksfou = 1
+    _xmkscfp515ed9eemksfou = (_xmkscfp515ed9eemksfou + 0)
+    if (((95 + 7) == 102) and _zmkscfl515ed9eamksfoi) then
+      do
+        local __mkscfo515ed9edmksfor = 1
+        __mkscfo515ed9edmksfor = (__mkscfo515ed9edmksfor + 0)
+        _zmkscfl515ed9eamksfoi:SetActive(_mkscfn515ed9ecmksfoo)
+      end
+    end
+  end
+end, OnClear = function()
+  do
+    local _mmkscfr515ed9f0mksfp0 = 1
+    _mmkscfr515ed9f0mksfp0 = (_mmkscfr515ed9f0mksfp0 + 0)
+    pcall(function()
+      do
+        local _zmkscfq515ed9efmksfox = 1
+        _zmkscfq515ed9efmksfox = (_zmkscfq515ed9efmksfox + 0)
+        _mmkscfh515ed9e6mksfo6:Reset()
+      end
+    end)
+  end
+  do
+    local __mkscft515ed9f2mksfp6 = 1
+    __mkscft515ed9f2mksfp6 = (__mkscft515ed9f2mksfp6 + 0)
+    pcall(function()
+      do
+        local _mkscfs515ed9f1mksfp3 = 1
+        _mkscfs515ed9f1mksfp3 = (_mkscfs515ed9f1mksfp3 + 0)
+        ChatPanel:AddMessage(_xmksat8515ed1b5mksatf({64, 83, 84, 75, 86, 88, 70, 84, 91}, 63, 928), _xmksat8515ed1b5mksatf({39, 69, 90, 2, 87, 76, 74, 88, 76, 8, 77, 75, 79, 80, 102, 108, 15, 89, 101, 25, 102, 20, 98, 91, 35, 24, 79, 91, 105, 112, 94, 30, 64, 73, 33, 67, 118, 119, 110, 121, 123, 105, 119, 126, 55, 44, 117, 115, 129, 117, 49, 134, 130, 52, 125, 123, 131, 136, 57, 147, 138, 145, 61, 149, 136, 148, 137, 66, 132, 146, 158, 70, 150, 142, 73, 163, 154, 161, 159, 78, 163, 162, 160, 167, 149, 160, 154, 169, 87, 173, 176, 175, 91, 118, 112}, 63, 928))
+      end
+    end)
+  end
+end, OnSend = function(_xmkscfu515ed9f3mksfp9, _zmkscfv515ed9f4mksfpc)
+  do
+    local _mkscfx515ed9f6mksfpi = 1
+    _mkscfx515ed9f6mksfpi = (_mkscfx515ed9f6mksfpi + 0)
+    if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and ((type(__mkscao515ed939mksf9r) ~= _xmksat8515ed1b5mksatf({82, 84, 83, 75, 81, 75}, 63, 928)) or (__mkscao515ed939mksf9r == ""))) then
+      do
+        local _mmkscfw515ed9f5mksfpf = 1
+        _mmkscfw515ed9f5mksfpf = (_mmkscfw515ed9f5mksfpf + 0)
+        _xmkscfu515ed9f3mksfp9:AddMessage(_xmksat8515ed1b5mksatf({64, 83, 84, 75, 86, 88, 70, 84, 91}, 63, 928), _xmksat8515ed1b5mksatf({32, 83, 84, 75, 86, 88, 70, 84, 91, 8, 84, 79, 100, 12, 90, 87, 98, 99, 90, 96, 90, 34, 21, 73, 92, 108, 25, 97, 96, 112, 100, 99, 109, 118, 41, 43, 49, 90, 102, 116, 123, 105, 88, 122, 112, 122, 95, 125, 132, 132, 118, 132, 94, 121, 142, 54, 121, 125, 127, 137, 141, 129, 61, 138, 142, 129, 133, 139, 145, 139, 83}, 63, 928))
+      end
+      return
+    end
+  end
+  do
+    local _xmkscfz515ed9f8mksfpo = 1
+    _xmkscfz515ed9f8mksfpo = (_xmkscfz515ed9f8mksfpo + 0)
+    pcall(function()
+      do
+        local __mkscfy515ed9f7mksfpl = 1
+        __mkscfy515ed9f7mksfpl = (__mkscfy515ed9f7mksfpl + 0)
+        _mmkscfh515ed9e6mksfo6:Ask(_xmkscfu515ed9f3mksfp9, _zmkscfv515ed9f4mksfpc)
+      end
+    end)
+  end
+end, OnStop = function()
+  do
+    local _mmkscg1515ed9famksfpu = 1
+    _mmkscg1515ed9famksfpu = (_mmkscg1515ed9famksfpu + 0)
+    pcall(function()
+      do
+        local _zmkscg0515ed9f9mksfpr = 1
+        _zmkscg0515ed9f9mksfpr = (_zmkscg0515ed9f9mksfpr + 0)
+        _mmkscfh515ed9e6mksfo6:Stop()
+      end
+    end)
+  end
+end, OnRegenerate = function(_mkscg2515ed9fbmksfpx, __mkscg3515ed9fcmksfq0)
+  do
+    local _zmkscg5515ed9femksfq6 = 1
+    _zmkscg5515ed9femksfq6 = (_zmkscg5515ed9femksfq6 + 0)
+    pcall(function()
+      do
+        local _xmkscg4515ed9fdmksfq3 = 1
+        _xmkscg4515ed9fdmksfq3 = (_xmkscg4515ed9fdmksfq3 + 0)
+        _mmkscfh515ed9e6mksfo6:Ask(_mkscg2515ed9fbmksfpx, __mkscg3515ed9fcmksfq0)
+      end
+    end)
+  end
+end})
+do
+  local _mmkscgb515eda04mksfqo = 1
+  _mmkscgb515eda04mksfqo = (_mmkscgb515eda04mksfqo + 0)
+  pcall(function()
+    do
+      local _zmkscga515eda03mksfql = 1
+      _zmkscga515eda03mksfql = (_zmkscga515eda03mksfql + 0)
+      task.defer(function()
+        do
+          local _mkscg7515eda00mksfqc = 1
+          _mkscg7515eda00mksfqc = (_mkscg7515eda00mksfqc + 0)
+          task.wait(0.15)
+        end
+        do
+          local _xmkscg9515eda02mksfqi = 1
+          _xmkscg9515eda02mksfqi = (_xmkscg9515eda02mksfqi + 0)
+          pcall(function()
+            do
+              local __mkscg8515eda01mksfqf = 1
+              __mkscg8515eda01mksfqf = (__mkscg8515eda01mksfqf + 0)
+              _mmkscg6515ed9ffmksfq9:AddMessage(_xmksat8515ed1b5mksatf({64, 83, 84, 75, 86, 88, 70, 84, 91}, 63, 928), _xmksat8515ed1b5mksatf({39, 69, 90, 2, 87, 76, 74, 88, 76, 8, 77, 75, 79, 80, 102, 108, 15, 89, 101, 25, 102, 20, 98, 91, 35, 24, 79, 91, 105, 112, 94, 30, 64, 73, 33, 67, 118, 119, 110, 121, 123, 105, 119, 126, 55, 44, 117, 115, 129, 117, 49, 134, 130, 52, 125, 123, 131, 136, 57, 147, 138, 145, 61, 149, 136, 148, 137, 66, 132, 146, 158, 70, 150, 142, 73, 163, 154, 161, 159, 78, 163, 162, 160, 167, 149, 160, 154, 169, 87, 173, 176, 175, 91, 118, 112}, 63, 928))
+            end
+          end)
+        end
+      end)
+    end
+  end)
+end
+local _mkscgc515eda05mksfqr = _zmksaud515ed1demksawu:CloudService({BaseUrl = _xmksat8515ed1b5mksatf({71, 84, 85, 82, 86, 30, 20, 21, 93, 73, 87, 94, 76, 25, 80, 90, 94, 101, 85, 31, 84, 100, 94, 35, 109, 89, 103, 110, 92, 41, 99, 96, 47, 102, 47, 120, 104, 118, 104, 107, 115, 54, 106, 122, 123}, 63, 928), Script = _xmksat8515ed1b5mksatf({85, 65, 79, 86, 68, 17, 90, 84, 80, 94, 78, 92, 94, 77, 89}, 63, 928)})
+do
+  local _zmkscgf515eda08mksfr0 = 1
+  _zmkscgf515eda08mksfr0 = (_zmkscgf515eda08mksfr0 + 0)
+  pcall(function()
+    do
+      local __mkscgd515eda06mksfqu = 1
+      __mkscgd515eda06mksfqu = (__mkscgd515eda06mksfqu + 0)
+      getgenv().VantaUniversal = (getgenv().VantaUniversal or {})
+    end
+    do
+      local _xmkscge515eda07mksfqx = 1
+      _xmkscge515eda07mksfqx = (_xmkscge515eda07mksfqx + 0)
+      getgenv().VantaUniversal.Cloud = _mkscgc515eda05mksfqr
+    end
+  end)
+end
+local _xmkscgj515eda0cmksfrc = _mksc9o515ed915mksf6r:AddCloudPanel({Service = _mkscgc515eda05mksfqr, OnToggle = function(_mmkscgg515eda09mksfr3)
+  do
+    local __mkscgi515eda0bmksfr9 = 1
+    __mkscgi515eda0bmksfr9 = (__mkscgi515eda0bmksfr9 + 0)
+    if (((95 + 93) == 188) and _mmkscfm515ed9ebmksfol) then
+      do
+        local _mkscgh515eda0amksfr6 = 1
+        _mkscgh515eda0amksfr6 = (_mkscgh515eda0amksfr6 + 0)
+        _mmkscfm515ed9ebmksfol:SetActive(_mmkscgg515eda09mksfr3)
+      end
+    end
+  end
+end})
+do
+  local _xmkschd515eda2amksftu = 1
+  _xmkschd515eda2amksftu = (_xmkschd515eda2amksftu + 0)
+  pcall(function()
+    local _zmkscgk515eda0dmksfrf = _xmkscgj515eda0cmksfrc.Tab
+    do
+      local _mmkscgl515eda0emksfri = 1
+      _mmkscgl515eda0emksfri = (_mmkscgl515eda0emksfri + 0)
+      if (((88 * 18) == (18 * 88)) and (not _zmkscgk515eda0dmksfrf or (type(_zmkscgk515eda0dmksfrf._subTabs) ~= _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928)))) then
+        return
+      end
+    end
+    local _mkscgm515eda0fmksfrl
+    do
+      local _mkscgr515eda14mksfs0 = 1
+      _mkscgr515eda14mksfs0 = (_mkscgr515eda14mksfs0 + 0)
+      for __mkscgn515eda10mksfro, _xmkscgo515eda11mksfrr in pairs(_zmkscgk515eda0dmksfrf._subTabs) do
+        do
+          local _mmkscgq515eda13mksfrx = 1
+          _mmkscgq515eda13mksfrx = (_mmkscgq515eda13mksfrx + 0)
+          if (((93 + 80) == 173) and ((type(_xmkscgo515eda11mksfrr) == _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928)) and (tostring((_xmkscgo515eda11mksfrr.Name or "")) == _xmksat8515ed1b5mksatf({47, 85, 67, 78, 76, 71, 5, 41, 86, 86, 79, 83, 82, 95}, 63, 928)))) then
+            do
+              local _zmkscgp515eda12mksfru = 1
+              _zmkscgp515eda12mksfru = (_zmkscgp515eda12mksfru + 0)
+              _mkscgm515eda0fmksfrl = _xmkscgo515eda11mksfrr
+            end
+            break
+          end
+        end
+      end
+    end
+    do
+      local __mkscgs515eda15mksfs3 = 1
+      __mkscgs515eda15mksfs3 = (__mkscgs515eda15mksfs3 + 0)
+      if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and not _mkscgm515eda0fmksfrl) then
+        return
+      end
+    end
+    do
+      local _xmkscgt515eda16mksfs6 = 1
+      _xmkscgt515eda16mksfs6 = (_xmkscgt515eda16mksfs6 + 0)
+      _mkscgm515eda0fmksfrl:AddSection(_xmksat8515ed1b5mksatf({32, 67, 85, 75, 82, 82, 88}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({81, 69, 71, 84, 72, 87, 77, 19, 74, 95}, 63, 928)))
+    end
+    do
+      local __mkschc515eda29mksftr = 1
+      __mkschc515eda29mksftr = (__mkschc515eda29mksftr + 0)
+      _mkscgm515eda0fmksfrl:AddButton({Text = _xmksat8515ed1b5mksatf({49, 69, 71, 84, 72, 87, 77, 6, 42, 87, 87, 80, 84, 83, 13, 58, 88, 99, 101}, 63, 928), Description = _xmksat8515ed1b5mksatf({49, 69, 77, 81, 68, 72, 5, 90, 79, 77, 9, 90, 96, 78, 89, 87, 82, 16, 84, 97, 97, 90, 94, 93, 23, 100, 98, 109, 111}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({81, 69, 71, 84, 72, 87, 77, 19, 74, 95}, 63, 928)), Callback = function()
+        local _zmkscgu515eda17mksfs9, _mmkscgv515eda18mksfsc = 0, nil
+        do
+          local __mksch2515eda1fmksfsx = 1
+          __mksch2515eda1fmksfsx = (__mksch2515eda1fmksfsx + 0)
+          pcall(function()
+            local _mkscgw515eda19mksfsf, __mkscgx515eda1amksfsi = _mkscgc515eda05mksfqr:List({Sort = _xmksat8515ed1b5mksatf({77, 69, 88}, 63, 928), PageSize = 50})
+            do
+              local _mksch1515eda1emksfsu = 1
+              _mksch1515eda1emksfsu = (_mksch1515eda1emksfsu + 0)
+              if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not _mkscgw515eda19mksfsf) then
+                do
+                  local _xmkscgy515eda1bmksfsl = 1
+                  _xmkscgy515eda1bmksfsl = (_xmkscgy515eda1bmksfsl + 0)
+                  _mmkscgv515eda18mksfsc = tostring(__mkscgx515eda1amksfsi)
+                end
+                do
+                  local _zmkscgz515eda1cmksfso = 1
+                  _zmkscgz515eda1cmksfso = (_zmkscgz515eda1cmksfso + 0)
+                  _zmkscgu515eda17mksfs9 = -1
+                end
+              else
+                do
+                  local _mmksch0515eda1dmksfsr = 1
+                  _mmksch0515eda1dmksfsr = (_mmksch0515eda1dmksfsr + 0)
+                  _zmkscgu515eda17mksfs9 = #_mkscgw515eda19mksfsf
+                end
+              end
+            end
+          end)
+        end
+        do
+          local __mksch7515eda24mksftc = 1
+          __mksch7515eda24mksftc = (__mksch7515eda24mksftc + 0)
+          pcall(function()
+            do
+              local _zmksch4515eda21mksft3 = 1
+              _zmksch4515eda21mksft3 = (_zmksch4515eda21mksft3 + 0)
+              if (((46 + 28) == 74) and _xmkscgj515eda0cmksfrc.RefreshPublic) then
+                do
+                  local _xmksch3515eda20mksft0 = 1
+                  _xmksch3515eda20mksft0 = (_xmksch3515eda20mksft0 + 0)
+                  _xmkscgj515eda0cmksfrc.RefreshPublic()
+                end
+              end
+            end
+            do
+              local _mksch6515eda23mksft9 = 1
+              _mksch6515eda23mksft9 = (_mksch6515eda23mksft9 + 0)
+              if ((((89 * 10) % 10) == 0) and _xmkscgj515eda0cmksfrc.RefreshMine) then
+                do
+                  local _mmksch5515eda22mksft6 = 1
+                  _mmksch5515eda22mksft6 = (_mmksch5515eda22mksft6 + 0)
+                  _xmkscgj515eda0cmksfrc.RefreshMine()
+                end
+              end
+            end
+          end)
+        end
+        do
+          local _mkschb515eda28mksfto = 1
+          _mkschb515eda28mksfto = (_mkschb515eda28mksfto + 0)
+          pcall(function()
+            do
+              local _mmkscha515eda27mksftl = 1
+              _mmkscha515eda27mksftl = (_mmkscha515eda27mksftl + 0)
+              if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and (_zmkscgu515eda17mksfs9 < 0)) then
+                do
+                  local _xmksch8515eda25mksftf = 1
+                  _xmksch8515eda25mksftf = (_xmksch8515eda25mksftf + 0)
+                  _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({34, 79, 86, 78, 71, 82, 12, 90, 7, 90, 78, 80, 93, 81, 96, 86}, 63, 928), Text = _xmksat8515ed1b5mksatf({51, 82, 90, 2, 68, 75, 70, 79, 85, 8, 82, 88, 11, 77, 13, 91, 94, 93, 86, 96, 103, 34}, 63, 928), Type = _xmksat8515ed1b5mksatf({68, 82, 83, 81, 85}, 63, 928), Duration = 3})
+                end
+              else
+                do
+                  local _zmksch9515eda26mksfti = 1
+                  _zmksch9515eda26mksfti = (_zmksch9515eda26mksfti + 0)
+                  _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({49, 69, 71, 84, 72, 87, 77, 75, 75}, 63, 928), Text = (((_zmkscgu515eda17mksfs9 == 0) and _xmksat8515ed1b5mksatf({45, 79, 1, 82, 88, 70, 81, 79, 74, 8, 76, 89, 89, 82, 86, 85, 98, 16, 87, 97, 104, 98, 89, 36}, 63, 928)) or _xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 5, 82, 80, 91, 93, 10, 96, 92, 81, 79, 99, 85, 85, 32}, 63, 928)), Type = _xmksat8515ed1b5mksatf({82, 85, 68, 69, 72, 87, 88}, 63, 928), Duration = 2})
+                end
+              end
+            end
+          end)
+        end
+      end})
+    end
+  end)
+end
+do
+  local _mksci5515eda46mksfw6 = 1
+  _mksci5515eda46mksfw6 = (_mksci5515eda46mksfw6 + 0)
+  pcall(function()
+    local _zmksche515eda2bmksftx = {_xmksat8515ed1b5mksatf({77, 73, 72, 73, 72, 86}, 63, 928), _xmksat8515ed1b5mksatf({77, 73, 72, 73, 68}, 63, 928), _xmksat8515ed1b5mksatf({69, 65, 72, 73, 82, 88}, 63, 928), _xmksat8515ed1b5mksatf({69, 65, 72}, 63, 928), _xmksat8515ed1b5mksatf({81, 69, 85, 67, 85, 72}, 63, 928), _xmksat8515ed1b5mksatf({83, 82, 66, 80, 81, 93}, 63, 928), _xmksat8515ed1b5mksatf({74, 89, 84}, 63, 928), _xmksat8515ed1b5mksatf({82, 72, 74, 86}, 63, 928), _xmksat8515ed1b5mksatf({82, 72, 74, 86, 87, 93}, 63, 928), _xmksat8515ed1b5mksatf({69, 85, 68, 77}, 63, 928), _xmksat8515ed1b5mksatf({69, 85, 68, 77, 76, 82, 76}, 63, 928), _xmksat8515ed1b5mksatf({65, 73, 85, 69, 75}, 63, 928), _xmksat8515ed1b5mksatf({64, 83, 84, 74, 82, 80, 74}, 63, 928), _xmksat8515ed1b5mksatf({66, 85, 79, 86}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 72}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 70, 78, 84}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 87}, 63, 928)}
+    local _mmkschf515eda2cmksfu0 = {_xmksat8515ed1b5mksatf({82, 72, 74, 86, 3, 87, 72, 88, 80, 88, 93}, 63, 928), _xmksat8515ed1b5mksatf({65, 65, 69, 2, 86, 71, 87, 79, 87, 92}, 63, 928), _xmksat8515ed1b5mksatf({82, 72, 74, 86, 3, 69, 78}, 63, 928), _xmksat8515ed1b5mksatf({82, 72, 74, 86, 3, 69, 78, 6, 90, 75, 91, 83, 91, 96}, 63, 928), _xmksat8515ed1b5mksatf({64, 73, 1, 85, 70, 86, 78, 86, 91}, 63, 928), _xmksat8515ed1b5mksatf({69, 82, 70, 71, 3, 87, 72, 88, 80, 88, 93}, 63, 928), _xmksat8515ed1b5mksatf({65, 85, 90, 2, 86, 71, 87, 79, 87, 92}, 63, 928), _xmksat8515ed1b5mksatf({82, 69, 77, 78, 3, 87, 72, 88, 80, 88, 93}, 63, 928), _xmksat8515ed1b5mksatf({82, 69, 77, 78, 76, 82, 76, 6, 90, 75, 91, 83, 91, 96}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 4, 89, 78, 80, 91}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 72, 5, 73, 86, 86, 79, 83, 82}, 63, 928), _xmksat8515ed1b5mksatf({79, 65, 84, 86, 72, 4, 72, 85, 85, 78, 82, 81}, 63, 928)}
+    local function _mkschg515eda2dmksfu3(__mkschh515eda2emksfu6)
+      do
+        local _xmkschi515eda2fmksfu9 = 1
+        _xmkschi515eda2fmksfu9 = (_xmkschi515eda2fmksfu9 + 0)
+        __mkschh515eda2emksfu6 = tostring((__mkschh515eda2emksfu6 or ""))
+      end
+      local _zmkschj515eda30mksfuc = string.lower(__mkschh515eda2emksfu6)
+      local _mmkschk515eda31mksfuf = _zmkschj515eda30mksfuc:gsub(_xmksat8515ed1b5mksatf({58, 62, 66, 15, 93, 20, 18, 31, 68}, 63, 928), "")
+      do
+        local _mkschl515eda32mksfui = 1
+        _mkschl515eda32mksfui = (_mkschl515eda32mksfui + 0)
+        if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and ((__mkschh515eda2emksfu6:gsub(_xmksat8515ed1b5mksatf({4, 83, 12}, 63, 928), "") == "") or (#__mkschh515eda2emksfu6 < 2))) then
+          return true
+        end
+      end
+      do
+        local __mkschm515eda33mksful = 1
+        __mkschm515eda33mksful = (__mkschm515eda33mksful + 0)
+        if ((((2 * 9) % 9) == 0) and ((_zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({71, 84, 85, 82, 86, 35, 31, 21, 22}, 63, 928), 1, false) or _zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({86, 87, 88, 16}, 63, 928), 1, true)) or _zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({67, 73, 84, 69, 82, 86, 73, 20, 78, 79}, 63, 928), 1, true))) then
+          return true
+        end
+      end
+      do
+        local _mkschq515eda37mksfux = 1
+        _mkschq515eda37mksfux = (_mkschq515eda37mksfux + 0)
+        for _xmkschn515eda34mksfuo, _zmkscho515eda35mksfur in ipairs(_mmkschf515eda2cmksfu0) do
+          do
+            local _mmkschp515eda36mksfuu = 1
+            _mmkschp515eda36mksfuu = (_mmkschp515eda36mksfuu + 0)
+            if (((59 + 23) == 82) and _zmkschj515eda30mksfuc:find(_zmkscho515eda35mksfur, 1, true)) then
+              return true
+            end
+          end
+        end
+      end
+      do
+        local _mmkschu515eda3bmksfv9 = 1
+        _mmkschu515eda3bmksfv9 = (_mmkschu515eda3bmksfv9 + 0)
+        for __mkschr515eda38mksfv0, _xmkschs515eda39mksfv3 in ipairs(_zmksche515eda2bmksftx) do
+          do
+            local _zmkscht515eda3amksfv6 = 1
+            _zmkscht515eda3amksfv6 = (_zmkscht515eda3amksfv6 + 0)
+            if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and _mmkschk515eda31mksfuf:find(_xmkschs515eda39mksfv3, 1, true)) then
+              return true
+            end
+          end
+        end
+      end
+      do
+        local _mkschv515eda3cmksfvc = 1
+        _mkschv515eda3cmksfvc = (_mkschv515eda3cmksfvc + 0)
+        if (((28 + 53) == 81) and ((_zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({4, 70, 60, 7, 68, 65, 70, 79, 12, 78, 68, 15, 44, 73}, 63, 928)) or _zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({4, 70, 60, 7, 68, 65, 88, 73, 89, 81, 89, 94, 16, 82, 72, 19, 48, 77}, 63, 928))) or _zmkschj515eda30mksfuc:find(_xmksat8515ed1b5mksatf({4, 70, 60, 7, 68, 65, 88, 73, 89, 81, 89, 94, 94, 17, 83, 73, 20, 49, 78}, 63, 928)))) then
+          return true
+        end
+      end
+      return false
+    end
+    local __mkschw515eda3dmksfvf = getmetatable(_mkscgc515eda05mksfqr)
+    local _xmkschx515eda3emksfvi = _mkscgc515eda05mksfqr.Publish
+    do
+      local _mmksci4515eda45mksfw3 = 1
+      _mmksci4515eda45mksfw3 = (_mmksci4515eda45mksfw3 + 0)
+      if (((45 * 43) == (43 * 45)) and (typeof(_xmkschx515eda3emksfvi) == _xmksat8515ed1b5mksatf({69, 85, 79, 69, 87, 77, 84, 84}, 63, 928))) then
+        do
+          local _zmksci3515eda44mksfw0 = 1
+          _zmksci3515eda44mksfw0 = (_zmksci3515eda44mksfw0 + 0)
+          _mkscgc515eda05mksfqr.Publish = function(_zmkschy515eda3fmksfvl, _mmkschz515eda40mksfvo, _mksci0515eda41mksfvr)
+            do
+              local __mksci1515eda42mksfvu = 1
+              __mksci1515eda42mksfvu = (__mksci1515eda42mksfvu + 0)
+              _mmkschz515eda40mksfvo = (_mmkschz515eda40mksfvo or {})
+            end
+            do
+              local _xmksci2515eda43mksfvx = 1
+              _xmksci2515eda43mksfvx = (_xmksci2515eda43mksfvx + 0)
+              if ((((29 * 11) % 11) == 0) and (_mkschg515eda2dmksfu3(_mmkschz515eda40mksfvo.Name) or _mkschg515eda2dmksfu3(_mmkschz515eda40mksfvo.Description))) then
+                return nil, _xmksat8515ed1b5mksatf({47, 76, 70, 67, 86, 73, 5, 75, 85, 92, 78, 92, 11, 77, 13, 92, 84, 103, 17, 96, 84, 97, 90, 36}, 63, 928)
+              end
+            end
+            return _xmkschx515eda3emksfvi(_zmkschy515eda3fmksfvl, _mmkschz515eda40mksfvo, _mksci0515eda41mksfvr)
+          end
+        end
+      end
+    end
+  end)
+end
+do
+  local _xmksci7515eda48mksfwc = 1
+  _xmksci7515eda48mksfwc = (_xmksci7515eda48mksfwc + 0)
+  _zmkscfl515ed9eamksfoi = _mksc9o515ed915mksf6r:AddDockButton({Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({65, 79, 85}, 63, 928)), Callback = function()
+    do
+      local __mksci6515eda47mksfw9 = 1
+      __mksci6515eda47mksfw9 = (__mksci6515eda47mksfw9 + 0)
+      _mmkscg6515ed9ffmksfq9:Toggle()
+    end
+  end})
+end
+do
+  local _xmkscic515eda4dmksfwr = 1
+  _xmkscic515eda4dmksfwr = (_xmkscic515eda4dmksfwr + 0)
+  _mmkscfm515ed9ebmksfol = _mksc9o515ed915mksf6r:AddDockButton({Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 76, 80, 87, 71}, 63, 928)), Callback = function()
+    do
+      local __mkscib515eda4cmksfwo = 1
+      __mkscib515eda4cmksfwo = (__mkscib515eda4cmksfwo + 0)
+      pcall(function()
+        do
+          local _mkscia515eda4bmksfwl = 1
+          _mkscia515eda4bmksfwl = (_mkscia515eda4bmksfwl + 0)
+          if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and _xmkscgj515eda0cmksfrc.Toggle) then
+            do
+              local _zmksci8515eda49mksfwf = 1
+              _zmksci8515eda49mksfwf = (_zmksci8515eda49mksfwf + 0)
+              _xmkscgj515eda0cmksfrc.Toggle()
+            end
+          elseif (((18 * 49) == (49 * 18)) and _xmkscgj515eda0cmksfrc.Open) then
+            do
+              local _mmksci9515eda4amksfwi = 1
+              _mmksci9515eda4amksfwi = (_mmksci9515eda4amksfwi + 0)
+              _xmkscgj515eda0cmksfrc:Open()
+            end
+          end
+        end
+      end)
+    end
+  end})
+end
+local function _zmkscid515eda4emksfwu()
+  local _zmkscii515eda53mksfx9 = pcall(function()
+    do
+      local _mkscif515eda50mksfx0 = 1
+      _mkscif515eda50mksfx0 = (_mkscif515eda50mksfx0 + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and _xmkscgj515eda0cmksfrc.RefreshPublic) then
+        do
+          local _mmkscie515eda4fmksfwx = 1
+          _mmkscie515eda4fmksfwx = (_mmkscie515eda4fmksfwx + 0)
+          _xmkscgj515eda0cmksfrc.RefreshPublic()
+        end
+      end
+    end
+    do
+      local _xmkscih515eda52mksfx6 = 1
+      _xmkscih515eda52mksfx6 = (_xmkscih515eda52mksfx6 + 0)
+      if (((63 * 95) == (95 * 63)) and _xmkscgj515eda0cmksfrc.RefreshMine) then
+        do
+          local __mkscig515eda51mksfx3 = 1
+          __mkscig515eda51mksfx3 = (__mkscig515eda51mksfx3 + 0)
+          _xmkscgj515eda0cmksfrc.RefreshMine()
+        end
+      end
+    end
+  end)
+  return _zmkscii515eda53mksfx9
+end
+do
+  local __mkscil515eda56mksfxi = 1
+  __mkscil515eda56mksfxi = (__mkscil515eda56mksfxi + 0)
+  SettingsDockButton = _mksc9o515ed915mksf6r:AddDockButton({Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89}, 63, 928)), Callback = function()
+    do
+      local _mkscik515eda55mksfxf = 1
+      _mkscik515eda55mksfxf = (_mkscik515eda55mksfxf + 0)
+      pcall(function()
+        do
+          local _mmkscij515eda54mksfxc = 1
+          _mmkscij515eda54mksfxc = (_mmkscij515eda54mksfxc + 0)
+          _mksc9o515ed915mksf6r:SelectTab(_xmksat8515ed1b5mksatf({50, 69, 85, 86, 76, 82, 76, 89}, 63, 928))
+        end
+      end)
+    end
+  end})
+end
+local function _xmkscim515eda57mksfxl(_zmkscin515eda58mksfxo, _mmkscio515eda59mksfxr)
+  local _mkscip515eda5amksfxu = tonumber(_zmkscin515eda58mksfxo)
+  do
+    local __mksciq515eda5bmksfxx = 1
+    __mksciq515eda5bmksfxx = (__mksciq515eda5bmksfxx + 0)
+    if (((6 + 87) == 93) and (_mkscip515eda5amksfxu and (_mkscip515eda5amksfxu == _mkscip515eda5amksfxu))) then
+      return _mkscip515eda5amksfxu
+    end
+  end
+  return _mmkscio515eda59mksfxr
+end
+local _xmkscir515eda5cmksfy0 = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({39, 79, 78, 71}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({71, 79, 86, 85, 72}, 63, 928))})
+do
+  local _zmkscis515eda5dmksfy3 = 1
+  _zmkscis515eda5dmksfy3 = (_zmkscis515eda5dmksfy3 + 0)
+  _mksc9o515ed915mksf6r:AddTabLine()
+end
+local _mmkscit515eda5emksfy6 = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({34, 79, 78, 68, 68, 88}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 82, 80, 85, 86, 76, 70, 79, 89}, 63, 928))})
+local _mksciu515eda5fmksfy9 = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({53, 73, 84, 87, 68, 80, 88}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({68, 89, 70}, 63, 928))})
+do
+  local __mksciv515eda60mksfyc = 1
+  __mksciv515eda60mksfyc = (__mksciv515eda60mksfyc + 0)
+  _mksc9o515ed915mksf6r:AddTabLine()
+end
+local _xmksciw515eda61mksfyf = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({47, 76, 66, 91, 72, 86}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({84, 83, 70, 84}, 63, 928))})
+local _zmkscix515eda62mksfyi = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({44, 73, 84, 69}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({65, 79, 89}, 63, 928))})
+local _mmksciy515eda63mksfyl = _mksc9o515ed915mksf6r:AddTab({Name = _xmksat8515ed1b5mksatf({50, 69, 85, 86, 76, 82, 76, 89}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89}, 63, 928)), Hidden = true})
+local _mksciz515eda64mksfyo = _mksciu515eda5fmksfy9:AddSubTab({Name = _xmksat8515ed1b5mksatf({47, 76, 66, 91, 72, 86}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({84, 83, 70, 84}, 63, 928))})
+local __mkscj0515eda65mksfyr = _mksciu515eda5fmksfy9:AddSubTab({Name = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({70, 76, 80, 68, 72}, 63, 928))})
+do
+  local _zmkscj2515eda67mksfyx = 1
+  _zmkscj2515eda67mksfyx = (_zmkscj2515eda67mksfyx + 0)
+  pcall(function()
+    do
+      local _xmkscj1515eda66mksfyu = 1
+      _xmkscj1515eda66mksfyu = (_xmkscj1515eda66mksfyu + 0)
+      _mksciu515eda5fmksfy9:SelectSubTab(1)
+    end
+  end)
+end
+local _mmkscj3515eda68mksfz0 = _xmkscir515eda5cmksfy0:AddSubTab({Name = _xmksat8515ed1b5mksatf({54, 69, 77, 69, 82, 81, 74}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 80, 66, 84, 78, 80, 74, 89}, 63, 928))})
+local _mkscj4515eda69mksfz3 = _xmkscir515eda5cmksfy0:AddSubTab({Name = _xmksat8515ed1b5mksatf({35, 73, 84, 69, 82, 86, 73}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 69, 84, 85, 68, 75, 74, 19, 74, 81, 91, 77, 87, 81}, 63, 928))})
+do
+  local _xmkscj6515eda6bmksfz9 = 1
+  _xmkscj6515eda6bmksfz9 = (_xmkscj6515eda6bmksfz9 + 0)
+  pcall(function()
+    do
+      local __mkscj5515eda6amksfz6 = 1
+      __mkscj5515eda6amksfz6 = (__mkscj5515eda6amksfz6 + 0)
+      _xmkscir515eda5cmksfy0:SelectSubTab(1)
+    end
+  end)
+end
+local function _zmkscj7515eda6cmksfzc()
+  local _mmkscj8515eda6dmksfzf = (tonumber(os.date(_xmksat8515ed1b5mksatf({4, 40}, 63, 928))) or 12)
+  do
+    local _mkscj9515eda6emksfzi = 1
+    _mkscj9515eda6emksfzi = (_mkscj9515eda6emksfzi + 0)
+    if (((91 * 74) == (74 * 91)) and (_mmkscj8515eda6dmksfzf < 5)) then
+      return _xmksat8515ed1b5mksatf({33, 85, 83, 80, 76, 82, 76, 6, 91, 80, 78, 10, 88, 85, 81, 92, 88, 87, 89, 102, 19, 99, 94, 98, 54}, 63, 928)
+    end
+  end
+  do
+    local __mkscja515eda6fmksfzl = 1
+    __mkscja515eda6fmksfzl = (__mkscja515eda6fmksfzl + 0)
+    if (((24 + 96) == 120) and (_mmkscj8515eda6dmksfzf < 12)) then
+      return _xmksat8515ed1b5mksatf({38, 79, 80, 70, 3, 81, 84, 88, 85, 81, 87, 81, 25}, 63, 928)
+    end
+  end
+  do
+    local _xmkscjb515eda70mksfzo = 1
+    _xmkscjb515eda70mksfzo = (_xmkscjb515eda70mksfzo + 0)
+    if (((95 + 7) == 102) and (_mmkscj8515eda6dmksfzf < 18)) then
+      return _xmksat8515ed1b5mksatf({38, 79, 80, 70, 3, 69, 75, 90, 76, 90, 87, 89, 90, 90, 27}, 63, 928)
+    end
+  end
+  return _xmksat8515ed1b5mksatf({38, 79, 80, 70, 3, 73, 91, 75, 85, 81, 87, 81, 25}, 63, 928)
+end
+do
+  local _zmkscjc515eda71mksfzr = 1
+  _zmkscjc515eda71mksfzr = (_zmkscjc515eda71mksfzr + 0)
+  _mmkscj3515eda68mksfz0:AddCard({UserId = _mmksav3515ed1f8mksaz0.UserId, Title = (_xmksat8515ed1b5mksatf({39, 69, 77, 78, 82, 16, 5}, 63, 928) .. ((_mmksav3515ed1f8mksaz0.DisplayName or _mmksav3515ed1f8mksaz0.Name))), Description = _zmkscj7515eda6cmksfzc()})
+end
+do
+  local _mmkscjd515eda72mksfzu = 1
+  _mmkscjd515eda72mksfzu = (_mmkscjd515eda72mksfzu + 0)
+  _mmkscj3515eda68mksfz0:AddParagraph({Title = _xmksat8515ed1b5mksatf({54, 69, 77, 69, 82, 81, 74, 6, 91, 87, 9, 64, 76, 90, 97, 79}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 80, 66, 84, 78, 80, 74, 89}, 63, 928)), Text = _xmksat8515ed1b5mksatf({51, 72, 66, 80, 78, 87, 5, 76, 86, 90, 9, 77, 83, 91, 92, 97, 88, 94, 88, 18, 73, 85, 99, 106, 88, 24, 90, 109, 27, 117, 108, 115, 113, 32, 116, 101, 117, 109, 117, 122, 51, 40, 118, 107, 118, 113, 45, 129, 132, 130, 118, 50, 135, 131, 53, 128, 134, 129, 135, 58, 138, 145, 143, 62, 131, 137, 148, 133, 146, 150, 137, 70, 154, 141, 155, 160, 144, 158, 77, 162, 158, 80, 159, 151, 169, 153, 167, 86, 164, 161, 172, 173, 91, 157, 171, 94, 180, 176, 165, 163, 183, 169, 101, 167, 181, 172, 105, 189, 191, 173, 198, 110, 178, 191, 191, 192, 184, 183, 201, 187, 187, 120, 208, 195, 207, 196, 198, 204, 127, 207, 214, 212, 131, 199, 212, 211, 212, 221, 215, 211, 223, 229, 142, 142, 171, 163}, 63, 928)})
+end
+do
+  local _mkscje515eda73mksfzx = 1
+  _mkscje515eda73mksfzx = (_mkscje515eda73mksfzx + 0)
+  _mmkscj3515eda68mksfz0:AddDivider()
+end
+local function __mkscjf515eda74mksg00()
+  local _xmkscjg515eda75mksg03 = _xmksat8515ed1b5mksatf({52, 78, 76, 80, 82, 91, 83}, 63, 928)
+  do
+    local __mkscjk515eda79mksg0f = 1
+    __mkscjk515eda79mksg0f = (__mkscjk515eda79mksg0f + 0)
+    pcall(function()
+      do
+        local _mkscjj515eda78mksg0c = 1
+        _mkscjj515eda78mksg0c = (_mkscjj515eda78mksg0c + 0)
+        if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and identifyexecutor) then
+          do
+            local _zmkscjh515eda76mksg06 = 1
+            _zmkscjh515eda76mksg06 = (_zmkscjh515eda76mksg06 + 0)
+            _xmkscjg515eda75mksg03 = tostring(identifyexecutor())
+          end
+        elseif (((95 + 93) == 188) and getexecutorname) then
+          do
+            local _mmkscji515eda77mksg09 = 1
+            _mmkscji515eda77mksg09 = (_mmkscji515eda77mksg09 + 0)
+            _xmkscjg515eda75mksg03 = tostring(getexecutorname())
+          end
+        end
+      end
+    end)
+  end
+  return _xmkscjg515eda75mksg03
+end
+local _xmkscjl515eda7amksg0i = {volt = true, potassium = true, real = true, macsploit = true, opiumware = true}
+local function _zmkscjm515eda7bmksg0l(_mmkscjn515eda7cmksg0o)
+  local _mkscjo515eda7dmksg0r = string.lower(tostring((_mmkscjn515eda7cmksg0o or "")))
+  do
+    local _zmkscjr515eda80mksg10 = 1
+    _zmkscjr515eda80mksg10 = (_zmkscjr515eda80mksg10 + 0)
+    for __mkscjp515eda7emksg0u in pairs(_xmkscjl515eda7amksg0i) do
+      do
+        local _xmkscjq515eda7fmksg0x = 1
+        _xmkscjq515eda7fmksg0x = (_xmkscjq515eda7fmksg0x + 0)
+        if (((88 * 18) == (18 * 88)) and _mkscjo515eda7dmksg0r:find(__mkscjp515eda7emksg0u, 1, true)) then
+          return true
+        end
+      end
+    end
+  end
+  return false
+end
+local _mmkscjs515eda81mksg13 = __mkscjf515eda74mksg00()
+local _mkscjt515eda82mksg16 = _zmkscjm515eda7bmksg0l(_mmkscjs515eda81mksg13)
+local __mkscju515eda83mksg19
+do
+  local _zmkscjw515eda85mksg1f = 1
+  _zmkscjw515eda85mksg1f = (_zmkscjw515eda85mksg1f + 0)
+  pcall(function()
+    do
+      local _xmkscjv515eda84mksg1c = 1
+      _xmkscjv515eda84mksg1c = (_xmkscjv515eda84mksg1c + 0)
+      __mkscju515eda83mksg19 = _mmkscj3515eda68mksfz0:AddSystemInfoGrid({Description = _xmksat8515ed1b5mksatf({43, 73, 87, 71, 3, 87, 74, 89, 90, 81, 88, 88, 11, 77, 91, 82, 15, 83, 93, 91, 88, 98, 105, 22, 96, 102, 95, 105}, 63, 928)})
+    end
+  end)
+end
+do
+  local __mkscjz515eda88mksg1o = 1
+  __mkscjz515eda88mksg1o = (__mkscjz515eda88mksg1o + 0)
+  pcall(function()
+    do
+      local _mkscjy515eda87mksg1l = 1
+      _mkscjy515eda87mksg1l = (_mkscjy515eda87mksg1l + 0)
+      if (((93 + 80) == 173) and (__mkscju515eda83mksg19 and __mkscju515eda83mksg19.SetValue)) then
+        do
+          local _mmkscjx515eda86mksg1i = 1
+          _mmkscjx515eda86mksg1i = (_mmkscjx515eda86mksg1i + 0)
+          __mkscju515eda83mksg19:SetValue(_xmksat8515ed1b5mksatf({36, 88, 70, 69, 88, 88, 84, 88}, 63, 928), (tostring(_mmkscjs515eda81mksg13) .. (((_mkscjt515eda82mksg16 and _xmksat8515ed1b5mksatf({255, 8, 52, 87, 83, 84, 84, 88, 91, 77, 77, 19}, 63, 928)) or _xmksat8515ed1b5mksatf({255, 8, 54, 80, 86, 89, 85, 86, 86, 90, 93, 79, 79, 21}, 63, 928)))))
+        end
+      end
+    end
+  end)
+end
+local _xmksck0515eda89mksg1r = _xmksat8515ed1b5mksatf({71, 84, 85, 82, 86, 30, 20, 21, 75, 81, 92, 77, 90, 94, 81, 28, 86, 87, 32, 104, 84, 98, 105, 87, 93, 109, 103}, 63, 928)
+do
+  local _zmksck1515eda8amksg1u = 1
+  _zmksck1515eda8amksg1u = (_zmksck1515eda8amksg1u + 0)
+  _mkscj4515eda69mksfz3:AddParagraph({Title = _xmksat8515ed1b5mksatf({41, 79, 74, 80, 3, 88, 77, 75, 7, 62, 74, 88, 95, 77, 13, 49, 94, 93, 94, 103, 97, 93, 105, 111}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 69, 84, 85, 68, 75, 74, 19, 74, 81, 91, 77, 87, 81}, 63, 928)), Text = _xmksat8515ed1b5mksatf({34, 79, 79, 80, 72, 71, 89, 6, 94, 81, 93, 82, 11, 91, 98, 96, 15, 83, 96, 95, 96, 105, 99, 95, 107, 113, 26, 26, 110, 100, 94, 112, 100, 32, 100, 113, 113, 106, 110, 109, 122, 52, 41, 109, 115, 109, 129, 46, 134, 121, 133, 122, 51, 131, 137, 126, 124, 138, 140, 58, 124, 138, 129, 62, 140, 143, 147, 135, 68}, 63, 928)})
+end
+do
+  local _mmksck2515eda8bmksg1x = 1
+  _mmksck2515eda8bmksg1x = (_mmksck2515eda8bmksg1x + 0)
+  _mkscj4515eda69mksfz3:AddDivider()
+end
+do
+  local _zmksckb515eda94mksg2o = 1
+  _zmksckb515eda94mksg2o = (_zmksckb515eda94mksg2o + 0)
+  _mkscj4515eda69mksfz3:AddGradientCard({Title = _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 4, 41, 79, 90, 75, 88, 92, 79}, 63, 928), Description = _xmksat8515ed1b5mksatf({67, 73, 84, 69, 82, 86, 73, 20, 78, 79, 24, 96, 76, 90, 97, 79, 85, 101, 95, 18, 7, 20, 88, 98, 96, 91, 100, 26, 111, 107, 29, 104, 110, 105, 111}, 63, 928), ColorA = Color3.fromRGB(88, 101, 242), ColorB = Color3.fromRGB(57, 66, 160), Callback = function()
+    local _mksck3515eda8cmksg20 = _xmksck0515eda89mksg1r
+    do
+      local _mmksck7515eda90mksg2c = 1
+      _mmksck7515eda90mksg2c = (_mmksck7515eda90mksg2c + 0)
+      pcall(function()
+        local __mksck4515eda8dmksg23 = ((((syn and syn.write_clipboard)) or setclipboard) or ((getgenv and getgenv().setclipboard)))
+        do
+          local _zmksck6515eda8fmksg29 = 1
+          _zmksck6515eda8fmksg29 = (_zmksck6515eda8fmksg29 + 0)
+          if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and __mksck4515eda8dmksg23) then
+            do
+              local _xmksck5515eda8emksg26 = 1
+              _xmksck5515eda8emksg26 = (_xmksck5515eda8emksg26 + 0)
+              __mksck4515eda8dmksg23(_mksck3515eda8cmksg20)
+            end
+          end
+        end
+      end)
+    end
+    do
+      local __mksck9515eda92mksg2i = 1
+      __mksck9515eda92mksg2i = (__mksck9515eda92mksg2i + 0)
+      pcall(function()
+        do
+          local _mksck8515eda91mksg2f = 1
+          _mksck8515eda91mksg2f = (_mksck8515eda91mksg2f + 0)
+          game:GetService(_xmksat8515ed1b5mksatf({38, 85, 74, 53, 72, 86, 91, 79, 74, 77}, 63, 928)):OpenBrowserWindow(_mksck3515eda8cmksg20)
+        end
+      end)
+    end
+    do
+      local _xmkscka515eda93mksg2l = 1
+      _xmkscka515eda93mksg2l = (_xmkscka515eda93mksg2l + 0)
+      _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({51, 72, 66, 80, 78, 87, 5, 76, 86, 90, 9, 84, 90, 85, 91, 87, 93, 87}, 63, 928), Text = _xmksat8515ed1b5mksatf({35, 73, 84, 69, 82, 86, 73, 6, 80, 86, 95, 83, 95, 81, 13, 81, 94, 96, 90, 87, 87, 20, 105, 101, 23, 91, 101, 99, 107, 94, 108, 95, 113, 100}, 63, 928), Type = _xmksat8515ed1b5mksatf({82, 85, 68, 69, 72, 87, 88}, 63, 928), Duration = 4})
+    end
+  end})
+end
+do
+  local _mmksckc515eda95mksg2r = 1
+  _mmksckc515eda95mksg2r = (_mmksckc515eda95mksg2r + 0)
+  _mmkscit515eda5emksfy6:AddSection(_xmksat8515ed1b5mksatf({32, 73, 78, 2, 36, 87, 88, 79, 90, 92}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 82, 80, 85, 86, 76, 70, 79, 89}, 63, 928)))
+end
+do
+  local _mmksckm515eda9fmksg3l = 1
+  _mmksckm515eda9fmksg3l = (_mmksckm515eda9fmksg3l + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Description = _xmksat8515ed1b5mksatf({43, 69, 72, 75, 87, 4, 89, 95, 87, 77, 9, 89, 81, 12, 78, 87, 92, 82, 96, 102, 19, 28, 86, 95, 100, 24, 90, 109, 110, 101, 112, 114, 40}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 40, 82, 70, 72, 83, 77, 77}, 63, 928), Callback = function(_mksckd515eda96mksg2u)
+    do
+      local __mkscke515eda97mksg2x = 1
+      __mkscke515eda97mksg2x = (__mkscke515eda97mksg2x + 0)
+      _xmksav6515ed1fbmksaz9.enabled = (_mksckd515eda96mksg2u == true)
+    end
+    do
+      local _zmksckl515eda9emksg3i = 1
+      _zmksckl515eda9emksg3i = (_zmksckl515eda9emksg3i + 0)
+      if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not _xmksav6515ed1fbmksaz9.enabled) then
+        do
+          local _xmksckf515eda98mksg30 = 1
+          _xmksckf515eda98mksg30 = (_xmksckf515eda98mksg30 + 0)
+          _xmksav6515ed1fbmksaz9.key_toggled = false
+        end
+        do
+          local _zmksckg515eda99mksg33 = 1
+          _zmksckg515eda99mksg33 = (_zmksckg515eda99mksg33 + 0)
+          _xmksav6515ed1fbmksaz9._key_held = false
+        end
+        do
+          local _mkscki515eda9bmksg39 = 1
+          _mkscki515eda9bmksg39 = (_mkscki515eda9bmksg39 + 0)
+          if (((46 + 28) == 74) and _xmksavv515ed214mksb1c) then
+            do
+              local _mmksckh515eda9amksg36 = 1
+              _mmksckh515eda9amksg36 = (_mmksckh515eda9amksg36 + 0)
+              _xmksavv515ed214mksb1c.Visible = false
+            end
+          end
+        end
+        do
+          local _xmksckk515eda9dmksg3f = 1
+          _xmksckk515eda9dmksg3f = (_xmksckk515eda9dmksg3f + 0)
+          if ((((89 * 10) % 10) == 0) and _zmksavw515ed215mksb1f) then
+            do
+              local __mksckj515eda9cmksg3c = 1
+              __mksckj515eda9cmksg3c = (__mksckj515eda9cmksg3c + 0)
+              _zmksavw515ed215mksb1f.Visible = false
+            end
+          end
+        end
+      end
+    end
+  end})
+end
+do
+  local _xmkscku515edaa7mksg49 = 1
+  _xmkscku515edaa7mksg49 = (_xmkscku515edaa7mksg49 + 0)
+  _mmkscit515eda5emksfy6:AddKeybind({Text = _xmksat8515ed1b5mksatf({32, 73, 78, 2, 46, 73, 94, 6, 15, 48, 88, 86, 79, 21}, 63, 928), Description = _xmksat8515ed1b5mksatf({39, 79, 77, 70, 3, 79, 74, 95, 7, 92, 88, 10, 76, 79, 97, 87, 101, 81, 101, 87}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = Enum.KeyCode.E, Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 46, 73, 94}, 63, 928), Callback = function(_mksckn515edaa0mksg3o, __mkscko515edaa1mksg3r)
+    do
+      local __mksckt515edaa6mksg46 = 1
+      __mksckt515edaa6mksg46 = (__mksckt515edaa6mksg46 + 0)
+      if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and ((__mkscko515edaa1mksg3r == _xmksat8515ed1b5mksatf({65, 73, 79, 70}, 63, 928)) and (typeof(_mksckn515edaa0mksg3o) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928)))) then
+        do
+          local _xmksckp515edaa2mksg3u = 1
+          _xmksckp515edaa2mksg3u = (_xmksckp515edaa2mksg3u + 0)
+          Binds.aim = _mksckn515edaa0mksg3o
+        end
+        do
+          local _zmksckq515edaa3mksg3x = 1
+          _zmksckq515edaa3mksg3x = (_zmksckq515edaa3mksg3x + 0)
+          _xmksav6515ed1fbmksaz9.hold_key = _mksckn515edaa0mksg3o
+        end
+      elseif ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (typeof(_mksckn515edaa0mksg3o) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _mmksckr515edaa4mksg40 = 1
+          _mmksckr515edaa4mksg40 = (_mmksckr515edaa4mksg40 + 0)
+          Binds.aim = _mksckn515edaa0mksg3o
+        end
+        do
+          local _mkscks515edaa5mksg43 = 1
+          _mkscks515edaa5mksg43 = (_mkscks515edaa5mksg43 + 0)
+          _xmksav6515ed1fbmksaz9.hold_key = _mksckn515edaa0mksg3o
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmksckv515edaa8mksg4c = 1
+  _zmksckv515edaa8mksg4c = (_zmksckv515edaa8mksg4c + 0)
+  _mmkscit515eda5emksfy6:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 42, 83, 88, 12, 46, 97, 98, 89, 100, 102}, 63, 928))
+end
+do
+  local __mkscky515edaabmksg4l = 1
+  __mkscky515edaabmksg4l = (__mkscky515edaabmksg4l + 0)
+  _mmkscit515eda5emksfy6:AddDropdown({Text = _xmksat8515ed1b5mksatf({44, 79, 69, 71}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 79, 87, 71}, 63, 928)), Options = {_xmksat8515ed1b5mksatf({34, 65, 78, 71, 85, 69}, 63, 928), _xmksat8515ed1b5mksatf({44, 79, 86, 85, 72}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({34, 65, 78, 71, 85, 69}, 63, 928), Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 48, 83, 73, 75}, 63, 928), Callback = function(_mmksckw515edaa9mksg4f)
+    do
+      local _mksckx515edaaamksg4i = 1
+      _mksckx515edaaamksg4i = (_mksckx515edaaamksg4i + 0)
+      _xmksav6515ed1fbmksaz9.mode = _mmksckw515edaa9mksg4f
+    end
+  end})
+end
+do
+  local _mmkscl1515edaaemksg4u = 1
+  _mmkscl1515edaaemksg4u = (_mmkscl1515edaaemksg4u + 0)
+  _mmkscit515eda5emksfy6:AddSlider({Text = _xmksat8515ed1b5mksatf({37, 47, 55}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 73, 83, 69, 79, 73}, 63, 928)), Min = 20, Max = 600, Default = 120, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({143}, 63, 928), Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 41, 51, 59}, 63, 928), Callback = function(_xmksckz515edaacmksg4o)
+    do
+      local _zmkscl0515edaadmksg4r = 1
+      _zmkscl0515edaadmksg4r = (_zmkscl0515edaadmksg4r + 0)
+      _xmksav6515ed1fbmksaz9.fov = _xmkscim515eda57mksfxl(_xmksckz515edaacmksg4o, 120)
+    end
+  end})
+end
+do
+  local _xmkscl4515edab1mksg53 = 1
+  _xmkscl4515edab1mksg53 = (_xmkscl4515edab1mksg53 + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({50, 72, 80, 89, 3, 42, 52, 60}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 76, 84, 93, 45, 55, 63}, 63, 928), Callback = function(_mkscl2515edaafmksg4x)
+    do
+      local __mkscl3515edab0mksg50 = 1
+      __mkscl3515edab0mksg50 = (__mkscl3515edab0mksg50 + 0)
+      _xmksav6515ed1fbmksaz9.show_fov = (_mkscl2515edaafmksg4x == true)
+    end
+  end})
+end
+do
+  local _xmkscl9515edab6mksg5i = 1
+  _xmkscl9515edab6mksg5i = (_xmkscl9515edab6mksg5i + 0)
+  _mmkscit515eda5emksfy6:AddColorPicker({Text = _xmksat8515ed1b5mksatf({37, 47, 55, 2, 38, 83, 81, 85, 89}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({79, 65, 77, 71, 87, 88, 74}, 63, 928)), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 41, 51, 59, 41, 86, 84, 88, 92}, 63, 928), Callback = function(_zmkscl5515edab2mksg56)
+    do
+      local _mmkscl6515edab3mksg59 = 1
+      _mmkscl6515edab3mksg59 = (_mmkscl6515edab3mksg59 + 0)
+      _xmksav6515ed1fbmksaz9.fov_color = _zmkscl5515edab2mksg56
+    end
+    do
+      local __mkscl8515edab5mksg5f = 1
+      __mkscl8515edab5mksg5f = (__mkscl8515edab5mksg5f + 0)
+      if ((((2 * 9) % 9) == 0) and _xmksavv515ed214mksb1c) then
+        do
+          local _mkscl7515edab4mksg5c = 1
+          _mkscl7515edab4mksg5c = (_mkscl7515edab4mksg5c + 0)
+          _xmksavv515ed214mksb1c.Color = _zmkscl5515edab2mksg56
+        end
+      end
+    end
+  end})
+end
+do
+  local _mksclc515edab9mksg5r = 1
+  _mksclc515edab9mksg5r = (_mksclc515edab9mksg5r + 0)
+  _mmkscit515eda5emksfy6:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 77, 80, 81, 87, 76, 78, 84, 78}, 63, 928), Min = 0, Max = 100, Default = 40, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({4}, 63, 928), Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 54, 81, 84, 85, 91, 80}, 63, 928), Callback = function(_zmkscla515edab7mksg5l)
+    do
+      local _mmksclb515edab8mksg5o = 1
+      _mmksclb515edab8mksg5o = (_mmksclb515edab8mksg5o + 0)
+      _xmksav6515ed1fbmksaz9.smoothing = math.clamp((_xmkscim515eda57mksfxl(_zmkscla515edab7mksg5l, 40) / 100), 0, 1)
+    end
+  end})
+end
+do
+  local _zmksclf515edabcmksg60 = 1
+  _zmksclf515edabcmksg60 = (_zmksclf515edabcmksg60 + 0)
+  _mmkscit515eda5emksfy6:AddDropdown({Text = _xmksat8515ed1b5mksatf({39, 73, 85, 2, 51, 69, 87, 90}, 63, 928), Options = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928), _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({34, 76, 80, 85, 72, 87, 89}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 43, 77, 89, 54, 72, 90, 93}, 63, 928), Callback = function(__mkscld515edabamksg5u)
+    do
+      local _xmkscle515edabbmksg5x = 1
+      _xmkscle515edabbmksg5x = (_xmkscle515edabbmksg5x + 0)
+      _xmksav6515ed1fbmksaz9.hitpart = __mkscld515edabamksg5u
+    end
+  end})
+end
+do
+  local __mkscli515edabfmksg69 = 1
+  __mkscli515edabfmksg69 = (__mkscli515edabfmksg69 + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({54, 65, 77, 78, 3, 39, 77, 75, 74, 83}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 58, 69, 81, 82}, 63, 928), Callback = function(_mmksclg515edabdmksg63)
+    do
+      local _mksclh515edabemksg66 = 1
+      _mksclh515edabemksg66 = (_mksclh515edabemksg66 + 0)
+      _xmksav6515ed1fbmksaz9.wallcheck = (_mmksclg515edabdmksg63 == true)
+    end
+  end})
+end
+do
+  local _mmkscll515edac2mksg6i = 1
+  _mmkscll515edac2mksg6i = (_mmkscll515edac2mksg6i + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({51, 69, 66, 79, 3, 39, 77, 75, 74, 83}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({32, 41, 46, 65, 55, 73, 70, 83}, 63, 928), Callback = function(_xmksclj515edac0mksg6c)
+    do
+      local _zmksclk515edac1mksg6f = 1
+      _zmksclk515edac1mksg6f = (_zmksclk515edac1mksg6f + 0)
+      _xmksav6515ed1fbmksaz9.teamcheck = (_xmksclj515edac0mksg6c == true)
+    end
+  end})
+end
+do
+  local _mksclm515edac3mksg6l = 1
+  _mksclm515edac3mksg6l = (_mksclm515edac3mksg6l + 0)
+  _mmkscit515eda5emksfy6:AddDivider()
+end
+do
+  local __mkscln515edac4mksg6o = 1
+  __mkscln515edac4mksg6o = (__mkscln515edac4mksg6o + 0)
+  _mmkscit515eda5emksfy6:AddSection(_xmksat8515ed1b5mksatf({50, 73, 77, 71, 81, 88, 5, 39, 80, 85}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({83, 65, 83, 73, 72, 88}, 63, 928)))
+end
+do
+  local _mmksclv515edaccmksg7c = 1
+  _mmksclv515edaccmksg7c = (_mmksclv515edaccmksg7c + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Description = _xmksat8515ed1b5mksatf({33, 76, 66, 86, 68, 82, 89, 6, 91, 97, 89, 79, 11, 91, 83, 14, 80, 89, 94, 84, 98, 104, 21, 30, 105, 93, 93, 99, 109, 97, 96, 114, 114, 32, 99, 119, 111, 112, 106, 122, 122, 49}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 43, 85, 73, 75, 86, 80, 80}, 63, 928), Callback = function(_xmksclo515edac5mksg6r)
+    do
+      local _zmksclp515edac6mksg6u = 1
+      _zmksclp515edac6mksg6u = (_zmksclp515edac6mksg6u + 0)
+      _zmksav7515ed1fcmksazc.enabled = (_xmksclo515edac5mksg6r == true)
+    end
+    do
+      local _zmksclu515edacbmksg79 = 1
+      _zmksclu515edacbmksg79 = (_zmksclu515edacbmksg79 + 0)
+      if (((59 + 23) == 82) and not _zmksav7515ed1fcmksazc.enabled) then
+        do
+          local _mksclr515edac8mksg70 = 1
+          _mksclr515edac8mksg70 = (_mksclr515edac8mksg70 + 0)
+          if ((((35 * 35) - (12 * 12)) == ((35 - 12) * (35 + 12))) and _mmksavx515ed216mksb1i) then
+            do
+              local _mmksclq515edac7mksg6x = 1
+              _mmksclq515edac7mksg6x = (_mmksclq515edac7mksg6x + 0)
+              _mmksavx515ed216mksb1i.Visible = false
+            end
+          end
+        end
+        do
+          local _xmksclt515edacamksg76 = 1
+          _xmksclt515edacamksg76 = (_xmksclt515edacamksg76 + 0)
+          if (((28 + 53) == 81) and _mksavy515ed217mksb1l) then
+            do
+              local __mkscls515edac9mksg73 = 1
+              __mkscls515edac9mksg73 = (__mkscls515edac9mksg73 + 0)
+              _mksavy515ed217mksb1l.Visible = false
+            end
+          end
+        end
+      end
+    end
+  end})
+end
+do
+  local _mksclw515edacdmksg7f = 1
+  _mksclw515edacdmksg7f = (_mksclw515edacdmksg7f + 0)
+  _mmkscit515eda5emksfy6:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 60, 83, 87, 81, 91, 98, 15, 49, 90, 95}, 63, 928))
+end
+do
+  local _zmksclz515edad0mksg7o = 1
+  _zmksclz515edad0mksg7o = (_zmksclz515edad0mksg7o + 0)
+  _mmkscit515eda5emksfy6:AddSlider({Text = _xmksat8515ed1b5mksatf({37, 47, 55}, 63, 928), Min = 20, Max = 600, Default = 130, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({143}, 63, 928), Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 44, 54, 62}, 63, 928), Callback = function(__mksclx515edacemksg7i)
+    do
+      local _xmkscly515edacfmksg7l = 1
+      _xmkscly515edacfmksg7l = (_xmkscly515edacfmksg7l + 0)
+      _zmksav7515ed1fcmksazc.fov = _xmkscim515eda57mksfxl(__mksclx515edacemksg7i, 130)
+    end
+  end})
+end
+do
+  local __mkscm2515edad3mksg7x = 1
+  __mkscm2515edad3mksg7x = (__mkscm2515edad3mksg7x + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({50, 72, 80, 89, 3, 42, 52, 60}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 57, 79, 87, 96, 48, 58, 66}, 63, 928), Callback = function(_mmkscm0515edad1mksg7r)
+    do
+      local _mkscm1515edad2mksg7u = 1
+      _mkscm1515edad2mksg7u = (_mkscm1515edad2mksg7u + 0)
+      _zmksav7515ed1fcmksazc.show_fov = (_mmkscm0515edad1mksg7r == true)
+    end
+  end})
+end
+do
+  local __mkscm7515edad8mksg8c = 1
+  __mkscm7515edad8mksg8c = (__mkscm7515edad8mksg8c + 0)
+  _mmkscit515eda5emksfy6:AddColorPicker({Text = _xmksat8515ed1b5mksatf({37, 47, 55, 2, 38, 83, 81, 85, 89}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({79, 65, 77, 71, 87, 88, 74}, 63, 928)), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 44, 54, 62, 44, 89, 87, 91, 95}, 63, 928), Callback = function(_xmkscm3515edad4mksg80)
+    do
+      local _zmkscm4515edad5mksg83 = 1
+      _zmkscm4515edad5mksg83 = (_zmkscm4515edad5mksg83 + 0)
+      _zmksav7515ed1fcmksazc.fov_color = _xmkscm3515edad4mksg80
+    end
+    do
+      local _mkscm6515edad7mksg89 = 1
+      _mkscm6515edad7mksg89 = (_mkscm6515edad7mksg89 + 0)
+      if (((45 * 43) == (43 * 45)) and _mmksavx515ed216mksb1i) then
+        do
+          local _mmkscm5515edad6mksg86 = 1
+          _mmkscm5515edad6mksg86 = (_mmkscm5515edad6mksg86 + 0)
+          _mmksavx515ed216mksb1i.Color = _xmkscm3515edad4mksg80
+        end
+      end
+    end
+  end})
+end
+do
+  local _mmkscma515edadbmksg8l = 1
+  _mmkscma515edadbmksg8l = (_mmkscma515edadbmksg8l + 0)
+  _mmkscit515eda5emksfy6:AddDropdown({Text = _xmksat8515ed1b5mksatf({39, 73, 85, 2, 51, 69, 87, 90}, 63, 928), Options = {_xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), _xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74, 57, 87, 88, 94, 59, 77, 95, 98}, 63, 928), _xmksat8515ed1b5mksatf({52, 80, 81, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 56, 84, 88, 90, 87}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 83, 85, 82}, 63, 928), _xmksat8515ed1b5mksatf({49, 65, 79, 70, 82, 81}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({39, 69, 66, 70}, 63, 928), Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 46, 80, 92, 57, 75, 93, 96}, 63, 928), Callback = function(_xmkscm8515edad9mksg8f)
+    do
+      local _zmkscm9515edadamksg8i = 1
+      _zmkscm9515edadamksg8i = (_zmkscm9515edadamksg8i + 0)
+      _zmksav7515ed1fcmksazc.hitpart = _xmkscm8515edad9mksg8f
+    end
+  end})
+end
+do
+  local _xmkscmd515edademksg8u = 1
+  _xmkscmd515edademksg8u = (_xmkscmd515edademksg8u + 0)
+  _mmkscit515eda5emksfy6:AddSlider({Text = _xmksat8515ed1b5mksatf({39, 73, 85, 2, 38, 76, 70, 84, 74, 77}, 63, 928), Min = 1, Max = 100, Default = 100, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({4}, 63, 928), Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 46, 80, 92, 44, 82, 76, 90, 80, 83}, 63, 928), Callback = function(_mkscmb515edadcmksg8o)
+    do
+      local __mkscmc515edaddmksg8r = 1
+      __mkscmc515edaddmksg8r = (__mkscmc515edaddmksg8r + 0)
+      _zmksav7515ed1fcmksazc.hitchance = _xmkscim515eda57mksfxl(_mkscmb515edadcmksg8o, 100)
+    end
+  end})
+end
+do
+  local _mkscmg515edae1mksg93 = 1
+  _mkscmg515edae1mksg93 = (_mkscmg515edae1mksg93 + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({54, 65, 77, 78, 3, 39, 77, 75, 74, 83}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 61, 72, 84, 85}, 63, 928), Callback = function(_zmkscme515edadfmksg8x)
+    do
+      local _mmkscmf515edae0mksg90 = 1
+      _mmkscmf515edae0mksg90 = (_mmkscmf515edae0mksg90 + 0)
+      _zmksav7515ed1fcmksazc.wallcheck = (_zmkscme515edadfmksg8x == true)
+    end
+  end})
+end
+do
+  local _zmkscmj515edae4mksg9c = 1
+  _zmkscmj515edae4mksg9c = (_zmkscmj515edae4mksg9c + 0)
+  _mmkscit515eda5emksfy6:AddToggle({Text = _xmksat8515ed1b5mksatf({51, 69, 66, 79, 3, 39, 77, 75, 74, 83}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({50, 41, 45, 39, 49, 56, 68, 58, 76, 73, 86}, 63, 928), Callback = function(__mkscmh515edae2mksg96)
+    do
+      local _xmkscmi515edae3mksg99 = 1
+      _xmkscmi515edae3mksg99 = (_xmkscmi515edae3mksg99 + 0)
+      _zmksav7515ed1fcmksazc.teamcheck = (__mkscmh515edae2mksg96 == true)
+    end
+  end})
+end
+do
+  local _mmkscmk515edae5mksg9f = 1
+  _mmkscmk515edae5mksg9f = (_mmkscmk515edae5mksg9f + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 46, 61, 59}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89, 20, 26}, 63, 928)))
+end
+do
+  local _xmkscmn515edae8mksg9o = 1
+  _xmkscmn515edae8mksg9o = (_xmkscmn515edae8mksg9o + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Description = _xmksat8515ed1b5mksatf({36, 51, 49, 2, 48, 69, 88, 90, 76, 90, 9, 94, 90, 83, 84, 90, 84}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 48, 69, 88, 90, 76, 90}, 63, 928), Callback = function(_mkscml515edae6mksg9i)
+    do
+      local __mkscmm515edae7mksg9l = 1
+      __mkscmm515edae7mksg9l = (__mkscmm515edae7mksg9l + 0)
+      __mksav5515ed1famksaz6.master = (_mkscml515edae6mksg9i == true)
+    end
+  end})
+end
+do
+  local _xmkscms515edaedmksga3 = 1
+  _xmkscms515edaedmksga3 = (_xmkscms515edaedmksga3 + 0)
+  _mksciz515eda64mksfyo:AddKeybind({Text = _xmksat8515ed1b5mksatf({44, 65, 84, 86, 72, 86, 5, 49, 76, 97}, 63, 928), Description = _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 88, 6, 72, 84, 85, 10, 48, 63, 61, 14, 94, 94, 32, 97, 89, 90}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 48, 69, 88, 90, 76, 90, 52, 79, 100}, 63, 928), Callback = function(_zmkscmo515edae9mksg9r, _mmkscmp515edaeamksg9u)
+    do
+      local __mkscmr515edaecmksga0 = 1
+      __mkscmr515edaecmksga0 = (__mkscmr515edaecmksga0 + 0)
+      if ((((29 * 11) % 11) == 0) and (typeof(_zmkscmo515edae9mksg9r) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _mkscmq515edaebmksg9x = 1
+          _mkscmq515edaebmksg9x = (_mkscmq515edaebmksg9x + 0)
+          Binds.esp_master = _zmkscmo515edae9mksg9r
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmkscmt515edaeemksga6 = 1
+  _zmkscmt515edaeemksga6 = (_zmkscmt515edaeemksga6 + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 54, 75, 94, 96, 82, 96, 15, 53, 68, 66}, 63, 928))
+end
+do
+  local __mkscmw515edaf1mksgaf = 1
+  __mkscmw515edaf1mksgaf = (__mkscmw515edaf1mksgaf + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({51, 69, 66, 79, 3, 39, 77, 75, 74, 83}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 73, 70, 83, 42, 80, 78, 77, 86}, 63, 928), Callback = function(_mmkscmu515edaefmksga9)
+    do
+      local _mkscmv515edaf0mksgac = 1
+      _mkscmv515edaf0mksgac = (_mkscmv515edaf0mksgac + 0)
+      __mksav5515ed1famksaz6.teamcheck = (_mmkscmu515edaefmksga9 == true)
+    end
+  end})
+end
+do
+  local _mmkscmz515edaf4mksgao = 1
+  _mmkscmz515edaf4mksgao = (_mmkscmz515edaf4mksgao + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({44, 65, 89, 2, 39, 77, 88, 90, 72, 86, 76, 79}, 63, 928), Min = 50, Max = 5000, Default = 1000, Increment = 10, Suffix = _xmksat8515ed1b5mksatf({255, 77}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 39, 77, 88, 90, 72, 86, 76, 79}, 63, 928), Callback = function(_xmkscmx515edaf2mksgai)
+    do
+      local _zmkscmy515edaf3mksgal = 1
+      _zmkscmy515edaf3mksgal = (_zmkscmy515edaf3mksgal + 0)
+      __mksav5515ed1famksaz6.max_distance = _xmkscim515eda57mksfxl(_xmkscmx515edaf2mksgai, 1000)
+    end
+  end})
+end
+do
+  local _mkscn0515edaf5mksgar = 1
+  _mkscn0515edaf5mksgar = (_mkscn0515edaf5mksgar + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local __mkscn1515edaf6mksgau = 1
+  __mkscn1515edaf6mksgau = (__mkscn1515edaf6mksgau + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({33, 79, 89, 2, 40, 55, 53}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 81, 86, 67, 85, 73}, 63, 928)))
+end
+do
+  local _mmkscn4515edaf9mksgb3 = 1
+  _mmkscn4515edaf9mksgb3 = (_mmkscn4515edaf9mksgb3 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93}, 63, 928), Callback = function(_xmkscn2515edaf7mksgax)
+    do
+      local _zmkscn3515edaf8mksgb0 = 1
+      _zmkscn3515edaf8mksgb0 = (_zmkscn3515edaf8mksgb0 + 0)
+      __mksav5515ed1famksaz6.box.enabled = (_xmkscn2515edaf7mksgax == true)
+    end
+  end})
+end
+do
+  local _mkscn5515edafamksgb6 = 1
+  _mkscn5515edafamksgb6 = (_mkscn5515edafamksgb6 + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 43, 89, 99, 12, 50, 65, 63}, 63, 928))
+end
+do
+  local _zmkscn8515edafdmksgbf = 1
+  _zmkscn8515edafdmksgbf = (_zmkscn8515edafdmksgbf + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({33, 79, 89, 2, 38, 83, 81, 85, 89}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({79, 65, 77, 71, 87, 88, 74}, 63, 928)), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 51, 72, 81, 87, 45, 90, 88, 92, 96}, 63, 928), Callback = function(__mkscn6515edafbmksgb9)
+    do
+      local _xmkscn7515edafcmksgbc = 1
+      _xmkscn7515edafcmksgbc = (_xmkscn7515edafcmksgbc + 0)
+      __mksav5515ed1famksaz6.box.color = __mkscn6515edafbmksgb9
+    end
+  end})
+end
+do
+  local __mkscnb515edb00mksgbo = 1
+  __mkscnb515edb00mksgbo = (__mkscnb515edb00mksgbo + 0)
+  _mksciz515eda64mksfyo:AddDropdown({Text = _xmksat8515ed1b5mksatf({44, 79, 69, 71}, 63, 928), Options = {_xmksat8515ed1b5mksatf({37, 85, 77, 78}, 63, 928), _xmksat8515ed1b5mksatf({34, 79, 83, 80, 72, 86}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({37, 85, 77, 78}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 51, 86, 76, 78}, 63, 928), Callback = function(_mmkscn9515edafemksgbi)
+    do
+      local _mkscna515edaffmksgbl = 1
+      _mkscna515edaffmksgbl = (_mkscna515edaffmksgbl + 0)
+      __mksav5515ed1famksaz6.box.mode = _mmkscn9515edafemksgbi
+    end
+  end})
+end
+do
+  local _mmkscne515edb03mksgbx = 1
+  _mmkscne515edb03mksgbx = (_mmkscne515edb03mksgbx + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({51, 72, 74, 69, 78, 82, 74, 89, 90}, 63, 928), Min = 1, Max = 4, Default = 1, Increment = 0.1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 58, 79, 81, 76, 85}, 63, 928), Callback = function(_xmkscnc515edb01mksgbr)
+    do
+      local _zmkscnd515edb02mksgbu = 1
+      _zmkscnd515edb02mksgbu = (_zmkscnd515edb02mksgbu + 0)
+      __mksav5515ed1famksaz6.box.thickness = _xmkscim515eda57mksfxl(_xmkscnc515edb01mksgbr, 1)
+    end
+  end})
+end
+do
+  local _xmkscnh515edb06mksgc6 = 1
+  _xmkscnh515edb06mksgc6 = (_xmkscnh515edb06mksgc6 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 53, 92, 92, 85, 83, 89, 81}, 63, 928), Callback = function(_mkscnf515edb04mksgc0)
+    do
+      local __mkscng515edb05mksgc3 = 1
+      __mkscng515edb05mksgc3 = (__mkscng515edb05mksgc3 + 0)
+      __mksav5515ed1famksaz6.box.outline = (_mkscnf515edb04mksgc0 == true)
+    end
+  end})
+end
+do
+  local _mkscnk515edb09mksgcf = 1
+  _mkscnk515edb09mksgcf = (_mkscnk515edb09mksgcf + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74, 6, 42, 87, 85, 89, 93}, 63, 928), Default = Color3.fromRGB(0, 0, 0), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 53, 92, 92, 85, 83, 89, 81, 48, 93, 91, 95, 99}, 63, 928), Callback = function(_zmkscni515edb07mksgc9)
+    do
+      local _mmkscnj515edb08mksgcc = 1
+      _mmkscnj515edb08mksgcc = (_mmkscnj515edb08mksgcc + 0)
+      __mksav5515ed1famksaz6.box.outline_color = _zmkscni515edb07mksgc9
+    end
+  end})
+end
+do
+  local _zmkscnn515edb0cmksgco = 1
+  _zmkscnn515edb0cmksgco = (_zmkscnn515edb0cmksgco + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({37, 73, 77, 78}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 44, 80, 84, 85}, 63, 928), Callback = function(__mkscnl515edb0amksgci)
+    do
+      local _xmkscnm515edb0bmksgcl = 1
+      _xmkscnm515edb0bmksgcl = (_xmkscnm515edb0bmksgcl + 0)
+      __mksav5515ed1famksaz6.box.fill = (__mkscnl515edb0amksgci == true)
+    end
+  end})
+end
+do
+  local __mkscnq515edb0fmksgcx = 1
+  __mkscnq515edb0fmksgcx = (__mkscnq515edb0fmksgcx + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({37, 73, 77, 78, 3, 39, 84, 82, 86, 90}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 44, 80, 84, 85, 45, 90, 88, 92, 96}, 63, 928), Callback = function(_mmkscno515edb0dmksgcr)
+    do
+      local _mkscnp515edb0emksgcu = 1
+      _mkscnp515edb0emksgcu = (_mkscnp515edb0emksgcu + 0)
+      __mksav5515ed1famksaz6.box.fill_color = _mmkscno515edb0dmksgcr
+    end
+  end})
+end
+do
+  local _mmkscnt515edb12mksgd6 = 1
+  _mmkscnt515edb12mksgd6 = (_mmkscnt515edb12mksgd6 + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({37, 73, 77, 78, 3, 56, 87, 71, 85, 91, 89, 75, 93, 81, 91, 81, 104}, 63, 928), Min = 0, Max = 1, Default = 0.7, Increment = 0.05, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 44, 80, 84, 85, 62}, 63, 928), Callback = function(_xmkscnr515edb10mksgd0)
+    do
+      local _zmkscns515edb11mksgd3 = 1
+      _zmkscns515edb11mksgd3 = (_zmkscns515edb11mksgd3 + 0)
+      __mksav5515ed1famksaz6.box.fill_transparency = _xmkscim515eda57mksfxl(_xmkscnr515edb10mksgd0, 0.7)
+    end
+  end})
+end
+do
+  local _xmkscnw515edb15mksgdf = 1
+  _xmkscnw515edb15mksgdf = (_xmkscnw515edb15mksgdf + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({38, 82, 66, 70, 76, 73, 83, 90}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 45, 89, 73, 77, 83, 80, 90, 97}, 63, 928), Callback = function(_mkscnu515edb13mksgd9)
+    do
+      local __mkscnv515edb14mksgdc = 1
+      __mkscnv515edb14mksgdc = (__mkscnv515edb14mksgdc + 0)
+      __mksav5515ed1famksaz6.box.gradient = (_mkscnu515edb13mksgd9 == true)
+    end
+  end})
+end
+do
+  local _mkscnz515edb18mksgdo = 1
+  _mkscnz515edb18mksgdo = (_mkscnz515edb18mksgdo + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({38, 82, 66, 70, 76, 73, 83, 90, 7, 43, 88, 86, 90, 94, 13, 32}, 63, 928), Default = Color3.fromRGB(180, 180, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 37, 83, 93, 41, 86, 84, 88, 92, 29}, 63, 928), Callback = function(_zmkscnx515edb16mksgdi)
+    do
+      local _mmkscny515edb17mksgdl = 1
+      _mmkscny515edb17mksgdl = (_mmkscny515edb17mksgdl + 0)
+      __mksav5515ed1famksaz6.box.color2 = _zmkscnx515edb16mksgdi
+    end
+  end})
+end
+do
+  local __mksco0515edb19mksgdr = 1
+  __mksco0515edb19mksgdr = (__mksco0515edb19mksgdr + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local _xmksco1515edb1amksgdu = 1
+  _xmksco1515edb1amksgdu = (_xmksco1515edb1amksgdu + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({50, 75, 70, 78, 72, 88, 84, 84}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({79, 69, 83, 85, 82, 82, 18, 89, 91, 73, 87, 78, 84, 90, 84}, 63, 928)))
+end
+do
+  local _mksco4515edb1dmksge3 = 1
+  _mksco4515edb1dmksge3 = (_mksco4515edb1dmksge3 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82}, 63, 928), Callback = function(_zmksco2515edb1bmksgdx)
+    do
+      local _mmksco3515edb1cmksge0 = 1
+      _mmksco3515edb1cmksge0 = (_mmksco3515edb1cmksge0 + 0)
+      __mksav5515ed1famksaz6.skeleton.enabled = (_zmksco2515edb1bmksgdx == true)
+    end
+  end})
+end
+do
+  local __mksco5515edb1emksge6 = 1
+  __mksco5515edb1emksge6 = (__mksco5515edb1emksge6 + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 60, 85, 80, 88, 82, 98, 94, 94}, 63, 928))
+end
+do
+  local _mmksco8515edb21mksgef = 1
+  _mmksco8515edb21mksgef = (_mmksco8515edb21mksgef + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 52, 73, 82, 88, 46, 91, 89, 93, 97}, 63, 928), Callback = function(_xmksco6515edb1fmksge9)
+    do
+      local _zmksco7515edb20mksgec = 1
+      _zmksco7515edb20mksgec = (_zmksco7515edb20mksgec + 0)
+      __mksav5515ed1famksaz6.skeleton.color = _xmksco6515edb1fmksge9
+    end
+  end})
+end
+do
+  local _xmkscob515edb24mksgeo = 1
+  _xmkscob515edb24mksgeo = (_xmkscob515edb24mksgeo + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({51, 72, 74, 69, 78, 82, 74, 89, 90}, 63, 928), Min = 0.5, Max = 5, Default = 1.5, Increment = 0.1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 59, 80, 82, 77, 86}, 63, 928), Callback = function(_mksco9515edb22mksgei)
+    do
+      local __mkscoa515edb23mksgel = 1
+      __mkscoa515edb23mksgel = (__mkscoa515edb23mksgel + 0)
+      __mksav5515ed1famksaz6.skeleton.thickness = _xmkscim515eda57mksfxl(_mksco9515edb22mksgei, 1.5)
+    end
+  end})
+end
+do
+  local _mkscoe515edb27mksgex = 1
+  _mkscoe515edb27mksgex = (_mkscoe515edb27mksgex + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({39, 69, 66, 70, 3, 40, 84, 90}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 47, 77, 74, 78, 47, 91, 97}, 63, 928), Callback = function(_zmkscoc515edb25mksger)
+    do
+      local _mmkscod515edb26mksgeu = 1
+      _mmkscod515edb26mksgeu = (_mmkscod515edb26mksgeu + 0)
+      __mksav5515ed1famksaz6.skeleton.headdot = (_zmkscoc515edb25mksger == true)
+    end
+  end})
+end
+do
+  local _zmkscoh515edb2amksgf6 = 1
+  _zmkscoh515edb2amksgf6 = (_zmkscoh515edb2amksgf6 + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({35, 79, 85, 2, 38, 83, 81, 85, 89}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 47, 77, 74, 78, 46, 91, 89, 93, 97}, 63, 928), Callback = function(__mkscof515edb28mksgf0)
+    do
+      local _xmkscog515edb29mksgf3 = 1
+      _xmkscog515edb29mksgf3 = (_xmkscog515edb29mksgf3 + 0)
+      __mksav5515ed1famksaz6.skeleton.headdot_color = __mkscof515edb28mksgf0
+    end
+  end})
+end
+do
+  local __mkscok515edb2dmksgff = 1
+  __mkscok515edb2dmksgff = (__mkscok515edb2dmksgff + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({35, 79, 85, 2, 54, 77, 95, 75}, 63, 928), Min = 1, Max = 12, Default = 4, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 47, 77, 74, 78, 62, 85, 103, 83}, 63, 928), Callback = function(_mmkscoi515edb2bmksgf9)
+    do
+      local _mkscoj515edb2cmksgfc = 1
+      _mkscoj515edb2cmksgfc = (_mkscoj515edb2cmksgfc + 0)
+      __mksav5515ed1famksaz6.skeleton.headdot_size = _xmkscim515eda57mksfxl(_mmkscoi515edb2bmksgf9, 4)
+    end
+  end})
+end
+do
+  local _mmkscon515edb30mksgfo = 1
+  _mmkscon515edb30mksgfo = (_mmkscon515edb30mksgfo + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 54, 93, 93, 86, 84, 90, 82}, 63, 928), Callback = function(_xmkscol515edb2emksgfi)
+    do
+      local _zmkscom515edb2fmksgfl = 1
+      _zmkscom515edb2fmksgfl = (_zmkscom515edb2fmksgfl + 0)
+      __mksav5515ed1famksaz6.skeleton.outline = (_xmkscol515edb2emksgfi == true)
+    end
+  end})
+end
+do
+  local _xmkscoq515edb33mksgfx = 1
+  _xmkscoq515edb33mksgfx = (_xmkscoq515edb33mksgfx + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({38, 82, 66, 70, 76, 73, 83, 90}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 46, 90, 74, 78, 84, 81, 91, 98}, 63, 928), Callback = function(_mkscoo515edb31mksgfr)
+    do
+      local __mkscop515edb32mksgfu = 1
+      __mkscop515edb32mksgfu = (__mkscop515edb32mksgfu + 0)
+      __mksav5515ed1famksaz6.skeleton.gradient = (_mkscoo515edb31mksgfr == true)
+    end
+  end})
+end
+do
+  local _mkscot515edb36mksgg6 = 1
+  _mkscot515edb36mksgg6 = (_mkscot515edb36mksgg6 + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({38, 82, 66, 70, 76, 73, 83, 90, 7, 43, 88, 86, 90, 94, 13, 32}, 63, 928), Default = Color3.fromRGB(255, 100, 100), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 54, 79, 74, 82, 42, 87, 85, 89, 93, 30}, 63, 928), Callback = function(_zmkscor515edb34mksgg0)
+    do
+      local _mmkscos515edb35mksgg3 = 1
+      _mmkscos515edb35mksgg3 = (_mmkscos515edb35mksgg3 + 0)
+      __mksav5515ed1famksaz6.skeleton.color2 = _zmkscor515edb34mksgg0
+    end
+  end})
+end
+do
+  local __mkscou515edb37mksgg9 = 1
+  __mkscou515edb37mksgg9 = (__mkscou515edb37mksgg9 + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local _xmkscov515edb38mksggc = 1
+  _xmkscov515edb38mksggc = (_xmkscov515edb38mksggc + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({51, 82, 66, 69, 72, 86, 88}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 79, 87, 71, 16, 72, 84, 93, 85}, 63, 928)))
+end
+do
+  local _mkscoy515edb3bmksggl = 1
+  _mkscoy515edb3bmksggl = (_mkscoy515edb3bmksggl + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 86, 70, 73, 76, 90}, 63, 928), Callback = function(_zmkscow515edb39mksggf)
+    do
+      local _mmkscox515edb3amksggi = 1
+      _mmkscox515edb3amksggi = (_mmkscox515edb3amksggi + 0)
+      __mksav5515ed1famksaz6.tracer.enabled = (_zmkscow515edb39mksggf == true)
+    end
+  end})
+end
+do
+  local __mkscoz515edb3cmksggo = 1
+  __mkscoz515edb3cmksggo = (__mkscoz515edb3cmksggo + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 61, 92, 76, 79, 82, 96, 98}, 63, 928))
+end
+do
+  local _mmkscp2515edb3fmksggx = 1
+  _mmkscp2515edb3fmksggx = (_mmkscp2515edb3fmksggx + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 86, 70, 73, 76, 90, 44, 89, 87, 91, 95}, 63, 928), Callback = function(_xmkscp0515edb3dmksggr)
+    do
+      local _zmkscp1515edb3emksggu = 1
+      _zmkscp1515edb3emksggu = (_zmkscp1515edb3emksggu + 0)
+      __mksav5515ed1famksaz6.tracer.color = _xmkscp0515edb3dmksggr
+    end
+  end})
+end
+do
+  local _xmkscp5515edb42mksgh6 = 1
+  _xmkscp5515edb42mksgh6 = (_xmkscp5515edb42mksgh6 + 0)
+  _mksciz515eda64mksfyo:AddDropdown({Text = _xmksat8515ed1b5mksatf({46, 82, 74, 73, 76, 82}, 63, 928), Options = {_xmksat8515ed1b5mksatf({33, 79, 85, 86, 82, 81}, 63, 928), _xmksat8515ed1b5mksatf({34, 69, 79, 86, 72, 86}, 63, 928), _xmksat8515ed1b5mksatf({44, 79, 86, 85, 72}, 63, 928), _xmksat8515ed1b5mksatf({51, 79, 81}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({33, 79, 85, 86, 82, 81}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 86, 70, 73, 76, 90, 56, 92, 84, 83, 86, 92}, 63, 928), Callback = function(_mkscp3515edb40mksgh0)
+    do
+      local __mkscp4515edb41mksgh3 = 1
+      __mkscp4515edb41mksgh3 = (__mkscp4515edb41mksgh3 + 0)
+      __mksav5515ed1famksaz6.tracer.origin = _mkscp3515edb40mksgh0
+    end
+  end})
+end
+do
+  local _mkscp8515edb45mksghf = 1
+  _mkscp8515edb45mksghf = (_mkscp8515edb45mksghf + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({51, 72, 74, 69, 78, 82, 74, 89, 90}, 63, 928), Min = 0.5, Max = 5, Default = 1, Increment = 0.1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 86, 70, 73, 76, 90, 61, 82, 84, 79, 88}, 63, 928), Callback = function(_zmkscp6515edb43mksgh9)
+    do
+      local _mmkscp7515edb44mksghc = 1
+      _mmkscp7515edb44mksghc = (_mmkscp7515edb44mksghc + 0)
+      __mksav5515ed1famksaz6.tracer.thickness = _xmkscim515eda57mksfxl(_zmkscp6515edb43mksgh9, 1)
+    end
+  end})
+end
+do
+  local _zmkscpb515edb48mksgho = 1
+  _zmkscpb515edb48mksgho = (_zmkscpb515edb48mksgho + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 55, 86, 70, 73, 76, 90, 56, 95, 95, 88, 86, 92, 84}, 63, 928), Callback = function(__mkscp9515edb46mksghi)
+    do
+      local _xmkscpa515edb47mksghl = 1
+      _xmkscpa515edb47mksghl = (_xmkscpa515edb47mksghl + 0)
+      __mksav5515ed1famksaz6.tracer.outline = (__mkscp9515edb46mksghi == true)
+    end
+  end})
+end
+do
+  local _mmkscpc515edb49mksghr = 1
+  _mmkscpc515edb49mksghr = (_mmkscpc515edb49mksghr + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local _mkscpd515edb4amksghu = 1
+  _mkscpd515edb4amksghu = (_mkscpd515edb4amksghu + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({34, 72, 66, 79, 86}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({75, 65, 90, 71, 85, 87}, 63, 928)))
+end
+do
+  local _zmkscpg515edb4dmksgi3 = 1
+  _zmkscpg515edb4dmksgi3 = (_zmkscpg515edb4dmksgi3 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90}, 63, 928), Callback = function(__mkscpe515edb4bmksghx)
+    do
+      local _xmkscpf515edb4cmksgi0 = 1
+      _xmkscpf515edb4cmksgi0 = (_xmkscpf515edb4cmksgi0 + 0)
+      __mksav5515ed1famksaz6.chams.enabled = (__mkscpe515edb4bmksghx == true)
+    end
+  end})
+end
+do
+  local _mmkscph515edb4emksgi6 = 1
+  _mmkscph515edb4emksgi6 = (_mmkscph515edb4emksgi6 + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 44, 82, 76, 89, 96}, 63, 928))
+end
+do
+  local _xmkscpk515edb51mksgif = 1
+  _xmkscpk515edb51mksgif = (_xmkscpk515edb51mksgif + 0)
+  _mksciz515eda64mksfyo:AddDropdown({Text = _xmksat8515ed1b5mksatf({44, 79, 69, 71}, 63, 928), Options = {_xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928), _xmksat8515ed1b5mksatf({33, 79, 89, 42, 68, 82, 73, 82, 76, 41, 77, 89, 93, 90, 90, 83, 93, 100}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({39, 73, 72, 74, 79, 77, 76, 78, 91}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90, 53, 88, 78, 80}, 63, 928), Callback = function(_mkscpi515edb4fmksgi9)
+    do
+      local __mkscpj515edb50mksgic = 1
+      __mkscpj515edb50mksgic = (__mkscpj515edb50mksgic + 0)
+      __mksav5515ed1famksaz6.chams.mode = _mkscpi515edb4fmksgi9
+    end
+  end})
+end
+do
+  local _mkscpn515edb54mksgio = 1
+  _mkscpn515edb54mksgio = (_mkscpn515edb54mksgio + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({37, 73, 77, 78, 3, 39, 84, 82, 86, 90}, 63, 928), Default = Color3.fromRGB(255, 80, 80), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90, 46, 82, 86, 87}, 63, 928), Callback = function(_zmkscpl515edb52mksgii)
+    do
+      local _mmkscpm515edb53mksgil = 1
+      _mmkscpm515edb53mksgil = (_mmkscpm515edb53mksgil + 0)
+      __mksav5515ed1famksaz6.chams.fill_color = _zmkscpl515edb52mksgii
+    end
+  end})
+end
+do
+  local _zmkscpq515edb57mksgix = 1
+  _zmkscpq515edb57mksgix = (_zmkscpq515edb57mksgix + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({37, 73, 77, 78, 3, 56, 87, 71, 85, 91, 89, 75, 93, 81, 91, 81, 104}, 63, 928), Min = 0, Max = 1, Default = 0.55, Increment = 0.05, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90, 46, 82, 86, 87, 64}, 63, 928), Callback = function(__mkscpo515edb55mksgir)
+    do
+      local _xmkscpp515edb56mksgiu = 1
+      _xmkscpp515edb56mksgiu = (_xmkscpp515edb56mksgiu + 0)
+      __mksav5515ed1famksaz6.chams.fill_transparency = _xmkscim515eda57mksfxl(__mkscpo515edb55mksgir, 0.55)
+    end
+  end})
+end
+do
+  local __mkscpt515edb5amksgj6 = 1
+  __mkscpt515edb5amksgj6 = (__mkscpt515edb5amksgj6 + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74, 6, 42, 87, 85, 89, 93}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90, 55, 94, 94, 87, 85, 91, 83}, 63, 928), Callback = function(_mmkscpr515edb58mksgj0)
+    do
+      local _mkscps515edb59mksgj3 = 1
+      _mkscps515edb59mksgj3 = (_mkscps515edb59mksgj3 + 0)
+      __mksav5515ed1famksaz6.chams.outline_color = _mmkscpr515edb58mksgj0
+    end
+  end})
+end
+do
+  local _mmkscpw515edb5dmksgjf = 1
+  _mmkscpw515edb5dmksgjf = (_mmkscpw515edb5dmksgjf + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 78, 76, 82, 74, 6, 59, 90, 74, 88, 94, 92, 78, 96, 84, 94, 84, 107}, 63, 928), Min = 0, Max = 1, Default = 0, Increment = 0.05, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 38, 76, 70, 83, 90, 55, 94, 94, 63}, 63, 928), Callback = function(_xmkscpu515edb5bmksgj9)
+    do
+      local _zmkscpv515edb5cmksgjc = 1
+      _zmkscpv515edb5cmksgjc = (_zmkscpv515edb5cmksgjc + 0)
+      __mksav5515ed1famksaz6.chams.outline_transparency = _xmkscim515eda57mksfxl(_xmkscpu515edb5bmksgj9, 0)
+    end
+  end})
+end
+do
+  local _mkscpx515edb5emksgji = 1
+  _mkscpx515edb5emksgji = (_mkscpx515edb5emksgji + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local __mkscpy515edb5fmksgjl = 1
+  __mkscpy515edb5fmksgjl = (__mkscpy515edb5fmksgjl + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({39, 69, 66, 78, 87, 76, 71, 71, 89}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({71, 69, 66, 84, 87}, 63, 928)))
+end
+do
+  local _mmkscq1515edb62mksgju = 1
+  _mmkscq1515edb62mksgju = (_mmkscq1515edb62mksgju + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 73, 70, 82, 91, 80}, 63, 928), Callback = function(_xmkscpz515edb60mksgjo)
+    do
+      local _zmkscq0515edb61mksgjr = 1
+      _zmkscq0515edb61mksgjr = (_zmkscq0515edb61mksgjr + 0)
+      __mksav5515ed1famksaz6.health.enabled = (_xmkscpz515edb60mksgjo == true)
+    end
+  end})
+end
+do
+  local _mkscq2515edb63mksgjx = 1
+  _mkscq2515edb63mksgjx = (_mkscq2515edb63mksgjx + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 49, 79, 76, 88, 97, 86, 81, 81, 99}, 63, 928))
+end
+do
+  local _zmkscq5515edb66mksgk6 = 1
+  _zmkscq5515edb66mksgk6 = (_zmkscq5515edb66mksgk6 + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({33, 65, 83, 2, 58, 77, 73, 90, 79}, 63, 928), Min = 2, Max = 8, Default = 3, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 60, 79, 75, 92, 81}, 63, 928), Callback = function(__mkscq3515edb64mksgk0)
+    do
+      local _xmkscq4515edb65mksgk3 = 1
+      _xmkscq4515edb65mksgk3 = (_xmkscq4515edb65mksgk3 + 0)
+      __mksav5515ed1famksaz6.health.width = _xmkscim515eda57mksfxl(__mkscq3515edb64mksgk0, 3)
+    end
+  end})
+end
+do
+  local __mkscq8515edb69mksgkf = 1
+  __mkscq8515edb69mksgkf = (__mkscq8515edb69mksgkf + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({33, 65, 83, 2, 50, 89, 89, 82, 80, 86, 78}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 52, 91, 91, 84, 82, 88, 80}, 63, 928), Callback = function(_mmkscq6515edb67mksgk9)
+    do
+      local _mkscq7515edb68mksgkc = 1
+      _mkscq7515edb68mksgkc = (_mkscq7515edb68mksgkc + 0)
+      __mksav5515ed1famksaz6.health.outline = (_mmkscq6515edb67mksgk9 == true)
+    end
+  end})
+end
+do
+  local _mmkscqb515edb6cmksgko = 1
+  _mmkscqb515edb6cmksgko = (_mmkscqb515edb6cmksgko + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({39, 73, 72, 74}, 63, 928), Default = Color3.fromRGB(80, 255, 120), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 45, 79, 78, 80}, 63, 928), Callback = function(_xmkscq9515edb6amksgki)
+    do
+      local _zmkscqa515edb6bmksgkl = 1
+      _zmkscqa515edb6bmksgkl = (_zmkscqa515edb6bmksgkl + 0)
+      __mksav5515ed1famksaz6.health.color_high = _xmkscq9515edb6amksgki
+    end
+  end})
+end
+do
+  local _xmkscqe515edb6fmksgkx = 1
+  _xmkscqe515edb6fmksgkx = (_xmkscqe515edb6fmksgkx + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({44, 73, 69}, 63, 928), Default = Color3.fromRGB(255, 220, 60), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 50, 79, 75}, 63, 928), Callback = function(_mkscqc515edb6dmksgkr)
+    do
+      local __mkscqd515edb6emksgku = 1
+      __mkscqd515edb6emksgku = (__mkscqd515edb6emksgku + 0)
+      __mksav5515ed1famksaz6.health.color_mid = _mkscqc515edb6dmksgkr
+    end
+  end})
+end
+do
+  local _mkscqh515edb72mksgl6 = 1
+  _mkscqh515edb72mksgl6 = (_mkscqh515edb72mksgl6 + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({43, 79, 88}, 63, 928), Default = Color3.fromRGB(255, 60, 60), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 49, 85, 94}, 63, 928), Callback = function(_zmkscqf515edb70mksgl0)
+    do
+      local _mmkscqg515edb71mksgl3 = 1
+      _mmkscqg515edb71mksgl3 = (_mmkscqg515edb71mksgl3 + 0)
+      __mksav5515ed1famksaz6.health.color_low = _zmkscqf515edb70mksgl0
+    end
+  end})
+end
+do
+  local _zmkscqk515edb75mksglf = 1
+  _zmkscqk515edb75mksglf = (_zmkscqk515edb75mksglf + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({39, 69, 66, 78, 87, 76, 5, 58, 76, 96, 93}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 73, 70, 82, 91, 80, 61, 79, 99, 96}, 63, 928), Callback = function(__mkscqi515edb73mksgl9)
+    do
+      local _xmkscqj515edb74mksglc = 1
+      _xmkscqj515edb74mksglc = (_xmkscqj515edb74mksglc + 0)
+      __mksav5515ed1famksaz6.health.text = (__mkscqi515edb73mksgl9 == true)
+    end
+  end})
+end
+do
+  local __mkscqn515edb78mksglo = 1
+  __mkscqn515edb78mksglo = (__mkscqn515edb78mksglo + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({51, 69, 89, 86, 3, 39, 84, 82, 86, 90}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 57, 75, 95, 92, 44, 89, 87, 91, 95}, 63, 928), Callback = function(_mmkscql515edb76mksgli)
+    do
+      local _mkscqm515edb77mksgll = 1
+      _mkscqm515edb77mksgll = (_mkscqm515edb77mksgll + 0)
+      __mksav5515ed1famksaz6.health.text_color = _mmkscql515edb76mksgli
+    end
+  end})
+end
+do
+  local _mmkscqq515edb7bmksglx = 1
+  _mmkscqq515edb7bmksglx = (_mmkscqq515edb7bmksglx + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({51, 69, 89, 86, 3, 55, 78, 96, 76}, 63, 928), Min = 8, Max = 24, Default = 13, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 43, 84, 57, 75, 95, 92, 60, 83, 101, 81}, 63, 928), Callback = function(_xmkscqo515edb79mksglr)
+    do
+      local _zmkscqp515edb7amksglu = 1
+      _zmkscqp515edb7amksglu = (_zmkscqp515edb7amksglu + 0)
+      __mksav5515ed1famksaz6.health.text_size = _xmkscim515eda57mksfxl(_xmkscqo515edb79mksglr, 13)
+    end
+  end})
+end
+do
+  local _mkscqr515edb7cmksgm0 = 1
+  _mkscqr515edb7cmksgm0 = (_mkscqr515edb7cmksgm0 + 0)
+  _mksciz515eda64mksfyo:AddDivider()
+end
+do
+  local __mkscqs515edb7dmksgm3 = 1
+  __mkscqs515edb7dmksgm3 = (__mkscqs515edb7dmksgm3 + 0)
+  _mksciz515eda64mksfyo:AddSection(_xmksat8515ed1b5mksatf({37, 76, 66, 73, 86}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({69, 76, 66, 73}, 63, 928)))
+end
+do
+  local _mmkscqv515edb80mksgmc = 1
+  _mmkscqv515edb80mksgmc = (_mmkscqv515edb80mksgmc + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({52, 83, 70, 84, 81, 69, 82, 75}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 53, 73, 86, 79}, 63, 928), Callback = function(_xmkscqt515edb7emksgm6)
+    do
+      local _zmkscqu515edb7fmksgm9 = 1
+      _zmkscqu515edb7fmksgm9 = (_zmkscqu515edb7fmksgm9 + 0)
+      __mksav5515ed1famksaz6.flags.username = (_xmkscqt515edb7emksgm6 == true)
+    end
+  end})
+end
+do
+  local _xmkscqy515edb83mksgml = 1
+  _xmkscqy515edb83mksgml = (_xmkscqy515edb83mksgml + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({52, 83, 70, 84, 81, 69, 82, 75, 7, 43, 88, 86, 90, 94}, 63, 928), Default = Color3.fromRGB(255, 255, 255), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 53, 73, 86, 79, 46, 91, 89, 93, 97}, 63, 928), Callback = function(_mkscqw515edb81mksgmf)
+    do
+      local __mkscqx515edb82mksgmi = 1
+      __mkscqx515edb82mksgmi = (__mkscqx515edb82mksgmi + 0)
+      __mksav5515ed1famksaz6.flags.username_color = _mkscqw515edb81mksgmf
+    end
+  end})
+end
+do
+  local _mkscr1515edb86mksgmu = 1
+  _mkscr1515edb86mksgmu = (_mkscr1515edb86mksgmu + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({52, 83, 70, 84, 81, 69, 82, 75, 7, 59, 82, 100, 80}, 63, 928), Min = 8, Max = 24, Default = 13, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 53, 73, 86, 79, 62, 85, 103, 83}, 63, 928), Callback = function(_zmkscqz515edb84mksgmo)
+    do
+      local _mmkscr0515edb85mksgmr = 1
+      _mmkscr0515edb85mksgmr = (_mmkscr0515edb85mksgmr + 0)
+      __mksav5515ed1famksaz6.flags.username_size = _xmkscim515eda57mksfxl(_zmkscqz515edb84mksgmo, 13)
+    end
+  end})
+end
+do
+  local __mkscr2515edb87mksgmx = 1
+  __mkscr2515edb87mksgmx = (__mkscr2515edb87mksgmx + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({35, 73, 84, 86, 68, 82, 72, 75}, 63, 928))
+end
+do
+  local _mmkscr5515edb8amksgn6 = 1
+  _mmkscr5515edb8amksgn6 = (_mmkscr5515edb8amksgn6 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({35, 73, 84, 86, 68, 82, 72, 75}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 43, 81, 92, 94}, 63, 928), Callback = function(_xmkscr3515edb88mksgn0)
+    do
+      local _zmkscr4515edb89mksgn3 = 1
+      _zmkscr4515edb89mksgn3 = (_zmkscr4515edb89mksgn3 + 0)
+      __mksav5515ed1famksaz6.flags.distance = (_xmkscr3515edb88mksgn0 == true)
+    end
+  end})
+end
+do
+  local _xmkscr8515edb8dmksgnf = 1
+  _xmkscr8515edb8dmksgnf = (_xmkscr8515edb8dmksgnf + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({35, 73, 84, 86, 68, 82, 72, 75, 7, 43, 88, 86, 90, 94}, 63, 928), Default = Color3.fromRGB(200, 200, 200), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 43, 81, 92, 94, 46, 91, 89, 93, 97}, 63, 928), Callback = function(_mkscr6515edb8bmksgn9)
+    do
+      local __mkscr7515edb8cmksgnc = 1
+      __mkscr7515edb8cmksgnc = (__mkscr7515edb8cmksgnc + 0)
+      __mksav5515ed1famksaz6.flags.distance_color = _mkscr6515edb8bmksgn9
+    end
+  end})
+end
+do
+  local _mkscrb515edb90mksgno = 1
+  _mkscrb515edb90mksgno = (_mkscrb515edb90mksgno + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({35, 73, 84, 86, 68, 82, 72, 75, 7, 59, 82, 100, 80}, 63, 928), Min = 8, Max = 24, Default = 12, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 43, 81, 92, 94, 62, 85, 103, 83}, 63, 928), Callback = function(_zmkscr9515edb8emksgni)
+    do
+      local _mmkscra515edb8fmksgnl = 1
+      _mmkscra515edb8fmksgnl = (_mmkscra515edb8fmksgnl + 0)
+      __mksav5515ed1famksaz6.flags.distance_size = _xmkscim515eda57mksfxl(_zmkscr9515edb8emksgni, 12)
+    end
+  end})
+end
+do
+  local __mkscrc515edb91mksgnr = 1
+  __mkscrc515edb91mksgnr = (__mkscrc515edb91mksgnr + 0)
+  _mksciz515eda64mksfyo:AddLineText(_xmksat8515ed1b5mksatf({54, 69, 66, 82, 82, 82}, 63, 928))
+end
+do
+  local _mmkscrf515edb94mksgo0 = 1
+  _mmkscrf515edb94mksgo0 = (_mmkscrf515edb94mksgo0 + 0)
+  _mksciz515eda64mksfyo:AddToggle({Text = _xmksat8515ed1b5mksatf({54, 69, 66, 82, 82, 82}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 62, 77, 74, 90, 90, 90}, 63, 928), Callback = function(_xmkscrd515edb92mksgnu)
+    do
+      local _zmkscre515edb93mksgnx = 1
+      _zmkscre515edb93mksgnx = (_zmkscre515edb93mksgnx + 0)
+      __mksav5515ed1famksaz6.flags.weapon = (_xmkscrd515edb92mksgnu == true)
+    end
+  end})
+end
+do
+  local _xmkscri515edb97mksgo9 = 1
+  _xmkscri515edb97mksgo9 = (_xmkscri515edb97mksgo9 + 0)
+  _mksciz515eda64mksfyo:AddColorPicker({Text = _xmksat8515ed1b5mksatf({54, 69, 66, 82, 82, 82, 5, 41, 86, 84, 88, 92}, 63, 928), Default = Color3.fromRGB(255, 200, 100), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 62, 77, 74, 90, 90, 90, 48, 93, 91, 95, 99}, 63, 928), Callback = function(_mkscrg515edb95mksgo3)
+    do
+      local __mkscrh515edb96mksgo6 = 1
+      __mkscrh515edb96mksgo6 = (__mkscrh515edb96mksgo6 + 0)
+      __mksav5515ed1famksaz6.flags.weapon_color = _mkscrg515edb95mksgo3
+    end
+  end})
+end
+do
+  local _mkscrl515edb9amksgoi = 1
+  _mkscrl515edb9amksgoi = (_mkscrl515edb9amksgoi + 0)
+  _mksciz515eda64mksfyo:AddSlider({Text = _xmksat8515ed1b5mksatf({54, 69, 66, 82, 82, 82, 5, 57, 80, 98, 78}, 63, 928), Min = 8, Max = 24, Default = 12, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({36, 51, 49, 65, 41, 80, 70, 77, 62, 77, 74, 90, 90, 90, 64, 87, 105, 85}, 63, 928), Callback = function(_zmkscrj515edb98mksgoc)
+    do
+      local _mmkscrk515edb99mksgof = 1
+      _mmkscrk515edb99mksgof = (_mmkscrk515edb99mksgof + 0)
+      __mksav5515ed1famksaz6.flags.weapon_size = _xmkscim515eda57mksfxl(_zmkscrj515edb98mksgoc, 12)
+    end
+  end})
+end
+do
+  local __mkscrm515edb9bmksgol = 1
+  __mkscrm515edb9bmksgol = (__mkscrm515edb9bmksgol + 0)
+  __mkscj0515eda65mksfyr:AddSection(_xmksat8515ed1b5mksatf({43, 73, 72, 74, 87, 77, 83, 77}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 85, 79}, 63, 928)))
+end
+do
+  local _xmkscrs515edba1mksgp3 = 1
+  _xmkscrs515edba1mksgp3 = (_xmkscrs515edba1mksgp3 + 0)
+  __mkscj0515eda65mksfyr:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 48, 78, 77, 79, 92, 82, 88, 82, 49, 91, 79, 81, 92, 86, 86}, 63, 928), Callback = function(_xmkscrn515edb9cmksgoo)
+    do
+      local _zmkscro515edb9dmksgor = 1
+      _zmkscro515edb9dmksgor = (_zmkscro515edb9dmksgor + 0)
+      _mksav9515ed1femksazi.lighting_enabled = (_xmkscrn515edb9cmksgoo == true)
+    end
+    do
+      local __mkscrr515edba0mksgp0 = 1
+      __mkscrr515edba0mksgp0 = (__mkscrr515edba0mksgp0 + 0)
+      if ((((85 * 85) - (20 * 20)) == ((85 - 20) * (85 + 20))) and _mksav9515ed1femksazi.lighting_enabled) then
+        do
+          local _mmkscrp515edb9emksgou = 1
+          _mmkscrp515edb9emksgou = (_mmkscrp515edb9emksgou + 0)
+          _mmksavi515ed207mksb09()
+        end
+      else
+        do
+          local _mkscrq515edb9fmksgox = 1
+          _mkscrq515edb9fmksgox = (_mkscrq515edb9fmksgox + 0)
+          _mksavj515ed208mksb0c()
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmkscrt515edba2mksgp6 = 1
+  _zmkscrt515edba2mksgp6 = (_zmkscrt515edba2mksgp6 + 0)
+  __mkscj0515eda65mksfyr:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 53, 83, 82, 84, 97, 87, 93, 87}, 63, 928))
+end
+do
+  local _xmkscrx515edba6mksgpi = 1
+  _xmkscrx515edba6mksgpi = (_xmkscrx515edba6mksgpi + 0)
+  __mkscj0515eda65mksfyr:AddColorPicker({Text = _xmksat8515ed1b5mksatf({32, 77, 67, 75, 72, 82, 89}, 63, 928), Default = Color3.fromRGB(128, 128, 128), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 82, 72, 80, 77, 87, 94}, 63, 928), Callback = function(_mmkscru515edba3mksgp9)
+    do
+      local _mkscrv515edba4mksgpc = 1
+      _mkscrv515edba4mksgpc = (_mkscrv515edba4mksgpc + 0)
+      _mksav9515ed1femksazi.ambient_color = _mmkscru515edba3mksgp9
+    end
+    do
+      local __mkscrw515edba5mksgpf = 1
+      __mkscrw515edba5mksgpf = (__mkscrw515edba5mksgpf + 0)
+      _mmksavi515ed207mksb09()
+    end
+  end})
+end
+do
+  local __mkscs1515edbaamksgpu = 1
+  __mkscs1515edbaamksgpu = (__mkscs1515edbaamksgpu + 0)
+  __mkscj0515eda65mksfyr:AddColorPicker({Text = _xmksat8515ed1b5mksatf({46, 85, 85, 70, 82, 83, 87}, 63, 928), Default = Color3.fromRGB(128, 128, 128), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 51, 90, 90, 75, 87, 88, 92}, 63, 928), Callback = function(_zmkscry515edba7mksgpl)
+    do
+      local _mmkscrz515edba8mksgpo = 1
+      _mmkscrz515edba8mksgpo = (_mmkscrz515edba8mksgpo + 0)
+      _mksav9515ed1femksazi.outdoor_ambient_color = _zmkscry515edba7mksgpl
+    end
+    do
+      local _mkscs0515edba9mksgpr = 1
+      _mkscs0515edba9mksgpr = (_mkscs0515edba9mksgpr + 0)
+      _mmksavi515ed207mksb09()
+    end
+  end})
+end
+do
+  local _mkscs5515edbaemksgq6 = 1
+  _mkscs5515edbaemksgq6 = (_mkscs5515edbaemksgq6 + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({33, 82, 74, 73, 75, 88, 83, 75, 90, 91}, 63, 928), Min = 0, Max = 10, Default = 2, Increment = 0.1, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 38, 87, 79, 78, 80, 93, 88, 80, 95, 96}, 63, 928), Callback = function(_xmkscs2515edbabmksgpx)
+    do
+      local _zmkscs3515edbacmksgq0 = 1
+      _zmkscs3515edbacmksgq0 = (_zmkscs3515edbacmksgq0 + 0)
+      _mksav9515ed1femksazi.brightness = _xmkscim515eda57mksfxl(_xmkscs2515edbabmksgpx, 2)
+    end
+    do
+      local _mmkscs4515edbadmksgq3 = 1
+      _mmkscs4515edbadmksgq3 = (_mmkscs4515edbadmksgq3 + 0)
+      _mmksavi515ed207mksb09()
+    end
+  end})
+end
+do
+  local _mmkscs9515edbb2mksgqi = 1
+  _mmkscs9515edbb2mksgqi = (_mmkscs9515edbb2mksgqi + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({36, 88, 81, 81, 86, 89, 87, 75}, 63, 928), Min = -5, Max = 5, Default = 0, Increment = 0.1, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 41, 93, 86, 86, 91, 94, 92, 80}, 63, 928), Callback = function(__mkscs6515edbafmksgq9)
+    do
+      local _xmkscs7515edbb0mksgqc = 1
+      _xmkscs7515edbb0mksgqc = (_xmkscs7515edbb0mksgqc + 0)
+      _mksav9515ed1femksazi.exposure = _xmkscim515eda57mksfxl(__mkscs6515edbafmksgq9, 0)
+    end
+    do
+      local _zmkscs8515edbb1mksgqf = 1
+      _zmkscs8515edbb1mksgqf = (_zmkscs8515edbb1mksgqf + 0)
+      _mmksavi515ed207mksb09()
+    end
+  end})
+end
+do
+  local _mkscsa515edbb3mksgql = 1
+  _mkscsa515edbb3mksgql = (_mkscsa515edbb3mksgql + 0)
+  __mkscj0515eda65mksfyr:AddDivider()
+end
+do
+  local __mkscsb515edbb4mksgqo = 1
+  __mkscsb515edbb4mksgqo = (__mkscsb515edbb4mksgqo + 0)
+  __mkscj0515eda65mksfyr:AddSection(_xmksat8515ed1b5mksatf({32, 84, 78, 81, 86, 84, 77, 75, 89, 77}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 76, 80, 87, 71}, 63, 928)))
+end
+do
+  local _mkscsf515edbb8mksgr0 = 1
+  _mkscsf515edbb8mksgr0 = (_mkscsf515edbb8mksgr0 + 0)
+  __mkscj0515eda65mksfyr:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 44, 86, 74, 76, 87, 81, 81}, 63, 928), Callback = function(_xmkscsc515edbb5mksgqr)
+    do
+      local _zmkscsd515edbb6mksgqu = 1
+      _zmkscsd515edbb6mksgqu = (_zmkscsd515edbb6mksgqu + 0)
+      _mksav9515ed1femksazi.atmosphere_enabled = (_xmkscsc515edbb5mksgqr == true)
+    end
+    do
+      local _mmkscse515edbb7mksgqx = 1
+      _mmkscse515edbb7mksgqx = (_mmkscse515edbb7mksgqx + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local __mkscsg515edbb9mksgr3 = 1
+  __mkscsg515edbb9mksgr3 = (__mkscsg515edbb9mksgr3 + 0)
+  __mkscj0515eda65mksfyr:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 42, 94, 88, 91, 96, 94, 87, 85, 99, 87}, 63, 928))
+end
+do
+  local _mkscsk515edbbdmksgrf = 1
+  _mkscsk515edbbdmksgrf = (_mkscsk515edbbdmksgrf + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({35, 69, 79, 85, 76, 88, 94}, 63, 928), Min = 0, Max = 1, Default = 0.3, Increment = 0.01, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 43, 77, 87, 93, 84, 96, 102}, 63, 928), Callback = function(_xmkscsh515edbbamksgr6)
+    do
+      local _zmkscsi515edbbbmksgr9 = 1
+      _zmkscsi515edbbbmksgr9 = (_zmkscsi515edbbbmksgr9 + 0)
+      _mksav9515ed1femksazi.density = _xmkscim515eda57mksfxl(_xmkscsh515edbbamksgr6, 0.3)
+    end
+    do
+      local _mmkscsj515edbbcmksgrc = 1
+      _mmkscsj515edbbcmksgrc = (_mmkscsj515edbbcmksgrc + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local _mmkscso515edbc1mksgrr = 1
+  _mmkscso515edbc1mksgrr = (_mmkscso515edbc1mksgrr + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({46, 70, 71, 85, 72, 88}, 63, 928), Min = 0, Max = 1, Default = 0, Increment = 0.01, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 54, 78, 79, 93, 80, 96}, 63, 928), Callback = function(__mkscsl515edbbemksgri)
+    do
+      local _xmkscsm515edbbfmksgrl = 1
+      _xmkscsm515edbbfmksgrl = (_xmkscsm515edbbfmksgrl + 0)
+      _mksav9515ed1femksazi.offset = _xmkscim515eda57mksfxl(__mkscsl515edbbemksgri, 0)
+    end
+    do
+      local _zmkscsn515edbc0mksgro = 1
+      _zmkscsn515edbc0mksgro = (_zmkscsn515edbc0mksgro + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local _zmkscss515edbc5mksgs3 = 1
+  _zmkscss515edbc5mksgs3 = (_zmkscss515edbc5mksgs3 + 0)
+  __mkscj0515eda65mksfyr:AddColorPicker({Text = _xmksat8515ed1b5mksatf({34, 79, 77, 81, 85}, 63, 928), Default = Color3.fromRGB(199, 199, 199), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 42, 87, 85, 89, 93}, 63, 928), Callback = function(_mkscsp515edbc2mksgru)
+    do
+      local __mkscsq515edbc3mksgrx = 1
+      __mkscsq515edbc3mksgrx = (__mkscsq515edbc3mksgrx + 0)
+      _mksav9515ed1femksazi.atm_color = _mkscsp515edbc2mksgru
+    end
+    do
+      local _xmkscsr515edbc4mksgs0 = 1
+      _xmkscsr515edbc4mksgs0 = (_xmkscsr515edbc4mksgs0 + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local _xmkscsw515edbc9mksgsf = 1
+  _xmkscsw515edbc9mksgsf = (_xmkscsw515edbc9mksgsf + 0)
+  __mkscj0515eda65mksfyr:AddColorPicker({Text = _xmksat8515ed1b5mksatf({35, 69, 68, 67, 92}, 63, 928), Default = Color3.fromRGB(92, 60, 13), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 43, 77, 76, 75, 100}, 63, 928), Callback = function(_mmkscst515edbc6mksgs6)
+    do
+      local _mkscsu515edbc7mksgs9 = 1
+      _mkscsu515edbc7mksgs9 = (_mkscsu515edbc7mksgs9 + 0)
+      _mksav9515ed1femksazi.decay = _mmkscst515edbc6mksgs6
+    end
+    do
+      local __mkscsv515edbc8mksgsc = 1
+      __mkscsv515edbc8mksgsc = (__mkscsv515edbc8mksgsc + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local __mksct0515edbcdmksgsr = 1
+  __mksct0515edbcdmksgsr = (__mksct0515edbcdmksgsr + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({38, 76, 66, 84, 72}, 63, 928), Min = 0, Max = 10, Default = 0, Increment = 0.1, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 46, 84, 74, 92, 80}, 63, 928), Callback = function(_zmkscsx515edbcamksgsi)
+    do
+      local _mmkscsy515edbcbmksgsl = 1
+      _mmkscsy515edbcbmksgsl = (_mmkscsy515edbcbmksgsl + 0)
+      _mksav9515ed1femksazi.glare = _xmkscim515eda57mksfxl(_zmkscsx515edbcamksgsi, 0)
+    end
+    do
+      local _mkscsz515edbccmksgso = 1
+      _mkscsz515edbccmksgso = (_mkscsz515edbccmksgso + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local _mksct4515edbd1mksgt3 = 1
+  _mksct4515edbd1mksgt3 = (_mksct4515edbd1mksgt3 + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({39, 65, 91, 71}, 63, 928), Min = 0, Max = 10, Default = 0, Increment = 0.1, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 37, 89, 83, 47, 73, 99, 79}, 63, 928), Callback = function(_xmksct1515edbcemksgsu)
+    do
+      local _zmksct2515edbcfmksgsx = 1
+      _zmksct2515edbcfmksgsx = (_zmksct2515edbcfmksgsx + 0)
+      _mksav9515ed1femksazi.haze = _xmkscim515eda57mksfxl(_xmksct1515edbcemksgsu, 0)
+    end
+    do
+      local _mmksct3515edbd0mksgt0 = 1
+      _mmksct3515edbd0mksgt0 = (_mmksct3515edbd0mksgt0 + 0)
+      __mksavk515ed209mksb0f()
+    end
+  end})
+end
+do
+  local __mksct5515edbd2mksgt6 = 1
+  __mksct5515edbd2mksgt6 = (__mksct5515edbd2mksgt6 + 0)
+  __mkscj0515eda65mksfyr:AddDivider()
+end
+do
+  local _xmksct6515edbd3mksgt9 = 1
+  _xmksct6515edbd3mksgt9 = (_xmksct6515edbd3mksgt9 + 0)
+  __mkscj0515eda65mksfyr:AddSection(_xmksat8515ed1b5mksatf({50, 75, 90, 68, 82, 92}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({72, 77, 66, 73, 72}, 63, 928)))
+end
+do
+  local _xmksctb515edbd8mksgto = 1
+  _xmksctb515edbd8mksgto = (_xmksctb515edbd8mksgto + 0)
+  __mkscj0515eda65mksfyr:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 80, 95, 44, 86, 74, 76, 87, 81, 81}, 63, 928), Callback = function(_zmksct7515edbd4mksgtc)
+    do
+      local _mmksct8515edbd5mksgtf = 1
+      _mmksct8515edbd5mksgtf = (_mmksct8515edbd5mksgtf + 0)
+      _mksav9515ed1femksazi.skybox_enabled = (_zmksct7515edbd4mksgtc == true)
+    end
+    do
+      local _mksct9515edbd6mksgti = 1
+      _mksct9515edbd6mksgti = (_mksct9515edbd6mksgti + 0)
+      _mmksavn515ed20cmksb0o()
+    end
+    do
+      local __mkscta515edbd7mksgtl = 1
+      __mkscta515edbd7mksgtl = (__mkscta515edbd7mksgtl + 0)
+      _mksavo515ed20dmksb0r()
+    end
+  end})
+end
+do
+  local _zmksctc515edbd9mksgtr = 1
+  _zmksctc515edbd9mksgtr = (_zmksctc515edbd9mksgtr + 0)
+  __mkscj0515eda65mksfyr:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 60, 85, 100, 78, 92, 102}, 63, 928))
+end
+do
+  local _xmksctg515edbddmksgu3 = 1
+  _xmksctg515edbddmksgu3 = (_xmksctg515edbddmksgu3 + 0)
+  __mkscj0515eda65mksfyr:AddDropdown({Text = _xmksat8515ed1b5mksatf({50, 75, 90, 68, 82, 92}, 63, 928), Options = (((((type(_zmksavc515ed201mksazr) == _xmksat8515ed1b5mksatf({83, 65, 67, 78, 72}, 63, 928)) and (#_zmksavc515ed201mksazr > 0))) and _zmksavc515ed201mksazr) or {_xmksat8515ed1b5mksatf({32, 85, 83, 81, 85, 69}, 63, 928)}), Default = _xmksat8515ed1b5mksatf({32, 85, 83, 81, 85, 69}, 63, 928), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 80, 95, 73, 87, 97}, 63, 928), Callback = function(_mmksctd515edbdamksgtu)
+    do
+      local _mkscte515edbdbmksgtx = 1
+      _mkscte515edbdbmksgtx = (_mkscte515edbdbmksgtx + 0)
+      _mksav9515ed1femksazi.skybox_value = _mmksctd515edbdamksgtu
+    end
+    do
+      local __mksctf515edbdcmksgu0 = 1
+      __mksctf515edbdcmksgu0 = (__mksctf515edbdcmksgu0 + 0)
+      _mmksavn515ed20cmksb0o()
+    end
+  end})
+end
+do
+  local __mksctk515edbe1mksguf = 1
+  __mksctk515edbe1mksguf = (__mksctk515edbe1mksguf + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 84, 66, 84, 3, 39, 84, 91, 85, 92}, 63, 928), Min = 0, Max = 5000, Default = 3000, Increment = 50, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 67, 85, 87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 89, 71, 89, 43, 88, 95, 89, 96}, 63, 928), Callback = function(_zmkscth515edbdemksgu6)
+    do
+      local _mmkscti515edbdfmksgu9 = 1
+      _mmkscti515edbdfmksgu9 = (_mmkscti515edbdfmksgu9 + 0)
+      _mksav9515ed1femksazi.star_count = _xmkscim515eda57mksfxl(_zmkscth515edbdemksgu6, 3000)
+    end
+    do
+      local _mksctj515edbe0mksguc = 1
+      _mksctj515edbe0mksguc = (_mksctj515edbe0mksguc + 0)
+      _mmksavn515ed20cmksb0o()
+    end
+  end})
+end
+do
+  local _mkscto515edbe5mksgur = 1
+  _mkscto515edbe5mksgur = (_mkscto515edbe5mksgur + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 85, 79, 2, 36, 82, 76, 91, 83, 73, 91, 10, 62, 85, 103, 83}, 63, 928), Min = 0, Max = 60, Default = 21, Increment = 0.5, Suffix = _xmksat8515ed1b5mksatf({143}, 63, 928), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 90, 84, 58, 81, 99, 79}, 63, 928), Callback = function(_xmksctl515edbe2mksgui)
+    do
+      local _zmksctm515edbe3mksgul = 1
+      _zmksctm515edbe3mksgul = (_zmksctm515edbe3mksgul + 0)
+      _mksav9515ed1femksazi.sun_angular_size = _xmkscim515eda57mksfxl(_xmksctl515edbe2mksgui, 21)
+    end
+    do
+      local _mmksctn515edbe4mksguo = 1
+      _mmksctn515edbe4mksguo = (_mmksctn515edbe4mksguo + 0)
+      _mmksavn515ed20cmksb0o()
+    end
+  end})
+end
+do
+  local _mmkscts515edbe9mksgv3 = 1
+  _mmkscts515edbe9mksgv3 = (_mmkscts515edbe9mksgv3 + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({44, 79, 80, 80, 3, 37, 83, 77, 92, 84, 74, 92, 11, 63, 86, 104, 84}, 63, 928), Min = 0, Max = 60, Default = 11, Increment = 0.5, Suffix = _xmksat8515ed1b5mksatf({143}, 63, 928), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 49, 84, 85, 85, 59, 82, 100, 80}, 63, 928), Callback = function(__mksctp515edbe6mksguu)
+    do
+      local _xmksctq515edbe7mksgux = 1
+      _xmksctq515edbe7mksgux = (_xmksctq515edbe7mksgux + 0)
+      _mksav9515ed1femksazi.moon_angular_size = _xmkscim515eda57mksfxl(__mksctp515edbe6mksguu, 11)
+    end
+    do
+      local _zmksctr515edbe8mksgv0 = 1
+      _zmksctr515edbe8mksgv0 = (_zmksctr515edbe8mksgv0 + 0)
+      _mmksavn515ed20cmksb0o()
+    end
+  end})
+end
+do
+  local _zmksctw515edbedmksgvf = 1
+  _zmksctw515edbedmksgvf = (_zmksctw515edbedmksgvf + 0)
+  __mkscj0515eda65mksfyr:AddToggle({Text = _xmksat8515ed1b5mksatf({32, 85, 85, 81, 3, 54, 84, 90, 72, 92, 78}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 80, 95, 57, 87, 93, 75, 95, 81}, 63, 928), Callback = function(_mksctt515edbeamksgv6)
+    do
+      local __mksctu515edbebmksgv9 = 1
+      __mksctu515edbebmksgv9 = (__mksctu515edbebmksgv9 + 0)
+      _mksav9515ed1femksazi.auto_rotate = (_mksctt515edbeamksgv6 == true)
+    end
+    do
+      local _xmksctv515edbecmksgvc = 1
+      _xmksctv515edbecmksgvc = (_xmksctv515edbecmksgvc + 0)
+      _mksavo515ed20dmksb0r()
+    end
+  end})
+end
+do
+  local __mksctz515edbf0mksgvo = 1
+  __mksctz515edbf0mksgvo = (__mksctz515edbf0mksgvo + 0)
+  __mkscj0515eda65mksfyr:AddSlider({Text = _xmksat8515ed1b5mksatf({49, 79, 85, 67, 87, 73, 5, 57, 87, 77, 78, 78}, 63, 928), Min = 0.1, Max = 10, Default = 1, Increment = 0.1, Suffix = _xmksat8515ed1b5mksatf({87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({54, 79, 83, 78, 71, 55, 80, 95, 57, 87, 93, 75, 95, 81, 64, 94, 84, 85, 85}, 63, 928), Callback = function(_mmksctx515edbeemksgvi)
+    do
+      local _mkscty515edbefmksgvl = 1
+      _mkscty515edbefmksgvl = (_mkscty515edbefmksgvl + 0)
+      _mksav9515ed1femksazi.auto_rotate_speed = _xmkscim515eda57mksfxl(_mmksctx515edbeemksgvi, 1)
+    end
+  end})
+end
+do
+  local _xmkscu0515edbf1mksgvr = 1
+  _xmkscu0515edbf1mksgvr = (_xmkscu0515edbf1mksgvr + 0)
+  __mkscj0515eda65mksfyr:AddDivider()
+end
+do
+  local _zmkscu1515edbf2mksgvu = 1
+  _zmkscu1515edbf2mksgvu = (_zmkscu1515edbf2mksgvu + 0)
+  __mkscj0515eda65mksfyr:AddSection(_xmksat8515ed1b5mksatf({37, 48, 52, 2, 37, 83, 84, 89, 91}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({70, 65, 86, 73, 72}, 63, 928)))
+end
+do
+  local _xmkscu5515edbf6mksgw6 = 1
+  _xmkscu5515edbf6mksgw6 = (_xmkscu5515edbf6mksgw6 + 0)
+  __mkscj0515eda65mksfyr:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 53, 57, 41, 87, 88, 93, 95}, 63, 928), Callback = function(_mmkscu2515edbf3mksgvx)
+    do
+      local _mkscu3515edbf4mksgw0 = 1
+      _mkscu3515edbf4mksgw0 = (_mkscu3515edbf4mksgw0 + 0)
+      _mksav9515ed1femksazi.fps_boost = (_mmkscu2515edbf3mksgvx == true)
+    end
+    do
+      local __mkscu4515edbf5mksgw3 = 1
+      __mkscu4515edbf5mksgw3 = (__mkscu4515edbf5mksgw3 + 0)
+      pcall(__mksavp515ed20emksb0u, _mksav9515ed1femksazi.fps_boost)
+    end
+  end})
+end
+do
+  local _zmkscu6515edbf7mksgw9 = 1
+  _zmkscu6515edbf7mksgw9 = (_zmkscu6515edbf7mksgw9 + 0)
+  __mkscj0515eda65mksfyr:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 47, 58, 62, 12, 47, 93, 94, 99, 101}, 63, 928))
+end
+do
+  local _mmkscu7515edbf8mksgwc = 1
+  _mmkscu7515edbf8mksgwc = (_mmkscu7515edbf8mksgwc + 0)
+  __mkscj0515eda65mksfyr:AddLabel(_xmksat8515ed1b5mksatf({43, 79, 88, 71, 85, 87, 5, 83, 72, 92, 78, 92, 84, 77, 89, 14, 96, 101, 82, 94, 92, 104, 110, 22, 107, 103, 25, 108, 96, 96, 114, 97, 100, 32, 72, 82, 88, 36, 113, 117, 104, 108}, 63, 928))
+end
+do
+  local _mkscu8515edbf9mksgwf = 1
+  _mkscu8515edbf9mksgwf = (_mkscu8515edbf9mksgwf + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({54, 65, 77, 77, 54, 84, 74, 75, 75}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({69, 79, 80, 86, 83, 86, 78, 84, 91, 91}, 63, 928)))
+end
+do
+  local _zmkscub515edbfcmksgwo = 1
+  _zmkscub515edbfcmksgwo = (_zmkscub515edbfcmksgwo + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 61, 58}, 63, 928), Callback = function(__mkscu9515edbfamksgwi)
+    do
+      local _xmkscua515edbfbmksgwl = 1
+      _xmkscua515edbfbmksgwl = (_xmkscua515edbfbmksgwl + 0)
+      _mmksav8515ed1fdmksazf.walkspeed.enabled = (__mkscu9515edbfamksgwi == true)
+    end
+  end})
+end
+do
+  local _zmkscug515edc01mksgx3 = 1
+  _zmkscug515edc01mksgx3 = (_zmkscug515edc01mksgx3 + 0)
+  _xmksciw515eda61mksfyf:AddKeybind({Text = _xmksat8515ed1b5mksatf({54, 65, 77, 77, 54, 84, 74, 75, 75, 8, 52, 79, 100}, 63, 928), Description = _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 88, 6, 94, 73, 85, 85, 94, 92, 82, 83, 83, 16, 96, 96, 34, 99, 91, 92}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 61, 58, 51, 78, 99}, 63, 928), Callback = function(_mmkscuc515edbfdmksgwr, _mkscud515edbfemksgwu)
+    do
+      local _xmkscuf515edc00mksgx0 = 1
+      _xmkscuf515edc00mksgx0 = (_xmkscuf515edc00mksgx0 + 0)
+      if (((18 * 49) == (49 * 18)) and (typeof(_mmkscuc515edbfdmksgwr) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local __mkscue515edbffmksgwx = 1
+          __mkscue515edbffmksgwx = (__mkscue515edbffmksgwx + 0)
+          Binds.walkspeed = _mmkscuc515edbfdmksgwr
+        end
+      end
+    end
+  end})
+end
+do
+  local _mmkscuh515edc02mksgx6 = 1
+  _mmkscuh515edc02mksgx6 = (_mmkscuh515edc02mksgx6 + 0)
+  _xmksciw515eda61mksfyf:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 64, 75, 87, 87, 64, 94, 84, 85, 85}, 63, 928))
+end
+do
+  local _xmkscuk515edc05mksgxf = 1
+  _xmkscuk515edc05mksgxf = (_xmkscuk515edc05mksgxf + 0)
+  _xmksciw515eda61mksfyf:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 80, 70, 71, 71}, 63, 928), Min = 16, Max = 500, Default = 16, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87, 20, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 61, 58, 62, 74, 86}, 63, 928), Callback = function(_mkscui515edc03mksgx9)
+    do
+      local __mkscuj515edc04mksgxc = 1
+      __mkscuj515edc04mksgxc = (__mkscuj515edc04mksgxc + 0)
+      _mmksav8515ed1fdmksazf.walkspeed.value = _xmkscim515eda57mksfxl(_mkscui515edc03mksgx9, 16)
+    end
+  end})
+end
+do
+  local _mkscun515edc08mksgxo = 1
+  _mkscun515edc08mksgxo = (_mkscun515edc08mksgxo + 0)
+  _xmksciw515eda61mksfyf:AddDropdown({Text = _xmksat8515ed1b5mksatf({44, 79, 69, 71}, 63, 928), Options = {_xmksat8515ed1b5mksatf({35, 69, 71, 67, 88, 80, 89}, 63, 928), _xmksat8515ed1b5mksatf({34, 38, 83, 67, 80, 73}, 63, 928)}, Default = _xmksat8515ed1b5mksatf({35, 69, 71, 67, 88, 80, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 61, 58, 53, 88, 78, 80}, 63, 928), Callback = function(_zmkscul515edc06mksgxi)
+    do
+      local _mmkscum515edc07mksgxl = 1
+      _mmkscum515edc07mksgxl = (_mmkscum515edc07mksgxl + 0)
+      _mmksav8515ed1fdmksazf.walkspeed.mode = _zmkscul515edc06mksgxi
+    end
+  end})
+end
+do
+  local __mkscuo515edc09mksgxr = 1
+  __mkscuo515edc09mksgxr = (__mkscuo515edc09mksgxr + 0)
+  _xmksciw515eda61mksfyf:AddDivider()
+end
+do
+  local _xmkscup515edc0amksgxu = 1
+  _xmkscup515edc0amksgxu = (_xmkscup515edc0amksgxu + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({41, 85, 78, 82, 51, 83, 92, 75, 89}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({64, 82, 83, 81, 90, 17, 90, 86}, 63, 928)))
+end
+do
+  local _xmkscuz515edc14mksgyo = 1
+  _xmkscuz515edc14mksgyo = (_xmkscuz515edc14mksgyo + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 48, 55}, 63, 928), Callback = function(_zmkscuq515edc0bmksgxx)
+    do
+      local _mmkscur515edc0cmksgy0 = 1
+      _mmkscur515edc0cmksgy0 = (_mmkscur515edc0cmksgy0 + 0)
+      _mmksav8515ed1fdmksazf.jump.enabled = (_zmkscuq515edc0bmksgxx == true)
+    end
+    do
+      local __mkscuy515edc13mksgyl = 1
+      __mkscuy515edc13mksgyl = (__mkscuy515edc13mksgyl + 0)
+      if ((((59 * 59) - (43 * 43)) == ((59 - 43) * (59 + 43))) and _mmksav8515ed1fdmksazf.jump.enabled) then
+        local _mkscus515edc0dmksgy3 = _mmksav3515ed1f8mksaz0.Character
+        local __mkscut515edc0emksgy6 = (_mkscus515edc0dmksgy3 and _mkscus515edc0dmksgy3:FindFirstChildOfClass(_xmksat8515ed1b5mksatf({39, 85, 78, 67, 81, 83, 78, 74}, 63, 928)))
+        do
+          local _mkscux515edc12mksgyi = 1
+          _mkscux515edc12mksgyi = (_mkscux515edc12mksgyi + 0)
+          if (((63 * 95) == (95 * 63)) and __mkscut515edc0emksgy6) then
+            do
+              local _mmkscuw515edc11mksgyf = 1
+              _mmkscuw515edc11mksgyf = (_mmkscuw515edc11mksgyf + 0)
+              pcall(function()
+                do
+                  local _xmkscuu515edc0fmksgy9 = 1
+                  _xmkscuu515edc0fmksgy9 = (_xmkscuu515edc0fmksgy9 + 0)
+                  __mkscut515edc0emksgy6.UseJumpPower = true
+                end
+                do
+                  local _zmkscuv515edc10mksgyc = 1
+                  _zmkscuv515edc10mksgyc = (_zmkscuv515edc10mksgyc + 0)
+                  __mkscut515edc0emksgy6.JumpPower = (tonumber(_mmksav8515ed1fdmksazf.jump.value) or 50)
+                end
+              end)
+            end
+          end
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmkscv0515edc15mksgyr = 1
+  _zmkscv0515edc15mksgyr = (_zmkscv0515edc15mksgyr + 0)
+  _xmksciw515eda61mksfyf:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 51, 95, 88, 92}, 63, 928))
+end
+do
+  local __mkscv3515edc18mksgz0 = 1
+  __mkscv3515edc18mksgz0 = (__mkscv3515edc18mksgz0 + 0)
+  _xmksciw515eda61mksfyf:AddSlider({Text = _xmksat8515ed1b5mksatf({47, 79, 88, 71, 85}, 63, 928), Min = 50, Max = 500, Default = 50, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 48, 55, 62, 74, 86}, 63, 928), Callback = function(_mmkscv1515edc16mksgyu)
+    do
+      local _mkscv2515edc17mksgyx = 1
+      _mkscv2515edc17mksgyx = (_mkscv2515edc17mksgyx + 0)
+      _mmksav8515ed1fdmksazf.jump.value = _xmkscim515eda57mksfxl(_mmkscv1515edc16mksgyu, 50)
+    end
+  end})
+end
+do
+  local _mmkscv6515edc1bmksgz9 = 1
+  _mmkscv6515edc1bmksgz9 = (_mmkscv6515edc1bmksgz9 + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({40, 78, 71, 75, 81, 77, 89, 75, 7, 50, 94, 87, 91}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 47, 85, 78, 51, 95, 88, 92}, 63, 928), Callback = function(_xmkscv4515edc19mksgz3)
+    do
+      local _zmkscv5515edc1amksgz6 = 1
+      _zmkscv5515edc1amksgz6 = (_zmkscv5515edc1amksgz6 + 0)
+      _mmksav8515ed1fdmksazf.jump.infinite = (_xmkscv4515edc19mksgz3 == true)
+    end
+  end})
+end
+do
+  local _mkscv7515edc1cmksgzc = 1
+  _mkscv7515edc1cmksgzc = (_mkscv7515edc1cmksgzc + 0)
+  _xmksciw515eda61mksfyf:AddDivider()
+end
+do
+  local __mkscv8515edc1dmksgzf = 1
+  __mkscv8515edc1dmksgzf = (__mkscv8515edc1dmksgzf + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({37, 76, 90}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({79, 76, 66, 80, 72}, 63, 928)))
+end
+do
+  local _xmkscve515edc23mksgzx = 1
+  _xmkscve515edc23mksgzx = (_xmkscve515edc23mksgzx + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 44, 83, 97}, 63, 928), Callback = function(_xmkscv9515edc1emksgzi)
+    do
+      local _zmkscva515edc1fmksgzl = 1
+      _zmkscva515edc1fmksgzl = (_zmkscva515edc1fmksgzl + 0)
+      _mmksav8515ed1fdmksazf.fly.enabled = (_xmkscv9515edc1emksgzi == true)
+    end
+    do
+      local __mkscvd515edc22mksgzu = 1
+      __mkscvd515edc22mksgzu = (__mkscvd515edc22mksgzu + 0)
+      if (((6 + 87) == 93) and _mmksav8515ed1fdmksazf.fly.enabled) then
+        do
+          local _mmkscvb515edc20mksgzo = 1
+          _mmkscvb515edc20mksgzo = (_mmkscvb515edc20mksgzo + 0)
+          _mmksavd515ed202mksazu()
+        end
+      else
+        do
+          local _mkscvc515edc21mksgzr = 1
+          _mkscvc515edc21mksgzr = (_mkscvc515edc21mksgzr + 0)
+          _mksave515ed203mksazx()
+        end
+      end
+    end
+  end})
+end
+do
+  local _xmkscvj515edc28mksh0c = 1
+  _xmkscvj515edc28mksh0c = (_xmkscvj515edc28mksh0c + 0)
+  _xmksciw515eda61mksfyf:AddKeybind({Text = _xmksat8515ed1b5mksatf({37, 76, 90, 2, 46, 73, 94}, 63, 928), Description = _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 88, 6, 77, 84, 98, 10, 90, 90, 28, 93, 85, 86}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 44, 83, 97, 52, 79, 100}, 63, 928), Callback = function(_zmkscvf515edc24mksh00, _mmkscvg515edc25mksh03)
+    do
+      local __mkscvi515edc27mksh09 = 1
+      __mkscvi515edc27mksh09 = (__mkscvi515edc27mksh09 + 0)
+      if (((91 * 74) == (74 * 91)) and (typeof(_zmkscvf515edc24mksh00) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _mkscvh515edc26mksh06 = 1
+          _mkscvh515edc26mksh06 = (_mkscvh515edc26mksh06 + 0)
+          Binds.fly = _zmkscvf515edc24mksh00
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmkscvk515edc29mksh0f = 1
+  _zmkscvk515edc29mksh0f = (_zmkscvk515edc29mksh0f + 0)
+  _xmksciw515eda61mksfyf:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 47, 86, 100}, 63, 928))
+end
+do
+  local __mkscvn515edc2cmksh0o = 1
+  __mkscvn515edc2cmksh0o = (__mkscvn515edc2cmksh0o + 0)
+  _xmksciw515eda61mksfyf:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 80, 70, 71, 71}, 63, 928), Min = 10, Max = 300, Default = 50, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87, 20, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 44, 83, 97, 60, 90, 80, 81, 81}, 63, 928), Callback = function(_mmkscvl515edc2amksh0i)
+    do
+      local _mkscvm515edc2bmksh0l = 1
+      _mkscvm515edc2bmksh0l = (_mkscvm515edc2bmksh0l + 0)
+      _mmksav8515ed1fdmksazf.fly.speed = _xmkscim515eda57mksfxl(_mmkscvl515edc2amksh0i, 50)
+    end
+  end})
+end
+do
+  local _xmkscvo515edc2dmksh0r = 1
+  _xmkscvo515edc2dmksh0r = (_xmkscvo515edc2dmksh0r + 0)
+  _xmksciw515eda61mksfyf:AddDivider()
+end
+do
+  local _zmkscvp515edc2emksh0u = 1
+  _zmkscvp515edc2emksh0u = (_zmkscvp515edc2emksh0u + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({45, 79, 68, 78, 76, 84}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({84, 83, 70, 84}, 63, 928)))
+end
+do
+  local __mkscvs515edc31mksh13 = 1
+  __mkscvs515edc31mksh13 = (__mkscvs515edc31mksh13 + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 52, 86, 75, 85, 83, 91}, 63, 928), Callback = function(_mmkscvq515edc2fmksh0x)
+    do
+      local _mkscvr515edc30mksh10 = 1
+      _mkscvr515edc30mksh10 = (_mkscvr515edc30mksh10 + 0)
+      _mmksav8515ed1fdmksazf.noclip.enabled = (_mmkscvq515edc2fmksh0x == true)
+    end
+  end})
+end
+do
+  local __mkscvx515edc36mksh1i = 1
+  __mkscvx515edc36mksh1i = (__mkscvx515edc36mksh1i + 0)
+  _xmksciw515eda61mksfyf:AddKeybind({Text = _xmksat8515ed1b5mksatf({45, 79, 68, 78, 76, 84, 5, 49, 76, 97}, 63, 928), Description = _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 88, 6, 85, 87, 76, 86, 84, 92, 13, 93, 93, 31, 96, 88, 89}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 52, 86, 75, 85, 83, 91, 55, 82, 103}, 63, 928), Callback = function(_xmkscvt515edc32mksh16, _zmkscvu515edc33mksh19)
+    do
+      local _mkscvw515edc35mksh1f = 1
+      _mkscvw515edc35mksh1f = (_mkscvw515edc35mksh1f + 0)
+      if (((24 + 96) == 120) and (typeof(_xmkscvt515edc32mksh16) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _mmkscvv515edc34mksh1c = 1
+          _mmkscvv515edc34mksh1c = (_mmkscvv515edc34mksh1c + 0)
+          Binds.noclip = _xmkscvt515edc32mksh16
+        end
+      end
+    end
+  end})
+end
+do
+  local _xmkscvy515edc37mksh1l = 1
+  _xmkscvy515edc37mksh1l = (_xmkscvy515edc37mksh1l + 0)
+  _xmksciw515eda61mksfyf:AddDivider()
+end
+do
+  local _zmkscvz515edc38mksh1o = 1
+  _zmkscvz515edc38mksh1o = (_zmkscvz515edc38mksh1o + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({38, 82, 66, 88, 76, 88, 94}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({64, 82, 83, 81, 90, 17, 73, 85, 94, 86}, 63, 928)))
+end
+do
+  local __mkscw2515edc3bmksh1x = 1
+  __mkscw2515edc3bmksh1x = (__mkscw2515edc3bmksh1x + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 45, 89, 73, 95}, 63, 928), Callback = function(_mmkscw0515edc39mksh1r)
+    do
+      local _mkscw1515edc3amksh1u = 1
+      _mkscw1515edc3amksh1u = (_mkscw1515edc3amksh1u + 0)
+      _mmksav8515ed1fdmksazf.gravity.enabled = (_mmkscw0515edc39mksh1r == true)
+    end
+  end})
+end
+do
+  local _xmkscw3515edc3cmksh20 = 1
+  _xmkscw3515edc3cmksh20 = (_xmkscw3515edc3cmksh20 + 0)
+  _xmksciw515eda61mksfyf:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 48, 92, 76, 98, 86, 98, 104}, 63, 928))
+end
+do
+  local _mkscw6515edc3fmksh29 = 1
+  _mkscw6515edc3fmksh29 = (_mkscw6515edc3fmksh29 + 0)
+  _xmksciw515eda61mksfyf:AddSlider({Text = _xmksat8515ed1b5mksatf({53, 65, 77, 87, 72}, 63, 928), Min = 0, Max = 500, Default = 196.2, Increment = 0.1, Suffix = _xmksat8515ed1b5mksatf({255, 71, 83, 67, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 45, 89, 73, 95, 64, 76, 88}, 63, 928), Callback = function(_zmkscw4515edc3dmksh23)
+    do
+      local _mmkscw5515edc3emksh26 = 1
+      _mmkscw5515edc3emksh26 = (_mmkscw5515edc3emksh26 + 0)
+      _mmksav8515ed1fdmksazf.gravity.value = _xmkscim515eda57mksfxl(_zmkscw4515edc3dmksh23, 196.2)
+    end
+  end})
+end
+do
+  local __mkscw7515edc40mksh2c = 1
+  __mkscw7515edc40mksh2c = (__mkscw7515edc40mksh2c + 0)
+  _xmksciw515eda61mksfyf:AddDivider()
+end
+do
+  local _xmkscw8515edc41mksh2f = 1
+  _xmkscw8515edc41mksh2f = (_xmkscw8515edc41mksh2f + 0)
+  _xmksciw515eda61mksfyf:AddSection(_xmksat8515ed1b5mksatf({51, 48, 1, 40, 82, 86, 92, 71, 89, 76}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 79, 87, 71}, 63, 928)))
+end
+do
+  local _mkscwb515edc44mksh2o = 1
+  _mkscwb515edc44mksh2o = (_mkscwb515edc44mksh2o + 0)
+  _xmksciw515eda61mksfyf:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 58, 55}, 63, 928), Callback = function(_zmkscw9515edc42mksh2i)
+    do
+      local _mmkscwa515edc43mksh2l = 1
+      _mmkscwa515edc43mksh2l = (_mmkscwa515edc43mksh2l + 0)
+      _mmksav8515ed1fdmksazf.tp.enabled = (_zmkscw9515edc42mksh2i == true)
+    end
+  end})
+end
+do
+  local _mkscwg515edc49mksh33 = 1
+  _mkscwg515edc49mksh33 = (_mkscwg515edc49mksh33 + 0)
+  _xmksciw515eda61mksfyf:AddKeybind({Text = _xmksat8515ed1b5mksatf({51, 48, 1, 45, 72, 93}, 63, 928), Description = _xmksat8515ed1b5mksatf({42, 69, 90, 2, 88, 87, 74, 74, 7, 92, 88, 10, 63, 60, 13, 103, 94, 101, 17, 88, 98, 102, 108, 87, 105, 92}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 58, 55, 51, 78, 99}, 63, 928), Callback = function(__mkscwc515edc45mksh2r, _xmkscwd515edc46mksh2u)
+    do
+      local _mmkscwf515edc48mksh30 = 1
+      _mmkscwf515edc48mksh30 = (_mmkscwf515edc48mksh30 + 0)
+      if (((95 + 7) == 102) and (typeof(__mkscwc515edc45mksh2r) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _zmkscwe515edc47mksh2x = 1
+          _zmkscwe515edc47mksh2x = (_zmkscwe515edc47mksh2x + 0)
+          Binds.tp = __mkscwc515edc45mksh2r
+        end
+      end
+    end
+  end})
+end
+do
+  local __mkscwh515edc4amksh36 = 1
+  __mkscwh515edc4amksh36 = (__mkscwh515edc4amksh36 + 0)
+  _xmksciw515eda61mksfyf:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 61, 58, 11, 50, 92, 96, 102, 81, 99, 86}, 63, 928))
+end
+do
+  local _mmkscwk515edc4dmksh3f = 1
+  _mmkscwk515edc4dmksh3f = (_mmkscwk515edc4dmksh3f + 0)
+  _xmksciw515eda61mksfyf:AddSlider({Text = _xmksat8515ed1b5mksatf({35, 73, 84, 86, 68, 82, 72, 75}, 63, 928), Min = 1, Max = 200, Default = 20, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({47, 44, 34, 59, 40, 54, 68, 58, 55, 44, 82, 93, 95}, 63, 928), Callback = function(_xmkscwi515edc4bmksh39)
+    do
+      local _zmkscwj515edc4cmksh3c = 1
+      _zmkscwj515edc4cmksh3c = (_zmkscwj515edc4cmksh3c + 0)
+      _mmksav8515ed1fdmksazf.tp.distance = _xmkscim515eda57mksfxl(_xmkscwi515edc4bmksh39, 20)
+    end
+  end})
+end
+do
+  local _mkscwl515edc4emksh3i = 1
+  _mkscwl515edc4emksh3i = (_mkscwl515edc4emksh3i + 0)
+  _zmkscix515eda62mksfyi:AddSection(_xmksat8515ed1b5mksatf({37, 47, 55, 2, 38, 76, 70, 84, 78, 77, 91}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 65, 78, 71, 85, 69}, 63, 928)))
+end
+do
+  local _zmkscwo515edc51mksh3r = 1
+  _zmkscwo515edc51mksh3r = (_zmkscwo515edc51mksh3r + 0)
+  _zmkscix515eda62mksfyi:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 84, 92}, 63, 928), Callback = function(__mkscwm515edc4fmksh3l)
+    do
+      local _xmkscwn515edc50mksh3o = 1
+      _xmkscwn515edc50mksh3o = (_xmkscwn515edc50mksh3o + 0)
+      __mksava515ed1ffmksazl.fov.enabled = (__mkscwm515edc4fmksh3l == true)
+    end
+  end})
+end
+do
+  local _mmkscwp515edc52mksh3u = 1
+  _mmkscwp515edc52mksh3u = (_mmkscwp515edc52mksh3u + 0)
+  _zmkscix515eda62mksfyi:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 44, 75, 88, 81, 95, 79, 15, 54, 64, 72}, 63, 928))
+end
+do
+  local _xmkscws515edc55mksh43 = 1
+  _xmkscws515edc55mksh43 = (_xmkscws515edc55mksh43 + 0)
+  _zmkscix515eda62mksfyi:AddSlider({Text = _xmksat8515ed1b5mksatf({37, 47, 55}, 63, 928), Min = 1, Max = 120, Default = 70, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({143}, 63, 928), Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 84, 92, 61, 73, 85, 95, 80}, 63, 928), Callback = function(_mkscwq515edc53mksh3x)
+    do
+      local __mkscwr515edc54mksh40 = 1
+      __mkscwr515edc54mksh40 = (__mkscwr515edc54mksh40 + 0)
+      __mksava515ed1ffmksazl.fov.value = _xmkscim515eda57mksfxl(_mkscwq515edc53mksh3x, 70)
+    end
+  end})
+end
+do
+  local _zmkscwt515edc56mksh46 = 1
+  _zmkscwt515edc56mksh46 = (_zmkscwt515edc56mksh46 + 0)
+  _zmkscix515eda62mksfyi:AddDivider()
+end
+do
+  local _mmkscwu515edc57mksh49 = 1
+  _mmkscwu515edc57mksh49 = (_mmkscwu515edc57mksh49 + 0)
+  _zmkscix515eda62mksfyi:AddSection(_xmksat8515ed1b5mksatf({37, 82, 70, 71, 70, 69, 82, 6, 15, 74, 94, 81, 82, 101, 22}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({85, 73, 69, 71, 82}, 63, 928)))
+end
+do
+  local _mkscx0515edc5dmksh4r = 1
+  _mkscx0515edc5dmksh4r = (_mkscx0515edc5dmksh4r + 0)
+  _zmkscix515eda62mksfyi:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 87, 75, 76, 75, 74, 87}, 63, 928), Callback = function(_mkscwv515edc58mksh4c)
+    do
+      local __mkscww515edc59mksh4f = 1
+      __mkscww515edc59mksh4f = (__mkscww515edc59mksh4f + 0)
+      __mksava515ed1ffmksazl.freecam.enabled = (_mkscwv515edc58mksh4c == true)
+    end
+    do
+      local _mmkscwz515edc5cmksh4o = 1
+      _mmkscwz515edc5cmksh4o = (_mmkscwz515edc5cmksh4o + 0)
+      if ((((91 * 91) - (32 * 32)) == ((91 - 32) * (91 + 32))) and __mksava515ed1ffmksazl.freecam.enabled) then
+        do
+          local _xmkscwx515edc5amksh4i = 1
+          _xmkscwx515edc5amksh4i = (_xmkscwx515edc5amksh4i + 0)
+          __mksavf515ed204mksb00()
+        end
+      else
+        do
+          local _zmkscwy515edc5bmksh4l = 1
+          _zmkscwy515edc5bmksh4l = (_zmkscwy515edc5bmksh4l + 0)
+          _xmksavg515ed205mksb03()
+        end
+      end
+    end
+  end})
+end
+do
+  local _mkscx5515edc62mksh56 = 1
+  _mkscx5515edc62mksh56 = (_mkscx5515edc62mksh56 + 0)
+  _zmkscix515eda62mksfyi:AddKeybind({Text = _xmksat8515ed1b5mksatf({37, 82, 70, 71, 70, 69, 82, 6, 50, 77, 98}, 63, 928), Description = _xmksat8515ed1b5mksatf({51, 79, 72, 73, 79, 73, 88, 6, 77, 90, 78, 79, 78, 77, 90}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = nil, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 87, 75, 76, 75, 74, 87, 54, 81, 102}, 63, 928), Callback = function(__mkscx1515edc5emksh4u, _xmkscx2515edc5fmksh4x)
+    do
+      local _mmkscx4515edc61mksh53 = 1
+      _mmkscx4515edc61mksh53 = (_mmkscx4515edc61mksh53 + 0)
+      if (((95 + 93) == 188) and (typeof(__mkscx1515edc5emksh4u) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local _zmkscx3515edc60mksh50 = 1
+          _zmkscx3515edc60mksh50 = (_zmkscx3515edc60mksh50 + 0)
+          Binds.freecam = __mkscx1515edc5emksh4u
+        end
+      end
+    end
+  end})
+end
+do
+  local __mkscx6515edc63mksh59 = 1
+  __mkscx6515edc63mksh59 = (__mkscx6515edc63mksh59 + 0)
+  _zmkscix515eda62mksfyi:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 47, 92, 80, 81, 80, 79, 92}, 63, 928))
+end
+do
+  local _mmkscx9515edc66mksh5i = 1
+  _mmkscx9515edc66mksh5i = (_mmkscx9515edc66mksh5i + 0)
+  _zmkscix515eda62mksfyi:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 80, 70, 71, 71}, 63, 928), Min = 5, Max = 300, Default = 30, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87, 20, 89}, 63, 928), Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 42, 87, 75, 76, 75, 74, 87, 62, 92, 82, 83, 83}, 63, 928), Callback = function(_xmkscx7515edc64mksh5c)
+    do
+      local _zmkscx8515edc65mksh5f = 1
+      _zmkscx8515edc65mksh5f = (_zmkscx8515edc65mksh5f + 0)
+      __mksava515ed1ffmksazl.freecam.speed = _xmkscim515eda57mksfxl(_xmkscx7515edc64mksh5c, 30)
+    end
+  end})
+end
+do
+  local _mkscxa515edc67mksh5l = 1
+  _mkscxa515edc67mksh5l = (_mkscxa515edc67mksh5l + 0)
+  _zmkscix515eda62mksfyi:AddDivider()
+end
+do
+  local __mkscxb515edc68mksh5o = 1
+  __mkscxb515edc68mksh5o = (__mkscxb515edc68mksh5o + 0)
+  _zmkscix515eda62mksfyi:AddSection(_xmksat8515ed1b5mksatf({52, 78, 77, 81, 70, 79, 5, 64, 86, 87, 86}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({89, 79, 80, 79, 16, 77, 83}, 63, 928)))
+end
+do
+  local _mmkscxe515edc6bmksh5x = 1
+  _mmkscxe515edc6bmksh5x = (_mmkscxe515edc6bmksh5x + 0)
+  _zmkscix515eda62mksfyi:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 57, 83, 82, 86, 75, 84, 68, 90, 91, 90}, 63, 928), Callback = function(_xmkscxc515edc69mksh5r)
+    do
+      local _zmkscxd515edc6amksh5u = 1
+      _zmkscxd515edc6amksh5u = (_zmkscxd515edc6amksh5u + 0)
+      __mksava515ed1ffmksazl.unlockzoom.enabled = (_xmkscxc515edc69mksh5r == true)
+    end
+  end})
+end
+do
+  local _mkscxf515edc6cmksh60 = 1
+  _mkscxf515edc6cmksh60 = (_mkscxf515edc6cmksh60 + 0)
+  _zmkscix515eda62mksfyi:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 62, 88, 87, 91, 80, 89, 15, 74, 96, 97, 96}, 63, 928))
+end
+do
+  local _zmkscxi515edc6fmksh69 = 1
+  _zmkscxi515edc6fmksh69 = (_zmkscxi515edc6fmksh69 + 0)
+  _zmkscix515eda62mksfyi:AddSlider({Text = _xmksat8515ed1b5mksatf({44, 73, 79, 2, 61, 83, 84, 83}, 63, 928), Min = 0, Max = 100, Default = 0, Increment = 1, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 62, 84, 85, 84, 53, 82, 88}, 63, 928), Callback = function(__mkscxg515edc6dmksh63)
+    do
+      local _xmkscxh515edc6emksh66 = 1
+      _xmkscxh515edc6emksh66 = (_xmkscxh515edc6emksh66 + 0)
+      __mksava515ed1ffmksazl.unlockzoom.min = _xmkscim515eda57mksfxl(__mkscxg515edc6dmksh63, 0)
+    end
+  end})
+end
+do
+  local __mkscxl515edc72mksh6i = 1
+  __mkscxl515edc72mksh6i = (__mkscxl515edc72mksh6i + 0)
+  _zmkscix515eda62mksfyi:AddSlider({Text = _xmksat8515ed1b5mksatf({44, 65, 89, 2, 61, 83, 84, 83}, 63, 928), Min = 100, Max = 2000, Default = 500, Increment = 10, Suffix = _xmksat8515ed1b5mksatf({255, 83, 85, 87, 71, 87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 62, 84, 85, 84, 53, 74, 98}, 63, 928), Callback = function(_mmkscxj515edc70mksh6c)
+    do
+      local _mkscxk515edc71mksh6f = 1
+      _mkscxk515edc71mksh6f = (_mkscxk515edc71mksh6f + 0)
+      __mksava515ed1ffmksazl.unlockzoom.max = _xmkscim515eda57mksfxl(_mmkscxj515edc70mksh6c, 500)
+    end
+  end})
+end
+do
+  local _xmkscxm515edc73mksh6l = 1
+  _xmkscxm515edc73mksh6l = (_xmkscxm515edc73mksh6l + 0)
+  _zmkscix515eda62mksfyi:AddDivider()
+end
+do
+  local _zmkscxn515edc74mksh6o = 1
+  _zmkscxn515edc74mksh6o = (_zmkscxn515edc74mksh6o + 0)
+  _zmkscix515eda62mksfyi:AddSection(_xmksat8515ed1b5mksatf({49, 69, 84, 81, 79, 89, 89, 79, 86, 86}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 79, 79, 75, 87, 83, 87}, 63, 928)))
+end
+do
+  local _xmkscxr515edc78mksh70 = 1
+  _xmkscxr515edc78mksh70 = (_xmkscxr515edc78mksh70 + 0)
+  _zmkscix515eda62mksfyi:AddToggle({Text = _xmksat8515ed1b5mksatf({36, 78, 66, 68, 79, 73, 73}, 63, 928), Description = _xmksat8515ed1b5mksatf({38, 69, 85, 2, 86, 88, 87, 75, 74, 80, 78, 78, 11, 94, 82, 97}, 63, 928), Default = false, Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 54, 74, 89, 86, 84, 94, 94, 84, 91, 91, 51, 93, 81, 83, 94, 88, 88}, 63, 928), Callback = function(_mmkscxo515edc75mksh6r)
+    do
+      local __mkscxq515edc77mksh6x = 1
+      __mkscxq515edc77mksh6x = (__mkscxq515edc77mksh6x + 0)
+      if (((88 * 18) == (18 * 88)) and (_mmkscxo515edc75mksh6r == false)) then
+        do
+          local _mkscxp515edc76mksh6u = 1
+          _mkscxp515edc76mksh6u = (_mkscxp515edc76mksh6u + 0)
+          __mksava515ed1ffmksazl.resolution = 1
+        end
+      end
+    end
+  end})
+end
+do
+  local _zmkscxs515edc79mksh73 = 1
+  _zmkscxs515edc79mksh73 = (_zmkscxs515edc79mksh73 + 0)
+  _zmkscix515eda62mksfyi:AddLineText(_xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 90, 88, 76, 8, 59, 79, 94, 91, 89, 99, 99, 89, 96, 96}, 63, 928))
+end
+do
+  local __mkscxv515edc7cmksh7c = 1
+  __mkscxv515edc7cmksh7c = (__mkscxv515edc7cmksh7c + 0)
+  _zmkscix515eda62mksfyi:AddSlider({Text = _xmksat8515ed1b5mksatf({50, 84, 83, 71, 87, 71, 77}, 63, 928), Min = 0, Max = 1, Default = 1, Increment = 0.01, Suffix = _xmksat8515ed1b5mksatf({87}, 63, 928), Flag = _xmksat8515ed1b5mksatf({44, 41, 52, 37, 66, 54, 74, 89, 86, 84, 94, 94, 84, 91, 91}, 63, 928), Callback = function(_mmkscxt515edc7amksh76)
+    do
+      local _mkscxu515edc7bmksh79 = 1
+      _mkscxu515edc7bmksh79 = (_mkscxu515edc7bmksh79 + 0)
+      __mksava515ed1ffmksazl.resolution = _xmkscim515eda57mksfxl(_mmkscxt515edc7amksh76, 1)
+    end
+  end})
+end
+do
+  local _xmkscxw515edc7dmksh7f = 1
+  _xmkscxw515edc7dmksh7f = (_xmkscxw515edc7dmksh7f + 0)
+  _mmksciy515eda63mksfyl:AddSection(_xmksat8515ed1b5mksatf({44, 69, 79, 87}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89}, 63, 928)))
+end
+do
+  local _zmkscxx515edc7emksh7i = 1
+  _zmkscxx515edc7emksh7i = (_zmkscxx515edc7emksh7i + 0)
+  _mmksciy515eda63mksfyl:AddParagraph({Title = _xmksat8515ed1b5mksatf({44, 69, 79, 87}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89}, 63, 928)), Text = _xmksat8515ed1b5mksatf({34, 85, 84, 86, 82, 81, 78, 96, 76, 8, 98, 89, 96, 94, 13, 68, 80, 94, 101, 83, 19, 89, 109, 102, 92, 106, 98, 95, 105, 95, 98, 31}, 63, 928)})
+end
+do
+  local _zmkscy2515edc83mksh7x = 1
+  _zmkscy2515edc83mksh7x = (_zmkscy2515edc83mksh7x + 0)
+  _mmksciy515eda63mksfyl:AddKeybind({Text = _xmksat8515ed1b5mksatf({44, 69, 79, 87, 3, 56, 84, 77, 78, 84, 78, 10, 54, 81, 102}, 63, 928), Description = _xmksat8515ed1b5mksatf({46, 80, 70, 80, 86, 4, 70, 84, 75, 8, 76, 86, 90, 95, 82, 97, 15, 100, 89, 87, 19, 107, 94, 100, 91, 103, 112}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({74, 69, 90, 68, 82, 69, 87, 74}, 63, 928)), Default = Enum.KeyCode.RightShift, Flag = _xmksat8515ed1b5mksatf({44, 37, 47, 55, 66, 56, 84, 77, 78, 84, 78, 53, 80, 101}, 63, 928), Callback = function(_mmkscxy515edc7fmksh7l, _mkscxz515edc80mksh7o)
+    do
+      local _xmkscy1515edc82mksh7u = 1
+      _xmkscy1515edc82mksh7u = (_xmkscy1515edc82mksh7u + 0)
+      if (((93 + 80) == 173) and (typeof(_mmkscxy515edc7fmksh7l) == _xmksat8515ed1b5mksatf({36, 78, 86, 79, 44, 88, 74, 83}, 63, 928))) then
+        do
+          local __mkscy0515edc81mksh7r = 1
+          __mkscy0515edc81mksh7r = (__mkscy0515edc81mksh7r + 0)
+          Binds.menu = _mmkscxy515edc7fmksh7l
+        end
+      end
+    end
+  end})
+end
+do
+  local __mkscy5515edc86mksh86 = 1
+  __mkscy5515edc86mksh86 = (__mkscy5515edc86mksh86 + 0)
+  _mmksciy515eda63mksfyl:AddButton({Text = _xmksat8515ed1b5mksatf({34, 76, 80, 85, 72, 4, 50, 75, 85, 93}, 63, 928), Description = _xmksat8515ed1b5mksatf({39, 73, 69, 71, 86, 4, 89, 78, 76, 8, 94, 83, 26, 99, 86, 92, 83, 95, 104}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({82, 69, 85, 86, 76, 82, 76, 89}, 63, 928)), Callback = function()
+    do
+      local _mkscy4515edc85mksh83 = 1
+      _mkscy4515edc85mksh83 = (_mkscy4515edc85mksh83 + 0)
+      pcall(function()
+        do
+          local _mmkscy3515edc84mksh80 = 1
+          _mmkscy3515edc84mksh80 = (_mmkscy3515edc84mksh80 + 0)
+          _mksc9o515ed915mksf6r:Close()
+        end
+      end)
+    end
+  end})
+end
+do
+  local _xmkscy6515edc87mksh89 = 1
+  _xmkscy6515edc87mksh89 = (_xmkscy6515edc87mksh89 + 0)
+  _mmksciy515eda63mksfyl:AddDivider()
+end
+do
+  local _zmkscy7515edc88mksh8c = 1
+  _zmkscy7515edc88mksh8c = (_zmkscy7515edc88mksh8c + 0)
+  _mmksciy515eda63mksfyl:AddSection(_xmksat8515ed1b5mksatf({40, 78, 85, 71, 85, 74, 70, 73, 76}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({76, 79, 79, 75, 87, 83, 87}, 63, 928)))
+end
+do
+  local _xmkscyb515edc8cmksh8o = 1
+  _xmkscyb515edc8cmksh8o = (_xmkscyb515edc8cmksh8o + 0)
+  _mmksciy515eda63mksfyl:AddToggle({Text = _xmksat8515ed1b5mksatf({33, 65, 68, 77, 74, 86, 84, 91, 85, 76, 9, 44, 87, 97, 95}, 63, 928), Description = _xmksat8515ed1b5mksatf({33, 76, 86, 84, 3, 88, 77, 75, 7, 79, 74, 87, 80, 12, 100, 93, 97, 92, 85, 18, 106, 92, 94, 98, 92, 24, 109, 98, 96, 28, 106, 99, 109, 117, 33, 107, 118, 36, 116, 118, 108, 118}, 63, 928), Default = true, Flag = _xmksat8515ed1b5mksatf({52, 41, 64, 36, 79, 89, 87}, 63, 928), Callback = function(_mmkscy8515edc89mksh8f)
+    do
+      local __mkscya515edc8bmksh8l = 1
+      __mkscya515edc8bmksh8l = (__mkscya515edc8bmksh8l + 0)
+      pcall(function()
+        do
+          local _mkscy9515edc8amksh8i = 1
+          _mkscy9515edc8amksh8i = (_mkscy9515edc8amksh8i + 0)
+          _zmksaud515ed1demksawu:SetBlurEnabled((_mmkscy8515edc89mksh8f == true))
+        end
+      end)
+    end
+  end})
+end
+do
+  local _zmkscyc515edc8dmksh8r = 1
+  _zmkscyc515edc8dmksh8r = (_zmkscyc515edc8dmksh8r + 0)
+  _mmksciy515eda63mksfyl:AddDivider()
+end
+do
+  local _mmkscyd515edc8emksh8u = 1
+  _mmkscyd515edc8emksh8u = (_mmkscyd515edc8emksh8u + 0)
+  _mmksciy515eda63mksfyl:AddSection(_xmksat8515ed1b5mksatf({34, 76, 80, 87, 71, 4, 40, 85, 85, 78, 82, 81, 94}, 63, 928), __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 76, 80, 87, 71}, 63, 928)))
+end
+do
+  local _mkscye515edc8fmksh8x = 1
+  _mkscye515edc8fmksh8x = (_mkscye515edc8fmksh8x + 0)
+  _mmksciy515eda63mksfyl:AddParagraph({Title = _xmksat8515ed1b5mksatf({34, 76, 80, 87, 71}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({66, 76, 80, 87, 71}, 63, 928)), Text = _xmksat8515ed1b5mksatf({52, 83, 70, 2, 87, 76, 74, 6, 74, 84, 88, 95, 79, 12, 86, 81, 94, 94, 17, 97, 97, 20, 105, 94, 92, 24, 91, 105, 111, 112, 108, 107, 31, 100, 112, 101, 110, 36, 107, 117, 121, 40, 89, 127, 109, 120, 118, 113, 59, 48, 94, 123, 129, 121, 65, 54, 120, 134, 125, 58, 103, 139, 128, 127, 139, 64, 132, 145, 145, 138, 142, 141, 154, 86, 73, 127, 158, 145, 77, 162, 151, 149, 81, 148, 168, 168, 169, 165, 165, 88, 155, 159, 167, 171, 180, 94, 179, 175, 97, 180, 168, 170, 183, 171, 186, 176, 105, 190, 179, 177, 109, 186, 184, 195, 197, 128}, 63, 928)})
+end
+do
+  local _xmkscz5515edcaamkshb6 = 1
+  _xmkscz5515edcaamkshb6 = (_xmkscz5515edcaamkshb6 + 0)
+  _mmksciy515eda63mksfyl:AddButton({Text = _xmksat8515ed1b5mksatf({49, 69, 71, 84, 72, 87, 77, 6, 42, 87, 87, 80, 84, 83, 13, 58, 88, 99, 101}, 63, 928), Description = _xmksat8515ed1b5mksatf({49, 69, 77, 81, 68, 72, 5, 90, 79, 77, 9, 77, 87, 91, 98, 82, 15, 83, 96, 96, 89, 93, 92, 22, 99, 97, 108, 110}, 63, 928), Icon = __mksc9k515ed911mksf6f(_xmksat8515ed1b5mksatf({81, 69, 71, 84, 72, 87, 77, 19, 74, 95}, 63, 928)), Callback = function()
+    do
+      local _zmkscyh515edc92mksh96 = 1
+      _zmkscyh515edc92mksh96 = (_zmkscyh515edc92mksh96 + 0)
+      pcall(function()
+        do
+          local _xmkscyg515edc91mksh93 = 1
+          _xmkscyg515edc91mksh93 = (_xmkscyg515edc91mksh93 + 0)
+          if ((((66 * 66) - (47 * 47)) == ((66 - 47) * (66 + 47))) and _xmkscgj515eda0cmksfrc.Open) then
+            do
+              local __mkscyf515edc90mksh90 = 1
+              __mkscyf515edc90mksh90 = (__mkscyf515edc90mksh90 + 0)
+              _xmkscgj515eda0cmksfrc.Open()
+            end
+          end
+        end
+      end)
+    end
+    do
+      local __mkscz4515edca9mkshb3 = 1
+      __mkscz4515edca9mkshb3 = (__mkscz4515edca9mkshb3 + 0)
+      task.defer(function()
+        local _mmkscyi515edc93mksh99, _mkscyj515edc94mksh9c = 0, nil
+        do
+          local _xmkscyq515edc9bmksh9x = 1
+          _xmkscyq515edc9bmksh9x = (_xmkscyq515edc9bmksh9x + 0)
+          pcall(function()
+            local __mkscyk515edc95mksh9f, _xmkscyl515edc96mksh9i = _mkscgc515eda05mksfqr:List({Sort = _xmksat8515ed1b5mksatf({77, 69, 88}, 63, 928), PageSize = 50})
+            do
+              local __mkscyp515edc9amksh9u = 1
+              __mkscyp515edc9amksh9u = (__mkscyp515edc9amksh9u + 0)
+              if ((((15 * 15) - (93 * 93)) == ((15 - 93) * (15 + 93))) and not __mkscyk515edc95mksh9f) then
+                do
+                  local _zmkscym515edc97mksh9l = 1
+                  _zmkscym515edc97mksh9l = (_zmkscym515edc97mksh9l + 0)
+                  _mkscyj515edc94mksh9c = tostring(_xmkscyl515edc96mksh9i)
+                end
+                do
+                  local _mmkscyn515edc98mksh9o = 1
+                  _mmkscyn515edc98mksh9o = (_mmkscyn515edc98mksh9o + 0)
+                  _mmkscyi515edc93mksh99 = -1
+                end
+              else
+                do
+                  local _mkscyo515edc99mksh9r = 1
+                  _mkscyo515edc99mksh9r = (_mkscyo515edc99mksh9r + 0)
+                  _mmkscyi515edc93mksh99 = #__mkscyk515edc95mksh9f
+                end
+              end
+            end
+          end)
+        end
+        do
+          local _xmkscyv515edca0mkshac = 1
+          _xmkscyv515edca0mkshac = (_xmkscyv515edca0mkshac + 0)
+          pcall(function()
+            do
+              local _mmkscys515edc9dmksha3 = 1
+              _mmkscys515edc9dmksha3 = (_mmkscys515edc9dmksha3 + 0)
+              if (((46 + 28) == 74) and _xmkscgj515eda0cmksfrc.RefreshPublic) then
+                do
+                  local _zmkscyr515edc9cmksha0 = 1
+                  _zmkscyr515edc9cmksha0 = (_zmkscyr515edc9cmksha0 + 0)
+                  _xmkscgj515eda0cmksfrc.RefreshPublic()
+                end
+              end
+            end
+            do
+              local __mkscyu515edc9fmksha9 = 1
+              __mkscyu515edc9fmksha9 = (__mkscyu515edc9fmksha9 + 0)
+              if ((((89 * 10) % 10) == 0) and _xmkscgj515eda0cmksfrc.RefreshMine) then
+                do
+                  local _mkscyt515edc9emksha6 = 1
+                  _mkscyt515edc9emksha6 = (_mkscyt515edc9emksha6 + 0)
+                  _xmkscgj515eda0cmksfrc.RefreshMine()
+                end
+              end
+            end
+          end)
+        end
+        do
+          local __mkscyz515edca4mkshao = 1
+          __mkscyz515edca4mkshao = (__mkscyz515edca4mkshao + 0)
+          task.delay(0.35, function()
+            do
+              local _mkscyy515edca3mkshal = 1
+              _mkscyy515edca3mkshal = (_mkscyy515edca3mkshal + 0)
+              pcall(function()
+                do
+                  local _mmkscyx515edca2mkshai = 1
+                  _mmkscyx515edca2mkshai = (_mmkscyx515edca2mkshai + 0)
+                  if ((((87 * 87) - (49 * 49)) == ((87 - 49) * (87 + 49))) and _xmkscgj515eda0cmksfrc.RefreshPublic) then
+                    do
+                      local _zmkscyw515edca1mkshaf = 1
+                      _zmkscyw515edca1mkshaf = (_zmkscyw515edca1mkshaf + 0)
+                      _xmkscgj515eda0cmksfrc.RefreshPublic()
+                    end
+                  end
+                end
+              end)
+            end
+          end)
+        end
+        do
+          local _mkscz3515edca8mkshb0 = 1
+          _mkscz3515edca8mkshb0 = (_mkscz3515edca8mkshb0 + 0)
+          pcall(function()
+            do
+              local _mmkscz2515edca7mkshax = 1
+              _mmkscz2515edca7mkshax = (_mmkscz2515edca7mkshax + 0)
+              if ((((9 * 9) - (44 * 44)) == ((9 - 44) * (9 + 44))) and (_mmkscyi515edc93mksh99 < 0)) then
+                do
+                  local _xmkscz0515edca5mkshar = 1
+                  _xmkscz0515edca5mkshar = (_xmkscz0515edca5mkshar + 0)
+                  _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({34, 79, 86, 78, 71, 82, 12, 90, 7, 90, 78, 80, 93, 81, 96, 86}, 63, 928), Text = _xmksat8515ed1b5mksatf({51, 82, 90, 2, 68, 75, 70, 79, 85, 8, 82, 88, 11, 77, 13, 91, 94, 93, 86, 96, 103, 34}, 63, 928), Type = _xmksat8515ed1b5mksatf({68, 82, 83, 81, 85}, 63, 928), Duration = 3})
+                end
+              else
+                do
+                  local _zmkscz1515edca6mkshau = 1
+                  _zmkscz1515edca6mkshau = (_zmkscz1515edca6mkshau + 0)
+                  _zmksaud515ed1demksawu:Notify({Title = _xmksat8515ed1b5mksatf({49, 69, 71, 84, 72, 87, 77, 75, 75}, 63, 928), Text = _xmksat8515ed1b5mksatf({34, 79, 79, 72, 76, 75, 5, 82, 80, 91, 93, 10, 96, 92, 81, 79, 99, 85, 85, 32}, 63, 928), Type = _xmksat8515ed1b5mksatf({82, 85, 68, 69, 72, 87, 88}, 63, 928), Duration = 2})
+                end
+              end
+            end
+          end)
+        end
+      end)
+    end
+  end})
+end
+do
+  local _zmkscz6515edcabmkshb9 = 1
+  _zmkscz6515edcabmkshb9 = (_zmkscz6515edcabmkshb9 + 0)
+  _mksc9o515ed915mksf6r:SelectTab(_xmksat8515ed1b5mksatf({39, 79, 78, 71}, 63, 928))
+end
+do
+  local _mmkscz7515edcacmkshbc = 1
+  _mmkscz7515edcacmkshbc = (_mmkscz7515edcacmkshbc + 0)
+  _mksc9o515ed915mksf6r:Open()
+end
+do
+  local _mkscz8515edcadmkshbf = 1
+  _mkscz8515edcadmkshbf = (_mkscz8515edcadmkshbf + 0)
+  getgenv().VantaUniversal = {VindUI = _zmksaud515ed1demksawu, Window = _mksc9o515ed915mksf6r, ESP = __mksav5515ed1famksaz6, AIM = _xmksav6515ed1fbmksaz9, SILENT = _zmksav7515ed1fcmksazc, Cloud = _mkscgc515eda05mksfqr}
+end
+do
+  local _mksczi515edcb7mkshc9 = 1
+  _mksczi515edcb7mkshc9 = (_mksczi515edcb7mkshc9 + 0)
+  pcall(function()
+    local __mkscz9515edcaemkshbi = game:GetService(_xmksat8515ed1b5mksatf({34, 79, 83, 71, 42, 89, 78}, 63, 928))
+    local _xmkscza515edcafmkshbl = __mkscz9515edcaemkshbi:FindFirstChild(_xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46}, 63, 928))
+    do
+      local _mmksczc515edcb1mkshbr = 1
+      _mmksczc515edcb1mkshbr = (_mmksczc515edcb1mkshbr + 0)
+      if ((((2 * 9) % 9) == 0) and _xmkscza515edcafmkshbl) then
+        do
+          local _zmksczb515edcb0mkshbo = 1
+          _zmksczb515edcb0mkshbo = (_zmksczb515edcb0mkshbo + 0)
+          _xmkscza515edcafmkshbl.Name = _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928)
+        end
+      end
+    end
+    do
+      local _mmksczh515edcb6mkshc6 = 1
+      _mmksczh515edcb6mkshc6 = (_mmksczh515edcb6mkshc6 + 0)
+      for _mksczd515edcb2mkshbu, __mkscze515edcb3mkshbx in ipairs(__mkscz9515edcaemkshbi:GetChildren()) do
+        do
+          local _zmksczg515edcb5mkshc3 = 1
+          _zmksczg515edcb5mkshc3 = (_zmksczg515edcb5mkshc3 + 0)
+          if (((59 + 23) == 82) and (__mkscze515edcb3mkshbx.Name == _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68, 57, 46}, 63, 928))) then
+            do
+              local _xmksczf515edcb4mkshc0 = 1
+              _xmksczf515edcb4mkshc0 = (_xmksczf515edcb4mkshc0 + 0)
+              __mkscze515edcb3mkshbx.Name = _xmksat8515ed1b5mksatf({53, 65, 79, 86, 68}, 63, 928)
+            end
+          end
+        end
+      end
+    end
+  end)
+end
