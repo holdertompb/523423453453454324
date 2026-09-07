@@ -1,1 +1,6370 @@
-return({mf=function(d,_)return function()local i,e,g,j,k,b,f j,i,e={},"Settings",_[1][1][_[1][0b11]]j.Name=i i="settings"j.Icon=i i="menu settings"j.Description=i f,e=e,e.AddTab e=e(f,j)i,k={},"Left"i.Side=k k="menu"i.Name=k k="keyboard"i.IconName=k k="menu keybind"i.Description=k j,f=e,e.AddGroupbox f=f(j,i)i,j,k=f,f.AddLabel,"menu bind"j=j(i,k)b,k,g="RightShift","MenuKeybind",{}g.Default=b b=true g.NoUI=b b="Menu keybind"g.Text=b j,i=j.AddKeyPicker,j j(i,k,g)g,k="Unload",{}k.Text=g g=d:of{_[0b11]}k.Func=g j,i=f.AddButton,f j(i,k)k,j=_[0b101][1][_[0b101][0b11]],_[0b11][1][_[0b11][0b11]]i=k.MenuKeybind j.ToggleKeybind=i k,j=_[0b11][1][_[0b11][0b11]],_[0b100][1][_[0b100][0b11]]j,i=j.SetLibrary,j j(i,k)j=_[0b10][1][_[0b10][0b11]]i,j=j,j.SetLibrary j(i,k)j=_[0b10][1][_[0b10][0b11]]i,j=j,j.IgnoreThemeSettings j(i)g,j,k="MenuKeybind",_[0b10][1][_[0b10][0b11]],{}k[1]=g j,i=j.SetIgnoreIndexes,j j(i,k)k,j="project_atomic",_[0b100][1][_[0b100][0b11]]i,j=j,j.SetFolder j(i,k)j,k=_[0b10][1][_[0b10][0b11]],"project_atomic/rivals"j,i=j.SetFolder,j j(i,k)j,k=_[0b10][1][_[0b10][0b11]],e i,j=j,j.BuildConfigSection j(i,k)k,j=e,_[0b100][1][_[0b100][0b11]]j,i=j.ApplyToTab,j j(i,k)i,j=d:nf{_[0b10]},pcall j(i)return end end,Ea=function(d,_)return function(e)local g,f,a g=0b1011011 while true do if g>=0b10110001 then if g<=0xb1 then g,a=0xacda/g,_[1][1][_[1][0b11]]f=a.crosshair f.outline_color=e else return end else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0b10110001 or 0b11111010 end end end end,u=function(n,_)return function()local c,o,h,f,m,k,j,b,l,e,i,a m=0b1100011 repeat if m<0b10000000 then if m>0b1010100 then if m>0b1100011 then m=j and 0x124-m or m+0b1010 else j=_[1][1][_[1][0b11]]l=j.PlayerDataController e=not l m=e and 0b10011111 or 0b111000 end elseif m<=0b111001 then if m>=0b111000 then if m>0b111000 then k=_[0b10][1][_[0b10][0b11]]i=k.fake_weapon_owned j=not i m=j and 0x1a46/m or 0x8d-m else e,l=pcall,n:ke{_[1]}e(l)e,l=nil,nil e={[0b11]=0b10,[0b10]=e}e[1]=e l={[0b11]=0b10,[0b10]=l}l[1]=l i,j=n:le{e,_[1]},pcall j(i)i=n:me{l,_[1]}j(i)i,j=e[1][e[0b11]],type j=j(i)i="table"m=j==i and 0x8a or m+0b10101011 end else b,a=i(k,o)o=b m=o==nil and 0xe3 or 0b11011010 end else o=_[0b10][1][_[0b10][0b11]]k=o.fake_weapon_owned i,k=#k,0 m,j=m+0x22,i==k end elseif m>0xad then if m<=0b11011010 then if m<=0b10101110 then i,j,k=_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]],l[1][l[0b11]]m,i=0b100101110-m,i(k)j.fake_weapon_owned=i else h=_[0b10][1][_[0b10][0b11]]f=h.fake_owned f,c=nil,f[b]m=c==f and 0x9352/m or 0x2ed6/m end else k,i=l[1][l[0b11]],type i=i(k)k="table"j=i==k m=j and 0x328b/m or m+-0b1101101 end elseif m>0x9f then f=_[0b10][1][_[0b10][0b11]]m,c=m+-0b1110110,f.fake_owned c[b]=a elseif m>0x8a then return elseif m<=0b10000000 then return else j,i=_[0b11][1][_[0b11][0b11]],e[1][e[0b11]]j=j(i)i,k=pairs,j i,k,o=i(k)i,k,o=n.b(i,k,o)b,a=i(k,o)o=b m=o==nil and 0x16d-m or 0xda end until false end end,ra=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.auto_rotate=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ea=function(d,_)return function(e)local a,h,g,c,f,i h=0x21 repeat if h<0b10011111 then if h<=0x6f then if h<0x22 then e={[0b11]=0b10,[0b10]=e}e[1]=e i=_[1][1][_[1][0b11]]a=i.spoof_avatar f=not a h=f and 0x22 or 0x81 elseif h>0x22 then h=f and 0b10110000 or 0b10011111 else h=f and 0b1101111 or 0b11000010-h end else h,f=0x22,not e[1][e[0b11]]end elseif h<0b10110000 then if h<=0x9f then a=_[1][1][_[1][0b11]]f=a.avatar_userid a=not f h=a and 0b110011001-h or 0x791d/h else i,a,c=e[1][e[0b11]],e[1][e[0b11]].IsA,"ImageLabel"h,a=0x6f,a(i,c)f=not a end elseif h>0xc3 then return elseif h>0xb0 then i=string c,i,g,a=tostring,"rbxthumb://type=AvatarHeadShot&id=%s&w=150&h=150",f,i.format c=d.c(c(g))a=a(i,d.d(c))a={[0b11]=0b10,[0b10]=a}a[1]=a c,i=d:ze{e,a},pcall i(c)return else return end until false end end,Bd=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.inject f.stack_duplicates=e return end end,wa=function(d,_)return function()local b,a,e,f e=_[1][1][_[1][0b11]]e()a,e,f=_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]],"InvDeleteEntry"a=a()b=nil e(f,a,b)return end end,nb=function(d)return function(e)local f,h,b,a h=0xda while true do if h<=0b10110010 then if h<0b1101001 then return b elseif h>0x69 then h,b=0x1214/h,nil else h,b=0xe0,a end elseif h<=0xda then f,a=pcall,e f,a=f(a)b=f h=b and 0b1101001 or 0xe0 else h=b and 0x1a or 0xb2 end end end end,Lc=function(d,_)return function(e,f,a)local h,i,c h=0b11111 repeat if h>=0b1010110 then if h<0x6f then return elseif h>0b1101111 then a[1][a[0b11]],c=i,task i,c=c.spawn,d:Vf{_[0b11],_[0b111],f,_[0b110],_[0b10],a,_[0b100],e,_[0b101]}i(c)return else h,i=0x6a3b/h,0 end elseif h>0b11111 then i,c=tonumber,a[1][a[0b11]]i=i(c)h=i and 0b11110101 or 0xc2-h else e={[0b11]=0b10,[0b10]=e}e[1]=e f={[0b11]=0b10,[0b10]=f}f[1]=f a={[0b11]=0b10,[0b10]=a}a[1]=a c=_[1][1][_[1][0b11]]c=c()i=not c h=i and 0x56 or 0x53 end until false end end,L=function(d,_)return function(e)local i,f,c,g,h,a h=0b10000 repeat if h<0x6a then if h<0b101010 then if h>0b10000 then h,i=h+0b101100,1 else a=_[1][1][_[1][0b11]]f,i=a.charm,math c,a,i=e,i.clamp,tonumber i=i(c)h=i and 0x48 or 0b11100 end elseif h<=0x48 then if h>0b101010 then c,g=1,0x64 a=a(i,c,g)f.arch_rank=a i=_[1][1][_[1][0b11]]a=i.charm f=a.s0_charm h=f and 0x1ab8/h or 0x3060/h else f=_[0b10][1][_[0b10][0b11]]h=0x17f4/h f()end else h=f and 0b1101011 or 0x8f end elseif h<0x8f then if h>0x6b then h,i=0xf6-h,_[1][1][_[1][0b11]]a=i.charm f=a.s3_charm elseif h<=0x6a then h=f and 0x2a or 0xfc-h else h=f and 0b1101010 or 0b10001100 end elseif h<0b10010010 then h,i=0x6b,_[1][1][_[1][0b11]]a=i.charm f=a.s2_charm elseif h>0b10010010 then h,i=h+-0x4d,_[1][1][_[1][0b11]]a=i.charm f=a.s1_charm else return end until false end end,Ud=function(d,_)return function()local a,f,e f=_[1][1][_[1][0b11]]a,e=_[0b10][1][_[0b10][0b11]],f.EnumLibrary a,e,f=a.Name,e.ToEnum,e e=d.c(e(f,a))return d.d(e)end end,ba=function(d,_)return function(e)local c,a,f,b,h h=0x3a repeat if h<=0b101100 then if h>0x1f then return else f=_[0b10][1][_[0b10][0b11]]h=0x2c f()end else a=_[1][1][_[1][0b11]]c,a,f,b=0,_[0b11][1][_[0b11][0b11]],a.leaderboard,e a=a(b,c)f.wins_value=a b=_[1][1][_[1][0b11]]a=b.leaderboard f=a.Wins h=f and 0x1f or 0b101100 end until false end end,wd=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.rotation_speed=e return end end,Qc=function(d,_)return function(e)local f,c c=0b1111111 while true do if c>0b1111111 then return elseif c<=0x20 then f=_[0b11][1][_[0b11][0b11]]f()f=_[0b10][1][_[0b10][0b11]]c=0x1360/c f()else f=_[1][1][_[1][0b11]]f.skybox_enabled=e c=e and 0x20 or 0b10011011 end end end end,l=function(d,_)return function()local k,f,e,j,i,b,g e=_[1][1][_[1][0b11]]e()j,i,e={},"Unlock",_[0b11][1][_[0b11][0b11]]j.Title=i k,b="type: ",_[0b10][1][_[0b10][0b11]]g=b.unlock_type i=k..g j.Description=i i=0b10 j.Time=i e,f=e.Notify,e e(f,j)return end end,S=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.equip_inverted=e return end end,j=function(d,_)return function()local b,g,k,e,j,f,i e=_[1][1][_[1][0b11]]e()i,j,e="Unlock",{},_[0b11][1][_[0b11][0b11]]j.Title=i k,g,b="weapon: ",tostring,_[0b10][1][_[0b10][0b11]]b=b.specific_weapon g=g(b)i=k..g j.Description=i i=0b10 j.Time=i e,f=e.Notify,e e(f,j)return end end,Vb=function(d,_)return function(e)local a,h,f,c,b h=0b11001110 repeat if h>=0x82 then if h>=0xd0 then if h<0xd6 then f=_[1][1][_[1][0b11]]h=f and h+-0b10000101 or 0x82 elseif h>0b11010110 then return else return end elseif h<=0b10000101 then if h<=0x82 then h=f and h+0b1100110 or 0x3cf0/h else h=f and 0xd6 or 0xd0 end else e={[0b11]=0b10,[0b10]=e}e[1]=e f=not e[1][e[0b11]]h=f and 0b10000101 or 0b1101000 end elseif h<=0b1101000 then if h<=0x51 then if h>0x4b then h,f=0b10000101,not a else f,h,a=_[1][1][_[1][0b11]],0b11001101-h,e[1][e[0b11]]f=f(a)end else c,a,b="TextLabel",e[1][e[0b11]].IsA,e[1][e[0b11]]a=a(b,c)h=a and 0b1010001 or 0b1111100 end elseif h<=0x78 then f,a=pcall,d:pf{e,_[0b11],_[0b10],_[0b100]}f(a)return else a,c,b=e[1][e[0b11]].IsA,"TextButton",e[1][e[0b11]]h,a=0b11001101-h,a(b,c)end until false end end,d=(function()local function m(i,j,k)if j>k then return end return i[j],m(i,j+1,k)end return function(o)return m(o[1],1,o[0b10])end end)(),rc=function(d,_)return function(e)local f,g,a g=0b11001010 repeat if g>0b11001010 then g,f=g+-0b10110101,_[1][1][_[1][0b11]]f.shift_bottom=e f=_[0b10][1][_[0b10][0b11]]f()elseif g>0b111110 then f,a=typeof,e f=f(a)a="Color3"g=f==a and 0xf3 or 0x3e else return end until false end end,Xf=function(d,_)return function()local b,c,e,h,a,f h=0xd1 repeat if h<0b1111100 then f,a,b,c=_[0b11][1][_[0b11][0b11]],_[0b1001][1][_[0b1001][0b11]],e.OnClientEvent,d:Yf{_[0b110],_[0b10],_[0b100],_[0b101],_[0b111],_[0b1000],_[0b1001]}f(a,b,c)return elseif h<=0b1111100 then return else b=_[1][1][_[1][0b11]]a=b.Remotes f=a.Misc e=f.UpdateLeaderboard f=not e h=f and 0x7c or 0x35 end until false end end,se=function(d,_)return function(e)local h,b,f,a h=0x28 while true do if h<0b1011000 then if h<=0x28 then e={[0b11]=0b10,[0b10]=e}e[1]=e b,f,a="Sky",e[1][e[0b11]].IsA,e[1][e[0b11]]f=f(a,b)h=f and 0x95 or 0b11111110 else a=task f,a=a.defer,d:te{e}h=0b1011000 f(a)end elseif h<0x95 then return elseif h<=0x95 then b=_[1][1][_[1][0b11]]h,a=0xfe,b.lighting_skybox f=e[1][e[0b11]]~=a else h=f and 0x2f or 0x58 end end end end,td=function(n,s)return function()local a,i,m,b,l,o,d,j,e,c,h,f,q,p,g,r m=0xf2 while true do if m>0x9e then if m<0b11001111 then if m>=0xb6 then if m<0b11001000 then if m>0xb6 then m=g and 0b10001001 or 0b10011110 else o=not j m=o and 0b10000100 or 0xa6 end elseif m<=0xc8 then r=not l m=r and 0x2bc0/m or 0x4d else r,a,b=s[0b11][1][s[0b11][0b11]],"Inventory",{}b.Title=a a="select a cosmetic"b.Description=a a=0b10 b.Time=a r,o=r.Notify,r r(o,b)return end elseif m<0xaa then b=""m,o=0x5598/m,j==b elseif m<=0b10101010 then b=s[0b101][1][s[0b101][0b11]]b,o=true,b.fake_owned o[l]=b o=s[0b100][1][s[0b100][0b11]]o=o()f=s[1][1][s[1][0b11]]q=f.inject a=q.stack_duplicates b=not a m=b and m+0b1001110 or 0x18c-m else d=p.Quantity m=d and 0x3e or 0x75 end elseif m>0xea then if m>=0xf8 then if m<=0b11111000 then a=table b,q,m,a=a.insert,r,0b1010000,o b(a,q)else m,d,c=0xff-m,p.Weapon,r.Weapon g=d==c end else j=s[1][1][s[1][0b11]]l=j.inject i,e=j,l.item_type j=i.inject r,l=i,j.cosmetic_name i=r.inject j,o=i.weapon_name,r r=o.inject i=r.quantity m=i and 0b11001000 or 0b10 end elseif m<=0b11100010 then if m<0xdc then m,c=0x51,1 elseif m>0b11011100 then b,a,q=false,ipairs,o a,q,f=a(q)a,q,f=n.b(a,q,f)h,p=a(q,f)f=h m=f==nil and 0xc866/m or 0xea else o={}o.Name=l o.Quantity=i m,o.Weapon=0xaa,j r=o end elseif m<=0xe3 then a=not b m=a and 0b11111111-m or 0x50 else d,c=p.Name,r.Name g=d==c m=g and m+0x10 or m+-0b11100101 end elseif m<0b1010000 then if m>0x1c then if m<0b111110 then m=r and 0x106-m or m+-0b110101 elseif m>0x3e then m,o=0x38,""r=l==o else c=0b1100011 m,g=0x2e80/m,d<c end elseif m>=0b101 then if m>=0x1a then if m>0x1a then q=table a,q,f=q.insert,o,r m=0x50 a(q,f)else o={}o.Name=l m,o.Quantity=0b10101010,i r=o end else m=g and 0b10110001 or 0x3c0/m end elseif m<=0b10 then m,i=0b110010000/m,1 else o,r="Skin",nil m=e==o and 0b10110110 or 0x1a end elseif m>=0b1111100 then if m>=0b10001001 then if m>0b10001010 then h,p=a(q,f)f=h m=f==nil and m+0b1000101 or 0x906c/m elseif m<=0b10001001 then d=p.Quantity m=d and m+1 or 0x7b else c=r.Quantity m=c and 0x51 or 0b11001111 end elseif m>0b1111100 then m=o and m+-0b1000 or 0x160-m else a,q,o={},"Inventory",s[0b11][1][s[0b11][0b11]]a.Title=q q="skin needs a weapon"a.Description=q q=0b10 a.Time=q b,o=o,o.Notify o(b,a)return end elseif m<0x75 then if m>0b1010000 then g=d+c p.Quantity=g m,b=0b11100011,true else b=s[0b10][1][s[0b10][0b11]]b()b,q,f=s[0b11][1][s[0b11][0b11]],{},"Inventory"q.Title=f g,p,h=l,tostring,"injected "p=p(g)f=h..p q.Description=f f=0b10 q.Time=f b,a=b.Notify,b b(a,q)return end elseif m<=0b1110101 then m,d=m+-0b110111,1 else m,d=0x424e/m,1 end end end end,cf=function(d,_)return function(e)local b,f,a,h h=0b110010 while true do if h>=0x86 then if h>=0xb0 then if h>0xb0 then b=_[1][1][_[1][0b11]]h,a=0b101100,b.lighting_atmosphere f=e[1][e[0b11]]~=a else return end else h,a=0b10110000,task f,a=a.defer,d:ef{e}f(a)end elseif h>0x2c then e={[0b11]=0b10,[0b10]=e}e[1]=e f,b,a=e[1][e[0b11]].IsA,"Atmosphere",e[1][e[0b11]]f=f(a,b)h=f and 0b11011001 or 0b101100 else h=f and 0x1708/h or 0x1e40/h end end end end,K=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.crosshair f.lerp=e return end end,yc=function(d,_)return function()local e,f,i,j,c,g,h h=0b11111000 while true do if h<=0x58 then if h<=0x48 then if h<=0x30 then if h>=0x2a then if h<=0x2a then h=e and 0b1011010-h or h+0x88 else h=e and 0b1001000 or 0x3a end elseif h<=0b1101 then g=_[0b11][1][_[0b11][0b11]]c=g.ItemLibrary h,i=0x7c,c.GetViewModelImageFromWeaponData else i=e.OwnsCosmetic h=i and 0b11111111-h or 0x9f end elseif h<0x3c then f=_[0b11][1][_[0b11][0b11]]e,j=f.CosmeticLibrary,f f=j.PlayerDataController f={[0b11]=0b10,[0b10]=f}f[1]=f j={[0b11]=0b10,[0b10]=j}j[1]=j j[1][j[0b11]],i=d:Hf{_[1]},e.OwnsCosmeticNormally h=i and 0xd98/h or 0b1010101 elseif h<=0b111100 then i=e.OwnsCosmeticNormally i={[0b11]=0b10,[0b10]=i}h,i[1]=h+0b11001,i c=d:Df{j,i}e.OwnsCosmeticNormally=c else e=false return e end elseif h>0b1010101 then if h>0b1010110 then i=e.OwnsCosmeticUniversally i={[0b11]=0b10,[0b10]=i}i[1]=i h,c=0b1001110,d:Kf{j,i}e.OwnsCosmeticUniversally=c else c=task i,c=c.spawn,d:Gf{f,_[1]}i(c)i=f[1][f[0b11]].GetWeaponData h=i and 0b10111111 or 0x63 end elseif h>=0b1010000 then if h>0b1010000 then i=e.OwnsCosmeticUniversally h=i and 0b1011000 or 0b1001110 else i=e.OwnsCosmeticForWeapon h=i and 0x41f0/h or 0b1100111-h end elseif h>0b1001011 then i=e.OwnsCosmeticForSomething h=i and h+0xb1 or h+0b10 else c,i=true,_[1][1][_[1][0b11]]i.hooks_ready=c i=c return i end elseif h<=0xbf then if h>0x9f then if h<=0xb3 then if h<=0b10110010 then j=_[0b11][1][_[0b11][0b11]]h,f=0x2160/h,j.PlayerDataController e=not f else h,j=0b11011101-h,_[0b11][1][_[0b11][0b11]]f=j.CosmeticLibrary e=not f end else h,i=0x63,f[1][f[0b11]].GetWeaponData i={[0b11]=0b10,[0b10]=i}i[1]=i c=d:Mf{i,_[1]}f[1][f[0b11]].GetWeaponData=c end elseif h<0b10011011 then if h>0x63 then h=i and h+0b11111 or 0x4b else c,i=d:Ef{_[0b101],_[0b100]},pcall i(c)c=_[0b11][1][_[0b11][0b11]]i=c.ItemLibrary h=i and 0b1101 or 0b1111100 end elseif h<=0b10011011 then g=_[0b11][1][_[0b11][0b11]]c=g.ItemLibrary i=c.GetViewModelImageFromWeaponData h,i=0x2d69/h,{[0b11]=0b10,[0b10]=i}i[1]=i g,c=d:Ff{i,_[0b10]},g.ItemLibrary c.GetViewModelImageFromWeaponData=g else i=f[1][f[0b11]].Get h=i and 0b101111011-h or 0b1010110 end elseif h<=0xe8 then if h<=0xdc then if h>0b11010011 then i=f[1][f[0b11]].Get h,i=0b100110010-h,{[0b11]=0b10,[0b10]=i}i[1]=i c=d:Nf{_[1],i}f[1][f[0b11]].Get=c else h,i=0b10111,e.OwnsCosmeticForWeapon i={[0b11]=0b10,[0b10]=i}i[1]=i c=d:Lf{j,i}e.OwnsCosmeticForWeapon=c end else h,i=0b10011111,e.OwnsCosmetic i={[0b11]=0b10,[0b10]=i}i[1]=i c=d:Jf{j,i}e.OwnsCosmetic=c end elseif h>0b11111000 then h,i=0x14f-h,e.OwnsCosmeticForSomething i={[0b11]=0b10,[0b10]=i}i[1]=i c=d:If{j,i}e.OwnsCosmeticForSomething=c else f=_[1][1][_[1][0b11]]e=f.hooks_ready h=e and 0x2a or 0xb3 end end end end,ac=function(d,_)return function(e)local j,g,h,c,f,i h=0x72 while true do if h<=0b1110010 then if h<=0b1100100 then if h<0b111011 then h,c=0b1100100,"(waiting for modules)"i=j~=c elseif h<=0b111011 then i=_[1][1][_[1][0b11]]h,i.specific_name=0b1101100,j else h=i and 0x170c/h or 0xf7 end elseif h<=0x6c then return else f=_[1][1][_[1][0b11]]f.specific_weapon=e f,i=_[0b11][1][_[0b11][0b11]],_[1][1][_[1][0b11]]j,i=i.specific_type,i.specific_weapon f=f(j,i)c,i,j,g=f,"SpecName",_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]g=g.specific_name j=j(i,c,g)i=j h=i and 0b10001000 or 0b10010000 end elseif h>=0b10010000 then if h<=0x90 then h=i and 0b1101 or 0x3840/h else c,i="",_[1][1][_[1][0b11]]h,i.specific_name=0x6834/h,c end else h,c=h+0b1000,"(none)"i=j~=c end end end end,Hf=function(d,_)return function(e)local h,i,c,f,a h=0b11100011 while true do if h>0xc6 then if h>0b11100011 then h,c=h+-0xa1,_[1][1][_[1][0b11]]i=c.fake_owned i,a=nil,i[e]f=a~=i else f=e h=f and 0b11111101 or 0b1011100 end elseif h>=0b1101010 then if h>0b1101010 then c=_[1][1][_[1][0b11]]i=c.fake_owned a,h,i=i[e],h+-0b1011100,false f=a~=i else return f end else h=f and 0xc6 or 0b1101010 end end end end,Od=function(d,_)return function()local a,e,f,c c=0xe9 while true do if c>0xc7 then if c<=0xe6 then c,f=0b1110101,e.Name else e,a,f=_[1][1][_[1][0b11]],"Skin","Jump Pad"e=e(f,a)f=e c=f and 0xe6 or 0b1110101 end elseif c>=0b10011000 then if c<=0b10011000 then f=e.Name c,_[0b10][1][_[0b10][0b11]]=0b101011111-c,f else return end else c=f and 0x98 or 0b11000111 end end end end,pc=function(d,_)return function(e)local c,h,f,a,b h=0x14 repeat if h<0b1011011 then a=_[1][1][_[1][0b11]]b,a,c,f=e,_[0b11][1][_[0b11][0b11]],0,a.currency a=a(b,c)f.glory_value=a b=_[1][1][_[1][0b11]]a=b.currency f=a.glory h=f and 0b1011011 or 0xe4 elseif h>0x5b then return else h,f=0x510c/h,_[0b10][1][_[0b10][0b11]]f()end until false end end,Ma=function(n,_)return function(e)local f,j,b,i,a,m,k,g,l,c m=0xc5 while true do if m>0xe7 then return elseif m<=0xc5 then j=_[1][1][_[1][0b11]]l=j.leaderboard l.Wins=e l=_[0b11][1][_[0b11][0b11]]l()l=_[0b101][1][_[0b101][0b11]]l()m=e and 0xe7 or 0xf7 else l,j=pcall,n:Oe{_[0b110],_[0b10]}m=0b11110111 l(j)l,k,i=_[0b100][1][_[0b100][0b11]],"sucsess",{}i.Title=k f,a,g=_[1][1][_[1][0b11]],tostring,"spoofed "c=f.leaderboard c=c.wins_value a=a(c)c=" (open profile)"b=a..c k=g..b i.Description=k k=0b11 i.Time=k l,j=l.Notify,l l(j,i)end end end end,nf=function(d,_)return function()local e,b e=_[1][1][_[1][0b11]]b,e=e,e.LoadAutoloadConfig e(b)return end end,P=function(d,_)return function()local h,j,b,f,g,e,i,k h=0xe3 repeat if h<=0x7b then if h<=0x3f then if h<=0b10101 then if h>0b10010 then return elseif h<=0x11 then j,i,f=e.Clone,e,_[1][1][_[1][0b11]]j=j(i)f.lighting_skybox=j j=f j,f=e.Parent,j.lighting_skybox f.Parent=j j,f=e,e.Destroy h=h+0x96 f(j)else j,k=d:re{_[0b100]},_[1][1][_[1][0b11]]b,k,i=_[1][1][_[1][0b11]],j,k.lighting_skybox b,g=e.skybox_back,b.skybox_back k=k(g,b)i.SkyboxBk=k k=_[1][1][_[1][0b11]]k,i,b=j,k.lighting_skybox,_[1][1][_[1][0b11]]b,g=e.skybox_down,b.skybox_down k=k(g,b)i.SkyboxDn=k k=_[1][1][_[1][0b11]]k,b,i=j,_[1][1][_[1][0b11]],k.lighting_skybox b,g=e.skybox_front,b.skybox_front k=k(g,b)i.SkyboxFt=k k=_[1][1][_[1][0b11]]i,k,b=k.lighting_skybox,j,_[1][1][_[1][0b11]]b,g=e.skybox_left,b.skybox_left k=k(g,b)i.SkyboxLf=k k=_[1][1][_[1][0b11]]b,i,k=_[1][1][_[1][0b11]],k.lighting_skybox,j g,b=b.skybox_right,e.skybox_right k=k(g,b)i.SkyboxRt=k k=_[1][1][_[1][0b11]]k,b,i=j,_[1][1][_[1][0b11]],k.lighting_skybox g,b=b.skybox_up,e.skybox_up k=k(g,b)i.SkyboxUp=k k=_[1][1][_[1][0b11]]k,i,b=j,k.lighting_skybox,_[1][1][_[1][0b11]]b,g=e.sun_texture,b.sun_texture k=k(g,b)i.SunTextureId=k k=_[1][1][_[1][0b11]]b,k,i=_[1][1][_[1][0b11]],j,k.lighting_skybox b,g=e.moon_texture,b.moon_texture k=k(g,b)i.MoonTextureId=k k=_[1][1][_[1][0b11]]g,i=k,k.lighting_skybox k=g.star_count i.StarCount=k k=g g,i=k,k.lighting_skybox k=g.sun_angular_size i.SunAngularSize=k k=g g,i=k,k.lighting_skybox k=g.moon_angular_size i.MoonAngularSize=k return end else f=_[1][1][_[1][0b11]]e,f=f.lighting_skybox,nil h=e==f and 0x85 or 0b10100010 end elseif h>0x4c then f,i=_[1][1][_[1][0b11]],Instance j,i=i.new,"Sky"j=j(i)f.lighting_skybox=j j=f j,h,f=_[0b11][1][_[0b11][0b11]],0b10100111,j.lighting_skybox f.Parent=j else f=_[0b10][1][_[0b10][0b11]]h,e=0x12,f.None end elseif h>0xa7 then j=_[1][1][_[1][0b11]]f=j.skybox_enabled e=not f h=e and 0x15 or 0x3f elseif h>0b10100010 then j=_[0b11][1][_[0b11][0b11]]f,i=j.ChildAdded,d:se{_[1]}f,h,j=f.Connect,0b101001001-h,f f(j,i)elseif h>0x85 then i,f=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]j=i.skybox_value e=f[j]h=e and 0xb64/h or h+-0x56 else e,j=_[0b11][1][_[0b11][0b11]],"Sky"f,e=e,e.FindFirstChildOfClass e=e(f,j)h=e and 0x11 or 0x3fe7/h end until false end end,Nb=function(d,_)return function(e)local f,c,a,b,h h=0b11011101 while true do if h<=0b10001101 then if h>=0x86 then if h>0b10000110 then a=_[0b10][1][_[0b10][0b11]]b,f,a,c=e[1][e[0b11]],a.thumb_spoof_conn,e[1][e[0b11]].GetPropertyChangedSignal,"Image"a=a(b,c)a,c,b=a.Connect,d:bf{_[1],e},a a=a(b,c)f[e[1][e[0b11]]]=a f,b=e[1][e[0b11]].Destroying,d:af{_[0b10],e}f,a=f.Connect,f f(a,b)return else c,b,a="ImageLabel",e[1][e[0b11]],e[1][e[0b11]].IsA a=a(b,c)h,f=0x1bbe/h,not a end elseif h>0b110101 then return else h=f and 0x72 or 0xbf end elseif h<0b10111111 then return elseif h<=0b10111111 then a,f=e[1][e[0b11]],_[1][1][_[1][0b11]]f(a)b=_[0b10][1][_[0b10][0b11]]a=b.thumb_spoof_conn f=a[e[1][e[0b11]]]h=f and 0b10110101 or 0x14c-h else e={[0b11]=0b10,[0b10]=e}e[1]=e f=not e[1][e[0b11]]h=f and 0b110101 or 0x86 end end end end,hb=function(d,_)return function(e)local j,g,a,l,c,b,k,h,i h=0b10001101 repeat if h<0b10001101 then if h>=0x48 then if h>0b1001000 then return l else return e end else j={}l,i,j=j,e,pairs j,i,k=j(i)j,i,k=d.b(j,i,k)g,b=j(i,k)k=g h=k==nil and 0b1010010 or 0xbd end elseif h<0xbb then j,l=e,type l=l(j)j="table"h=l~=j and 0b1001000 or 0b1000001 elseif h>0b10111011 then h,a,c=h+-0b10,_[1][1][_[1][0b11]],b a=a(c)l[g]=a else g,b=j(i,k)k=g h=k==nil and 0x52 or 0b10111101 end until false end end,kb=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.inject f.quantity=e return end end,We=function(d,_)return function()local a,f,e a=_[1][1][_[1][0b11]]f=a.Parent e=f.AbsoluteSize return e end end,Ne=function(d,_)return function(e)local k,f,i,b,j,a,g,h h=0xa2 repeat if h<0b10100010 then if h<=0x7a then if h>0b11000 then i,j,f=e,e.GetDescendants,ipairs j=d.c(j(i))f,j,i=f(d.d(j))f,j,i=d.b(f,j,i)k,g=f(j,i)i=k h=i==nil and h+0x5b or 0b10001010 else k,g=f(j,i)i=k h=i==nil and 0b11010101 or h+0x72 end else b,a=_[1][1][_[1][0b11]],g h=h+-0b1110010 b(a)end elseif h<0xb0 then f=not e h=f and 0b10110000 or 0b1111010 elseif h>0xb0 then f,i=e.DescendantAdded,_[1][1][_[1][0b11]]j,f=f,f.Connect f(j,i)return else return end until false end end,x=function(d,_)return function(e)local a,f,g g=0b11 repeat if g>=0x1c then if g<=0b11100 then f=_[0b10][1][_[0b10][0b11]]g=0b11110110 f()else return end else f=_[1][1][_[1][0b11]]f.username_value=e a=f f=a.username g=f and 0x1c or 0xf6 end until false end end,oa=function(n,_)return function()local q,l,p,j,m,i,d,h,e,o,g,k,a,f,b m=0x4f while true do if m<0b1101111 then if m<0x39 then if m<=0x12 then if m>=0b1011 then if m>0b1011 then m,i[1][i[0b11]].IsInverted=0x84c/m,k else m,k=m+0b111,nil end else o=""m,k=0xf1,j~=o end elseif m>0b11101 then m=k and 0x1f9c/m or 0b1100000-m else k=j m=k and 0x80-m or 0b10001011 end elseif m>0b1001111 then if m>0b1011011 then o=""m,k=0x35c1/m,j~=o else o=_[1][1][_[1][0b11]]o,k=true,o.fake_owned m,k[j]=0x2775/m,o end elseif m>0x3e then l=_[1][1][_[1][0b11]]e=l.equip_weapon e={[0b11]=0b10,[0b10]=e}e[1]=e j=l l=j.equip_type l={[0b11]=0b10,[0b10]=l}l[1]=l i=j k,j={},i.equip_name i=k i={[0b11]=0b10,[0b10]=i}i[1]=i k="Wrap"m=l[1][l[0b11]]==k and 0xfe or 0b1110110 elseif m<=0b111001 then m,k=0b10011010,true else m,k=0x12c-m,nil end elseif m>0b10010010 then if m>=0xee then if m<=0xf1 then if m<=0b11101110 then k={[0b11]=0b10,[0b10]=k}k[1]=k o,b=pcall,n:Fe{_[0b10],i,e,k,l}o(b)o,q,a=_[0b11][1][_[0b11][0b11]],"Equip",{}a.Title=q f=string f,q,p,h="%s on %s \226\134\146 %s",f.format,l[1][l[0b11]],tostring h=h(p)p,g=tostring,e[1][e[0b11]]p=p(g)d,g=j,tostring g=n.c(g(d))q=q(f,h,p,n.d(g))a.Description=q q=0b10 a.Time=q b,o=o,o.Notify o(b,a)return else m=k and m+-0x4f or 0x2002/m end else o=_[1][1][_[1][0b11]]k=o.equip_inverted m=k and 0x388e/m or 0x98cc/m end elseif m>0x9a then m,k=0x1584/m,j else m=k and 0xac-m or 0x69e/m end elseif m>0x8b then if m>0x8f then b,a,k={},"Equip",_[0b11][1][_[0b11][0b11]]b.Title=a a="set a weapon name"b.Description=a a=0b11 b.Time=a o,k=k,k.Notify k(o,b)return else m=k and 0x518e/m or 0b11101 end elseif m>=0b10001001 then if m<=0x89 then m,o=m+0b110,""k=e[1][e[0b11]]==o else m=k and 0x5b or m+-0x1c end elseif m>0x6f then o,b=type,e[1][e[0b11]]o=o(b)b="string"k=o~=b m=k and 0x8f or 0b10001001 else o=nil k=j~=o m=k and 0b1001 or 0b11110001 end end end end,s=function(d,_)return function(e)local f,a,g g=0b1011 repeat if g>=0b11010010 then if g<=0b11010010 then return else g,a=0b11010010,_[1][1][_[1][0b11]]f=a.delete f.backpack_entry=e end else f="(empty)"g=e~=f and 0xf1 or 0xd2 end until false end end,cb=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.specific f.quantity=e return end end,f=function(H)return function(...)local db,mb,r,V,P,W,a,cb,ab,B,nb,Ca,Ra,ua,J,e,w,fa,Ua,j,U,Ja,x,Wa,eb,v,rb,Va,Ta,Ba,Ab,La,ib,ia,Q,T,l,ha,Bb,M,u,E,sb,pb,t,Aa,ja,z,Ma,Y,vb,D,za,A,c,Na,ma,sa,na,d,X,n,h,R,jb,C,S,L,Pa,i,p,qb,Sa,la,Ka,yb,y,hb,Ya,o,tb,Fa,ub,_,F,da,fb,lb,_b,Qa,ya,wa,Ia,bb,ba,K,gb,ka,g,I,G,zb,Da,Ha,k,q,m,O,ca,f,ob,va,xa,ta,xb,ra,Ga,pa,Xa,wb,qa,N,aa,Oa,_a,b,ga,ea da,db,i=loadstring,game,"https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"db,T=db.HttpGet,db db=H.c(db(T,i))da=da(H.d(db))da=da()da={[0b11]=0b10,[0b10]=da}da[1]=da rb,db,T="https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua",loadstring,game T,i=T.HttpGet,T T=H.c(T(i,rb))db=db(H.d(T))db=db()db={[0b11]=0b10,[0b10]=db}db[1]=db i,tb,T=game,"https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua",loadstring rb,i=i,i.HttpGet i=H.c(i(rb,tb))T=T(H.d(i))T=T()T={[0b11]=0b10,[0b10]=T}T[1]=T i=da[1][da[0b11]].Options i={[0b11]=0b10,[0b10]=i}i[1]=i rb=da[1][da[0b11]].Toggles rb={[0b11]=0b10,[0b10]=rb}rb[1]=rb tb=getgenv tb=tb()tb.Options=i[1][i[0b11]]tb=getgenv tb=tb()tb.Toggles=rb[1][rb[0b11]]tb=getgenv tb=tb()tb.Library=da[1][da[0b11]]N=Color3 N,tb="CAED0B",N.fromHex tb=tb(N)tb={[0b11]=0b10,[0b10]=tb}tb[1]=tb N,Ra=pcall,H:Oc{da,tb}N(Ra)q,N="Players",game Ra,N=N,N.GetService N=N(Ra,q)Ra,Ya=game,"RunService"Ra,q=Ra.GetService,Ra Ra=Ra(q,Ya)Ra={[0b11]=0b10,[0b10]=Ra}Ra[1]=Ra qa,q="ReplicatedStorage",game Ya,q=q,q.GetService q=q(Ya,qa)q={[0b11]=0b10,[0b10]=q}q[1]=q p,Ya="HttpService",game qa,Ya=Ya,Ya.GetService Ya=Ya(qa,p)Ya={[0b11]=0b10,[0b10]=Ya}Ya[1]=Ya qa=N.LocalPlayer qa={[0b11]=0b10,[0b10]=qa}qa[1]=qa K,bb,Oa,cb,ib="Wrap","Finisher","Charm",{},"Skin"cb[1],cb[0b10],cb[0b11],cb[0b100]=ib,K,Oa,bb ga,bb,ib,K,Oa,D,p,xb="Mythical","Legendary",{},"Common","Rare","Unique",cb,"Unobtainable"ib[1],ib[0b10],ib[0b11],ib[0b100],ib[0b101],ib[0b110]=K,Oa,bb,ga,D,xb cb,K=ib,{}ib=K ib={[0b11]=0b10,[0b10]=ib}ib[1]=ib K={[0b11]=0b10,[0b10]=K}K[1]=K K[1][K[0b11]]=H:nb()Oa={[0b11]=0b10,[0b10]=Oa}Oa[1]=Oa Oa[1][Oa[0b11]],ga=H:uc{q,K,ib,qa},task ga,bb=H:Kc{Oa},ga.spawn bb(ga)bb={[0b11]=0b10,[0b10]=bb}bb[1]=bb x,D,bb[1][bb[0b11]]={},{},H:gb{ib}xb=x D.fake_owned=xb x={}xb=x D.fake_weapon_owned=xb x={}xb=x D.equipped=xb xb="Skin"D.unlock_type=xb xb="Mythical"D.unlock_rarity=xb xb="Skin"D.specific_type=xb xb=""D.specific_name=xb D.specific_weapon=xb xb="Skin"D.equip_type=xb xb=""D.equip_name=xb xb="Assault Rifle"D.equip_weapon=xb xb=false D.equip_inverted=xb D.hooks_ready=xb xb=nil D.constructing_weapon=xb xb=nil D.viewing_profile=xb xb=nil D.last_used_weapon=xb x={}xb=x D.placed_object_map=xb ga=D ga={[0b11]=0b10,[0b10]=ga}ga[1]=ga D={[0b11]=0b10,[0b10]=D}D[1]=D D[1][D[0b11]]=H:hb{D}xb={[0b11]=0b10,[0b10]=xb}xb[1]=xb xb[1][xb[0b11]]=H:u{ib,ga,D}x={[0b11]=0b10,[0b10]=x}x[1]=x x[1][x[0b11]]=H:C{Ya,ga}g={[0b11]=0b10,[0b10]=g}g[1]=g g[1][g[0b11]]=H:g{da,ga,Ya}u={[0b11]=0b10,[0b10]=u}u[1]=u u[1][u[0b11]]=H:Jb{ib}Ua={[0b11]=0b10,[0b10]=Ua}Ua[1]=Ua Ua[1][Ua[0b11]]=H:za{ga}e={[0b11]=0b10,[0b10]=e}e[1]=e e[1][e[0b11]]=H:cc{ga,ib,u}t={[0b11]=0b10,[0b10]=t}t[1]=t t[1][t[0b11]]=H:yc{ga,Ua,ib,e,q}qb={[0b11]=0b10,[0b10]=qb}qb[1]=qb qb[1][qb[0b11]]=H:Ac{ib}_b=H:Ab{qb}h={[0b11]=0b10,[0b10]=h}h[1]=h h[1][h[0b11]]=H:gc{qb}Aa={[0b11]=0b10,[0b10]=Aa}Aa[1]=Aa Aa[1][Aa[0b11]]=H:ia{qb}_a={[0b11]=0b10,[0b10]=_a}_a[1]=_a _a[1][_a[0b11]]=H:ta{qb}aa={[0b11]=0b10,[0b10]=aa}aa[1]=aa aa[1][aa[0b11]]=H:Yc{qb}P={[0b11]=0b10,[0b10]=P}P[1]=P P[1][P[0b11]]=H:Ia{qb,ga}r={[0b11]=0b10,[0b10]=r}r[1]=r r[1][r[0b11]]=H:md{h,ga}O={[0b11]=0b10,[0b10]=O}O[1]=O O[1][O[0b11]]=H:D{aa,ga}ra={[0b11]=0b10,[0b10]=ra}ra[1]=ra ra[1][ra[0b11]]=H:dc{_a,ga}X={[0b11]=0b10,[0b10]=X}X[1]=X X[1][X[0b11]]=H:k{Aa,ga}b={[0b11]=0b10,[0b10]=b}b[1]=b b[1][b[0b11]]=H:Wa{ib,ga}ca={[0b11]=0b10,[0b10]=ca}ca[1]=ca ca[1][ca[0b11]]=H:oa{ga,q,da}Qa={[0b11]=0b10,[0b10]=Qa}Qa[1]=Qa Qa[1][Qa[0b11]]=H:Rb{ga,ib,da,e}F={[0b11]=0b10,[0b10]=F}F[1]=F F[1][F[0b11]],ua=H:t{qa,ga,ib,q,Ua,da},task ua,mb=H:ic{bb,t,da,F,xb,x},ua.spawn mb(ua)mb,ua=nil,0 mb={[0b11]=0b10,[0b10]=mb}mb[1]=mb ua={[0b11]=0b10,[0b10]=ua}ua[1]=ua Ia={[0b11]=0b10,[0b10]=Ia}Ia[1]=Ia Ia[1][Ia[0b11]]=H:eb{mb,ib,ua,qb}Na={[0b11]=0b10,[0b10]=Na}Na[1]=Na Na[1][Na[0b11]]=H:J{qb}sa={[0b11]=0b10,[0b10]=sa}sa[1]=sa sa[1][sa[0b11]]=H:bd{i}l={[0b11]=0b10,[0b10]=l}l[1]=l l[1][l[0b11]]=H:Va{Ia,ga,sa,Na}fb={[0b11]=0b10,[0b10]=fb}fb[1]=fb M,wa,fb[1][fb[0b11]]=game,"Lighting",H:Bc{Ia,ga,sa,Na}M,d=M.GetService,M M=M(d,wa)M={[0b11]=0b10,[0b10]=M}M[1]=M d={[0b11]=0b10,[0b10]=d}d[1]=d lb,d[1][d[0b11]]=task,H:yb()wa,lb=lb.spawn,H:R{qa,ib,d}wa(lb)ub,R,Q,y,pb,lb,Ba,E,Ga,ea,j,f,la,Ma,Da,Xa="Flash Black","Melty Molten","Buoy Base","Good Egg","Sweet Mystery",{},"Shiverburn","Terrace Dome","None","Spin Dig","Battlerock","Clockwork","Aurora","Ghostly","Dark Matter","Beach Bowl"lb[1],lb[0b10],lb[0b11],lb[0b100],lb[0b101],lb[0b110],lb[0b111],lb[0b1000],lb[0b1001],lb[0b1010],lb[0b1011],lb[0b1100],lb[0b1101],lb[0b1110],lb[0b1111]=Ga,la,j,Xa,Q,f,Da,ub,Ma,y,R,Ba,ea,pb,E wa,Xa,j,Ga=lb,"rbxassetid://14147881792",{},{}j.skybox_back=Xa Xa="rbxassetid://14147882149"j.skybox_down=Xa Xa="rbxassetid://14147882761"j.skybox_front=Xa Xa="rbxassetid://14147883091"j.skybox_left=Xa Xa="rbxassetid://14147882405"j.skybox_right=Xa Xa="rbxassetid://14147881297"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.None=la Xa,j="rbxassetid://116533337330584",{}j.skybox_back=Xa Xa="rbxassetid://80054106187171"j.skybox_down=Xa Xa="rbxassetid://94459139270943"j.skybox_front=Xa Xa="rbxassetid://116368999680791"j.skybox_left=Xa Xa="rbxassetid://125758104196312"j.skybox_right=Xa Xa="rbxassetid://107060226443967"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.Aurora=la j,Xa={},"rbxassetid://131136284306917"j.skybox_back=Xa Xa="rbxassetid://89505977207531"j.skybox_down=Xa Xa="rbxassetid://140099243548102"j.skybox_front=Xa Xa="rbxassetid://121676169821100"j.skybox_left=Xa Xa="rbxassetid://97183886241447"j.skybox_right=Xa Xa="rbxassetid://107128620201556"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.Battlerock=la j,Xa={},"rbxassetid://81804134601271"j.skybox_back=Xa Xa="rbxassetid://92395364196932"j.skybox_down=Xa Xa="rbxassetid://81804134601271"j.skybox_front=Xa j.skybox_left=Xa j.skybox_right=Xa Xa="rbxassetid://119089964803065"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Beach Bowl"]=la j,Xa={},"rbxassetid://135017685421888"j.skybox_back=Xa Xa="rbxassetid://76610044495625"j.skybox_down=Xa Xa="rbxassetid://89675413438577"j.skybox_front=Xa Xa="rbxassetid://138307087837279"j.skybox_left=Xa Xa="rbxassetid://136723547010707"j.skybox_right=Xa Xa="rbxassetid://83404878914838"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Buoy Base"]=la Xa,j="rbxassetid://86284761193226",{}j.skybox_back=Xa Xa="rbxassetid://111425663631622"j.skybox_down=Xa Xa="rbxassetid://115606366886873"j.skybox_front=Xa Xa="rbxassetid://127287488325060"j.skybox_left=Xa Xa="rbxassetid://126844150113423"j.skybox_right=Xa Xa="rbxassetid://74510789204352"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.Clockwork=la Xa,j="rbxassetid://97629693450922",{}j.skybox_back=Xa Xa="rbxassetid://97898396690232"j.skybox_down=Xa Xa="rbxassetid://134755033418084"j.skybox_front=Xa Xa="rbxassetid://118219143707956"j.skybox_left=Xa Xa="rbxassetid://114940065588775"j.skybox_right=Xa Xa="rbxassetid://95430908943263"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Dark Matter"]=la Xa,j="rbxassetid://78426835654353",{}j.skybox_back=Xa Xa="rbxassetid://6213218651"j.skybox_down=Xa Xa="rbxassetid://71970982976722"j.skybox_front=Xa Xa="rbxassetid://78426835654353"j.skybox_left=Xa j.skybox_right=Xa Xa="rbxassetid://138004866371717"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Flash Black"]=la Xa,j="rbxassetid://111506743048183",{}j.skybox_back=Xa Xa="rbxassetid://86198196348228"j.skybox_down=Xa Xa="rbxassetid://86265514167302"j.skybox_front=Xa Xa="rbxassetid://100257959405445"j.skybox_left=Xa Xa="rbxassetid://71935101953120"j.skybox_right=Xa Xa="rbxassetid://132011089223498"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.Ghostly=la j,Xa={},"rbxassetid://94681381933012"j.skybox_back=Xa Xa="rbxassetid://75843838469806"j.skybox_down=Xa Xa="rbxassetid://97891957473259"j.skybox_front=Xa Xa="rbxassetid://102971518965494"j.skybox_left=Xa Xa="rbxassetid://94588890960775"j.skybox_right=Xa Xa="rbxassetid://127368871569815"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Good Egg"]=la Xa,j="rbxassetid://131463907527649",{}j.skybox_back=Xa Xa="rbxassetid://116154164311420"j.skybox_down=Xa Xa="rbxassetid://113077689016278"j.skybox_front=Xa Xa="rbxassetid://79984367513909"j.skybox_left=Xa Xa="rbxassetid://82395195737484"j.skybox_right=Xa Xa="rbxassetid://117530106700350"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Melty Molten"]=la Xa,j="rbxassetid://113636030839991",{}j.skybox_back=Xa Xa="rbxassetid://118027268179499"j.skybox_down=Xa Xa="rbxassetid://76405010847029"j.skybox_front=Xa Xa="rbxassetid://112044353352688"j.skybox_left=Xa Xa="rbxassetid://121078604572355"j.skybox_right=Xa Xa="rbxassetid://132486295432727"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga.Shiverburn=la j,Xa={},"rbxassetid://124211111366754"j.skybox_back=Xa Xa="rbxassetid://120491795220431"j.skybox_down=Xa Xa="rbxassetid://130119279111055"j.skybox_front=Xa Xa="rbxassetid://70742671331562"j.skybox_left=Xa Xa="rbxassetid://76516826791940"j.skybox_right=Xa Xa="rbxassetid://100229310567751"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Spin Dig"]=la j,Xa={},"rbxassetid://107264897520277"j.skybox_back=Xa Xa="rbxassetid://135637946277638"j.skybox_down=Xa Xa="rbxassetid://135705252786048"j.skybox_front=Xa Xa="rbxassetid://119667604517747"j.skybox_left=Xa Xa="rbxassetid://75904303027092"j.skybox_right=Xa Xa="rbxassetid://97011146822716"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Sweet Mystery"]=la j,Xa={},"rbxassetid://98684100016510"j.skybox_back=Xa Xa="rbxassetid://108354040356521"j.skybox_down=Xa Xa="rbxassetid://95723629635852"j.skybox_front=Xa Xa="rbxassetid://106269064939837"j.skybox_left=Xa Xa="rbxassetid://136234415079744"j.skybox_right=Xa Xa="rbxassetid://75385962780878"j.skybox_up=Xa Xa="rbxasset://sky/sun.jpg"j.sun_texture=Xa Xa="rbxasset://sky/moon.jpg"j.moon_texture=Xa la=j Ga["Terrace Dome"]=la lb=Ga lb={[0b11]=0b10,[0b10]=lb}lb[1]=lb la,Q={},Enum Xa=Q.LightingStyle j=Xa.Realistic la.Realistic=j Xa=Q.LightingStyle j=Xa.Soft la.Soft=j Ga=la Ga={[0b11]=0b10,[0b10]=Ga}Ga[1]=Ga j,Xa={},false j.lighting_enabled=Xa Xa=M[1][M[0b11]].Ambient j.ambient_color=Xa Xa=M[1][M[0b11]].OutdoorAmbient j.outdoor_ambient_color=Xa Xa=M[1][M[0b11]].ColorShift_Top j.shift_top=Xa Xa=M[1][M[0b11]].ColorShift_Bottom j.shift_bottom=Xa Xa=M[1][M[0b11]].ExposureCompensation j.exposure=Xa Xa=M[1][M[0b11]].Brightness j.brightness=Xa Xa=M[1][M[0b11]].ShadowSoftness j.shadow_softness=Xa Xa=M[1][M[0b11]].EnvironmentDiffuseScale j.diffuse_scale=Xa Xa=M[1][M[0b11]].EnvironmentSpecularScale j.specular_scale=Xa Xa=M[1][M[0b11]].GlobalShadows j.global_shadows=Xa Xa="Realistic"j.lighting_style=Xa Xa=false j.atmosphere_enabled=Xa Xa=0.255 j.density=Xa Xa=0.2 j.offset=Xa Q=Color3 Xa,Q,Da,f=Q.fromRGB,0b10001100,0b11100111,0b11000100 Xa=Xa(Q,f,Da)j.atm_color=Xa Q=Color3 f,Q,Xa,Da=0x3c,0b1011100,Q.fromRGB,0b1101 Xa=Xa(Q,f,Da)j.decay=Xa Xa=0 j.glare=Xa Xa=1.82 j.haze=Xa Xa=nil j.lighting_atmosphere=Xa Xa=false j.cc_enabled=Xa Xa=0 j.cc_brightness=Xa j.cc_contrast=Xa j.cc_saturation=Xa Q=Color3 Xa,Q=Q.fromRGB,0b11111111 f=Q Da=f Xa=Xa(Q,f,Da)j.cc_tint=Xa Xa=nil j.lighting_cc=Xa Xa=false j.sunrays_enabled=Xa Xa=0.25 j.sunrays_intensity=Xa Xa=1 j.sunrays_spread=Xa Xa=nil j.lighting_sunrays=Xa Xa=false j.skybox_enabled=Xa Xa="None"j.skybox_value=Xa Xa=""j.skybox_back=Xa j.skybox_down=Xa j.skybox_front=Xa j.skybox_left=Xa j.skybox_right=Xa j.skybox_up=Xa j.sun_texture=Xa j.moon_texture=Xa Xa=0xbb8 j.star_count=Xa Xa=0b10101 j.sun_angular_size=Xa Xa=0b1011 j.moon_angular_size=Xa Xa=M[1][M[0b11]].ClockTime j.clocktime=Xa Xa=false j.auto_rotate=Xa Xa=1 j.auto_rotate_speed=Xa Xa=nil j.auto_rotate_conn=Xa Xa=nil j.lighting_skybox=Xa Xa=0x46 j.camera_fov=Xa Xa=1 j.camera_resolution=Xa Xa=false j.anti_flashbang=Xa j.anti_smoke=Xa j._debounce=Xa f,Q=M[1][M[0b11]].Ambient,{}Q.Ambient=f f=M[1][M[0b11]].OutdoorAmbient Q.OutdoorAmbient=f f=M[1][M[0b11]].ColorShift_Top Q.ColorShift_Top=f f=M[1][M[0b11]].ColorShift_Bottom Q.ColorShift_Bottom=f f=M[1][M[0b11]].ExposureCompensation Q.ExposureCompensation=f f=M[1][M[0b11]].Brightness Q.Brightness=f f=M[1][M[0b11]].ShadowSoftness Q.ShadowSoftness=f f=M[1][M[0b11]].EnvironmentDiffuseScale Q.EnvironmentDiffuseScale=f f=M[1][M[0b11]].EnvironmentSpecularScale Q.EnvironmentSpecularScale=f f=M[1][M[0b11]].GlobalShadows Q.GlobalShadows=f f=M[1][M[0b11]].ClockTime Q.ClockTime=f Xa=Q j._orig=Xa la=j la={[0b11]=0b10,[0b10]=la}la[1]=la j={[0b11]=0b10,[0b10]=j}j[1]=j j[1][j[0b11]]=H:Y()Xa={[0b11]=0b10,[0b10]=Xa}Xa[1]=Xa Xa[1][Xa[0b11]]=H:Xc{la,Ga,M}Q={[0b11]=0b10,[0b10]=Q}Q[1]=Q f,Da,Q[1][Q[0b11]]=pcall,H:ab{M,Xa,la},H:Gc{la,M}f(Da)f={[0b11]=0b10,[0b10]=f}f[1]=f f[1][f[0b11]]=H:Ob{la,M}Da={[0b11]=0b10,[0b10]=Da}Da[1]=Da Da[1][Da[0b11]]=H:bc{la,M}ub={[0b11]=0b10,[0b10]=ub}ub[1]=ub ub[1][ub[0b11]]=H:lb{la,M}Ma={[0b11]=0b10,[0b10]=Ma}Ma[1]=Ma Ma[1][Ma[0b11]]=H:P{la,lb,M,j}y={[0b11]=0b10,[0b10]=y}y[1]=y R,ea,y[1][y[0b11]]=Ra[1][Ra[0b11]].RenderStepped,H:cd{la,M,ib},H:Hb{la,Ra,Ma}Ba,R=R,R.Connect R(Ba,ea)Ba=task Ba,R=H:ma{ib,la},Ba.spawn R(Ba)Ba=task R,Ba=Ba.spawn,H:oc{ib,la}R(Ba)R=getgenv R=R()R.AtomicRivalsWorld=la[1][la[0b11]]B,jb,va,na,S,sb,pa,Ca,I,a,pb,E,Ja,Ba,ya,ab,ea="Festive Skin Case","Finisher Pack","Finisher Pack 2","Festive Wrap Box","Wrap Box","Goodie Bag","Spooky Skin Case","Charm Capsule","Jolly Chest","Wrap Box 2","Skin Case 2","Skin Case 3","Festive Wrap Box 2",{},"Wrap Box 3","Haunted Chest","Skin Case"Ba[1],Ba[0b10],Ba[0b11],Ba[0b100],Ba[0b101],Ba[0b110],Ba[0b111],Ba[0b1000],Ba[0b1001],Ba[0b1010],Ba[0b1011],Ba[0b1100],Ba[0b1101],Ba[0b1110],Ba[0b1111],Ba[0b10000]=ea,pb,E,S,a,ya,Ca,jb,va,pa,ab,B,I,na,Ja,sb E,pb,S,ea,a="Standard Weapon Crate","Weapon Crate","Prime Weapon Crate","Prime Goodie Bag","Contraband Weapon Crate"Ba[0b10001],Ba[0b10010],Ba[0b10011],Ba[0x14],Ba[0b10101]=ea,pb,E,S,a E,ea,R={},{},Ba pb=E ea.fake_owned=pb S,E="Skin Case",{}E.lootbox_name=S S=1 E.quantity=S S=""E.weapon_name=S S=false E.new_entry=S pb=E ea.specific=pb S,E=1,{}E.quantity=S pb=E ea.bulk=pb S,E="",{}E.backpack_entry=S S=1 E.quantity=S pb=E ea.delete=pb S,E="Skin",{}E.item_type=S S=""E.weapon_name=S E.cosmetic_name=S S=false E.stack_duplicates=S S=1 E.quantity=S pb=E ea.inject=pb Ba=ea Ba={[0b11]=0b10,[0b10]=Ba}Ba[1]=Ba ea={[0b11]=0b10,[0b10]=ea}ea[1]=ea ea[1][ea[0b11]]=H:E{Ba}pb={[0b11]=0b10,[0b10]=pb}pb[1]=pb pb[1][pb[0b11]]=H:ka{ib}E={[0b11]=0b10,[0b10]=E}E[1]=E E[1][E[0b11]]=H:va{ib,D,Ba,ea}S={[0b11]=0b10,[0b10]=S}S[1]=S S[1][S[0b11]]=H:sb{Ba,pb,ib,ea,da}a={[0b11]=0b10,[0b10]=a}a[1]=a a[1][a[0b11]]=H:Ec{ib,da,ea,pb,Ba}ya={[0b11]=0b10,[0b10]=ya}ya[1]=ya ya[1][ya[0b11]]=H:Nc{ea}Ca={[0b11]=0b10,[0b10]=Ca}Ca[1]=Ca Ca[1][Ca[0b11]]=H:w{Ba,pb}jb={[0b11]=0b10,[0b10]=jb}jb[1]=jb jb[1][jb[0b11]]=H:fd{Ba,pb,ea}va={[0b11]=0b10,[0b10]=va}va[1]=va va[1][va[0b11]]=H:qc{Ba,pb,ea}pa={[0b11]=0b10,[0b10]=pa}pa[1]=pa pa[1][pa[0b11]],B=H:td{Ba,pb,da,ea,ga},task B,ab=H:pd{bb,E},B.spawn ab(B)ab=getgenv ab=ab()ab.AtomicRivalsInventory=Ba[1][Ba[0b11]]B,I={},"Desktop"B.device=I B.old_device=I I=false B.spoof_device=I B.device_spam=I I=1 B.spam_rate=I I=0 B._device_cancel=I I=qa[1][qa[0b11]].DisplayName B.display_name_value=I I=qa[1][qa[0b11]].Name B.username_value=I I=false B.display_name=I B.username=I na={}I=na B.name_spoof_conn=I I=qa[1][qa[0b11]].UserId B.avatar_userid=I I=false B.spoof_avatar=I na={}I=na B.thumb_spoof_conn=I I=false B.anonymous_mode=I na={}I=na B.fake_names=I na={}I=na B.anon_connections=I Ja,na=0,{}na.elo_value=Ja na.streak_value=Ja na.kills_value=Ja na.wins_value=Ja na.level_value=Ja Ja=false na.ELO=Ja na.Streak=Ja na.Kills=Ja na.Wins=Ja na.Level=Ja I=na B.leaderboard=I na={}na.Premium=Ja na.Verified=Ja na.Influencer=Ja na.Admin=Ja I=na B.badges=I na,Ja={},"Use Spoofed ELO"na.charm_rank=Ja Ja=1 na.arch_rank=Ja Ja=false na.s0_charm=Ja na.s1_charm=Ja na.s2_charm=Ja na.s3_charm=Ja I=na B.charm=I I=0 B.fake_gift_robux_spent=I na={}I=na B.fake_gift_rewards_claimed=I I=Ja B.fake_robux=I I=0 B.robux_amount=I I=Ja B.fake_gifting=I na,Ja={},I na.weapon_keys=Ja Ja=I na.unlock_tokens=Ja Ja=I na.event_currency=Ja Ja=I na.glory=Ja Ja=I na.skin_tickets=Ja Ja=0 na.weapon_keys_value=Ja na.unlock_tokens_value=Ja na.event_currency_value=Ja na.glory_value=Ja na.skin_tickets_value=Ja I=na B.currency=I I=false B.ping_spoof=I I=0x32 B.ping_value=I I=false B.fps_spoof=I I=0xf0 B.fps_value=I ab=B ab={[0b11]=0b10,[0b10]=ab}ab[1]=ab I,B=H:Ya{ab,qa},pcall B(I)I=task I,B=H:M{bb,ib,ab,q},I.spawn B(I)B=0 B={[0b11]=0b10,[0b10]=B}B[1]=B k,eb,sb,w,ha,Pa,ob,Bb,Ja,Y,G,ma,na,L,J,hb,gb="Platinum 2","Gold 2","Unranked","Bronze 2","Gold 3","Gold 1","Bronze 3","Platinum 3","Use Spoofed ELO","Silver 2","Silver 1","Platinum 1",{},"Diamond 1","Bronze 1","Silver 3","Diamond 2"na[1],na[0b10],na[0b11],na[0b100],na[0b101],na[0b110],na[0b111],na[0b1000],na[0b1001],na[0b1010],na[0b1011],na[0b1100],na[0b1101],na[0b1110],na[0b1111],na[0b10000]=Ja,sb,J,w,ob,G,Y,hb,Pa,eb,ha,ma,k,Bb,L,gb ob,G,J,Ja,w,sb="Nemesis","Archnemesis","Onyx 2","Diamond 3","Onyx 3","Onyx 1"na[0x11],na[0x12],na[0x13],na[0x14],na[0x15],na[0b10110]=Ja,sb,J,w,ob,G I,Ja,sb=na,{},-1 Ja.Unranked=sb sb=0 Ja["Bronze 1"]=sb sb=0xc8 Ja["Bronze 2"]=sb sb=0x190 Ja["Bronze 3"]=sb sb=0x258 Ja["Silver 1"]=sb sb=0x320 Ja["Silver 2"]=sb sb=0x3e8 Ja["Silver 3"]=sb sb=0x4b0 Ja["Gold 1"]=sb sb=0x578 Ja["Gold 2"]=sb sb=0x640 Ja["Gold 3"]=sb sb=0x708 Ja["Platinum 1"]=sb sb=0x7d0 Ja["Platinum 2"]=sb sb=0x898 Ja["Platinum 3"]=sb sb=0x960 Ja["Diamond 1"]=sb sb=0xa28 Ja["Diamond 2"]=sb sb=0xaf0 Ja["Diamond 3"]=sb sb=0xbb8 Ja["Onyx 1"]=sb sb=0xc80 Ja["Onyx 2"]=sb sb=0xd48 Ja["Onyx 3"]=sb sb=0xe10 Ja.Nemesis=sb Ja.Archnemesis=sb na=Ja na={[0b11]=0b10,[0b10]=na}na[1]=na sb,J={},"Zero"sb[0]=J J="Warp"sb[1]=J J="Polar"sb[0b10]=J J="Fame"sb[0b11]=J J=0 sb.Zero=J J=1 sb.Warp=J J=0b10 sb.Polar=J J=0b11 sb.Fame=J Ja=sb Ja={[0b11]=0b10,[0b10]=Ja}Ja[1]=Ja J,w={},"s0_charm"J[0]=w w="s1_charm"J[1]=w w="s2_charm"J[0b10]=w w="s3_charm"J[0b11]=w sb=J sb={[0b11]=0b10,[0b10]=sb}sb[1]=sb J={[0b11]=0b10,[0b10]=J}J[1]=J J[1][J[0b11]]=H:_d{ab,q}w=H:X{ab,J}ob={[0b11]=0b10,[0b10]=ob}ob[1]=ob ob[1][ob[0b11]]=H:la{B,J,ab}G={[0b11]=0b10,[0b10]=G}G[1]=G G[1][G[0b11]]=H:ua{da}Y={[0b11]=0b10,[0b10]=Y}Y[1]=Y Y[1][Y[0b11]]=H:Ic()hb={[0b11]=0b10,[0b10]=hb}hb[1]=hb hb[1][hb[0b11]]=H:Vb{G,ab,qa,Y}Pa={[0b11]=0b10,[0b10]=Pa}Pa[1]=Pa Pa[1][Pa[0b11]]=H:kd{ab,hb}eb={[0b11]=0b10,[0b10]=eb}eb[1]=eb ma,eb[1][eb[0b11]]=task,H:sa{hb,ab}ma,ha=H:Aa{eb,qa},ma.spawn ha(ma)ha={[0b11]=0b10,[0b10]=ha}ha[1]=ha ha[1][ha[0b11]]=H:ea{ab}ma={[0b11]=0b10,[0b10]=ma}ma[1]=ma ma[1][ma[0b11]],Bb=H:Nb{ha,ab},task Bb,k=H:zc{ma,qa},Bb.spawn k(Bb)Bb={}k=Bb k={[0b11]=0b10,[0b10]=k}k[1]=k Bb={[0b11]=0b10,[0b10]=Bb}Bb[1]=Bb Bb[1][Bb[0b11]]=H:ed{k}L={[0b11]=0b10,[0b10]=L}L[1]=L L[1][L[0b11]]=H:La{Bb,k}gb={[0b11]=0b10,[0b10]=gb}gb[1]=gb gb[1][gb[0b11]]=H:Ra()A={[0b11]=0b10,[0b10]=A}A[1]=A A[1][A[0b11]]=H:pb{ib,qa}vb={[0b11]=0b10,[0b10]=vb}vb[1]=vb vb[1][vb[0b11]]=H:Cc{A,ib,Bb,qa}Va={[0b11]=0b10,[0b10]=Va}Va[1]=Va Va[1][Va[0b11]]=H:Lc{A,L,ib,ab,qa,q,gb}Ab={[0b11]=0b10,[0b10]=Ab}Ab[1]=Ab Ab[1][Ab[0b11]]=H:Pc{ab,Pa,Va,qa,vb}_={[0b11]=0b10,[0b10]=_}_[1]=_ xa,_[1][_[0b11]]=nil,H:sc{qa,ab}xa={[0b11]=0b10,[0b10]=xa}xa[1]=xa Sa,La,nb,ka,wb="__index",game,H:jd{qa,xa,ab},hookmetamethod,newcclosure wb=H.c(wb(nb))ka=ka(La,Sa,H.d(wb))xa[1][xa[0b11]]=ka xa={[0b11]=0b10,[0b10]=xa}xa[1]=xa xa[1][xa[0b11]]=H:W{ib,ab,Ja,sb,na}ka={[0b11]=0b10,[0b10]=ka}ka[1]=ka Sa,ka[1][ka[0b11]]=task,H:xc{xa,Ja,ib,ab,na,sb}La,Sa=Sa.spawn,H:Sc{ib,xa,bb}La(Sa)La={[0b11]=0b10,[0b10]=La}La[1]=La La[1][La[0b11]],Sa=H:gd{ib,ab},getgenv Sa=Sa()Sa.AtomicRivalsSpoofer=ab[1][ab[0b11]]zb,wb,W=false,{},{}W.enabled=zb U=Color3 U,zb=0xff,U.fromRGB C,ja=U,U zb=zb(U,C,ja)W.fill_color=zb U=Color3 U,zb=0,U.fromRGB ja,C=U,U zb=zb(U,C,ja)W.outline_color=zb zb=0 W.rotation=zb zb=0.5 W.rotation_speed=zb zb=0 W.bounce=zb zb=0.1 W.bounce_speed=zb zb=0b101 W.offset=zb zb=0b10100 W.length=zb zb=0b10 W.thickness=zb zb=1 W.lerp=zb nb=W wb.crosshair=nb Sa=wb Sa={[0b11]=0b10,[0b10]=Sa}Sa[1]=Sa wb={[0b11]=0b10,[0b10]=wb}wb[1]=wb wb[1][wb[0b11]],nb=H:Wb(),pcall W=H:na{Ra,wb,Sa}nb(W)nb=getgenv nb=nb()nb.AtomicRivalsMisc=Sa[1][Sa[0b11]]U,zb="",{}zb.Title=U U="rivals"zb.Footer=U U=81753502655837 zb.Icon=U C=UDim2 C,U=0b101000,C.fromOffset ja=C U=U(C,ja)zb.IconSize=U U=true zb.Center=U zb.AutoShow=U zb.Resizable=U U="Right"zb.NotifySide=U U=true zb.ShowCustomCursor=U zb.Compact=U zb.EnableCompacting=U zb.SidebarCompacted=U U=0x30 zb.SidebarCompactWidth=U zb.MinSidebarWidth=U U=true zb.GlobalSearch=U C=UDim2 U,ja,C=C.fromOffset,0x208,0x2bc U=U(C,ja)zb.Size=U nb,W=da[1][da[0b11]].CreateWindow,da[1][da[0b11]]nb=nb(W,zb)nb={[0b11]=0b10,[0b10]=nb}nb[1]=nb C,U="Skinchanger",{}U.Name=C C="sparkles"U.Icon=C C="unlock all, save loadout"U.Description=C zb,W=nb[1][nb[0b11]],nb[1][nb[0b11]].AddTab W=W(zb,U)C,ja={},"Inventory"C.Name=ja ja="backpack"C.Icon=ja ja="cases, wrap boxes, goodie bags"C.Description=ja U,zb=nb[1][nb[0b11]],nb[1][nb[0b11]].AddTab zb=zb(U,C)Ha,ja="World",{}ja.Name=Ha Ha="globe"ja.Icon=Ha Ha="world modulation, camera, skybox"ja.Description=Ha U,C=nb[1][nb[0b11]].AddTab,nb[1][nb[0b11]]U=U(C,ja)n,Ha="Spoofer",{}Ha.Name=n n="user"Ha.Icon=n n="platform, username, stats, curerncy, badges, elo charm"Ha.Description=n C,ja=nb[1][nb[0b11]].AddTab,nb[1][nb[0b11]]C=C(ja,Ha)n,m={},"Misc"n.Name=m m="box"n.Icon=m m="crosshair"n.Description=m ja,Ha=nb[1][nb[0b11]].AddTab,nb[1][nb[0b11]]ja=ja(Ha,n)m,z={},"Left"m.Side=z z="Crosshair"m.Name=z z="crosshair"m.IconName=z z="custom crosshair"m.Description=z Ha,n=ja.AddGroupbox,ja Ha=Ha(n,m)fa,z,Fa={},"MiscCrosshairEnabled","Enabled"fa.Text=Fa Fa=false fa.Default=Fa Fa=H:Sb{Sa}fa.Callback=Fa n,m=Ha.AddToggle,Ha n(m,z,fa)z,m,n="Fill",Ha,Ha.AddLabel n=n(m,z)fa,c,z={},Color3,"MiscCrosshairFill"Fa,c=c.fromRGB,0b11111111 ia=c V=ia Fa=Fa(c,ia,V)fa.Default=Fa Fa="Fill"fa.Title=Fa Fa=H:nd{Sa}fa.Callback=Fa n,m=n.AddColorPicker,n n(m,z,fa)z,n,m="Outline",Ha.AddLabel,Ha n=n(m,z)fa,c,z={},Color3,"MiscCrosshairOutline"c,Fa=0,c.fromRGB ia,V=c,c Fa=Fa(c,ia,V)fa.Default=Fa Fa="Outline"fa.Title=Fa Fa=H:Ea{Sa}fa.Callback=Fa m,n=n,n.AddColorPicker n(m,z,fa)z,Fa,fa="MiscCrosshairRotation","Rotation",{}fa.Text=Fa Fa=0 fa.Default=Fa fa.Min=Fa Fa=0b101101000 fa.Max=Fa Fa=0 fa.Rounding=Fa Fa=H:zd{Sa}fa.Callback=Fa n,m=Ha.AddSlider,Ha n(m,z,fa)Fa,z,fa="Rotation Speed","MiscCrosshairRotSpeed",{}fa.Text=Fa Fa=0.5 fa.Default=Fa Fa=0 fa.Min=Fa Fa=0b101 fa.Max=Fa Fa=1 fa.Rounding=Fa Fa=H:wd{Sa}fa.Callback=Fa n,m=Ha.AddSlider,Ha n(m,z,fa)fa,z,Fa={},"MiscCrosshairBounce","Bounce"fa.Text=Fa Fa=0 fa.Default=Fa fa.Min=Fa Fa=0x12c fa.Max=Fa Fa=0 fa.Rounding=Fa Fa=H:wb{Sa}fa.Callback=Fa n,m=Ha.AddSlider,Ha n(m,z,fa)z,fa,Fa="MiscCrosshairBounceSpeed",{},"Bounce Speed"fa.Text=Fa Fa=0.1 fa.Default=Fa Fa=0 fa.Min=Fa Fa=0b101 fa.Max=Fa Fa=1 fa.Rounding=Fa Fa=H:jc{Sa}fa.Callback=Fa m,n=Ha,Ha.AddSlider n(m,z,fa)z,fa,Fa="MiscCrosshairOffset",{},"Offset"fa.Text=Fa Fa=0b101 fa.Default=Fa Fa=0 fa.Min=Fa Fa=0b1100100 fa.Max=Fa Fa=0 fa.Rounding=Fa Fa=H:vd{Sa}fa.Callback=Fa n,m=Ha.AddSlider,Ha n(m,z,fa)fa,Fa,z={},"Length","MiscCrosshairLength"fa.Text=Fa Fa=0b10100 fa.Default=Fa Fa=0 fa.Min=Fa Fa=0b11001000 fa.Max=Fa Fa=0 fa.Rounding=Fa Fa=H:Pa{Sa}fa.Callback=Fa m,n=Ha,Ha.AddSlider n(m,z,fa)fa,Fa,z={},"Thickness","MiscCrosshairThickness"fa.Text=Fa Fa=0b10 fa.Default=Fa Fa=1 fa.Min=Fa Fa=0b1010 fa.Max=Fa Fa=0 fa.Rounding=Fa Fa=H:Fa{Sa}fa.Callback=Fa m,n=Ha,Ha.AddSlider n(m,z,fa)z,fa,Fa="MiscCrosshairLerp",{},"Lerp"fa.Text=Fa Fa=1 fa.Default=Fa Fa=0.1 fa.Min=Fa Fa=1 fa.Max=Fa Fa=0b10 fa.Rounding=Fa Fa=H:K{Sa}fa.Callback=Fa m,n=Ha,Ha.AddSlider n(m,z,fa)Ha={[0b11]=0b10,[0b10]=Ha}Ha[1]=Ha z,Ha[1][Ha[0b11]],fa={},H:xd(),"Left"z.Side=fa fa="Platform"z.Name=fa fa="smartphone"z.IconName=fa fa="device"z.Description=fa n,m=C.AddGroupbox,C n=n(m,z)Fa,c,fa={},"Device","SpoofDevice"Fa.Text=c V,ia,yb,Ka,o="Desktop",{},"Console","Mobile","VR"ia[1],ia[0b10],ia[0b11],ia[0b100]=V,Ka,yb,o c=ia Fa.Values=c c=V Fa.Default=c c=H:y{ab,J}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)Fa,fa,c={},"SpoofDeviceActive","Spoof Device"Fa.Text=c c=false Fa.Default=c c=H:Ca{ab,da,J}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa,c="SpoofDeviceSpam",{},"Device Spam"Fa.Text=c c=false Fa.Default=c c=H:kc{ab,ob}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa,c="SpoofSpamRate",{},"Spam Rate"Fa.Text=c c="1"Fa.Default=c c="0.1 - 5"Fa.Placeholder=c c=true Fa.Numeric=c c=H:Bb{ab,Ha}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)z,fa={},"Right"z.Side=fa fa="Player"z.Name=fa fa="user"z.IconName=fa fa="name / avatar"z.Description=fa m,n=C,C.AddGroupbox n=n(m,z)Fa,c,fa={},"Display Name","SpoofDisplayName"Fa.Text=c c=qa[1][qa[0b11]].DisplayName Fa.Default=c c="display name"Fa.Placeholder=c c=H:o{ab,Pa}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)Fa,c,fa={},"Spoof Display Name","SpoofDisplayNameActive"Fa.Text=c c=false Fa.Default=c c=H:Fc{ab,da,Pa}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)Fa,c,fa={},"Username","SpoofUsername"Fa.Text=c c=qa[1][qa[0b11]].Name Fa.Default=c c="username"Fa.Placeholder=c c=H:x{ab,Pa}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)Fa,c,fa={},"Spoof Username","SpoofUsernameActive"Fa.Text=c c=false Fa.Default=c c=H:G{ab,da,Pa}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)Fa,c,fa={},"Avatar UserId","SpoofAvatarUserId"Fa.Text=c c,ia=tostring,qa[1][qa[0b11]].UserId c=c(ia)Fa.Default=c c="userid"Fa.Placeholder=c c=true Fa.Numeric=c c=H:mc{ab,qa}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)fa,c,Fa="SpoofAvatarActive","Spoof Avatar",{}Fa.Text=c c=false Fa.Default=c c=H:q{ab,da}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Leaderboard"z.Name=fa fa="list"z.IconName=fa fa="stats"z.Description=fa n,m=C.AddGroupbox,C n=n(m,z)fa,c,Fa="SpoofELOValue","ELO Value",{}Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:Yb{ab,Ab,Ha}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)Fa,fa,c={},"SpoofELOActive","Spoof ELO"Fa.Text=c c=false Fa.Default=c c=H:h{ab,da,Ab}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)c,fa,Fa="Streak Value","SpoofStreakValue",{}Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:dd{ab,Ab,Ha}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)Fa,c,fa={},"Spoof Streak","SpoofStreakActive"Fa.Text=c c=false Fa.Default=c c=H:nc{ab,da,Ab}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)c,Fa,fa="Kills Value",{},"SpoofKillsValue"Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:O{ab,Ab,Ha}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)Fa,c,fa={},"Spoof Kills","SpoofKillsActive"Fa.Text=c c=false Fa.Default=c c=H:U{ab,eb,Ab,da,Pa,qa}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)c,fa,Fa="Wins Value","SpoofWinsValue",{}Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:ba{ab,Ab,Ha}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)fa,Fa,c="SpoofWinsActive",{},"Spoof Wins"Fa.Text=c c=false Fa.Default=c c=H:Ma{ab,eb,Ab,da,Pa,qa}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)Fa,fa,c={},"SpoofLevelValue","Level Value"Fa.Text=c c="1"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:m{ab,Ab,Ha}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)fa,Fa,c="SpoofLevelActive",{},"Spoof Level"Fa.Text=c c=false Fa.Default=c c=H:Sa{ab,da,Ab}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)Fa,fa="Clear Leaderboard Spoofs",{}fa.Text=Fa Fa=H:ga{ab,da,rb}fa.Func=Fa m,z=n.AddButton,n m(z,fa)z,fa={},"Right"z.Side=fa fa="Currency / Keys"z.Name=fa fa="coins"z.IconName=fa fa="currency"z.Description=fa n,m=C.AddGroupbox,C n=n(m,z)c,fa,Fa="Weapon Keys","SpoofWeaponKeysValue",{}Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:B{ab,La,Ha}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)Fa,fa,c={},"SpoofWeaponKeysActive","Spoof Weapon Keys"Fa.Text=c c=false Fa.Default=c c=H:ec{ab,da,La}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa,c="SpoofUnlockTokensValue",{},"Unlock Tokens"Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:Xb{ab,La,Ha}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)fa,Fa,c="SpoofUnlockTokensActive",{},"Spoof Unlock Tokens"Fa.Text=c c=false Fa.Default=c c=H:ib{ab,da,La}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)c,Fa,fa="Skin Tickets",{},"SpoofSkinTicketsValue"Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:qd{ab,La,Ha}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)c,fa,Fa="Spoof Skin Tickets","SpoofSkinTicketsActive",{}Fa.Text=c c=false Fa.Default=c c=H:ya{ab,da,La}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)c,Fa,fa="Glory",{},"SpoofGloryValue"Fa.Text=c c="0"Fa.Default=c c="number"Fa.Placeholder=c c=true Fa.Numeric=c c=H:pc{ab,La,Ha}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)fa,c,Fa="SpoofGloryActive","Spoof Glory",{}Fa.Text=c c=false Fa.Default=c c=H:i{ab,da,La}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa={},"Clear Currency Spoofs"fa.Text=Fa Fa=H:tc{ab,da,rb}fa.Func=Fa m,z=n.AddButton,n m(z,fa)z,fa={},"Right"z.Side=fa fa="Badges"z.Name=fa fa="award"z.IconName=fa fa="badges"z.Description=fa m,n=C,C.AddGroupbox n=n(m,z)c,fa,Fa="Premium","SpoofBadgePremium",{}Fa.Text=c c=false Fa.Default=c c=H:hd{ab,_}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)Fa,c,fa={},"Verified","SpoofBadgeVerified"Fa.Text=c c=false Fa.Default=c c=H:id{ab,_}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,c,Fa="SpoofBadgeInfluencer","Influencer",{}Fa.Text=c c=false Fa.Default=c c=H:Na{ab,_}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)c,Fa,fa="Admin",{},"SpoofBadgeAdmin"Fa.Text=c c=false Fa.Default=c c=H:Cd{ab,_}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Charm"z.Name=fa fa="star"z.IconName=fa fa="season charms"z.Description=fa n,m=C.AddGroupbox,C n=n(m,z)Fa,c,fa={},"Charm Rank","SpoofCharmRank"Fa.Text=c Fa.Values=I c="Use Spoofed ELO"Fa.Default=c c=H:Lb{ab,ka}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)fa,Fa,c="SpoofArchRank",{},"Arch Rank"Fa.Text=c c="1"Fa.Default=c c="1-100"Fa.Placeholder=c c=true Fa.Numeric=c c=H:L{ab,ka}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)c,Fa,fa="Season 0 Charm",{},"SpoofS0Charm"Fa.Text=c c=false Fa.Default=c c=H:lc{ab,da,ka}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)fa,Fa,c="SpoofS1Charm",{},"Season 1 Charm"Fa.Text=c c=false Fa.Default=c c=H:Gb{ab,da,ka}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)c,Fa,fa="Season 2 Charm",{},"SpoofS2Charm"Fa.Text=c c=false Fa.Default=c c=H:Mb{ab,da,ka}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,c,Fa="SpoofS3Charm","Season 3 Charm",{}Fa.Text=c c=false Fa.Default=c c=H:ja{ab,da,ka}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Lighting"z.Name=fa fa="sun"z.IconName=fa fa="custom lighting"z.Description=fa m,n=U,U.AddGroupbox n=n(m,z)Fa,fa,c={},"WorldLightingEnabled","Enabled"Fa.Text=c c=false Fa.Default=c c=H:rd{la,Q,Xa}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)c,Fa,fa="Global Shadows",{},"WorldGlobalShadows"Fa.Text=c c=true Fa.Default=c c=H:v{la,Xa}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)Fa,c,fa={},"Lighting Style","WorldLightingStyle"Fa.Text=c ia,V,Ka={},"Realistic","Soft"ia[1],ia[0b10]=V,Ka c=ia Fa.Values=c c=V Fa.Default=c c=H:Oa{la,Xa}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)fa,m,z="Ambient",n.AddLabel,n m=m(z,fa)fa,Fa,c="WorldAmbient",{},M[1][M[0b11]].Ambient Fa.Default=c c="Ambient"Fa.Title=c c=H:fb{la,Xa}Fa.Callback=c z,m=m,m.AddColorPicker m(z,fa,Fa)z,fa,m=n,"Outdoor Ambient",n.AddLabel m=m(z,fa)c,fa,Fa=M[1][M[0b11]].OutdoorAmbient,"WorldOutdoorAmbient",{}Fa.Default=c c="Outdoor"Fa.Title=c c=H:Xa{la,Xa}Fa.Callback=c z,m=m,m.AddColorPicker m(z,fa,Fa)z,fa,m=n,"Shift Top",n.AddLabel m=m(z,fa)Fa,c,fa={},M[1][M[0b11]].ColorShift_Top,"WorldShiftTop"Fa.Default=c c="Shift Top"Fa.Title=c c=H:Kb{la,Xa}Fa.Callback=c z,m=m,m.AddColorPicker m(z,fa,Fa)z,m,fa=n,n.AddLabel,"Shift Bottom"m=m(z,fa)c,fa,Fa=M[1][M[0b11]].ColorShift_Bottom,"WorldShiftBottom",{}Fa.Default=c c="Shift Bottom"Fa.Title=c c=H:rc{la,Xa}Fa.Callback=c z,m=m,m.AddColorPicker m(z,fa,Fa)c,Fa,fa="Exposure",{},"WorldExposure"Fa.Text=c c=0 Fa.Default=c c=-0b11 Fa.Min=c c=0b11 Fa.Max=c c=0b10 Fa.Rounding=c c=H:_c{la,Xa}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)Fa,c,fa={},"Brightness","WorldBrightness"Fa.Text=c c=0b10 Fa.Default=c c=0 Fa.Min=c c=0b1010 Fa.Max=c c=0b10 Fa.Rounding=c c=H:Jc{la,Xa}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,c,Fa="WorldShadowSoftness","Shadow Softness",{}Fa.Text=c c=0.2 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:F{la,Xa}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)Fa,fa,c={},"WorldDiffuse","Diffuse Scale"Fa.Text=c c=1 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:_a{la,Xa}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)c,Fa,fa="Specular Scale",{},"WorldSpecular"Fa.Text=c c=1 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:Ga{la,Xa}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,z="Right",{}z.Side=fa fa="Atmosphere"z.Name=fa fa="cloud"z.IconName=fa fa="custom atmosphere"z.Description=fa m,n=U,U.AddGroupbox n=n(m,z)fa,c,Fa="WorldAtmosphereEnabled","Enabled",{}Fa.Text=c c=false Fa.Default=c c=H:Uc{la,f}Fa.Callback=c z,m=n,n.AddToggle m(z,fa,Fa)Fa,c,fa={},"Density","WorldAtmDensity"Fa.Text=c c=0.255 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b11 Fa.Rounding=c c=H:Fb{la,f}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)Fa,fa,c={},"WorldAtmOffset","Offset"Fa.Text=c c=0.2 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:aa{la,f}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)m,fa,z=n.AddLabel,"Color",n m=m(z,fa)fa,Fa,ia="WorldAtmColor",{},Color3 Ka,ia,V,c=0xe7,0x8c,0b11000100,ia.fromRGB c=c(ia,V,Ka)Fa.Default=c c="Color"Fa.Title=c c=H:Ta{la,f}Fa.Callback=c z,m=m,m.AddColorPicker m(z,fa,Fa)m,z,fa=n.AddLabel,n,"Decay"m=m(z,fa)ia,fa,Fa=Color3,"WorldAtmDecay",{}c,ia,Ka,V=ia.fromRGB,0b1011100,0b1101,0b111100 c=c(ia,V,Ka)Fa.Default=c c="Decay"Fa.Title=c c=H:Ad{la,f}Fa.Callback=c m,z=m.AddColorPicker,m m(z,fa,Fa)Fa,c,fa={},"Glare","WorldAtmGlare"Fa.Text=c c=0 Fa.Default=c Fa.Min=c c=0b1010 Fa.Max=c c=0b10 Fa.Rounding=c c=H:Tc{la,f}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)c,Fa,fa="Haze",{},"WorldAtmHaze"Fa.Text=c c=1.82 Fa.Default=c c=0 Fa.Min=c c=0b1010 Fa.Max=c c=0b10 Fa.Rounding=c c=H:T{la,f}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Color Correction"z.Name=fa fa="palette"z.IconName=fa fa="cc"z.Description=fa m,n=U,U.AddGroupbox n=n(m,z)c,fa,Fa="Enabled","WorldCCEnabled",{}Fa.Text=c c=false Fa.Default=c c=H:Da{la,Da}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,c,Fa="WorldCCBrightness","Brightness",{}Fa.Text=c c=0 Fa.Default=c c=-1 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:pa{la,Da}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)Fa,c,fa={},"Contrast","WorldCCContrast"Fa.Text=c c=0 Fa.Default=c c=-1 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:Mc{la,Da}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)c,fa,Fa="Saturation","WorldCCSaturation",{}Fa.Text=c c=0 Fa.Default=c c=-1 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:xa{la,Da}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)fa,z,m="Tint",n,n.AddLabel m=m(z,fa)fa,ia,Fa="WorldCCTint",Color3,{}ia,c=0xff,ia.fromRGB V=ia Ka=V c=c(ia,V,Ka)Fa.Default=c c="Tint"Fa.Title=c c=H:Dd{la,Da}Fa.Callback=c m,z=m.AddColorPicker,m m(z,fa,Fa)z,fa={},"Right"z.Side=fa fa="SunRays"z.Name=fa fa="sun"z.IconName=fa fa="custom sunray"z.Description=fa m,n=U,U.AddGroupbox n=n(m,z)c,fa,Fa="Enabled","WorldSunRays",{}Fa.Text=c c=false Fa.Default=c c=H:bb{la,ub}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)Fa,fa,c={},"WorldSunRaysIntensity","Intensity"Fa.Text=c c=0.25 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:hc{la,ub}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)fa,c,Fa="WorldSunRaysSpread","Spread",{}Fa.Text=c c=1 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:qb{la,ub}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Skybox"z.Name=fa fa="cloud"z.IconName=fa fa="custom skyboxes"z.Description=fa n,m=U.AddGroupbox,U n=n(m,z)Fa,fa,c={},"WorldSkyboxEnabled","Enabled"Fa.Text=c c=false Fa.Default=c c=H:Qc{la,y,Ma}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)c,Fa,fa="Preset",{},"WorldSkyboxPreset"Fa.Text=c Fa.Values=wa c="None"Fa.Default=c c=H:db{la,Ma}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)c,Fa,fa="Back",{},"WorldSkyBack"Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:Pb{la,Ma}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)Fa,c,fa={},"Front","WorldSkyFront"Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:tb{la,Ma}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)c,fa,Fa="Left","WorldSkyLeft",{}Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:ub{la,Ma}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)Fa,fa,c={},"WorldSkyRight","Right"Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:ob{la,Ma}Fa.Callback=c m,z=n.AddInput,n m(z,fa,Fa)fa,Fa,c="WorldSkyUp",{},"Up"Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:Dc{la,Ma}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)fa,Fa,c="WorldSkyDown",{},"Down"Fa.Text=c c=""Fa.Default=c c="asset id"Fa.Placeholder=c c=H:da{la,Ma}Fa.Callback=c z,m=n,n.AddInput m(z,fa,Fa)fa,c,Fa="WorldClockTime","ClockTime",{}Fa.Text=c c=0b1110 Fa.Default=c c=0 Fa.Min=c c=0b11000 Fa.Max=c c=0b10 Fa.Rounding=c c=H:rb{la,M}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)c,fa,Fa="Star Count","WorldStarCount",{}Fa.Text=c c=0xbb8 Fa.Default=c c=0 Fa.Min=c c=0x1388 Fa.Max=c c=0 Fa.Rounding=c c=H:Ja{la,Ma}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,c,Fa="WorldSunSize","Sun Angular Size",{}Fa.Text=c c=0b10101 Fa.Default=c c=0 Fa.Min=c c=0x3c Fa.Max=c c=1 Fa.Rounding=c c=H:r{la,Ma}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)Fa,c,fa={},"Moon Angular Size","WorldMoonSize"Fa.Text=c c=0b1011 Fa.Default=c c=0 Fa.Min=c c=0x3c Fa.Max=c c=1 Fa.Rounding=c c=H:ha{la,Ma}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)c,Fa,fa="Auto Rotate",{},"WorldSkyAutoRotate"Fa.Text=c c=false Fa.Default=c c=H:ra{la,y}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa,c="WorldSkyRotateSpeed",{},"Rotate Speed"Fa.Text=c c=1 Fa.Default=c c=0.1 Fa.Min=c c=0b1010 Fa.Max=c c=1 Fa.Rounding=c c=H:Rc{la}Fa.Callback=c m,z=n.AddSlider,n m(z,fa,Fa)z,fa={},"Right"z.Side=fa fa="Camera"z.Name=fa fa="eye"z.IconName=fa fa="fov, res"z.Description=fa n,m=U.AddGroupbox,U n=n(m,z)Fa,c,fa={},"FOV","WorldCameraFov"Fa.Text=c c=0b1000110 Fa.Default=c c=0b1010 Fa.Min=c c=0b1111000 Fa.Max=c c=0 Fa.Rounding=c c=H:qa{la,ib}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,c,Fa="WorldCameraResolution","Resolution",{}Fa.Text=c c=1 Fa.Default=c c=0 Fa.Min=c c=1 Fa.Max=c c=0b10 Fa.Rounding=c c=H:jb{la}Fa.Callback=c z,m=n,n.AddSlider m(z,fa,Fa)fa,c,Fa="WorldAntiFlash","Anti Flashbang",{}Fa.Text=c c=false Fa.Default=c c=H:H{la}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,c,Fa="WorldAntiSmoke","Anti Smoke",{}Fa.Text=c c=false Fa.Default=c c=H:od{la}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,z="Left",{}z.Side=fa fa="Backpack"z.Name=fa fa="cases / boxes"z.Description=fa m,n=zb,zb.AddTabbox n=n(m,z)fa,Fa,m,z="Single","package",n.AddTab,n m=m(z,fa,Fa)Fa,c,fa,z="Bulk","boxes",n,n.AddTab z=z(fa,Fa,c)c,ia,Fa,fa="Delete","trash-2",n,n.AddTab fa=fa(Fa,c,ia)V,Ka,ia={},"Case / Box","InvCaseBox"V.Text=Ka V.Values=R Ka="Skin Case"V.Default=Ka Ka=H:ca{Ba}V.Callback=Ka Fa,c=m.AddDropdown,m Fa(c,ia,V)ia,V,Ka="InvQty",{},"Quantity"V.Text=Ka Ka=1 V.Default=Ka V.Min=Ka Ka=0x63 V.Max=Ka Ka=0 V.Rounding=Ka Ka=H:cb{Ba}V.Callback=Ka Fa,c=m.AddSlider,m Fa(c,ia,V)Ka,V,ia="For Weapon",{},"InvWeapon"V.Text=Ka yb,v,o={},"IsRandom","(None)"yb[1],yb[0b10]=o,v Ka=yb V.Values=Ka Ka=o V.Default=Ka Ka=H:Ba{Ba}V.Callback=Ka c,Fa=m,m.AddDropdown Fa(c,ia,V)ia,V,Ka="InvNewEntry",{},"New Entry"V.Text=Ka Ka=false V.Default=Ka Ka=H:A{Ba}V.Callback=Ka Fa,c=m.AddToggle,m Fa(c,ia,V)V,ia="Add to Backpack",{}ia.Text=V V=H:Vc{S}ia.Func=V Fa,c=m.AddButton,m Fa(c,ia)Ka,V,ia="Quantity",{},"InvBulkQty"V.Text=Ka Ka=1 V.Default=Ka V.Min=Ka Ka=0x63 V.Max=Ka Ka=0 V.Rounding=Ka Ka=H:n{Ba}V.Callback=Ka Fa,c=z.AddSlider,z Fa(c,ia,V)V,ia="Add All Cases",{}ia.Text=V V=H:Qa{a}ia.Func=V Fa,c=z.AddButton,z Fa(c,ia)ia,V,Ka="InvDeleteEntry",{},"Backpack Entry"V.Text=Ka yb,o={},"(empty)"yb[1]=o Ka=yb V.Values=Ka Ka=1 V.Default=Ka Ka=H:s{Ba}V.Callback=Ka Fa,c=fa.AddDropdown,fa Fa(c,ia,V)ia,Ka,V="InvDeleteQty","Quantity",{}V.Text=Ka Ka=1 V.Default=Ka V.Min=Ka Ka=0x63 V.Max=Ka Ka=0 V.Rounding=Ka Ka=H:vb{Ba}V.Callback=Ka Fa,c=fa.AddSlider,fa Fa(c,ia,V)V,ia="Refresh List",{}ia.Text=V V=H:mb{ya,sa}ia.Func=V Fa,c=fa.AddButton,fa Fa(c,ia)ia,V={},"Delete ALL Backpack"ia.Text=V V=H:V{Ca,ya,sa}ia.Func=V Fa,c=fa.AddButton,fa Fa(c,ia)V,ia="Delete (Qty)",{}ia.Text=V V=H:wa{jb,ya,sa}ia.Func=V Fa,c=fa.AddButton,fa Fa(c,ia)V,ia="Delete ALL of Entry",{}ia.Text=V V=H:N{va,ya,sa}ia.Func=V c,Fa=fa,fa.AddButton Fa(c,ia)ia,V={},"Right"ia.Side=V V="Inject"ia.Name=V V="plus"ia.IconName=V V="custom items"ia.Description=V c,Fa=zb,zb.AddGroupbox Fa=Fa(c,ia)c={[0b11]=0b10,[0b10]=c}c[1]=c o,c[1][c[0b11]],Ka,yb="Type",H:ad{Ba,sa,Na},"InvInjectType",{}yb.Text=o za,Ta,v,Wa,ba,ta="Skin","Wrap",{},"Charm","Finisher","Emote"v[1],v[0b10],v[0b11],v[0b100],v[0b101]=za,Ta,Wa,ba,ta o=v yb.Values=o o=za yb.Default=o o=H:ud{Ba,c}yb.Callback=o V,ia=Fa,Fa.AddDropdown ia(V,Ka,yb)o,yb,Ka="For Weapon",{},"InvInjectWeapon"yb.Text=o Ta,za,v="IsRandom","Universal",{}v[1],v[0b10]=za,Ta o=v yb.Values=o o=za yb.Default=o o=H:_b{Ba,c}yb.Callback=o ia,V=Fa.AddDropdown,Fa ia(V,Ka,yb)Ka,yb,o="InvInjectCosmetic",{},"Item"yb.Text=o za,v="(waiting for modules)",{}v[1]=za o=v yb.Values=o o=1 yb.Default=o o=H:Db{Ba}yb.Callback=o ia,V=Fa.AddDropdown,Fa ia(V,Ka,yb)o,Ka,yb="Quantity","InvInjectQty",{}yb.Text=o o=1 yb.Default=o yb.Min=o o=0x270f yb.Max=o o=0 yb.Rounding=o o=H:kb{Ba}yb.Callback=o ia,V=Fa.AddSlider,Fa ia(V,Ka,yb)yb,Ka,o={},"InvStackDupes","Stack duplicates"yb.Text=o o=false yb.Default=o o=H:Bd{Ba}yb.Callback=o V,ia=Fa,Fa.AddToggle ia(V,Ka,yb)Ka,yb={},"Refresh Item List"Ka.Text=yb yb=H:fa{c,da}Ka.Func=yb ia,V=Fa.AddButton,Fa ia(V,Ka)Ka,yb={},"Inject"Ka.Text=yb yb=H:xb{pa}Ka.Func=yb ia,V=Fa.AddButton,Fa ia(V,Ka)m=task n,m=m.spawn,H:Q{Ia,Na,sa,Ba}n(m)fa,z="Left",{}z.Side=fa fa="Skinchanger"z.Name=fa fa="sparkles"z.IconName=fa fa="select what you want"z.Description=fa m,n=W,W.AddGroupbox n=n(m,z)fa,c,Fa="UnlockType","Cosmetic Type",{}Fa.Text=c Fa.Values=p c="Skin"Fa.Default=c c=H:ld{ga}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)fa,c,Fa="UnlockRarity","Rarity",{}Fa.Text=c Fa.Values=cb c="Mythical"Fa.Default=c c=H:wc{ga}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)fa,Fa={},"Unlock selected"fa.Text=Fa Fa=H:vc{P,ga,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)Fa,fa="Unlock all selected",{}fa.Text=Fa Fa=H:l{r,ga,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)Fa,fa="Unlock All Cosmetics",{}fa.Text=Fa Fa=H:Hc{X,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)fa,Fa={},"Unlock All Weapons"fa.Text=Fa Fa=H:p{b,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)z,fa={},"Right"z.Side=fa fa="Specific Unlock"z.Name=fa fa="search"z.IconName=fa fa="search what you want"z.Description=fa n,m=W.AddGroupbox,W n=n(m,z)c,Fa,fa="Type",{},"SpecType"Fa.Text=c Fa.Values=p c="Skin"Fa.Default=c c=H:Ib{ga,l}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)Fa,fa,c={},"SpecWeapon","Weapon"Fa.Text=c V,ia="(waiting for modules)",{}ia[1]=V c=ia Fa.Values=c c=1 Fa.Default=c c=H:ac{ga,sa,Na}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)fa,Fa,c="SpecName",{},"Cosmetic"Fa.Text=c V,ia="(waiting for modules)",{}ia[1]=V c=ia Fa.Values=c c=1 Fa.Default=c c=H:Ua{ga}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)fa,Fa={},"Unlock Specific"fa.Text=Fa Fa=H:fc{O,ga,da}fa.Func=Fa m,z=n.AddButton,n m(z,fa)Fa,fa="Unlock All for Weapon",{}fa.Text=Fa Fa=H:j{ra,ga,da}fa.Func=Fa m,z=n.AddButton,n m(z,fa)fa,Fa={},"Refresh Lists"fa.Text=Fa Fa=H:Ub{l,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)z,fa={},"Left"z.Side=fa fa="Apply"z.Name=fa fa="check"z.IconName=fa fa="instant apply"z.Description=fa n,m=W.AddGroupbox,W n=n(m,z)Fa,c,fa={},"Type","EquipType"Fa.Text=c Fa.Values=p c="Skin"Fa.Default=c c=H:Ha{ga,fb}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)c,fa,Fa="Weapon","EquipWeapon",{}Fa.Text=c V,ia="(waiting for modules)",{}ia[1]=V c=ia Fa.Values=c c=1 Fa.Default=c c=H:sd{ga,sa,Na}Fa.Callback=c m,z=n.AddDropdown,n m(z,fa,Fa)fa,c,Fa="EquipName","Cosmetic",{}Fa.Text=c V,ia="(waiting for modules)",{}ia[1]=V c=ia Fa.Values=c c=1 Fa.Default=c c=H:z{ga}Fa.Callback=c z,m=n,n.AddDropdown m(z,fa,Fa)c,fa,Fa="Inverted (Wrap)","EquipInverted",{}Fa.Text=c c=false Fa.Default=c c=H:S{ga}Fa.Callback=c m,z=n.AddToggle,n m(z,fa,Fa)fa,Fa={},"Equip"fa.Text=Fa Fa=H:Cb{ca}fa.Func=Fa z,m=n,n.AddButton m(z,fa)fa,Fa={},"Equip All Weapons"fa.Text=Fa Fa=H:I{Qa}fa.Func=Fa m,z=n.AddButton,n m(z,fa)Fa,fa="Refresh Lists",{}fa.Text=Fa Fa=H:Eb{fb,da}fa.Func=Fa z,m=n,n.AddButton m(z,fa)m=task m,n=H:Wc{Oa,da,Ia,fb,l},m.spawn n(m)z,fa={},"Right"z.Side=fa fa="Save loadout"z.Name=fa fa="save"z.IconName=fa fa="saves your selected skins"z.Description=fa n,m=W.AddGroupbox,W n=n(m,z)fa,Fa={},"Save"fa.Text=Fa Fa=H:yd{g}fa.Func=Fa z,m=n,n.AddButton m(z,fa)Fa,fa="Reload",{}fa.Text=Fa Fa=H:Ka{x,da}fa.Func=Fa m,z=n.AddButton,n m(z,fa)m=task m,n=H:Tb{nb,i,T,db,da},m.defer n(m)m=task m,n=H:Qb{da,Ra},m.defer n(m)m=task n,m=m.defer,H:zb{da}n(m)n=getgenv n=n()z={}z.skin=ga[1][ga[0b11]]z.modules=ib[1][ib[0b11]]m=z n.AtomicRivals=m fa,z="rivals",{}z.Title=fa fa="loaded.."z.Description=fa fa=0b11 z.Time=fa n,m=da[1][da[0b11]].Notify,da[1][da[0b11]]n(m,z)return end end,la=function(d,_)return function()local b,h,f,a,e h=0xf1 while true do if h<0x93 then f,a=_[0b10][1][_[0b10][0b11]],true f(a)return elseif h<=0b10010011 then a=task f,a=a.spawn,d:Be{_[0b11],_[1],e,_[0b10]}f(a)return else f,e=1,_[1][1][_[1][0b11]]e=e+f _[1][1][_[1][0b11]]=e e=_[1][1][_[1][0b11]]e={[0b11]=0b10,[0b10]=e}e[1]=e b=_[0b11][1][_[0b11][0b11]]a=b.device_spam f=not a h=f and 0b10000101 or 0b10010011 end end end end,B=function(d,_)return function(e)local f,h,c,a,b h=0x62 repeat if h>0b110110 then a=_[1][1][_[1][0b11]]b,a,c,f=e,_[0b11][1][_[0b11][0b11]],0,a.currency a=a(b,c)f.weapon_keys_value=a b=_[1][1][_[1][0b11]]a=b.currency f=a.weapon_keys h=f and 0x36 or 0x10 elseif h<=0b10000 then return else f=_[0b10][1][_[0b10][0b11]]h=0b10000 f()end until false end end,Xe=function(n,_)return function(e)local a,m,k,c,h,f,o,i,l,j,b m=0b101000 while true do if m<0x49 then i=_[1][1][_[1][0b11]]j=i.lighting_skybox l=not j m=l and 0b1111000 or 0b1001001 elseif m<=0b1001001 then i=_[1][1][_[1][0b11]]j=i.lighting_skybox k,l,j=Vector3,j.SkyboxOrientation,i.lighting_skybox i,k,h,b=k.new,0,_[1][1][_[1][0b11]],l.Y f=h.auto_rotate_speed f,c=0b1010,e*f a=c*f b,o=k,b+a i=i(k,o,b)j.SkyboxOrientation=i return else return end end end end,Qe=function(d,_)return function(e)local h,b,a,f h=0x12 repeat if h>=0b10010100 then if h>=0b10111001 then if h<=0b10111001 then h=f and 0x4b or 0x94 else b=_[1][1][_[1][0b11]]h,a=0xb9,b.lighting_sunrays f=e[1][e[0b11]]~=a end else return end elseif h<=0b10010 then e={[0b11]=0b10,[0b10]=e}e[1]=e b,a,f="SunRaysEffect",e[1][e[0b11]],e[1][e[0b11]].IsA f=f(a,b)h=f and 0b11010001 or 0xb9 else h,a=h+0x49,task f,a=a.defer,d:Re{e}f(a)end until false end end,Md=function(d,_)return function()local f,e,c,h,i,a h=0x32 while true do if h<=0b1000001 then if h<0b111001 then e,c=require,_[1][1][_[1][0b11]]i=c.PlayerScripts a=i.Modules f=a.Pages f=f.ViewProfile e=e(f)f=e h=f and 0b1000001 or 0xa0 elseif h>0x39 then h,f=h+0b1011111,e.Fetch else return end elseif h>0x54 then h=f and 0x54 or 0b111001 else h,f=h+-0x1b,e.Fetch f={[0b11]=0b10,[0b10]=f}f[1]=f a=d:je{_[0b10],f}e.Fetch=a end end end end,wc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.unlock_rarity=e return end end,ve=function(d,_)return function()local h,g,i,e,j,f,c h=0b10111110 repeat if h>=0b10011010 then if h>0xec then return elseif h<0b10111110 then h=i and 0x237e/h or 0b11110010 elseif h>0xbe then g=_[0b11][1][_[0b11][0b11]]h,c=0x9a,g.CameraController i=not c else i,j,e=0x14,"PlayerScripts",_[1][1][_[1][0b11]]e,f=e.WaitForChild,e e=e(f,j,i)f=e h=f and 0b1001100 or 0b11100 end elseif h>0x4c then j,i,c=f.FindFirstChild,f,"CameraController"j=j(i,c)i=j h=i and 0xec or 0x9a elseif h<0b111011 then h=f and 0xea8/h or 0xf2 elseif h<=0b111011 then h,i,c,g=h+0xb7,_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]],j c=c(g)i.CameraController=c else i,f,c,j="Controllers",e.WaitForChild,0b10100,e h,f=0x1c,f(j,i,c)end until false end end,_e=function(d,_)return function()local e,g,f,a g=0b11100101 repeat if g<0b11100001 then e.FighterController=f return elseif g>0b11100001 then e=_[1][1][_[1][0b11]]a=e f=a.FighterController g=f and 0x52 or 0b11100001 else f,a=require,_[0b10][1][_[0b10][0b11]]g,f=g+-0b10001111,f(a)end until false end end,ha=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.moon_angular_size=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ue=function(d,_)return function()local f,h,a,e,i,c h=0b11110111 repeat if h>0x98 then if h<=0b10011111 then return else c=_[1][1][_[1][0b11]]i=c.PlayerScripts a=i.Modules f=a.ClientReplicatedClasses a,e="Flashbang",f.ClientFighter f,e=e,e.FindFirstChild e=e(f,a)f=e h=f and 0b101101 or 0b10011000 end elseif h<=0x94 then if h>0b101101 then a,i,f=_[0b10][1][_[0b10][0b11]],e,_[0b11][1][_[0b11][0b11]]a=a(i)h,f.Flashbang=0x5bec/h,a else h,i=0x98,_[0b11][1][_[0b11][0b11]]a=i.Flashbang f=not a end else h=f and 0x94 or 0b10011111 end until false end end,da=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_down=e f=_[0b10][1][_[0b10][0b11]]f()return end end,y=function(d,_)return function(e)local f,a,g g=0xbb while true do if g>=0xbb then if g<=0b10111011 then f=_[1][1][_[1][0b11]]f.device=e a=f f=a.spoof_device g=f and 0x2f or 0b11000110 else return end else g,f,a=0b11000110,_[0b10][1][_[0b10][0b11]],false f(a)end end end end,Ua=function(d,_)return function(e)local a,f,g g=0x56 repeat if g>0x93 then if g>0xa6 then f=_[1][1][_[1][0b11]]g,f.specific_name=0b10010011,e else a="(waiting for modules)"g,f=g+-0b1010111,e~=a end elseif g<0x8c then if g>0b1001111 then a="(none)"f=e~=a g=f and 0b10100110 or 0b1001111 else g=f and g+0x67 or 0x8c end elseif g<=0b10001100 then a,f="",_[1][1][_[1][0b11]]g,f.specific_name=0b100011111-g,a else return end until false end end,ae=function(d,_)return function(e,f)local b,g,h,i,j,k h=0x7b while true do if h<=0b1011111 then if h<=0b101100 then if h<0b10101 then if h>0b101 then k.constructing_weapon=g g=_[0b11][1][_[0b11][0b11]]k=i==g h=k and 0x45 or 0x258/h else h=g and 0b1101-h or 0b10011110 end elseif h>0x28 then h,g=0b101,j[1][j[0b11]]elseif h>0x15 then b,k,g=f[1][f[0b11]],_[0b100][1][_[0b100][0b11]],e[1][e[0b11]]k=k(g,b)b,g=nil,_[1][1][_[1][0b11]]g.constructing_weapon=b return k else k,g=pcall,d:be{e,_[0b10],f,j}h=0b111101-h k(g)end elseif h<0b1001011 then h,b=0x4b,_[1][1][_[1][0b11]]g=b.equipped k=g[j[1][j[0b11]]]elseif h>0x4b then b,k=_[0b11][1][_[0b11][0b11]],_[1][1][_[1][0b11]]g=i==b h=g and 0b10001011-h or 0b111011011/h else h=k and 0xac-h or h+0b110101 end elseif h<0b1111011 then if h<=0x64 then if h>0x61 then h,k=0x251c/h,e[1][e[0b11]].ClientFighter i=k.Player else g,h,b,k=j[1][j[0b11]],0b10000000,"Skin",_[0b10][1][_[0b10][0b11]]k=k(g,b)end else h=k and h+-0b1011000 or 0x28 end elseif h<=0x9e then if h>=0b10000000 then if h>0b10000000 then h,g=0b1000,nil else h=k and 0b11110110 or h+-0x13 end else e={[0b11]=0b10,[0b10]=e}e[1]=e f={[0b11]=0b10,[0b10]=f}f[1]=f j=e[1][e[0b11]].Name j={[0b11]=0b10,[0b10]=j}j[1]=j i=e[1][e[0b11]].ClientFighter h=i and 0x64 or 0x5f end else h,k=h+-0b10001001,f[1][f[0b11]]end end end end,id=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.badges f.Verified=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Sf=function(d,_)return function()local a,e,f,c,b e=d:Tf{_[1]}f,c,a=e,"PlayerGui",_[0b10][1][_[0b10][0b11]]b,a=a,a.FindFirstChild a=d.c(a(b,c))f(d.d(a))f,a=e,workspace f(a)return end end,H=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.anti_flashbang=e return end end,ta=function(n,_)return function(e)local l,k,i,m,b,g,j,a,c,f,h m=0b11001 while true do if m>=0x63 then if m>0x96 then if m>0b11010001 then c=a.ItemName m=c==e and m+-0x4a or 0x23 else return l end elseif m<=0b1101010 then if m>0x63 then i,k=pairs,j i,k,g=i(k)i,k,g=n.b(i,k,g)b,a=i(k,g)g=b m=g==nil and 0xd1 or 0b110001 else f=table m,c,f,h=0b100011,f.insert,l,b c(f,h)end else m,f=0b100011,table f,h,c=l,b,f.insert c(f,h)end elseif m>0x31 then return l elseif m>=0b100011 then if m>0b100011 then c,f=a.Type,"Skin"m=c==f and 0x2ae0/m or 0x12f3/m else b,a=i(k,g)g=b m=g==nil and 0b11010001 or m+0b1110 end else j={}l,j=j,_[1][1][_[1][0b11]]j=j()i=not j m=i and 0b1011010 or 0b1101010 end end end end,fa=function(d,_)return function()local e,b,f,a e=_[1][1][_[1][0b11]]e()e,b,a=_[0b10][1][_[0b10][0b11]],"Inventory",{}a.Title=b b="item list refreshed"a.Description=b b=0b10 a.Time=b f,e=e,e.Notify e(f,a)return end end,Ef=function(d,_)return function()local b,i,h,j,f,c,e,g h=0b10111000 while true do if h>0b10011010 then if h>=0xe0 then if h<=0b11110010 then if h<=0b11100000 then return else f=nil f={[0b11]=0b10,[0b10]=f}f[1]=f c,i,g,j=newcclosure,e[1][e[0b11]].FireServer,d:Pf{e,f,_[0b10]},hookfunction c=d.c(c(g))h,j=h+-0b101100,j(i,d.d(c))f[1][f[0b11]]=j end else h,f=0xbd,getnamecallmethod end elseif h<=0b10111101 then if h<=0b10111000 then e,j=_[1][1][_[1][0b11]],"Remotes"f,e=e,e.FindFirstChild e=e(f,j)h=e and 0b100110 or 0b1101000 else h=f and 0b1001101 or 0x103e/h end else f=hookmetamethod h=f and 0xbd7e/h or h+-0b1001 end elseif h<=0b1001101 then if h>=0x42 then if h<=0x42 then f,j=type,hookfunction f=f(j)j="function"h=f==j and 0b100110100-h or 0xc6 else f=nil h,f=h+-0x37,{[0b11]=0b10,[0b10]=f}f[1]=f c,g,j,b,i="__namecall",newcclosure,hookmetamethod,d:Of{e,f,_[0b10]},game g=d.c(g(b))j=j(i,c,d.d(g))f[1][f[0b11]]=j end elseif h>0x16 then f=_[1][1][_[1][0b11]]e,h,j=f.Remotes,0x68,"Data"e,f=e.FindFirstChild,e e=e(f,j)else return end elseif h<=0b1101000 then if h<=0x60 then j=_[1][1][_[1][0b11]]f=j.Remotes j,h,e="EquipCosmetic",0x39c0/h,f.Data e,f=e.FindFirstChild,e e=e(f,j)else h=e and h+-0b1000 or 0x3e90/h end else e={[0b11]=0b10,[0b10]=e}e[1]=e f=not e[1][e[0b11]]h=f and h+0b1000110 or 0x27b4/h end end end end,zd=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.rotation=e return end end,Yb=function(d,_)return function(e)local a,f,c,h,b h=0xd1 repeat if h>0xd1 then return elseif h<=0b11 then h,f=0b11111001,_[0b10][1][_[0b10][0b11]]f()else a=_[1][1][_[1][0b11]]b,c,f,a=e,0,a.leaderboard,_[0b11][1][_[0b11][0b11]]a=a(b,c)f.elo_value=a b=_[1][1][_[1][0b11]]a=b.leaderboard f=a.ELO h=f and 0b11 or 0b11111001 end until false end end,Vf=function(d,_)return function()local g,h,e,j,i,f,c h=0b1000010 repeat if h>0b1111001 then if h<0b10110111 then if h>0xad then h=i and 0x21 or 0xf1 elseif h>0b10000100 then h,i=0xb7,_[1][1][_[1][0b11]]j=i.LeaderboardController f=j.LeaderboardSerials else f=0b10100 h=e<f and 0x351c/h or 0b1101111 end elseif h<=0b10111010 then if h<=0xb7 then j=f h=j and 0b1100110 or 0xba else i=j h=i and 0x3450/h or h+-0b101 end else h=i and 0b1101111 or h+-0b1111000 end elseif h>=0x66 then if h<=0x6f then if h<=0x67 then if h<=0x66 then i=_[0b11][1][_[0b11][0b11]]h,j=h+0b1010100,f[i]else j=_[1][1][_[1][0b11]]f=j.LeaderboardController h=f and 0b100010100-h or 0x49a1/h end else j=_[0b1001][1][_[0b1001][0b11]]f=j.UserId f={[0b11]=0b10,[0b10]=f}f[1]=f j,i=pcall,d:Wf{_[1],_[0b110],_[0b11],f,_[0b10]}j(i)i=d:Xf{_[0b100],_[0b10],_[0b101],_[0b111],_[0b110],_[0b11],f,_[1],_[0b1000]}j(i)return end else i=1 c,e=task,e+i c,h,i=0.5,h+0b1011,c.wait i(c)end elseif h>=0x42 then if h<=0x42 then h,e=0b10000100,0 else h,i=0xb5,j.Players end else g=j.Players c,h,g=#g,0xf1,0 i=c>g end until false end end,Nd=function(d,_)return function(e,f,j)local h,b,g,i,c h=0b101110 repeat if h<=0x2e then if h<=0x17 then i,g,c,b=_[0b10][1][_[0b10][0b11]],f[1][f[0b11]],e,j i=d.c(i(c,g,b))return d.d(i)else f={[0b11]=0b10,[0b10]=f}f[1]=f g=_[1][1][_[1][0b11]]c=g.equipped i=c["Jump Pad"]h=i and 0b110000 or 0b10111 end else c,i=d:Od{_[0b11],f},pcall h=0b10111 i(c)end until false end end,Of=function(n,_)return function(e,...)local a,c,f,h,l,b,k,i,o,m,j m=0xf2 repeat if m>=0b10010100 then if m<=0xc7 then if m<=0xa2 then if m<=0x94 then m=j and 0x15b-m or 0b10100010 else i,k,j=e,n.c(...),_[0b10][1][_[0b10][0b11]]j=n.c(j(i,n.d(k)))return n.d(j)end else j,i,k,o=...c,h,a,b,f=i,o,j,_[0b11][1][_[0b11][0b11]],k m=h and 0b100001101-m or 0b101000011-m end elseif m<=0xf2 then l=getnamecallmethod l=l()i="FireServer"j=l==i m=j and 0x37 or 0b10010100 else k,i=e,typeof i=i(k)k="Instance"j=i==k m=j and 0x179-m or 0b110001110-m end elseif m<0x7c then if m>0b110111 then b(a,c,f,h)return else i=_[1][1][_[1][0b11]]j=e==i m=j and 0x94 or 0b11111010 end elseif m<=0b1111100 then m,h=0xc2-m,{}else k,i="EquipCosmetic",e.Name m,j=0b10010100,i==k end until false end end,hg=function(d,_)return function()local e,h,a,b,f h=0b11 while true do if h>=0b10100000 then if h<=0xeb then if h>0xa0 then h=e and 0x38ea/h or 0x79 else return end else b=_[1][1][_[1][0b11]]a=b.CameraController f,a=a._base_fov,nil h,e=0b111100101-h,f~=a end elseif h<=0b111110 then if h<=0b11 then f=_[1][1][_[1][0b11]]e=f.CameraController h=e and 0b11111010 or 0xeb else h,f=h+0x62,_[1][1][_[1][0b11]]e,a=f.CameraController,_[0b11][1][_[0b11][0b11]]f=a.camera_fov e._base_fov=f end else a,h,e=_[0b11][1][_[0b11][0b11]],h+0x27,_[0b10][1][_[0b10][0b11]]f=a.camera_fov e.FieldOfView=f end end end end,M=function(d,_)return function()local e,c,b c=0x66 repeat if c>0xbf then e,b=pcall,d:oe{_[0b11],_[0b10]}c=0b10111111 e(b)b=d:qe{_[0b100],_[0b10]}e(b)b=d:pe{_[0b10],_[0b11]}e(b)elseif c>0b1100110 then return else b,e=0b10100,_[1][1][_[1][0b11]]e=e(b)c=e and 0b11011110 or 0xbf end until false end end,we=function(d,_)return function()local b,f,h,a,e h=0b10011000 repeat if h<0x58 then if h<=0b110100 then return else b,a,f=e,_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]]a=a(b)h,f.SmokeClouds=0b110100,a end elseif h<=0x98 then if h<=0b1011000 then h=f and 0xa7-h or 0b10001100-h else a=_[1][1][_[1][0b11]]f=a.PlayerScripts e,a=f.Modules,"SmokeClouds"f,e=e,e.FindFirstChild e=e(f,a)f=e h=f and 0b11000110 or 0x58 end else b=_[0b11][1][_[0b11][0b11]]h,a=0x58,b.SmokeClouds f=not a end until false end end,Ta=function(d,_)return function(e)local f,a,g g=0b1101111 while true do if g>0b1101111 then f=_[1][1][_[1][0b11]]f.atm_color=e f=_[0b10][1][_[0b10][0b11]]g=0b10110110-g f()elseif g<=0b11001 then return else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0x9d or 0b11001 end end end end,Ba=function(d,_)return function(e)local b,a,h,f h=0x3d while true do if h>=0b1101100 then if h>=0b1110000 then if h>0x70 then h,a=0x70,e else f.weapon_name=a return end else h,a=0x40,""end elseif h<=0b111101 then a=_[1][1][_[1][0b11]]f,b=a.specific,"(None)"a=e==b h=a and 0x6c or 0x40 else h=a and 0x70 or 0b11001010 end end end end,ca=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.specific f.lootbox_name=e return end end,I=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,rb=function(d,_)return function(e)local f,a,g g=0b1111100 repeat if g<=0b1111100 then if g>0b111100 then f=_[1][1][_[1][0b11]]f.clocktime=e a=f f=a.skybox_enabled g=f and 0b111100 or 0x9c else f=_[0b10][1][_[0b10][0b11]]g,f.ClockTime=0b10011100,e end else return end until false end end,bd=function(n,_)return function(e,l,j)local i,m,h,k,a,f,o,c,b m=0xf4 while true do if m>0b10111010 then if m>0b11110001 then if m<=0b11111101 then if m>0b11110100 then return else l={[0b11]=0b10,[0b10]=l}l[1]=l i=_[1][1][_[1][0b11]]m=i and 0b11001000 or 0b110100 end else a,b=n:gg{i,k},pcall b(a)return k[1][k[0b11]]end elseif m>=0xd0 then if m<=0xd0 then m=h==k[1][k[0b11]]and 0b10011100 or 0b110110 else m=k and 0x75ad/m or 0xba end elseif m>0b11001000 then m,k[1][k[0b11]]=m+0b110110,l[1][l[0b11]][1]else k=_[1][1][_[1][0b11]]m,i=0x34,k[e]end elseif m>0x47 then if m>=0b10011100 then if m<=0b10011100 then m,o=0b1000111,true else o,b=#l[1][l[0b11]],0 m,k=0x5ad2/m,o==b end elseif m>0b1001110 then m=k and 0b11111101 or 0x16f3/m else b,a=ipairs,l[1][l[0b11]]b,a,c=b(a)b,a,c=n.b(b,a,c)f,h=b(a,c)c=f m=c==nil and 0b10010101-m or 0b11010000 end elseif m<0b110110 then if m>0b101111 then i={[0b11]=0b10,[0b10]=i}i[1]=i k=not i[1][i[0b11]]m=k and 0x30f4/m or 0b1000100 else o,k=n:fg{i,l},pcall k(o)k=j k={[0b11]=0b10,[0b10]=k}k[1]=k o=false m=k[1][k[0b11]]and 0b1111101-m or 0x47 end elseif m<=0b1000100 then if m<=0x36 then f,h=b(a,c)c=f m=c==nil and 0xefa/m or m+0x9a else b,o=l[1][l[0b11]],type m,o=0b11110001,o(b)b="table"k=o~=b end else b=not o m=b and m+0b10000010 or 0x146-m end end end end,_f=function(d,_)return function()local g,a,f,e g=0x33 while true do if g>0b110011 then f=_[0b10][1][_[0b10][0b11]]g,f.Enum,a=0x77-g,e,f a.ObjectID=e elseif g>0x15 then f=_[1][1][_[1][0b11]]e,a=f.EnumLibrary,_[0b11][1][_[0b11][0b11]]e,f=e.ToEnum,e e=e(f,a)g=e and 0b1100010 or 0b10101 else return end end end end,Sd=function(d,_)return function(e)local a,f,c,h,i h=0b10100 while true do if h<=0b10001100 then if h<0x5d then if h>=0b10100 then if h<0x59 then e={[0b11]=0b10,[0b10]=e}e[1]=e f=nil h=e[1][e[0b11]]==f and 0x87 or 1 elseif h>0x59 then a,f=d:Xd{_[0b10],e},pcall f,a=f(a)i=f h=i and 0xd9 or 0b100001100-h else i=_[1][1][_[1][0b11]]a=i.UserId f=e[1][e[0b11]]==a h=f and 0xbc or 0xf0 end elseif h>=0b101 then if h>0b101 then a,i,f=e[1][e[0b11]],"Player",e[1][e[0b11]].IsA f=f(a,i)h=f and 0b1111111 or 0b101 else f=nil return f end else a,f=e[1][e[0b11]],typeof f=f(a)a="Instance"h=f==a and 0x10 or 0b1011101 end elseif h>=0b1101001 then if h>0x87 then h=f and 0b11101011-h or h+-0x28 elseif h>=0b1111111 then if h<=0b1111111 then f=e[1][e[0b11]].Name return f else f=nil return f end else i,c=tostring,a i=d.c(i(c))return d.d(i)end elseif h<0x5f then a,f=e[1][e[0b11]],type f=f(a)a="number"h=f==a and 0b10110110-h or 0b10101001 elseif h>0x5f then h=f and 0xbe-h or 0xbb else i=_[0b10][1][_[0b10][0b11]]a=i.EnumLibrary h,f=h+0b101,a.FromEnum end elseif h<0b11001000 then if h>0b10111011 then if h>0b10111100 then return f else h,a=0xf0,_[1][1][_[1][0b11]]f=a.Name end elseif h>=0xb2 then if h>0b10110010 then a,f=e[1][e[0b11]],tostring f=d.c(f(a))return d.d(f)else h=i and h+-0b1001001 or h+0b10110 end elseif h>0b10011001 then f,a=type,e[1][e[0b11]]f=f(a)a="string"h=f==a and 0b11110101 or h+0b111100 else a=_[0b10][1][_[0b10][0b11]]h,f=0b10001100,a.EnumLibrary end elseif h<0xf0 then if h<=0xd9 then if h<=0xc8 then i,c=tostring,e[1][e[0b11]]i=d.c(i(c))return d.d(i)else c=nil h,i=0x18b-h,a~=c end else a,i=type,e[1][e[0b11]]a=a(i)i="userdata"f=a==i h=f and 0b10011001 or h+-0x59 end elseif h<0xf2 then h=f and 0b110110001-h or 0b11110010 elseif h>0b11110010 then return e[1][e[0b11]]else h,f=0xc1,nil end end end end,E=function(d,_)return function()local l,a,c,i,m,k,j,b,e,g m=0x83 while true do if m<0x83 then if m<0b1011001 then if m<0x2e then m,b=m+0b11010001,g.Name elseif m<=0b101110 then l=_[1][1][_[1][0b11]]e=l.fake_owned return e else e,j=_[1][1][_[1][0b11]],{}l=j m,e.fake_owned=0x16f3/m,l end elseif m<0x77 then m,a=m+0b1110010,table b,a,c=a.insert,e,g b(a,c)elseif m>0x77 then j,l=_[1][1][_[1][0b11]],next j=j.fake_owned l=l(j)j=nil e=l~=j m=e and 0x3a1b/m or 0xb7 else i=_[1][1][_[1][0b11]]j=i.fake_owned l,i=j[1],nil m,e=0x5511/m,l==i end elseif m>0xb7 then if m>0xcb then m=b and 0x59 or 0b110101001-m elseif m<=0xb8 then a,c=type,g a=a(c)c="table"b=a==c m=b and 0b1101 or 0b110010110-m else k,g=l(j,i)i=k m=i==nil and 0xab or 0b10111000 end elseif m>=0xab then if m>0b10101011 then m=e and 0b10011111 or m+-0b10001001 else m,l=0b101110,_[1][1][_[1][0b11]]l.fake_owned=e end elseif m>0x83 then l={}e,l,k=l,pairs,_[1][1][_[1][0b11]]j=k.fake_owned l,j,i=l(j)l,j,i=d.b(l,j,i)k,g=l(j,i)i=k m=i==nil and 0b10101011 or 0b10111000 else e,l=type,_[1][1][_[1][0b11]]l=l.fake_owned e=e(l)l="table"m=e~=l and 0b101111 or 0b1111101 end end end end,zb=function(d,_)return function()local e,b e,b=pcall,d:Te{_[1]}e(b)return end end,va=function(d,_)return function()local f,e,b,a,g g=0xca repeat if g>0x9a then if g<=0b11001010 then a=_[1][1][_[1][0b11]]f=a.PlayerDataController e=not f g=e and 0x88 or 0x9a else return end elseif g>0b10001000 then e,f=pcall,d:Le{_[1]}e(f)e=nil e={[0b11]=0b10,[0b10]=e}e[1]=e a,f=d:Ke{e,_[1]},pcall f(a)f,a=type,e[1][e[0b11]]f=f(a)a="table"g=f==a and 0b100011 or 0b110010011-g elseif g>0b100011 then return else f,a,b=_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]],e[1][e[0b11]]g,a=0xf9,a(b)f.fake_owned=a f=_[0b100][1][_[0b100][0b11]]f()end until false end end,Yc=function(n,_)return function(e,l,j)local c,a,b,f,i,k,h,m,o m=0xfa while true do if m>=0x80 then if m<0b10110001 then if m>0x8c then h=c.Type m,f=0x5600/m,h==e elseif m<0b10001000 then m=f and 0b101101 or 0x8c elseif m<=0x88 then k=nil return k else m=f and 0x6f90/m or m+0b100101 end elseif m>=0b11110101 then if m>0b11110101 then i=_[1][1][_[1][0b11]]i=i()k=not i m=k and 0b1010110 or 0xf5 else k,o=pairs,i k,o,b=k(o)k,o,b=n.b(k,o,b)a,c=k(o,b)b=a m=b==nil and 0x88 or 0b101110100-m end elseif m>0xb1 then return a else a,c=k(o,b)b=a m=b==nil and m+-0b101001 or 0b1111111 end elseif m>0b111000 then if m<0x56 then return a elseif m>0b1010110 then f="Skin"m=e==f and 0b111000 or 0b11111 else k=nil return k end elseif m>0b101101 then if m>0b110011 then f=a==l m=f and 0xac or 0b10000000 else m=f and m+0b11000 or 0xb1 end elseif m>0b101011 then h=c.ItemName m,f=0x8c,h==j elseif m<=0b11111 then f=a==l m=f and m+0b1100 or 0x62d/m else h=c.Type m,f=0b1011110-m,h==e end end end end,If=function(d,_)return function(e,f,j)local c,i,g,b,h h=0b111111 repeat if h<=0b11011100 then if h>0b111111 then c,g,i,b=e,f,_[0b10][1][_[0b10][0b11]],j i=d.c(i(c,g,b))return d.d(i)else i,c=_[1][1][_[1][0b11]],j i=i(c)h=i and 0b11101110 or 0b11011100 end else i=true return i end until false end end,i=function(d,_)return function(e)local j,g,i,c,a,l,b,k,m m=0xe3 repeat if m>=0b11100011 then if m>0b11100011 then return else j=_[1][1][_[1][0b11]]l=j.currency l.glory=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0x87 or 0b11110111 end else i,k,l={},"sucsess",_[0b10][1][_[0b10][0b11]]i.Title=k g,b,c="spoofed -> ",tostring,_[1][1][_[1][0b11]]m,a=0x8241/m,c.currency a=a.glory_value b=b(a)k=g..b i.Description=k k=0b10 i.Time=k j,l=l,l.Notify l(j,i)end until false end end,mc=function(d,_)return function(e)local b,h,f,a h=1 repeat if h<=0xe1 then if h>1 then b=_[0b10][1][_[0b10][0b11]]h,a=0xe5,b.UserId else f,a,b=_[1][1][_[1][0b11]],tonumber,e a=a(b)h=a and 0b11100101 or 0xe1 end else f.avatar_userid=a return end until false end end,Fa=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.thickness=e return end end,Cb=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,sc=function(d,_)return function()local i,f,h,e,a,c h=0b1010001 repeat if h<0b1100101 then if h>=0b111011 then if h>0x3b then a,c,e="IsInfluencer",_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]i=c.badges i=i.Influencer h=i and 0x16 or 0b111011 else h=i and 0x1d or h+0x3c end elseif h>0b10110 then f,e=e,e.SetAttribute e(f,a,i)a,e,c="IsRobloxEmployee",_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]i=c.badges i=i.Admin h=i and 0x1a2b/h or 0xe8 else h,i=0b111011,true end elseif h>0xc9 then if h<=0b11100111 then h,i=0b11101000,true else h=i and h+-0b11111 or 0x65 end elseif h>=0b1110111 then if h<=0x77 then h,i=0x94-h,false else e,f=e.SetAttribute,e e(f,a,i)return end else h,i=0xc9,false end until false end end,e=function(e,f,...)local h={...}local d=select("#",...)for i=1,d do e[f+i-1]=h[i]end end,Sc=function(d,_)return function()local f,a,e,c,i,h h=0b1000100 while true do if h>0b1101011 then if h<0xce then if h>0x7c then i=_[0b11][1][_[0b11][0b11]]h=i and 0x3154/h or 0xd0 else return end elseif h<=0xce then i=_[0b10][1][_[0b10][0b11]]i()c=_[1][1][_[1][0b11]]i=c.SeasonLibrary h=i and h+-0b1010010 or 0x12b-h else h=i and 0xce or 0b1011101 end elseif h<0b1011101 then if h>0x44 then i,c=_[0b11][1][_[0b11][0b11]],1 h,i=0b100100010-h,i(c)else f,e=0x28,1 a=e h=(f~=f or a>0 and e>f or(a<=0 or a~=a)and e<f)and 0x7c or 0b1100101 end elseif h>=0b1100101 then if h<=0x65 then c=_[1][1][_[1][0b11]]i=c.SeasonLibrary h=i and 0xd0 or 0b10011010 else e=e+a h=(a>0 and e>f or a<=0 and e<f or a~=a)and 0x7c or 0x2a37/h end else c=task h,c,i=0b1101011,0.5,c.wait i(c)end end end end,rf=function(n,_)return function()local m,l,j,f,i,a,k,e,g,c,b m=0xdd while true do if m>=0xa4 then if m<=0b10111010 then if m<0xb1 then if m>0xab then c,f=b.Name,"None"m,a=0b10111010,c==f elseif m>0b10100100 then m=i and m+0b110 or 0xfa-m else f,c="NONE_COSMETIC",b.Name a=c==f m=a and 0xba or 0xaf end elseif m<=0b10110110 then if m<=0b10110001 then k,g=j.Name,"None"m,i=0b1001111,k~=g else j,i={},_[0b11][1][_[0b11][0b11]]j.Name=i i=1 j.Level=i i=0 j.XP=i i=false j.IsFavorited=i g,l=_[1][1][_[1][0b11]],j g,k=_[0b11][1][_[0b11][0b11]],g.equipped i,k=k[g],_[0b10][1][_[0b10][0b11]]j=i[k]i=j m=i and 0x69ee/m or 0xab end else m=a and m+-0x75 or 0xf4-m end elseif m>0xe1 then if m<=0xe8 then c,a=g,type a=a(c)c="table"b=a==c m=b and 0b100000111-m or 0b1111100 else k,l,e=_[1][1][_[1][0b11]],pairs,false j=k.fake_weapon_owned l,j,i=l(j)l,j,i=n.b(l,j,i)k,g=l(j,i)i=k m=i==nil and 0b110000000-m or 0b111010010-m end elseif m<=0b11011101 then if m<=0xc3 then k,g=l(j,i)i=k m=i==nil and 0b10010110 or 0xe8 else e,l=type,_[1][1][_[1][0b11]]l=l.fake_weapon_owned e=e(l)l="table"m=e~=l and 0x28 or 0xea end else k=table m,g,i=0b100100011-m,_[1][1][_[1][0b11]],k.insert k,g=g.fake_weapon_owned,l i(k,g)end elseif m>=0x46 then if m>0x7c then if m>0b10010101 then l=not e m=l and 0x14c-m or 0b1000010 else m,k,g=0b10101011,j.Name,"NONE_COSMETIC"i=k~=g end elseif m<0b1111011 then if m>0x46 then m=i and m+0b101100 or 0x456f/m else e,f=true,_[1][1][_[1][0b11]]f,c=_[0b11][1][_[0b11][0b11]],f.equipped a,c=c[f],_[0b10][1][_[0b10][0b11]]b=a[c]a=b m=a and m+0b1011110 or 0b10111010 end elseif m<=0x7b then i=_[0b10][1][_[0b10][0b11]]m,l[i]=0b11100001,j else m=b and m+-0b110110 or 0x5e74/m end elseif m<0b111010 then if m>0x1f then j,e={},_[1][1][_[1][0b11]]l=j m,e.fake_weapon_owned=0b100010010-m,l else c,a=_[0b11][1][_[0b11][0b11]],g.Name m,b=0xf04/m,a==c end elseif m>=0x42 then if m<=0x42 then return else m,a,c=0b11000011,_[0b10][1][_[0b10][0b11]],nil g[a]=c end else m,a=0xc3,_[0b10][1][_[0b10][0b11]]g[a]=b end end end end,uf=function(d,_)return function(e,f)local a,c,h,i h=0b11000111 while true do if h<0x6a then i,c=pcall,d:vf{e,f}h=0b1101010 i(c)elseif h<=0x6a then return a else e={[0b11]=0b10,[0b10]=e}e[1]=e f={[0b11]=0b10,[0b10]=f}f[1]=f i,a,c=e[1][e[0b11]],_[1][1][_[1][0b11]],f[1][f[0b11]]a=a(i,c)c=_[0b10][1][_[0b10][0b11]]i=c.anti_smoke h=i and 0x48 or 0x6a end end end end,Jf=function(d,_)return function(e,l,j,i)local b,h,k,g,a,c h=0b10000011 while true do if h>=0x83 then if h<=0x83 then k,g=_[1][1][_[1][0b11]],j k=k(g)h=k and 0xcf or 0b1011 else k=true return k end else c,a,g,k,b=i,j,e,_[0b10][1][_[0b10][0b11]],l k=d.c(k(g,b,a,c))return d.d(k)end end end end,Rd=function(n,_)return function(e,l,...)local j,f,o,h,d,i,c,k,m,a,b m=0xd7 repeat if m>=0b1101011 then if m>0b10100101 then if m<=0b11010111 then if m>0b11010110 then e={[0b11]=0b10,[0b10]=e}e[1]=e j="FinisherEffect"m=l~=j and 0x88 or 0xdb elseif m<=0xd3 then c=k m=c and 0b100111110-m or 0x2b else i=_[0b101][1][_[0b101][0b11]]i=i()k=not i m=k and m+-0b10000110 or 0b111111 end elseif m<=0xdb then i,k={},n.c(...)n.e(i,1,n.d(k))j=i j={[0b11]=0b10,[0b10]=j}j[1]=j k,o=_[0b11][1][_[0b11][0b11]],j[1][j[0b11]]k=k(o)i=not k m=i and 0b1101000 or m+-0b101 else b,a=pcall,n:Vd{e,o}b,a=b(a)a={[0b11]=0b10,[0b10]=a}a[1]=a c=not b m=c and 0xee-m or 0b100011011-m end elseif m>=0x92 then if m>=0x98 then if m>0b10011000 then c=nil m=a[1][a[0b11]]==c and m+-0x7d or 0x1a6d/m else b,c,a,f=_[1][1][_[1][0b11]],l,e[1][e[0b11]],n.c(...)b=n.c(b(a,c,n.d(f)))return n.d(b)end else m=b and 0b10001100 or 0xe6 end elseif m<=0x88 then if m>0b1101011 then i,j,o,k=e[1][e[0b11]],_[1][1][_[1][0b11]],n.c(...),l j=n.c(j(i,k,n.d(o)))return n.d(j)else m,c=0x11f9/m,k.Name end else return end elseif m>0b110101 then if m<0x50 then if m<=0x3f then k,b,o=_[0b100][1][_[0b100][0b11]],"Finisher",i k=k(o,b)b,o=k,_[0b10][1][_[0b10][0b11]]o=o(b)o={[0b11]=0b10,[0b10]=o}o[1]=o b=nil m=o[1][o[0b11]]==b and 0x98 or 0b100111 else m,a,c=m+0b1001010,e[1][e[0b11]].IsRendered,e[1][e[0b11]]a=a(c)b=not a end elseif m>0b1010000 then b,i,o,k=n.c(...),_[1][1][_[1][0b11]],l,e[1][e[0b11]]i=n.c(i(k,o,n.d(b)))return n.d(i)else a,b,k,o=n.c(...),l,_[1][1][_[1][0b11]],e[1][e[0b11]]k=n.c(k(o,b,n.d(a)))return n.d(k)end elseif m>=0x29 then if m<0b101011 then f,c=n:Wd{e,j,a},pcall c(f)return elseif m>0x2b then f=nil m,c=0x1a8/m,a[1][a[0b11]]==f else m,a[1][a[0b11]]=0x1bb7/m,c end elseif m<0b100111 then m=c and m+0xcb or m+0b10011101 elseif m<=0b100111 then b=e[1][e[0b11]].IsRendered m=b and 0b1001000 or 0x163e/m else h,d,f,c=l,n.c(...),e[1][e[0b11]],_[1][1][_[1][0b11]]c=n.c(c(f,h,n.d(d)))return n.d(c)end until false end end,Tc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.glare=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Kf=function(d,_)return function(e,f,j)local c,h,g,b,i h=0b1010111 repeat if h<=0b1010111 then if h>0x14 then i,c=_[1][1][_[1][0b11]],j i=i(c)h=i and 0xb7 or 0b10100 else g,b,i,c=f,j,_[0b10][1][_[0b10][0b11]],e i=d.c(i(c,g,b))return d.d(i)end else i=true return i end until false end end,Y=function(d)return function(e)local h,c,b,f,a h=0xd0 while true do if h>=0x3a then if h>0b10110011 then if h>0xcb then a,b=type,e a=a(b)b="string"f=a~=b h=f and 0b100110 or 0b11001011 else a=""h,f=h+-0b10100101,e==a end elseif h>=0x7f then if h<=0x7f then return e else f=""return f end else a=string f,b,a,c=a.sub,1,e,0b1000 f=f(a,b,c)a="rbxasset"h=f==a and 0b1111111 or 0b110010 end elseif h<0x26 then if h>0b10000 then return e else a="rbxassetid://"f=a..e return f end elseif h>0b100110 then a=string a,b,f=e,"^%d+$",a.match f=f(a,b)h=f and h+-0b100010 or 0b100000 else h=f and 0b11011001-h or 0b111010 end end end end,ge=function(d,_)return function()local e,f,g,a g=0x82 repeat if g>0b101111 then e=_[1][1][_[1][0b11]]e,f=e._UpdateWrap,e e(f)f=task e,f=f.wait,0.1 e(f)a=_[1][1][_[1][0b11]]f=a._destroyed e=not f g=e and 0x11 or 0x2f elseif g<=0x11 then g,e=0b101111,_[1][1][_[1][0b11]]e,f=e._UpdateWrap,e e(f)else return end until false end end,Oa=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.lighting_style=e f=_[0b10][1][_[0b10][0b11]]f()return end end,C=function(d,_)return function()local f,e,c c=0b11011001 repeat if c<=0b11001110 then if c<=0b10110100 then if c<=0b1100011 then return else c=e and 0x459c/c or 0x90d8/c end else f,e=d:ne{_[1],_[0b10]},pcall e(f)return end elseif c<=0xd9 then f=isfile e=not f c=e and 0xb4 or 0xe0 else f=readfile c,e=0xb4,not f end until false end end,T=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.haze=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ya=function(d,_)return function(e)local c,a,l,m,k,j,b,i,g m=0b10001000 repeat if m<=0b1101100 then if m>0x56 then return else i,l,k={},_[0b10][1][_[0b10][0b11]],"sucsess"i.Title=k c,b,g=_[1][1][_[1][0b11]],tostring,"spoofed -> "a=c.currency a=a.skin_tickets_value b=b(a)k=g..b i.Description=k k=0b10 m,i.Time=0b1101100,k l,j=l.Notify,l l(j,i)end else j=_[1][1][_[1][0b11]]l=j.currency l.skin_tickets=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0b1010110 or 0x6c end until false end end,tc=function(d,_)return function()local e,i,f,a,c f=_[1][1][_[1][0b11]]e,f=f.currency,false e.weapon_keys,c,i,a=f,f,f,f e.unlock_tokens=a e.skin_tickets=i e.glory=c a=_[0b11][1][_[0b11][0b11]]f=a.SpoofWeaponKeysActive a,f=f,f.SetValue f(a,i)a=_[0b11][1][_[0b11][0b11]]f,i=a.SpoofUnlockTokensActive,false f,a=f.SetValue,f f(a,i)a=_[0b11][1][_[0b11][0b11]]f,i=a.SpoofSkinTicketsActive,false f,a=f.SetValue,f f(a,i)a=_[0b11][1][_[0b11][0b11]]i,f=false,a.SpoofGloryActive a,f=f,f.SetValue f(a,i)f,i,c=_[0b10][1][_[0b10][0b11]],{},"sucsess"i.Title=c c="currency spoofs cleared"i.Description=c c=0b10 i.Time=c a,f=f,f.Notify f(a,i)return end end,O=function(d,_)return function(e)local a,f,h,c,b h=0b11100 repeat if h<=0b10010100 then if h>0b11100 then return else a=_[1][1][_[1][0b11]]a,f,b,c=_[0b11][1][_[0b11][0b11]],a.leaderboard,e,0 a=a(b,c)f.kills_value=a b=_[1][1][_[1][0b11]]a=b.leaderboard f=a.Kills h=f and 0xdd or 0b10010100 end else h,f=0x94,_[0b10][1][_[0b10][0b11]]f()end until false end end,ua=function(d,_)return function(e)local g,h,i,c,f,a h=0x13 repeat if h>=0x8b then if h<=0xcd then if h<=0xbf then if h<=0b10001011 then h=i and 0b1011111 or h+0b1000010 else c,g,i=e,a,e.IsDescendantOf h,i=0b10001011,i(c,g)end else i=false return i end else h,i=0b11010,a end elseif h<0b11010 then f,a=pcall,d:Je{_[1]}f,a=f(a)i=f h=i and 0xd6 or 0x1a elseif h<=0b11010 then h=i and 0x1366/h or 0x8b else i=true return i end until false end end,ib=function(d,_)return function(e)local j,c,k,a,l,b,g,m,i m=0b10110001 while true do if m<0x5b then k,i,l="sucsess",{},_[0b10][1][_[0b10][0b11]]i.Title=k g,c,b="spoofed -> ",_[1][1][_[1][0b11]],tostring a=c.currency a=a.unlock_tokens_value b=b(a)k=g..b i.Description=k m,k=0b1011011,0b10 i.Time=k l,j=l.Notify,l l(j,i)elseif m>0b1011011 then j=_[1][1][_[1][0b11]]l=j.currency l.unlock_tokens=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0b1110 or 0x5b else return end end end end,Ac=function(d,_)return function()local e,f,g,a g=0x77 while true do if g<=0b10001111 then if g>0x77 then g,a=0x14d-g,_[1][1][_[1][0b11]]f=a.CosmeticLibrary e=f.Cosmetics else f=_[1][1][_[1][0b11]]e=f.CosmeticLibrary g=e and 0b10001111 or 0b10111110 end else return e end end end end,cg=function(d,_)return function()local b,e,f,a a,e,b="Level",_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]f,e,b=e,e.SetAttribute,b.level_value e(f,a,b)return end end,Ee=function(n,s)return function()local A,j,w,_,v,h,f,k,x,g,l,a,d,r,p,y,u,z,b,i,m,B,q,o,c m=0b1110010 while true do if m>=0x67 then if m>0xb5 then if m>=0xee then if m>0b11110100 then return elseif m<=0xee then m=i and 0x5764/m or 0xcb else a=s[0b11][1][s[0b11][0b11]]a,b=false,a[i]m,b.Visible=m+-0b10001101,a end elseif m>0xcb then b=s[0b11][1][s[0b11][0b11]]m,b,o=0x44,false,b[z]o.Visible=b elseif m<=0xc4 then i,r=l.ViewportSize,0b10 i,z=y.lerp,i/r m=i and 0x8a94/m or 0x1b2-m else m,s[0b101][1][s[0b101][0b11]]=0b101101,z end elseif m>=0x7f then if m>0xb1 then r,m,o=y.lerp,0xee,0 i=r>o elseif m<0x9b then m=q and 0b1001110 or 0x9b elseif m>0x9b then h,f=0b100,1 p=f m=(h~=h or p>0 and f>h or(p<=0 or p~=p)and f<h)and 0b10111 or 0b1111101 else f,q,h=y.rotation_speed,y.rotation,0 m=f>h and 0xa4b/m or 0b10110001 end elseif m<0x72 then i=i+o m=(o>0 and i>r or o<=0 and i<r or o~=o)and 0b1000 or 0xf4 elseif m>0b1110010 then c=s[0b100][1][s[0b100][0b11]]d=c[f]c,w,k=s[0b101][1][s[0b101][0b11]],d+q,s[0b10][1][s[0b10][0b11]]A,B,v=1,w,y.offset v=v*A m,k=0b101,k(B,v)d,_,k,B,v=c+k,y.offset,c,s[0b10][1][s[0b10][0b11]],w A,_=_+r,1 A=A*_ B=B(v,A)A,c,B=0b100,k+B,s[0b11][1][s[0b11][0b11]]v=f+A B,k=true,B[v]k.Visible=B B=y.fill_color k.Color=B k.From=d k.To=c k.Thickness=o v=s[0b11][1][s[0b11][0b11]]v,B=true,v[f]B.Visible=v v=y.outline_color B.Color=v x,_,j,A,u=w,s[0b10][1][s[0b10][0b11]],1,s[0b101][1][s[0b101][0b11]],y.offset u,g=j,u*j g=g-u _=_(x,g)v=A+_ B.From=v x,j,_=w,y.offset,s[0b10][1][s[0b10][0b11]]u,j=j+r,1 u,g=j,u*j g=g+u _=_(x,g)v=A+_ B.To=v A=0b10 v=o+A B.Thickness=v else l=s[1][1][s[1][0b11]]z,y=workspace,l.crosshair l=z.CurrentCamera z=not l m=z and 0b100000 or 0xc4 end elseif m<=0x2d then if m<=0x14 then if m>0x11 then f,h=y.bounce,0 m,q=0x7f,f>h elseif m<=0b1000 then if m<=0b101 then f=f+p m=(p>0 and f>h or p<=0 and f<h or p~=p)and 0b11100-m or 0x7d else return end else h,w,d=y.rotation,i*a,0b101101000 p=w*d m,f,h=0xb1,h+p,d q=f%h end elseif m<0b100000 then return elseif m<=0x20 then i,z=0b1000,1 r=z m=(i~=i or r>0 and z>i or(r<=0 or r~=r)and z<i)and 0xfd or m+0xcc else r=y.enabled i=not r m=i and 0x3d or 0x52 end elseif m<0b1001110 then if m>0b111101 then z=z+r m=(r>0 and z>i or r<=0 and z<i or r~=r)and 0xfd or 0xec else i,r=1,0b1000 o=i m=(r~=r or o>0 and i>r or(o<=0 or o~=o)and i<r)and 0b1000 or 0b11110100 end elseif m>0x52 then m,i,a,o=m+-0x31,s[0b101][1][s[0b101][0b11]],math,z q,f,b,a=0.01,1,a.clamp,y.lerp b=n.c(b(a,q,f))r,i=i,i.Lerp i=i(r,o,n.d(b))s[0b101][1][s[0b101][0b11]]=i elseif m<=0b1001110 then w,h=math,i*b p=w.pi f,h=h*p,0b10 q,p=f*h,w.sin w=q p=p(w)w=1 p,h=0.5,p+w w,h,f=y.bounce,y.length,h*p m,p=0b10011011,f*w r=h+p else r=os i=r.clock i=i()r,b,a=y.length,y.thickness,0b10 o,q,a=b*a,0.5,y.bounce_speed q,b,f=y.rotation_speed,a*q,0.5 a,f,h=q*f,y.bounce_speed,0 q=f>h m=q and 0b10100 or 0b1111111 end end end end,Ue=function(n)return function(e)local f,b,i,l,h,o,k,j,a,q,p,m,g m=0b1100111 while true do if m<=0b1110010 then if m<=0b100000 then if m<=0x13 then if m<=0b1001 then if m<0b111 then m=a and 0xd0-m or 0x7f elseif m<=0b111 then return else m=a and 0x29 or 0x85e/m end elseif m<=0x12 then q=a m=q and 0b100101-m or 0xe9 else m,q=0xe9,o[1][o[0b11]].Parent end elseif m<=0x1e then if m>0x1a then m=b and 0xd98/m or 0b11010 elseif m<=0x14 then o={[0b11]=0b10,[0b10]=o}o[1]=o b,a,q=o[1][o[0b11]].IsA,o[1][o[0b11]],"TextLabel"b=b(a,q)m=b and 0b11110 or 0b110100-m else m=b and m+0x1c or 0b11100001 end else b,m,a,q=o[1][o[0b11]].IsA,0b11110,o[1][o[0b11]],"TextButton"b=b(a,q)end elseif m<=0x55 then if m<0b111110 then if m<=0x29 then m=a and 0 or m+0b11001110 else a=string b,a,q=a.lower,tostring,o[1][o[0b11]].Text m=q and 0x25c2/m or 0x1fda/m end elseif m>0b1000000 then return elseif m>0x3e then m=h and 0b10110010-m or 0x3c00/m else m,q=0x47-m,"inventory"a=b==q end elseif m>=0x67 then if m<=0b1100111 then l=not e m=l and 0x55 or 0x8f else m,g,p=m+0x7e,0x38,f.X h=p<=g end else h=""m,o[1][o[0b11]].Text=0b11100001,h h=false o[1][o[0b11]].Visible=h end elseif m<=0b11000110 then if m>=0b10010000 then if m>=0b10110011 then if m<=0xc2 then if m>0xb3 then m,h=0b10000001,f else a=n.c(a(q))b=b(n.d(a))q="cosmetics"a=b==q m=a and 0xbc-m or 0b11110001-m end else g,m,p=0,m+-0x86,f.X h=p>g end elseif m<=0b10010000 then m,q=0b10010,"settings"a=b==q else m,q=m+0x1c,""end elseif m<=0b10000001 then if m<0x7f then m,b=0b10001110-m,o[1][o[0b11]].Visible elseif m<=0x7f then q="misc"m,a=0b11010000,b==q else m=h and 0b101000111-m or 0x40 end else i,l,j=e,ipairs,e.GetDescendants j=n.c(j(i))l,j,i=l(n.d(j))l,j,i=n.b(l,j,i)k,o=l(j,i)i=k m=i==nil and 0b111 or 0b10100 end elseif m<=0b11101110 then if m>=0b11101001 then if m>0xe9 then q="world"m,a=0b101001,b==q else m=q and m+0b1001 or m+-0b1000 end elseif m<=0xd0 then m=a and 0b10010 or 0b101100000-m else k,o=l(j,i)i=k m=i==nil and 0b111 or 0b10100 end elseif m>0b11110010 then m,q=0,"spoofer"a=b==q elseif m>0xf0 then q,f=pcall,n:We{o}q,f=q(f)h=q m=h and m+-0x30 or 0b101110011-m else m=h and m+-0b10010001 or 0xe1 end end end end,be=function(d,_)return function()local b,j,k,e,i,h,f,g,a h=0xf2 repeat if h>=0x53 then if h>=0b1110001 then if h<=0x71 then k=_[0b11][1][_[0b11][0b11]]b,g,k,i="Skin",_[0b100][1][_[0b100][0b11]],_[0b10][1][_[0b10][0b11]],k[e]k=k(g,b)i[f]=k h,k=0b1000010,_[0b11][1][_[0b11][0b11]]b,i,g,a=_[0b100][1][_[0b100][0b11]],k[e],_[0b10][1][_[0b10][0b11]],"Skin"g=g(b,a)k=g.Name i[j]=k else i,g=_[1][1][_[1][0b11]],"Data"i,k=i.ToEnum,i i=i(k,g)g,i,e="Skin",_[1][1][_[1][0b11]],i k,i=i,i.ToEnum i=i(k,g)f,k,j=i,"Name",_[1][1][_[1][0b11]]j,i=j.ToEnum,j j=j(i,k)k=_[0b11][1][_[0b11][0b11]]i=k[e]h=i and 0x71 or 0b1010011 end else k=_[0b11][1][_[0b11][0b11]]i=k.Data h=i and 0x15 or 0b1000010 end elseif h>0b10101 then return else k=_[0b11][1][_[0b11][0b11]]g,k,i,b=_[0b100][1][_[0b100][0b11]],_[0b10][1][_[0b10][0b11]],k.Data,"Skin"k=k(g,b)i.Skin=k k=_[0b11][1][_[0b11][0b11]]b,a,i,g=_[0b100][1][_[0b100][0b11]],"Skin",k.Data,_[0b10][1][_[0b10][0b11]]h,g=h+0b101101,g(b,a)k=g.Name i.Name=k end until false end end,vc=function(d,_)return function()local b,k,c,g,e,j,i,l,a e=_[1][1][_[1][0b11]]e()j,i,e={},"Unlock",_[0b11][1][_[0b11][0b11]]j.Title=i g=_[0b10][1][_[0b10][0b11]]k,b,c=g.unlock_type," \194\183 ",g a=c.unlock_rarity g=b..a i=k..g j.Description=i i=0b10 j.Time=i e,l=e.Notify,e e(l,j)return end end,gc=function(n,_)return function(e)local j,i,a,c,f,g,b,l,k,h,m m=0xc4 repeat if m<0b10011011 then if m<=0x3a then if m<=0x30 then return l else b,a=i(k,g)g=b m=g==nil and 0b11110100 or m+0b1110011 end else f=table h,f,c=b,l,f.insert m=0x3a c(f,h)end elseif m>0xc4 then return l elseif m<0xad then i,k=pairs,j i,k,g=i(k)i,k,g=n.b(i,k,g)b,a=i(k,g)g=b m=g==nil and 0x93bc/m or m+0x12 elseif m>0xad then j={}j,l=_[1][1][_[1][0b11]],j j=j()i=not j m=i and 0x30 or 0b10011011 else c=a.Type m=c==e and 0b1010100 or m+-0x73 end until false end end,bb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.sunrays_enabled=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Eb=function(d,_)return function()local e,f,b,a e=_[1][1][_[1][0b11]]e()a,b,e={},"Equip",_[0b10][1][_[0b10][0b11]]a.Title=b b="lists refreshed"a.Description=b b=0b10 a.Time=b f,e=e,e.Notify e(f,a)return end end,jb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.camera_resolution=e return end end,de=function(d,_)return function(e)local c,h,g,j,f,i h=0b1001 repeat if h<=0b10100110 then if h>0x71 then if h<0b10011011 then h=i and h+0b1110000 or 0b110000 elseif h>0x9b then h,i=0x4a,e.ClientItem j=i.ClientFighter else c=_[1][1][_[1][0b11]]h,i=0b10001101,j==c end elseif h<0b1001010 then if h>0b1001 then h=i and h+0b10100111 or 0xe4-h else f=e.ClientItem h=f and 0x5f or 0b10111000 end elseif h>=0b1011111 then if h>0x5f then h,c=0x5c41/h,e.ClientItem i=c.ClientFighter j=i.Player else h,j=0b10111000,e.ClientItem f=j.Name end else h=j and 0x20aa/h or 0x11b-h end elseif h>0b11001010 then if h<=0xd7 then if h>0b11010001 then i,h,g,c=_[0b10][1][_[0b10][0b11]],0xb4,"Wrap",f i=i(c,g)else i=f h=i and 0x9b or 0x731d/h end else g=_[0b11][1][_[0b11][0b11]]c=g.equipped h,i=0b110000,c[f]end elseif h<0b11000000 then if h<=0xb4 then h=i and 0x8700/h or 0b11001010 else j=e.ClientItem h=j and 0x7750/h or 0x102-h end elseif h<=0b11000000 then c,i,g=f,_[0b10][1][_[0b10][0b11]],"Wrap"i=i(c,g)return i else c,i=e,_[0b100][1][_[0b100][0b11]]i=d.c(i(c))return d.d(i)end until false end end,if_=function(d)return function(e,l)local i,j,b,g,a,k i=string b,i,j,k=math,"Project <font color=\"#CAED0B\">Atomic</font> | %s | %d fps | %d ms",i.format,"rivals"b,g=e,b.floor g=g(b)a=math b,a=a.floor,l b=d.c(b(a))j=d.c(j(i,k,g,d.d(b)))return d.d(j)end end,vf=function(d,_)return function()local f,b,e,h,a h=0b1110 repeat if h>=0b1001010 then if h<=0x99 then if h<0x8b then b=_[1][1][_[1][0b11]]a,b=b._smoke_clouds,_[0b10][1][_[0b10][0b11]]h,f=0b110011,a[b]e=f.Model elseif h>0x8b then b=_[1][1][_[1][0b11]]a,b=b._smoke_clouds,_[0b10][1][_[0b10][0b11]]f=a[b]e=f.Model f,e=e,e.Destroy h=0x36 e(f)a=_[1][1][_[1][0b11]]f,a=a._smoke_clouds,b f,e=nil,f[a]e.Model=f else a=_[1][1][_[1][0b11]]f,a=a._smoke_clouds,_[0b10][1][_[0b10][0b11]]h,e=0xa8,f[a]end else h=e and 0x3090/h or 0b110011 end elseif h>0x33 then return elseif h<=0b1110 then f=_[1][1][_[1][0b11]]e=f._smoke_clouds h=e and 0x8b or 0xa8 else h=e and 0x99 or h+0b11 end until false end end,Cf=function(d,_)return function()local i,b,j,f,e,g,k f=_[1][1][_[1][0b11]]i,e,k,b,j=_[0b101][1][_[0b101][0b11]],f.SeasonLibrary,_[0b100][1][_[0b100][0b11]],_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]]g=b.charm g,f,e=g.arch_rank,e,e.FormatSeasonRankCharm e(f,j,i,k,g)return end end,wb=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.bounce=e return end end,fe=function(d,_)return function()local f,a,e,b,h h=0b1100101 repeat if h>=0b1111100 then if h>0b11000110 then if h>0xe4 then b=_[0b100][1][_[0b100][0b11]]a,b=b.equipped,_[0b101][1][_[0b101][0b11]]h,f=0x147-h,a[b]else h,f,a=h+-0b11110,pcall,d:he{e,_[0b111]}f(a)end elseif h>=0xb2 then if h<=0xb2 then b,a=_[0b10][1][_[0b10][0b11]],_[0b110][1][_[0b110][0b11]]h,f=0b11100001-h,a==b else f=e[1][e[0b11]]h=f and 0xb2 or h+-0x97 end elseif h>0x7c then f.placed_object_map=a h,a=h+-0b1001000,_[0b100][1][_[0b100][0b11]]a,f=_[0b101][1][_[0b101][0b11]],a.placed_object_map f[e[1][e[0b11]]]=a else b={}h,a=0b10000011,b end elseif h<0b111011 then if h<=0b100101 then f=_[0b100][1][_[0b100][0b11]]b=f a=b.placed_object_map h=a and h+0b1011110 or h+0b1010111 else h=f and 0x2c6e/h or 0x55 end elseif h<=0x55 then if h>0x3b then h=f and 0xc49/h or 0x90-h else return end else e=nil e={[0b11]=0b10,[0b10]=e}e[1]=e f,a=pcall,d:ie{_[1],e,_[0b11]}f(a)f=nil h=e[1][e[0b11]]==f and 0xe4 or 0xc6 end until false end end,m=function(d,_)return function(e)local h,b,f,c,a h=0x34 repeat if h>=0b110100 then if h<=0x34 then a=_[1][1][_[1][0b11]]c,a,f,b=1,_[0b11][1][_[0b11][0b11]],a.leaderboard,e a=a(b,c)f.level_value=a b=_[1][1][_[1][0b11]]a=b.leaderboard f=a.Level h=f and 0b101010 or 0b11011010 else return end else f=_[0b10][1][_[0b10][0b11]]h=0xda f()end until false end end,Sb=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.crosshair f.enabled=e return end end,Lf=function(d,_)return function(e,l,j,i)local c,b,k,a,h,g h=0b1111010 repeat if h>=0b1111010 then if h>0b1111010 then k=true return k else g,k=j,_[1][1][_[1][0b11]]k=k(g)h=k and 0b10100100 or 0x66 end else k,a,b,g,c=_[0b10][1][_[0b10][0b11]],j,l,e,i k=d.c(k(g,b,a,c))return d.d(k)end until false end end,k=function(d,_)return function()local k,b,i,g,a,l,h,c,j,e h=0x7f repeat if h>=0x66 then if h<=0b1111111 then if h<=0b1100110 then return else e,i=ipairs,_[1][1][_[1][0b11]]i=i()l=i e,l,j=e(l)e,l,j=d.b(e,l,j)i,k=e(l,j)j=i h=j==nil and 0x66 or 0xd2 end else a=string a,c,b=k,"MISSING_",a.find b=b(a,c)g=not b h=g and h+-0x6e or h+-0b10101100 end elseif h>0x26 then b=_[0b10][1][_[0b10][0b11]]h,b,g=0b100110,true,b.fake_owned g[k]=b else i,k=e(l,j)j=i h=j==nil and h+0x40 or 0b11010010 end until false end end,t=function(d,_)return function()local f,e f=task e,f=f.spawn,d:Gd{_[1],_[0b11],_[0b101],_[0b110],_[0b10],_[0b100]}e(f)return end end,Te=function(d,_)return function()local a,e,b,f e={[0b11]=0b10,[0b10]=e}e[1]=e e[1][e[0b11]]=d:Ue()f,a=e[1][e[0b11]],_[1][1][_[1][0b11]]a=a.ScreenGui f(a)a=task a,b,f=0.4,d:Ve{e,_[1]},a.delay f(a,b)return end end,re=function(d,_)return function(e,f)local h,c,a,b h=0b10001101 while true do if h<=0x9e then if h<=0x8d then if h>0b1101110 then a,b=_[1][1][_[1][0b11]],e a=a(b)b=""h=a~=b and 0x6e or 0b10011110 else return a end else b,c=_[1][1][_[1][0b11]],f h=c and 0b10100010 or 0x9382/h end elseif h>0b10100010 then h,c=0x191-h,""else b=b(c)return b end end end end,Pb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_back=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Fb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.density=e f=_[0b10][1][_[0b10][0b11]]f()return end end,sb=function(n,s)return function()local e,a,d,p,f,h,c,l,r,m,q,i,b,j,g,o m=0xe6 repeat if m<=0b10100011 then if m<0b10000001 then if m<0b1010011 then if m<0x42 then if m<=0b10 then a,b,r="Inventory",{},s[0b101][1][s[0b101][0b11]]b.Title=a a="modules not ready / invalid case"b.Description=a a=0b11 b.Time=a o,r=r,r.Notify r(o,b)return else a=table m,a,q,b=0b10010100,o,r,a.insert b(a,q)end elseif m>0x42 then m=r and 0x121-m or 0xdc else m,b=0x8c,1 end elseif m<=0b1100010 then if m>0x56 then r=not j m=r and 0b10110011-m or m+0x64 elseif m>0b1010011 then q=table m,q,a,f=0x94,o,q.insert,r a(q,f)else q=s[0b11][1][s[0b11][0b11]]a=q.CosmeticLibrary m,b=0b11010011,a.Rewards o=b[e]r=not o end else d=p.Quantity m=d and 0x5861/m or 0b10000010 end elseif m<0b10010011 then if m<0b10001000 then if m>0x81 then m,d=0b10110101,1 else g=d+c m,p.Quantity=0b10001000,g b=true end elseif m>0b10001000 then o.Quantity=b o.Weapon=j b=nil o.ExpireTime=b r,o=o,s[0b100][1][s[0b100][0b11]]o=o()m=i and 0xb9-m or 0b110001011-m else a=not b m=a and 0x56 or m+0b1100 end elseif m<0xa1 then if m>0b10010011 then b=s[0b10][1][s[0b10][0b11]]b()b,q,f=s[0b101][1][s[0b101][0b11]],{},"Inventory"q.Title=f f="added to backpack"q.Description=f f=0b10 q.Time=f b,a=b.Notify,b b(a,q)return else m,d=0x764a/m,1 end elseif m>0xa1 then m=r and 0x8659/m or m+-0b1010000 else m,c=0x5121/m,1 end elseif m<=0xd0 then if m>0b10111110 then if m<=0xce then if m>0b11000110 then c=0b1100011 m,g=0x9274/m,d<c else o=""m,r=0x3ea6/m,j==o end else m,j=0xdc,"IsRandom"end elseif m>=0b10110101 then if m<0b10110110 then c=r.Quantity m=c and 0x81 or m+-0x14 elseif m<=0xb6 then m=g and m+-0x39 or 0b10101100 else m=g and m+0b110000 or 0b10110110 end elseif m>0xac then c,d=r.Weapon,p.Weapon m,g=m+0b1100,d==c else h,p=a(q,f)f=h m=f==nil and m+-0x24 or m+0x3d end elseif m<0xe6 then if m>0b11011100 then m,a=0x183-m,s[0b11][1][s[0b11][0b11]]b=a.CosmeticLibrary o=b.Rewards r=not o elseif m<=0b11010011 then m=r and 0b10 or 0b1100010 else o={}o.Name=e b=l m=b and 0b10001100 or 0x42 end elseif m>0b11101110 then b,q,a=false,o,ipairs a,q,f=a(q)a,q,f=n.b(a,q,f)h,p=a(q,f)f=h m=f==nil and 0x187-m or m+-0b10110 elseif m<0xe9 then j=s[1][1][s[1][0b11]]l=j.specific i,e=j,l.lootbox_name j=i.specific l,r=j.quantity,i i=r.specific o,j=r,i.weapon_name r=o.specific b,i=s[0b11][1][s[0b11][0b11]],r.new_entry o=b.CosmeticLibrary r=not o m=r and 0xa3 or 0xe0 elseif m>0xe9 then d=p.Quantity m=d and 0xce or 0x93 else c,d=r.Name,p.Name g=d==c m=g and 0xa202/m or 0xbe end until false end end,pa=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.cc_brightness=e f=_[0b10][1][_[0b10][0b11]]f()return end end,xd=function(d)return function(e,f)local h,a,b h=0xfa while true do if h<=0xf9 then if h<=0b1111011 then return a else return f end else b,a=e,tonumber a=a(b)b=nil h=a==b and 0xf9 or 0b1111011 end end end end,Pe=function(d,_)return function()local f,e,a,g g=0b110011 repeat if g>0b111010 then if g<=0xbd then return else g=e and g+-0x11 or 0x18 end elseif g<0b110011 then e=_[0b10][1][_[0b10][0b11]]e()return elseif g>0b110011 then a=_[1][1][_[1][0b11]]g,f=0x108-g,a.lighting_enabled e=not f else f=_[1][1][_[1][0b11]]e=f._debounce g=e and 0b11001110 or 0x3a end until false end end,he=function(d,_)return function()local e,a,f,c c=0b11000000 repeat if c<=0xc0 then if c>0x1f then e,a=_[0b10][1][_[0b10][0b11]],"ObjectID"f,e=e,e.Get e=e(f,a)c=e and 0x1f or 0b11011010 else _[1][1][_[1][0b11]]=e return end else f=_[0b10][1][_[0b10][0b11]]c,e=0b11111,f.ObjectID end until false end end,c=function(...)return{[1]={...},[0b10]=select("#",...)}end,Pc=function(d,_)return function()local c,f,a,e,b,h h=0b11011110 while true do if h<=0xa9 then if h<=0b1011001 then if h>=0b10111 then if h>=0b110011 then if h<=0x33 then f=e[1][e[0b11]].Streak h=f and 0x2b3b/h or 0xeb else f=e[1][e[0b11]].Wins h=f and 0b10001 or 0xb3-h end else b,a,c,f="Highest Level","Level",e[1][e[0b11]].level_value,_[0b11][1][_[0b11][0b11]]f(a,b,c)f,h,a=pcall,0xf9,d:cg{_[0b100],e}f(a)end elseif h<=0b11 then h,a,f,b=0x10b/h,"Most Eliminations",_[0b101][1][_[0b101][0b11]],"Kills"f(a,b)else f,a,c,b=_[0b11][1][_[0b11][0b11]],"Wins",e[1][e[0b11]].wins_value,"Most Wins"h=0b11101101 f(a,b,c)end elseif h<=0b1011110 then if h>=0x5c then if h<=0b1011100 then b,a,c,f="Highest ELO","ELO",e[1][e[0b11]].elo_value,_[0b11][1][_[0b11][0b11]]h=0b10001111-h f(a,b,c)else a,b,f="Highest Level","Level",_[0b101][1][_[0b101][0b11]]h=0x157-h f(a,b)end else h,f,a,b=0b11101101,_[0b101][1][_[0b101][0b11]],"Most Wins","Wins"f(a,b)end else b,a,h,f="ELO","Highest ELO",h+-0b1110110,_[0b101][1][_[0b101][0b11]]f(a,b)end elseif h>=0b11101011 then if h>=0b11111001 then if h<=0b11111001 then f=_[0b10][1][_[0b10][0b11]]f()return else c,b,f,a=e[1][e[0b11]].kills_value,"Most Eliminations",_[0b11][1][_[0b11][0b11]],"Kills"h=0b1011001 f(a,b,c)end elseif h<=0b11101011 then a,f,h,b="Current Highest Win Streak",_[0b101][1][_[0b101][0b11]],h+-0b110011,"Streak"f(a,b)else f=e[1][e[0b11]].Level h=f and 0x17 or h+-0b10001111 end elseif h>=0xd9 then if h<=0b11011001 then b,c,f,a="Current Highest Win Streak",e[1][e[0b11]].streak_value,_[0b11][1][_[0b11][0b11]],"Streak"f(a,b,c)h,f,a=h+-0b100001,pcall,d:bg{_[0b100],e}f(a)else f=_[1][1][_[1][0b11]]e=f.leaderboard e={[0b11]=0b10,[0b10]=e}e[1]=e f=e[1][e[0b11]].ELO h=f and 0b1011100 or 0b10101001 end else f=e[1][e[0b11]].Kills h=f and 0xb3b0/h or 0x228/h end end end end,eb=function(n,_)return function()local b,i,o,m,l,e,k,f,c,h,j,a m=0b10111 while true do if m>=0b10001001 then if m>0b10111111 then if m>=0xdd then if m>=0b11110111 then if m<=0b11110111 then f,h=type,a f=f(h)h="table"c=f==h m=c and 0x1cf2/m or 0x9f33/m else i=tick i=i()_[0b11][1][_[0b11][0b11]],_[1][1][_[1][0b11]]=i,e return e end elseif m>0xdd then m=e and 0b10100010 or 0x91 else k=_[0b10][1][_[0b10][0b11]]m,i=0x22,k.ItemLibrary j=i.Items end elseif m>=0b11001011 then if m<=0b11001011 then c=l[o]m,a=0x24,not c else k=table k,i=e,k.sort i(k)i,k=#e,0 m=i==k and 0b1000100 or 0xf8 end else b,a=i(k,o)o=b m=o==nil and 0b11010100 or 0xf7 end elseif m>=0b10100010 then if m<0b10110101 then if m<=0b10100010 then e=_[1][1][_[1][0b11]]return e else m=c and 0b10010010 or 0b11011110-m end elseif m<=0b10110101 then b,j=_[0b10][1][_[0b10][0b11]],pairs o=b.ItemLibrary i=o.Items j,i,k=j(i)j,i,k=n.b(j,i,k)o=j(i,k)k=o m=k==nil and 0b10001001 or 0b10010111 else m,h=0x4f,a.ItemName f=l[h]c=not f end elseif m<0b10010010 then if m>0x89 then l={}j,e={},l i,l=_[0b10][1][_[0b10][0b11]],j j=i.ItemLibrary m=j and 0x7d2d/m or 0x22 else j=_[0b100][1][_[0b100][0b11]]j=j()m=j and 0b1001101 or m+0x4b end elseif m<=0b10010010 then h,m,f="",0x39,a.ItemName c=f~=h else f,c=o,type c=c(f)f="string"a=c==f m=a and 0x55 or 0x69 end elseif m>0x4d then if m<=0b1011100 then if m<0x57 then if m<=0b1001111 then m=c and 0x57 or 0x116-m else m,c=m+0b10100,""a=o~=c end elseif m<=0x57 then f,c=true,a.ItemName m,l[c]=0b11000111,f f=table c,f,h=f.insert,e,a.ItemName c(f,h)else o=j(i,k)k=o m=k==nil and 0x313c/m or 0b10010111 end elseif m>0b1101001 then a=true l[o]=a m,c=0b11010110-m,table f,a,c=o,c.insert,e a(c,f)else m=a and 0b11001011 or m+-0x45 end elseif m<0b100100 then if m>=0x1e then if m<=0x1e then m,h,f=0b11000011-m,a.ItemName,type f=f(h)h="string"c=f==h else m=j and m+0b10010011 or 0b10101011-m end elseif m>0x10 then e=_[1][1][_[1][0b11]]m=e and 0b10000 or 0xec else j=tick j=j()i=_[0b11][1][_[0b11][0b11]]j,m,l=0b101,0xfc-m,j-i e=l<j end elseif m>=0b1000100 then if m<=0b1000100 then k,o={},"(waiting for modules)"k[1]=o i=k return i else i,k=pairs,j i,k,o=i(k)i,k,o=n.b(i,k,o)b,a=i(k,o)o=b m=o==nil and 0xd4 or 0x4a4b/m end elseif m>0x24 then m=c and 0x2a87/m or 0x1197/m else m=a and 0x1128/m or 0b10000000-m end end end end,Xa=function(d,_)return function(e)local f,a,g g=0xee repeat if g<=0xe0 then if g<=0x8c then return else f=_[1][1][_[1][0b11]]g,f.outdoor_ambient_color=0x8c,e f=_[0b10][1][_[0b10][0b11]]f()end else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0b11100000 or 0x8c end until false end end,gd=function(d,_)return function()local e,b b,e=d:jg{_[1],_[0b10]},pcall e(b)return end end,Ge=function(d,_)return function()local e,a,h,f,b h=0xb7 while true do if h>=0b10010110 then if h<=0xb7 then if h<=0xa7 then if h>0b10010110 then f=_[1][1][_[1][0b11]]e,f=f.CameraController,_[0b10][1][_[0b10][0b11]]h,e._base_fov=0x13d-h,f else f=workspace e=f.CurrentCamera h=e and 0b11010 or 0x44 end else f=_[1][1][_[1][0b11]]e=f.CameraController h=e and 0xf8 or 0x1c end else b=_[1][1][_[1][0b11]]a=b.CameraController a,f=nil,a._base_fov h,e=0b100010100-h,f~=a end elseif h<=0b11100 then if h<=0b11010 then f=workspace f,e=_[0b10][1][_[0b10][0b11]],f.CurrentCamera h,e.FieldOfView=0b1000100,f else h=e and 0b10100111 or 0x1068/h end else return end end end end,yf=function(d,_)return function()local f,b,e,c,a c,f,b,e=0b1111,_[1][1][_[1][0b11]],"CosmeticLibrary",require f,a=f.WaitForChild,f f=d.c(f(a,b,c))e=d.c(e(d.d(f)))return d.d(e)end end,sf=function(d,_)return function()local g,f,a,e g=0b1111110 while true do if g<=0xb5 then if g<0x7e then g=e and 0x43e/g or g+0xb9 elseif g>0b1111110 then g,f=0b10111111,_[1][1][_[1][0b11]]a,e=_[0b10][1][_[0b10][0b11]],f.PlayerDataController e,f=e.GetWeaponData,e e(f,a)else f=_[1][1][_[1][0b11]]e=f.PlayerDataController g=e and 0b11011010 or 0b110 end elseif g>0xbf then a=_[1][1][_[1][0b11]]f=a.PlayerDataController g,e=0b110,f.GetWeaponData else return end end end end,ic=function(d,_)return function()local e,h,f,a,b h=0x76 while true do if h>=0x7d then if h>=0xa0 then if h<=0xa0 then e,a,b=_[0b11][1][_[0b11][0b11]],{},"Cosmetics"a.Title=b b="modules not found \226\128\148 fully load rivals then re-exec"a.Description=b b=0b101 a.Time=b e,f=e.Notify,e e(f,a)return else e=_[0b101][1][_[0b101][0b11]]e()e=_[0b110][1][_[0b110][0b11]]e()e=_[0b10][1][_[0b10][0b11]]e=e()h=e and 0x7d or 0x1a end else b,a,e="Loading",{},_[0b11][1][_[0b11][0b11]]a.Title=b b="ready..."a.Description=b b=0b11 h,a.Time=0x97-h,b f,e=e,e.Notify e(f,a)e=_[0b100][1][_[0b100][0b11]]e()end elseif h<=0x1a then return else f,a=_[1][1][_[1][0b11]],0b1111 f=f(a)e=not f h=e and 0xa0 or 0xde end end end end,Q=function(n,_)return function()local q,d,e,i,m,h,p,k,g,l,b,o,a,f,j m=0b1101101 while true do if m>0b1101111 then if m<=0xb4 then if m>0b10011111 then if m<=0b10100110 then o=task o,m,k=1,0x352c/m,o.wait k(o)else i=_[1][1][_[1][0b11]]i=i()k=i[1]m=k and 0b10011111 or 0x64 end elseif m>0b10001011 then b,m,o="(waiting for modules)",0b100000011-m,i[1]k=o~=b elseif m>=0b10001001 then if m>0b10001001 then f,h=b(a,q)q=f m=q==nil and 0b110110 or 0x173-m else a,o,b="IsRandom",{},"(None)"o[1],o[0b10]=b,a k,b,o=o,i,ipairs o,b,a=o(b)o,b,a=n.b(o,b,a)q,f=o(b,a)a=q m=a==nil and 0x147-m or 0b10100 end else m,a=0x2c52/m,"Skin"end elseif m<0b11010110 then if m>0b10111110 then m,f=0xd6,_[0b100][1][_[0b100][0b11]]q=f.inject q.cosmetic_name=a else a,q,o,b=k,"(None)",_[0b11][1][_[0b11][0b11]],"InvWeapon"o(b,a,q)q,b,a="IsRandom",{},"Universal"b[1],b[0b10]=a,q a,o,b=i,b,ipairs b,a,q=b(a)b,a,q=n.b(b,a,q)f,h=b(a,q)q=f m=q==nil and m+-0x88 or 0xac30/m end elseif m>0xd6 then m,g=m+-0b1011101,table p,d,g=g.insert,h,o p(g,d)else return end elseif m<0x52 then if m>=0x36 then if m<0b111110 then b,a,q,f=_[0b11][1][_[0b11][0b11]],"InvInjectWeapon",o,"Universal"b(a,q,f)b,f=_[0b10][1][_[0b10][0b11]],_[0b100][1][_[0b100][0b11]]q=f.inject a=q.item_type m=a and m+0x27 or 0b1111010 elseif m>0b111110 then m=q and 0b10 or 0x59 else f="(none)"m,q=0x1170/m,a~=f end elseif m<0b10100 then f="(waiting for modules)"m,q=0b1011001,a~=f elseif m<=0b10100 then p=table m,g,p,h=m+0b100001,f,k,p.insert h(p,g)else q,f=o(b,a)a=q m=a==nil and 0xbe or 0x14 end elseif m<0x64 then if m>0x59 then f=_[0b100][1][_[0b100][0b11]]q=f.inject q=q.weapon_name b=b(a,q)p,f,a,q=_[0b100][1][_[0b100][0b11]],b,_[0b11][1][_[0b11][0b11]],"InvInjectCosmetic"h=p.inject h=h.cosmetic_name a=a(q,f,h)q=a m=q and 0b111110 or 0b10100101-m elseif m>0x52 then m=q and m+0x72 or 0x12f-m else e=e+j m=(j>0 and e>l or j<=0 and e<l or j~=j)and 0b1101111 or 0xb4 end elseif m>=0b1101101 then if m>0b1101101 then return else l,e=0b11110,1 j=e m=(l~=l or j>0 and e>l or(j<=0 or j~=j)and e<l)and 0b1101111 or 0b10110100 end else m=k and 0b10001001 or 0b10100110 end end end end,De=function(d,_)return function()local e,f,c c=0b11100011 while true do if c<0x37 then if c<0b1100 then c=e and c+0b1101110 or 0b10000100/c elseif c<=0b1100 then c=e and 0b110011 or 0xde-c else f=_[1][1][_[1][0b11]]e,c,f=f._play_flash_sound_callback,0xd2,_[0b10][1][_[0b10][0b11]]e(f)end elseif c>=0xd2 then if c>0xd2 then f=_[1][1][_[1][0b11]]e=f.IsRendered c=e and 0x37 or 0b1011 else return end elseif c<=0x37 then c,e=0x25d/c,_[1][1][_[1][0b11]]e,f=e.IsRendered,e e=e(f)else f=_[1][1][_[1][0b11]]c,e=0b1100,f._play_flash_sound_callback end end end end,Xd=function(d,_)return function()local e,f,a f=_[1][1][_[1][0b11]]a,e=_[0b10][1][_[0b10][0b11]],f.EnumLibrary e,f=e.FromEnum,e e=d.c(e(f,a))return d.d(e)end end,af=function(d,_)return function()local e,f,a,g g=0b10000111 while true do if g<=0x87 then if g<=0x47 then a=_[1][1][_[1][0b11]]a,g,f=_[0b10][1][_[0b10][0b11]],0b100001110-g,a.thumb_spoof_conn e=f[a]f,e=e,e.Disconnect e(f)f=_[1][1][_[1][0b11]]e,f,a=f.thumb_spoof_conn,a,nil e[f]=a else a=_[1][1][_[1][0b11]]a,f=_[0b10][1][_[0b10][0b11]],a.thumb_spoof_conn e=f[a]g=e and 0x47 or 0b11000111 end else return end end end end,ma=function(d,_)return function()local e,i,j,h,g,f,c h=0xbe repeat if h<0b1101011 then if h<0b1001001 then if h>0x1a then g=_[1][1][_[1][0b11]]h,c=0b10100011-h,g.Flashbang i=c.ReplicateFromServer else g=_[1][1][_[1][0b11]]c=g.Flashbang i=c.ReplicateFromServer i={[0b11]=0b10,[0b10]=i}i[1]=i g,c=d:Ce{_[0b10],i},g.Flashbang h,c.ReplicateFromServer=0x6b,g end elseif h>0x49 then h=i and 0xa42/h or h+0b101101 else c=_[1][1][_[1][0b11]]i=c.Flashbang h=i and 0b10000111-h or 0b1100101 end elseif h<0b10111110 then if h>0b1101011 then h,c=0x16b-h,task c,i[1][i[0b11]]=0.5,c.wait i[1][i[0b11]](c)else return end elseif h>0b10111110 then e=e+j h=(j>0 and e>f or j<=0 and e<f or j~=j)and 0b101000100-h or 0x49 else f,e=0b101000,1 j=e h=(f~=f or j>0 and e>f or(j<=0 or j~=j)and e<f)and 0x6b or 0b1001001 end until false end end,Ca=function(d,_)return function(e)local h,k,a,i,l,j,b,g h=0b11011111 while true do if h>=0xd4 then if h>0xd4 then l=_[1][1][_[1][0b11]]l.spoof_device=e h=e and 0xd4 or 0x93 else l,j=_[0b11][1][_[0b11][0b11]],false l(j)k,l,i="sucsess",_[0b10][1][_[0b10][0b11]],{}i.Title=k a,b,g=_[1][1][_[1][0b11]],tostring,"spoofed -> "a=a.device h,b=0xba,b(a)k=g..b i.Description=k k=0b10 i.Time=k l,j=l.Notify,l l(j,i)end elseif h>0b10010011 then return else j,l=true,_[0b11][1][_[0b11][0b11]]h=0x6ace/h l(j)k,l,i="sucsess",_[0b10][1][_[0b10][0b11]],{}i.Title=k k="device reset"i.Description=k k=0b10 i.Time=k l,j=l.Notify,l l(j,i)end end end end,bf=function(d,_)return function()local b,e e,b=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]e(b)return end end,qa=function(d,_)return function(e)local a,f e={[0b11]=0b10,[0b10]=e}e[1]=e f=_[1][1][_[1][0b11]]f.camera_fov=e[1][e[0b11]]f,a=pcall,d:Ge{_[0b10],e}f(a)return end end,Ga=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.specular_scale=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Hc=function(d,_)return function()local a,e,b,f e=_[1][1][_[1][0b11]]e()e,b,a=_[0b10][1][_[0b10][0b11]],"Unlock",{}a.Title=b b="all cosmetics"a.Description=b b=0b10 a.Time=b f,e=e,e.Notify e(f,a)return end end,dd=function(d,_)return function(e)local h,b,a,f,c h=0b110011 repeat if h>0x33 then return elseif h<=0b10101 then h,f=0x55,_[0b10][1][_[0b10][0b11]]f()else a=_[1][1][_[1][0b11]]a,c,f,b=_[0b11][1][_[0b11][0b11]],0,a.leaderboard,e a=a(b,c)f.streak_value=a b=_[1][1][_[1][0b11]]a=b.leaderboard f=a.Streak h=f and 0x15 or 0x55 end until false end end,Uc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.atmosphere_enabled=e f=_[0b10][1][_[0b10][0b11]]f()return end end,nd=function(d,_)return function(e)local g,f,a g=0x7c repeat if g>0x7c then return elseif g<=0x54 then a=_[1][1][_[1][0b11]]f=a.crosshair g,f.fill_color=g+0b111011,e else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0b1010100 or 0b10001111 end until false end end,Ed=function(d,_)return function()local i,b,j,k,g,e,f f,e=d:Fd(),pcall e(f)b,f,k,e,j=_[0b10][1][_[0b10][0b11]],"project_atomic/rivals_loadout.json",{},writefile,_[1][1][_[1][0b11]]g=b.fake_owned k.fake_owned=g g=b.equipped k.equipped=g g=b.fake_weapon_owned k.fake_weapon_owned=g b=os g=b.time g=g()k.saved_at=g j,i=j.JSONEncode,j j=d.c(j(i,k))e(f,d.d(j))return end end,Ic=function(d)return function(e)local f,i,c,b,g,h,j h=0b10110010 repeat if h>0b10101011 then if h>0b10110010 then e,i,h,f=f,math,0b1110,tostring i,j=e,i.floor j=d.c(j(i))f=f(d.d(j))j=nil else f,j=tonumber,e f=f(j)h=f and 0b11001111 or 0b10101011 end elseif h>=0b1101001 then if h>0x69 then h,f=0xcf,0 else return f end else c=string i,c,g,b=c.gsub,f,"^(-?%d+)(%d%d%d)","%1,%2"i,c=i(c,g,b)f,i,j=i,0,c h=j==i and 0x69 or 0b1110 end until false end end,He=function(d,_)return function()local e,f,g,a g=0b100100 while true do if g>=0b100100 then if g<=0x24 then a=_[1][1][_[1][0b11]]a,f=_[0b10][1][_[0b10][0b11]],a.name_spoof_conn e=f[a]g=e and 0b11011011 or 0b101 else a=_[1][1][_[1][0b11]]a,f=_[0b10][1][_[0b10][0b11]],a.name_spoof_conn g,e=0b101,f[a]f,e=e,e.Disconnect e(f)f=_[1][1][_[1][0b11]]e,a,f=f.name_spoof_conn,nil,a e[f]=a end else return end end end end,Ab=function(n,_)return function(e)local a,b,m,g,h,f,i,l,k,j,c m=0b110101 while true do if m>=0x7b then if m>=0b10011100 then if m<=0x9c then c=a.Rarity m=c==e and m+-0x1c or 0b11111010 else b,a=i(k,g)g=b m=g==nil and m+-0b10000111 or 0b10011100 end elseif m<=0b1111011 then k,i=j,pairs i,k,g=i(k)i,k,g=n.b(i,k,g)b,a=i(k,g)g=b m=g==nil and 0b11101110-m or 0b10011100 else f=table c,f,m,h=f.insert,l,m+0x7a,b c(f,h)end elseif m>=0b110101 then if m<=0b110101 then j={}j,l=_[1][1][_[1][0b11]],j j=j()i=not j m=i and 0b101000 or 0b1111011 else return l end else return l end end end end,ad=function(d,_)return function()local g,b,j,i,a,e,l,h,k h=0b11111011 while true do if h<=0b1101100 then if h>0b110000 then if h>0x31 then h,e=0x30,"Skin"else return end elseif h>=0b100110 then if h<=0x26 then h=k and 0b11101100 or 0b110010-h else i=_[1][1][_[1][0b11]]j=i.inject i,l,j=e,j.weapon_name,_[0b11][1][_[0b11][0b11]]k=l j=j(i,k)k,a,g,i="InvInjectCosmetic",_[1][1][_[1][0b11]],j,_[0b10][1][_[0b10][0b11]]b=a.inject b=b.cosmetic_name i=i(k,g,b)k=i h=k and h+0xcc or 0b100110 end elseif h<=0b10 then h,g=0b110011-h,_[1][1][_[1][0b11]]k=g.inject k.cosmetic_name=i else h=k and h+-0b1010 or 0b10010111 end elseif h<0b11111011 then if h>0b10010111 then h,g=0b1100,"(waiting for modules)"k=i~=g else g=_[1][1][_[1][0b11]]g,k="",g.inject h,k.cosmetic_name=0x31,g end elseif h<=0b11111011 then j=_[1][1][_[1][0b11]]l=j.inject e=l.item_type h=e and 0b110000 or 0b1101100 else h,g=0x26,"(none)"k=i~=g end end end end,Yf=function(d,_)return function(e)local f,g,j,i,h,c h=0x69 while true do if h<0b1101001 then if h>=0b1000101 then if h>0x45 then return else h,i=h+0x68,_[1][1][_[1][0b11]]j=f~=i end elseif h>0x1c then return else g=_[0b11][1][_[0b11][0b11]]g,c=_[0b111][1][_[0b111][0b11]],g.leaderboard i=c[g]j=not i h=j and 0x52 or 0x89-h end elseif h<0b10101101 then if h<=0b1101001 then f=e h=f and 0b11100000 or 0b11010011 else i=task j,i=i.defer,d:_g{_[0b110],_[0b10],_[0b100],_[0b101],_[1]}j(i)return end elseif h>0b11010011 then h,f=0b110110011-h,e.Name elseif h>0b10101101 then j=not f h=j and h+-0b100110 or 0x45 else h=j and 0b100011 or 0x1c end end end end,xa=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.cc_saturation=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Qf=function(n,s)return function(u,...)local k,h,c,f,j,o,r,a,m,d,p,i,g,t,q,l,v,b m=0x67 while true do if m>0b10010100 then if m>=0xc8 then if m<=0b11101000 then if m<=0xda then if m<=0b11011001 then if m>=0b11001110 then if m>0b11001110 then m=b and 0x57 or 0x59da/m else o=s[0b10][1][s[0b10][0b11]]r=o.fake_owned return r end else m,b=0x8a48/m,o.event_currency end else r,a=pairs,s[0b10][1][s[0b10][0b11]]o=a.fake_weapon_owned r,o,b=r(o)r,o,b=n.b(r,o,b)a,q=r(o,b)b=a m=b==nil and 0xa2 or 0xa534/m end elseif m<=0b11100111 then if m<=0xe2 then m=f and 0b10111001 or 0x140-m else o=getgenv o=o()r=o.AtomicRivalsInventory o=r m=o and 0x146-m or 0b11111011-m end else m=b and m+-0b1011111 or 0b11101010 end elseif m<0xf1 then if m>0b11101010 then m,b=m+-0b1110010,o.unlock_tokens else a="UnlockTokens"b=j==a m=b and 0xd98c/m or 0b1111100 end elseif m>=0xf5 then if m>0xf5 then o,r=s[0b10][1][s[0b10][0b11]],type o=o.fake_weapon_owned r=r(o)o="table"m=r==o and 0x1d4-m or 0b110011100-m else r="UnclaimedRewards"m=j==r and 0b11100111 or 0x94 end else v,t="NONE_COSMETIC",c.Name k=t==v m=k and 0x23c6/m or 0b110001100-m end elseif m>0b10110110 then if m>=0b10111110 then if m<0b11000010 then m,b=m+-0b1100,o.glory elseif m>0xc2 then m=r and 0xbf68/m or 0b11110101 else h,p=type,q h=h(p)p="table"f=h==p m=f and m+-0xb2 or m+0x20 end elseif m>0xb9 then m,b=m+0x1d,o.skin_tickets else p=s[0b10][1][s[0b10][0b11]]p,h=q.Name,p.equipped h,f=type,h[p]p=f h=h(p)p="table"m=h==p and 0x91 or m+-0b1011011 end elseif m<0b10100101 then if m>0b10100010 then a="Glory"b=j==a m=b and m+0b11010 or 0x156-m elseif m<=0x9b then t,m,v=c.Name,0xc1-m,"None"k=t==v else o=s[0b10][1][s[0b10][0b11]]r=o.fake_weapon_owned return r end elseif m>0b10110010 then o="WeaponInventory"r=j==o m=r and m+0b1110 or 0b101001001-m elseif m>=0xb1 then if m>0xb1 then m=b and 0xa5 or 0x46ec/m else m=b and 0x23f4/m or 0x155-m end else b=o.glory_value return b end elseif m<0b1011111 then if m<0x37 then if m>=0b100110 then if m>=0x32 then if m>0b110010 then b=o.event_currency_value return b else b=o.unlock_tokens_value return b end else m=k and m+0b1100000 or 0b10000111 end elseif m>0x14 then o=r.fake_owned return o elseif m<=0b10000 then h,m,p=type,m+0b11010010,q.Name h=h(p)p="string"f=h==p else m=o and m+0b10 or 0b10010100 end elseif m>=0b1000001 then if m<=0b1010111 then if m<=0x41 then o=r.currency m=o and 0x3f or 0x6a else b=o.skin_tickets_value return b end else a,q=r(o,b)b=a m=b==nil and 0b10100010 or 0b11000010 end elseif m<=0b111010 then if m<=0x37 then k,t=type,c k=k(t)t="table"m=k==t and 0b11110001 or 0b10101011-m else a="EventCurrency"b=j==a m=b and m+0b10001110 or m+0b1110111 end else o,a=r.currency,"WeaponKeys"b=j==a m=b and m+0x42 or 0b11101000 end elseif m<0x81 then if m>0b1101010 then if m<=0x74 then d,c=h(p,g)g=d m=g==nil and m+-0b10110 or 0b110111 else m=b and 0x1838/m or 0x1c18/m end elseif m>=0x67 then if m>0x67 then return l else j,i,l=u,n.c(...),s[1][1][s[1][0b11]]l=l(j,n.d(i))r,o={},n.c(...)n.e(r,1,n.d(o))i=r r,j="CosmeticInventory",i[1]m=j==r and 0b11001110 or 0b10110110 end elseif m>0b1011111 then a="SkinTickets"b=j==a m=b and 0b10111100 or m+0b1110011 else m,o=m+-0b1001011,r.fake_owned end elseif m<0b10001001 then if m>0x86 then m,q[d]=m+-0b10011,c elseif m<=0x81 then m,b=0x74e8/m,o.weapon_keys else m,k=m+-0x12,nil q[d]=k end elseif m>0x93 then o=getgenv o=o()r=o.AtomicRivalsSpoofer m=r and 0b1000001 or 0b11111110-m elseif m>=0b10010001 then if m<=0b10010001 then p,h=f,pairs h,p,g=h(p)h,p,g=n.b(h,p,g)d,c=h(p,g)g=d m=g==nil and m+-0x33 or 0x37 else o="FreeWeaponUnlockCheck"m,r=0b11000100,j==o end else b=o.weapon_keys_value return b end end end end,yb=function(d)return function(e)local h,a,f,b h=0b11011 repeat if h>0b11100110 then if h>0b11101010 then a,f,b=require,pcall,e f,a=f(a,b)h=f and 0b11101010 or 0xe6 else return a end elseif h>=0b1001000 then if h<=0b1001000 then f=nil return f else b=nil return b end else f=not e h=f and 0x48 or 0xf7 end until false end end,Da=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.cc_enabled=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ld=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.unlock_type=e return end end,sd=function(d,_)return function(e)local j,c,g,h,i,f h=0b1101100 while true do if h<0x6c then if h>0b1001100 then i,c=_[1][1][_[1][0b11]],""h,i.equip_name=0b11001100,c elseif h>=0b100011 then if h<=0b100011 then c="(waiting for modules)"h,i=0b1001100,j~=c else h=i and 0xa0 or 0x16dc/h end else c="(none)"h,i=0b10010110-h,j~=c end elseif h<=0b10100000 then if h<0x91 then f=_[1][1][_[1][0b11]]f.equip_weapon=e i,f=_[1][1][_[1][0b11]],_[0b11][1][_[0b11][0b11]]j,i=i.equip_type,i.equip_weapon f=f(j,i)i,c,g,j="EquipName",f,_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]g=g.equip_name j=j(i,c,g)i=j h=i and 0b101 or 0x91 elseif h<=0b10010001 then h=i and h+-0x6e or 0x4c else i=_[1][1][_[1][0b11]]h,i.equip_name=0b11001100,j end else return end end end end,pd=function(d,_)return function()local e,b,c c=0xf7 repeat if c>=0b11110011 then if c<=0b11110011 then c,e=0x1d2-c,_[0b10][1][_[0b10][0b11]]e()else b,e=0b1111,_[1][1][_[1][0b11]]e=e(b)c=e and 0b11110011 or 0xdf end else return end until false end end,ob=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_right=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Wc=function(n,_)return function()local b,a,g,f,l,e,k,o,j,q,p,h,m,i m=0b10000111 repeat if m<0x7f then if m<0x41 then if m<=0x13 then e=e+j m=(j>0 and e>l or j<=0 and e<l or j~=j)and 0b10101111 or 0x41 else return end elseif m<=0b1010001 then if m>0x41 then o,a,q=_[0b10][1][_[0b10][0b11]],{},"Cosmetics"a.Title=q p,f,m,g=tostring,"lists loaded (",0x38,#i p=p(g)g=")"h=p..g q=f..h a.Description=q q=0b10 a.Time=q o,b=o.Notify,o o(b,a)else i,k=pcall,_[1][1][_[1][0b11]]i(k)i=_[0b11][1][_[0b11][0b11]]i=i()k=i[1]m=k and m+0b111110 or 0b1110100 end else m=k and 0b11011100 or 0b101110011-m end elseif m<=0xaf then if m<=0b10000111 then if m<=0b1111111 then b,o="(waiting for modules)",i[1]m,k=0b1110100,o~=b else e,l=1,0x19 j=e m=(l~=l or j>0 and e>l or(j<=0 or j~=j)and e<l)and 0xaf or 0b1000001 end else return end elseif m>0b11011100 then b=task o,b=b.wait,1 m=m+-0xec o(b)else o,b=pcall,_[0b101][1][_[0b101][0b11]]o(b)b=_[0b100][1][_[0b100][0b11]]o(b)o=1 m=e>o and 0b1010001 or 0b111000 end until false end end,vd=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.offset=e return end end,Rc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.auto_rotate_speed=e return end end,Wd=function(d,_)return function()local e,i,c,f,j,g c,j,e=_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]],_[1][1][_[1][0b11]]i,g=c[0b10],c c,f,e,g=g[0b11],e,e._PlayFinisher,g[0b100]e(f,j,i,c,g)return end end,Fe=function(d,_)return function()local a,c,i,f,e,g i=_[1][1][_[1][0b11]]a=i.Remotes f=a.Data g,i,e,c,a=_[0b10][1][_[0b10][0b11]],_[0b101][1][_[0b101][0b11]],f.EquipCosmetic,_[0b100][1][_[0b100][0b11]],_[0b11][1][_[0b11][0b11]]f,e=e,e.FireServer e(f,a,i,c,g)return end end,qb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.sunrays_spread=e f=_[0b10][1][_[0b10][0b11]]f()return end end,_g=function(d,_)return function()local b,e b,e=d:ag{_[1],_[0b11],_[0b101],_[0b100],_[0b10]},pcall e(b)return end end,Bc=function(d,_)return function()local i,f,k,g,h,e,b,j h=0b11001001 while true do if h>=0xb5 then if h<0b11100100 then if h<=0b11001001 then if h>0xb5 then e=_[1][1][_[1][0b11]]e=e()i,k,j,f=e,_[0b10][1][_[0b10][0b11]],"EquipWeapon",_[0b11][1][_[0b11][0b11]]k=k.equip_weapon f=f(j,i,k)j=f h=j and 0b11100100 or 0xea else h,j=0x83,_[0b10][1][_[0b10][0b11]]j.equip_weapon=f end else h,g,k=0x83a0/h,"",_[0b10][1][_[0b10][0b11]]k.equip_name=g end elseif h>0b11101010 then h=k and h+-0x78 or h+-0x25 elseif h>0xe4 then h=j and 0xb5 or 0x83 else i="(waiting for modules)"h,j=0b11101010,f~=i end elseif h<=0b10000011 then if h<=0x7e then if h>0x10 then h,g=0xfd,"(waiting for modules)"k=i~=g elseif h>0b11 then h=k and 0b1111110 or 0xfd else h,g=0x10,"(none)"k=i~=g end else k,j=_[0b10][1][_[0b10][0b11]],_[0b100][1][_[0b100][0b11]]i,k=k.equip_type,k.equip_weapon j=j(i,k)k,i,b,g="EquipName",_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]],j b=b.equip_name i=i(k,g,b)k=i h=k and 0b11 or h+-0x73 end elseif h<=0b10000101 then k=_[0b10][1][_[0b10][0b11]]h,k.equip_name=0x510c/h,i else return end end end end,sa=function(d,_)return function(e)local g,f,c,i,a,h h=0x12 while true do if h>0b1110101 then if h<0xa4 then if h>0x76 then i,a=true,{}a.DisplayName=i a.Username=i a.Name=i a.Handle=i a.TitleText=i a.SubtitleText=i a.HeaderText=i a.Title=i a.Wins=i a.Kills=i a.Eliminations=i a.Value=i c,f=e[1][e[0b11]].Name,a i=f[c]a=not i h=a and 0b111000 or h+-0x20 else i,a=e[1][e[0b11]],_[1][1][_[1][0b11]]a(i)c=_[0b10][1][_[0b10][0b11]]i=c.name_spoof_conn a=i[e[1][e[0b11]]]h=a and 0xee or 0b11001001-h end elseif h<=0b10101101 then if h>0xa4 then f=not a h=f and 0b1110101 or 0b10010110 else i,c,a=e[1][e[0b11]],"TextButton",e[1][e[0b11]].IsA h,a=h+0b1001,a(i,c)end else return end elseif h<=0x48 then if h<0x38 then if h>0b10010 then return else e={[0b11]=0b10,[0b10]=e}e[1]=e f=not e[1][e[0b11]]h=f and 0x18 or 0x48 end elseif h<=0x38 then return else i,a,c=e[1][e[0b11]],e[1][e[0b11]].IsA,"TextLabel"a=a(i,c)h=a and 0xad or 0xa4 end elseif h<=0x53 then i=_[0b10][1][_[0b10][0b11]]a,i,c,g=i.name_spoof_conn,e[1][e[0b11]].GetPropertyChangedSignal,e[1][e[0b11]],"Text"i=i(c,g)g,i,c=d:Ie{_[1],e},i.Connect,i i=i(c,g)a[e[1][e[0b11]]]=i c,a=d:He{_[0b10],e},e[1][e[0b11]].Destroying a,i=a.Connect,a a(i,c)return else return end end end end,v=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.global_shadows=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Kd=function(d,_)return function()local h,i,g,j,f,c,e h=0xa6 repeat if h>0x2b then g=_[1][1][_[1][0b11]]c=g.PlayerScripts i=c.Modules j=i.ClientReplicatedClasses f=j.ClientFighter f,e=require,f.ClientItem j=e f=f(j)j=f._CreateViewModel h=j and 0x14 or 0b101011 elseif h>0b10100 then return else h,j=0b101011,f._CreateViewModel j={[0b11]=0b10,[0b10]=j}j[1]=j i=d:ae{_[0b11],_[0b10],_[1],j}f._CreateViewModel=i end until false end end,b=(function()local q,i,s=type,getmetatable,pairs return function(u,v,w)if q(u)~="function"then local p=i(u)if p~=nil and p.__iter~=nil then return p.__iter(u)elseif(p and p.__call)==nil and q(u)=="table"then return s(u)end end return u,v,w end end)(),le=function(d,_)return function()local f,e,a f=_[0b10][1][_[0b10][0b11]]a,e="CosmeticInventory",f.PlayerDataController e,f=e.Get,e e=e(f,a)_[1][1][_[1][0b11]]=e return end end,Qa=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,lc=function(d,_)return function(e)local f,a,i,c,h h=0x62 while true do if h<0b1100010 then return elseif h<=0x62 then a=_[1][1][_[1][0b11]]f=a.charm f.s0_charm=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0xaa or 0x28 else c,i,f="sucsess",{},_[0b10][1][_[0b10][0b11]]h,i.Title=0x1a90/h,c c="season 0 charm applied"i.Description=c c=0b10 i.Time=c a,f=f,f.Notify f(a,i)end end end end,Je=function(d,_)return function()local e,c,f c=0b11001111 while true do if c<0b11001111 then f=_[1][1][_[1][0b11]]c,e=0xff,f.ScreenGui elseif c>0b11001111 then return e else e=_[1][1][_[1][0b11]]c=e and 0b10001111 or 0xff end end end end,Ya=function(d,_)return function()local f,e,b,a,g g=0b10001110 repeat if g>=0x54 then if g<=0x71 then if g<=0b1010100 then g,f=0b110100100/g,0 else e.streak_value=f f=_[1][1][_[1][0b11]]b,e,f="Level",f.leaderboard,_[0b10][1][_[0b10][0b11]]f,a=f.GetAttribute,f f=f(a,b)g=f and 0x76-g or 0x54 end else f=_[1][1][_[1][0b11]]f,b,e=_[0b10][1][_[0b10][0b11]],"StatisticDuelsWinStreak",f.leaderboard a,f=f,f.GetAttribute f=f(a,b)g=f and 0x71 or 0x1d end elseif g<=0b101 then e.level_value=f return else g,f=g+0x54,0 end until false end end,Jd=function(d,_)return function()local h,f,e,a,b h=0x3d repeat if h>0b1110010 then if h>=0xae then if h>0b10101110 then a=_[0b11][1][_[0b11][0b11]]f=a.FighterController h=f and 0x2f or h+-0b111100 else f,a=pcall,d:_e{_[0b11],e}h=0xcb f(a)end else h=f and h+-0b11101 or 0x2dce/h end elseif h<=0x52 then if h<=0b111101 then if h<=0x2f then b=_[0b11][1][_[0b11][0b11]]a=b.FighterController h,f=0x8f,a.GetWrap else a=_[1][1][_[1][0b11]]f=a.PlayerScripts e,a=f.Controllers,"FighterController"e,f=e.FindFirstChild,e e=e(f,a)e={[0b11]=0b10,[0b10]=e}e[1]=e h=e[1][e[0b11]]and 0b10101110 or 0xcb end else return end else b=_[0b11][1][_[0b11][0b11]]a=b.FighterController f=a.GetWrap f={[0b11]=0b10,[0b10]=f}h,f[1]=0x52,f b,a=d:Yd{f,_[0b10],_[0b100]},b.FighterController a.GetWrap=b end until false end end,Bb=function(d,_)return function(e)local i,a,f,c,g f,i=_[1][1][_[1][0b11]],math c,i,a,g=e,_[0b10][1][_[0b10][0b11]],i.clamp,1 i=i(c,g)g,c=0b101,0.1 a=a(i,c,g)f.spam_rate=a return end end,pe=function(d,_)return function()local h,e,a,f,b h=0xb4 repeat if h>0xb4 then if h<=0xe6 then h=e and h+0b10000 or 0x960a/h else b,e,f=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]],tostring a=b.ControlsController a=a.CurrentControls h,f=0b110011101-h,f(a)e.old_device=f end elseif h<0xa7 then a=_[1][1][_[1][0b11]]f=a.ControlsController h,e=0xe6,f.CurrentControls elseif h>0xa7 then f=_[1][1][_[1][0b11]]e=f.ControlsController h=e and 0b1001000 or 0b11100110 else return end until false end end,Pa=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.crosshair f.length=e return end end,kd=function(d,_)return function()local e,i,f,g,b,a,j,h,k h=0b1001001 repeat if h<=0x49 then if h<0b1000010 then i,k=e(f,j)j=i h=j==nil and 0x15ae/h or 0x60-h elseif h<=0b1000010 then b,h,g,a=_[0b10][1][_[0b10][0b11]],0b1100000-h,pcall,i g(b,a)else i,e=_[1][1][_[1][0b11]],pairs f=i.name_spoof_conn e,f,j=e(f)e,f,j=d.b(e,f,j)i,k=e(f,j)j=i h=j==nil and 0b10111001 or 0b1000010 end else return end until false end end,Db=function(d,_)return function(e)local g,f,a g=0xb2 while true do if g>0x95 then if g<0xb2 then g=f and 0b10111100-g or 0xf9-g elseif g<=0b10110010 then f=e g=f and 0b1000 or 0b10101100 else a=_[1][1][_[1][0b11]]a,g,f="",0b10010101,a.inject f.cosmetic_name=a end elseif g>0b111010 then if g>0x4d then return else g=f and g+-0x13 or 0b11010011 end elseif g>0b10000 then g,a=0b10010101,_[1][1][_[1][0b11]]f=a.inject f.cosmetic_name=e elseif g>0b1000 then g,a=0b1001101,"(waiting for modules)"f=e~=a else a="(none)"g,f=0b10101100,e~=a end end end end,Xb=function(d,_)return function(e)local f,h,b,a,c h=0b110 while true do if h<0x46 then a=_[1][1][_[1][0b11]]f,b,c,a=a.currency,e,0,_[0b11][1][_[0b11][0b11]]a=a(b,c)f.unlock_tokens_value=a b=_[1][1][_[1][0b11]]a=b.currency f=a.unlock_tokens h=f and 0b1000110 or 0b11100100 elseif h>0x46 then return else h,f=0xe4,_[0b10][1][_[0b10][0b11]]f()end end end end,Dg=function(a,...)return a:f()(...)end,Ia=function(n,_)return function()local a,h,f,m,e,c,b,g,k,i,j,l m=0b10110110 while true do if m>=0b1011010 then if m>=0x78 then if m<=0b10110110 then if m<=0x78 then return else e=_[1][1][_[1][0b11]]e=e()l=not e m=l and 0x78 or 0b100 end else m=c and 0b110111 or 0b1000 end elseif m>0b1011010 then f=a.Rarity c=f==j m=c and 0b1010011 or m+0x59 else f=string f,h,c=b,"MISSING_",f.find c=c(f,h)m=c and 0b1100010-m or 0xc5-m end elseif m<=0b1000 then if m>0b101 then b,a=i(k,g)g=b m=g==nil and 0b1101-m or 0b1011010 elseif m<=0b100 then j=_[0b10][1][_[0b10][0b11]]i,l=j,j.unlock_type i,k,j=pairs,e,i.unlock_rarity i,k,g=i(k)i,k,g=n.b(i,k,g)b,a=i(k,g)g=b m=g==nil and 0b101 or 0b101101000/m else return end elseif m<=0b110111 then m,f=0b111111-m,_[0b10][1][_[0b10][0b11]]f,c=true,f.fake_owned c[b]=f else f=a.Type m,c=0xc4,f==l end end end end,Wb=function(d)return function(e,f)local i,b,g,k,j i=math i,j=e,i.rad j=j(i)k=Vector2 b,i=math,k.new b,g=j,b.sin g=g(b)k,b=g*f,math b,g=j,b.cos g=g(b)g=g*f i=d.c(i(k,g))return d.d(i)end end,J=function(n,_)return function(e,l)local j,a,h,p,m,f,b,o,c,i,k m=0xc7 repeat if m<0x8c then if m<=0b110110 then if m>0b101101 then if m<=0b110100 then m=f and 0xc8 or 0x9c else h=""m,f=0x2a9c/m,l~=h end elseif m>=0b10010 then if m<=0b10010 then o=table k,o=o.sort,j k(o)k,o=#j,0 m=k==o and m+0x32 or m+0b1101110 else m=f and 0b11001000 or 0x189c/m end elseif m<=0b1001 then b,o="(waiting for modules)",{}o[1]=b k=o return k else h=c.Type m,f=m+0x1d,h~=e end elseif m>=0b1001111 then if m<=0b1001111 then p,h=a,type h=h(p)p="string"f=h~=p m=f and 0x83-m or 0b11110011-m else return j end elseif m>0b111000 then o,b={},"(none)"o[1]=b k=o return k else h="(waiting for modules)"m,f=0x3528/m,l~=h end elseif m<0b11001000 then if m<=0b10100100 then if m>0b10011100 then m,h=0b110100,string f,h,p=h.find,a,"MISSING_"f=f(h,p)elseif m<=0x8c then f="Skin"m=e==f and 0xbf or 0b11011000 else p,h=c,type h=h(p)p="table"f=h~=p m=f and 0xc9-m or 0b10000 end elseif m<=0xbf then f=l m=f and 0b11110101-m or 0b110001001-m else i={}i,j=_[1][1][_[1][0b11]],i i=i()k=not i m=k and 0b1001 or 0b11100011 end elseif m<=0xd9 then if m>0b11011000 then f=c.ItemName m=f~=l and 0xa988/m or 0b11011000 elseif m>0xca then h=table m,h,f,p=m+-0x10,j,h.insert,a f(h,p)elseif m<=0xc8 then a,c=k(o,b)b=a m=b==nil and 0xe10/m or 0x4f else m=f and 0b111000 or 0xbfbe/m end elseif m<=0b11100011 then o,k=i,pairs k,o,b=k(o)k,o,b=n.b(k,o,b)a,c=k(o,b)b=a m=b==nil and 0xff6/m or 0b100110010-m else m=f and 0b111001100-m or 0b11011000 end until false end end,uc=function(d,_)return function()local e,j,h,i,g,c,f h=0b1110100 repeat if h>0x79 then if h>0xda then if h>0xf2 then f,i=_[0b100][1][_[0b100][0b11]],"PlayerScripts"f,j=f.FindFirstChild,f f=f(j,i)h=f and 0b101101111-h or 0x1ea3/h elseif h<0b11100101 then i=_[0b11][1][_[0b11][0b11]]j=i.CosmeticLibrary f=not j h=f and 0b11011010 or h+0b11 elseif h>0b11100101 then i,j,f=d:zf{e},_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]]j=j(i)h,f.ItemLibrary=0x964e/h,j else i=_[0b11][1][_[0b11][0b11]]j=i.ItemLibrary f=not j h=f and 0xf2 or 0b110000100-h end elseif h<=0b11001000 then if h<=0b10110111 then if h>=0x9f then if h<=0x9f then i=_[0b11][1][_[0b11][0b11]]j=i.ShopLibrary f=not j h=f and 0x48 or 0x156-h else i=_[0b11][1][_[0b11][0b11]]j=i.EnumLibrary f=not j h=f and h+-0b11001 or 0b11111101 end else i,f,j=d:Af{e},_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]]j=j(i)h,f.EnumLibrary=0x9c26/h,j end else g=_[0b11][1][_[0b11][0b11]]g,c=nil,g.CosmeticLibrary i=c~=g return i end elseif h<=0xcb then j,i,c=f.FindFirstChild,f,"Controllers"j=j(i,c)h=j and 0x105-h or 0b10001 else i,f,j=d:yf{e},_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]]h,j=h+0b1011,j(i)f.CosmeticLibrary=j end elseif h<0b1001000 then if h>0x1f then if h<=0x3a then j={[0b11]=0b10,[0b10]=j}j[1]=j i=j[1][j[0b11]]h=i and h+0b101 or 0x79 else g=_[0b11][1][_[0b11][0b11]]h,c=0xb8-h,g.PlayerDataController i=not c end elseif h<=0b10001 then if h<=0b111 then j,i,e="Modules",0b11110,_[1][1][_[1][0b11]]e,h,f=e.WaitForChild,0b1100001,e e=e(f,j,i)else g,c,j,i=0b1111,"Controllers",f.WaitForChild,f h,j=0x3a,j(i,c,g)end else i,c,f="PlayerScripts",0b11110,_[0b100][1][_[0b100][0b11]]h,j,f=0b1110010,f,f.WaitForChild f=f(j,i,c)end elseif h<0b1110010 then if h<0b1100001 then i,j,f=d:xf{e},_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]]h,j=0xb7,j(i)f.ShopLibrary=j elseif h>0b1100001 then c,i,h,g=_[0b10][1][_[0b10][0b11]],_[0b11][1][_[0b11][0b11]],0b100101111-h,d:wf{j}c=c(g)i.PlayerDataController=c else e={[0b11]=0b10,[0b10]=e}e[1]=e h=e[1][e[0b11]]and 0xe2 or 0xfd end elseif h>0x74 then h=i and 0b11100000-h or 0x5e88/h elseif h<=0b1110010 then j=f h=j and h+0b1011001 or 0x3a else j,e="Modules",_[1][1][_[1][0b11]]f,e=e,e.FindFirstChild e=e(f,j)h=e and 0b1100001 or 0b111 end until false end end,vb=function(d,_)return function(e)local f,a a=_[1][1][_[1][0b11]]f=a.delete f.quantity=e return end end,U=function(d,_)return function(e)local l,i,j,m,c,a,g,b,k m=0x54 repeat if m<0b1000101 then l,j=pcall,d:xe{_[0b110],_[0b10]}l(j)l,k,i=_[0b100][1][_[0b100][0b11]],"sucsess",{}i.Title=k c,g,b=_[1][1][_[1][0b11]],"spoofed -> ",tostring a=c.leaderboard a=a.kills_value b=b(a)k=g..b i.Description=k k=0b10 i.Time=k m,l,j=0b1000101,l.Notify,l l(j,i)elseif m>0x45 then j=_[1][1][_[1][0b11]]l=j.leaderboard l.Kills=e l=_[0b11][1][_[0b11][0b11]]l()l=_[0b101][1][_[0b101][0b11]]l()m=e and 0 or 0b1000101 else return end until false end end,Ub=function(d,_)return function()local b,a,e,f e=_[1][1][_[1][0b11]]e()b,e,a="Unlock",_[0b10][1][_[0b10][0b11]],{}a.Title=b b="lists refreshed"a.Description=b b=0b10 a.Time=b e,f=e.Notify,e e(f,a)return end end,Vd=function(d,_)return function()local f,e,a a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]e,f=e.FromEnum,e e=d.c(e(f,a))return d.d(e)end end,Ld=function(d,_)return function()local g,f,j,h,c,i,e h=0x3e repeat if h>=0b10110001 then if h<=0b10110111 then if h<=0b10110010 then if h<=0b10110001 then return else j=f.new h=j and 0x90 or h+-0xab end else j=f.GetWrap j={[0b11]=0b10,[0b10]=j}j[1]=j h,i=0b10110010,d:de{_[1],_[0b11],_[0b10],j}f.GetWrap=i end else j,f=e,require f=f(j)j=f.GetWrap h=j and 0b10110111 or 0xb2 end elseif h<=0b111110 then if h<=0b111 then return else g=_[1][1][_[1][0b11]]c=g.PlayerScripts i=c.Modules j=i.ClientReplicatedClasses f=j.ClientFighter e,j=f.ClientItem,"ClientViewModel"e,f=e.FindFirstChild,e e=e(f,j)f=not e h=f and 0xb1 or 0b10111111 end else j=f.new j={[0b11]=0b10,[0b10]=j}j[1]=j i=d:ce{_[0b10],j,_[1],_[0b11],_[0b100]}h,f.new=0b111,i end until false end end,of=function(d,_)return function()local e,b e=_[1][1][_[1][0b11]]b,e=e,e.Unload e(b)return end end,ud=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.inject f.item_type=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Me=function(d,_)return function()local c,b,a,f,e e=d:Ne{_[1]}f,c,a=e,"PlayerGui",_[0b10][1][_[0b10][0b11]]b,a=a,a.FindFirstChild a=d.c(a(b,c))f(d.d(a))f,a=e,workspace f(a)return end end,Ra=function(n)return function(e,l,j)local m,d,i,h,a,o,c,b,f,k m=0b11100111 while true do if m>0x83 then if m<0b11010100 then if m<=0xb5 then if m>=0xb0 then if m<=0xb0 then i,k,o=1,ipairs,e k,o,b=k(o)k,o,b=n.b(k,o,b)a,c=k(o,b)b=a m=b==nil and 0b101 or m+-0x55 else return end elseif m>0b10000101 then m=f>=j and 0xb8 or 0x307/m else m,a=0x3608/m,b.PlayerId end elseif m<=0xb8 then h=1 m,i=0xde,a+h else i,k=tonumber,j i=i(k)m=i and 0b11010100 or 0b10001 end elseif m>=0b11100001 then if m>=0b11101110 then if m>0b11101110 then a,c=tonumber,b.key a=a(c)m=a and 0xdd or 0b10000001 else h,m,f=c.Value,0x41,tonumber f=f(h)end elseif m<=0xe1 then m=a and 0x5b68/m or 0b10000101 else i,k=type,e i=i(k)k="table"m=i~=k and 0xb5 or 0xd0 end elseif m<0b11011101 then o,j,k,i=-1,i,1,#e m=(k~=k or o>0 and i>k or(o<=0 or o~=o)and i<k)and 0b10110000 or m+-0b1101101 elseif m>0b11011101 then a,c=k(o,b)b=a m=b==nil and 0b101 or 0x139-m else m=a and 0b11101 or 0x14b8/m end elseif m<=0x4d then if m<0x18 then if m>0b10110 then m,a=0b11111000-m,b.UserID elseif m>0b10001 then m=c and 0b1011111 or 0b10000011 elseif m<=0b101 then o=table a,o,k,b,c,f={},e,o.insert,i,tostring,l c=c(f)a.key=c a.value=j a.UserId=l a.UserID=l a.PlayerId=l k(o,b,a)return else m,i=0xd4,0 end elseif m<0x41 then if m<=0x18 then m,a=0b11101,b.UserId else m=a and 0x197d/m or 0b10111 end elseif m<=0x41 then m=f and 0b10011011 or 0x138d/m else m,f=0x2e9f/m,0 end elseif m<=0b1101000 then if m<=0x67 then if m>=0x5f then if m>0b1011111 then a,b=type,e[i]c=b a=a(c)c="table"m=a==c and 0xf0 or 0x83 else f=table c,m,h,f=f.remove,0x309d/m,i,e c(f,h)end else h,f=c.value,tonumber f=f(h)m=f and 0x171b/m or 0b11101110 end else c=a==l m=c and 0b10110 or 0x7d end elseif m>0b10000001 then i=i+o m=(o>0 and i>k or o<=0 and i<k or o~=o)and 0xb0 or 0b1100111 elseif m<=0x7d then f,h=tostring,b.key f=f(h)h,d=tostring,l m,h=0x16,h(d)c=f==h else a,c=tonumber,b.Key m,a=m+0b1011100,a(c)end end end end,yd=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,n=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.bulk f.quantity=e return end end,X=function(d,_)return function()local e,f,c c=0 while true do if c>0b1011010 then return elseif c>0x20 then e,c,f=_[0b10][1][_[0b10][0b11]],0x22ce/c,false e(f)elseif c>0 then c,e,f=0x63,_[0b10][1][_[0b10][0b11]],true e(f)else f=_[1][1][_[1][0b11]]e=f.spoof_device c=e and 0x5a or 0b100000 end end end end,Tf=function(d,_)return function(e)local a,b,k,i,j,h,g,f h=0x80 while true do if h>=0b10111000 then if h<0b11110101 then f,i=e.DescendantAdded,_[1][1][_[1][0b11]]j,f=f,f.Connect f(j,i)return elseif h<=0xf5 then return else j,i,f=e.GetDescendants,e,ipairs j=d.c(j(i))f,j,i=f(d.d(j))f,j,i=d.b(f,j,i)k,g=f(j,i)i=k h=i==nil and 0x1b0-h or 0x16c-h end elseif h>0x74 then f=not e h=f and 0b11110101 or 0xf8 elseif h>0b1010000 then h,a,b=h+-0b100100,g,_[1][1][_[1][0b11]]b(a)else k,g=f(j,i)i=k h=i==nil and 0x3980/h or 0b1110100 end end end end,ab=function(n,s)return function()local o,l,b,m,a,j,q,r,p,h,e,i,d,f,c,g m=0b111000 repeat if m>=0x9b then if m<=0b10011011 then i,r=e(l,j)j=i m=j==nil and m+0b100100 or 0b11111 else return end elseif m>0b11111 then r,g,c,f,h,q,b,e,i,o,a,p,d="Ambient","EnvironmentSpecularScale","LightingStyle","Brightness","ShadowSoftness","ExposureCompensation","ColorShift_Top",ipairs,{},"OutdoorAmbient","ColorShift_Bottom","EnvironmentDiffuseScale","GlobalShadows"i[1],i[0b10],i[0b11],i[0b100],i[0b101],i[0b110],i[0b111],i[0b1000],i[0b1001],i[0b1010],i[0b1011]=r,o,b,a,q,f,h,p,g,d,c l=i e,l,j=e(l)e,l,j=n.b(e,l,j)i,r=e(l,j)j=i m=j==nil and 0xbf or 0x1f else a,o=r,s[1][1][s[1][0b11]]o,m,b=o.GetPropertyChangedSignal,0x9b,o o=o(b,a)b,a,o=o,n:Pe{s[0b11],s[0b10]},o.Connect o(b,a)end until false end end,zc=function(d,_)return function()local f,e f=task e,f=f.wait,0b10 e(f)f,e=d:Sf{_[1],_[0b10]},pcall e(f)return end end,w=function(d,_)return function()local e,a,f e,a=_[1][1][_[1][0b11]],{}f=a e.fake_owned=f e=_[0b10][1][_[0b10][0b11]]e()return end end,h=function(d,_)return function(e)local c,j,g,k,m,i,a,l,b m=0x42 while true do if m<0xb6 then j=_[1][1][_[1][0b11]]l=j.leaderboard l.ELO=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0b11110110 or 0b10110110 elseif m<=0b10110110 then return else i,k,l={},"sucsess",_[0b10][1][_[0b10][0b11]]i.Title=k b,g,c=tostring,"spoofed -> ",_[1][1][_[1][0b11]]a=c.leaderboard a=a.elo_value b=b(a)k=g..b i.Description=k k=0b10 m,i.Time=0b10110110,k l,j=l.Notify,l l(j,i)end end end end,zf=function(d,_)return function()local b,f,e,a,c c,e,f,b=0b1111,require,_[1][1][_[1][0b11]],"ItemLibrary"f,a=f.WaitForChild,f f=d.c(f(a,b,c))e=d.c(e(d.d(f)))return d.d(e)end end,Fc=function(d,_)return function(e)local a,f,c,h,i h=0b11111101 while true do if h>=0b10011101 then if h<=0x9d then return else f=_[1][1][_[1][0b11]]f.display_name=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0x42 or 0b10011101 end else i,c,f={},"sucsess",_[0b10][1][_[0b10][0b11]]i.Title=c h,c=0b10011101,"display name applied"i.Description=c c=0b10 i.Time=c f,a=f.Notify,f f(a,i)end end end end,kf=function(d,_)return function()local f,c,e c=0x38 repeat if c>0x38 then f=_[1][1][_[1][0b11]]e,f=f.Label,true e.RichText=f f=_[1][1][_[1][0b11]]f,c,e=_[0b10][1][_[0b10][0b11]],0x528/c,f.Label e.Text=f elseif c<=0b1010 then return else f=_[1][1][_[1][0b11]]e=f.Label c=e and 0x84 or 0b1010 end until false end end,Bf=function(n,_)return function()local g,q,b,j,a,i,k,o,p,e,m,h,f,l m=0x83 repeat if m>0b10000011 then if m>=0xb9 then if m>=0xf5 then if m<0xfa then g,f=_[0b101][1][_[0b101][0b11]],_[0b10][1][_[0b10][0b11]]p=g.charm h=p.charm_rank q=f[h]q={[0b11]=0b10,[0b10]=q}q[1]=q p=g h=p.charm f,h=h.charm_rank,"Use Spoofed ELO"m=f==h and m+-0b10111111 or 0b10001110 elseif m>0xfa then i,k=e(l,j)j=i m=j==nil and m+-0b11000110 or 0x8c35/m else q=_[0b100][1][_[0b100][0b11]]a=q[b]a={[0b11]=0b10,[0b10]=a}a[1]=a q=not a[1][a[0b11]]m=q and 0b10111001 or 0xf5 end elseif m>0b10111001 then b,q=tonumber,string a,q,f=q.sub,o,0b1000 a=n.c(a(q,f))b=b(n.d(a))a=not b m=a and 0xb7 or 0xcc-m else m=0xfb end elseif m<=0x95 then if m<0b10001111 then h,f=n:Cf{_[1],_[0b101],k,q,a},pcall m=0xfb f(h)elseif m<=0x8f then k={[0b11]=0b10,[0b10]=k}k[1]=k q,b,a="Model",k[1][k[0b11]].IsA,k[1][k[0b11]]b=b(a,q)o=not b m=o and 0x37 or 0x95 else a,b,q=k[1][k[0b11]],k[1][k[0b11]].FindFirstChild,"Extra"b=b(a,q)o=not b m=o and 0xb4 or 0x7a end elseif m>0xb4 then m=a and 0b11100 or 0b1000100 else m=0xb07c/m end elseif m>0x44 then if m<0x6f then if m>0b1001011 then m=0xfb else e,l=ipairs,workspace j,l=l,l.GetDescendants l=n.c(l(j))e,l,j=e(n.d(l))e,l,j=n.b(e,l,j)i,k=e(l,j)j=i m=j==nil and m+-0x16 or 0x8f end elseif m<=0b1111010 then if m<=0x6f then m=0xfb else o,a=k[1][k[0b11]].Name,string b,a,q,f=a.sub,o,1,0b111 b=b(a,q,f)a="Season "m=b~=a and m+-0x1d or m+0b1001101 end else l=task e,l=l.wait,0.5 e(l)j=_[1][1][_[1][0b11]]l=j.SeasonLibrary e=not l m=e and 0x2c or 0x4b end elseif m>0b110101 then if m<0b110111 then m,h=0xc4-m,_[0b101][1][_[0b101][0b11]]f=h.leaderboard q[1][q[0b11]]=f.elo_value elseif m>0x37 then h=_[0b101][1][_[0b101][0b11]]f,p=h.charm,_[0b11][1][_[0b11][0b11]]h=p[b]q=f[h]a=not q m=a and 0x6f or 0b11111010 else m=m+0b11000100 end elseif m>0x2c then return elseif m>0x1c then return elseif m<=0b101 then f=_[0b11][1][_[0b11][0b11]]q=f[b]m,a=0b10110111,not q else m=0b11111011 end until false end end,cc=function(n,_)return function(e,l,j,i)local g,h,b,k,c,a,f,m m=0b11011111 while true do if m>=0x75 then if m<0x9e then if m<0b1111011 then if m>=0b1110111 then if m>0b1110111 then g=_[1][1][_[1][0b11]]a,k=g,g.equipped b=a.equipped g=b[e[1][e[0b11]]]m=g and 0b10010000 or m+-0b111001 else g,b=type,l[1][l[0b11]]g=g(b)b="string"k=g~=b m=k and 0x7b or 0b1110011 end else m,c=0b1001001,true end elseif m>=0b10010000 then if m>0x90 then a=_[1][1][_[1][0b11]]b=a.equipped g,a=b[e[1][e[0b11]]],{}a.Name=j a.Type=l[1][l[0b11]]c=i.IsInverted m=c and 0b1110101 or 0xdd-m else k[e[1][e[0b11]]]=g b=_[1][1][_[1][0b11]]g=b.equipped g,k=nil,g[e[1][e[0b11]]]k[l[1][l[0b11]]]=g k=not j m=k and 0b101001011-m or m+-0b1000 end elseif m>0b1111011 then g=""m,k=0b101000011-m,j==g else m=k and m+-0x25 or 0x3a23/m end elseif m<0xd4 then if m>=0b10111011 then if m<=0xbb then m=k and 0x63 or 0xcf else g="None"m,k=0x63,j==g end elseif m>0x9e then g=""m,k=0b1110100,e[1][e[0b11]]==g else g,k=n:rf{_[1],l,e},pcall k(g)g=task g,k=n:qf{_[0b10],e},g.spawn k(g)k=true return k end elseif m<0xea then if m>0b11010100 then e={[0b11]=0b10,[0b10]=e}e[1]=e l={[0b11]=0b10,[0b10]=l}l[1]=l k=i m=k and 0b110 or 0b11010100 else m,g=0xda-m,{}k=g end elseif m>0b11101010 then k=false return k else m,g=0x65,"NONE_COSMETIC"k=j==g end elseif m>=0x40 then if m<=0b1100011 then if m<=0b1001001 then if m<=0b1000101 then if m>0x40 then a.Inverted=c f=math h,f,c=0xf4240,1,f.random c=c(f,h)m,a.Seed=0xe3-m,c b=a g[l[1][l[0b11]]]=b else m,b=0xd0-m,{}g=b end else m=c and 0x13ad/m or m+-0b11111 end elseif m>0x56 then m=k and 0b1100101 or 0xea else k=false return k end elseif m>0x73 then m=k and 0x16e-m or 0b1110111 elseif m>0x65 then g=""m,k=0b11101110-m,l[1][l[0b11]]==g else m=k and m+-0b101010 or 0b1101111-m end elseif m>=0b10110 then if m>=0b101010 then if m>0x2a then b=_[1][1][_[1][0b11]]g=b.equipped b,a,k={},"NONE_COSMETIC",g[e[1][e[0b11]]]b.Name=a b.Type=l[1][l[0b11]]m,g=0x246a/m,b k[l[1][l[0b11]]]=g else m,c=0xb52/m,nil end elseif m<=0b10110 then a=_[1][1][_[1][0b11]]b=a.equipped g=b[e[1][e[0b11]]]m,g[l[1][l[0b11]]]=m+0b10001000,k else g=true m,k.Inverted=0x318/m,g end elseif m>=0b1010 then if m<=0b1010 then g=_[1][1][_[1][0b11]]g,k=true,g.fake_owned k[j]=g a,g,c,b,k={},j,i.IsInverted,l[1][l[0b11]],_[0b11][1][_[0b11][0b11]]a.inverted=c c=i.OnlyUseFavorites a.favorites_only=c k=k(g,b,a)m=k and 0b1101 or 0x94 else k.Name=j k.Type=l[1][l[0b11]]g=i.IsInverted m=g and 0x24 or 0b10110 end else b,g,i=e[1][e[0b11]],type,k g=g(b)b="string"k=g~=b m=k and 0x74 or 0xb3 end end end end,W=function(d,_)return function()local a,g,e,f g=0x8e while true do if g<0b10000110 then if g>0x17 then a=_[1][1][_[1][0b11]]f=a.SeasonLibrary g,e=0b10000110,f._atomicCharmHooked elseif g<=0b10 then a=_[1][1][_[1][0b11]]f=a.SeasonLibrary e=f.FormatSeasonRankCharm e={[0b11]=0b10,[0b10]=e}e[1]=e f,a=a.SeasonLibrary,d:ye{_[0b11],e,_[0b101],_[0b100],_[0b10]}f.FormatSeasonRankCharm=a a=_[1][1][_[1][0b11]]a,f=true,a.SeasonLibrary f._atomicCharmHooked=a return else return end elseif g<0x96 then if g>0b10000110 then a=_[1][1][_[1][0b11]]f=a.SeasonLibrary e=not f g=e and 0x86 or 0b11101 else g=e and 0b10111 or 0b10110110 end elseif g>0x96 then a,e=_[1][1][_[1][0b11]],type f=a.SeasonLibrary f=f.FormatSeasonRankCharm e=e(f)f="function"g=e~=f and 0x96 or 0b10 else return end end end end,Hb=function(d,_)return function()local f,e,b,a,g g=0b100000 while true do if g>=0x46 then if g>0b1010110 then if g>0b10110101 then g=e and g+-0b11001000 or 0b11100101-g else f,e=d:Ye{_[1]},pcall e(f)f,e=nil,_[1][1][_[1][0b11]]g,e.auto_rotate_conn=0x46,f end elseif g>0x47 then a=_[1][1][_[1][0b11]]g,f=0b11001010,a.auto_rotate e=not f elseif g>0x46 then a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]f,b=a.Heartbeat,d:Xe{_[1]}a,f=f,f.Connect f=f(a,b)e.auto_rotate_conn=f return else a=_[1][1][_[1][0b11]]f=a.skybox_enabled e=not f g=e and g+0b10000100 or 0x56 end elseif g>=0x20 then if g<=0b100000 then f=_[1][1][_[1][0b11]]e=f.auto_rotate_conn g=e and 0b10110101 or 0b1000110 else g,e=0b1000111,_[0b11][1][_[0b11][0b11]]e()end elseif g<=0b10 then return else f=_[1][1][_[1][0b11]]e,f=f.lighting_skybox,nil g=e==f and 0b100011 or 0x62-g end end end end,Xc=function(d,_)return function()local f,e,a,g g=0b1111111 while true do if g<0x7f then f,e=true,_[1][1][_[1][0b11]]e._debounce=f e,a=_[0b11][1][_[0b11][0b11]],_[1][1][_[1][0b11]]f=a.ambient_color e.Ambient=f f=a.outdoor_ambient_color e.OutdoorAmbient=f f=a.shift_top e.ColorShift_Top=f f=a.shift_bottom e.ColorShift_Bottom=f f=a.exposure e.ExposureCompensation=f f=a.brightness e.Brightness=f f=a.shadow_softness e.ShadowSoftness=f f=a.diffuse_scale e.EnvironmentDiffuseScale=f f=a.specular_scale e.EnvironmentSpecularScale=f f=a.global_shadows e.GlobalShadows=f f,e=d:dg{_[0b11],_[1],_[0b10]},pcall e(f)e,f=a,false e._debounce=f return elseif g>0b1111111 then return else a=_[1][1][_[1][0b11]]f=a.lighting_enabled e=not f g=e and 0b11110011 or 0b1110011 end end end end,Dd=function(d,_)return function(e)local a,f,g g=0b1111101 while true do if g<0b1111101 then f=_[1][1][_[1][0b11]]f.cc_tint=e g,f=0b11111001,_[0b10][1][_[0b10][0b11]]f()elseif g<=0x7d then f,a=typeof,e f=f(a)a="Color3"g=f==a and 0b11 or 0b11111001 else return end end end end,na=function(d,_)return function()local e,b,i,f,g,j,h,k h=0b1100 repeat if h>=0xab then if h>0b10111110 then if h>0b11101011 then f=f+i h=(i>0 and f>j or i<=0 and f<j or i~=i)and 0b1111111 or h+-0b1000000 elseif h<0xda then h,j,f=0x3d,Drawing,type j=j.new f=f(j)j="function"e=f~=j elseif h>0b11011010 then i,g,j,b,k=0,0xb4,{},0b100001110,0b1011010 j[1],j[0b10],j[0b11],j[0b100]=i,k,g,b f=j f={[0b11]=0b10,[0b10]=f}f[1]=f i=workspace j=i.CurrentCamera h=j and 0xb6 or 0x91 else h,b=h+-0b1010011,g end elseif h>0xba then if h>0xbc then j={[0b11]=0b10,[0b10]=j}j[1]=j k=_[1][1][_[1][0b11]]i,g=k.RenderStepped,d:Ee{_[0b11],_[0b10],e,f,j}i,k=i.Connect,i i(k,g)return else b,k=Drawing,pcall g,b=b.new,"Line"k,g=k(g,b)b=k h=b and 0xda or h+-0x35 end elseif h>0b10110110 then h,i=0x178-h,Vector2 i,j=0,i.new k=i j=j(i,k)elseif h>0xab then g=workspace h,k=0x91,g.CurrentCamera i,k=k.ViewportSize,0b10 j=i/k else e[1][e[0b11]][f]=g b=false g.Visible=b b=0b110010 h,g.ZIndex=h+0x51,b end elseif h<=0x7f then if h>=0x3d then if h>0x41 then j,f=0b1000,#e[1][e[0b11]]h=f<j and h+0x21 or 0xeb elseif h>0x3d then return else h=e and 0b1000001 or 0b11 end elseif h<=0b11 then f={}e=f e={[0b11]=0b10,[0b10]=e}e[1]=e f,j=1,0b1000 i=f h=(j~=j or i>0 and f>j or(i<=0 or i~=i)and f<j)and 0b1111111 or 0x234/h else f,j=type,Drawing f=f(j)j="table"e=f~=j h=e and 0b111101 or 0b11000111 end elseif h<0b10010001 then h=b and 0b100110010-h or 0xfc elseif h<=0b10010001 then h=j and 0x6b9e/h or 0x695a/h else return end until false end end,G=function(d,_)return function(e)local f,a,h,c,i h=0b10000011 repeat if h<0b100001 then return elseif h>0b100001 then f=_[1][1][_[1][0b11]]f.username=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0x21 or 0b10000 else c,f,i="sucsess",_[0b10][1][_[0b10][0b11]],{}i.Title=c c="username applied"i.Description=c c=0b10 h,i.Time=0x210/h,c a,f=f,f.Notify f(a,i)end until false end end,Kc=function(d,_)return function()local c,a,f,i,h,e h=0 repeat if h<=0b1011100 then if h>0b111101 then return elseif h<=0 then e,f=1,0x14 a=e h=(f~=f or a>0 and e>f or(a<=0 or a~=a)and e<f)and 0b1011100 or 0xe7 else c=task c,i=1,c.wait h=0x184e/h i(c)end elseif h<=0x66 then e=e+a h=(a>0 and e>f or a<=0 and e<f or a~=a)and 0xc2-h or 0b11100111 else i=_[1][1][_[1][0b11]]i=i()h=i and h+-0b10001011 or 0b111101 end until false end end,A=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.specific f.new_entry=e return end end,ka=function(d,_)return function()local e,b e,b=pcall,d:Ae{_[1]}e(b)return end end,Ec=function(n,_)return function()local k,c,b,o,l,f,a,j,i,m,e,h m=0b1110001 repeat if m<0b10001001 then if m>0x74 then if m>0x7a then i=_[1][1][_[1][0b11]]j=i.CosmeticLibrary m,l=0xb3,j.Rewards e=not l else e=_[0b11][1][_[0b11][0b11]]e=e()i=_[0b101][1][_[0b101][0b11]]j=i.bulk l,j,b=j.quantity,pairs,_[1][1][_[1][0b11]]o=b.CosmeticLibrary i=o.Rewards j,i,k=j(i)j,i,k=n.b(j,i,k)o,b=j(i,k)k=o m=k==nil and 0x61b2/m or 0b100001001-m end elseif m<=0x71 then if m>0b111001 then j=_[1][1][_[1][0b11]]l=j.CosmeticLibrary e=not l m=e and 0xb3 or 0b1111111 elseif m>0b110011 then c=table a,f,c=c.insert,{},e f.Name=o h=l m=h and 0b10101100 or 0x33 else m,h=0b10101100,1 end else o,b=j(i,k)k=o m=k==nil and 0xcd or 0b10001111 end elseif m<=0xac then if m>0b10001111 then f.Quantity=h h="IsRandom"f.Weapon=h m,h=0x74,nil f.ExpireTime=h a(c,f)elseif m<0b10001011 then f,c="Lootbox",b.Type m,a=0b11111100,c==f elseif m<=0b10001011 then return else c,f=type,b c=c(f)f="table"a=c==f m=a and 0b10001001 or 0b11111100 end elseif m<0b11001101 then m=e and 0b10001011 or 0b1111010 elseif m>0xcd then m=a and 0x135-m or 0b1110100 else j=_[0b100][1][_[0b100][0b11]]j()k,j,o={},_[0b10][1][_[0b10][0b11]],"Inventory"k.Title=o o="all cases added"k.Description=o o=0b10 k.Time=o i,j=j,j.Notify j(i,k)return end until false end end,R=function(d,_)return function()local b,e b,e=d:ve{_[1],_[0b11],_[0b10]},pcall e(b)b=d:ue{_[1],_[0b11],_[0b10]}e(b)b=d:we{_[1],_[0b11],_[0b10]}e(b)return end end,qc=function(d,_)return function()local k,a,b,f,e,j,h,g,i h=0b10000 while true do if h>0b110000 then if h<=0b10110111 then b=f[j]g=b.Name h=g==e and 0b10 or 0xd3 else j=j+k h=(k>0 and j>i or k<=0 and j<i or k~=k)and 0b110000 or 0x18a-h end elseif h<=0x10 then if h>0b10 then j=_[1][1][_[1][0b11]]f=j.delete f,e=_[0b11][1][_[0b11][0b11]],f.backpack_entry f=f()k,j,i=-1,#f,1 h=(i~=i or k>0 and j>i or(k<=0 or k~=k)and j<i)and 0b110000 or 0xb7 else h,b=h+0b11010001,table a,g,b=j,b.remove,f g(b,a)end else j=_[0b10][1][_[0b10][0b11]]j()return end end end end,gf=function(d,_)return function()local g,e,b,f,a g=0x95 repeat if g>0x8d then f,e=1,_[1][1][_[1][0b11]]e=e+f f,_[1][1][_[1][0b11]]=tick,e f=f()a=_[0b11][1][_[0b11][0b11]]e,f=f-a,1 g=e>=f and 0b10001101 or 0b100111 elseif g>0b100111 then e=_[1][1][_[1][0b11]]e,_[0b101][1][_[0b101][0b11]]=tick,e e=e()e,_[0b11][1][_[0b11][0b11]]=0,e _[1][1][_[1][0b11]]=e e={[0b11]=0b10,[0b10]=e}e[1]=e g,a,f=g+-0x66,d:lf{e,_[0b110]},pcall f(a)b,f,a=e[1][e[0b11]],_[0b10][1][_[0b10][0b11]],_[0b101][1][_[0b101][0b11]]f=f(a,b)f={[0b11]=0b10,[0b10]=f}f[1]=f a,b=pcall,d:jf{_[0b100],f}a(b)b=d:kf{_[0b100],f}a(b)else return end until false end end,ee=function(d,_)return function()local e,f,k,h,b,g,i,j h=0xe0 repeat if h>0b10111011 then if h<=0xe3 then if h<0xe0 then f=_[1][1][_[1][0b11]]e=f._rc j,f=_[0b101][1][_[0b101][0b11]],e.Data k=j i=k[f]h=i and 0b10010100 or 0b11100111 elseif h>0xe0 then g=_[0b101][1][_[0b101][0b11]]g,k=e.Wrap,g[f]h,k[g]=0x34,i else j=_[1][1][_[1][0b11]]f=j._rc e=not f h=e and 0b10111011 or 0xc1 end elseif h>0b11100111 then g,k,i="Wrap",_[0b10][1][_[0b10][0b11]],_[0b100][1][_[0b100][0b11]]i=i(k,g)h=i and 0xe3 or 0b110100 else k={}h,i=0x94,k end elseif h<0x94 then if h<=0b1011000 then if h<=0b110100 then b,g,k="Charm",_[0b10][1][_[0b10][0b11]],_[0b100][1][_[0b100][0b11]]k=k(g,b)h=k and 0b11000101-h or 0x58 else return end else b=_[0b101][1][_[0b101][0b11]]h,b,g=h+-0x39,e.Charm,b[f]g[b]=k end elseif h>=0x97 then if h>0x97 then j,e=_[0b11][1][_[0b11][0b11]],require f=j.Modules f=f.ReplicatedClass e=e(f)f,i=_[1][1][_[1][0b11]],{}i.cls=e g,h,k,b=e,0x8cfb/h,e.ToEnum,"Data"k=k(g,b)i.Data=k k,g,b=e.ToEnum,e,"Skin"k=k(g,b)i.Skin=k g,k,b=e,e.ToEnum,"Wrap"k=k(g,b)i.Wrap=k k,b,g=e.ToEnum,"Charm",e k=k(g,b)i.Charm=k b,k,g="ObjectID",e.ToEnum,e k=k(g,b)i.ObjectID=k j=i f._rc=j else h,k=0b110010010-h,_[0b101][1][_[0b101][0b11]]i,k=k[f],e.Skin i[k]=j end else j[f]=i i,k,j=_[0b10][1][_[0b10][0b11]],"Skin",_[0b100][1][_[0b100][0b11]]j=j(i,k)h=j and 0x574c/h or 0b110001111-h end until false end end,Ja=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.star_count=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ia=function(d,_)return function()local k,f,m,g,e,j,c,i,a,l m=0xf5 while true do if m>=0b10001111 then if m>=0xf5 then if m<=0xf5 then l={}l,e=_[1][1][_[1][0b11]],l l=l()j=not l m=j and 0b11111010 or 0b10001111 else return e end else j,i=pairs,l j,i,k=j(i)j,i,k=d.b(j,i,k)g=j(i,k)k=g m=k==nil and m+-0b100011 or 0x59 end elseif m<=0x6b then if m>0b1011001 then g=j(i,k)k=g m=k==nil and 0b1101100 or 0x2533/m else c=table f,a,c=g,c.insert,e m=0b11000100-m a(c,f)end else return e end end end end,Be=function(d,_)return function()local i,c,j,f,g,e,h h=0xb5 while true do if h>0b1000001 then if h>=0b10110101 then if h<=0xb5 then c,f,i,j,g="Console",{},"Mobile","Desktop","VR"f[1],h,f[0b10],f[0b11],f[0b100]=j,0b11010101,i,c,g e=f else j=_[1][1][_[1][0b11]]f=j.device_spam h=f and 0x100-h or h+-0xcf end else f,j=_[0b100][1][_[0b100][0b11]],true f(j)return end elseif h>=0b101011 then if h<0x34 then h,j,i=0b110,_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]]f=j==i elseif h>0b110100 then j=d.c(j(i,c))h=0x3615/h f(d.d(j))else h,c=0b1110101-h,1 end elseif h<=0b110 then h=f and 0b11000000/h or 0x29a/h else f,c=_[1][1][_[1][0b11]],math c,i,g=1,c.random,#e i=i(c,g)j=e[i]f.device=j j,f=false,_[0b100][1][_[0b100][0b11]]f(j)j=task f,i=j.wait,math i,c,j=0.1,_[1][1][_[1][0b11]],i.max c=c.spam_rate h=c and 0x820/h or 0x680/h end end end end,Le=function(d,_)return function()local a,g,e,f g=0x2e while true do if g>=0x2e then if g>0x2e then f=_[1][1][_[1][0b11]]e=f.PlayerDataController g,f,e=0x63-g,e,e.WaitUntilLoaded e(f)else a=_[1][1][_[1][0b11]]f=a.PlayerDataController e=f.WaitUntilLoaded g=e and 0x40 or 0b100011 end else return end end end end,lf=function(d,_)return function()local i,f,e,c,a f=math e,c=f.floor,_[0b10][1][_[0b10][0b11]]i=c.Network a=i.ServerStatsItem f=a["Data Ping"]f,a=f.GetValue,f f=d.c(f(a))e=e(d.d(f))_[1][1][_[1][0b11]]=e return end end,Ye=function(d,_)return function()local f,e f=_[1][1][_[1][0b11]]e=f.auto_rotate_conn f,e=e,e.Disconnect e(f)return end end,r=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.sun_angular_size=e f=_[0b10][1][_[0b10][0b11]]f()return end end,te=function(d,_)return function()local b,e e=_[1][1][_[1][0b11]]e,b=e.Destroy,e e(b)return end end,Nf=function(n,s)return function(u,...)local r,j,f,g,h,b,o,c,d,i,a,q,l,p,m,k,t m=0b10001100 while true do if m<=0x83 then if m>=0b110111 then if m<=0x64 then if m<=0b1000110 then if m<0b111100 then if m<=0b110111 then t,k="None",d.Name m,c=0b110001,k==t else o=r.skin_tickets_value return o end elseif m>0x3c then m,c=0x3b9c/m,nil a[g]=c else o=r.glory_value return o end elseif m>=0b1011001 then if m>0x59 then m=r and 0x2d or 0xe3-m else m=r and 0xfa or 0xe1 end else m,o=0b1101010,r.skin_tickets end elseif m>0x75 then if m<=0x7f then r,o,i=u,n.c(...),s[0b10][1][s[0b10][0b11]]i=n.c(i(r,n.d(o)))return n.d(i)else m,o=0xa8,r.weapon_keys end elseif m<0b1110010 then if m<=0b1101010 then m=o and 0x186e/m or 0x7f else r=getgenv r=r()i=r.AtomicRivalsInventory r=i m=r and 0x1260/m or 0b11001001-m end elseif m>0b1110010 then h,m,f=a.Name,0b101001,type f=f(h)h="string"q=f==h else b="EventCurrency"o=l==b m=o and 0xfb-m or 0x92 end elseif m>0b100101 then if m<=0b101100 then if m>0x2a then b,i=s[1][1][s[1][0b11]],pairs r=b.fake_weapon_owned i,r,o=i(r)i,r,o=n.b(i,r,o)b,a=i(r,o)o=b m=o==nil and 0x1e6c/m or 0b1000000-m elseif m<0x29 then o=r.unlock_tokens_value return o elseif m<=0b101001 then m=q and 0b10010 or 0xca else m,r=0x59,i.fake_owned end elseif m<=0x2d then b,r="WeaponKeys",i.currency o=l==b m=o and m+0b1010110 or 0x1d88/m else m=c and 0xd66/m or 0b11111101 end elseif m>=0x14 then if m<0b11011 then if m<=0x14 then f,h=type,a f=f(h)h="table"q=f==h m=q and 0x75 or 0b101001 else i="UnclaimedRewards"m=l==i and m+0x56 or 0xe1 end elseif m<=0x1b then m,o=0xf6,r.unlock_tokens else m=i and 0b11100110 or 0b111111-m end elseif m>=0x11 then if m>0x11 then h=s[1][1][s[1][0b11]]h,f=a.Name,h.equipped f,q=type,f[h]h=q f=f(h)h="table"m=f==h and 0b11101100 or 0b11011100-m else r="WeaponInventory"i=l==r m=i and m+0b10100 or 0b10001111 end else b="SkinTickets"o=l==b m=o and 0x354/m or 0b1101010 end elseif m>=0b11001111 then if m>=0xed then if m<=0xf9 then if m>0b11110110 then m=o and 0x3c or 0x105-m elseif m<=0xf5 then if m>0b11101101 then b="Glory"o=l==b m=o and 0b11001101 or 0xee4d/m else m,r=0x5c94/m,i.currency end else m=o and m+-0xce or m+-0b10000100 end elseif m<=0xfa then r=i.fake_owned return r else m,a[g]=0xda,d end elseif m<0b11100001 then if m<=0b11011010 then if m<=0xcf then b="UnlockTokens"o=l==b m=o and 0b11101010-m or 0xc6ea/m else g,d=f(h,p)p=g m=p==nil and 0xca or 0x17c-m end else t,k="NONE_COSMETIC",d.Name c=k==t m=c and 0b110001 or m+-0b10100111 end elseif m<=0b11100110 then if m<=0b11100001 then r=getgenv r=r()i=r.AtomicRivalsSpoofer r=i m=r and 0b111001110-m or 0b1100100 else r,i=s[1][1][s[1][0b11]],type r=r.fake_weapon_owned i=i(r)r="table"m=i==r and 0x2788/m or 0xb1 end else h,f=q,pairs f,h,p=f(h)f,h,p=n.b(f,h,p)g,d=f(h,p)p=g m=p==nil and 0b11001010 or 0b10100010 end elseif m>0xa8 then if m<0xb1 then if m>0b10101100 then r=s[1][1][s[1][0b11]]i=r.fake_owned return i else o=r.weapon_keys_value return o end elseif m<=0b11001010 then if m<=0b10110001 then r=s[1][1][s[1][0b11]]i=r.fake_weapon_owned return i else b,a=i(r,o)o=b m=o==nil and 0xb1 or 0b10100 end else m,o=0xf9,r.glory end elseif m<=0x92 then if m>=0b10001111 then if m>0b10001111 then m=o and 0x95 or 0b11110101 else m,r=0b100101,"FreeWeaponUnlockCheck"i=l==r end elseif m<=0x89 then m,o=m+0b1001,r.event_currency else r,i=n.c(...),{}n.e(i,1,n.d(r))j=i l,i=j[1],"CosmeticInventory"m=l==i and 0b10110000 or 0x11 end elseif m<=0b10100010 then if m<=0b10010101 then o=r.event_currency_value return o else k,c=d,type c=c(k)k="table"m=c==k and m+0b111100 or 0b11011010 end else m=o and 0x70e0/m or 0x87d8/m end end end end,Ib=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.specific_type=e f=_[0b10][1][_[0b10][0b11]]f()return end end,_c=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.exposure=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Yd=function(d,_)return function(e,f)local i,j,k,b,g,h h=0b10110001 while true do if h>0xa9 then if h<=0xe2 then if h<0xd3 then i,k,j=e,f,_[1][1][_[1][0b11]]j=j(i,k)h=j and 0b111000 or 0x4e elseif h>0b11010011 then return k else i=nil return i end elseif h<=0xe8 then h=i and 0x7b40/h or 0xbf38/h else k=_[0b11][1][_[0b11][0b11]]h,i=0b11101000,k.placed_object_map end elseif h>=0x4e then if h>=0x88 then if h>0b10001000 then b=_[0b11][1][_[0b11][0b11]]g=b.equipped h,k=0b10011,g[i]else g=_[0b11][1][_[0b11][0b11]]k=g.placed_object_map i=k[f]k=i h=k and 0b10101001 or 0x13 end else i=f h=i and 0xff or 0xe8 end elseif h<0x38 then h=k and 0x50-h or h+0b11000000 elseif h<=0b111000 then return j else k,b,g=_[0b10][1][_[0b10][0b11]],"Wrap",i k=k(g,b)h=k and 0b11100010 or 0xd3 end end end end,Uf=function(d,_)return function()local l,i,e,j,a,c,h,g,k,b h=0b100101 while true do if h<0b1011111 then if h<=0x25 then if h<=0b11010 then if h<=0x15 then if h<=0b1011 then b=e.Players b,g=type,b[j]a=g b=b(a)a="table"h=b==a and 0x20 or 0b111010 else h=b and 0b1001010 or 0b10010000 end else k=_[1][1][_[1][0b11]]i=k.LeaderboardController k,j=_[0b11][1][_[0b11][0b11]],i.Refreshed h,i,j=h+0b1110100,j,j.Fire j(i,k)end elseif h<=0b100000 then a=g.UserId b=a==l h=b and 0b10101 or 0b11100101 else i=_[1][1][_[1][0b11]]j=i.LeaderboardController l,j=j.LeaderboardSerials,_[0b11][1][_[0b11][0b11]]e=l[j]l=e h=l and 0x7d or 0b10100110 end elseif h<=0x3a then if h>0b110110 then j=j+k h=(k>0 and j>i or k<=0 and j<i or k~=k)and 0b10111011 or 0b1011 else j=_[0b10][1][_[0b10][0b11]]g,l=e.Players,j.UserId i,j,k=1,#g,-1 h=(i~=i or k>0 and j>i or(k<=0 or k~=k)and j<i)and 0b11110001-h or 0b1011 end else h=b and 0b1100001 or 0b11101011 end elseif h<=0b10010000 then if h>=0b1111101 then if h>0x8e then a=g.PlayerId h,b=0x29a0/h,a==l elseif h<=0b1111101 then h,l=0b10100110,e.Players else return end elseif h>0b1011111 then h=b and 0x23ff/h or 0b10011011-h else h,a=0x3a,table b,c,a=a.remove,j,e.Players b(a,c)end elseif h<=0xe5 then if h<=0xbb then if h>0b10100110 then k=_[1][1][_[1][0b11]]i=k.LeaderboardController j=i.Refreshed h=j and 0x12fe/h or 0x149-h else h=l and 0xdc-h or 0x134-h end else h,a=h+-0xd0,g.UserID b=a==l end else a,c=tonumber,g.key h,a=0x61,a(c)b=a==l end end end end,jf=function(d,_)return function()local a,e,f e,a=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]f,e=e,e.SetText e(f,a)return end end,db=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_value=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Vc=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,Va=function(d,_)return function()local j,e,f,i,b,h,g,k h=0x9a repeat if h<=0x99 then if h>=0b111100 then if h<0x8a then if h<=0x3c then h=j and 0x4e-h or 0xb9 else h=k and 0x99 or 0xaf end elseif h<=0x8a then h,k=h+-0x6e,_[0b10][1][_[0b10][0b11]]k.specific_name=i else g="(waiting for modules)"h,k=0xaf,i~=g end elseif h<0b11100 then h,j=0xcb-h,_[0b10][1][_[0b10][0b11]]j.specific_weapon=f elseif h>0b11100 then h,g=h+0x23,"(none)"k=i~=g else return end elseif h<0xb9 then if h<=0b10011010 then e=_[1][1][_[1][0b11]]e=e()f,i,j,k=_[0b11][1][_[0b11][0b11]],e,"SpecWeapon",_[0b10][1][_[0b10][0b11]]k=k.specific_weapon f=f(j,i,k)j=f h=j and 0xcb or 0b111100 else h=k and 0x139-h or h+0b111101 end elseif h>=0xcb then if h>0b11001011 then h,g,k=0b100001000-h,"",_[0b10][1][_[0b10][0b11]]k.specific_name=g else i="(waiting for modules)"h,j=h+-0b10001111,f~=i end else j,k=_[0b100][1][_[0b100][0b11]],_[0b10][1][_[0b10][0b11]]i,k=k.specific_type,k.specific_weapon j=j(i,k)g,k,i,b=j,"SpecName",_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]]b=b.specific_name i=i(k,g,b)k=i h=k and 0xe0-h or 0x357a/h end until false end end,ie=function(d,_)return function()local e,f,g,i,c,j,h h=0x2d repeat if h>0x52 then return elseif h<=0b101101 then j,e=_[1][1][_[1][0b11]],require f=j.Modules f=f.ReplicatedClass e=e(f)f,j,i=e.ToEnum,e,"Data"f=f(j,i)j,c,i=e.ToEnum,"ObjectID",e j=j(i,c)c=_[0b11][1][_[0b11][0b11]]i=c[f]h=i and 0x52 or 0b1111011 else g=_[0b11][1][_[0b11][0b11]]c=g[f]i=c[j]h,_[0b10][1][_[0b10][0b11]]=0x2766/h,i end until false end end,ga=function(d,_)return function()local g,c,e,f,j,i f=_[1][1][_[1][0b11]]f,e=false,f.leaderboard j=f i=j e.ELO,g,c=f,i,i e.Streak=j e.Kills=i e.Wins=c e.Level=g j=_[0b11][1][_[0b11][0b11]]f=j.SpoofELOActive f,j=f.SetValue,f f(j,i)j=_[0b11][1][_[0b11][0b11]]i,f=false,j.SpoofStreakActive f,j=f.SetValue,f f(j,i)j=_[0b11][1][_[0b11][0b11]]f,i=j.SpoofKillsActive,false f,j=f.SetValue,f f(j,i)j=_[0b11][1][_[0b11][0b11]]f,i=j.SpoofWinsActive,false f,j=f.SetValue,f f(j,i)j=_[0b11][1][_[0b11][0b11]]f,i=j.SpoofLevelActive,false j,f=f,f.SetValue f(j,i)c,i,f="sucsess",{},_[0b10][1][_[0b10][0b11]]i.Title=c c="leaderboard spoofs cleared"i.Description=c c=0b10 i.Time=c j,f=f,f.Notify f(j,i)return end end,Jb=function(d,_)return function(e,f,j)local k,h,i,a,b,g h=0b11111 repeat if h>=0xa7 then if h>=0xc6 then if h<=0b11001001 then if h>0xc8 then b,h,g=d:_f{_[1],k,e},0b110000011-h,pcall g(b)elseif h>0b11000110 then g=true h,k[1][k[0b11]].OnlyUseFavorites=0xa1,g else b=_[1][1][_[1][0b11]]g=b.CosmeticLibrary h,k=h+-0b111111,g.Cosmetics i=not k end else b=_[1][1][_[1][0b11]]g=b.CosmeticLibrary k=g.Cosmetics i=k[e[1][e[0b11]]]k=not i h=k and 0b110101 or 0xc1 end elseif h>0xba then g=table k,g=g.clone,i k=k(g)k={[0b11]=0b10,[0b10]=k}k[1]=k k[1][k[0b11]].Name=e[1][e[0b11]]g=k[1][k[0b11]].Type h=g and 0b10010010 or 0b101101000-h elseif h>0xb4 then h=j and 0x8d or 0x74fa/h elseif h<=0xa7 then h,g=h+-0b10101,f else g=j.favorites_only h=g and 0x8ca0/h or 0b10100001 end elseif h>=0b10000111 then if h>=0x92 then if h<=0b10010010 then k[1][k[0b11]].Type=g b=math g,a,b=b.random,0xf4240,1 g=g(b,a)k[1][k[0b11]].Seed=g b=_[1][1][_[1][0b11]]g=b.EnumLibrary h=g and 0b11001001 or 0xba else return k[1][k[0b11]]end elseif h>0x87 then g=j.inverted h=g and 0x26 or h+0x27 else h=i and 0b11110011-h or 0xfd end elseif h>=0x35 then if h<=0b110101 then k=nil return k else i=nil return i end elseif h>0x1f then g=true h,k[1][k[0b11]].Inverted=h+0x8e,g else e={[0b11]=0b10,[0b10]=e}e[1]=e g=_[1][1][_[1][0b11]]k=g.CosmeticLibrary i=not k h=i and 0b10000111 or 0xc6 end until false end end,mb=function(d,_)return function()local c,f,b,e,a e=_[1][1][_[1][0b11]]e=e()c,b,a,f=e[1],e,"InvDeleteEntry",_[0b10][1][_[0b10][0b11]]f(a,b,c)return end end,oc=function(d,_)return function()local e,f,j,c,i,g,h h=0xaa repeat if h>0b10010000 then if h<0xaa then g=_[1][1][_[1][0b11]]c=g.SmokeClouds i=c._ObjectAdded i={[0b11]=0b10,[0b10]=i}h,i[1]=0x68,i g,c=d:uf{i,_[0b10]},g.SmokeClouds c._ObjectAdded=g elseif h<=0xaa then f,e=0b101000,1 j=e h=(f~=f or j>0 and e>f or(j<=0 or j~=j)and e<f)and 0b1101000 or 0b111 else g=_[1][1][_[1][0b11]]h,c=0b1110001,g.SmokeClouds i=c._ObjectAdded end elseif h>0b1101000 then if h>0x71 then c=task h,i[1][i[0b11]],c=0xd2-h,c.wait,0.5 i[1][i[0b11]](c)else h=i and 0b10100010 or 0b10010000 end elseif h>=0b1000010 then if h>0x42 then return else e=e+j h=(j>0 and e>f or j<=0 and e<f or j~=j)and h+0b100110 or 0b1001001-h end else c=_[1][1][_[1][0b11]]i=c.SmokeClouds h=i and 0x63c/h or 0x71 end until false end end,F=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.shadow_softness=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Na=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.badges f.Influencer=e f=_[0b10][1][_[0b10][0b11]]f()return end end,fd=function(n,_)return function()local b,l,a,j,g,f,e,h,m,i,c,k m=0x55 while true do if m>0x7d then if m>0xb4 then if m<=0b11000011 then c=a.Quantity m=c and 0b110100 or 0b10011 else b,a=i(k,g)g=b m=g==nil and 0x43a4/m or 0x39 end elseif m<0b10100100 then if m<=0x86 then j=_[0b11][1][_[0b11][0b11]]j=j()k,i=j,ipairs i,k,g=i(k)i,k,g=n.b(i,k,g)b,a=i(k,g)g=b m=g==nil and 0b1001010 or 0b111001 else m,f=0xd9-m,table h,f,c=b,j,f.remove c(f,h)end elseif m>0b10100100 then m,f=0b10111100-m,1 else f=a.Quantity m=f and 0x520/m or 0xb4 end elseif m>=0x39 then if m>=0b1010101 then if m>0b1010101 then m,l=0x103-m,1 else j=_[1][1][_[1][0b11]]l=j.delete e,i=l.backpack_entry,j j=i.delete l=j.quantity m=l and 0x86 or 0x7d end elseif m<=0x39 then c=a.Name m=c==e and m+0b10001010 or m+0b10110001 else i=_[0b10][1][_[0b10][0b11]]i()return end elseif m>0x13 then m=c>l and 0b10100100 or 0b10001111 elseif m<=0b1000 then m,c=0x250/m,f-l a.Quantity=c else m,c=0x3dc/m,1 end end end end,Gb=function(d,_)return function(e)local c,i,f,h,a h=0b11000001 while true do if h>=0x70 then if h<=0x70 then return else a=_[1][1][_[1][0b11]]f=a.charm f.s1_charm=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0x36 or 0b1110000 end else h,f,i,c=0x70,_[0b10][1][_[0b10][0b11]],{},"sucsess"i.Title=c c="season 1 charm applied"i.Description=c c=0b10 i.Time=c a,f=f,f.Notify f(a,i)end end end end,lb=function(d,_)return function()local b,h,f,a,e h=0b110110 while true do if h>0b1011010 then if h>0b1111010 then a=_[0b10][1][_[0b10][0b11]]b,f=d:Qe{_[1]},a.ChildAdded a,f=f,f.Connect h=0b11110 f(a,b)else b,f,a=e,_[1][1][_[1][0b11]],e.Clone a=a(b)f.lighting_sunrays=a a=f f,a=a.lighting_sunrays,e.Parent f.Parent=a f,a=e.Destroy,e h=0b101101010-h f(a)end elseif h>=0b110110 then if h<=0x36 then f=_[1][1][_[1][0b11]]f,e=nil,f.lighting_sunrays h=e==f and 0x29 or 0x1e else b,f=Instance,_[1][1][_[1][0b11]]a,b=b.new,"SunRaysEffect"a=a(b)h,f.lighting_sunrays=0xf0,a a=f a,f=_[0b10][1][_[0b10][0b11]],a.lighting_sunrays f.Parent=a end elseif h<=0x1e then f=_[1][1][_[1][0b11]]e,a=f.lighting_sunrays,f f=a.sunrays_enabled e.Enabled=f f=a e,a=f.lighting_sunrays,f f=a.sunrays_intensity e.Intensity=f f=a a,e=f,f.lighting_sunrays f=a.sunrays_spread e.Spread=f return else a,e="SunRaysEffect",_[0b10][1][_[0b10][0b11]]e,f=e.FindFirstChildOfClass,e e=e(f,a)h=e and 0xa3-h or 0b10000011-h end end end end,Fd=function(d)return function()local c,f,a,e c=0x15 while true do if c>=0b10101 then if c<=0b111010 then if c<=0x15 then e=makefolder c=e and 0b1100 or 0b111010 else c=e and 0xa7 or 0b100 end else e,f=makefolder,"project_atomic"c=0x29c/c e(f)end elseif c<=0b100 then return else c,f,a=0x2b8/c,isfolder,"project_atomic"f=f(a)e=not f end end end end,_d=function(d,_)return function(e)local f,h,i,c,a,g h=0x64 repeat if h>0x71 then if h>0x99 then h,i=0x66d/h,_[1][1][_[1][0b11]]a=i.old_device elseif h<=0b10000010 then i=f[a]h=i and 0x6d or 0b10011001 else h,i=0x4125/h,"MouseKeyboard"end elseif h>0b1101101 then h,i=0xf3-h,_[1][1][_[1][0b11]]a=i.device elseif h<0b1100100 then h=a and 0x82 or 0x71 elseif h<=0x64 then i,a="MouseKeyboard",{}a.Desktop=i i="Touch"a.Mobile=i i="Gamepad"a.Console=i i="VR"a.VR=i a,f=e,a h=a and 0b11101011 or 0b111 else i={[0b11]=0b10,[0b10]=i}i[1]=i c,g=pcall,d:eg{_[0b10],i}c(g)return end until false end end,Ka=function(d,_)return function()local b,e,f,a e=_[1][1][_[1][0b11]]e()a,b,e={},"Project Atomic",_[0b10][1][_[0b10][0b11]]a.Title=b b="loadout reloaded"a.Description=b b=0b10 a.Time=b f,e=e,e.Notify e(f,a)return end end,eg=function(d,_)return function()local a,f,i,c,e c=_[1][1][_[1][0b11]]i=c.Remotes a=i.Replication f=a.Fighter a,e=_[0b10][1][_[0b10][0b11]],f.SetControls e,f=e.FireServer,e e(f,a)return end end,hd=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.badges f.Premium=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Cc=function(d,_)return function(e,f)local b,a,h h=0b10001001 while true do if h>0x65 then e={[0b11]=0b10,[0b10]=e}e[1]=e b=_[1][1][_[1][0b11]]b=b()a=not b h=a and 0x53 or 0b1100101 elseif h>0b1010011 then a,b=_[0b11][1][_[0b11][0b11]],f a(b)b,a=d:Uf{_[0b10],_[0b100],e},pcall a(b)return else return end end end end,Ke=function(d,_)return function()local e,a,f f=_[0b10][1][_[0b10][0b11]]a,e="UnclaimedRewards",f.PlayerDataController f,e=e,e.Get e=e(f,a)_[1][1][_[1][0b11]]=e return end end,dc=function(d,_)return function()local g,k,j,i,c,h,l,b,a,e h=0b111000 while true do if h>=0b1011000 then if h<0b1110111 then b=_[0b10][1][_[0b10][0b11]]b,g=true,b.fake_owned h,g[k]=0x48,b elseif h<=0b1110111 then a=string b,a,c=a.find,k,"MISSING_"b=b(a,c)g=not b h=g and 0x58 or 0b10111111-h else return end elseif h<=0b111000 then e,i,k=ipairs,_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]k=k.specific_weapon i=i(k)l=i e,l,j=e(l)e,l,j=d.b(e,l,j)i,k=e(l,j)j=i h=j==nil and 0xda or 0b1110111 else i,k=e(l,j)j=i h=j==nil and 0b100100010-h or h+0b101111 end end end end,N=function(d,_)return function()local e,a,f,b e=_[1][1][_[1][0b11]]e()e,f,a=_[0b11][1][_[0b11][0b11]],"InvDeleteEntry",_[0b10][1][_[0b10][0b11]]a=a()b=nil e(f,a,b)return end end,gg=function(d,_)return function()local c,f,a,e c=0b11101000 repeat if c>0b10111010 then if c>0b11001111 then f=_[1][1][_[1][0b11]]e=f.SetValue c=e and 0b10111010 or 0b11001111 else f=_[1][1][_[1][0b11]]e=f.setValue c=e and 0x99 or 0x72 end elseif c>=0xb4 then if c>0b10110100 then a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]f,c,e=e,0xb4,e.SetValue e(f,a)else return end elseif c<=0b1110010 then e,f=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]c,e.Value=c+0x42,f else a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]e,f=e.setValue,e c=0b10110100 e(f,a)end until false end end,Jc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.brightness=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ja=function(d,_)return function(e)local f,c,i,h,a h=0b11111010 while true do if h<=0x1d then if h<=0b10 then i,f,c={},_[0b10][1][_[0b10][0b11]],"sucsess"i.Title=c c="season 3 charm applied"i.Description=c c=0b10 h,i.Time=0x1d,c a,f=f,f.Notify f(a,i)else return end else a=_[1][1][_[1][0b11]]f=a.charm f.s3_charm=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0b10 or 0x1d end end end end,xf=function(d,_)return function()local f,b,e,a,c c,e,b,f=0b1010,require,"ShopLibrary",_[1][1][_[1][0b11]]f,a=f.WaitForChild,f f=d.c(f(a,b,c))e=d.c(e(d.d(f)))return d.d(e)end end,D=function(d,_)return function()local h,e,a,f,b,c h=0xcb repeat if h>=0x5d then if h<0b11001011 then h,b=0xff,string c,b,a="MISSING_",e,b.find a=a(b,c)f=not a elseif h>0b11001011 then h=f and 0b100110 or 0x38 else a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]b,f=a,a.specific_type b,a=b.specific_weapon,b.specific_name e=e(f,a,b)f=e h=f and 0b1011101 or 0xff end elseif h>0x26 then return else h,a=0x38,_[0b10][1][_[0b10][0b11]]a,f=true,a.fake_owned f[e]=a end until false end end,qf=function(d,_)return function()local e,f f=task e,f=f.wait,0.1 e(f)e,f=pcall,d:tf{_[1]}e(f)f=d:sf{_[1],_[0b10]}e(f)return end end,Aa=function(d,_)return function()local e,f f=task f,e=0b10,f.wait e(f)e,f=pcall,d:Me{_[1],_[0b10]}e(f)return end end,p=function(d,_)return function()local f,e,b,a e=_[1][1][_[1][0b11]]e()b,e,a="Unlock",_[0b10][1][_[0b10][0b11]],{}a.Title=b b="all weapons"a.Description=b b=0b10 a.Time=b e,f=e.Notify,e e(f,a)return end end,Df=function(d,_)return function(e,f,j)local b,c,h,g,i h=0b11011111 while true do if h>0b10101110 then c,i=j,_[1][1][_[1][0b11]]i=i(c)h=i and 0xae or 0x1a elseif h>0x1a then i=true return i else b,c,i,g=j,e,_[0b10][1][_[0b10][0b11]],f i=d.c(i(c,g,b))return d.d(i)end end end end,jd=function(d,_)return function(e,f)local i,a,c,h h=0b111000 repeat if h>=0b11000110 then if h<0xea then if h>0b11000110 then a=true return a else h=a and 0xea or 0b1101 end elseif h<=0b11110010 then if h>0b11101010 then c=_[0b11][1][_[0b11][0b11]]i=c.badges h,a=0x9b,i.Verified else c=Enum i=c.MembershipType a=i.Premium return a end else i="MembershipType"a=f==i h=a and 0x6851/h or 0xbd7e/h end elseif h>0x39 then if h<=0b1101101 then c=_[0b11][1][_[0b11][0b11]]i=c.badges h,a=0xc6,i.Premium else h=a and 0b11100000 or 0x2283/h end elseif h<0b111000 then i="HasVerifiedBadge"a=f==i h=a and 0xf2 or 0x9b elseif h<=0b111000 then a=_[1][1][_[1][0b11]]h=e==a and 0b11110101 or 0b111001 else a,c,i=_[0b10][1][_[0b10][0b11]],f,e a=d.c(a(i,c))return d.d(a)end until false end end,Se=function(d,_)return function()local i,f,c,g,e,h,j h=0b11010 repeat if h>=0xd5 then if h>0b11101011 then h=j and h+-0b11101 or 0xd4 elseif h<0xd9 then g,c,i=j,require,pcall i,c=i(c,g)h=i and 0b110101110-h or 0xb064/h elseif h<=0xd9 then g=_[0b10][1][_[0b10][0b11]]h,g.LeaderboardController=0b110101101-h,c else j=f h=j and h+-0x99 or 0x1dd-h end elseif h<0x52 then if h<=0b11010 then e,j=_[1][1][_[1][0b11]],"PlayerScripts"f,e=e,e.FindFirstChild e=e(f,j)f=e h=f and 0x38 or 0xeb else j,f,i=e,e.FindFirstChild,"Controllers"h,f=0xeb,f(j,i)end elseif h<=0x52 then j,i,c=f.FindFirstChild,f,"LeaderboardController"h,j=0xf2,j(i,c)else return end until false end end,Wa=function(n,_)return function()local i,k,b,l,a,c,f,m,e,j,h,o m=0xa8 repeat if m>=0x7f then if m>=0xbd then if m>0xc4 then l={}e,l,j=l,type,_[0b10][1][_[0b10][0b11]]j=j.fake_weapon_owned l=l(j)j="table"m=l==j and 0xc4 or 0x17ca/m elseif m<=0b11000001 then if m>0b10111101 then i=_[1][1][_[1][0b11]]j=i.ShopLibrary l=j.GetReleasedOwnableWeapons m,e=0b10010,not l else m=b and 0b11010 or 0x54e7/m end else k,l=_[0b10][1][_[0b10][0b11]],pairs j=k.fake_weapon_owned l,j,i=l(j)l,j,i=n.b(l,j,i)k,o=l(j,i)i=k m=i==nil and 0xe2-m or 0x1ddc/m end elseif m<=0x9c then if m>=0b10010000 then if m>0b10010000 then o,b=j(i,k)k=o m=k==nil and 0b1111111 or 0b11000010-m else return end else return end else j=_[1][1][_[1][0b11]]l=j.ShopLibrary e=not l m=e and 0x12 or 0b11000001 end elseif m<=0b100111 then if m<0b11110 then if m>0b10010 then b,a=o.Name,true m,e[b]=0x73,a else m=e and 0xa20/m or m+0b10111001 end elseif m<=0x26 then if m>0b11110 then c=e[b]a=not c m=a and 0x72 or 0x9c else j=_[1][1][_[1][0b11]]l=j.ShopLibrary j,l=l,l.GetReleasedOwnableWeapons l=l(j)i,j=l,pairs j,i,k=j(i)j,i,k=n.b(j,i,k)o,b=j(i,k)k=o m=k==nil and 0x9d-m or m+0b1000 end else a,c=type,o a=a(c)c="table"b=a==c m=b and m+0x2b or 0xbd end elseif m>=0x72 then if m<=0x72 then c=table a,f=c.insert,_[0b10][1][_[0b10][0b11]]c,m,f=f.fake_weapon_owned,0x9c,{}f.Name=b h=1 f.Level=h h=0 f.XP=h h=false f.IsFavorited=h h=nil f.Skin=h a(c,f)else k,o=l(j,i)i=k m=i==nil and 0xd7a/m or 0x1185/m end else m,b=m+0x6b,o.Name end until false end end,Mf=function(n,s)return function(e,...)local k,i,d,h,g,j,p,q,r,c,b,l,f,o,t,m,a m=0b10111101 repeat if m<0x70 then if m<0x37 then if m>0x21 then m,d=m+0x32,p.Name g=d==l elseif m>0x14 then h,a=s[0b10][1][s[0b10][0b11]],pairs q=h.fake_weapon_owned a,q,f=a(q)a,q,f=n.b(a,q,f)h,p=a(q,f)f=h m=f==nil and 0b1110000 or 0b10110001 else d={}d.Name=l c=1 d.Level=c c=0 d.XP=c c=false d.IsFavorited=c c=nil d.Skin=c g,k=d,b t=g k=k(t)d,c=k,r return d,c end elseif m>0x56 then q,a=s[0b10][1][s[0b10][0b11]],type q=q.fake_weapon_owned a=a(q)q="table"m=a==q and 0b100001 or 0x2fb0/m elseif m<=0x37 then f,h=b,i f=f(h)a,q=f,r return a,q else m=g and 0x6a-m or 0b101010011-m end elseif m<=0b10111101 then if m>0xb1 then i,r={},n.c(...)n.e(i,1,n.d(r))j=i l,i,r,o=j[1],s[1][1][s[1][0b11]],e,n.c(...)i,r=i(r,n.d(o))o=l m=o and 0xe0 or 0b10101111 elseif m<0xaf then return i,r elseif m<=0b10101111 then o={[0b11]=0b10,[0b10]=o}o[1]=o b=n:Rf{o}m=i and 0xe6-m or 0x6d else c,d=p,type d=d(c)c="table"g=d==c m=g and 0b11010101-m or 0x3b76/m end elseif m<=0b11100000 then m,a=0xaf,s[0b10][1][s[0b10][0b11]]b=a.equipped o=b[l]else h,p=a(q,f)f=h m=f==nil and 0b101101101-m or 0xb1 end until false end end,md=function(d,_)return function()local l,a,i,h,c,j,b,k,g,e h=0b11101011 repeat if h>=0b11011000 then if h<0xeb then a=string c,a,b="MISSING_",k,a.find b=b(a,c)g=not b h=g and h+0b11011 or 0b10010100 elseif h<=0xeb then k,i,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]],ipairs k=k.unlock_type i=i(k)l=i e,l,j=e(l)e,l,j=d.b(e,l,j)i,k=e(l,j)j=i h=j==nil and 0b1110000 or 0b11011000 else b=_[0b10][1][_[0b10][0b11]]g,b=b.fake_owned,true h,g[k]=0x187-h,b end elseif h<=0b1110000 then return else i,k=e(l,j)j=i h=j==nil and 0b100000100-h or 0x7ce0/h end until false end end,q=function(d,_)return function(e)local a,j,i,g,b,l,k,h h=0x20 while true do if h>=0b110011 then if h>0x33 then return else l,h,i,k=_[0b10][1][_[0b10][0b11]],0x2541/h,{},"sucsess"i.Title=k g,b,a="spoofed -> ",tostring,_[1][1][_[1][0b11]]a=a.avatar_userid b=b(a)k=g..b i.Description=k k=0b10 i.Time=k j,l=l,l.Notify l(j,i)end else l=_[1][1][_[1][0b11]]l.spoof_avatar=e h=e and 0x33 or 0b10111011 end end end end,xc=function(d,_)return function()local f,e e=_[1][1][_[1][0b11]]e()f=task f,e=d:Bf{_[0b11],_[0b101],_[0b110],_[0b10],_[0b100]},f.spawn e(f)return end end,ce=function(d,_)return function(e,l)local j,h,a,i,k,g,b h=0x3a repeat if h>0x69 then if h<=0b11100000 then if h>=0xba then if h<=0b10111111 then if h>0xba then h,b=0b100100000-h,_[1][1][_[1][0b11]]g=b.equipped k=g[i[1][i[0b11]]]else h=g and 0x8382/h or 0xa2c0/h end else h=g and 0b101011110-h or 0x5a end elseif h<=0b1111110 then h,g=0x2c4c/h,k[1][k[0b11]]._UpdateWrap else g,h,b,a=_[0b100][1][_[0b100][0b11]],0xe0,i[1][i[0b11]],"Wrap"g=g(b,a)end elseif h<=0xeb then if h<=0xe9 then h,g,k=h+-0b10110110,d:ee{_[1],i,_[0b101],_[0b100],e},pcall k(g)else i={[0b11]=0b10,[0b10]=i}i[1]=i g=_[0b11][1][_[0b11][0b11]]k=j[1][j[0b11]]==g h=k and 0xbf or 0x61 end else a=_[1][1][_[1][0b11]]b=a.equipped h,g=0b10111010,b[i[1][i[0b11]]]end elseif h>0x3a then if h<0b1100001 then if h>0x42 then h=g and 0x42 or 0x69 else b=task b,g=d:ge{k},b.spawn h=0x69 g(b)end elseif h>0x61 then return k[1][k[0b11]]else h=k and 0b101001010-h or 0x33 end elseif h<0b1101 then if h<=1 then i=l.ClientFighter h,j=h+0b1100,i.Player else h,i=0b11101011,l.Name end elseif h>=0b110011 then if h<=0b110011 then k,b,g=_[0b10][1][_[0b10][0b11]],l,e[1][e[0b11]]k=k(g,b)k={[0b11]=0b10,[0b10]=k}k[1]=k b,g=d:fe{_[0b101],_[0b11],e,_[1],i,j,k},pcall g(b)b=_[0b11][1][_[0b11][0b11]]g=j[1][j[0b11]]==b h=g and 0b11101100 or h+0b10000111 else e={[0b11]=0b10,[0b10]=e}e[1]=e j=l.ClientFighter h=j and 1 or 0b1101 end else j={[0b11]=0b10,[0b10]=j}j[1]=j k=_[1][1][_[1][0b11]]i=k.constructing_weapon h=i and 0b11111000-h or 0b110 end until false end end,hf=function(d,_)return function()local c,f,e c=0b101111 repeat if c>=0x49 then if c<=0x49 then f=_[1][1][_[1][0b11]]f,e=true,f.Label c,e.RichText=0xc6,f else return end else f=_[1][1][_[1][0b11]]e=f.Label c=e and 0b1001001 or 0xc6 end until false end end,Ce=function(d,_)return function(e,f,...)local g,a,i,c,h h=0xd3 while true do if h<=0b10110111 then if h>0xb4 then h=a and 0x4332/h or 0b10110100 elseif h<=0x5e then a=...a={[0b11]=0b10,[0b10]=a}a[1]=a i,c=pcall,d:De{e,a}i(c)return else c,a[1][a[0b11]],g,i=f,_[0b10][1][_[0b10][0b11]],d.c(...),e[1][e[0b11]]a[1][a[0b11]]=d.c(a[1][a[0b11]](i,c,d.d(g)))return d.d(a[1][a[0b11]])end elseif h>0b11010011 then h,i=0x9dfb/h,"BlindEffect"a=f==i else e={[0b11]=0b10,[0b10]=e}e[1]=e i=_[1][1][_[1][0b11]]a=i.anti_flashbang h=a and 0b11011101 or 0xb7 end end end end,Nc=function(n,_)return function()local j,e,i,a,k,b,c,g,l,f,m m=0x46 while true do if m<=0xa3 then if m<=0b1011001 then if m>0x48 then m=a and 0xed or 0b1001000 elseif m>0x46 then g,b=j(i,k)k=g m=k==nil and 0b10100101 or 0x2dd8/m elseif m<=0b11100 then m=a and 0x89 or m+0b111101 else j={}e,j=j,{}j,g,l=ipairs,_[1][1][_[1][0b11]],j g=g()i=g j,i,k=j(i)j,i,k=n.b(j,i,k)g,b=j(i,k)k=g m=k==nil and 0b10100101 or 0xa3 end elseif m>0x89 then f,c=b,type c=c(f)f="table"a=c==f m=a and 0x7711/m or 0x1c else f=b.Name c=l[f]m,a=0b11100010-m,not c end elseif m<0b11101101 then if m>0xa5 then m,a=0xd7-m,b.Name else i,j=0,#e m=j==i and 0b11110101 or m+0x56 end elseif m<=0b11110101 then if m>0xed then i,k={},"(empty)"i[1]=k j=i return j else c,m,a=true,0x48,b.Name l[a]=c c=table c,a,f=e,c.insert,b.Name a(c,f)end else i=table j,i=i.sort,e j(i)return e end end end end,ff=function(d,_)return function()local c,b,e,a,g,k,l,i,j e,j=game,"Stats"e,l=e.GetService,e e=e(l,j)e={[0b11]=0b10,[0b10]=e}e[1]=e l={[0b11]=0b10,[0b10]=l}l[1]=l l[1][l[0b11]],j=d:if_(),_[1][1][_[1][0b11]]g,k=0,l[1][l[0b11]]b=g k=k(g,b)b,i,g,j="Left",j,81753502655837,j.AddDraggableLabel j=j(i,k,g,b)j={[0b11]=0b10,[0b10]=j}j[1]=j g,i,k=true,j[1][j[0b11]].SetVisible,j[1][j[0b11]]i(k,g)i,k=pcall,d:hf{j}i(k)b=tick b=b()i,k,g=b,0,0x3c i={[0b11]=0b10,[0b10]=i}i[1]=i k={[0b11]=0b10,[0b10]=k}k[1]=k g={[0b11]=0b10,[0b10]=g}g[1]=g a=_[0b10][1][_[0b10][0b11]]c,b=d:gf{k,l,i,j,g,e},a.RenderStepped b,a=b.Connect,b b(a,c)return end end,gb=function(d,_)return function(e)local a,h,f,i,c h=0b11100001 while true do if h>0b1111010 then if h>=0b11001011 then if h<0b11010001 then c=_[1][1][_[1][0b11]]i,h,c=c.PlayerDataController,h+-0b1000011,nil a=i~=c elseif h<=0xd1 then i=task i,h,a=0.2,0x2e89/h,i.wait a(i)else f=tick h,f=0b111001,f()end elseif h>0b10000110 then return a else i=_[1][1][_[1][0b11]]h,a=0x295a/h,i.PlayerDataController end elseif h<0x39 then if h>=0b101100 then if h<=0b101100 then h,i=0b110011,0b1100 else h=a<i and 0b1111010 or 0b11101 end else c=_[1][1][_[1][0b11]]i,c=c.CosmeticLibrary,nil a=i~=c h=a and 0b11001011 or 0x88 end elseif h<=0x5a then if h>0b1001111 then a=true return a elseif h>0x39 then h=a and 0x1bc6/h or h+0b10000010 else i=tick i=i()a,i=i-f,e h=i and 0b110011 or h+-0b1101 end else i=_[1][1][_[1][0b11]]a=i.CosmeticLibrary h=a and 0x3fdc/h or 0x4f end end end end,jc=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.crosshair f.bounce_speed=e return end end,o=function(d,_)return function(e)local a,g,f g=0x47 repeat if g>0b1000111 then return elseif g<=0b110011 then g,f=0xbc,_[0b10][1][_[0b10][0b11]]f()else f=_[1][1][_[1][0b11]]f.display_name_value=e a=f f=a.display_name g=f and 0x33 or 0b10111100 end until false end end,aa=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.offset=e f=_[0b10][1][_[0b10][0b11]]f()return end end,dg=function(d,_)return function()local e,f,h,a,i,c h=0b1010 repeat if h>=0x6a then if h>0b1101010 then i=Enum a=i.LightingStyle h,f=0x62f6/h,a.Realistic else e.LightingStyle=f return end else c,e,a=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]],_[0b11][1][_[0b11][0b11]]i=c.lighting_style f=a[i]h=f and 0x6a or 0b11101111 end until false end end,Hd=function(d,_)return function()local e,a,i,h,c,f h=0x2a while true do if h<=0x78 then if h<=0b1101110 then if h>0x2a then a=e.CreateJumpPadVisual h,f=0b10110000,not a else c,e=_[1][1][_[1][0b11]],require i=c.PlayerScripts a=i.Modules f=a.GameComponents f=f.JumpPads e=e(f)f=not e h=f and 0b10110000 or 0x6e end else f=e.CreateJumpPadVisual f={[0b11]=0b10,[0b10]=f}f[1]=f a=d:Nd{_[0b11],f,_[0b10]}e.CreateJumpPadVisual=a return end elseif h<=0xb0 then h=f and 0b11110011 or 0x5280/h else return end end end end,ed=function(d,_)return function(e)local g,a,f g=0b11111001 while true do if g<=0xb0 then if g>0x40 then a,f=d:ig{_[1],e},pcall f(a)g,f,a=0b11110000-g,_[1][1][_[1][0b11]],nil f[e[1][e[0b11]]]=a else return end else e={[0b11]=0b10,[0b10]=e}e[1]=e a=_[1][1][_[1][0b11]]f=a[e[1][e[0b11]]]g=f and 0xb0 or 0b1000000 end end end end,Lb=function(d,_)return function(e)local b,f,h,a h=0b1001111 repeat if h<=0b1110100 then if h<=0b1001111 then if h>=0x3f then if h>0x3f then a=_[1][1][_[1][0b11]]f=a.charm f.charm_rank=e b=a a=b.charm f=a.s0_charm h=f and 0b1110100 or 0x3f else b=_[1][1][_[1][0b11]]a=b.charm h,f=h+0x35,a.s1_charm end else h=f and 0x107-h or 0x1c98/h end elseif h>0b1101110 then h=f and h+-0b1001100 or h+-0b110 else b=_[1][1][_[1][0b11]]a=b.charm h,f=0x96-h,a.s2_charm end elseif h<=0b11011111 then if h>=0b10110111 then if h>0xb7 then h=f and 0x1d7-h or 0x9416/h else b=_[1][1][_[1][0b11]]a=b.charm h,f=0x9f69/h,a.s3_charm end else return end else f=_[0b10][1][_[0b10][0b11]]h=0xaa f()end until false end end,V=function(d,_)return function()local b,a,e,f e=_[1][1][_[1][0b11]]e()f,e,a="InvDeleteEntry",_[0b11][1][_[0b11][0b11]],_[0b10][1][_[0b10][0b11]]a=a()b=nil e(f,a,b)return end end,Sa=function(d,_)return function(e)local m,b,i,g,a,j,k,c,l m=0x1e while true do if m<=0b1001001 then if m<=0b11110 then j=_[1][1][_[1][0b11]]l=j.leaderboard l.Level=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0b11001110 or 0x49 else return end else i,k,l={},"sucsess",_[0b10][1][_[0b10][0b11]]i.Title=k g,b,c="spoofed ",tostring,_[1][1][_[1][0b11]]m,a=0b1001001,c.leaderboard a=a.level_value b=b(a)k=g..b i.Description=k k=0b10 i.Time=k l,j=l.Notify,l l(j,i)end end end end,rd=function(d,_)return function(e)local c,f c=0b10100111 repeat if c>0xa7 then return elseif c>0x47 then f=_[1][1][_[1][0b11]]f.lighting_enabled=e c=e and 0b10001 or 0x47 elseif c>0b10001 then f=_[0b10][1][_[0b10][0b11]]c=c+0xb3 f()else f=_[0b11][1][_[0b11][0b11]]c=0b100001011-c f()end until false end end,nc=function(d,_)return function(e)local l,g,j,k,a,c,i,b,m m=0b11111010 while true do if m<0xfa then l,i,k=_[0b10][1][_[0b10][0b11]],{},"sucsess"i.Title=k c,g,b=_[1][1][_[1][0b11]],"spoofed -> ",tostring a=c.leaderboard a=a.streak_value m,b=0b11111111,b(a)k=g..b i.Description=k k=0b10 i.Time=k j,l=l,l.Notify l(j,i)elseif m>0b11111010 then return else j=_[1][1][_[1][0b11]]l=j.leaderboard l.Streak=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0x82 or 0b11111111 end end end end,fg=function(d,_)return function()local e,f,a,c c=0b1010010 repeat if c<=0b1100111 then if c>=0x52 then if c<=0x52 then f=_[1][1][_[1][0b11]]e=f.SetValues c=e and 0b1100111 or 0xad else a,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]e,f=e.SetValues,e c=0b100011 e(f,a)end elseif c>0b10 then return else e,f=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]c,e.Values=0x23,f end elseif c>0b1101001 then f=_[1][1][_[1][0b11]]e=f.setValues c=e and 0b1101001 or 0b10 else e,a=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]e,f=e.setValues,e c=0x23 e(f,a)end until false end end,ke=function(d,_)return function()local g,f,e,a g=0x9b repeat if g<0xd0 then a=_[1][1][_[1][0b11]]f=a.PlayerDataController e=f.WaitUntilLoaded g=e and 0b11010000 or 0xd9 elseif g>0xd0 then return else f=_[1][1][_[1][0b11]]e=f.PlayerDataController f,e=e,e.WaitUntilLoaded g=0xd9 e(f)end until false end end,pf=function(d,_)return function()local h,c,i,e,f,j,g h=0b1110 repeat if h<=0x7f then if h<0b1000100 then if h<=0x29 then if h<=0x19 then if h>=0b1110 then if h<0x12 then if h>0b1110 then i=_[1][1][_[1][0b11]]h,j=h+0x78,i.Parent else f=_[1][1][_[1][0b11]]f,e=typeof,f.Text j=e f=f(j)j="string"h=f~=j and 0x6b or 0xd1 end elseif h<=0x12 then h=j and 0x71 or 0xcba/h else i=_[1][1][_[1][0b11]]j,i=i.Name,"HeaderText"h,f=0b11010-h,j==i end elseif h>=0b1010 then if h>0b1010 then j=_[0b11][1][_[0b11][0b11]]f=j.username h=f and 0xd2 or h+0b11101101 else h=j and 0b10001010 or 0xb9 end else h=f and 0x46 or 0b11110001 end elseif h<=0b100100 then if h<0b100001 then j=f.Kills h=j and 0x99 or 0x4f elseif h<=0x21 then h,i=0x8d,_[1][1][_[1][0b11]]i,j="TitleText",i.Name f=j==i else h,g=0b1011100,_[1][1][_[1][0b11]]c=g.Parent i,c=c.Name,"Streak"j=i==c end elseif h>0b100111 then i,j=f.wins_value,_[0b100][1][_[0b100][0b11]]h,j=0b11110000,j(i)e=j else c=_[1][1][_[1][0b11]]h,i,c=0x1185/h,c.Name,"Wins"j=i==c end elseif h>0b111001 then if h<=0b1000000 then if h<0x3d then c=_[1][1][_[1][0b11]]i=c.Parent i,j="Title",i.Name h,f=h+0b1100111,j==i elseif h<=0b111101 then h,g=0b1001111-h,_[1][1][_[1][0b11]]c=g.Parent i,c=c.Name,"Eliminations"j=i==c else h=f and h+0b10110100 or 0b110011 end else h=j and 0x91 or 0xd6 end elseif h>0b110001 then if h<=0b110011 then h=f and 0b1010110 or 0x52 else h=j and 0x2efb/h or 0b11010 end elseif h<0b101111 then if h<=0x2a then g=_[1][1][_[1][0b11]]c=g.Parent c,h,i="Wins",0x39,c.Name j=i==c else c=_[1][1][_[1][0b11]]i,c=c.Name,"Kills"j=i==c h=j and 0x6d-h or 0x2f end elseif h>0b101111 then g=_[1][1][_[1][0b11]]c=g.Parent c,h,i="Elo",h+-0b100111,c.Name j=i==c else c=_[1][1][_[1][0b11]]c,i="Eliminations",c.Name h,j=0x42,i==c end elseif h<=0b1100100 then if h<0x52 then if h<=0x49 then if h<=0x47 then if h>=0b1000110 then if h>0b1000110 then j=f.ELO h=j and 0x3424/h or 0x5e else h=f and h+0xb3 or h+0b10101000 end else c=_[1][1][_[1][0b11]]h,i=0b10000100-h,c.Parent j,i=i.Name,"NameContainer"f=j==i end else h=j and 0x2a or 0x39 end elseif h>0x4a then h=j and 0x4a1/h or h+0x38 else h=j and 0xcf-h or 0x2878/h end elseif h>0x5e then if h>0x62 then j=_[1][1][_[1][0b11]]f=j.Parent h=f and 0b1000100 or 0b1000000 else j=string j,c,f=e,_[0b10][1][_[0b10][0b11]],j.gsub i,c=c.DisplayName,_[0b11][1][_[0b11][0b11]]h,c=0b1101,c.display_name_value f=f(j,i,c)e=f end elseif h<=0x5c then if h<=0x56 then if h<=0x52 then j=_[1][1][_[1][0b11]]f=j.Parent h=f and 0b10011110 or h+0x69 else h=f and 0b11010100 or 0b11111010 end else h=j and 0b11111011 or h+0b1110 end else h=j and h+0b1100100 or 0b1010 end elseif h<=0b1111000 then if h>0b1110001 then if h>0b1110011 then return else h=j and 0b101001 or 0b101100011-h end elseif h<0x6b then if h>0b1100110 then h=j and 0b11110000-h or 0xb1-h else j=_[1][1][_[1][0b11]]f=j.Parent h=f and 0x3a or 0b10100001 end elseif h<=0b1101011 then return else j,h,i=_[0b100][1][_[0b100][0b11]],0b10110101,f.kills_value j=j(i)e=j end elseif h<0b1111100 then if h<=0x79 then h,i=0x53a9/h,_[1][1][_[1][0b11]]j=i.Parent else i,h,j=f.level_value,0x3d05/h,_[0b100][1][_[0b100][0b11]]j=j(i)e=j end elseif h<=0x7c then h,i=0xa5,_[1][1][_[1][0b11]]j=i.Parent else j=f.Streak h=j and 0x79 or 0x57cf/h end elseif h>0xbc then if h>=0xea then if h>0xf4 then if h<0xfb then if h>0b11111001 then j=_[0b11][1][_[0b11][0b11]]f=j.leaderboard j=f.Wins h=j and 0b100111 or 0x704e/h else h=f and h+-0b1101100 or 0b1100110 end elseif h>0b11111011 then g=_[1][1][_[1][0b11]]c=g.Parent h,i,c=0x4a,c.Name,"Level"j=i==c else c=_[1][1][_[1][0b11]]i,h,c=c.Name,h+-0x91,"Value"j=i==c end elseif h>0b11110000 then if h<=0xf1 then h,i=0b1000110,_[1][1][_[1][0b11]]j,i=i.Name,"Title"f=j==i else h,i=0x33,_[1][1][_[1][0b11]]i,j="Handle",i.Name f=j==i end elseif h>0xee then j=f.Kills h=j and 0b101011 or 0x132-h elseif h>0b11101011 then j=_[1][1][_[1][0b11]]f=j.Parent h=f and 0x85e0/h or 0xdd elseif h>0b11101010 then i,j=f.elo_value,_[0b100][1][_[0b100][0b11]]h,j=0xce8b/h,j(i)e=j else i=_[1][1][_[1][0b11]]j,i=i.Name,"SubtitleText"h,f=0x56,j==i end elseif h<0b11010110 then if h>=0b11010010 then if h>0b11010011 then j=string h,c,f,j=0xfa,_[0b10][1][_[0b10][0b11]],j.gsub,e i,c=c.Name,_[0b11][1][_[0b11][0b11]]c=c.username_value f=f(j,i,c)e=f elseif h>0b11010010 then h,i,j=0b11010,f.wins_value,_[0b100][1][_[0b100][0b11]]j=j(i)e=j else i=_[1][1][_[1][0b11]]i,j="Username",i.Name f=j==i h=f and 0x29d6/h or 0b1100100 end elseif h>0xc2 then j=_[0b11][1][_[0b11][0b11]]f=j.display_name h=f and h+0b1110 or h+-0b11000100 else g=_[1][1][_[1][0b11]]c=g.Parent i,c=c.Name,"ELO"j=i==c h=j and 0b1010 or 0b110001 end elseif h>0b11011101 then if h>0b11011111 then j=f.Wins h=j and h+-0b110011 or 0b110111010-h else i=_[1][1][_[1][0b11]]i,j="DisplayName",i.Name f=j==i h=f and 0b11100000-h or 0x15c7/h end elseif h>=0xd9 then if h<=0xd9 then h=j and h+-0b101111 or 0b100100010-h else h=f and 0x191-h or 0xd6f5/h end else j=f.Level h=j and 0x152-h or 0b101111011-h end elseif h>0xa1 then if h>0xb5 then if h<0b10111011 then if h<=0xb8 then h,j=0x78,_[1][1][_[1][0b11]]j.Text=e else h=j and 0xeb or 0x19a-h end elseif h<=0b10111011 then h=f and 0xea or h+-0x65 else h,i=0x4508/h,_[1][1][_[1][0b11]]j=i.Parent end elseif h>0xb1 then if h>0xb4 then i=_[1][1][_[1][0b11]]j=i.Text h=j~=e and 0b10111000 or 0b1111000 else i=_[1][1][_[1][0b11]]i,j="Name",i.Name h,f=h+0x45,j==i end elseif h<=0xae then if h>=0xaa then if h>0b10101010 then c=_[1][1][_[1][0b11]]h,i,c=h+0b101011,c.Name,"Value"j=i==c else h,i=0x307a/h,_[1][1][_[1][0b11]]j=i.Parent end else h=j and h+0x5a or 0x4a end else h=j and 0b100100 or 0b1011100 end elseif h>=0x90 then if h<0b10011010 then if h>=0b10010001 then if h>0x91 then c=_[1][1][_[1][0b11]]i,c=c.Name,"Value"h,j=0b1001111,i==c else i,j=f.kills_value,_[0b100][1][_[0b100][0b11]]j=j(i)h,e=0b11010110,j end else h,c=0b11011101,_[1][1][_[1][0b11]]i=c.Parent j,i=i.Name,"NameContainer"f=j==i end elseif h<=0b10011110 then if h<=0x9a then g=_[1][1][_[1][0b11]]c=g.Parent c,i="Kills",c.Name j=i==c h=j and 0x12 or 0x24b2/h else c=_[1][1][_[1][0b11]]i=c.Parent i,j="Subtitle",i.Name h,f=h+0b11101,j==i end else h=f and 0xc2-h or 0x58ad/h end elseif h>0b10001010 then if h<=0b10001100 then h=j and 0x4344/h or 0x7f else h=f and 0x62 or 0b1101 end elseif h>0b10000111 then c=_[1][1][_[1][0b11]]i,c=c.Name,"Value"h,j=0b10111001,i==c elseif h>0b10000110 then h=j and 0x9a or 0b10010 elseif h>0x85 then i,h,j=f.streak_value,0x47,_[0b100][1][_[0b100][0b11]]j=j(i)e=j else c=_[1][1][_[1][0b11]]h,c,i=0x48bc/h,"Value",c.Name j=i==c end until false end end,ze=function(d,_)return function()local f,h,e,a,b h=0b1111001 repeat if h<=0x6d then if h<=0b1000011 then if h>=0b101110 then if h>0b101110 then return else h=e and 0x6d or 0b1110001-h end elseif h<=0b11010 then h=e and h+0b1100101 or 0b1010101 else b=_[1][1][_[1][0b11]]a=b.Parent f,a=a.Name,"Thumbnail"e=f==a h=e and 0b1011011 or 0b11111100-h end elseif h<0b1011011 then h,a=0x2a2b/h,_[1][1][_[1][0b11]]f,a=a.Name,"ImageLabel"e=f==a elseif h<=0b1011011 then h=e and h+-0b101101 or 0xf8-h else f,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]h,e.Image=0b10110000-h,f end elseif h<0xab then if h>0b1111111 then h,a=0b101110,_[1][1][_[1][0b11]]f,a=a.Name,"Headshot"e=f==a elseif h>0b1111001 then h=e and 0xab or 0x213d/h else a=_[1][1][_[1][0b11]]f,a=a.Name,"AvatarThumbnail"e=f==a h=e and 0x1a or 0b11101110 end elseif h<=0xd7 then if h>0b10101011 then a=_[1][1][_[1][0b11]]f,a=a.Name,"AvatarThumbnail"h,e=0x132-h,f==a else f=_[1][1][_[1][0b11]]e=f.Parent h=e and 0b100101 or 0b101110 end else h,a=0x1a,_[1][1][_[1][0b11]]a,f="Headshot",a.Name e=f==a end until false end end,Ad=function(d,_)return function(e)local g,f,a g=0b1110101 repeat if g>=0b10100111 then if g>0xa7 then return else f=_[1][1][_[1][0b11]]f.decay=e g,f=0x79fd/g,_[0b10][1][_[0b10][0b11]]f()end else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0b10100111 or 0xbb end until false end end,qe=function(d,_)return function()local h,i,e,a,c,f h=0xeb while true do if h<=0b11100011 then if h<0b1000000 then if h<=0b110 then h,c=0b11101100,_[0b10][1][_[0b10][0b11]]c.SeasonLibrary=i else h=a and 0b100110001-h or 0b100101010-h end elseif h>0b10001111 then c=_[0b10][1][_[0b10][0b11]]i=c.SeasonLibrary h,a=0b111110,not i elseif h<=0b1000000 then a=f h=a and h+0xa3 or 0b111110 else f,i,a=e.FindFirstChild,"SeasonLibrary",e h,f=0x40,f(a,i)end elseif h>0b11101100 then c,i,a=f,require,pcall a,i=a(i,c)h=a and 0b110 or 0xe004/h elseif h<=0b11101011 then e,a=_[1][1][_[1][0b11]],"Modules"e,f=e.FindFirstChild,e e=e(f,a)f=e h=f and 0x8f or 0b1000000 else return end end end end,cd=function(n,s)return function()local f,e,l,h,i,m,d,a,q,j,r,p,b,o,c,k,t,g m=0b1011100 while true do if m<0b10001001 then if m>0b1100111 then m=j and 0x2a3f/m or m+0x78 elseif m<=0b1011100 then if m<=0x2e then m,i=0b1101001,1 j=l~=i else l=workspace e=l.CurrentCamera e={[0b11]=0b10,[0b10]=e}e[1]=e l=not e[1][e[0b11]]m=l and 0b10001001 or 0xa5 end else i,o=e[1][e[0b11]].CFrame,CFrame o,r=0,o.new b=o q,a=1,b h,f=a,a c,p,g,t,d,k=h,h,l,q,h,h r=r(o,b,a,q,f,h,p,g,d,c,k,t)m,j=0xe1,i*r e[1][e[0b11]].CFrame=j end elseif m<=0b10101100 then if m<0xa5 then return elseif m>0xa5 then return else j=s[1][1][s[1][0b11]]i,l=type,j.camera_resolution r=l i=i(r)r="number"j=i==r m=j and 0x2e or 0x43ad/m end elseif m>0xb0 then j,i=pcall,n:hg{s[0b11],e,s[1]}j(i)i=s[1][1][s[1][0b11]]j=i.skybox_enabled m=j and 0xb0 or 0x972c/m else j,r=s[0b10][1][s[0b10][0b11]],s[1][1][s[1][0b11]]i=r.clocktime m,j.ClockTime=0x15c-m,i end end end end,fb=function(d,_)return function(e)local a,f,g g=0b1111000 while true do if g>0b10100100 then return elseif g>0x78 then f=_[1][1][_[1][0b11]]g,f.ambient_color=0b11001011,e f=_[0b10][1][_[0b10][0b11]]f()else f,a=typeof,e f=f(a)a="Color3"g=f==a and 0xa4 or 0b11001011 end end end end,Mb=function(d,_)return function(e)local c,i,a,f,h h=0xb9 while true do if h<0x8a then return elseif h>0x8a then a=_[1][1][_[1][0b11]]f=a.charm f.s2_charm=e f=_[0b11][1][_[0b11][0b11]]f()h=e and 0b10001010 or 0b11001 else f,c,i=_[0b10][1][_[0b10][0b11]],"sucsess",{}h,i.Title=0x19,c c="season 2 charm applied"i.Description=c c=0b10 i.Time=c f,a=f.Notify,f f(a,i)end end end end,_a=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.diffuse_scale=e f=_[0b10][1][_[0b10][0b11]]f()return end end,fc=function(d,_)return function()local i,h,j,g,c,e,f h=1 while true do if h<=0x2e then if h>=0b100010 then if h>0x22 then h,c=0b10100010,_[0b10][1][_[0b10][0b11]]i=c.specific_name else j.Description=i i=0b10 j.Time=i e,f=e.Notify,e e(f,j)return end else e=_[1][1][_[1][0b11]]e()e,i,j=_[0b11][1][_[0b11][0b11]],"Unlock",{}j.Title=i g=_[0b10][1][_[0b10][0b11]]c,g=g.specific_name,""i=c~=g h=i and 0b101110 or 0xa2 end elseif h>0b1101001 then h=i and 0x22 or h+-0b111001 else h,i=0b100010,"done"end end end end,Qb=function(d,_)return function()local b,e b,e=d:ff{_[1],_[0b10]},pcall e(b)return end end,Wf=function(d,_)return function()local f,c,h,a,b,e h=0xa3 repeat if h>0b1111001 then if h<=0b10100001 then h,f=0b11001,e.Players else b=_[1][1][_[1][0b11]]a=b.LeaderboardController a,f=_[0b11][1][_[0b11][0b11]],a.LeaderboardSerials e=f[a]f=e h=f and 0xa1 or 0b11001 end elseif h>0x19 then return elseif h<0x14 then b=_[1][1][_[1][0b11]]a=b.LeaderboardController f,b=a.Refreshed,_[0b11][1][_[0b11][0b11]]a,h,f=f,0x3c8/h,f.Fire f(a,b)elseif h>0b10100 then h=f and h+-0b101 or 0b1111001 else f,b,a,c=_[0b101][1][_[0b101][0b11]],_[0b100][1][_[0b100][0b11]],e.Players,_[0b10][1][_[0b10][0b11]]f(a,b,c)b=_[1][1][_[1][0b11]]a=b.LeaderboardController f=a.Refreshed h=f and 0x1c-h or h+0b1100101 end until false end end,Re=function(d,_)return function()local b,e e=_[1][1][_[1][0b11]]b,e=e,e.Destroy e(b)return end end,ig=function(d,_)return function()local f,a,e f,a=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]e=f[a]e,f=e.Disconnect,e e(f)return end end,Td=function(d,_)return function()local a,l,e,k,j,b,h,i,c h=0b1000011 while true do if h>0b1111011 then if h>=0xc0 then if h>=0b11001001 then if h>0xc9 then return e else h,i=0b100101,_[1][1][_[1][0b11]]j=i.equipped l=j[e]end else c,a,b="Finisher",k,_[0b10][1][_[0b10][0b11]]b=b(a,c)h=b and 0x6c00/h or 0xeb-h end elseif h<=0x90 then return k else h=l and 0b11011010 or 0b100001 end elseif h>=0b1000011 then if h<=0b1111000 then if h<=0x43 then l=_[1][1][_[1][0b11]]e=l.last_used_weapon l=e h=l and 0xc9 or 0x25 else l=nil return l end else j,l,i=e,_[0b10][1][_[0b10][0b11]],"Finisher"h,l=0x139-h,l(j,i)end elseif h<=0x25 then if h>0b100001 then h=l and 0b1111011 or 0xbe else l,k=pairs,_[1][1][_[1][0b11]]j=k.equipped l,j,i=l(j)l,j,i=d.b(l,j,i)k=l(j,i)i=k h=i==nil and 0b1111000 or 0x18c0/h end else k=l(j,i)i=k h=i==nil and 0x78 or 0b11000000 end end end end,ef=function(d,_)return function()local e,b e=_[1][1][_[1][0b11]]e,b=e.Destroy,e e(b)return end end,Ie=function(d,_)return function()local e,b e,b=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]e(b)return end end,Tb=function(d,_)return function()local e,b b,e=d:mf{_[1],_[0b11],_[0b101],_[0b100],_[0b10]},pcall e(b)return end end,za=function(d,_)return function(e,f)local j,c,g,h,i h=0b1010101 while true do if h<=0b10100111 then if h<=0b1000010 then if h>0b101111 then g,c="NONE_COSMETIC",j.Name h,i=0b11111111,c==g elseif h<=0x2a then return j else g,c="None",j.Name i=c==g h=i and 0x2ed1/h or h+0x13 end elseif h>0b1010101 then i=not j h=i and 0b11101100 or 0b11010110-h else c=_[1][1][_[1][0b11]]i=c.equipped j=i[e]h=j and 0xde or 0xa7 end elseif h<0b11101100 then if h>0xde then i=nil return i else g=_[1][1][_[1][0b11]]c=g.equipped h,i=0x90d2/h,c[e]j=i[f]end elseif h>0b11101100 then h=i and 0xdf20/h or 0x29d6/h else i=nil return i end end end end,Rb=function(n,_)return function()local j,i,h,b,p,q,a,l,d,f,g,m,e,k,o m=0xf7 repeat if m<0x63 then if m>=0b1000111 then if m>0x55 then if m>0b1011000 then m,h=0b10100100-m,""f=a~=h elseif m<=0b1010111 then m,f=0x68-m,q else i=_[1][1][_[1][0b11]]i,m,j=true,0xb1,i.fake_owned j[l]=i end elseif m>=0x53 then if m>0x53 then h="Finisher"f=e==h m=f and 0x1ce3/m or 0x11 else j=l m=j and 0b1100011 or 0xab end elseif m<=0x47 then m=f and 0x140-m or 0b1110 else h=q.CanEliminate m,f=0x2a,not h end elseif m>=0x1f then if m>0b101010 then m=i and 0x1f or 0b10 elseif m<=0b11111 then m,j.IsInverted=m+0b10101010,i else m=f and 0b111000-m or m+0b1001101 end elseif m<=0b1110 then if m<=0b10 then m,i=0b111110/m,nil else a,q=k(o,b)b=a m=b==nil and 0b10111100-m or 0x63-m end else m=f and m+0x3b or 0x2a end elseif m<=0xb1 then if m<0x8f then if m<0b1110111 then if m<=0x63 then m,i=0xab,""j=l~=i else m=k and 0x8f or 0b10101110 end elseif m<=0b1110111 then p,h=a,type h=h(p)p="string"f=h==p m=f and 0x2b3b/m or m+-0x30 else b=_[0b10][1][_[0b10][0b11]]o=b.ItemLibrary m,k=0x6e,o.Items end elseif m<0b10101110 then if m<=0b10001111 then q,k=_[0b10][1][_[0b10][0b11]],pairs a=q.ItemLibrary o=a.Items k,o,b=k(o)k,o,b=n.b(k,o,b)a,q=k(o,b)b=a m=b==nil and 0xae or 0b1010101 else m=j and 0b100000011-m or 0x763b/m end elseif m>0b10101110 then i={}j,i=i,"Wrap"m=e==i and m+0x42 or m+0x18 else b,a,k={},"Equip",_[0b11][1][_[0b11][0b11]]b.Title=a p,h,q=i,tostring,"applied to "h=h(p)p=" weapons"f=h..p a=q..f b.Description=a a=0b11 b.Time=a k,o=k.Notify,k k(o,b)return end elseif m>0b11110011 then if m<=0xf7 then l=_[1][1][_[1][0b11]]j,e=l,l.equip_type l,j=j.equip_name,"Skin"m=e==j and 0xdc or 0b1010011 else p,f,d,h,g=e,_[0b100][1][_[0b100][0b11]],j,a,l f(h,p,g,d)m,f=0b100000111-m,1 i=i+f end elseif m<0b11011100 then if m>0xc0 then i,o=0,_[0b10][1][_[0b10][0b11]]k=o.ItemLibrary m=k and 0x6dec/m or 0b100110111-m else m,i=0x33c0/m,true end elseif m>0b11011100 then k=_[1][1][_[1][0b11]]i=k.equip_inverted m=i and 0b110110011-m or m+-0xae else o,j,k="Equip",_[0b11][1][_[0b11][0b11]],{}k.Title=o o="equip-all skips Skin (weapon-specific)"k.Description=o o=0b11 k.Time=o i,j=j,j.Notify j(i,k)return end until false end end,bc=function(d,_)return function()local e,g,a,f g=0b110 while true do if g>0b100100 then e,a=_[1][1][_[1][0b11]],Instance f,a=a.new,"ColorCorrectionEffect"g,f=0x1614/g,f(a)e.lighting_cc=f f=e e,f=f.lighting_cc,_[0b10][1][_[0b10][0b11]]e.Parent=f elseif g<=0b110 then f=_[1][1][_[1][0b11]]f,e=nil,f.lighting_cc g=e==f and 0b10011101 or 0x24 else f=_[1][1][_[1][0b11]]a,e=f,f.lighting_cc f=a.cc_enabled e.Enabled=f f=a a,e=f,f.lighting_cc f=a.cc_brightness e.Brightness=f f=a e,a=f.lighting_cc,f f=a.cc_contrast e.Contrast=f f=a a,e=f,f.lighting_cc f=a.cc_saturation e.Saturation=f f=a a,e=f,f.lighting_cc f=a.cc_tint e.TintColor=f return end end end end,Rf=function(d,_)return function(e)local g,i,c,m,a,k,l,b,j m=0x94 while true do if m>0b10000110 then if m>=0b10111000 then if m>=0b11001011 then if m>0b11001011 then k,g=l(j,i)i=k m=i==nil and 0x333b/m or 0b100101110-m else m,e[k]=0b11010111,g end else j=_[1][1][_[1][0b11]]m,l=0b1100110,not j end elseif m>=0b10010100 then if m<=0x94 then l=not e m=l and 0b1100110 or 0xb8 else a,c=g.Name,"None"m,b=0b100111000-m,a==c end else return e end elseif m<=0b1000000 then if m<0b111101 then if m>0x27 then a,c=g.Name,"NONE_COSMETIC"b=a==c m=b and m+0x57 or m+0x83 else j,l=_[1][1][_[1][0b11]],pairs l,j,i=l(j)l,j,i=d.b(l,j,i)k,g=l(j,i)i=k m=i==nil and 0x94b/m or m+0x30 end elseif m<=0b111101 then return e else m,b=0x35c0/m,nil e[k]=b end elseif m<0x66 then b,a=type,g b=b(a)a="table"m=b==a and 0x2f or 0xd7 elseif m>0b1100110 then m=b and 0x40 or 0xcb else m=l and 0x91 or 0b100111 end end end end,_b=function(d,_)return function(e)local h,a,f,b h=0xd0 repeat if h<0xa1 then if h<=0b110001 then h,a=0x2c99/h,""else f.weapon_name=a f=_[0b10][1][_[0b10][0b11]]f()return end elseif h<0xd0 then h,a=0x54,e elseif h<=0b11010000 then a=_[1][1][_[1][0b11]]f,b=a.inject,"Universal"a=e==b h=a and 0b110001 or 0xe9 else h=a and 0x13d-h or 0b10100001 end until false end end,od=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.anti_smoke=e return end end,Ha=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.equip_type=e f=_[0b10][1][_[0b10][0b11]]f()return end end,pb=function(d,_)return function()local f,a,g,e g=0b11010100 while true do if g>0b11010100 then e=true return e elseif g<=0b1011001 then e,f=pcall,d:Se{_[0b10],_[1]}e(f)a=_[1][1][_[1][0b11]]f,a=a.LeaderboardController,nil e=f~=a return e else f=_[1][1][_[1][0b11]]e=f.LeaderboardController g=e and 0b11011011 or 0b1011001 end end end end,Af=function(d,_)return function()local b,f,c,e,a b,c,e,f="EnumLibrary",0b101,require,_[1][1][_[1][0b11]]f,a=f.WaitForChild,f f=d.c(f(a,b,c))e=d.c(e(d.d(f)))return d.d(e)end end,bg=function(d,_)return function()local e,a,f,b a,b,e="StatisticDuelsWinStreak",_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]f,b,e=e,b.streak_value,e.SetAttribute e(f,a,b)return end end,Id=function(d,_)return function()local e,g,i,f,k,j,h,b h=0xd1 repeat if h<0xb0 then if h>0b111 then return else f=e.ReplicateFromServer f={[0b11]=0b10,[0b10]=f}f[1]=f j={[0b11]=0b10,[0b10]=j}j[1]=j j[1][j[0b11]]=d:Sd{_[1],_[0b11]}i={[0b11]=0b10,[0b10]=i}i[1]=i i[1][i[0b11]]=d:Pd{j,_[1]}k={[0b11]=0b10,[0b10]=k}k[1]=k k[1][k[0b11]]=d:Td{_[0b10],_[0b100]}g={[0b11]=0b10,[0b10]=g}g[1]=g g[1][g[0b11]]=d:Qd{_[0b11]}b=d:Rd{f,g,i,_[0b100],k}e.ReplicateFromServer=b return end elseif h>0xd1 then h=f and 0x1d38/h or 0b111 elseif h<=0b10110000 then j=e.ReplicateFromServer h,f=0xdc,not j else e,k=require,_[1][1][_[1][0b11]]i=k.PlayerScripts j=i.Modules f=j.ClientReplicatedClasses f=f.ClientEntity e=e(f)f=not e h=f and 0b11011100 or 0b10110000 end until false end end,g=function(d,_)return function()local c,f,i,h,e,a h=0xa7 repeat if h<=0x77 then if h<=0x73 then if h<=0x2e then if h<=0b101011 then e,f=pcall,d:Ed{_[0b11],_[0b10]}e=e(f)c,i,f="Loadout",{},_[1][1][_[1][0b11]]i.Title=c c=e h=c and h+0b1001100 or 0xff else h,c=0x84,"save failed"end else a,e,i={},_[1][1][_[1][0b11]],"Loadout"a.Title=i i="writefile unavailable"a.Description=i i=0b11 a.Time=i e,f=e.Notify,e e(f,a)e=false return e end else h,c=0b11111111,"saved project_atomic/rivals_loadout.json"end elseif h<=0xa7 then if h<=0b10000100 then i.Description=c c=0b11 i.Time=c a,f=f,f.Notify f(a,i)return e else f=writefile e=not f h=e and 0b1110011 or 0b101011 end else h=c and 0x837c/h or 0x2dd2/h end until false end end,Pd=function(d,_)return function(e)local g,c,i,f,h,j h=0b11010 while true do if h<=0b11010 then if h>0b1101 then j,f=e[0b11],_[1][1][_[1][0b11]]f=f(j)j=f h=j and 0b1101 or 0b101100 else c,i=f,f.lower i=i(c)g=_[0b10][1][_[0b10][0b11]]c=g.Name h,g,c=0x2c,c,c.lower c=c(g)j=i==c end else return j end end end end,me=function(d,_)return function()local f,a,e f=_[0b10][1][_[0b10][0b11]]a,e="WeaponInventory",f.PlayerDataController f,e=e,e.Get e=e(f,a)_[1][1][_[1][0b11]]=e return end end,tf=function(d,_)return function()local f,a,g,e g=0b1100010 repeat if g<=0b1100011 then if g>0b1100010 then a=_[1][1][_[1][0b11]]g,f=0b100101011-g,a.PlayerDataController e=f.CurrentData elseif g<=0x11 then a=_[1][1][_[1][0b11]]f=a.PlayerDataController e,a=f.CurrentData,"WeaponInventory"f,g,e=e,g+0xe9,e.Replicate e(f,a)else f=_[1][1][_[1][0b11]]e=f.PlayerDataController g=e and 0b1100011 or 0xc8 end elseif g>0xc8 then return else g=e and 0b10001 or g+0b110010 end until false end end,kc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.device_spam=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Ve=function(d,_)return function()local f,e e,f=_[1][1][_[1][0b11]],_[0b10][1][_[0b10][0b11]]f=f.ScreenGui e(f)return end end,Pf=function(n,_)return function(e,...)local l,g,b,m,c,f,j,i,k,a m=0xd9 while true do if m>=0b1001100 then if m>=0xd9 then if m>0xd9 then g(b,a,c,f)return else l=_[1][1][_[1][0b11]]m=e==l and 0x4c or 0b10011 end else l,j,i,k=...f,b,a,c,g=k,l,j,i,_[0b11][1][_[0b11][0b11]]m=f and 0b11100100 or 0xc2c/m end elseif m>0x13 then m,f=0x2484/m,{}else l,j,i=_[0b10][1][_[0b10][0b11]],e,n.c(...)l=n.c(l(j,n.d(i)))return n.d(l)end end end end,La=function(d,_)return function(e,f,j)local i,g,h,b,c h=0x19 repeat if h<0b11001 then return elseif h<=0x19 then i,c=_[1][1][_[1][0b11]],e i(c)h=f and 0b1000111 or 0x11 else b,g,c,i=j,f,f.Connect,_[0b10][1][_[0b10][0b11]]c=c(g,b)h,i[e]=0x4b7/h,c end until false end end,jg=function(d,_)return function()local a,f,b,e,h h=0b1101001 while true do if h<0b10000100 then if h<=0b1010000 then if h>0b1001001 then b=_[0b10][1][_[0b10][0b11]]a=b.currency f=a.glory h=f and 0b11010100-h or h+0x23 elseif h<=0x29 then if h<=0b1011 then b=_[0b10][1][_[0b10][0b11]]a=b.currency f=a.unlock_tokens h=f and 0x34-h or h+0b11001001 else a,b,h,f=e,"UnlockTokens",0b11111101-h,e.Replicate f(a,b)end else return end elseif h<=0b1101001 then if h<=0b1101000 then a=_[1][1][_[1][0b11]]f=a.PlayerDataController b,e=_[0b10][1][_[0b10][0b11]],f.CurrentData a=b.currency f=a.weapon_keys h=f and 0x50d8/h or 0b1011 else f=_[1][1][_[1][0b11]]e=f.PlayerDataController h=e and 0b11001000 or 0xa0 end else b=_[0b10][1][_[0b10][0b11]]a=b.currency f=a.skin_tickets h=f and 0xcf or h+-0x2a end elseif h>=0xc8 then if h>0xd4 then f,b,a=e.Replicate,"EventCurrency",e h=0x50 f(a,b)elseif h<0xcf then h,a=0x168-h,_[1][1][_[1][0b11]]f=a.PlayerDataController e=f.CurrentData elseif h>0b11001111 then b=_[0b10][1][_[0b10][0b11]]a=b.currency f=a.event_currency h=f and 0x1cd-h or 0x4240/h else b,f,a="SkinTickets",e.Replicate,e h=0x49 f(a,b)end elseif h>0xa0 then f,b,h,a=e.Replicate,"WeaponKeys",0xd2-h,e f(a,b)elseif h>0x84 then h=e and 0x68 or 0x49 else h,f,b,a=0b1110011,e.Replicate,"Glory",e f(a,b)end end end end,Cd=function(d,_)return function(e)local a,f a=_[1][1][_[1][0b11]]f=a.badges f.Admin=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Gf=function(d,_)return function()local e,f,a,i,h,c h=0b1110100 while true do if h<=0x49 then if h>0b110010 then if h<=0x3f then h,i=0x71-h,f._atomicPatched a=not i else c,h,i=f.Get,0xf9,type i=i(c)c="function"a=i==c end elseif h>0x16 then h=a and 0b10010 or 0b1100 elseif h<=0b10010 then if h>0b1100 then a=f.Get a={[0b11]=0b10,[0b10]=a}a[1]=a h,i=0b10111111-h,d:Qf{a,_[0b10]}f.Get=i i=true f._atomicPatched=i else i=task a[1][a[0b11]],i=i.wait,0.2 h=0b11001011-h a[1][a[0b11]](i)end else a=_[1][1][_[1][0b11]]f=a.CurrentData a=f h=a and 0x49 or 0x10f-h end elseif h>=0xbf then if h<=0b10111111 then a=tick a=a()a,f=0b10100,a-e h=f<a and 0b11010101-h or 0b10101101 else h=a and h+-0b10111010 or 0x32 end elseif h<=0x74 then h,e=0xbf,tick e=e()else return end end end end,qd=function(d,_)return function(e)local b,c,a,h,f h=0x42 while true do if h>0x88 then return elseif h<=0x42 then a=_[1][1][_[1][0b11]]c,f,b,a=0,a.currency,e,_[0b11][1][_[0b11][0b11]]a=a(b,c)f.skin_tickets_value=a b=_[1][1][_[1][0b11]]a=b.currency f=a.skin_tickets h=f and 0x88 or 0b11101011 else f=_[0b10][1][_[0b10][0b11]]h=0xeb f()end end end end,Qd=function(d,_)return function(e)local i,h,a,c,f h=0b11110001 repeat if h<0b1001111 then if h>0x26 then if h<0b101110 then f,a=e[1][e[0b11]].ObjectID,nil h=f~=a and 0x7c or 0b100000 elseif h>0x2e then a,f=d:Ud{_[1],e},pcall f,a=f(a)i=f h=i and 0x379b/h or 0x4f else f=nil return f end elseif h<=0x22 then if h>=0x20 then if h<=0x20 then f=nil return f else e[1][e[0b11]].Enum=a return a end else h,i=0x60,_[1][1][_[1][0b11]]a=i.EnumLibrary f=a.ToEnum end else a=_[1][1][_[1][0b11]]f=a.EnumLibrary h=f and h+-0b11000 or h+0b111010 end elseif h<0x7c then if h<=0x5b then if h<=0x4f then h=i and 0b100010 or 0xd45/h else f,a=e[1][e[0b11]].Enum,nil h=f~=a and 0xb9 or 0x26 end else h=f and h+-0x1f or h+-0x35 end elseif h<0xdb then if h<=0b1111100 then f=e[1][e[0b11]].ObjectID e[1][e[0b11]].Enum=f f=e[1][e[0b11]].ObjectID return f else f=e[1][e[0b11]].Enum return f end elseif h>0xdb then e={[0b11]=0b10,[0b10]=e}e[1]=e f=not e[1][e[0b11]]h=f and 0x2e or 0x5b else h,c=0x4395/h,nil i=a~=c end until false end end,je=function(d,_)return function(e,f)local c,b,a a=_[1][1][_[1][0b11]]a.viewing_profile=f a,c,b=_[0b10][1][_[0b10][0b11]],f,e a=d.c(a(b,c))return d.d(a)end end,ye=function(n,_)return function(e,l,j,i,k)local g,p,o,b,m,h,c,f,a m=0b1000000 while true do if m<0xb2 then if m>=0x40 then if m>0x67 then h,c,p,a,f,g=j,e,i,_[0b10][1][_[0b10][0b11]],l,k a=n.c(a(c,f,h,p,g))return n.d(a)elseif m<=0x40 then b=_[1][1][_[1][0b11]]a,h,o=_[0b11][1][_[0b11][0b11]],_[0b101][1][_[0b101][0b11]],b[j]f=h.charm c=f.charm_rank f,b=h,a[c]c=f.charm c,a="Use Spoofed ELO",c.charm_rank m=a==c and 0xb2 or 0b11011 else f=_[0b101][1][_[0b101][0b11]]h,c=_[0b100][1][_[0b100][0b11]],f.charm f=h[o]m,a=0x4c0b/m,c[f]end elseif m<=0b11011 then a=o m=a and m+0xb5 or 0xc0 else i,c=a,_[0b101][1][_[0b101][0b11]]m,a=0xbc-m,c.charm k=a.arch_rank end elseif m>0b11010000 then if m>0b11011011 then m,a=0b100101010-m,i else a=b m=a and 0x275a/m or m+0b100001 end elseif m>0xc0 then c=_[0b100][1][_[0b100][0b11]]m,a=0b110010000-m,c[o]elseif m<0xbd then c=_[0b101][1][_[0b101][0b11]]m,a=0x12c6/m,c.leaderboard b=a.elo_value elseif m>0xbd then m=a and 0b1100111 or 0b10111101 else m=a and 0xdb or m+-0b101111 end end end end,ag=function(d,_)return function()local a,b,e,h,c,f h=0b11110001 while true do if h<=0x87 then if h<0x3d then if h>0b11100 then h,f=0b111101,e.Players else a,c,f,b=e.Players,_[0b10][1][_[0b10][0b11]],_[0b101][1][_[0b101][0b11]],_[0b100][1][_[0b100][0b11]]f(a,b,c)b=_[1][1][_[1][0b11]]a=b.LeaderboardController f=a.Refreshed h=f and 0xd7 or 0x87 end elseif h>0b111101 then return else h=f and 0b1011001-h or 0x87 end elseif h<=0xd7 then b=_[1][1][_[1][0b11]]h,a=0b10000111,b.LeaderboardController f,b=a.Refreshed,_[0b11][1][_[0b11][0b11]]a,f=f,f.Fire f(a,b)else b=_[1][1][_[1][0b11]]a=b.LeaderboardController a,f=_[0b11][1][_[0b11][0b11]],a.LeaderboardSerials e=f[a]f=e h=f and 0b111000 or 0x3d end end end end,hc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.sunrays_intensity=e f=_[0b10][1][_[0b10][0b11]]f()return end end,xe=function(d,_)return function()local b,k,c,i,l,g,j,h,e,a h=0xbe while true do if h>0xb5 then if h<=0b11011010 then if h>0b11010111 then l,i,j=ipairs,e,e.GetDescendants j=d.c(j(i))l,j,i=l(d.d(j))l,j,i=d.b(l,j,i)k,g=l(j,i)i=k h=i==nil and 0b10000001 or 0x6e elseif h<=0xbe then j,e="PlayerGui",_[1][1][_[1][0b11]]l,e=e,e.FindFirstChild e=e(l,j)l=not e h=l and 0x16 or 0b11011010 else h=b and 0b1100011 or 0b110111000-h end else k,g=l(j,i)i=k h=i==nil and 0x162-h or 0b1101110 end elseif h>0b1101110 then if h<=0x81 then return else b,h,c,a=g.IsA,0xd7,"TextButton",g b=b(a,c)end elseif h<0b1100011 then return elseif h>0x63 then a,c,b=g,"TextLabel",g.IsA b=b(a,c)h=b and h+0b1101001 or h+0b1000111 else b,h,a=_[0b10][1][_[0b10][0b11]],0b11100001,g b(a)end end end end,Ae=function(d,_)return function()local g,f,e,a g=0b1100 repeat if g>=0b10101111 then if g>=0xb2 then if g<=0b10110010 then return else g,a=0x66,_[1][1][_[1][0b11]]f=a.PlayerDataController e=f.CurrentData end else a=_[1][1][_[1][0b11]]g,f=0xb2,a.PlayerDataController e,a=f.CurrentData,"UnclaimedRewards"e,f=e.Replicate,e e(f,a)end elseif g<=0b1100 then f=_[1][1][_[1][0b11]]e=f.PlayerDataController g=e and 0xf4 or 0x66 else g=e and 0b100010101-g or 0b10110010 end until false end end,oe=function(d,_)return function()local b,f,e,a,g g=0b11001101 while true do if g<=0b10001010 then if g<=0x40 then if g<0x20 then if g>0b1001 then g,f=0b100000,0 else g,f=0b11101011-g,0 end elseif g<=0x20 then e.weapon_keys_value=f f=_[1][1][_[1][0b11]]a,e=_[0b10][1][_[0b10][0b11]],f.currency f,b=a.PlayerDataController,"UnlockTokens"a,f=f,f.Get f=f(a,b)g=f and 0b10001010 or 0x40 else g,f=0x2280/g,0 end elseif g<=0b1110001 then g,f=0b10010111,0 else e.unlock_tokens_value=f f=_[1][1][_[1][0b11]]e,a=f.currency,_[0b10][1][_[0b10][0b11]]b,f="EventCurrency",a.PlayerDataController f,a=f.Get,f f=f(a,b)g=f and 0x5166/g or 0xfb-g end elseif g<=0xcd then if g<0xb9 then e.event_currency_value=f f=_[1][1][_[1][0b11]]e,a=f.currency,_[0b10][1][_[0b10][0b11]]b,f="Glory",a.PlayerDataController a,f=f,f.Get f=f(a,b)g=f and 0x150-g or 0b101101000-g elseif g>0b10111001 then f=_[1][1][_[1][0b11]]e,a=f.currency,_[0b10][1][_[0b10][0b11]]b,f="WeaponKeys",a.PlayerDataController f,a=f.Get,f f=f(a,b)g=f and 0b100000 or 0x15 else e.glory_value=f f=_[1][1][_[1][0b11]]e,a=f.currency,_[0b10][1][_[0b10][0b11]]f,b=a.PlayerDataController,"SkinTickets"f,a=f.Get,f f=f(a,b)g=f and g+0x29 or 0b1001 end elseif g>0b11010001 then e.skin_tickets_value=f return else g,f=0xb9,0 end end end end,xb=function(d,_)return function()local a a=_[1][1][_[1][0b11]]a()return end end,df=function(d,_)return function()local e,f f=_[1][1][_[1][0b11]]e=f.lighting_atmosphere f,e=e,e.Destroy e(f)return end end,Mc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.cc_contrast=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Dc=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_up=e f=_[0b10][1][_[0b10][0b11]]f()return end end,Oe=function(d,_)return function()local a,i,b,g,c,e,j,h,l,k h=0x9c while true do if h>=0b10011100 then if h<=0b11010111 then if h>0b10101001 then return elseif h>0x9c then c,a,b="TextButton",g,g.IsA h,b=0xfa,b(a,c)else e,j=_[1][1][_[1][0b11]],"PlayerGui"l,e=e,e.FindFirstChild e=e(l,j)l=not e h=l and 0xd7 or 0x7d end elseif h>0b11101101 then h=b and 0b101010 or 0xed else k,g=l(j,i)i=k h=i==nil and 0b1010111 or 0x2154/h end elseif h<=0b1010111 then if h>=0b101010 then if h<=0b101010 then a,b=g,_[0b10][1][_[0b10][0b11]]h=0b11101101 b(a)else return end else a,c,b=g,"TextLabel",g.IsA b=b(a,c)h=b and h+0xd6 or h+0b10000101 end else l,i,j=ipairs,e,e.GetDescendants j=d.c(j(i))l,j,i=l(d.d(j))l,j,i=d.b(l,j,i)k,g=l(j,i)i=k h=i==nil and 0x2a7b/h or 0x1194/h end end end end,Kb=function(d,_)return function(e)local g,f,a g=0b11100010 repeat if g>0b10001010 then a,f=e,typeof f=f(a)a="Color3"g=f==a and 0b10001010 or 0b1101100 elseif g>0b1101100 then f=_[1][1][_[1][0b11]]f.shift_top=e g,f=0x3a38/g,_[0b10][1][_[0b10][0b11]]f()else return end until false end end,Gd=function(d,_)return function()local e,f,a,b f=task e,f=f.wait,0b10 e(f)e,f=pcall,d:Kd{_[1],_[0b11],_[0b101]}e(f)f=d:Ld{_[1],_[0b101],_[0b11],_[0b110]}e(f)f=d:Md{_[1],_[0b101]}e(f)f=d:Id{_[1],_[0b101],_[0b10],_[0b11]}e(f)f=d:Jd{_[1],_[0b11],_[0b10],_[0b101]}e(f)f=d:Hd{_[1],_[0b11],_[0b101]}e(f)a,e,b={},_[0b100][1][_[0b100][0b11]],"Loading"a.Title=b b="ready..."a.Description=b b=0b11 a.Time=b e,f=e.Notify,e e(f,a)return end end,Gc=function(d,_)return function()local e,f,a f=_[1][1][_[1][0b11]]f,e=_[0b10][1][_[0b10][0b11]],f._orig a=e.Ambient f.Ambient=a a=e.OutdoorAmbient f.OutdoorAmbient=a a=e.ColorShift_Top f.ColorShift_Top=a a=e.ColorShift_Bottom f.ColorShift_Bottom=a a=e.ExposureCompensation f.ExposureCompensation=a a=e.Brightness f.Brightness=a a=e.ShadowSoftness f.ShadowSoftness=a a=e.EnvironmentDiffuseScale f.EnvironmentDiffuseScale=a a=e.EnvironmentSpecularScale f.EnvironmentSpecularScale=a a=e.GlobalShadows f.GlobalShadows=a a=e.ClockTime f.ClockTime=a return end end,Ff=function(d,_)return function(e,l,j)local g,h,k,i,b,a,c h=0b1011 while true do if h>0b1111111 then if h>0b10111111 then if h>0xea then b,a=e.ViewModels,k.Name g=b[a]h=g and 0xbb45/h or h+-0xc9 elseif h<=0xcf then h,g=0x1b9-h,e.ViewModels else h=g and 0xfb or 0b110010 end elseif h<=0xab then if h<0xa0 then h,g=0xfc-h,k.Name elseif h<=0xa0 then g,k,b,i=l,e,j,_[1][1][_[1][0b11]]i=d.c(i(k,g,b))return d.d(i)else h,g=0x7a3d/h,e end elseif h>0xb7 then a=j h=a and 0x13e-h or 0x7e else h=g and 0xcf or h+0b110011 end elseif h<=0b1010000 then if h<=0b110010 then if h>=0x1e then if h>0x1e then g,a,c,b=_[1][1][_[1][0b11]],l,j,e g=d.c(g(b,a,c))return d.d(g)else return b end elseif h<=0b10 then b=g[a]h=b and 0b100000-h or 0x50 else i=not l h=i and 0b10100000 or 0b1111101 end elseif h>0b110101 then h,b=0b11110,g.Image else h,a=0b10,"Image"end elseif h<0b1111110 then if h>0x67 then i,k=l.Name,_[0b10][1][_[0b10][0b11]]g,b=i,"Skin"k=k(g,b)g=k h=g and 0x95 or 0x324b/h else h=g and 0x44cd/h or 0b10110111 end elseif h<=0b1111110 then h=a and 0b10000000-h or 0b110101 else h,a=0x7e,"ImageHighResolution"end end end end,Ob=function(d,_)return function()local e,a,f,b,h h=0x78 repeat if h>0b10001111 then if h>=0b11101001 then if h<=0xe9 then f,h,e=d:df{_[1]},h+-0x5a,pcall e(f)e,f=_[1][1][_[1][0b11]],nil e.lighting_atmosphere=f else f=_[1][1][_[1][0b11]]e=f.lighting_atmosphere h=e and 0xe9 or 0b10001111 end elseif h<=0b10010111 then f=_[1][1][_[1][0b11]]e,f=f.lighting_atmosphere,nil h=e==f and 0x5a or 0x8c else b,h,f=Instance,0b100100011-h,_[1][1][_[1][0b11]]a,b=b.new,"Atmosphere"a=a(b)f.lighting_atmosphere=a a=f f,a=a.lighting_atmosphere,_[0b10][1][_[0b10][0b11]]f.Parent=a end elseif h<=0b1111011 then if h<0b1111000 then if h<=0x5a then a,e="Atmosphere",_[0b10][1][_[0b10][0b11]]f,e=e,e.FindFirstChildOfClass e=e(f,a)h=e and 0x66 or 0b10101000 else b,a,f=e,e.Clone,_[1][1][_[1][0b11]]a=a(b)f.lighting_atmosphere=a a=f a,f=e.Parent,a.lighting_atmosphere f.Parent=a a,f=e,e.Destroy h=0x7b f(a)end elseif h<=0b1111000 then a=_[1][1][_[1][0b11]]f=a.atmosphere_enabled e=not f h=e and 0b11101111 or 0x97 else a=_[0b10][1][_[0b10][0b11]]h,f,b=0b10001100,a.ChildAdded,d:cf{_[1]}a,f=f,f.Connect f(a,b)end elseif h<=0b10001100 then f=_[1][1][_[1][0b11]]e,a=f.lighting_atmosphere,f f=a.density e.Density=f f=a a,e=f,f.lighting_atmosphere f=a.offset e.Offset=f f=a a,e=f,f.lighting_atmosphere f=a.atm_color e.Color=f f=a e,a=f.lighting_atmosphere,f f=a.decay e.Decay=f f=a a,e=f,f.lighting_atmosphere f=a.glare e.Glare=f f=a a,e=f,f.lighting_atmosphere f=a.haze e.Haze=f return else return end until false end end,tb=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_front=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ub=function(d,_)return function(e)local f f=_[1][1][_[1][0b11]]f.skybox_left=e f=_[0b10][1][_[0b10][0b11]]f()return end end,ec=function(d,_)return function(e)local k,m,j,l,i,c,a,b,g m=0x53 repeat if m>=0x9c then if m<=0x9c then return else l,i,k=_[0b10][1][_[0b10][0b11]],{},"sucsess"i.Title=k c,g,b=_[1][1][_[1][0b11]],"spoofed -> ",tostring m,a=0b10011100,c.currency a=a.weapon_keys_value b=b(a)k=g..b i.Description=k k=0b10 i.Time=k l,j=l.Notify,l l(j,i)end else j=_[1][1][_[1][0b11]]l=j.currency l.weapon_keys=e l=_[0b11][1][_[0b11][0b11]]l()m=e and 0b10100010 or 0x9c end until false end end,z=function(d,_)return function(e)local g,a,f g=0x20 repeat if g<=0xa7 then if g>0x96 then g,f=0xa1c8/g,_[1][1][_[1][0b11]]f.equip_name=e elseif g>0x66 then g=f and 0x61da/g or 0b10110100 elseif g<=0b100000 then a="(none)"f=e~=a g=f and 0x66 or 0x96 else a="(waiting for modules)"g,f=0b11111100-g,e~=a end elseif g>0xb4 then return else a,g,f="",g+0x44,_[1][1][_[1][0b11]]f.equip_name=a end until false end end,Oc=function(d,_)return function()local b,c,h,a,e,f h=0x78 repeat if h>0x78 then if h>0x9a then f=_[1][1][_[1][0b11]]f,e=_[0b10][1][_[0b10][0b11]],f.Scheme e.AccentColor=f f=_[1][1][_[1][0b11]]e,a=f.Scheme,Color3 f,a=a.fromRGB,0xeb b=a c=b f=f(a,b,c)e.FontColor=f f=_[1][1][_[1][0b11]]a,e=Color3,f.Scheme f,a=a.fromRGB,0x1c b,c=a,0b100000 f=f(a,b,c)e.MainColor=f f=_[1][1][_[1][0b11]]e,a=f.Scheme,Color3 f,a=a.fromRGB,0b10000 b,c=a,0b10010 f=f(a,b,c)e.BackgroundColor=f f=_[1][1][_[1][0b11]]a,e=Color3,f.Scheme h,a,f=0b100111000-h,0x30,a.fromRGB c,b=0x36,a f=f(a,b,c)e.OutlineColor=f else h,e=0b1001,_[1][1][_[1][0b11]]e,f=e.UpdateColorsUsingRegistry,e e(f)end elseif h<=0x6e then if h<=0b1001 then return else f,e=_[0b10][1][_[0b10][0b11]],_[1][1][_[1][0b11]]e.AccentColor=f f=e e=f.UpdateColorsUsingRegistry h=e and 0x422c/h or 0x77-h end else f,e=false,_[1][1][_[1][0b11]]e.ForceCheckbox=f f=true e.ShowToggleFrameInKeybinds=f f=e e=f.Scheme h=e and 0xca or 0x6e end until false end end,ne=function(d,_)return function()local e,b,l,a,k,j,g,i,h h=0x3f while true do if h>=0x62 then if h<0xa9 then if h>=0x81 then if h<=0b10000001 then return else h,a=0x9c-h,_[0b10][1][_[0b10][0b11]]b=a.fake_owned b[k]=g end else j,h,l=e.equipped,0b10101001,_[0b10][1][_[0b10][0b11]]l.equipped=j end elseif h>0b11000001 then l,j=type,e.equipped l=l(j)j="table"h=l==j and 0b1100010 or 0xa7ae/h elseif h>0xa9 then j,l=e.fake_owned,type l=l(j)j="table"h=l==j and 0xfd5/h or h+0b111101 else l,j=type,e.fake_weapon_owned l=l(j)j="table"h=l==j and 0xd34/h or 0b10000001 end elseif h<0x15 then if h<=0b1101 then k,g=l(j,i)i=k h=i==nil and 0b11111110 or h+0x82 else l,j=_[0b10][1][_[0b10][0b11]],e.fake_weapon_owned h,l.fake_weapon_owned=0x81,j end elseif h>0b111111 then e,j,i=_[1][1][_[1][0b11]],readfile,"project_atomic/rivals_loadout.json"j=d.c(j(i))l,e=e,e.JSONDecode e=e(l,d.d(j))j,l=e,type l=l(j)j="table"h=l==j and h+0b1100010 or h+0x22 elseif h>0x15 then l,e="project_atomic/rivals_loadout.json",isfile e=e(l)h=e and 0b1011111 or 0b10000001 else j,l=e.fake_owned,pairs l,j,i=l(j)l,j,i=d.b(l,j,i)k,g=l(j,i)i=k h=i==nil and 0x14d6/h or h+0x7a end end end end,wf=function(d,_)return function()local b,f,c,e,a c,e,f,b=0b10100,require,_[1][1][_[1][0b11]],"PlayerDataController"a,f=f,f.WaitForChild f=d.c(f(a,b,c))e=d.c(e(d.d(f)))return d.d(e)end end}):Dg(...)
+--[[
+  Vanta | Rivals
+  VVind UI | accent #fe0043 | logo 107041082108511
+]]
+
+-- Wait until the place is fully loaded before anything else
+do
+	local ok = pcall(function()
+		if game.IsLoaded and not game:IsLoaded() then
+			game.Loaded:Wait()
+		end
+	end)
+	if not ok then
+		repeat task.wait() until game:IsLoaded()
+	end
+	-- extra settle so PlayerGui / character systems exist
+	pcall(function()
+		local LP = game:GetService("Players").LocalPlayer
+		if LP then
+			pcall(function()
+				LP:WaitForChild("PlayerGui", 15)
+			end)
+		end
+	end)
+	task.wait(0.25)
+end
+
+-- AC bypass (runs first, then main script after 2s)
+do
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local LocalPlayer = Players.LocalPlayer
+
+	local hookmetamethod = hookmetamethod
+	local getrawmetatable = getrawmetatable
+	local setreadonly = setreadonly
+	local checkcaller = checkcaller
+	local getnamecallmethod = getnamecallmethod
+	local getconnections = getconnections
+
+	local mt = getrawmetatable(game)
+	setreadonly(mt, false)
+
+	local oldNamecall
+	oldNamecall = hookmetamethod(game, "__namecall", function(self, ...)
+	    local method = getnamecallmethod()
+	    -- Kick block
+	    if method == "Kick" then
+	        if self == LocalPlayer then
+	            return
+	        end
+	        return oldNamecall(self, ...)
+	    end
+	    -- only string-scan remotes (skip Index/etc entirely)
+	    if method == "FireServer" or method == "InvokeServer" then
+	        local ok, name = pcall(function()
+	            return string.lower(self.Name)
+	        end)
+	        if ok and name then
+	            if string.find(name, "exploit", 1, true)
+	                or string.find(name, "cheat", 1, true)
+	                or string.find(name, "detect", 1, true)
+	                or string.find(name, "ban", 1, true)
+	                or string.find(name, "flag", 1, true)
+	                or string.find(name, "validate", 1, true)
+	                or string.find(name, "integrity", 1, true)
+	                or string.find(name, "security", 1, true)
+	                or string.find(name, "anticheat", 1, true)
+	                or string.find(name, "ac_", 1, true) then
+	                return
+	            end
+	        end
+	    end
+	    return oldNamecall(self, ...)
+	end)
+
+	setreadonly(mt, true)
+
+	local function nukeConnections()
+	    if not getconnections then return end
+	    pcall(function()
+	        for _, conn in ipairs(getconnections(LocalPlayer.CharacterAdded)) do
+	            if not checkcaller() then
+	                conn:Disable()
+	            end
+	        end
+	    end)
+	    pcall(function()
+	        for _, conn in ipairs(getconnections(LocalPlayer.PlayerGui.ChildAdded)) do
+	            if not checkcaller() then
+	                conn:Disable()
+	            end
+	        end
+	    end)
+	end
+	nukeConnections()
+
+	ReplicatedStorage.DescendantAdded:Connect(function(obj)
+	    if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
+	        local name = obj.Name:lower()
+	        if name:find("exploit") or name:find("cheat") or
+	           name:find("detect") or name:find("ban") or
+	           name:find("flag") or name:find("validate") or
+	           name:find("integrity") or name:find("security") or
+	           name:find("anticheat") or name:find("ac_") then
+	            pcall(function() obj:Destroy() end)
+	        end
+	    end
+	end)
+
+	LocalPlayer.CharacterAdded:Connect(function()
+	    task.wait(0.5)
+	    nukeConnections()
+	end)
+
+	local oldIndex
+	oldIndex = hookmetamethod(game, "__index", function(self, key)
+	    if checkcaller() and key == "Kick" and self == LocalPlayer then
+	        return function() end
+	    end
+	    return oldIndex(self, key)
+	end)
+end
+
+task.wait(2)
+
+-- ==================== MAIN SCRIPT ====================
+local function mapFsPath(path)
+	path = tostring(path or "")
+	if path == "NullUI" or path:sub(1, 7) == "NullUI/" or path:sub(1, 7) == "NullUI\\" then
+		path = "Vanta/UI" .. path:sub(7)
+	end
+	path = path:gsub("[Aa]ssistant", "Chat")
+	return path
+end
+do
+	local function wrap1(fn)
+		if type(fn) ~= "function" then return fn end
+		return function(path, ...) return fn(mapFsPath(path), ...) end
+	end
+	for _, name in ipairs({"isfolder","makefolder","delfolder","isfile","readfile","writefile","appendfile","delfile"}) do
+		local fn = rawget(getfenv(), name) or (getgenv() and getgenv()[name])
+		-- executor globals are global; wrap if present
+	end
+	if type(isfolder) == "function" then local _=isfolder; isfolder=function(p,...) return _(mapFsPath(p),...) end end
+	if type(makefolder) == "function" then local _=makefolder; makefolder=function(p,...) return _(mapFsPath(p),...) end end
+	if type(isfile) == "function" then local _=isfile; isfile=function(p,...) return _(mapFsPath(p),...) end end
+	if type(readfile) == "function" then local _=readfile; readfile=function(p,...) return _(mapFsPath(p),...) end end
+	if type(writefile) == "function" then local _=writefile; writefile=function(p,...) return _(mapFsPath(p),...) end end
+end
+
+local VindUI = loadstring(game:HttpGet(
+	"https://raw.githubusercontent.com/Skinny-yz/VVind-UI/refs/heads/main/src.lua"
+))()
+pcall(function() VindUI:SetScaleRange(0.75, 1.35) end)
+
+local function VantaNotify(opts)
+	opts = opts or {}
+	pcall(function()
+		VindUI:Notify({
+			Title = opts.Title or "Vanta",
+			Text = opts.Description or opts.Text or "",
+			Type = opts.Type or "info",
+			Duration = opts.Time or opts.Duration or 3,
+		})
+	end)
+end
+getgenv().VantaNotify = VantaNotify
+
+local ACCENT = Color3.fromRGB(254, 0, 67)
+local LOGO = "rbxassetid://107041082108511"
+local GAME_TAG = "rivals"
+local LOADOUT_FILE = "Vanta/Rivals/loadout.json"
+local Options = {}
+local Toggles = {}
+getgenv().Options = Options
+getgenv().Toggles = Toggles
+
+-- Icon preload (Universal 1:1)
+do
+	pcall(function() VindUI:PreloadIcons({ "Lucide", "Material", "Phosphor", "SF" }) end)
+	for _, pack in ipairs({ "Lucide", "Material", "Phosphor", "SF" }) do
+		pcall(function() VindUI:GetIcon("house", pack) end)
+	end
+	local t0 = os.clock()
+	while os.clock() - t0 < 12 do
+		local id = ""
+		pcall(function() id = VindUI:GetIcon("sparkles", "Lucide") end)
+		if type(id) == "string" and id:find("rbxassetid") then break end
+		task.wait(0.05)
+	end
+end
+
+local IC = {
+	sparkles = "rbxassetid://130602425201313",
+	house = "rbxassetid://127889862453151",
+	["message-circle"] = "rbxassetid://112973706230253",
+	crosshair = "rbxassetid://114929017287945",
+	eye = "rbxassetid://139722329189430",
+	user = "rbxassetid://81899856845503",
+	box = "rbxassetid://101391159909398",
+	globe = "rbxassetid://111578783307093",
+	bot = "rbxassetid://112973706230253",
+	cloud = "rbxassetid://76797375125469",
+	keyboard = "rbxassetid://78021479821645",
+	sun = "rbxassetid://79901529465096",
+	save = "rbxassetid://126786081818943",
+	settings = "rbxassetid://101463883805422",
+	unlock = "rbxassetid://80165228709790",
+	search = "rbxassetid://139722329189430",
+	check = "rbxassetid://102165397775777",
+	package = "rbxassetid://101391159909398",
+	boxes = "rbxassetid://101391159909398",
+	["trash-2"] = "rbxassetid://85758889687786",
+	plus = "rbxassetid://102165397775777",
+	image = "rbxassetid://139722329189430",
+	smartphone = "rbxassetid://81899856845503",
+	list = "rbxassetid://101391159909398",
+	coins = "rbxassetid://130602425201313",
+	award = "rbxassetid://130602425201313",
+	backpack = "rbxassetid://101391159909398",
+	["refresh-cw"] = "rbxassetid://126786081818943",
+	circle = "rbxassetid://96489726265199",
+}
+
+local function ico(name)
+	name = tostring(name or "")
+	local packed
+	pcall(function() packed = VindUI:GetIcon(name, "Lucide") end)
+	if type(packed) == "string" and packed:find("rbxassetid") then return packed end
+	return IC[name] or IC.box
+end
+
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local HttpService = game:GetService("HttpService")
+local LP = Players.LocalPlayer
+
+local COSMETIC_TYPES = { "Skin", "Wrap", "Charm", "Finisher" }
+local COSMETIC_RARITIES = { "Common", "Rare", "Legendary", "Mythical", "Unique", "Unobtainable" }
+
+local modules = {}
+local function tryRequire(pathFn)
+	local ok, res = pcall(pathFn)
+	return ok and res or nil
+end
+
+local function loadModulesOnce()
+	local mods = ReplicatedStorage:FindFirstChild("Modules") or ReplicatedStorage:WaitForChild("Modules", 30)
+	if mods then
+		if not modules.CosmeticLibrary then
+			modules.CosmeticLibrary = tryRequire(function()
+				return require(mods:WaitForChild("CosmeticLibrary", 15))
+			end)
+		end
+		if not modules.ItemLibrary then
+			modules.ItemLibrary = tryRequire(function()
+				return require(mods:WaitForChild("ItemLibrary", 15))
+			end)
+		end
+		if not modules.ShopLibrary then
+			modules.ShopLibrary = tryRequire(function()
+				return require(mods:WaitForChild("ShopLibrary", 10))
+			end)
+		end
+		if not modules.EnumLibrary then
+			modules.EnumLibrary = tryRequire(function()
+				return require(mods:WaitForChild("EnumLibrary", 5))
+			end)
+		end
+	end
+	local ps = LP:FindFirstChild("PlayerScripts") or LP:WaitForChild("PlayerScripts", 30)
+	local controllers = ps and (ps:FindFirstChild("Controllers") or ps:WaitForChild("Controllers", 15))
+	if controllers and not modules.PlayerDataController then
+		modules.PlayerDataController = tryRequire(function()
+			return require(controllers:WaitForChild("PlayerDataController", 20))
+		end)
+	end
+	return modules.CosmeticLibrary ~= nil
+end
+
+task.spawn(function()
+	for _ = 1, 20 do
+		if loadModulesOnce() then
+			break
+		end
+		task.wait(1)
+	end
+end)
+
+local function waitModules(timeout)
+	local t0 = tick()
+	while tick() - t0 < (timeout or 12) do
+		if modules.CosmeticLibrary and modules.PlayerDataController then
+			return true
+		end
+		task.wait(0.2)
+	end
+	return modules.CosmeticLibrary ~= nil and modules.PlayerDataController ~= nil
+end
+
+local skin = {
+	fake_owned = {},
+	fake_weapon_owned = {},
+	equipped = {},
+	unlock_type = "Skin",
+	unlock_rarity = "Mythical",
+	specific_type = "Skin",
+	specific_name = "",
+	specific_weapon = "",
+	equip_type = "Skin",
+	equip_name = "",
+	equip_weapon = "Assault Rifle",
+	equip_inverted = false,
+	hooks_ready = false,
+	constructing_weapon = nil,
+	viewing_profile = nil,
+	last_used_weapon = nil,
+	placed_object_map = {},
+}
+
+local function deepCopyTable(t)
+	if type(t) ~= "table" then
+		return t
+	end
+	local n = {}
+	for k, v in pairs(t) do
+		n[k] = deepCopyTable(v)
+	end
+	return n
+end
+
+local function initInventoryFromGame()
+	if not modules.PlayerDataController then
+		return
+	end
+	pcall(function()
+		if modules.PlayerDataController.WaitUntilLoaded then
+			modules.PlayerDataController:WaitUntilLoaded()
+		end
+	end)
+	local inv, wep
+	pcall(function()
+		inv = modules.PlayerDataController:Get("CosmeticInventory")
+	end)
+	pcall(function()
+		wep = modules.PlayerDataController:Get("WeaponInventory")
+	end)
+	if type(inv) == "table" then
+		-- merge real inv under fake map (keys that are true-owned)
+		local copy = deepCopyTable(inv)
+		for k, v in pairs(copy) do
+			if skin.fake_owned[k] == nil then
+				skin.fake_owned[k] = v
+			end
+		end
+	end
+	if type(wep) == "table" and (not skin.fake_weapon_owned or #skin.fake_weapon_owned == 0) then
+		skin.fake_weapon_owned = deepCopyTable(wep)
+	end
+end
+
+local function loadLoadoutFile()
+	if not isfile or not readfile then
+		return
+	end
+	pcall(function()
+		if isfile(LOADOUT_FILE) then
+			local data = HttpService:JSONDecode(readfile(LOADOUT_FILE))
+			if type(data) == "table" then
+				if type(data.fake_owned) == "table" then
+					for k, v in pairs(data.fake_owned) do
+						skin.fake_owned[k] = v
+					end
+				end
+				if type(data.equipped) == "table" then
+					skin.equipped = data.equipped
+				end
+				if type(data.fake_weapon_owned) == "table" then
+					skin.fake_weapon_owned = data.fake_weapon_owned
+				end
+			end
+		end
+	end)
+end
+
+local function saveLoadoutFile()
+	if not writefile then
+		VantaNotify({ Title = "Loadout", Description = "writefile unavailable", Time = 3 })
+		return false
+	end
+	local ok = pcall(function()
+		pcall(function()
+			if makefolder and not isfolder("Vanta") then
+				makefolder("Vanta")
+			end
+		end)
+		writefile(LOADOUT_FILE, HttpService:JSONEncode({
+			fake_owned = skin.fake_owned,
+			equipped = skin.equipped,
+			fake_weapon_owned = skin.fake_weapon_owned,
+			saved_at = os.time(),
+		}))
+	end)
+	VantaNotify({
+		Title = "Loadout",
+		Description = ok and ("saved " .. LOADOUT_FILE) or "save failed",
+		Time = 3,
+	})
+	return ok
+end
+
+local function CloneCosmetic(name, cosmetic_type, options)
+	if not modules.CosmeticLibrary or not modules.CosmeticLibrary.Cosmetics then
+		return nil
+	end
+	local base = modules.CosmeticLibrary.Cosmetics[name]
+	if not base then
+		return nil
+	end
+	local data = table.clone(base)
+	data.Name = name
+	data.Type = data.Type or cosmetic_type
+	data.Seed = math.random(1, 1000000)
+	if modules.EnumLibrary then
+		pcall(function()
+			local enum_id = modules.EnumLibrary:ToEnum(name)
+			if enum_id then
+				data.Enum, data.ObjectID = enum_id, enum_id
+			end
+		end)
+	end
+	if options then
+		if options.inverted then
+			data.Inverted = true
+		end
+		if options.favorites_only then
+			data.OnlyUseFavorites = true
+		end
+	end
+	return data
+end
+
+local function ResolveCosmetic(weaponName, cosmeticType)
+	local equipped = skin.equipped[weaponName] and skin.equipped[weaponName][cosmeticType]
+	if not equipped then
+		return nil
+	end
+	if equipped.Name == "None" or equipped.Name == "NONE_COSMETIC" then
+		return nil
+	end
+	return equipped
+end
+
+-- local equip — always OVERWRITES current Skin/Wrap/Charm/Finisher on that weapon
+local function HandleEquip(weapon_name, cosmetic_type, cosmetic_name, options)
+	options = options or {}
+	if type(weapon_name) ~= "string" or weapon_name == "" then
+		return false
+	end
+	if type(cosmetic_type) ~= "string" or cosmetic_type == "" then
+		return false
+	end
+
+	skin.equipped[weapon_name] = skin.equipped[weapon_name] or {}
+
+	-- hard clear previous for this slot so old skin cannot stick
+	skin.equipped[weapon_name][cosmetic_type] = nil
+
+	if not cosmetic_name or cosmetic_name == "" or cosmetic_name == "None" or cosmetic_name == "NONE_COSMETIC" then
+		skin.equipped[weapon_name][cosmetic_type] = { Name = "NONE_COSMETIC", Type = cosmetic_type }
+	else
+		skin.fake_owned[cosmetic_name] = true
+		local cloned = CloneCosmetic(cosmetic_name, cosmetic_type, {
+			inverted = options.IsInverted,
+			favorites_only = options.OnlyUseFavorites,
+		})
+		if cloned then
+			-- force fields the game reads for "currently equipped"
+			cloned.Name = cosmetic_name
+			cloned.Type = cosmetic_type
+			if options.IsInverted then
+				cloned.Inverted = true
+			end
+			skin.equipped[weapon_name][cosmetic_type] = cloned
+		else
+			skin.equipped[weapon_name][cosmetic_type] = {
+				Name = cosmetic_name,
+				Type = cosmetic_type,
+				Inverted = options.IsInverted and true or nil,
+				Seed = math.random(1, 1000000),
+			}
+		end
+	end
+
+	pcall(function()
+		if type(skin.fake_weapon_owned) ~= "table" then
+			skin.fake_weapon_owned = {}
+		end
+		local found = false
+		for _, weapon in pairs(skin.fake_weapon_owned) do
+			if type(weapon) == "table" and weapon.Name == weapon_name then
+				found = true
+				local cos = skin.equipped[weapon_name][cosmetic_type]
+				if cos and (cos.Name == "NONE_COSMETIC" or cos.Name == "None") then
+					weapon[cosmetic_type] = nil
+				else
+					weapon[cosmetic_type] = cos
+				end
+			end
+		end
+		if not found then
+			local entry = { Name = weapon_name, Level = 1, XP = 0, IsFavorited = false }
+			local cos = skin.equipped[weapon_name][cosmetic_type]
+			if cos and cos.Name ~= "NONE_COSMETIC" and cos.Name ~= "None" then
+				entry[cosmetic_type] = cos
+			end
+			table.insert(skin.fake_weapon_owned, entry)
+		end
+	end)
+
+	skin._wep_merged = false
+	task.spawn(function()
+		task.wait(0.1)
+		pcall(function()
+			if modules.PlayerDataController and modules.PlayerDataController.CurrentData then
+				modules.PlayerDataController.CurrentData:Replicate("WeaponInventory")
+			end
+		end)
+		pcall(function()
+			if modules.PlayerDataController and modules.PlayerDataController.GetWeaponData then
+				modules.PlayerDataController:GetWeaponData(weapon_name)
+			end
+		end)
+	end)
+	return true
+end
+
+-- dirty-flag merge so PDC.Get is not O(weapons*cosmetics) every call
+local function ensureWeaponInventoryMerged()
+	if skin._wep_merged then
+		return skin.fake_weapon_owned
+	end
+	if type(skin.fake_weapon_owned) == "table" then
+		for _, weapon in pairs(skin.fake_weapon_owned) do
+			if type(weapon) == "table" and type(weapon.Name) == "string" then
+				local eq = skin.equipped[weapon.Name]
+				if type(eq) == "table" then
+					for cos_type, cos_data in pairs(eq) do
+						if type(cos_data) == "table" then
+							if cos_data.Name == "NONE_COSMETIC" or cos_data.Name == "None" then
+								weapon[cos_type] = nil
+							else
+								weapon[cos_type] = cos_data
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	skin._wep_merged = true
+	return skin.fake_weapon_owned
+end
+
+local function markWeaponInventoryDirty()
+	skin._wep_merged = false
+end
+
+--[[ LPH_NO_VIRTUALIZE ]] --[[ LPH_NO_OBFUSCATE ]]
+local function installHooks()
+	if skin.hooks_ready or not modules.CosmeticLibrary or not modules.PlayerDataController then
+		return false
+	end
+	local CL = modules.CosmeticLibrary
+	local PDC = modules.PlayerDataController
+
+	local function isFake(name)
+		return name and skin.fake_owned[name] ~= nil and skin.fake_owned[name] ~= false
+	end
+
+	if CL.OwnsCosmeticNormally then
+		local old = CL.OwnsCosmeticNormally
+		CL.OwnsCosmeticNormally = function(p1, p2, p3)
+			if isFake(p3) then return true end
+			return old(p1, p2, p3)
+		end
+	end
+	if CL.OwnsCosmeticUniversally then
+		local old = CL.OwnsCosmeticUniversally
+		CL.OwnsCosmeticUniversally = function(p1, p2, p3)
+			if isFake(p3) then return true end
+			return old(p1, p2, p3)
+		end
+	end
+	if CL.OwnsCosmeticForSomething then
+		local old = CL.OwnsCosmeticForSomething
+		CL.OwnsCosmeticForSomething = function(p1, p2, p3)
+			if isFake(p3) then return true end
+			return old(p1, p2, p3)
+		end
+	end
+	if CL.OwnsCosmeticForWeapon then
+		local old = CL.OwnsCosmeticForWeapon
+		CL.OwnsCosmeticForWeapon = function(p1, p2, p3, p4)
+			if isFake(p3) then return true end
+			return old(p1, p2, p3, p4)
+		end
+	end
+	if CL.OwnsCosmetic then
+		local old = CL.OwnsCosmetic
+		CL.OwnsCosmetic = function(self, inventory, name, weapon)
+			if isFake(name) then return true end
+			return old(self, inventory, name, weapon)
+		end
+	end
+
+	if PDC.Get then
+		local oldGet = PDC.Get
+		PDC.Get = function(p1, ...)
+			local key = ({ ... })[1]
+			if key == "CosmeticInventory" then
+				return skin.fake_owned
+			end
+			if key == "WeaponInventory" or key == "FreeWeaponUnlockCheck" then
+				return ensureWeaponInventoryMerged()
+			end
+			if key == "UnclaimedRewards" then
+				local inv = getgenv().AtomicRivalsInventory
+				if inv and inv.fake_owned then
+					return inv.fake_owned
+				end
+			end
+			do
+				local sp = getgenv().AtomicRivalsSpoofer
+				if sp and sp.currency then
+					local cur = sp.currency
+					if key == "WeaponKeys" and cur.weapon_keys then return cur.weapon_keys_value end
+					if key == "UnlockTokens" and cur.unlock_tokens then return cur.unlock_tokens_value end
+					if key == "EventCurrency" and cur.event_currency then return cur.event_currency_value end
+					if key == "Glory" and cur.glory then return cur.glory_value end
+					if key == "SkinTickets" and cur.skin_tickets then return cur.skin_tickets_value end
+				end
+			end
+			return oldGet(p1, ...)
+		end
+	end
+
+	-- patch CurrentData.Get as well (source does this)
+	--[[ LPH_NO_VIRTUALIZE ]]
+	task.spawn(function()
+		local t0 = tick()
+		while tick() - t0 < 20 do
+			local cd = PDC.CurrentData
+			if cd and type(cd.Get) == "function" and not cd._atomicPatched then
+				local old_get = cd.Get
+				cd.Get = function(self, ...)
+					local data = old_get(self, ...)
+					local key = ({ ... })[1]
+					if key == "CosmeticInventory" then
+						return skin.fake_owned
+					end
+					if key == "WeaponInventory" or key == "FreeWeaponUnlockCheck" then
+						return ensureWeaponInventoryMerged()
+					end
+					if key == "UnclaimedRewards" then
+						local inv = getgenv().AtomicRivalsInventory
+						if inv and inv.fake_owned then
+							return inv.fake_owned
+						end
+					end
+					do
+						local sp = getgenv().AtomicRivalsSpoofer
+						if sp then
+							if sp.currency then
+								local cur = sp.currency
+								if key == "WeaponKeys" and cur.weapon_keys then return cur.weapon_keys_value end
+								if key == "UnlockTokens" and cur.unlock_tokens then return cur.unlock_tokens_value end
+								if key == "EventCurrency" and cur.event_currency then return cur.event_currency_value end
+								if key == "Glory" and cur.glory then return cur.glory_value end
+								if key == "SkinTickets" and cur.skin_tickets then return cur.skin_tickets_value end
+							end
+						end
+					end
+					return data
+				end
+				cd._atomicPatched = true
+				break
+			end
+			task.wait(0.2)
+		end
+	end)
+
+	if PDC.GetWeaponData then
+		local oldWD = PDC.GetWeaponData
+		PDC.GetWeaponData = function(p1, ...)
+			local weapon_name = ({ ... })[1]
+			local original_data, index = oldWD(p1, ...)
+			local equipped_map = weapon_name and skin.equipped[weapon_name]
+
+			local function applyEquipped(data)
+				if not data or not equipped_map then
+					return data
+				end
+				for cos_type, cos_data in pairs(equipped_map) do
+					if type(cos_data) == "table" then
+						if cos_data.Name == "NONE_COSMETIC" or cos_data.Name == "None" then
+							data[cos_type] = nil
+						else
+							data[cos_type] = cos_data
+						end
+					end
+				end
+				return data
+			end
+
+			if original_data then
+				return applyEquipped(original_data), index
+			end
+
+			if type(skin.fake_weapon_owned) == "table" then
+				for _, weapon in pairs(skin.fake_weapon_owned) do
+					if type(weapon) == "table" and weapon.Name == weapon_name then
+						local fake_data = {
+							Name = weapon_name,
+							Level = 1,
+							XP = 0,
+							IsFavorited = false,
+							Skin = nil,
+						}
+						return applyEquipped(fake_data), index
+					end
+				end
+			end
+			return original_data, index
+		end
+	end
+
+	-- EquipCosmetic only. FireServer is SHARED across RemoteEvents — must check self
+	-- or every shot / remote in the game gets blocked (ammo stuck, no register).
+	pcall(function()
+		local remote = ReplicatedStorage:FindFirstChild("Remotes")
+			and ReplicatedStorage.Remotes:FindFirstChild("Data")
+			and ReplicatedStorage.Remotes.Data:FindFirstChild("EquipCosmetic")
+		if not remote then
+			return
+		end
+		--[[ LPH_NO_VIRTUALIZE ]] --[[ LPH_NO_OBFUSCATE ]]
+		if type(hookfunction) == "function" then
+			local oldFire
+			oldFire = hookfunction(remote.FireServer, newcclosure(function(self, ...)
+				if self == remote then
+					local a1, a2, a3, a4 = ...
+					HandleEquip(a1, a2, a3, a4 or {})
+					return
+				end
+				return oldFire(self, ...)
+			end))
+		end
+		--[[ LPH_NO_VIRTUALIZE ]] --[[ LPH_NO_OBFUSCATE ]]
+		if hookmetamethod and getnamecallmethod then
+			local old
+			old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+				local method = getnamecallmethod()
+				if method == "FireServer" and (self == remote or (typeof(self) == "Instance" and self.Name == "EquipCosmetic")) then
+					local a1, a2, a3, a4 = ...
+					HandleEquip(a1, a2, a3, a4 or {})
+					return
+				end
+				return old(self, ...)
+			end))
+		end
+	end)
+
+	-- viewmodel image hook so skins show in weapon list
+	if modules.ItemLibrary and modules.ItemLibrary.GetViewModelImageFromWeaponData then
+		local getviewmodelimage_original = modules.ItemLibrary.GetViewModelImageFromWeaponData
+		modules.ItemLibrary.GetViewModelImageFromWeaponData = function(p1, p2, p3)
+			if not p2 then
+				return getviewmodelimage_original(p1, p2, p3)
+			end
+			local weapon_name = p2.Name
+			local resolved = ResolveCosmetic(weapon_name, "Skin")
+			if resolved and resolved.Name and p1 and p1.ViewModels then
+				local skin_info = p1.ViewModels[resolved.Name]
+				if skin_info then
+					return skin_info[p3 and "ImageHighResolution" or "Image"] or skin_info.Image
+				end
+			end
+			return getviewmodelimage_original(p1, p2, p3)
+		end
+	end
+
+	skin.hooks_ready = true
+	return true
+end
+
+local function cosTable()
+	return modules.CosmeticLibrary and modules.CosmeticLibrary.Cosmetics
+end
+
+local function GetCosmeticsByRarity(rarity)
+	local results = {}
+	local t = cosTable()
+	if not t then return results end
+	for name, cosmetic in pairs(t) do
+		if cosmetic.Rarity == rarity then
+			table.insert(results, name)
+		end
+	end
+	return results
+end
+
+local function GetCosmeticsByType(type_name)
+	local results = {}
+	local t = cosTable()
+	if not t then return results end
+	for name, cosmetic in pairs(t) do
+		if cosmetic.Type == type_name then
+			table.insert(results, name)
+		end
+	end
+	return results
+end
+
+local function GetAllCosmetics()
+	local results = {}
+	local t = cosTable()
+	if not t then return results end
+	for name in pairs(t) do
+		table.insert(results, name)
+	end
+	return results
+end
+
+local function GetAllCosmeticsOfWeapon(weapon_name)
+	local results = {}
+	local t = cosTable()
+	if not t then return results end
+	for name, cosmetic in pairs(t) do
+		if cosmetic.Type == "Skin" then
+			if cosmetic.ItemName == weapon_name then
+				table.insert(results, name)
+			end
+		else
+			table.insert(results, name)
+		end
+	end
+	return results
+end
+
+local function GetSpecificCosmetic(type_name, cos_name, weapon_name)
+	local t = cosTable()
+	if not t then return nil end
+	for name, cosmetic in pairs(t) do
+		if type_name == "Skin" then
+			if name == cos_name and cosmetic.Type == type_name and cosmetic.ItemName == weapon_name then
+				return name
+			end
+		else
+			if name == cos_name and cosmetic.Type == type_name then
+				return name
+			end
+		end
+	end
+	return nil
+end
+
+local function UnlockSelectedRarity()
+	-- filter by BOTH selected type + rarity (UI has both dropdowns)
+	local t = cosTable()
+	if not t then
+		return
+	end
+	local want_type = skin.unlock_type
+	local want_rarity = skin.unlock_rarity
+	for name, cosmetic in pairs(t) do
+		if string.find(name, "MISSING_") then
+			continue
+		end
+		if cosmetic.Rarity == want_rarity and cosmetic.Type == want_type then
+			skin.fake_owned[name] = true
+		end
+	end
+end
+
+local function UnlockAllOfType()
+	for _, cosmetic in ipairs(GetCosmeticsByType(skin.unlock_type)) do
+		if not string.find(cosmetic, "MISSING_") then
+			skin.fake_owned[cosmetic] = true
+		end
+	end
+end
+
+local function UnlockSpecific()
+	local cosmetic = GetSpecificCosmetic(skin.specific_type, skin.specific_name, skin.specific_weapon)
+	if cosmetic and not string.find(cosmetic, "MISSING_") then
+		skin.fake_owned[cosmetic] = true
+	end
+end
+
+local function UnlockAllForWeapon()
+	for _, cosmetic in ipairs(GetAllCosmeticsOfWeapon(skin.specific_weapon)) do
+		if not string.find(cosmetic, "MISSING_") then
+			skin.fake_owned[cosmetic] = true
+		end
+	end
+end
+
+local function UnlockAll()
+	for _, cosmetic in ipairs(GetAllCosmetics()) do
+		if not string.find(cosmetic, "MISSING_") then
+			skin.fake_owned[cosmetic] = true
+		end
+	end
+end
+
+local function UnlockAllWeapons()
+	if not modules.ShopLibrary or not modules.ShopLibrary.GetReleasedOwnableWeapons then
+		return
+	end
+	local owned = {}
+	if type(skin.fake_weapon_owned) == "table" then
+		for _, weapon_data in pairs(skin.fake_weapon_owned) do
+			if type(weapon_data) == "table" and weapon_data.Name then
+				owned[weapon_data.Name] = true
+			end
+		end
+	end
+	local ownables = modules.ShopLibrary:GetReleasedOwnableWeapons()
+	for _, weapon_name in pairs(ownables) do
+		if not owned[weapon_name] then
+			skin._wep_merged = false
+			table.insert(skin.fake_weapon_owned, {
+				Name = weapon_name,
+				Level = 1,
+				XP = 0,
+				IsFavorited = false,
+				Skin = nil,
+			})
+		end
+	end
+end
+
+-- Equip from our menu: local HandleEquip (source EquipApply fires remote which is intercepted)
+local function EquipApply()
+	local weapon_name = skin.equip_weapon
+	local unlock_type = skin.equip_type
+	local cosmetic_name = skin.equip_name
+	local options = {}
+	if unlock_type == "Wrap" then
+		options.IsInverted = skin.equip_inverted and true or nil
+	end
+	if type(weapon_name) ~= "string" or weapon_name == "" then
+		VantaNotify({ Title = "Equip", Description = "set a weapon name", Time = 3 })
+		return
+	end
+	if cosmetic_name and cosmetic_name ~= "" then
+		skin.fake_owned[cosmetic_name] = true
+	end
+	local name_to_send = (cosmetic_name ~= nil and cosmetic_name ~= "") and cosmetic_name or nil
+	pcall(function()
+		ReplicatedStorage.Remotes.Data.EquipCosmetic:FireServer(weapon_name, unlock_type, name_to_send, options)
+	end)
+	VantaNotify({
+		Title = "Equip",
+		Description = string.format("%s on %s → %s", tostring(unlock_type), tostring(weapon_name), tostring(cosmetic_name)),
+		Time = 2,
+	})
+end
+
+local function EquipApplyAll()
+	local unlock_type = skin.equip_type
+	local cosmetic_name = skin.equip_name
+	if unlock_type == "Skin" then
+		VantaNotify({ Title = "Equip", Description = "equip-all skips Skin (weapon-specific)", Time = 3 })
+		return
+	end
+	if cosmetic_name and cosmetic_name ~= "" then
+		skin.fake_owned[cosmetic_name] = true
+	end
+	local options = {}
+	if unlock_type == "Wrap" then
+		options.IsInverted = skin.equip_inverted and true or nil
+	end
+	local count = 0
+	if modules.ItemLibrary and modules.ItemLibrary.Items then
+		for weapon_name, weapon_data in pairs(modules.ItemLibrary.Items) do
+			if unlock_type == "Finisher" and weapon_data and not weapon_data.CanEliminate then
+				continue
+			end
+			if type(weapon_name) == "string" and weapon_name ~= "" then
+				HandleEquip(weapon_name, unlock_type, cosmetic_name, options)
+				count += 1
+			end
+		end
+	end
+	VantaNotify({ Title = "Equip", Description = "applied to " .. tostring(count) .. " weapons", Time = 3 })
+end
+
+--[[ LPH_NO_VIRTUALIZE ]]
+local function installViewmodelHooks()
+	-- full in-match / range visual apply (from rivals skinchanger source)
+	task.spawn(function()
+		task.wait(2)
+		pcall(function()
+			local clientItemPath = LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter.ClientItem
+			local ClientItem = require(clientItemPath)
+			if ClientItem._CreateViewModel then
+				local orig = ClientItem._CreateViewModel
+				ClientItem._CreateViewModel = function(self, viewmodelRef)
+					local weaponName = self.Name
+					local weaponPlayer = self.ClientFighter and self.ClientFighter.Player
+					skin.constructing_weapon = (weaponPlayer == LP) and weaponName or nil
+
+					if weaponPlayer == LP and skin.equipped[weaponName] and ResolveCosmetic(weaponName, "Skin") and viewmodelRef then
+						pcall(function()
+							local dataKey, skinKey, nameKey = self:ToEnum("Data"), self:ToEnum("Skin"), self:ToEnum("Name")
+							if viewmodelRef[dataKey] then
+								viewmodelRef[dataKey][skinKey] = ResolveCosmetic(weaponName, "Skin")
+								viewmodelRef[dataKey][nameKey] = ResolveCosmetic(weaponName, "Skin").Name
+							elseif viewmodelRef.Data then
+								viewmodelRef.Data.Skin = ResolveCosmetic(weaponName, "Skin")
+								viewmodelRef.Data.Name = ResolveCosmetic(weaponName, "Skin").Name
+							end
+						end)
+					end
+
+					local result = orig(self, viewmodelRef)
+					skin.constructing_weapon = nil
+					return result
+				end
+			end
+		end)
+
+		pcall(function()
+			local viewModelModule = LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter.ClientItem:FindFirstChild("ClientViewModel")
+			if not viewModelModule then
+				return
+			end
+			local ClientViewModel = require(viewModelModule)
+			if ClientViewModel.GetWrap then
+				local orig = ClientViewModel.GetWrap
+				ClientViewModel.GetWrap = function(self)
+					local weaponName = self.ClientItem and self.ClientItem.Name
+					local weaponPlayer = self.ClientItem and self.ClientItem.ClientFighter and self.ClientItem.ClientFighter.Player
+					if weaponName and weaponPlayer == LP and skin.equipped[weaponName] and ResolveCosmetic(weaponName, "Wrap") then
+						return ResolveCosmetic(weaponName, "Wrap")
+					end
+					return orig(self)
+				end
+			end
+			if ClientViewModel.new then
+				local origNew = ClientViewModel.new
+				ClientViewModel.new = function(replicatedData, clientItem)
+					local weaponPlayer = clientItem.ClientFighter and clientItem.ClientFighter.Player
+					local weaponName = skin.constructing_weapon or clientItem.Name
+
+					if weaponPlayer == LP and skin.equipped[weaponName] then
+						pcall(function()
+							if not skin._rc then
+								local ReplicatedClass = require(ReplicatedStorage.Modules.ReplicatedClass)
+								skin._rc = {
+									cls = ReplicatedClass,
+									Data = ReplicatedClass:ToEnum("Data"),
+									Skin = ReplicatedClass:ToEnum("Skin"),
+									Wrap = ReplicatedClass:ToEnum("Wrap"),
+									Charm = ReplicatedClass:ToEnum("Charm"),
+									ObjectID = ReplicatedClass:ToEnum("ObjectID"),
+								}
+							end
+							local rc = skin._rc
+							local dataKey = rc.Data
+							replicatedData[dataKey] = replicatedData[dataKey] or {}
+							local sk = ResolveCosmetic(weaponName, "Skin")
+							if sk then replicatedData[dataKey][rc.Skin] = sk end
+							local wp = ResolveCosmetic(weaponName, "Wrap")
+							if wp then replicatedData[dataKey][rc.Wrap] = wp end
+							local ch = ResolveCosmetic(weaponName, "Charm")
+							if ch then replicatedData[dataKey][rc.Charm] = ch end
+						end)
+					end
+
+					local result = origNew(replicatedData, clientItem)
+
+					pcall(function()
+						local objectID = nil
+						pcall(function()
+							local ReplicatedClass = require(ReplicatedStorage.Modules.ReplicatedClass)
+							local dataKey = ReplicatedClass:ToEnum("Data")
+							local objKey = ReplicatedClass:ToEnum("ObjectID")
+							if replicatedData[dataKey] then
+								objectID = replicatedData[dataKey][objKey]
+							end
+						end)
+						if objectID == nil then
+							pcall(function()
+								objectID = result:Get("ObjectID") or result.ObjectID
+							end)
+						end
+						if objectID and weaponPlayer == LP and skin.equipped[weaponName] then
+							skin.placed_object_map = skin.placed_object_map or {}
+							skin.placed_object_map[objectID] = weaponName
+						end
+					end)
+
+					if weaponPlayer == LP and skin.equipped[weaponName] and ResolveCosmetic(weaponName, "Wrap") and result._UpdateWrap then
+						task.spawn(function()
+							result:_UpdateWrap()
+							task.wait(0.1)
+							if not result._destroyed then
+								result:_UpdateWrap()
+							end
+						end)
+					end
+					return result
+				end
+			end
+		end)
+
+		pcall(function()
+			local ViewProfile = require(LP.PlayerScripts.Modules.Pages.ViewProfile)
+			if ViewProfile and ViewProfile.Fetch then
+				local orig = ViewProfile.Fetch
+				ViewProfile.Fetch = function(self, targetPlayer)
+					skin.viewing_profile = targetPlayer
+					return orig(self, targetPlayer)
+				end
+			end
+		end)
+
+		pcall(function()
+			local ClientEntity = require(LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientEntity)
+			if not ClientEntity or not ClientEntity.ReplicateFromServer then
+				return
+			end
+			local orig = ClientEntity.ReplicateFromServer
+
+			local function DecodeKillerArg(value)
+				if value == nil then return nil end
+				if typeof(value) == "Instance" then
+					if value:IsA("Player") then return value.Name end
+					return nil
+				end
+				if type(value) == "number" then
+					return value == LP.UserId and LP.Name or nil
+				end
+				if type(value) == "string" then return value end
+				if type(value) == "userdata" and modules.EnumLibrary and modules.EnumLibrary.FromEnum then
+					local ok, decoded = pcall(function()
+						return modules.EnumLibrary:FromEnum(value)
+					end)
+					if ok and decoded ~= nil then return tostring(decoded) end
+					return tostring(value)
+				end
+				return tostring(value)
+			end
+
+			local function IsLocalPlayerKiller(args)
+				local decoded = DecodeKillerArg(args[3])
+				return decoded and decoded:lower() == LP.Name:lower()
+			end
+
+			local function ResolveFinisherWeapon()
+				local primary = skin.last_used_weapon
+				if primary and skin.equipped[primary] and ResolveCosmetic(primary, "Finisher") then
+					return primary
+				end
+				for weaponName in pairs(skin.equipped) do
+					if ResolveCosmetic(weaponName, "Finisher") then
+						return weaponName
+					end
+				end
+				return nil
+			end
+
+			local function ResolveFinisherEnum(finisherData)
+				if not finisherData then return nil end
+				if finisherData.Enum ~= nil then return finisherData.Enum end
+				if modules.EnumLibrary and modules.EnumLibrary.ToEnum then
+					local ok, result = pcall(function()
+						return modules.EnumLibrary:ToEnum(finisherData.Name)
+					end)
+					if ok and result ~= nil then
+						finisherData.Enum = result
+						return result
+					end
+				end
+				if finisherData.ObjectID ~= nil then
+					finisherData.Enum = finisherData.ObjectID
+					return finisherData.ObjectID
+				end
+				return nil
+			end
+
+			ClientEntity.ReplicateFromServer = function(self, action, ...)
+				if action ~= "FinisherEffect" then
+					return orig(self, action, ...)
+				end
+				local args = { ... }
+				if not IsLocalPlayerKiller(args) then
+					return orig(self, action, ...)
+				end
+				local weaponName = ResolveFinisherWeapon()
+				if not weaponName then
+					return orig(self, action, ...)
+				end
+				local finisherData = ResolveCosmetic(weaponName, "Finisher")
+				local finisherEnum = ResolveFinisherEnum(finisherData)
+				if finisherEnum == nil then
+					return orig(self, action, ...)
+				end
+				if self.IsRendered and not self:IsRendered() then
+					return
+				end
+				local ok, decoded = pcall(function()
+					return self:FromEnum(finisherEnum)
+				end)
+				if not ok or decoded == nil then
+					decoded = finisherData and finisherData.Name
+				end
+				if decoded == nil then
+					return orig(self, action, ...)
+				end
+				pcall(function()
+					self:_PlayFinisher(decoded, args[2], args[3], args[4])
+				end)
+			end
+		end)
+
+		pcall(function()
+			-- FighterController GetWrap
+			local fcMod = LP.PlayerScripts.Controllers:FindFirstChild("FighterController")
+			if fcMod then
+				pcall(function()
+					modules.FighterController = modules.FighterController or require(fcMod)
+				end)
+			end
+			if modules.FighterController and modules.FighterController.GetWrap then
+				local orig_GetWrap = modules.FighterController.GetWrap
+				modules.FighterController.GetWrap = function(self, objectID)
+					local result = orig_GetWrap(self, objectID)
+					if result then return result end
+					if objectID and skin.placed_object_map then
+						local weaponName = skin.placed_object_map[objectID]
+						if weaponName and skin.equipped[weaponName] then
+							local wrap = ResolveCosmetic(weaponName, "Wrap")
+							if wrap then return wrap end
+						end
+					end
+					return nil
+				end
+			end
+		end)
+
+		pcall(function()
+			local JumpPads = require(LP.PlayerScripts.Modules.GameComponents.JumpPads)
+			if not JumpPads or not JumpPads.CreateJumpPadVisual then
+				return
+			end
+			local orig_CreateVisual = JumpPads.CreateJumpPadVisual
+			JumpPads.CreateJumpPadVisual = function(self, name, size)
+				if skin.equipped["Jump Pad"] then
+					pcall(function()
+						local s = ResolveCosmetic("Jump Pad", "Skin")
+						if s and s.Name then
+							name = s.Name
+						end
+					end)
+				end
+				return orig_CreateVisual(self, name, size)
+			end
+		end)
+
+		VantaNotify({ Title = "Loading", Description = "ready...", Time = 3 })
+	end)
+end
+
+
+task.spawn(function()
+	if not waitModules(15) then
+		VantaNotify({
+			Title = "Cosmetics",
+			Description = "modules not found — fully load rivals then re-exec",
+			Time = 5,
+		})
+		return
+	end
+	initInventoryFromGame()
+	loadLoadoutFile()
+	if installHooks() then
+		VantaNotify({ Title = "Loading", Description = "ready...", Time = 3 })
+		installViewmodelHooks()
+	end
+end)
+
+
+local _weaponListCache, _weaponListAt = nil, 0
+local function getWeaponList()
+	if _weaponListCache and (tick() - _weaponListAt) < 5 then
+		return _weaponListCache
+	end
+	local names = {}
+	local seen = {}
+	if modules.ItemLibrary and modules.ItemLibrary.Items then
+		for name in pairs(modules.ItemLibrary.Items) do
+			if type(name) == "string" and name ~= "" and not seen[name] then
+				seen[name] = true
+				table.insert(names, name)
+			end
+		end
+	end
+	local ct = cosTable()
+	if ct then
+		for _, cos in pairs(ct) do
+			if type(cos) == "table" and type(cos.ItemName) == "string" and cos.ItemName ~= "" and not seen[cos.ItemName] then
+				seen[cos.ItemName] = true
+				table.insert(names, cos.ItemName)
+			end
+		end
+	end
+	table.sort(names)
+	if #names == 0 then
+		return { "(waiting for modules)" }
+	end
+	_weaponListCache, _weaponListAt = names, tick()
+	return names
+end
+
+local function getCosmeticNames(cos_type, weapon_name)
+	local names = {}
+	local ct = cosTable()
+	if not ct then
+		return { "(waiting for modules)" }
+	end
+	for name, cos in pairs(ct) do
+		if type(name) ~= "string" or string.find(name, "MISSING_") then
+			continue
+		end
+		if type(cos) ~= "table" or cos.Type ~= cos_type then
+			continue
+		end
+		if cos_type == "Skin" then
+			if weapon_name and weapon_name ~= "" and weapon_name ~= "(waiting for modules)" then
+				if cos.ItemName ~= weapon_name then
+					continue
+				end
+			end
+		end
+		table.insert(names, name)
+	end
+	table.sort(names)
+	if #names == 0 then
+		return { "(none)" }
+	end
+	return names
+end
+
+local function setDropdownValues(flag, values, preferred)
+	local dd = Options and Options[flag]
+	if not dd or type(values) ~= "table" or #values == 0 then
+		return preferred
+	end
+	dd.Values = values
+	dd.Options = values
+	local pick = preferred
+	local found = false
+	if pick then
+		for _, v in ipairs(values) do
+			if v == pick then found = true break end
+		end
+	end
+	if not found then pick = values[1] end
+	dd.Value = pick
+	pcall(function()
+		local widget = dd._dd
+		if not widget then return end
+		if widget.SetOptions then widget:SetOptions(values)
+		elseif widget.SetValues then widget:SetValues(values) end
+		if widget.SetValueSilent then widget:SetValueSilent(pick)
+		elseif widget.SetValue then
+			local oldCb = widget.Callback
+			widget.Callback = nil
+			pcall(function() widget:SetValue(pick) end)
+			widget.Callback = oldCb
+		end
+	end)
+	return pick
+end
+
+local function refreshSpecDropdowns()
+	local weapons = getWeaponList()
+	local w = setDropdownValues("SpecWeapon", weapons, skin.specific_weapon)
+	if w and w ~= "(waiting for modules)" then
+		skin.specific_weapon = w
+	end
+	local cos = getCosmeticNames(skin.specific_type, skin.specific_weapon)
+	local c = setDropdownValues("SpecName", cos, skin.specific_name)
+	if c and c ~= "(none)" and c ~= "(waiting for modules)" then
+		skin.specific_name = c
+	else
+		skin.specific_name = ""
+	end
+end
+
+local function refreshEquipDropdowns()
+	local weapons = getWeaponList()
+	local w = setDropdownValues("EquipWeapon", weapons, skin.equip_weapon)
+	if w and w ~= "(waiting for modules)" then
+		skin.equip_weapon = w
+	end
+	local cos = getCosmeticNames(skin.equip_type, skin.equip_weapon)
+	local c = setDropdownValues("EquipName", cos, skin.equip_name)
+	if c and c ~= "(none)" and c ~= "(waiting for modules)" then
+		skin.equip_name = c
+	else
+		skin.equip_name = ""
+	end
+end
+
+
+
+-- ==================== WORLD (Aetherea visuals) ====================
+local Lighting = game:GetService("Lighting")
+
+local function safeRequire(inst)
+	if not inst then return nil end
+	local ok, mod = pcall(require, inst)
+	if ok then return mod end
+	return nil
+end
+
+task.spawn(function()
+	pcall(function()
+		local ps = LP:WaitForChild("PlayerScripts", 20)
+		local controllers = ps and ps:WaitForChild("Controllers", 20)
+		if controllers then
+			local cam = controllers:FindFirstChild("CameraController")
+			if cam and not modules.CameraController then
+				modules.CameraController = safeRequire(cam)
+			end
+		end
+	end)
+	pcall(function()
+		local path = LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter:FindFirstChild("Flashbang")
+		if path and not modules.Flashbang then
+			modules.Flashbang = safeRequire(path)
+		end
+	end)
+	pcall(function()
+		local path = LP.PlayerScripts.Modules:FindFirstChild("SmokeClouds")
+		if path and not modules.SmokeClouds then
+			modules.SmokeClouds = safeRequire(path)
+		end
+	end)
+end)
+
+local SKYBOX_LIST = {
+	"None", "Aurora", "Battlerock", "Beach Bowl", "Buoy Base", "Clockwork",
+	"Dark Matter", "Flash Black", "Ghostly", "Good Egg", "Melty Molten",
+	"Shiverburn", "Spin Dig", "Sweet Mystery", "Terrace Dome",
+}
+
+local kSkyboxMap = {
+	["None"] = {
+		skybox_back = "rbxassetid://14147881792", skybox_down = "rbxassetid://14147882149",
+		skybox_front = "rbxassetid://14147882761", skybox_left = "rbxassetid://14147883091",
+		skybox_right = "rbxassetid://14147882405", skybox_up = "rbxassetid://14147881297",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Aurora"] = {
+		skybox_back = "rbxassetid://116533337330584", skybox_down = "rbxassetid://80054106187171",
+		skybox_front = "rbxassetid://94459139270943", skybox_left = "rbxassetid://116368999680791",
+		skybox_right = "rbxassetid://125758104196312", skybox_up = "rbxassetid://107060226443967",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Battlerock"] = {
+		skybox_back = "rbxassetid://131136284306917", skybox_down = "rbxassetid://89505977207531",
+		skybox_front = "rbxassetid://140099243548102", skybox_left = "rbxassetid://121676169821100",
+		skybox_right = "rbxassetid://97183886241447", skybox_up = "rbxassetid://107128620201556",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Beach Bowl"] = {
+		skybox_back = "rbxassetid://81804134601271", skybox_down = "rbxassetid://92395364196932",
+		skybox_front = "rbxassetid://81804134601271", skybox_left = "rbxassetid://81804134601271",
+		skybox_right = "rbxassetid://81804134601271", skybox_up = "rbxassetid://119089964803065",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Buoy Base"] = {
+		skybox_back = "rbxassetid://135017685421888", skybox_down = "rbxassetid://76610044495625",
+		skybox_front = "rbxassetid://89675413438577", skybox_left = "rbxassetid://138307087837279",
+		skybox_right = "rbxassetid://136723547010707", skybox_up = "rbxassetid://83404878914838",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Clockwork"] = {
+		skybox_back = "rbxassetid://86284761193226", skybox_down = "rbxassetid://111425663631622",
+		skybox_front = "rbxassetid://115606366886873", skybox_left = "rbxassetid://127287488325060",
+		skybox_right = "rbxassetid://126844150113423", skybox_up = "rbxassetid://74510789204352",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Dark Matter"] = {
+		skybox_back = "rbxassetid://97629693450922", skybox_down = "rbxassetid://97898396690232",
+		skybox_front = "rbxassetid://134755033418084", skybox_left = "rbxassetid://118219143707956",
+		skybox_right = "rbxassetid://114940065588775", skybox_up = "rbxassetid://95430908943263",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Flash Black"] = {
+		skybox_back = "rbxassetid://78426835654353", skybox_down = "rbxassetid://6213218651",
+		skybox_front = "rbxassetid://71970982976722", skybox_left = "rbxassetid://78426835654353",
+		skybox_right = "rbxassetid://78426835654353", skybox_up = "rbxassetid://138004866371717",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Ghostly"] = {
+		skybox_back = "rbxassetid://111506743048183", skybox_down = "rbxassetid://86198196348228",
+		skybox_front = "rbxassetid://86265514167302", skybox_left = "rbxassetid://100257959405445",
+		skybox_right = "rbxassetid://71935101953120", skybox_up = "rbxassetid://132011089223498",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Good Egg"] = {
+		skybox_back = "rbxassetid://94681381933012", skybox_down = "rbxassetid://75843838469806",
+		skybox_front = "rbxassetid://97891957473259", skybox_left = "rbxassetid://102971518965494",
+		skybox_right = "rbxassetid://94588890960775", skybox_up = "rbxassetid://127368871569815",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Melty Molten"] = {
+		skybox_back = "rbxassetid://131463907527649", skybox_down = "rbxassetid://116154164311420",
+		skybox_front = "rbxassetid://113077689016278", skybox_left = "rbxassetid://79984367513909",
+		skybox_right = "rbxassetid://82395195737484", skybox_up = "rbxassetid://117530106700350",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Shiverburn"] = {
+		skybox_back = "rbxassetid://113636030839991", skybox_down = "rbxassetid://118027268179499",
+		skybox_front = "rbxassetid://76405010847029", skybox_left = "rbxassetid://112044353352688",
+		skybox_right = "rbxassetid://121078604572355", skybox_up = "rbxassetid://132486295432727",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Spin Dig"] = {
+		skybox_back = "rbxassetid://124211111366754", skybox_down = "rbxassetid://120491795220431",
+		skybox_front = "rbxassetid://130119279111055", skybox_left = "rbxassetid://70742671331562",
+		skybox_right = "rbxassetid://76516826791940", skybox_up = "rbxassetid://100229310567751",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Sweet Mystery"] = {
+		skybox_back = "rbxassetid://107264897520277", skybox_down = "rbxassetid://135637946277638",
+		skybox_front = "rbxassetid://135705252786048", skybox_left = "rbxassetid://119667604517747",
+		skybox_right = "rbxassetid://75904303027092", skybox_up = "rbxassetid://97011146822716",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+	["Terrace Dome"] = {
+		skybox_back = "rbxassetid://98684100016510", skybox_down = "rbxassetid://108354040356521",
+		skybox_front = "rbxassetid://95723629635852", skybox_left = "rbxassetid://106269064939837",
+		skybox_right = "rbxassetid://136234415079744", skybox_up = "rbxassetid://75385962780878",
+		sun_texture = "rbxasset://sky/sun.jpg", moon_texture = "rbxasset://sky/moon.jpg",
+	},
+}
+
+local LIGHTING_STYLE_MAP = {
+	Realistic = Enum.LightingStyle.Realistic,
+	Soft = Enum.LightingStyle.Soft,
+}
+
+local world = {
+	lighting_enabled = false,
+	ambient_color = Lighting.Ambient,
+	outdoor_ambient_color = Lighting.OutdoorAmbient,
+	shift_top = Lighting.ColorShift_Top,
+	shift_bottom = Lighting.ColorShift_Bottom,
+	exposure = Lighting.ExposureCompensation,
+	brightness = Lighting.Brightness,
+	shadow_softness = Lighting.ShadowSoftness,
+	diffuse_scale = Lighting.EnvironmentDiffuseScale,
+	specular_scale = Lighting.EnvironmentSpecularScale,
+	global_shadows = Lighting.GlobalShadows,
+	lighting_style = "Realistic",
+	atmosphere_enabled = false,
+	density = 0.255,
+	offset = 0.2,
+	atm_color = Color3.fromRGB(140, 196, 231),
+	decay = Color3.fromRGB(92, 60, 13),
+	glare = 0,
+	haze = 1.82,
+	lighting_atmosphere = nil,
+	cc_enabled = false,
+	cc_brightness = 0,
+	cc_contrast = 0,
+	cc_saturation = 0,
+	cc_tint = Color3.fromRGB(255, 255, 255),
+	lighting_cc = nil,
+	sunrays_enabled = false,
+	sunrays_intensity = 0.25,
+	sunrays_spread = 1,
+	lighting_sunrays = nil,
+	skybox_enabled = false,
+	skybox_value = "None",
+	skybox_back = "",
+	skybox_down = "",
+	skybox_front = "",
+	skybox_left = "",
+	skybox_right = "",
+	skybox_up = "",
+	sun_texture = "",
+	moon_texture = "",
+	star_count = 3000,
+	sun_angular_size = 21,
+	moon_angular_size = 11,
+	clocktime = Lighting.ClockTime,
+	auto_rotate = false,
+	auto_rotate_speed = 1,
+	auto_rotate_conn = nil,
+	lighting_skybox = nil,
+	camera_fov = 70,
+	camera_resolution = 1,
+	anti_flashbang = false,
+	anti_smoke = false,
+	_debounce = false,
+	_orig = {
+		Ambient = Lighting.Ambient,
+		OutdoorAmbient = Lighting.OutdoorAmbient,
+		ColorShift_Top = Lighting.ColorShift_Top,
+		ColorShift_Bottom = Lighting.ColorShift_Bottom,
+		ExposureCompensation = Lighting.ExposureCompensation,
+		Brightness = Lighting.Brightness,
+		ShadowSoftness = Lighting.ShadowSoftness,
+		EnvironmentDiffuseScale = Lighting.EnvironmentDiffuseScale,
+		EnvironmentSpecularScale = Lighting.EnvironmentSpecularScale,
+		GlobalShadows = Lighting.GlobalShadows,
+		ClockTime = Lighting.ClockTime,
+	},
+}
+
+local function SanitizeTextureId(id)
+	if type(id) ~= "string" or id == "" then return "" end
+	if string.sub(id, 1, 8) == "rbxasset" then return id end
+	if string.match(id, "^%d+$") then return "rbxassetid://" .. id end
+	return id
+end
+
+local function UpdateLightingOptions()
+	if not world.lighting_enabled then return end
+	world._debounce = true
+	Lighting.Ambient = world.ambient_color
+	Lighting.OutdoorAmbient = world.outdoor_ambient_color
+	Lighting.ColorShift_Top = world.shift_top
+	Lighting.ColorShift_Bottom = world.shift_bottom
+	Lighting.ExposureCompensation = world.exposure
+	Lighting.Brightness = world.brightness
+	Lighting.ShadowSoftness = world.shadow_softness
+	Lighting.EnvironmentDiffuseScale = world.diffuse_scale
+	Lighting.EnvironmentSpecularScale = world.specular_scale
+	Lighting.GlobalShadows = world.global_shadows
+	pcall(function()
+		Lighting.LightingStyle = LIGHTING_STYLE_MAP[world.lighting_style] or Enum.LightingStyle.Realistic
+	end)
+	world._debounce = false
+end
+
+local function RestoreLighting()
+	local o = world._orig
+	Lighting.Ambient = o.Ambient
+	Lighting.OutdoorAmbient = o.OutdoorAmbient
+	Lighting.ColorShift_Top = o.ColorShift_Top
+	Lighting.ColorShift_Bottom = o.ColorShift_Bottom
+	Lighting.ExposureCompensation = o.ExposureCompensation
+	Lighting.Brightness = o.Brightness
+	Lighting.ShadowSoftness = o.ShadowSoftness
+	Lighting.EnvironmentDiffuseScale = o.EnvironmentDiffuseScale
+	Lighting.EnvironmentSpecularScale = o.EnvironmentSpecularScale
+	Lighting.GlobalShadows = o.GlobalShadows
+	Lighting.ClockTime = o.ClockTime
+end
+
+pcall(function()
+	for _, property_name in ipairs({
+		"Ambient", "OutdoorAmbient", "ColorShift_Top", "ColorShift_Bottom",
+		"ExposureCompensation", "Brightness", "ShadowSoftness",
+		"EnvironmentDiffuseScale", "EnvironmentSpecularScale", "GlobalShadows", "LightingStyle",
+	}) do
+		Lighting:GetPropertyChangedSignal(property_name):Connect(function()
+			if world._debounce or not world.lighting_enabled then return end
+			UpdateLightingOptions()
+		end)
+	end
+end)
+
+local function UpdateAtmosphereOptions()
+	if not world.atmosphere_enabled then
+		if world.lighting_atmosphere then
+			pcall(function() world.lighting_atmosphere:Destroy() end)
+			world.lighting_atmosphere = nil
+		end
+		return
+	end
+	if world.lighting_atmosphere == nil then
+		local original = Lighting:FindFirstChildOfClass("Atmosphere")
+		if original then
+			world.lighting_atmosphere = original:Clone()
+			world.lighting_atmosphere.Parent = original.Parent
+			original:Destroy()
+		else
+			world.lighting_atmosphere = Instance.new("Atmosphere")
+			world.lighting_atmosphere.Parent = Lighting
+		end
+		Lighting.ChildAdded:Connect(function(child)
+			if child:IsA("Atmosphere") and child ~= world.lighting_atmosphere then
+				task.defer(function() child:Destroy() end)
+			end
+		end)
+	end
+	world.lighting_atmosphere.Density = world.density
+	world.lighting_atmosphere.Offset = world.offset
+	world.lighting_atmosphere.Color = world.atm_color
+	world.lighting_atmosphere.Decay = world.decay
+	world.lighting_atmosphere.Glare = world.glare
+	world.lighting_atmosphere.Haze = world.haze
+end
+
+local function UpdateColorCorrectionOptions()
+	if world.lighting_cc == nil then
+		world.lighting_cc = Instance.new("ColorCorrectionEffect")
+		world.lighting_cc.Parent = Lighting
+	end
+	world.lighting_cc.Enabled = world.cc_enabled
+	world.lighting_cc.Brightness = world.cc_brightness
+	world.lighting_cc.Contrast = world.cc_contrast
+	world.lighting_cc.Saturation = world.cc_saturation
+	world.lighting_cc.TintColor = world.cc_tint
+end
+
+local function UpdateSunRaysOptions()
+	if world.lighting_sunrays == nil then
+		local original = Lighting:FindFirstChildOfClass("SunRaysEffect")
+		if original then
+			world.lighting_sunrays = original:Clone()
+			world.lighting_sunrays.Parent = original.Parent
+			original:Destroy()
+		else
+			world.lighting_sunrays = Instance.new("SunRaysEffect")
+			world.lighting_sunrays.Parent = Lighting
+		end
+		Lighting.ChildAdded:Connect(function(child)
+			if child:IsA("SunRaysEffect") and child ~= world.lighting_sunrays then
+				task.defer(function() child:Destroy() end)
+			end
+		end)
+	end
+	world.lighting_sunrays.Enabled = world.sunrays_enabled
+	world.lighting_sunrays.Intensity = world.sunrays_intensity
+	world.lighting_sunrays.Spread = world.sunrays_spread
+end
+
+local function UpdateSkybox()
+	if not world.skybox_enabled then return end
+	if world.lighting_skybox == nil then
+		local original = Lighting:FindFirstChildOfClass("Sky")
+		if original then
+			world.lighting_skybox = original:Clone()
+			world.lighting_skybox.Parent = original.Parent
+			original:Destroy()
+		else
+			world.lighting_skybox = Instance.new("Sky")
+			world.lighting_skybox.Parent = Lighting
+		end
+		Lighting.ChildAdded:Connect(function(child)
+			if child:IsA("Sky") and child ~= world.lighting_skybox then
+				task.defer(function() child:Destroy() end)
+			end
+		end)
+	end
+	local preset = kSkyboxMap[world.skybox_value] or kSkyboxMap["None"]
+	local function face(custom, preset_val)
+		local id = SanitizeTextureId(custom)
+		if id ~= "" then return id end
+		return SanitizeTextureId(preset_val or "")
+	end
+	world.lighting_skybox.SkyboxBk = face(world.skybox_back, preset.skybox_back)
+	world.lighting_skybox.SkyboxDn = face(world.skybox_down, preset.skybox_down)
+	world.lighting_skybox.SkyboxFt = face(world.skybox_front, preset.skybox_front)
+	world.lighting_skybox.SkyboxLf = face(world.skybox_left, preset.skybox_left)
+	world.lighting_skybox.SkyboxRt = face(world.skybox_right, preset.skybox_right)
+	world.lighting_skybox.SkyboxUp = face(world.skybox_up, preset.skybox_up)
+	world.lighting_skybox.SunTextureId = face(world.sun_texture, preset.sun_texture)
+	world.lighting_skybox.MoonTextureId = face(world.moon_texture, preset.moon_texture)
+	world.lighting_skybox.StarCount = world.star_count
+	world.lighting_skybox.SunAngularSize = world.sun_angular_size
+	world.lighting_skybox.MoonAngularSize = world.moon_angular_size
+end
+
+local function SetSkyboxAutoRotate()
+	if world.auto_rotate_conn then
+		pcall(function() world.auto_rotate_conn:Disconnect() end)
+		world.auto_rotate_conn = nil
+	end
+	if not world.skybox_enabled or not world.auto_rotate then return end
+	if world.lighting_skybox == nil then UpdateSkybox() end
+	world.auto_rotate_conn = RunService.Heartbeat:Connect(function(dt)
+		if not world.lighting_skybox then return end
+		local orient = world.lighting_skybox.SkyboxOrientation
+		world.lighting_skybox.SkyboxOrientation = Vector3.new(0, orient.Y + dt * world.auto_rotate_speed * 10, 0)
+	end)
+end
+
+-- Camera loop: resolution stretch MUST be every frame when active.
+-- FOV is applied only on slider change (callback) so we do not fight ADS/game FOV every frame.
+do
+	local last_res = 1
+	local res_cf = CFrame.new()
+	local res_active = false
+	RunService.RenderStepped:Connect(function()
+		local res = world.camera_resolution
+		if type(res) ~= "number" or res == 1 then
+			res_active = false
+			return
+		end
+		local cam = workspace.CurrentCamera
+		if not cam then return end
+		if res ~= last_res then
+			last_res = res
+			res_cf = CFrame.new(0, 0, 0, 1, 0, 0, 0, res, 0, 0, 0, 1)
+		end
+		res_active = true
+		cam.CFrame = cam.CFrame * res_cf
+	end)
+
+	-- clock only when skybox on — Heartbeat is enough (not 60+ checks of FOV)
+	RunService.Heartbeat:Connect(function()
+		if not world.skybox_enabled then return end
+		local ct = world.clocktime
+		if Lighting.ClockTime ~= ct then
+			Lighting.ClockTime = ct
+		end
+	end)
+end
+
+task.spawn(function()
+	for _ = 1, 40 do
+		if modules.Flashbang and modules.Flashbang.ReplicateFromServer then
+			local orig = modules.Flashbang.ReplicateFromServer
+			modules.Flashbang.ReplicateFromServer = function(p4, p5, ...)
+				if world.anti_flashbang and p5 == "BlindEffect" then
+					local flash_arg = ...
+					pcall(function()
+						if p4.IsRendered and p4:IsRendered() and p4._play_flash_sound_callback then
+							p4._play_flash_sound_callback(flash_arg)
+						end
+					end)
+					return
+				end
+				return orig(p4, p5, ...)
+			end
+			break
+		end
+		task.wait(0.5)
+	end
+end)
+
+task.spawn(function()
+	for _ = 1, 40 do
+		if modules.SmokeClouds and modules.SmokeClouds._ObjectAdded then
+			local orig = modules.SmokeClouds._ObjectAdded
+			modules.SmokeClouds._ObjectAdded = function(p12, p13)
+				local result = orig(p12, p13)
+				if world.anti_smoke then
+					pcall(function()
+						if p12._smoke_clouds and p12._smoke_clouds[p13] and p12._smoke_clouds[p13].Model then
+							p12._smoke_clouds[p13].Model:Destroy()
+							p12._smoke_clouds[p13].Model = nil
+						end
+					end)
+				end
+				return result
+			end
+			break
+		end
+		task.wait(0.5)
+	end
+end)
+
+getgenv().AtomicRivalsWorld = world
+
+
+-- ==================== INVENTORY ====================
+local LOOTBOX_NAMES = {
+	"Skin Case", "Skin Case 2", "Skin Case 3",
+	"Wrap Box", "Wrap Box 2", "Wrap Box 3",
+	"Charm Capsule", "Finisher Pack", "Finisher Pack 2",
+	"Spooky Skin Case", "Haunted Chest", "Festive Skin Case", "Jolly Chest",
+	"Festive Wrap Box", "Festive Wrap Box 2", "Goodie Bag", "Prime Goodie Bag",
+	"Weapon Crate", "Standard Weapon Crate", "Prime Weapon Crate", "Contraband Weapon Crate",
+}
+
+
+local inventory = {
+	fake_owned = {},
+	specific = { lootbox_name = "Skin Case", quantity = 1, weapon_name = "", new_entry = false },
+	bulk = { quantity = 1 },
+	delete = { backpack_entry = "", quantity = 1 },
+	inject = {
+		item_type = "Skin",
+		weapon_name = "",
+		cosmetic_name = "",
+		stack_duplicates = false,
+		quantity = 1,
+	},
+}
+
+local function ensureInventoryList()
+	if type(inventory.fake_owned) ~= "table" then inventory.fake_owned = {} end
+	if next(inventory.fake_owned) ~= nil and inventory.fake_owned[1] == nil then
+		local arr = {}
+		for _, v in pairs(inventory.fake_owned) do
+			if type(v) == "table" and v.Name then table.insert(arr, v) end
+		end
+		inventory.fake_owned = arr
+	end
+	return inventory.fake_owned
+end
+
+local function ReplicateInventory()
+	pcall(function()
+		if modules.PlayerDataController and modules.PlayerDataController.CurrentData then
+			modules.PlayerDataController.CurrentData:Replicate("UnclaimedRewards")
+		end
+	end)
+end
+
+local function initInventoryBackpack()
+	if not modules.PlayerDataController then return end
+	pcall(function()
+		if modules.PlayerDataController.WaitUntilLoaded then
+			modules.PlayerDataController:WaitUntilLoaded()
+		end
+	end)
+	local data
+	pcall(function() data = modules.PlayerDataController:Get("UnclaimedRewards") end)
+	if type(data) == "table" then
+		inventory.fake_owned = deepCopyTable(data)
+		ensureInventoryList()
+	end
+end
+
+local function AddToBackpack()
+	local item_name = inventory.specific.lootbox_name
+	local quantity = inventory.specific.quantity
+	local weapon_name = inventory.specific.weapon_name
+	local new_entry = inventory.specific.new_entry
+	if not modules.CosmeticLibrary or not modules.CosmeticLibrary.Rewards or not modules.CosmeticLibrary.Rewards[item_name] then
+		VantaNotify({ Title = "Inventory", Description = "modules not ready / invalid case", Time = 3 })
+		return
+	end
+	if not weapon_name or weapon_name == "" then weapon_name = "IsRandom" end
+	local reward_entry = { Name = item_name, Quantity = quantity or 1, Weapon = weapon_name, ExpireTime = nil }
+	local list = ensureInventoryList()
+	if new_entry then
+		table.insert(list, reward_entry)
+	else
+		local found = false
+		for _, entry in ipairs(list) do
+			if entry.Name == reward_entry.Name and entry.Weapon == reward_entry.Weapon and (entry.Quantity or 1) < 99 then
+				entry.Quantity = (entry.Quantity or 1) + (reward_entry.Quantity or 1)
+				found = true
+				break
+			end
+		end
+		if not found then table.insert(list, reward_entry) end
+	end
+	ReplicateInventory()
+	VantaNotify({ Title = "Inventory", Description = "added to backpack", Time = 2 })
+end
+
+local function AddAllCases()
+	if not modules.CosmeticLibrary or not modules.CosmeticLibrary.Rewards then return end
+	local list = ensureInventoryList()
+	local quantity = inventory.bulk.quantity
+	for name, info in pairs(modules.CosmeticLibrary.Rewards) do
+		if type(info) == "table" and info.Type == "Lootbox" then
+			table.insert(list, { Name = name, Quantity = quantity or 1, Weapon = "IsRandom", ExpireTime = nil })
+		end
+	end
+	ReplicateInventory()
+	VantaNotify({ Title = "Inventory", Description = "all cases added", Time = 2 })
+end
+
+local function GetBackpackEntries()
+	local results, seen = {}, {}
+	for _, info in ipairs(ensureInventoryList()) do
+		if type(info) == "table" and info.Name and not seen[info.Name] then
+			seen[info.Name] = true
+			table.insert(results, info.Name)
+		end
+	end
+	if #results == 0 then return { "(empty)" } end
+	table.sort(results)
+	return results
+end
+
+local function DeleteAllBackpack()
+	inventory.fake_owned = {}
+	ReplicateInventory()
+end
+
+local function DeleteQuantity()
+	local name = inventory.delete.backpack_entry
+	local quantity = inventory.delete.quantity or 1
+	local list = ensureInventoryList()
+	for i, info in ipairs(list) do
+		if info.Name == name then
+			if (info.Quantity or 1) > quantity then info.Quantity = (info.Quantity or 1) - quantity
+			else table.remove(list, i) end
+			break
+		end
+	end
+	ReplicateInventory()
+end
+
+local function DeleteAllOfEntry()
+	local name = inventory.delete.backpack_entry
+	local list = ensureInventoryList()
+	for i = #list, 1, -1 do
+		if list[i].Name == name then table.remove(list, i) end
+	end
+	ReplicateInventory()
+end
+
+local function InjectIntoBackpack()
+	local item_type = inventory.inject.item_type
+	local cosmetic_name = inventory.inject.cosmetic_name
+	local weapon_name = inventory.inject.weapon_name
+	local quantity = inventory.inject.quantity or 1
+	if not cosmetic_name or cosmetic_name == "" then
+		VantaNotify({ Title = "Inventory", Description = "select a cosmetic", Time = 2 })
+		return
+	end
+	local reward_entry
+	if item_type == "Skin" then
+		if not weapon_name or weapon_name == "" then
+			VantaNotify({ Title = "Inventory", Description = "skin needs a weapon", Time = 2 })
+			return
+		end
+		reward_entry = { Name = cosmetic_name, Quantity = quantity, Weapon = weapon_name }
+	else
+		reward_entry = { Name = cosmetic_name, Quantity = quantity }
+	end
+	skin.fake_owned[cosmetic_name] = true
+	local list = ensureInventoryList()
+	if not inventory.inject.stack_duplicates then
+		table.insert(list, reward_entry)
+	else
+		local found = false
+		for _, entry in ipairs(list) do
+			if entry.Name == reward_entry.Name and entry.Weapon == reward_entry.Weapon and (entry.Quantity or 1) < 99 then
+				entry.Quantity = (entry.Quantity or 1) + (reward_entry.Quantity or 1)
+				found = true
+				break
+			end
+		end
+		if not found then table.insert(list, reward_entry) end
+	end
+	ReplicateInventory()
+	VantaNotify({ Title = "Inventory", Description = "injected " .. tostring(cosmetic_name), Time = 2 })
+end
+
+task.spawn(function()
+	if waitModules(15) then
+		initInventoryBackpack()
+	end
+end)
+
+getgenv().AtomicRivalsInventory = inventory
+
+
+-- ==================== SPOOFER (Aetherea) ====================
+local spoofer = {
+	device = "Desktop",
+	old_device = "Desktop",
+	spoof_device = false,
+	device_spam = false,
+	spam_rate = 1,
+	_device_cancel = 0,
+
+	display_name_value = LP.DisplayName,
+	username_value = LP.Name,
+	display_name = false,
+	username = false,
+	name_spoof_conn = {},
+
+	avatar_userid = LP.UserId,
+	spoof_avatar = false,
+	thumb_spoof_conn = {},
+
+	anonymous_mode = false,
+	fake_names = {},
+	anon_connections = {},
+
+	leaderboard = {
+		elo_value = 0,
+		streak_value = 0,
+		kills_value = 0,
+		wins_value = 0,
+		level_value = 0,
+		ELO = false,
+		Streak = false,
+		Kills = false,
+		Wins = false,
+		Level = false,
+	},
+
+	badges = {
+		Premium = false,
+		Verified = false,
+		Influencer = false,
+		Admin = false,
+	},
+
+	charm = {
+		charm_rank = "Use Spoofed ELO",
+		arch_rank = 1,
+		s0_charm = false,
+		s1_charm = false,
+		s2_charm = false,
+		s3_charm = false,
+	},
+
+	fake_gift_robux_spent = 0,
+	fake_gift_rewards_claimed = {},
+	fake_robux = false,
+	robux_amount = 0,
+	fake_gifting = false,
+
+	currency = {
+		weapon_keys = false,
+		unlock_tokens = false,
+		event_currency = false,
+		glory = false,
+		skin_tickets = false,
+		weapon_keys_value = 0,
+		unlock_tokens_value = 0,
+		event_currency_value = 0,
+		glory_value = 0,
+		skin_tickets_value = 0,
+	},
+
+	-- simple client display spoofs (not in Aetherea spoofer tab but requested)
+	ping_spoof = false,
+	ping_value = 50,
+	fps_spoof = false,
+	fps_value = 240,
+}
+
+pcall(function()
+	spoofer.leaderboard.streak_value = LP:GetAttribute("StatisticDuelsWinStreak") or 0
+	spoofer.leaderboard.level_value = LP:GetAttribute("Level") or 0
+end)
+
+task.spawn(function()
+	if waitModules(20) then
+		pcall(function()
+			spoofer.currency.weapon_keys_value = modules.PlayerDataController:Get("WeaponKeys") or 0
+			spoofer.currency.unlock_tokens_value = modules.PlayerDataController:Get("UnlockTokens") or 0
+			spoofer.currency.event_currency_value = modules.PlayerDataController:Get("EventCurrency") or 0
+			spoofer.currency.glory_value = modules.PlayerDataController:Get("Glory") or 0
+			spoofer.currency.skin_tickets_value = modules.PlayerDataController:Get("SkinTickets") or 0
+		end)
+		pcall(function()
+			local mods = ReplicatedStorage:FindFirstChild("Modules")
+			local sl = mods and mods:FindFirstChild("SeasonLibrary")
+			if sl and not modules.SeasonLibrary then
+				local ok, mod = pcall(require, sl)
+				if ok then modules.SeasonLibrary = mod end
+			end
+		end)
+		pcall(function()
+			if modules.ControlsController and modules.ControlsController.CurrentControls then
+				spoofer.old_device = tostring(modules.ControlsController.CurrentControls)
+			end
+		end)
+	end
+end)
+
+-- Device spoof 1:1 Aetherea (remote only — do not touch ControlsController)
+local device_cancel = 0
+
+local CHARM_RANKS = {
+	"Use Spoofed ELO", "Unranked",
+	"Bronze 1", "Bronze 2", "Bronze 3",
+	"Silver 1", "Silver 2", "Silver 3",
+	"Gold 1", "Gold 2", "Gold 3",
+	"Platinum 1", "Platinum 2", "Platinum 3",
+	"Diamond 1", "Diamond 2", "Diamond 3",
+	"Onyx 1", "Onyx 2", "Onyx 3",
+	"Nemesis", "Archnemesis",
+}
+local CHARM_ELO_MAP = {
+	["Unranked"] = -1,
+	["Bronze 1"] = 0, ["Bronze 2"] = 200, ["Bronze 3"] = 400,
+	["Silver 1"] = 600, ["Silver 2"] = 800, ["Silver 3"] = 1000,
+	["Gold 1"] = 1200, ["Gold 2"] = 1400, ["Gold 3"] = 1600,
+	["Platinum 1"] = 1800, ["Platinum 2"] = 2000, ["Platinum 3"] = 2200,
+	["Diamond 1"] = 2400, ["Diamond 2"] = 2600, ["Diamond 3"] = 2800,
+	["Onyx 1"] = 3000, ["Onyx 2"] = 3200, ["Onyx 3"] = 3400,
+	["Nemesis"] = 3600, ["Archnemesis"] = 3600,
+}
+local SEASON_NAME_MAP = {
+	[0] = "Zero", [1] = "Warp", [2] = "Polar", [3] = "Fame",
+	["Zero"] = 0, ["Warp"] = 1, ["Polar"] = 2, ["Fame"] = 3,
+}
+local SEASON_TOGGLE_MAP = {
+	[0] = "s0_charm", [1] = "s1_charm", [2] = "s2_charm", [3] = "s3_charm",
+}
+
+local function SetDevice(use_old)
+	local map = {
+		Desktop = "MouseKeyboard",
+		Mobile = "Touch",
+		Console = "Gamepad",
+		VR = "VR",
+	}
+	local key = use_old and spoofer.old_device or spoofer.device
+	local dev = map[key] or "MouseKeyboard"
+	-- Aetherea: only FireServer, nothing else
+	pcall(function()
+		ReplicatedStorage.Remotes.Replication.Fighter.SetControls:FireServer(dev)
+	end)
+end
+
+local function SpoofDevice()
+	if spoofer.spoof_device then
+		SetDevice(false)
+	else
+		SetDevice(true)
+	end
+end
+
+local function DeviceSpam()
+	device_cancel += 1
+	local token = device_cancel
+	if not spoofer.device_spam then
+		-- stop spam → restore real device
+		SetDevice(true)
+		return
+	end
+	task.spawn(function()
+		local list = { "Desktop", "Mobile", "Console", "VR" }
+		while spoofer.device_spam and token == device_cancel do
+			spoofer.device = list[math.random(1, #list)]
+			SetDevice(false)
+			task.wait(math.max(0.1, spoofer.spam_rate or 1))
+		end
+		SetDevice(true)
+	end)
+end
+
+local function isOurUi(obj)
+	local ok, root = pcall(function() return VindUI and VindUI._Root end)
+	if ok and root and obj:IsDescendantOf(root) then return true end
+	return false
+end
+
+local function FormatNumber(n)
+	n = tonumber(n) or 0
+	local s = tostring(math.floor(n))
+	local k
+	while true do
+		s, k = string.gsub(s, "^(-?%d+)(%d%d%d)", "%1,%2")
+		if k == 0 then break end
+	end
+	return s
+end
+
+local function ApplyNameSpoof(obj)
+	-- Aetherea ApplyNameSpoof 1:1 (profile Wins label + Level/Streak values)
+	if not obj or not (obj:IsA("TextLabel") or obj:IsA("TextButton")) then
+		return
+	end
+	if isOurUi and isOurUi(obj) then return end
+	pcall(function()
+		local text = obj.Text
+		if typeof(text) ~= "string" then return end
+
+		if spoofer.display_name then
+			if obj.Name == "DisplayName" or obj.Name == "HeaderText" or obj.Name == "Title"
+				or (obj.Parent and obj.Parent.Name == "NameContainer" and obj.Name == "Name")
+				or (obj.Parent and obj.Parent.Name == "Title" and obj.Name == "TitleText") then
+				text = string.gsub(text, LP.DisplayName, spoofer.display_name_value)
+			end
+		end
+		if spoofer.username then
+			if obj.Name == "Username"
+				or (obj.Parent and obj.Parent.Name == "NameContainer" and obj.Name == "Handle")
+				or (obj.Parent and obj.Parent.Name == "Subtitle" and obj.Name == "SubtitleText") then
+				text = string.gsub(text, LP.Name, spoofer.username_value)
+			end
+		end
+
+		local lb = spoofer.leaderboard
+		-- Profile wins: TextLabel named "Wins" (Aetherea)
+		if lb.Wins and obj.Name == "Wins" then
+			text = FormatNumber(lb.wins_value)
+		end
+		if lb.Kills and (obj.Name == "Kills" or obj.Name == "Eliminations") then
+			text = FormatNumber(lb.kills_value)
+		end
+		if lb.Level and obj.Parent and obj.Parent.Name == "Level" and obj.Name == "Value" then
+			text = FormatNumber(lb.level_value)
+		end
+		if lb.Streak and obj.Parent and obj.Parent.Name == "Streak" and obj.Name == "Value" then
+			text = FormatNumber(lb.streak_value)
+		end
+		if lb.ELO and obj.Parent and (obj.Parent.Name == "ELO" or obj.Parent.Name == "Elo") and obj.Name == "Value" then
+			text = FormatNumber(lb.elo_value)
+		end
+		-- also catch Value under Wins/Kills parents
+		if lb.Wins and obj.Name == "Value" and obj.Parent and obj.Parent.Name == "Wins" then
+			text = FormatNumber(lb.wins_value)
+		end
+		if lb.Kills and obj.Name == "Value" and obj.Parent and (obj.Parent.Name == "Kills" or obj.Parent.Name == "Eliminations") then
+			text = FormatNumber(lb.kills_value)
+		end
+
+		if obj.Text ~= text then
+			obj.Text = text
+		end
+	end)
+end
+
+local function RefreshAllNameSpoofs()
+	local lb = spoofer.leaderboard
+	if not (spoofer.display_name or spoofer.username or (lb and (lb.Wins or lb.Kills or lb.Level or lb.Streak or lb.ELO))) then
+		return
+	end
+	for obj, _ in pairs(spoofer.name_spoof_conn) do
+		pcall(ApplyNameSpoof, obj)
+	end
+	pcall(function()
+		local reg = spoofer._registerName
+		if type(reg) ~= "function" then return end
+		local pg = LP:FindFirstChild("PlayerGui")
+		if not pg then return end
+		for _, obj in ipairs(pg:GetDescendants()) do
+			reg(obj)
+		end
+	end)
+end
+
+local NAME_SPOOF_ALLOWED = {
+	DisplayName = true, Username = true, Name = true, Handle = true,
+	TitleText = true, SubtitleText = true, HeaderText = true, Title = true,
+	Wins = true, Kills = true, Eliminations = true, Value = true,
+}
+
+local function nameSpoofActive()
+	local lb = spoofer.leaderboard
+	return spoofer.display_name
+		or spoofer.username
+		or (lb and (lb.Wins or lb.Kills or lb.Level or lb.Streak or lb.ELO))
+		or false
+end
+
+-- only GUI text (PlayerGui / Billboard / Surface) — skip world BasePart noise
+local function isGuiTextContext(obj)
+	local p = obj and obj.Parent
+	for _ = 1, 14 do
+		if not p then return false end
+		local c = p.ClassName
+		if c == "BillboardGui" or c == "SurfaceGui" or c == "ScreenGui" or c == "PlayerGui" then
+			return true
+		end
+		p = p.Parent
+	end
+	return false
+end
+
+local function RegisterNameObject(obj)
+	if not obj then return end
+	if not nameSpoofActive() then return end
+	if not (obj:IsA("TextLabel") or obj:IsA("TextButton")) then return end
+	if not NAME_SPOOF_ALLOWED[obj.Name] then return end
+	if not isGuiTextContext(obj) then return end
+	ApplyNameSpoof(obj)
+	if spoofer.name_spoof_conn[obj] then return end
+	spoofer.name_spoof_conn[obj] = obj:GetPropertyChangedSignal("Text"):Connect(function()
+		if nameSpoofActive() then
+			ApplyNameSpoof(obj)
+		end
+	end)
+	obj.Destroying:Connect(function()
+		local c = spoofer.name_spoof_conn[obj]
+		if c then
+			c:Disconnect()
+			spoofer.name_spoof_conn[obj] = nil
+		end
+	end)
+end
+spoofer._registerName = RegisterNameObject
+
+-- Lazy name-spoof watchers: no workspace scan until a spoof is actually enabled
+do
+	local pg_conn, ws_conn
+	local watching = false
+
+	local function attachRoot(root, store_key)
+		if not root then return nil end
+		local queue, scheduled = {}, false
+		local function flush()
+			scheduled = false
+			local batch = queue
+			queue = {}
+			if not nameSpoofActive() then return end
+			for i = 1, #batch do
+				RegisterNameObject(batch[i])
+			end
+		end
+		for _, obj in ipairs(root:GetDescendants()) do
+			RegisterNameObject(obj)
+		end
+		return root.DescendantAdded:Connect(function(obj)
+			if not nameSpoofActive() then return end
+			queue[#queue + 1] = obj
+			if scheduled then return end
+			scheduled = true
+			task.defer(flush)
+		end)
+	end
+
+	function spoofer._startNameWatch()
+		if watching then
+			-- still re-scan PlayerGui on enable
+			pcall(function()
+				local pg = LP:FindFirstChild("PlayerGui")
+				if pg then
+					for _, obj in ipairs(pg:GetDescendants()) do
+						RegisterNameObject(obj)
+					end
+				end
+			end)
+			return
+		end
+		watching = true
+		pcall(function()
+			pg_conn = attachRoot(LP:FindFirstChild("PlayerGui"))
+			-- workspace only while spoofing (lobby billboards); still gui-filtered inside Register
+			ws_conn = attachRoot(workspace)
+		end)
+	end
+
+	function spoofer._stopNameWatch()
+		-- keep connections cheap: callbacks already no-op when inactive
+		-- disconnect workspace to stop mass DescendantAdded from characters/effects
+		if ws_conn then
+			pcall(function() ws_conn:Disconnect() end)
+			ws_conn = nil
+		end
+		-- leave PlayerGui conn; rare adds. Full stop if fully inactive
+		if not nameSpoofActive() and pg_conn then
+			pcall(function() pg_conn:Disconnect() end)
+			pg_conn = nil
+			watching = false
+		end
+	end
+
+	-- do NOT scan workspace at startup (this was the 20-player lobby FPS killer)
+	task.defer(function()
+		task.wait(1)
+		if nameSpoofActive() then
+			spoofer._startNameWatch()
+		end
+	end)
+end
+
+local function ApplyThumbnailSpoof(obj)
+	if not spoofer.spoof_avatar or not obj or not obj:IsA("ImageLabel") then return end
+	local uid = spoofer.avatar_userid
+	if not uid then return end
+	local url = string.format("rbxthumb://type=AvatarHeadShot&id=%s&w=150&h=150", tostring(uid))
+	pcall(function()
+		if obj.Name == "AvatarThumbnail" or obj.Name == "Headshot" or obj.Name == "ImageLabel" then
+			if obj.Parent and (obj.Parent.Name == "Thumbnail" or obj.Name == "AvatarThumbnail" or obj.Name == "Headshot") then
+				obj.Image = url
+			end
+		end
+	end)
+end
+
+local function RegisterThumbObject(obj)
+	if not spoofer.spoof_avatar then return end
+	if not obj or not obj:IsA("ImageLabel") then return end
+	if not isGuiTextContext(obj) then return end
+	ApplyThumbnailSpoof(obj)
+	if spoofer.thumb_spoof_conn[obj] then return end
+	spoofer.thumb_spoof_conn[obj] = obj:GetPropertyChangedSignal("Image"):Connect(function()
+		if spoofer.spoof_avatar then
+			ApplyThumbnailSpoof(obj)
+		end
+	end)
+	obj.Destroying:Connect(function()
+		local c = spoofer.thumb_spoof_conn[obj]
+		if c then
+			c:Disconnect()
+			spoofer.thumb_spoof_conn[obj] = nil
+		end
+	end)
+end
+
+do
+	local pg_conn, ws_conn
+	local watching = false
+
+	local function attachRoot(root)
+		if not root then return nil end
+		local queue, scheduled = {}, false
+		local function flush()
+			scheduled = false
+			local batch = queue
+			queue = {}
+			if not spoofer.spoof_avatar then return end
+			for i = 1, #batch do
+				RegisterThumbObject(batch[i])
+			end
+		end
+		for _, obj in ipairs(root:GetDescendants()) do
+			RegisterThumbObject(obj)
+		end
+		return root.DescendantAdded:Connect(function(obj)
+			if not spoofer.spoof_avatar then return end
+			queue[#queue + 1] = obj
+			if scheduled then return end
+			scheduled = true
+			task.defer(flush)
+		end)
+	end
+
+	function spoofer._startThumbWatch()
+		if watching then
+			pcall(function()
+				local pg = LP:FindFirstChild("PlayerGui")
+				if pg then
+					for _, obj in ipairs(pg:GetDescendants()) do
+						RegisterThumbObject(obj)
+					end
+				end
+			end)
+			return
+		end
+		watching = true
+		pcall(function()
+			pg_conn = attachRoot(LP:FindFirstChild("PlayerGui"))
+			ws_conn = attachRoot(workspace)
+		end)
+	end
+
+	function spoofer._stopThumbWatch()
+		if ws_conn then
+			pcall(function() ws_conn:Disconnect() end)
+			ws_conn = nil
+		end
+		if not spoofer.spoof_avatar and pg_conn then
+			pcall(function() pg_conn:Disconnect() end)
+			pg_conn = nil
+			watching = false
+		end
+	end
+end
+
+-- Leaderboard 1:1 Aetherea (LeaderboardController serials)
+local lb_binds = {}
+local function LbUnbind(idx)
+	if lb_binds[idx] then
+		pcall(function() lb_binds[idx]:Disconnect() end)
+		lb_binds[idx] = nil
+	end
+end
+
+local function LbBind(idx, signal, fn)
+	LbUnbind(idx)
+	if signal then
+		lb_binds[idx] = signal:Connect(fn)
+	end
+end
+
+local function InsertPlayerByValue(list, user_id, value)
+	-- Aetherea 1:1: remove existing entry then insert sorted by value (highest first)
+	if type(list) ~= "table" then return end
+	value = tonumber(value) or 0
+	for i = #list, 1, -1 do
+		local e = list[i]
+		if type(e) == "table" then
+			local id = tonumber(e.key) or tonumber(e.Key) or e.UserId or e.UserID or e.PlayerId
+			if id == user_id or tostring(e.key) == tostring(user_id) then
+				table.remove(list, i)
+			end
+		end
+	end
+	local rank = 1
+	for i, entry in ipairs(list) do
+		local v = tonumber(entry.value) or tonumber(entry.Value) or 0
+		if v >= value then
+			rank = i + 1
+		else
+			break
+		end
+	end
+	-- include common fields games expect
+	table.insert(list, rank, {
+		key = tostring(user_id),
+		value = value,
+		UserId = user_id,
+		UserID = user_id,
+		PlayerId = user_id,
+	})
+end
+
+local function EnsureLeaderboardController()
+	if modules.LeaderboardController then return true end
+	pcall(function()
+		local ps = LP:FindFirstChild("PlayerScripts")
+		local controllers = ps and ps:FindFirstChild("Controllers")
+		local lc = controllers and controllers:FindFirstChild("LeaderboardController")
+		if lc then
+			local ok, mod = pcall(require, lc)
+			if ok then modules.LeaderboardController = mod end
+		end
+	end)
+	return modules.LeaderboardController ~= nil
+end
+
+local function ResetLeaderboard(name, config_idx)
+	if not EnsureLeaderboardController() then return end
+	LbUnbind(config_idx)
+	pcall(function()
+		local serial = modules.LeaderboardController.LeaderboardSerials[name]
+		if serial and serial.Players then
+			local user_id = LP.UserId
+			for i = #serial.Players, 1, -1 do
+				local player = serial.Players[i]
+				if type(player) == "table" then
+					if player.UserId == user_id or player.UserID == user_id or player.PlayerId == user_id
+						or tonumber(player.key) == user_id then
+						table.remove(serial.Players, i)
+					end
+				end
+			end
+			if modules.LeaderboardController.Refreshed then
+				modules.LeaderboardController.Refreshed:Fire(name)
+			end
+		end
+	end)
+end
+
+local function ModifyLeaderboard(config_idx, name, value)
+	if not EnsureLeaderboardController() then return end
+	value = tonumber(value) or 0
+	task.spawn(function()
+		local tries = 0
+		while tries < 20 do
+			local serials = modules.LeaderboardController and modules.LeaderboardController.LeaderboardSerials
+			local serial = serials and serials[name]
+			if serial and serial.Players and #serial.Players > 0 then
+				break
+			end
+			tries += 1
+			task.wait(0.5)
+		end
+		local user_id = LP.UserId
+		pcall(function()
+			local serial = modules.LeaderboardController.LeaderboardSerials[name]
+			if serial and serial.Players then
+				InsertPlayerByValue(serial.Players, user_id, value)
+				if modules.LeaderboardController.Refreshed then
+					modules.LeaderboardController.Refreshed:Fire(name)
+				end
+			end
+		end)
+		pcall(function()
+			local UpdateRemote = ReplicatedStorage.Remotes.Misc.UpdateLeaderboard
+			if not UpdateRemote then return end
+			LbBind(config_idx, UpdateRemote.OnClientEvent, function(data)
+				local lb_name = data and data.Name
+				if not lb_name or lb_name ~= name then return end
+				if not spoofer.leaderboard[config_idx] then return end
+				task.defer(function()
+					pcall(function()
+						local serial = modules.LeaderboardController.LeaderboardSerials[name]
+						if serial and serial.Players then
+							InsertPlayerByValue(serial.Players, user_id, value)
+							if modules.LeaderboardController.Refreshed then
+								modules.LeaderboardController.Refreshed:Fire(name)
+							end
+						end
+					end)
+				end)
+			end)
+		end)
+	end)
+end
+
+local function UpdateLeaderboardAttributes()
+	local lb = spoofer.leaderboard
+	if lb.ELO or lb.Streak or lb.Kills or lb.Wins or lb.Level then
+		pcall(function() spoofer._startNameWatch() end)
+	end
+	if lb.ELO then
+		ModifyLeaderboard("ELO", "Highest ELO", lb.elo_value)
+	else
+		ResetLeaderboard("Highest ELO", "ELO")
+	end
+	if lb.Streak then
+		ModifyLeaderboard("Streak", "Current Highest Win Streak", lb.streak_value)
+		pcall(function()
+			LP:SetAttribute("StatisticDuelsWinStreak", lb.streak_value)
+		end)
+	else
+		ResetLeaderboard("Current Highest Win Streak", "Streak")
+	end
+	if lb.Kills then
+		ModifyLeaderboard("Kills", "Most Eliminations", lb.kills_value)
+	else
+		ResetLeaderboard("Most Eliminations", "Kills")
+	end
+	if lb.Wins then
+		ModifyLeaderboard("Wins", "Most Wins", lb.wins_value)
+	else
+		ResetLeaderboard("Most Wins", "Wins")
+	end
+	if lb.Level then
+		ModifyLeaderboard("Level", "Highest Level", lb.level_value)
+		pcall(function()
+			LP:SetAttribute("Level", lb.level_value)
+		end)
+	else
+		ResetLeaderboard("Highest Level", "Level")
+	end
+	RefreshAllNameSpoofs()
+end
+
+-- Badges 1:1 Aetherea
+local function UpdateBadgesOptions()
+	LP:SetAttribute("IsInfluencer", spoofer.badges.Influencer and true or false)
+	LP:SetAttribute("IsRobloxEmployee", spoofer.badges.Admin and true or false)
+end
+
+--[[ LPH_NO_VIRTUALIZE ]] --[[ LPH_NO_OBFUSCATE ]]
+do
+	local old_index
+	old_index = hookmetamethod(game, "__index", newcclosure(function(self, key)
+		-- cheapest path first: only when a badge spoof is on
+		local b = spoofer.badges
+		if b.Premium or b.Verified then
+			if self == LP then
+				if key == "MembershipType" and b.Premium then
+					return Enum.MembershipType.Premium
+				end
+				if key == "HasVerifiedBadge" and b.Verified then
+					return true
+				end
+			end
+		end
+		return old_index(self, key)
+	end))
+end
+
+
+-- Charm 1:1 Aetherea
+--[[ LPH_NO_VIRTUALIZE ]]
+local function SetupSeasonCharmHook()
+	if not modules.SeasonLibrary or modules.SeasonLibrary._atomicCharmHooked then return end
+	if type(modules.SeasonLibrary.FormatSeasonRankCharm) ~= "function" then return end
+	local original_fsrc = modules.SeasonLibrary.FormatSeasonRankCharm
+	modules.SeasonLibrary.FormatSeasonRankCharm = function(self, p2, p3, p4, p5)
+		local season_num = SEASON_NAME_MAP[p3]
+		local elo = CHARM_ELO_MAP[spoofer.charm.charm_rank]
+		if spoofer.charm.charm_rank == "Use Spoofed ELO" then
+			elo = spoofer.leaderboard.elo_value
+		end
+		if season_num and SEASON_TOGGLE_MAP[season_num] and spoofer.charm[SEASON_TOGGLE_MAP[season_num]] then
+			p4 = elo or p4
+			p5 = spoofer.charm.arch_rank
+		end
+		return original_fsrc(self, p2, p3, p4, p5)
+	end
+	modules.SeasonLibrary._atomicCharmHooked = true
+end
+
+local function UpdateCharmOptions()
+	SetupSeasonCharmHook()
+	task.spawn(function()
+		task.wait(0.5)
+		if not modules.SeasonLibrary then return end
+		for _, descendant in ipairs(workspace:GetDescendants()) do
+			if not descendant:IsA("Model") then continue end
+			if not descendant:FindFirstChild("Extra") then continue end
+			local name = descendant.Name
+			if string.sub(name, 1, 7) ~= "Season " then continue end
+			local season_num = tonumber(string.sub(name, 8))
+			if not season_num or not SEASON_TOGGLE_MAP[season_num] then continue end
+			if not spoofer.charm[SEASON_TOGGLE_MAP[season_num]] then continue end
+			local season_name = SEASON_NAME_MAP[season_num]
+			if not season_name then continue end
+			local elo = CHARM_ELO_MAP[spoofer.charm.charm_rank]
+			if spoofer.charm.charm_rank == "Use Spoofed ELO" then
+				elo = spoofer.leaderboard.elo_value
+			end
+			pcall(function()
+				modules.SeasonLibrary:FormatSeasonRankCharm(descendant, season_name, elo, spoofer.charm.arch_rank)
+			end)
+		end
+	end)
+end
+
+task.spawn(function()
+	for _ = 1, 40 do
+		if modules.SeasonLibrary or (waitModules and waitModules(1)) then
+			SetupSeasonCharmHook()
+			if modules.SeasonLibrary then break end
+		end
+		task.wait(0.5)
+	end
+end)
+
+local function UpdateCurrencyOptions()
+	pcall(function()
+		if modules.PlayerDataController and modules.PlayerDataController.CurrentData then
+			local cd = modules.PlayerDataController.CurrentData
+			if spoofer.currency.weapon_keys then cd:Replicate("WeaponKeys") end
+			if spoofer.currency.unlock_tokens then cd:Replicate("UnlockTokens") end
+			if spoofer.currency.event_currency then cd:Replicate("EventCurrency") end
+			if spoofer.currency.glory then cd:Replicate("Glory") end
+			if spoofer.currency.skin_tickets then cd:Replicate("SkinTickets") end
+		end
+	end)
+end
+
+-- extend existing Get hooks for currency (spoofer flags)
+-- installed after cosmetics hooks via genv table
+getgenv().AtomicRivalsSpoofer = spoofer
+
+
+
+
+-- ==================== MISC (visuals — Aetherea crosshair) ====================
+local misc = {
+	crosshair = {
+		enabled = false,
+		fill_color = Color3.fromRGB(255, 255, 255),
+		outline_color = Color3.fromRGB(0, 0, 0),
+		rotation = 0,
+		rotation_speed = 0.5,
+		bounce = 0,
+		bounce_speed = 0.1,
+		offset = 5,
+		length = 20,
+		thickness = 2,
+		lerp = 1,
+	},
+}
+
+local function SolveLine(a, r)
+	local rad = math.rad(a)
+	return Vector2.new(math.sin(rad) * r, math.cos(rad) * r)
+end
+
+-- Drawing API crosshair (Aetherea)
+pcall(function()
+	if type(Drawing) ~= "table" or type(Drawing.new) ~= "function" then
+		return
+	end
+	local lines = {}
+	for i = 1, 8 do
+		local ok, line = pcall(Drawing.new, "Line")
+		if ok and line then
+			lines[i] = line
+			line.Visible = false
+			line.ZIndex = 50
+		end
+	end
+	if #lines < 8 then return end
+
+	local angles = { 0, 90, 180, 270 }
+	local current_pos = workspace.CurrentCamera and (workspace.CurrentCamera.ViewportSize / 2) or Vector2.new(0, 0)
+
+	local _xh_hidden = false
+	RunService.RenderStepped:Connect(function()
+		local state = misc.crosshair
+		if not state.enabled then
+			if not _xh_hidden then
+				for i = 1, 8 do lines[i].Visible = false end
+				_xh_hidden = true
+			end
+			return
+		end
+		_xh_hidden = false
+
+		local cam = workspace.CurrentCamera
+		if not cam then
+			for i = 1, 8 do lines[i].Visible = false end
+			return
+		end
+
+		local target_pos = cam.ViewportSize / 2
+		if state.lerp and state.lerp > 0 and state.lerp < 1 then
+			current_pos = current_pos:Lerp(target_pos, math.clamp(state.lerp, 0.01, 1))
+		else
+			current_pos = target_pos
+		end
+
+		local t = os.clock()
+		local length = state.length
+		local thickness = state.thickness * 2
+		local anim_speed = state.bounce_speed * 0.5
+		local rot_speed = state.rotation_speed * 0.5
+		local scale = 1
+
+		if state.bounce_speed > 0 and state.bounce > 0 then
+			local phase = t * anim_speed * math.pi * 2
+			local alpha = (math.sin(phase) + 1) * 0.5
+			length = state.length + alpha * state.bounce
+		end
+
+		local spinangle = state.rotation
+		if state.rotation_speed > 0 then
+			spinangle = (state.rotation + t * rot_speed * 360) % 360
+		end
+
+		for i = 1, 4 do
+			local basea = angles[i] + spinangle
+			local p1 = current_pos + SolveLine(basea, state.offset * scale)
+			local p2 = current_pos + SolveLine(basea, (state.offset + length) * scale)
+
+			local fill = lines[i + 4]
+			fill.Visible = true
+			fill.Color = state.fill_color
+			fill.From = p1
+			fill.To = p2
+			fill.Thickness = thickness
+
+			local outline = lines[i]
+			outline.Visible = true
+			outline.Color = state.outline_color
+			outline.From = current_pos + SolveLine(basea, state.offset * scale - 1)
+			outline.To = current_pos + SolveLine(basea, (state.offset + length) * scale + 1)
+			outline.Thickness = thickness + 2
+		end
+	end)
+end)
+
+getgenv().AtomicRivalsMisc = misc
+
+-- ==================== BIND HELPERS ====================
+local function bindToggle(page, flag, text, default, cb)
+	local mute = false
+	local t = page:AddToggle({
+		Text = text, Default = default == true, Flag = flag,
+		Callback = function(v)
+			if mute then return end
+			Options[flag] = Options[flag] or {}; Options[flag].Value = v
+			if Toggles[flag] then Toggles[flag].Value = v end
+			if cb then pcall(cb, v) end
+		end,
+	})
+	Options[flag] = { Value = default == true }
+	Toggles[flag] = {
+		Value = default == true,
+		SetValue = function(self, v)
+			mute = true; self.Value = v; Options[flag].Value = v
+			pcall(function() if t and t.SetValue then t:SetValue(v) end end)
+			mute = false
+		end,
+	}
+	return t
+end
+
+local function bindSlider(page, flag, text, default, min, max, rounding, cb, suffix)
+	local inc = 1
+	if rounding == 1 then inc = 0.1 elseif rounding == 2 then inc = 0.01 elseif rounding == 3 then inc = 0.001 end
+	page:AddSlider({
+		Text = text, Default = default, Min = min, Max = max, Increment = inc, Suffix = suffix, Flag = flag,
+		Callback = function(v)
+			v = tonumber(v) or default
+			Options[flag] = Options[flag] or {}; Options[flag].Value = v
+			if cb then pcall(cb, v) end
+		end,
+	})
+	Options[flag] = { Value = default }
+end
+
+local function bindDropdown(page, flag, text, values, default, cb)
+	values = values or { "(none)" }
+	if type(default) == "number" then default = values[default] or values[1] end
+	if not default or default == "" then default = values[1] end
+	local dd = page:AddDropdown({
+		Text = text, Options = values, Default = default, Flag = flag,
+		Callback = function(v)
+			Options[flag] = Options[flag] or {}
+			Options[flag].Value = v
+			Options[flag].Values = values
+			if cb then pcall(cb, v) end
+		end,
+	})
+	Options[flag] = {
+		Value = default, Values = values, Options = values, _dd = dd,
+		SetValues = function(self, vals)
+			self.Values = vals or {}; self.Options = self.Values
+		end,
+		SetValue = function(self, val) self.Value = val end,
+	}
+	return dd
+end
+
+local function bindInput(page, flag, text, default, placeholder, cb)
+	local opts = {
+		Text = text, Default = tostring(default or ""), Placeholder = placeholder or "", Flag = flag,
+		Callback = function(v)
+			Options[flag] = Options[flag] or {}; Options[flag].Value = v
+			if cb then pcall(cb, v) end
+		end,
+	}
+	if page.AddTextbox then page:AddTextbox(opts)
+	elseif page.AddInput then page:AddInput(opts)
+	elseif page.AddTextBox then page:AddTextBox(opts) end
+	Options[flag] = { Value = tostring(default or "") }
+end
+
+local function bindButton(page, text, fn)
+	page:AddButton({ Text = text, Callback = function() pcall(fn) end })
+end
+
+local function bindColor(page, flag, text, default, cb)
+	local ok = pcall(function()
+		page:AddColorPicker({
+			Text = text,
+			Default = default or Color3.new(1, 1, 1),
+			Flag = flag,
+			Callback = function(c)
+				Options[flag] = Options[flag] or {}
+				Options[flag].Value = c
+				if cb then pcall(cb, c) end
+			end,
+		})
+	end)
+	if not ok then
+		-- fallback label if picker missing
+		pcall(function()
+			page:AddLabel(text .. " (color)")
+		end)
+	end
+end
+
+-- ==================== WINDOW ====================
+local Window = VindUI:CreateWindow({
+	Title = "Vanta Rivals [Beta]",
+	Subtitle = "Version: v2.00",
+	Icon = LOGO,
+	Size = UDim2.fromOffset(680, 480),
+	MinSize = Vector2.new(520, 380),
+	Draggable = true, Resizable = true, UseBlur = true,
+	DefaultTab = "Home",
+	ToggleKeybind = Enum.KeyCode.RightShift,
+})
+getgenv().VantaRivals = { Window = Window, VindUI = VindUI }
+getgenv().Library = {
+	Options = Options, Toggles = Toggles,
+	Notify = function(_, o) VantaNotify(o) end,
+	Unload = function() pcall(function() Window:Destroy() end) end,
+	ToggleKeybind = nil, ScreenGui = nil,
+}
+
+-- Fix header logo: Vind uses 20x20 + Text tint (crops / washes custom logos) — Universal 1:1
+pcall(function()
+	local root = VindUI._Root
+	if not root then
+		pcall(function()
+			if gethui then
+				for _, g in ipairs(gethui():GetChildren()) do
+					if g.Name == "NullUI" or g.Name == "Vanta" then root = g break end
+				end
+			end
+		end)
+	end
+	if not root then return end
+	for _, d in ipairs(root:GetDescendants()) do
+		if d.Name == "WindowIcon" and d:IsA("ImageLabel") then
+			d.Image = "rbxassetid://107041082108511"
+			d.Size = UDim2.fromOffset(30, 30)
+			d.ScaleType = Enum.ScaleType.Fit
+			d.ResampleMode = Enum.ResamplerMode.Default
+			d.ImageColor3 = Color3.new(1, 1, 1) -- no theme tint
+			d.ImageTransparency = 0
+			d.BackgroundTransparency = 1
+			-- push title / subtitle right so they do not overlap the larger logo
+			local top = d.Parent
+			if top then
+				local title = top:FindFirstChild("Title")
+				local sub = top:FindFirstChild("Subtitle")
+				local baseX = d.Position.X.Offset + 30 + 10
+				if title then
+					title.Position = UDim2.new(0, baseX, title.Position.Y.Scale, title.Position.Y.Offset)
+				end
+				if sub then
+					sub.Position = UDim2.new(0, baseX, sub.Position.Y.Scale, sub.Position.Y.Offset)
+				end
+			end
+		end
+	end
+end)
+
+local Home = Window:AddTab({ Name = "Home", Icon = ico("house") })
+Window:AddTabLine()
+
+-- Combat / Visuals
+local CombatTab = Window:AddTab({ Name = "Combat", Icon = ico("crosshair") })
+local VisualsTab = Window:AddTab({ Name = "Visuals", Icon = ico("eye") })
+Window:AddTabLine()
+
+-- Cosmetics / Inventory
+local CosmeticsTab = Window:AddTab({ Name = "Skinchanger", Icon = ico("sparkles") })
+local InventoryTab = Window:AddTab({ Name = "Inventory", Icon = ico("backpack") })
+Window:AddTabLine()
+
+-- World / Spoofer / Misc
+local WorldTab = Window:AddTab({ Name = "World", Icon = ico("globe") })
+local SpooferTab = Window:AddTab({ Name = "Spoofer", Icon = ico("user") })
+local MiscTab = Window:AddTab({ Name = "Misc", Icon = ico("box") })
+local SettingsTab = Window:AddTab({ Name = "Settings", Icon = ico("settings"), Hidden = true })
+
+-- Combat subtabs
+local CombatRage = CombatTab:AddSubTab({ Name = "Rage", Icon = ico("crosshair") })
+local CombatLegit = CombatTab:AddSubTab({ Name = "Legit", Icon = ico("bow-arrow") })
+local CombatGunMods = CombatTab:AddSubTab({ Name = "Gun Mods", Icon = ico("package") })
+pcall(function() CombatTab:SelectSubTab(1) end)
+
+-- Visuals subtabs
+local VisPlayer = VisualsTab:AddSubTab({ Name = "Player", Icon = ico("user") })
+pcall(function() VisualsTab:SelectSubTab(1) end)
+
+-- Skinchanger
+local CosUnlock = CosmeticsTab:AddSubTab({ Name = "Unlock", Icon = ico("unlock") })
+local CosSpecific = CosmeticsTab:AddSubTab({ Name = "Specific", Icon = ico("search") })
+local CosApply = CosmeticsTab:AddSubTab({ Name = "Apply", Icon = ico("check") })
+local CosSave = CosmeticsTab:AddSubTab({ Name = "Save", Icon = ico("save") })
+pcall(function() CosmeticsTab:SelectSubTab(1) end)
+
+-- Inventory
+local InvSingle = InventoryTab:AddSubTab({ Name = "Single", Icon = ico("package") })
+local InvBulk = InventoryTab:AddSubTab({ Name = "Bulk", Icon = ico("boxes") })
+local InvDelete = InventoryTab:AddSubTab({ Name = "Delete", Icon = ico("trash-2") })
+local InvInject = InventoryTab:AddSubTab({ Name = "Inject", Icon = ico("plus") })
+pcall(function() InventoryTab:SelectSubTab(1) end)
+
+-- World
+local WorldLighting = WorldTab:AddSubTab({ Name = "Lighting", Icon = ico("sun") })
+local WorldAtmo = WorldTab:AddSubTab({ Name = "Atmosphere", Icon = ico("cloud") })
+local WorldSky = WorldTab:AddSubTab({ Name = "Skybox", Icon = ico("image") })
+local WorldCam = WorldTab:AddSubTab({ Name = "Camera", Icon = ico("eye") })
+pcall(function() WorldTab:SelectSubTab(1) end)
+
+-- Spoofer
+local SpoofPlatform = SpooferTab:AddSubTab({ Name = "Platform", Icon = ico("smartphone") })
+local SpoofPlayer = SpooferTab:AddSubTab({ Name = "Player", Icon = ico("user") })
+local SpoofLB = SpooferTab:AddSubTab({ Name = "Leaderboard", Icon = ico("list") })
+local SpoofCur = SpooferTab:AddSubTab({ Name = "Currency", Icon = ico("coins") })
+local SpoofBadge = SpooferTab:AddSubTab({ Name = "Badges", Icon = ico("award") })
+pcall(function() SpooferTab:SelectSubTab(1) end)
+
+-- Misc
+local MiscCross = MiscTab:AddSubTab({ Name = "Crosshair", Icon = ico("crosshair") })
+pcall(function() MiscTab:SelectSubTab(1) end)
+
+-- Home
+local Welcome = Home:AddSubTab({ Name = "Welcome", Icon = ico("sparkles") })
+local DiscordTab = Home:AddSubTab({ Name = "Discord", Icon = ico("message-circle") })
+pcall(function() Home:SelectSubTab(1) end)
+
+local function vantaGreeting()
+	local hour = tonumber(os.date("%H")) or 12
+	if hour < 5 then return "Burning the midnight oil?" end
+	if hour < 12 then return "Good morning." end
+	if hour < 18 then return "Good afternoon." end
+	return "Good evening."
+end
+
+Welcome:AddCard({
+	UserId = LP.UserId,
+	Title = "Hello, " .. (LP.DisplayName or LP.Name),
+	Description = vantaGreeting(),
+})
+
+Welcome:AddParagraph({
+	Title = "Welcome to Vanta",
+	Icon = ico("sparkles"),
+	Text = "Thanks for choosing Vanta as your script, make sure to join our discord server to never miss an update and stay connected within our community! <3",
+})
+
+Welcome:AddDivider()
+
+local function detectExecutor()
+	local name = "Unknown"
+	pcall(function()
+		if identifyexecutor then
+			name = tostring(identifyexecutor())
+		elseif getexecutorname then
+			name = tostring(getexecutorname())
+		end
+	end)
+	return name
+end
+
+local SUPPORTED_EXECS = {
+	volt = true, potassium = true, real = true, macsploit = true, opiumware = true,
+}
+
+local function isSupportedExec(name)
+	local n = string.lower(tostring(name or ""))
+	for key in pairs(SUPPORTED_EXECS) do
+		if n:find(key, 1, true) then return true end
+	end
+	return false
+end
+
+local execName = detectExecutor()
+local execOk = isSupportedExec(execName)
+
+local sysGrid
+pcall(function()
+	sysGrid = Welcome:AddSystemInfoGrid({
+		Description = "Live session and client info",
+	})
+end)
+pcall(function()
+	if sysGrid and sysGrid.SetValue then
+		sysGrid:SetValue(
+			"Executor",
+			tostring(execName) .. (execOk and " (Supported)" or " (Unsupported)")
+		)
+	end
+end)
+
+local DISCORD_URL = "https://discord.gg/vantafun"
+
+DiscordTab:AddParagraph({
+	Title = "Join the Vanta Community",
+	Icon = ico("message-circle"),
+	Text = "Connect with our community! share configs, chat with others and more!",
+})
+
+DiscordTab:AddDivider()
+
+DiscordTab:AddGradientCard({
+	Title = "Vanta Discord",
+	Description = "discord.gg/vantafun — click to join",
+	ColorA = Color3.fromRGB(88, 101, 242),
+	ColorB = Color3.fromRGB(57, 66, 160),
+	Callback = function()
+		local url = DISCORD_URL
+		pcall(function()
+			local clip = (syn and syn.write_clipboard) or setclipboard or (getgenv and getgenv().setclipboard)
+			if clip then clip(url) end
+		end)
+		pcall(function()
+			game:GetService("GuiService"):OpenBrowserWindow(url)
+		end)
+		VindUI:Notify({
+			Title = "Thanks for joining",
+			Text = "Discord invite copied to clipboard",
+			Type = "success",
+			Duration = 4,
+		})
+	end,
+})
+
+
+----------------------------------------------------------------
+-- COMBAT (placeholders — features next)
+----------------------------------------------------------------
+
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+-- VISUALS · PLAYER ESP (Universal style on Rivals models)
+-- AC-safe local Drawing only; no friendly-color split
+----------------------------------------------------------------
+;(function()
+	local ESP = {
+		visuals_enabled = false,
+		teammates = false,
+		max_distance = 1500,
+
+		box = {
+			enabled = false,
+			mode = "Full", -- Full | Corner
+			thickness = 1,
+			fill = false,
+			fill_color = Color3.fromRGB(255, 255, 255),
+			fill_transparency = 0.55,
+			gradient = false,
+			color = Color3.fromRGB(255, 255, 255),
+			color2 = Color3.fromRGB(255, 50, 50), -- red gradient end
+			outline = true,
+			outline_color = Color3.fromRGB(0, 0, 0),
+		},
+		skeleton = {
+			enabled = false,
+			thickness = 1.5,
+			gradient = false,
+			color = Color3.fromRGB(255, 255, 255),
+			color2 = Color3.fromRGB(255, 50, 50),
+			headdot = false,
+			headdot_size = 4,
+			headdot_color = Color3.fromRGB(255, 255, 255),
+		},
+		tracer = {
+			enabled = false,
+			origin = "Bottom",
+			thickness = 1,
+			color = Color3.fromRGB(255, 255, 255),
+			outline = true,
+			outline_color = Color3.fromRGB(0, 0, 0),
+		},
+		chams = {
+			enabled = false,
+			fill_color = Color3.fromRGB(255, 255, 255),
+			outline_color = Color3.fromRGB(255, 255, 255),
+			fill_transparency = 0.5,
+			outline_transparency = 0,
+			visible_only = false, -- Occluded vs AlwaysOnTop (Sense)
+		},
+		health = {
+			enabled = false,
+			text = true,
+			width = 2,
+			color_high = Color3.fromRGB(80, 255, 120),
+			color_mid = Color3.fromRGB(255, 220, 60),
+			color_low = Color3.fromRGB(255, 60, 60),
+			text_color = Color3.fromRGB(255, 255, 255),
+			segments = 12,
+		},
+		flags = {
+			username = false,
+			distance = false,
+			weapon = false,
+			username_color = Color3.fromRGB(255, 255, 255),
+			distance_color = Color3.fromRGB(200, 200, 200),
+			weapon_color = Color3.fromRGB(255, 255, 255),
+		},
+	}
+	getgenv().VantaRivalsESP = ESP
+
+	local entries = {}
+	local render_conn = nil
+
+	local function W2V(v3)
+		local cam = workspace.CurrentCamera
+		if not cam then return Vector3.zero, false end
+		return cam:WorldToViewportPoint(v3)
+	end
+
+	local function isWorldVisible(worldPos, cam)
+		cam = cam or workspace.CurrentCamera
+		if not cam then return false end
+		local sp, onScreen = cam:WorldToViewportPoint(worldPos)
+		-- WorldToViewportPoint handles all perspective/FOV math internally —
+		-- the LookVector dot check breaks in first-person because the camera
+		-- CFrame origin is at the head joint, not the HRP, so we skip it.
+		-- onScreen + Z > 0 is sufficient: Z > 0 means in front of the near plane.
+		if not onScreen or sp.Z <= 0 then return false end
+		local vs = cam.ViewportSize
+		if sp.X < -vs.X or sp.Y < -vs.Y or sp.X > vs.X * 2 or sp.Y > vs.Y * 2 then return false end
+		return true, sp
+	end
+
+	local function lerpColor(a, b, t)
+		t = math.clamp(t, 0, 1)
+		return Color3.new(
+			a.R + (b.R - a.R) * t,
+			a.G + (b.G - a.G) * t,
+			a.B + (b.B - a.B) * t
+		)
+	end
+
+	local function threeWayColor(low, mid, high, t)
+		t = math.clamp(t, 0, 1)
+		if t < 0.5 then
+			return lerpColor(low, mid, t * 2)
+		end
+		return lerpColor(mid, high, (t - 0.5) * 2)
+	end
+
+	local function isFriendly(plr)
+		local our = LP:GetAttribute("TeamID")
+		local their = plr:GetAttribute("TeamID")
+		if our ~= nil and their ~= nil then return their == our end
+		if plr.Team and LP.Team then return plr.Team == LP.Team end
+		return false
+	end
+
+	local function getWeaponName(plr)
+		local ok, name = pcall(function()
+			if modules.FighterController and modules.FighterController.GetFighter then
+				local f = modules.FighterController:GetFighter(plr)
+				if f and f.EquippedItem and f.EquippedItem.Name then
+					return tostring(f.EquippedItem.Name)
+				end
+			end
+			local char = plr.Character
+			if char then
+				local tool = char:FindFirstChildOfClass("Tool")
+				if tool then return tool.Name end
+			end
+			return "None"
+		end)
+		return (ok and name) or "None"
+	end
+
+	local R15_BONES = {
+		{"Head","UpperTorso"},{"UpperTorso","LowerTorso"},
+		{"UpperTorso","LeftUpperArm"},{"LeftUpperArm","LeftLowerArm"},{"LeftLowerArm","LeftHand"},
+		{"UpperTorso","RightUpperArm"},{"RightUpperArm","RightLowerArm"},{"RightLowerArm","RightHand"},
+		{"LowerTorso","LeftUpperLeg"},{"LeftUpperLeg","LeftLowerLeg"},{"LeftLowerLeg","LeftFoot"},
+		{"LowerTorso","RightUpperLeg"},{"RightUpperLeg","RightLowerLeg"},{"RightLowerLeg","RightFoot"},
+	}
+	local R6_BONES = {
+		{"Head","Torso"},{"Torso","Left Arm"},{"Torso","Right Arm"},{"Torso","Left Leg"},{"Torso","Right Leg"},
+	}
+
+	local function newLine()
+		local ok, o = pcall(Drawing.new, "Line")
+		if not (ok and o) then return nil end
+		o.Visible = false
+		o.Thickness = 1
+		o.ZIndex = 2
+		o.Transparency = 1
+		return o
+	end
+	local function newSquare()
+		local ok, o = pcall(Drawing.new, "Square")
+		if not (ok and o) then return nil end
+		o.Visible = false
+		o.Filled = false
+		o.Thickness = 1
+		o.ZIndex = 2
+		o.Transparency = 1
+		return o
+	end
+	local function newText()
+		local ok, o = pcall(Drawing.new, "Text")
+		if not (ok and o) then return nil end
+		o.Visible = false
+		o.Center = true
+		o.Outline = true
+		o.Size = 13
+		o.Font = 2
+		o.ZIndex = 3
+		o.Transparency = 1
+		return o
+	end
+	local function newCircle()
+		local ok, o = pcall(Drawing.new, "Circle")
+		if not (ok and o) then return nil end
+		o.Visible = false
+		o.Filled = true
+		o.Thickness = 1
+		o.ZIndex = 3
+		o.Transparency = 1
+		return o
+	end
+
+	local function hideDraw(o)
+		if o == nil then return end
+		pcall(function()
+			if o.Visible ~= nil then o.Visible = false end
+		end)
+	end
+
+	local function makeEntry()
+		local e = {
+			-- box: 8 corner segs + outlines, up to 18 full edges + outlines, fill square
+			corner = {}, cornerO = {},
+			edge = {}, edgeO = {},
+			fill = newSquare(),
+			-- skeleton
+			skel = {},
+			headdot = newCircle(),
+			-- tracer
+			tr = newLine(), trO = newLine(),
+			-- health: bg/outline lines + segment lines
+			hp_bg = newLine(),
+			hp_ol = newLine(),
+			hp_seg = {},
+			hp_text = newText(),
+			-- flags
+			name = newText(),
+			weapon = newText(),
+			distance = newText(),
+			chams = nil,
+		}
+		for i = 1, 8 do e.corner[i] = newLine(); e.cornerO[i] = newLine() end
+		for i = 1, 20 do e.edge[i] = newLine(); e.edgeO[i] = newLine() end
+		for i = 1, 16 do e.skel[i] = newLine() end
+		for i = 1, 16 do e.hp_seg[i] = newLine() end
+		return e
+	end
+
+	local function hideEntry(e)
+		if not e then return end
+		hideDraw(e.fill); hideDraw(e.tr); hideDraw(e.trO)
+		hideDraw(e.headdot); hideDraw(e.hp_bg); hideDraw(e.hp_ol); hideDraw(e.hp_text)
+		hideDraw(e.name); hideDraw(e.weapon); hideDraw(e.distance)
+		for _, d in pairs(e.corner or {}) do hideDraw(d) end
+		for _, d in pairs(e.cornerO or {}) do hideDraw(d) end
+		for _, d in pairs(e.edge or {}) do hideDraw(d) end
+		for _, d in pairs(e.edgeO or {}) do hideDraw(d) end
+		for _, d in pairs(e.skel or {}) do hideDraw(d) end
+		for _, d in pairs(e.hp_seg or {}) do hideDraw(d) end
+		if e.chams then pcall(function() e.chams.Enabled = false end) end
+	end
+
+	local function destroyEntry(e)
+		if not e then return end
+		if e.chams then pcall(function() e.chams:Destroy() end) end
+		local function kill(o)
+			pcall(function() if o and o.Remove then o:Remove() end end)
+		end
+		kill(e.fill); kill(e.tr); kill(e.trO); kill(e.headdot)
+		kill(e.hp_bg); kill(e.hp_ol); kill(e.hp_text)
+		kill(e.name); kill(e.weapon); kill(e.distance)
+		for _, d in pairs(e.corner or {}) do kill(d) end
+		for _, d in pairs(e.cornerO or {}) do kill(d) end
+		for _, d in pairs(e.edge or {}) do kill(d) end
+		for _, d in pairs(e.edgeO or {}) do kill(d) end
+		for _, d in pairs(e.skel or {}) do kill(d) end
+		for _, d in pairs(e.hp_seg or {}) do kill(d) end
+	end
+
+	local function setEdge(ln, ol, a, b, col, thick, useOutline, ocol)
+		if not ln then return end
+		if useOutline and ol then
+			ol.From = a; ol.To = b
+			ol.Color = ocol
+			ol.Thickness = thick + 2
+			ol.ZIndex = 2
+			ol.Transparency = 1
+			ol.Visible = true
+		elseif ol then
+			ol.Visible = false
+		end
+		ln.From = a; ln.To = b
+		ln.Color = col
+		ln.Thickness = thick
+		ln.ZIndex = 3
+		ln.Transparency = 1
+		ln.Visible = true
+	end
+
+	local function drawCornerBox(e, x, y, w, h, colTop, colBot, thick, useOutline, ocol)
+		local len = math.clamp(math.min(w, h) * 0.25, 4, 18)
+		local segs = {
+			{ Vector2.new(x, y), Vector2.new(x + len, y), colTop },
+			{ Vector2.new(x, y), Vector2.new(x, y + len), colTop },
+			{ Vector2.new(x + w, y), Vector2.new(x + w - len, y), colTop },
+			{ Vector2.new(x + w, y), Vector2.new(x + w, y + len), colTop },
+			{ Vector2.new(x, y + h), Vector2.new(x + len, y + h), colBot },
+			{ Vector2.new(x, y + h), Vector2.new(x, y + h - len), colBot },
+			{ Vector2.new(x + w, y + h), Vector2.new(x + w - len, y + h), colBot },
+			{ Vector2.new(x + w, y + h), Vector2.new(x + w, y + h - len), colBot },
+		}
+		for i = 1, 8 do
+			local a, b, col = segs[i][1], segs[i][2], segs[i][3]
+			setEdge(e.corner[i], e.cornerO[i], a, b, col, thick, useOutline, ocol)
+		end
+		for i = 1, #e.edge do hideDraw(e.edge[i]); hideDraw(e.edgeO[i]) end
+	end
+
+	local function drawFullBox(e, x, y, w, h, colTop, colBot, thick, useOutline, ocol, gradient)
+		for i = 1, 8 do hideDraw(e.corner[i]); hideDraw(e.cornerO[i]) end
+		for i = 1, #e.edge do hideDraw(e.edge[i]); hideDraw(e.edgeO[i]) end
+		local tl = Vector2.new(x, y)
+		local tr = Vector2.new(x + w, y)
+		local bl = Vector2.new(x, y + h)
+		local br = Vector2.new(x + w, y + h)
+		local idx = 1
+		setEdge(e.edge[idx], e.edgeO[idx], tl, tr, colTop, thick, useOutline, ocol); idx = idx + 1
+		setEdge(e.edge[idx], e.edgeO[idx], bl, br, gradient and colBot or colTop, thick, useOutline, ocol); idx = idx + 1
+		local segs = gradient and 8 or 1
+		for s = 0, segs - 1 do
+			local t0 = s / segs
+			local t1 = (s + 1) / segs
+			local col = gradient and lerpColor(colTop, colBot, (t0 + t1) * 0.5) or colTop
+			setEdge(e.edge[idx], e.edgeO[idx], Vector2.new(x, y + h * t0), Vector2.new(x, y + h * t1), col, thick, useOutline, ocol)
+			idx = idx + 1
+			setEdge(e.edge[idx], e.edgeO[idx], Vector2.new(x + w, y + h * t0), Vector2.new(x + w, y + h * t1), col, thick, useOutline, ocol)
+			idx = idx + 1
+		end
+	end
+
+	-- Sense/Aetherea chams: Highlight parented to CoreGui/gethui folder, Adornee = character
+	local chamFolder
+	pcall(function()
+		local parent = (gethui and gethui()) or game:GetService("CoreGui")
+		chamFolder = parent:FindFirstChild("VantaChamsFolder")
+		if not chamFolder then
+			chamFolder = Instance.new("Folder")
+			chamFolder.Name = "VantaChamsFolder"
+			chamFolder.Parent = parent
+		end
+	end)
+
+	local function ensureChams(e, char)
+		if not char then return end
+		local fillCol = ESP.chams.fill_color
+		local olCol = ESP.chams.outline_color
+		local fillT = ESP.chams.fill_transparency
+		local olT = ESP.chams.outline_transparency or 0
+		local depth = ESP.chams.visible_only and Enum.HighlightDepthMode.Occluded or Enum.HighlightDepthMode.AlwaysOnTop
+
+		if e.chams and e.chams.Parent then
+			e.chams.Adornee = char
+			e.chams.FillColor = fillCol
+			e.chams.OutlineColor = olCol
+			e.chams.FillTransparency = fillT
+			e.chams.OutlineTransparency = olT
+			e.chams.DepthMode = depth
+			e.chams.Enabled = true
+			return
+		end
+		if e.chams then pcall(function() e.chams:Destroy() end) end
+		local h = Instance.new("Highlight")
+		h.Name = "VantaChams"
+		h.FillColor = fillCol
+		h.OutlineColor = olCol
+		h.FillTransparency = fillT
+		h.OutlineTransparency = olT
+		h.DepthMode = depth
+		h.Adornee = char
+		h.Enabled = true
+		h.Parent = chamFolder or ((gethui and gethui()) or game:GetService("CoreGui"))
+		e.chams = h
+	end
+
+	local function removeChams(e)
+		if e and e.chams then
+			pcall(function() e.chams:Destroy() end)
+			e.chams = nil
+		end
+	end
+
+	-- fast box: head + feet only (2 projections) — smooth at full rate with 10+ players
+	local function getBox(char, cam, root)
+		cam = cam or workspace.CurrentCamera
+		if not cam then return end
+		root = root or char:FindFirstChild("HumanoidRootPart")
+		local head = char:FindFirstChild("Head")
+		local foot = char:FindFirstChild("LeftFoot")
+			or char:FindFirstChild("RightFoot")
+			or char:FindFirstChild("Left Leg")
+			or char:FindFirstChild("Right Leg")
+		if not head and not root then return end
+
+		local topPos
+		if head then
+			topPos = head.Position + Vector3.new(0, head.Size.Y * 0.5, 0)
+		else
+			topPos = root.Position + Vector3.new(0, root.Size.Y * 0.5, 0)
+		end
+		local botPos
+		if foot then
+			botPos = foot.Position - Vector3.new(0, foot.Size.Y * 0.5, 0)
+		elseif root then
+			botPos = root.Position - Vector3.new(0, root.Size.Y * 0.5 + 1.5, 0)
+		else
+			return
+		end
+
+		local top, onT = cam:WorldToViewportPoint(topPos)
+		local bot, onB = cam:WorldToViewportPoint(botPos)
+		if (not onT and not onB) or top.Z <= 0 or bot.Z <= 0 then return end
+
+		local h = math.abs(bot.Y - top.Y)
+		if h < 4 then return end
+		local w = h * 0.65
+		local cx = (top.X + bot.X) * 0.5
+		local minX, maxX = cx - w * 0.5, cx + w * 0.5
+		local minY, maxY = math.min(top.Y, bot.Y), math.max(top.Y, bot.Y)
+		local vs = cam.ViewportSize
+		if cx < -50 or cx > vs.X + 50 then return end
+		return minX, minY, maxX, maxY
+	end
+
+	local function isTargetAlive(plr, char, hum)
+		if not char or not char.Parent then return false end
+		if not hum or not hum.Parent then return false end
+		if hum.Health <= 0 then return false end
+		-- cheap attribute checks only (FighterController:GetFighter every ESP frame was a major cost)
+		if plr:GetAttribute("Dead") == true then return false end
+		if char:GetAttribute("Dead") == true then return false end
+		if plr:GetAttribute("IsAlive") == false then return false end
+		return true
+	end
+
+	local function updateOne(plr, e)
+		local char = plr.Character
+		if not char or not char.Parent then hideEntry(e); removeChams(e); e._char = nil; return end
+		-- reuse cached hum/root while character unchanged
+		local hum, root
+		if e._char == char and e._hum and e._hum.Parent and e._root and e._root.Parent then
+			hum, root = e._hum, e._root
+		else
+			hum = char:FindFirstChildOfClass("Humanoid")
+			root = char:FindFirstChild("HumanoidRootPart")
+				or char:FindFirstChild("UpperTorso")
+				or char:FindFirstChild("Torso")
+			e._char, e._hum, e._root = char, hum, root
+		end
+		if not isTargetAlive(plr, char, hum) or not root or not root.Parent then
+			hideEntry(e); removeChams(e); return
+		end
+
+		local cam = workspace.CurrentCamera
+		if not cam then hideEntry(e); removeChams(e); return end
+
+		local dist = (cam.CFrame.Position - root.Position).Magnitude
+		if dist > ESP.max_distance then hideEntry(e); removeChams(e); return end
+
+		-- cheap on-screen check via root only (skip before box math)
+		local rsp, ron = cam:WorldToViewportPoint(root.Position)
+		if not ron or rsp.Z <= 0 then
+			hideEntry(e); removeChams(e); return
+		end
+
+		if isFriendly(plr) and not ESP.teammates then
+			hideEntry(e); removeChams(e); return
+		end
+		-- LOD flag: skip skeleton past mid range (saves FindFirstChild spam)
+		e._far = dist > 250
+
+		local minX, minY, maxX, maxY = getBox(char, cam, root)
+		if not minX then hideEntry(e); removeChams(e); return end
+		local w, h = maxX - minX, maxY - minY
+		if w < 2 or h < 2 then hideEntry(e); removeChams(e); return end
+		local x, y = minX, minY
+
+		local colTop = ESP.box.color
+		local colBot = ESP.box.gradient and ESP.box.color2 or ESP.box.color
+		local thick = math.max(ESP.box.thickness, 1)
+
+		-- BOX
+		if ESP.box.enabled then
+			if ESP.box.mode == "Corner" then
+				drawCornerBox(e, x, y, w, h, colTop, colBot, thick, ESP.box.outline, ESP.box.outline_color)
+			else
+				drawFullBox(e, x, y, w, h, colTop, colBot, thick, ESP.box.outline, ESP.box.outline_color, ESP.box.gradient)
+			end
+			if e.fill then
+				if ESP.box.fill then
+					e.fill.Visible = true
+					e.fill.Filled = true
+					e.fill.Position = Vector2.new(x, y)
+					e.fill.Size = Vector2.new(w, h)
+					e.fill.Color = ESP.box.fill_color
+					e.fill.Transparency = ESP.box.fill_transparency
+					e.fill.ZIndex = 1
+				else
+					e.fill.Visible = false
+				end
+			end
+		else
+			for i = 1, 8 do hideDraw(e.corner[i]); hideDraw(e.cornerO[i]) end
+			for i = 1, #e.edge do hideDraw(e.edge[i]); hideDraw(e.edgeO[i]) end
+			hideDraw(e.fill)
+		end
+
+		-- TRACER (Universal style + outline)
+		if ESP.tracer.enabled then
+			local vs = cam.ViewportSize
+			local from
+			if ESP.tracer.origin == "Top" then
+				from = Vector2.new(vs.X * 0.5, 0)
+			elseif ESP.tracer.origin == "Mouse" then
+				local m = LP:GetMouse()
+				local inset = 0
+				pcall(function() inset = game:GetService("GuiService"):GetGuiInset().Y end)
+				from = Vector2.new(m.X, m.Y + inset)
+			elseif ESP.tracer.origin == "Center" then
+				from = Vector2.new(vs.X * 0.5, vs.Y * 0.5)
+			else
+				from = Vector2.new(vs.X * 0.5, vs.Y)
+			end
+			local to = Vector2.new(x + w * 0.5, y + h)
+			local tthick = math.max(ESP.tracer.thickness, 1)
+			if ESP.tracer.outline and e.trO then
+				e.trO.From = from; e.trO.To = to
+				e.trO.Color = ESP.tracer.outline_color
+				e.trO.Thickness = tthick + 2
+				e.trO.ZIndex = 2
+				e.trO.Transparency = 1
+				e.trO.Visible = true
+			else
+				hideDraw(e.trO)
+			end
+			if e.tr then
+				e.tr.From = from; e.tr.To = to
+				e.tr.Color = ESP.tracer.color
+				e.tr.Thickness = tthick
+				e.tr.ZIndex = 3
+				e.tr.Transparency = 1
+				e.tr.Visible = true
+			end
+		else
+			hideDraw(e.tr); hideDraw(e.trO)
+		end
+
+		-- SKELETON + gradient
+		if ESP.skeleton.enabled and not e._far then
+			local bones = char:FindFirstChild("UpperTorso") and R15_BONES or R6_BONES
+			local nBones = #bones
+			for i, pair in ipairs(bones) do
+				local a = char:FindFirstChild(pair[1])
+				local b = char:FindFirstChild(pair[2])
+				local line = e.skel[i]
+				if line and a and b and a:IsA("BasePart") and b:IsA("BasePart") then
+					local sa, ona = W2V(a.Position)
+					local sb, onb = W2V(b.Position)
+					if ona and onb and sa.Z > 0 and sb.Z > 0 then
+						local col = ESP.skeleton.color
+						if ESP.skeleton.gradient then
+							col = lerpColor(ESP.skeleton.color, ESP.skeleton.color2, (i - 1) / math.max(nBones - 1, 1))
+						end
+						line.From = Vector2.new(sa.X, sa.Y)
+						line.To = Vector2.new(sb.X, sb.Y)
+						line.Color = col
+						line.Thickness = ESP.skeleton.thickness
+						line.Transparency = 1
+						line.Visible = true
+					else
+						line.Visible = false
+					end
+				elseif line then
+					line.Visible = false
+				end
+			end
+			for i = nBones + 1, #e.skel do hideDraw(e.skel[i]) end
+			if ESP.skeleton.headdot and e.headdot then
+				local head = char:FindFirstChild("Head")
+				if head then
+					local hp, on = W2V(head.Position)
+					if on and hp.Z > 0 then
+						e.headdot.Position = Vector2.new(hp.X, hp.Y)
+						e.headdot.Radius = ESP.skeleton.headdot_size
+						e.headdot.Color = ESP.skeleton.headdot_color
+						e.headdot.Filled = true
+						e.headdot.Transparency = 1
+						e.headdot.Visible = true
+					else
+						e.headdot.Visible = false
+					end
+				else
+					e.headdot.Visible = false
+				end
+			else
+				hideDraw(e.headdot)
+			end
+		else
+			for i = 1, #e.skel do hideDraw(e.skel[i]) end
+			hideDraw(e.headdot)
+		end
+
+		-- HEALTHBAR: always-shown 3-way gradient along bar (Universal segments via Lines)
+		if ESP.health.enabled then
+			local maxH = hum.MaxHealth
+			if typeof(maxH) ~= "number" or maxH <= 0 then maxH = 100 end
+			local hp = hum.Health
+			if typeof(hp) ~= "number" or hp < 0 then hp = 0 end
+			local frac = math.clamp(hp / maxH, 0, 1)
+			local barW = math.max(ESP.health.width or 4, 2)
+			local bx = x - barW - 5
+			local by = y
+			local bh = h
+			local cx = bx + barW * 0.5
+			local segs = math.clamp(ESP.health.segments or 12, 4, 16)
+			if segs > #e.hp_seg then segs = #e.hp_seg end
+
+			-- dark outline full height
+			if e.hp_bg then
+				e.hp_bg.From = Vector2.new(cx, by)
+				e.hp_bg.To = Vector2.new(cx, by + bh)
+				e.hp_bg.Thickness = barW + 2
+				e.hp_bg.Color = Color3.fromRGB(0, 0, 0)
+				e.hp_bg.Transparency = 1
+				e.hp_bg.ZIndex = 4
+				e.hp_bg.Visible = true
+			end
+
+			for i = 1, #e.hp_seg do hideDraw(e.hp_seg[i]) end
+			local filled = math.floor(segs * frac + 1e-6)
+			if frac > 0 and filled < 1 then filled = 1 end
+			if frac >= 0.999 then filled = segs end
+
+			-- segments from BOTTOM: color by absolute height t (0 bottom=low → 1 top=high) so gradient always shows
+			for i = 1, filled do
+				local seg = e.hp_seg[i]
+				if not seg then break end
+				local t0 = (i - 1) / segs
+				local t1 = i / segs
+				-- i=1 near bottom
+				local y0 = by + bh - bh * t1
+				local y1 = by + bh - bh * t0
+				local midT = (t0 + t1) * 0.5 -- 0 at bottom
+				local col = threeWayColor(ESP.health.color_low, ESP.health.color_mid, ESP.health.color_high, midT)
+				seg.From = Vector2.new(cx, y0)
+				seg.To = Vector2.new(cx, y1)
+				seg.Thickness = barW
+				seg.Color = col
+				seg.Transparency = 1
+				seg.ZIndex = 5
+				seg.Visible = true
+			end
+
+			if ESP.health.text and e.hp_text then
+				-- top-left of healthbar (Universal style)
+				local label = tostring(math.floor(hp + 0.5))
+				e.hp_text.Text = label
+				e.hp_text.Size = 12
+				e.hp_text.Center = true
+				e.hp_text.Outline = true
+				e.hp_text.Color = ESP.health.text_color
+				e.hp_text.Transparency = 1
+				e.hp_text.ZIndex = 6
+				e.hp_text.Position = Vector2.new(bx - 10, by)
+				e.hp_text.Visible = true
+			else
+				hideDraw(e.hp_text)
+			end
+		else
+			hideDraw(e.hp_bg); hideDraw(e.hp_ol); hideDraw(e.hp_text)
+			for i = 1, #e.hp_seg do hideDraw(e.hp_seg[i]) end
+		end
+
+		-- FLAGS
+		if ESP.flags.username and e.name then
+			e.name.Text = plr.Name
+			e.name.Position = Vector2.new(x + w * 0.5, y - 14)
+			e.name.Color = ESP.flags.username_color
+			e.name.Size = 13
+			e.name.Center = true
+			e.name.Visible = true
+		else
+			hideDraw(e.name)
+		end
+		local flagY = y + h + 2
+		if ESP.flags.distance and e.distance then
+			e.distance.Text = string.format("[%dm]", math.floor(dist + 0.5))
+			e.distance.Position = Vector2.new(x + w * 0.5, flagY)
+			e.distance.Color = ESP.flags.distance_color
+			e.distance.Size = 12
+			e.distance.Center = true
+			e.distance.Visible = true
+			flagY = flagY + 14
+		else
+			hideDraw(e.distance)
+		end
+		if ESP.flags.weapon and e.weapon then
+			e.weapon.Text = getWeaponName(plr)
+			e.weapon.Position = Vector2.new(x + w * 0.5, flagY)
+			e.weapon.Color = ESP.flags.weapon_color
+			e.weapon.Size = 12
+			e.weapon.Center = true
+			e.weapon.Visible = true
+		else
+			hideDraw(e.weapon)
+		end
+
+		-- CHAMS
+		if ESP.chams.enabled then
+			ensureChams(e, char)
+		else
+			removeChams(e)
+		end
+	end
+
+	local function stopESP()
+		if render_conn then render_conn:Disconnect(); render_conn = nil end
+		for _, e in pairs(entries) do hideEntry(e); removeChams(e) end
+	end
+
+	local function startESP()
+		if render_conn then return end
+		local cached_list = {}
+		local list_refresh = 0
+		render_conn = RunService.RenderStepped:Connect(function()
+			if not ESP.visuals_enabled then stopESP(); return end
+			local cam = workspace.CurrentCamera
+			if not cam then return end
+			local now = os.clock()
+			-- refresh player list only every 0.15s (not every frame)
+			if now >= list_refresh then
+				list_refresh = now + 0.15
+				local raw = Players:GetPlayers()
+				local n = 0
+				for i = 1, #raw do
+					if raw[i] ~= LP then
+						n = n + 1
+						cached_list[n] = raw[i]
+					end
+				end
+				for i = n + 1, #cached_list do cached_list[i] = nil end
+			end
+			-- full-rate redraw for every player (smooth); cost lives in cheap getBox
+			for i = 1, #cached_list do
+				local plr = cached_list[i]
+				if plr and plr.Parent then
+					local e = entries[plr]
+					if not e then
+						e = makeEntry()
+						entries[plr] = e
+					end
+					updateOne(plr, e)
+				end
+			end
+		end)
+	end
+
+	function ESP.Apply()
+		if ESP.visuals_enabled then startESP() else stopESP() end
+	end
+
+	local function wipePlayer(plr)
+		local e = entries[plr]
+		if e then hideEntry(e); removeChams(e) end
+	end
+
+	local function bindCharacter(plr, char)
+		if not char then return end
+		local hum = char:FindFirstChildOfClass("Humanoid") or char:WaitForChild("Humanoid", 2)
+		if hum then
+			hum.Died:Connect(function() wipePlayer(plr) end)
+			pcall(function()
+				hum.HealthChanged:Connect(function(h)
+					if h <= 0 then wipePlayer(plr) end
+				end)
+			end)
+		end
+		char.AncestryChanged:Connect(function(_, parent)
+			if not parent then wipePlayer(plr) end
+		end)
+	end
+
+	for _, plr in ipairs(Players:GetPlayers()) do
+		if plr ~= LP then
+			if plr.Character then bindCharacter(plr, plr.Character) end
+			plr.CharacterAdded:Connect(function(char)
+				wipePlayer(plr)
+				task.defer(function() bindCharacter(plr, char) end)
+			end)
+			plr.CharacterRemoving:Connect(function() wipePlayer(plr) end)
+		end
+	end
+	Players.PlayerAdded:Connect(function(plr)
+		plr.CharacterAdded:Connect(function(char)
+			wipePlayer(plr)
+			task.defer(function() bindCharacter(plr, char) end)
+		end)
+		plr.CharacterRemoving:Connect(function() wipePlayer(plr) end)
+	end)
+	Players.PlayerRemoving:Connect(function(plr)
+		local e = entries[plr]
+		if e then destroyEntry(e); entries[plr] = nil end
+	end)
+
+	-- ===== UI (no friendly colors) =====
+	pcall(function() VisPlayer:AddSection("Master ESP", ico("eye")) end)
+	bindToggle(VisPlayer, "ESPMaster", "Enabled", false, function(v)
+		ESP.visuals_enabled = v; ESP.Apply()
+	end)
+	bindToggle(VisPlayer, "ESPTeammates", "Teammates", false, function(v) ESP.teammates = v end)
+	bindSlider(VisPlayer, "ESPMaxDist", "Max Distance", 1500, 50, 5000, 0, function(v) ESP.max_distance = v end, "m")
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Box", ico("box")) end)
+	bindToggle(VisPlayer, "ESPBox", "Enabled", false, function(v) ESP.box.enabled = v end)
+	pcall(function() VisPlayer:AddLineText("Configure Box") end)
+	bindDropdown(VisPlayer, "ESPBoxMode", "Mode", { "Full", "Corner" }, "Full", function(v) ESP.box.mode = v end)
+	bindSlider(VisPlayer, "ESPBoxThick", "Thickness", 1, 1, 6, 0, function(v) ESP.box.thickness = v end, "px")
+	bindToggle(VisPlayer, "ESPBoxOutline", "Outline", true, function(v) ESP.box.outline = v end)
+	bindColor(VisPlayer, "ESPBoxOutlineCol", "Outline Color", ESP.box.outline_color, function(c) ESP.box.outline_color = c end)
+	bindToggle(VisPlayer, "ESPBoxGrad", "Gradient", false, function(v) ESP.box.gradient = v end)
+	bindColor(VisPlayer, "ESPBoxCol", "Color", ESP.box.color, function(c) ESP.box.color = c end)
+	bindColor(VisPlayer, "ESPBoxCol2", "Color 2", ESP.box.color2, function(c) ESP.box.color2 = c end)
+	bindToggle(VisPlayer, "ESPBoxFill", "Fill", false, function(v) ESP.box.fill = v end)
+	bindColor(VisPlayer, "ESPBoxFillCol", "Fill Color", ESP.box.fill_color, function(c) ESP.box.fill_color = c end)
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Skeleton", ico("user")) end)
+	bindToggle(VisPlayer, "ESPSkeleton", "Enabled", false, function(v) ESP.skeleton.enabled = v end)
+	pcall(function() VisPlayer:AddLineText("Configure Skeleton") end)
+	bindSlider(VisPlayer, "ESPSkelThick", "Thickness", 1.5, 1, 6, 1, function(v) ESP.skeleton.thickness = v end, "px")
+	bindToggle(VisPlayer, "ESPSkelGrad", "Gradient", false, function(v) ESP.skeleton.gradient = v end)
+	bindColor(VisPlayer, "ESPSkelCol", "Color", ESP.skeleton.color, function(c) ESP.skeleton.color = c end)
+	bindColor(VisPlayer, "ESPSkelCol2", "Color 2", ESP.skeleton.color2, function(c) ESP.skeleton.color2 = c end)
+	bindToggle(VisPlayer, "ESPHeadDot", "Head Dot", false, function(v) ESP.skeleton.headdot = v end)
+	bindSlider(VisPlayer, "ESPHeadDotSize", "Head Dot Size", 4, 1, 12, 0, function(v) ESP.skeleton.headdot_size = v end, "px")
+	bindColor(VisPlayer, "ESPHeadDotCol", "Head Dot Color", ESP.skeleton.headdot_color, function(c) ESP.skeleton.headdot_color = c end)
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Chams", ico("sparkles")) end)
+	bindToggle(VisPlayer, "ESPChams", "Enabled", false, function(v) ESP.chams.enabled = v end)
+	pcall(function() VisPlayer:AddLineText("Configure Chams") end)
+	bindColor(VisPlayer, "ESPChamsFill", "Fill", ESP.chams.fill_color, function(c) ESP.chams.fill_color = c end)
+	bindColor(VisPlayer, "ESPChamsOl", "Outline", ESP.chams.outline_color, function(c) ESP.chams.outline_color = c end)
+	bindSlider(VisPlayer, "ESPChamsTrans", "Fill Transparency", 0.5, 0, 1, 2, function(v) ESP.chams.fill_transparency = v end)
+	bindSlider(VisPlayer, "ESPChamsOlTrans", "Outline Transparency", 0, 0, 1, 2, function(v) ESP.chams.outline_transparency = v end)
+	bindToggle(VisPlayer, "ESPChamsVisibleOnly", "Visible Only", false, function(v) ESP.chams.visible_only = v end)
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Healthbar", ico("heart")) end)
+	bindToggle(VisPlayer, "ESPHealth", "Enabled", false, function(v) ESP.health.enabled = v end)
+	pcall(function() VisPlayer:AddLineText("Configure Health") end)
+	bindSlider(VisPlayer, "ESPHpWidth", "Bar Width", 2, 1, 12, 0, function(v) ESP.health.width = v end, "px")
+	bindToggle(VisPlayer, "ESPHpText", "HP Text", true, function(v) ESP.health.text = v end)
+	bindColor(VisPlayer, "ESPHpHigh", "High", ESP.health.color_high, function(c) ESP.health.color_high = c end)
+	bindColor(VisPlayer, "ESPHpMid", "Mid", ESP.health.color_mid, function(c) ESP.health.color_mid = c end)
+	bindColor(VisPlayer, "ESPHpLow", "Low", ESP.health.color_low, function(c) ESP.health.color_low = c end)
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Tracers", ico("crosshair")) end)
+	bindToggle(VisPlayer, "ESPTracers", "Enabled", false, function(v) ESP.tracer.enabled = v end)
+	pcall(function() VisPlayer:AddLineText("Configure Tracers") end)
+	bindDropdown(VisPlayer, "ESPTracerOrigin", "Origin", { "Bottom", "Top", "Center", "Mouse" }, "Bottom", function(v) ESP.tracer.origin = v end)
+	bindSlider(VisPlayer, "ESPTracerThick", "Thickness", 1, 1, 6, 0, function(v) ESP.tracer.thickness = v end, "px")
+	bindToggle(VisPlayer, "ESPTracerOutline", "Outline", true, function(v) ESP.tracer.outline = v end)
+	bindColor(VisPlayer, "ESPTracerCol", "Color", ESP.tracer.color, function(c) ESP.tracer.color = c end)
+	bindColor(VisPlayer, "ESPTracerOlCol", "Outline Color", ESP.tracer.outline_color, function(c) ESP.tracer.outline_color = c end)
+
+	pcall(function() VisPlayer:AddDivider() end)
+	pcall(function() VisPlayer:AddSection("Flags", ico("list")) end)
+	bindToggle(VisPlayer, "ESPName", "Username", false, function(v) ESP.flags.username = v end)
+	bindColor(VisPlayer, "ESPNameCol", "Username Color", ESP.flags.username_color, function(c) ESP.flags.username_color = c end)
+	pcall(function() VisPlayer:AddLineText("Distance") end)
+	bindToggle(VisPlayer, "ESPDistance", "Distance", false, function(v) ESP.flags.distance = v end)
+	bindColor(VisPlayer, "ESPDistCol", "Distance Color", ESP.flags.distance_color, function(c) ESP.flags.distance_color = c end)
+	pcall(function() VisPlayer:AddLineText("Weapon") end)
+	bindToggle(VisPlayer, "ESPWeapon", "Weapon", false, function(v) ESP.flags.weapon = v end)
+	bindColor(VisPlayer, "ESPWepCol", "Weapon Color", ESP.flags.weapon_color, function(c) ESP.flags.weapon_color = c end)
+
+	pcall(function() VisExtra:AddSection("Extra", ico("package")) end)
+	pcall(function() VisExtra:AddLabel("Nothing here yet") end)
+end)()
+
+
+----------------------------------------------------------------
+-- COMBAT · RAGE · SILENT AIM (Aetherea / Rivals Gun.StartShooting)
+----------------------------------------------------------------
+;(function()
+	local SA = {
+		enabled = false,
+		hit_chance = 100,
+		manipulation = false,
+		show_fov = false,
+		fov_radius = 100,
+		fov_color = Color3.fromRGB(255, 255, 255),
+		wallcheck = true,
+		max_distance = 500,
+		weight_ratio = 0.7,
+		hitbox = "Closest Part", -- Head | UpperTorso | Closest Part
+		target_part = nil,
+		target_player = nil,
+	}
+	getgenv().VantaRivalsSilent = SA
+
+	local function loadCombatModules()
+		pcall(function()
+			local mods = ReplicatedStorage:FindFirstChild("Modules")
+			if mods then
+				if not modules.Utility then
+					modules.Utility = tryRequire(function() return require(mods:WaitForChild("Utility", 5)) end)
+				end
+			end
+			local ps = LP:FindFirstChild("PlayerScripts")
+			if not ps then return end
+			local itemTypes = ps:FindFirstChild("Modules") and ps.Modules:FindFirstChild("ItemTypes")
+			if itemTypes then
+				if not modules.Gun then
+					modules.Gun = tryRequire(function() return require(itemTypes:WaitForChild("Gun", 5)) end)
+				end
+				if not modules.Melee then
+					modules.Melee = tryRequire(function() return require(itemTypes:WaitForChild("Melee", 5)) end)
+				end
+			end
+			local controllers = ps:FindFirstChild("Controllers")
+			if controllers and not modules.FighterController then
+				modules.FighterController = tryRequire(function()
+					return require(controllers:WaitForChild("FighterController", 5))
+				end)
+			end
+		end)
+	end
+	loadCombatModules()
+	task.spawn(function()
+		for _ = 1, 15 do
+			loadCombatModules()
+			if modules.Gun and modules.Utility then break end
+			task.wait(1)
+		end
+	end)
+
+	local shot_offset_cf = CFrame.new(0.43, 0.25, 0.42)
+	pcall(function()
+		if modules.Utility and modules.Utility.EncodeCFrame then
+			shot_offset_cf = modules.Utility:EncodeCFrame(CFrame.new(0.43, 0.25, 0.42))
+		end
+	end)
+	local shot_key_0 = utf8.char(0)
+	local shot_key_1 = utf8.char(1)
+	local shot_key_2 = utf8.char(2)
+	local shot_key_3 = utf8.char(3)
+
+	local function encodeCF(cf)
+		if modules.Utility and modules.Utility.EncodeCFrame then
+			local ok, enc = pcall(function() return modules.Utility:EncodeCFrame(cf) end)
+			if ok and enc then return enc end
+		end
+		return cf
+	end
+
+	local function BuildShotPayload(origin, target, part)
+		local aim_cf = encodeCF(CFrame.new(origin, target))
+		return {
+			[shot_key_0] = aim_cf,
+			[shot_key_1] = aim_cf,
+			[shot_key_2] = part,
+			[shot_key_3] = shot_offset_cf,
+		}
+	end
+
+	-- FOV circle (Drawing)
+	local fovCircle
+	pcall(function()
+		fovCircle = Drawing.new("Circle")
+		fovCircle.Visible = false
+		fovCircle.Thickness = 1
+		fovCircle.NumSides = 32
+		fovCircle.Filled = false
+		fovCircle.Transparency = 1
+		fovCircle.ZIndex = 10
+		fovCircle.Color = SA.fov_color
+	end)
+
+	local raycast_params = RaycastParams.new()
+	raycast_params.FilterType = Enum.RaycastFilterType.Exclude
+	raycast_params.FilterDescendantsInstances = { LP.Character }
+	LP.CharacterAdded:Connect(function(char)
+		raycast_params.FilterDescendantsInstances = { char }
+	end)
+
+	local wallcheck_cache = {}
+	local wallcheck_cache_ttl = 0.15
+
+	local function WallCheck(character, part)
+		if not SA.wallcheck then return true end
+		if not part then return false end
+		local char_cache = wallcheck_cache[character]
+		if not char_cache then
+			char_cache = {}
+			wallcheck_cache[character] = char_cache
+		end
+		local now = os.clock()
+		local cached = char_cache[part]
+		if cached and (now - cached.time) < wallcheck_cache_ttl then
+			return cached.value
+		end
+		local cam = workspace.CurrentCamera
+		if not cam then return false end
+		local origin = cam.CFrame.Position
+		local result = workspace:Raycast(origin, part.Position - origin, raycast_params)
+		local passed = not result or result.Instance:IsDescendantOf(character)
+		char_cache[part] = { time = now, value = passed }
+		return passed
+	end
+
+	local BODY_PARTS = {
+		"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart",
+		"LeftUpperArm", "RightUpperArm", "LeftLowerArm", "RightLowerArm",
+		"LeftUpperLeg", "RightUpperLeg", "LeftLowerLeg", "RightLowerLeg",
+		"Torso", "Left Arm", "Right Arm", "Left Leg", "Right Leg",
+	}
+
+	local function partsForMode()
+		if SA.hitbox == "Head" then
+			return { "Head" }
+		elseif SA.hitbox == "UpperTorso" then
+			return { "UpperTorso", "Torso" }
+		end
+		return BODY_PARTS -- Closest Part
+	end
+
+	local function isEnemy(plr)
+		if not plr then return true end
+		local our = LP:GetAttribute("TeamID")
+		local their = plr:GetAttribute("TeamID")
+		if our ~= nil and their ~= nil and their == our then return false end
+		if plr.Team and LP.Team and plr.Team == LP.Team then return false end
+		return true
+	end
+
+	local bot_cache, bot_cache_t = {}, 0
+	local function getPracticeChars()
+		local now = os.clock()
+		if now - bot_cache_t < 0.75 then return bot_cache end
+		bot_cache_t = now
+		local list = {}
+		local seen = {}
+		local function consider(model)
+			if not model or seen[model] or model == LP.Character then return end
+			if Players:GetPlayerFromCharacter(model) then return end
+			local hum = model:FindFirstChildOfClass("Humanoid")
+			local root = model:FindFirstChild("HumanoidRootPart")
+			if hum and root and hum.Health > 0 then
+				seen[model] = true
+				list[#list + 1] = model
+			end
+		end
+		local roots = { workspace }
+		for _, name in ipairs({ "Bots", "Dummies", "Practice", "Training", "NPCs", "Characters", "Entities" }) do
+			local f = workspace:FindFirstChild(name)
+			if f then roots[#roots + 1] = f end
+		end
+		for _, root in ipairs(roots) do
+			for _, child in ipairs(root:GetChildren()) do
+				if child:IsA("Model") then
+					consider(child)
+					for _, sub in ipairs(child:GetChildren()) do
+						if sub:IsA("Model") then consider(sub) end
+					end
+				elseif child:IsA("Folder") then
+					for _, sub in ipairs(child:GetChildren()) do
+						if sub:IsA("Model") then consider(sub) end
+					end
+				end
+			end
+		end
+		bot_cache = list
+		return list
+	end
+
+	local function scoreCharacter(character, origin, center, radius_sq, want)
+		local closest_part, closest = nil, math.huge
+		local cam = workspace.CurrentCamera
+		if not cam then return nil, math.huge end
+		for _, name in ipairs(want) do
+			local part = character:FindFirstChild(name)
+			if part and part:IsA("BasePart") then
+				local world_dist = (part.Position - origin).Magnitude
+				if world_dist <= SA.max_distance then
+					local screen, visible = cam:WorldToViewportPoint(part.Position)
+					if visible and screen.Z > 0 then
+						local dx = screen.X - center.X
+						local dy = screen.Y - center.Y
+						local screen_dist = dx * dx + dy * dy
+						if screen_dist <= radius_sq then
+							local score = (screen_dist * SA.weight_ratio) + (world_dist * (1 - SA.weight_ratio))
+							if score < closest then
+								closest = score
+								closest_part = part
+							end
+						end
+					end
+				end
+			end
+		end
+		return closest_part, closest
+	end
+
+	local function FindBestTarget()
+		local cam = workspace.CurrentCamera
+		if not cam then return nil, nil end
+		local origin = cam.CFrame.Position
+		local center = Vector2.new(cam.ViewportSize.X * 0.5, cam.ViewportSize.Y * 0.5)
+		local radius_sq = SA.fov_radius * SA.fov_radius
+		local want = partsForMode()
+		local best_part, best_player, best_score = nil, nil, math.huge
+
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LP and isEnemy(player) then
+				local character = player.Character
+				if character then
+					local root = character:FindFirstChild("HumanoidRootPart")
+					local humanoid = character:FindFirstChildOfClass("Humanoid")
+					if root and humanoid and humanoid.Health > 0 then
+						local closest_part, closest = scoreCharacter(character, origin, center, radius_sq, want)
+						if closest_part and closest < best_score and WallCheck(character, closest_part) then
+							best_score = closest
+							best_player = player
+							best_part = closest_part
+						end
+					end
+				end
+			end
+		end
+
+		for _, character in ipairs(getPracticeChars()) do
+			local closest_part, closest = scoreCharacter(character, origin, center, radius_sq, want)
+			-- practice bots: skip wallcheck (range props block rays)
+			if closest_part and closest < best_score then
+				best_score = closest
+				best_player = nil
+				best_part = closest_part
+			end
+		end
+
+		return best_player, best_part
+	end
+
+	-- Manipulation offsets (Aetherea)
+	local candidates = {
+		Vector3.new(5, 3, 5), Vector3.new(-5, 3, 5),
+		Vector3.new(5, 3, -5), Vector3.new(-5, 3, -5),
+		Vector3.new(0, 5, 8), Vector3.new(0, 5, -8),
+	}
+	local overlap_params = OverlapParams.new()
+	overlap_params.FilterType = Enum.RaycastFilterType.Exclude
+	local ray_params = RaycastParams.new()
+	ray_params.FilterType = Enum.RaycastFilterType.Exclude
+	local valid_position_cache = {}
+	local valid_position_cache_ttl = 0.5
+
+	local function FindValidPosition(target)
+		local char = LP.Character
+		overlap_params.FilterDescendantsInstances = { char }
+		ray_params.FilterDescendantsInstances = { char }
+		local target_pos = target.Position
+		local target_model = target.Parent
+		for i = 1, #candidates do
+			local offset = candidates[i]
+			local pos = target_pos + offset
+			local result = workspace:Raycast(pos, target_pos - pos, ray_params)
+			if not result or result.Instance:IsDescendantOf(target_model) then
+				local parts = workspace:GetPartBoundsInBox(CFrame.new(pos), Vector3.new(3, 6, 3), overlap_params)
+				local blocked = false
+				for j = 1, #parts do
+					if parts[j].CanCollide then blocked = true; break end
+				end
+				if not blocked then return offset end
+			end
+		end
+		return nil
+	end
+
+	local function GetCachedValidPosition(target)
+		if not target or not target.Parent then return nil end
+		local now = os.clock()
+		local entry = valid_position_cache[target]
+		if entry and now - entry.time < valid_position_cache_ttl then
+			return entry.value
+		end
+		local value = FindValidPosition(target)
+		valid_position_cache[target] = { value = value, time = now }
+		return value
+	end
+
+	-- Target + FOV loop
+	local next_search = 0
+	-- Silent Aim only (triggerbot has its own crosshair raycast)
+	RunService.RenderStepped:Connect(function()
+		if not SA.enabled and not SA.show_fov then
+			if SA.target_part then
+				SA.target_part = nil
+				SA.target_player = nil
+			end
+			if fovCircle then fovCircle.Visible = false end
+			return
+		end
+
+		local cam = workspace.CurrentCamera
+		if not cam then return end
+		local center = Vector2.new(cam.ViewportSize.X * 0.5, cam.ViewportSize.Y * 0.5)
+
+		if fovCircle then
+			if SA.show_fov then
+				fovCircle.Position = center
+				fovCircle.Radius = SA.fov_radius
+				fovCircle.Color = SA.fov_color
+				fovCircle.Visible = true
+			else
+				fovCircle.Visible = false
+			end
+		end
+
+		if not SA.enabled then
+			SA.target_part = nil
+			SA.target_player = nil
+			return
+		end
+
+		local now = os.clock()
+		if now < next_search then return end
+		next_search = now + 0.03
+
+		local plr, part = FindBestTarget()
+		SA.target_player = plr
+		SA.target_part = part
+	end)
+
+	-- Gun.StartShooting hook (core Aetherea silent)
+	local gun_hooked = false
+	local function tryHookGun()
+		if gun_hooked then return end
+		loadCombatModules()
+		if not modules.Gun or not modules.Gun.StartShooting then return end
+		gun_hooked = true
+		local old_gun = modules.Gun.StartShooting
+		modules.Gun.StartShooting = function(self, ...)
+			local part = SA.target_part
+			if not SA.enabled or not part or not self.ClientFighter or not self.ClientFighter.IsLocalPlayer then
+				return old_gun(self, ...)
+			end
+
+			local results = { old_gun(self, ...) }
+			if results[1] ~= true or results[2] ~= "StartShooting" then
+				return unpack(results)
+			end
+
+			if math.random(1, 100) > SA.hit_chance then
+				return unpack(results)
+			end
+
+			local root = LP.Character and LP.Character.PrimaryPart
+			if not root then
+				return unpack(results)
+			end
+
+			local origin = root.Position
+			local target = part.Position
+
+			if SA.manipulation then
+				local offset = GetCachedValidPosition(part)
+				if offset then
+					origin = (part.CFrame * CFrame.new(offset)).Position
+				end
+			end
+
+			results[3] = BuildShotPayload(origin, target, part)
+			return unpack(results)
+		end
+	end
+
+	task.spawn(function()
+		for _ = 1, 30 do
+			tryHookGun()
+			if gun_hooked then break end
+			task.wait(1)
+		end
+	end)
+
+	-- UI · Rage tab
+	pcall(function() CombatRage:AddSection("Silent Aim", ico("crosshair")) end)
+	bindToggle(CombatRage, "SAEnabled", "Enabled", false, function(v)
+		SA.enabled = v
+		if v then tryHookGun() end
+	end)
+	pcall(function() CombatRage:AddLineText("Configure Silent Aim") end)
+	bindToggle(CombatRage, "SAShowFOV", "Show FOV", false, function(v) SA.show_fov = v end)
+	bindSlider(CombatRage, "SAFOV", "FOV Size", 100, 10, 800, 0, function(v) SA.fov_radius = v end, "px")
+	bindColor(CombatRage, "SAFOVColor", "FOV Color", SA.fov_color, function(c) SA.fov_color = c end)
+	bindDropdown(CombatRage, "SAHitbox", "Hitbox", { "Closest Part", "Head", "UpperTorso" }, "Closest Part", function(v)
+		SA.hitbox = v
+	end)
+	bindSlider(CombatRage, "SAHitChance", "Hit Chance", 100, 0, 100, 0, function(v) SA.hit_chance = v end, "%")
+	bindSlider(CombatRage, "SAMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) SA.max_distance = v end, "m")
+	bindToggle(CombatRage, "SAWallcheck", "Wallcheck", true, function(v) SA.wallcheck = v end)
+	bindToggle(CombatRage, "SAManip", "Manipulation", false, function(v) SA.manipulation = v end)
+end)()
+
+----------------------------------------------------------------
+-- COMBAT · LEGIT · AIMBOT / AIM ASSIST
+----------------------------------------------------------------
+;(function()
+	local UIS = game:GetService("UserInputService")
+
+	local SMOOTH_MODES = {
+		"None", "Linear", "Exponential", "Dynamic",
+		"SinEase", "SpringDamp", "Predictive", "Bezier",
+	}
+
+	local HITBOX_PARTS_AA = {
+		Head             = { "Head" },
+		UpperTorso       = { "UpperTorso", "Torso" },
+		["Closest Part"] = {
+			"Head","UpperTorso","LowerTorso","HumanoidRootPart",
+			"LeftUpperArm","RightUpperArm","LeftLowerArm","RightLowerArm",
+			"LeftUpperLeg","RightUpperLeg","LeftLowerLeg","RightLowerLeg",
+			"Torso","Left Arm","Right Arm","Left Leg","Right Leg",
+		},
+	}
+
+	local AA = {
+		enabled        = false,
+		hold_mode      = "Hold",
+		hold_key       = Enum.KeyCode.C,
+		hold_mouse     = nil,
+		toggled        = false,
+
+		fov_radius     = 120,
+		show_fov       = false,
+		fov_color      = Color3.fromRGB(255, 255, 255),
+		max_distance   = 600,
+		wallcheck      = true,
+		teammates      = false,
+		hitbox         = "Head",
+
+		smooth_mode    = "Exponential",
+		smooth_factor  = 0.10,
+		linear_speed   = 8,
+		spring_stiff   = 12,
+		spring_damp    = 0.70,
+
+		predict_scale  = 0.10,
+
+		randomise      = false,
+		rand_radius    = 0.05,
+		bone_offset    = Vector3.new(0, 0, 0),
+
+		_spring_vel    = Vector3.new(0,0,0),
+		_spring_pos    = nil,
+		_prev_target   = nil,
+		_prev_target_t = 0,
+
+		-- written by background thread, read by RenderStepped — no heavy work on render
+		target_player  = nil,
+		target_part    = nil,
+	}
+	getgenv().VantaRivalsAimbot = AA
+
+	-- ===== raycast params =====
+	local aa_rayparams = RaycastParams.new()
+	aa_rayparams.FilterType = Enum.RaycastFilterType.Exclude
+	aa_rayparams.FilterDescendantsInstances = { LP.Character }
+	LP.CharacterAdded:Connect(function(c)
+		aa_rayparams.FilterDescendantsInstances = { c }
+	end)
+
+	-- ===== bot cache — rebuilt every 3 seconds on Heartbeat, not every frame =====
+	-- GetDescendants on a live workspace every 33ms was the FPS killer.
+	-- Now we snapshot once and reuse the list. DescendantAdded keeps it warm.
+	local aa_bot_cache    = {}   -- array of {hum, parts={name->BasePart}} for non-player models
+	local aa_bot_dirty    = true
+	local aa_bot_rebuild  = 0   -- next rebuild timestamp
+
+	local function rebuildBotCache()
+		local newCache = {}
+		local seen     = {}
+		local function considerModel(m)
+			if not m or seen[m] then return end
+			seen[m] = true
+			if m == LP.Character then return end
+			if Players:GetPlayerFromCharacter(m) then return end
+			local hum = m:FindFirstChildOfClass("Humanoid")
+			if not hum then return end
+			local entry = { hum = hum, model = m, parts = {} }
+			for _, child in ipairs(m:GetChildren()) do
+				if child:IsA("BasePart") then
+					entry.parts[child.Name] = child
+				end
+			end
+			if next(entry.parts) then
+				newCache[#newCache + 1] = entry
+			end
+		end
+		-- only check direct children of workspace and known container folders
+		for _, child in ipairs(workspace:GetChildren()) do
+			if child:IsA("Model") then
+				considerModel(child)
+			elseif child:IsA("Folder") then
+				for _, sub in ipairs(child:GetChildren()) do
+					if sub:IsA("Model") then considerModel(sub) end
+				end
+			end
+		end
+		aa_bot_cache = newCache
+		aa_bot_dirty = false
+	end
+
+	-- mark dirty when anything is added to workspace (cheap, no scan)
+	workspace.DescendantAdded:Connect(function(d)
+		if d:IsA("Model") and not Players:GetPlayerFromCharacter(d) then
+			aa_bot_dirty = true
+		end
+	end)
+	workspace.DescendantRemoving:Connect(function(d)
+		if d:IsA("Model") then aa_bot_dirty = true end
+	end)
+
+	-- ===== player part cache — avoids FindFirstChildOfClass every search tick =====
+	-- Keyed by Player, holds a table of {hum, parts={name->BasePart}} for the current char.
+	-- Rebuilt only on CharacterAdded. Dirt-cheap to iterate.
+	local aa_plr_cache = {}  -- [Player] = { hum=Humanoid, parts={name->BasePart} }
+
+	local function cacheCharacter(plr, char)
+		if not char then aa_plr_cache[plr] = nil; return end
+		local entry = { parts = {} }
+		-- wait a tick so the character is fully replicated before we read it
+		task.defer(function()
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			if not hum then aa_plr_cache[plr] = nil; return end
+			entry.hum = hum
+			for _, child in ipairs(char:GetChildren()) do
+				if child:IsA("BasePart") then
+					entry.parts[child.Name] = child
+				end
+			end
+			aa_plr_cache[plr] = entry
+		end)
+	end
+
+	for _, plr in ipairs(Players:GetPlayers()) do
+		if plr ~= LP and plr.Character then
+			cacheCharacter(plr, plr.Character)
+		end
+		plr.CharacterAdded:Connect(function(char)
+			aa_plr_cache[plr] = nil
+			cacheCharacter(plr, char)
+		end)
+		plr.CharacterRemoving:Connect(function()
+			aa_plr_cache[plr] = nil
+		end)
+	end
+	Players.PlayerAdded:Connect(function(plr)
+		plr.CharacterAdded:Connect(function(char)
+			aa_plr_cache[plr] = nil
+			cacheCharacter(plr, char)
+		end)
+		plr.CharacterRemoving:Connect(function()
+			aa_plr_cache[plr] = nil
+		end)
+	end)
+	Players.PlayerRemoving:Connect(function(plr)
+		aa_plr_cache[plr] = nil
+	end)
+
+	-- ===== helpers =====
+	local function isEnemyAA(plr)
+		if AA.teammates then return true end
+		local our   = LP:GetAttribute("TeamID")
+		local their = plr:GetAttribute("TeamID")
+		if our ~= nil and their ~= nil then return their ~= our end
+		if plr.Team and LP.Team then return plr.Team ~= LP.Team end
+		return true
+	end
+
+	local function wallOkAA(partPos, model)
+		if not AA.wallcheck then return true end
+		local cam = workspace.CurrentCamera
+		if not cam then return false end
+		local origin = cam.CFrame.Position
+		local result = workspace:Raycast(origin, partPos - origin, aa_rayparams)
+		return not result or result.Instance:IsDescendantOf(model)
+	end
+
+	local function screenDist2AA(partPos, cam, cx, cy)
+		local sp, on = cam:WorldToViewportPoint(partPos)
+		if not on or sp.Z <= 0 then return math.huge end
+		local dx = sp.X - cx
+		local dy = sp.Y - cy
+		return dx*dx + dy*dy
+	end
+
+	-- ===== target search — runs on Heartbeat (background), never on RenderStepped =====
+	local function findTargetAA()
+		local cam = workspace.CurrentCamera
+		if not cam then return nil, nil end
+		local origin = cam.CFrame.Position
+		local vs     = cam.ViewportSize
+		local cx, cy = vs.X*0.5, vs.Y*0.5
+		local rsq    = AA.fov_radius * AA.fov_radius
+		local maxd   = AA.max_distance
+		local want   = HITBOX_PARTS_AA[AA.hitbox] or HITBOX_PARTS_AA["Head"]
+		local best_p, best_plr, best_sd = nil, nil, math.huge
+
+		-- real players — uses cached parts table, no FindFirstChild in hot path
+		for _, plr in ipairs(Players:GetPlayers()) do
+			if plr == LP then continue end
+			if not isEnemyAA(plr) then continue end
+			local entry = aa_plr_cache[plr]
+			if not entry or not entry.hum or entry.hum.Health <= 0 then continue end
+			local partsMap = entry.parts
+			for _, name in ipairs(want) do
+				local part = partsMap[name]
+				if not part or not part.Parent then continue end
+				local pos = part.Position
+				if (pos - origin).Magnitude > maxd then continue end
+				local sd = screenDist2AA(pos, cam, cx, cy)
+				if sd < rsq and sd < best_sd and wallOkAA(pos, part.Parent) then
+					best_sd  = sd
+					best_p   = part
+					best_plr = plr
+				end
+			end
+		end
+
+		-- practice bots — uses the pre-built shallow cache, never GetDescendants
+		local now = tick()
+		if aa_bot_dirty or now >= aa_bot_rebuild then
+			rebuildBotCache()
+			aa_bot_rebuild = now + 3  -- full rebuild at most every 3 seconds
+		end
+		for _, entry in ipairs(aa_bot_cache) do
+			if not entry.hum or not entry.hum.Parent or entry.hum.Health <= 0 then continue end
+			local partsMap = entry.parts
+			for _, name in ipairs(want) do
+				local part = partsMap[name]
+				if not part or not part.Parent then continue end
+				local pos = part.Position
+				if (pos - origin).Magnitude > maxd then continue end
+				local sd = screenDist2AA(pos, cam, cx, cy)
+				if sd < rsq and sd < best_sd then
+					best_sd  = sd
+					best_p   = part
+					best_plr = nil
+				end
+			end
+		end
+
+		return best_plr, best_p
+	end
+
+	-- ===== hold detection =====
+	local function isHoldDownAA()
+		if AA.hold_mode == "Always" then return true end
+		if AA.hold_mode == "Toggle" then return AA.toggled end
+		if AA.hold_mouse then
+			local ok, v = pcall(UIS.IsMouseButtonPressed, UIS, AA.hold_mouse)
+			return ok and v
+		end
+		if AA.hold_key then
+			local ok, v = pcall(UIS.IsKeyDown, UIS, AA.hold_key)
+			return ok and v
+		end
+		return false
+	end
+
+	UIS.InputBegan:Connect(function(input, gpe)
+		if gpe or not AA.enabled then return end
+		if AA.hold_mode ~= "Toggle" then return end
+		local kc = input.KeyCode
+		local mt = input.UserInputType
+		if (kc ~= Enum.KeyCode.Unknown and kc == AA.hold_key)
+		or (mt ~= Enum.UserInputType.None and mt == AA.hold_mouse) then
+			AA.toggled = not AA.toggled
+		end
+	end)
+
+	-- ===== FOV circle =====
+	local aaFovCircle
+	pcall(function()
+		aaFovCircle = Drawing.new("Circle")
+		aaFovCircle.Visible      = false
+		aaFovCircle.Thickness    = 1
+		aaFovCircle.NumSides     = 32
+		aaFovCircle.Filled       = false
+		aaFovCircle.Transparency = 1
+		aaFovCircle.ZIndex       = 10
+		aaFovCircle.Color        = AA.fov_color
+	end)
+
+	-- ===== continuous acquire + aim (open-source style lock) =====
+	-- Pattern from public Rivals / universal aimbots:
+	-- WorldToViewportPoint → mouse delta → mousemoverel(dx/smooth, dy/smooth) every frame.
+	-- Sticky lock while target stays valid + in FOV; re-pick when lost.
+
+	local UIS_AA = game:GetService("UserInputService")
+	local locked_plr = nil
+	local locked_part = nil
+
+	local function getAimPart(character)
+		if not character then return nil end
+		local want = HITBOX_PARTS_AA[AA.hitbox] or HITBOX_PARTS_AA["Head"]
+		for _, name in ipairs(want) do
+			local p = character:FindFirstChild(name)
+			if p and p:IsA("BasePart") then return p end
+		end
+		return character:FindFirstChild("Head")
+			or character:FindFirstChild("HumanoidRootPart")
+			or character:FindFirstChild("UpperTorso")
+			or character:FindFirstChild("Torso")
+	end
+
+	local function isTargetStillValid(plr, part)
+		if not plr or not plr.Parent then return false end
+		local char = plr.Character
+		if not char or not char.Parent then return false end
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		if not hum or hum.Health <= 0 then return false end
+		if not part or not part.Parent or not part:IsDescendantOf(char) then return false end
+		if not isEnemyAA(plr) then return false end
+		local cam = workspace.CurrentCamera
+		if not cam then return false end
+		local sp, on = cam:WorldToViewportPoint(part.Position)
+		if not on or sp.Z <= 0 then return false end
+		local vs = cam.ViewportSize
+		local cx, cy = vs.X * 0.5, vs.Y * 0.5
+		local dx, dy = sp.X - cx, sp.Y - cy
+		if (dx * dx + dy * dy) > (AA.fov_radius * AA.fov_radius) then return false end
+		if AA.wallcheck and not wallOkAA(part.Position, char) then return false end
+		local origin = cam.CFrame.Position
+		if (part.Position - origin).Magnitude > AA.max_distance then return false end
+		return true
+	end
+
+	local function pickClosest()
+		local cam = workspace.CurrentCamera
+		if not cam then return nil, nil end
+		local origin = cam.CFrame.Position
+		local vs = cam.ViewportSize
+		local cx, cy = vs.X * 0.5, vs.Y * 0.5
+		local rsq = AA.fov_radius * AA.fov_radius
+		local best_plr, best_part, best_sd = nil, nil, math.huge
+
+		for _, plr in ipairs(Players:GetPlayers()) do
+			if plr == LP then continue end
+			if not isEnemyAA(plr) then continue end
+			local char = plr.Character
+			if not char then continue end
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			if not hum or hum.Health <= 0 then continue end
+			local part = getAimPart(char)
+			if not part then continue end
+			if (part.Position - origin).Magnitude > AA.max_distance then continue end
+			local sp, on = cam:WorldToViewportPoint(part.Position)
+			if not on or sp.Z <= 0 then continue end
+			local dx, dy = sp.X - cx, sp.Y - cy
+			local sd = dx * dx + dy * dy
+			if sd > rsq then continue end
+			if AA.wallcheck and not wallOkAA(part.Position, char) then continue end
+			if sd < best_sd then
+				best_sd = sd
+				best_plr = plr
+				best_part = part
+			end
+		end
+
+		-- practice bots
+		local now = tick()
+		if aa_bot_dirty or now >= aa_bot_rebuild then
+			rebuildBotCache()
+			aa_bot_rebuild = now + 3
+		end
+		for _, entry in ipairs(aa_bot_cache) do
+			if not entry.hum or not entry.hum.Parent or entry.hum.Health <= 0 then continue end
+			local part = getAimPart(entry.model)
+			if not part then continue end
+			if (part.Position - origin).Magnitude > AA.max_distance then continue end
+			local sp, on = cam:WorldToViewportPoint(part.Position)
+			if not on or sp.Z <= 0 then continue end
+			local dx, dy = sp.X - cx, sp.Y - cy
+			local sd = dx * dx + dy * dy
+			if sd > rsq then continue end
+			if sd < best_sd then
+				best_sd = sd
+				best_plr = nil
+				best_part = part
+			end
+		end
+
+		return best_plr, best_part
+	end
+
+	local function applyMove(part)
+		local cam = workspace.CurrentCamera
+		if not cam or not part then return end
+
+		local aimPos = part.Position
+		if AA.bone_offset then
+			aimPos = aimPos + AA.bone_offset
+		end
+		if AA.randomise then
+			local r = AA.rand_radius
+			aimPos = aimPos + Vector3.new(
+				(math.random(-1000, 1000) / 1000) * r,
+				(math.random(-1000, 1000) / 1000) * r,
+				(math.random(-1000, 1000) / 1000) * r
+			)
+		end
+		if AA.smooth_mode == "Predictive" and AA.predict_scale > 0 then
+			local now = tick()
+			if AA._prev_target and (now - AA._prev_target_t) > 0 then
+				local vel = (aimPos - AA._prev_target) / (now - AA._prev_target_t)
+				aimPos = aimPos + vel * AA.predict_scale
+			end
+			AA._prev_target = part.Position
+			AA._prev_target_t = now
+		end
+
+		local sp, onScreen = cam:WorldToViewportPoint(aimPos)
+		if not onScreen or sp.Z <= 0 then return end
+
+		local mouse = UIS_AA:GetMouseLocation()
+		local dx = sp.X - mouse.X
+		local dy = sp.Y - mouse.Y
+
+		-- open-source smooth: divide pixel delta (1 = snap, higher = slower)
+		-- map AA.smooth_factor [0..1] → divisor [1..12]
+		local smooth = 1 + (AA.smooth_factor * 11)
+		if AA.smooth_mode == "None" then
+			smooth = 1
+		elseif AA.smooth_mode == "Linear" then
+			smooth = math.max(1, 12 - (AA.linear_speed / 10))
+		end
+
+		local mx = dx / smooth
+		local my = dy / smooth
+		-- never overshoot remaining distance
+		if math.abs(mx) > math.abs(dx) then mx = dx end
+		if math.abs(my) > math.abs(dy) then my = dy end
+
+		if math.abs(mx) < 0.2 and math.abs(my) < 0.2 then return end
+		if type(mousemoverel) == "function" then
+			mousemoverel(mx, my)
+		end
+	end
+
+	RunService.RenderStepped:Connect(function()
+		if aaFovCircle then
+			if AA.show_fov and AA.enabled then
+				local cam = workspace.CurrentCamera
+				if cam then
+					aaFovCircle.Position = cam.ViewportSize * 0.5
+					aaFovCircle.Radius = AA.fov_radius
+					aaFovCircle.Color = AA.fov_color
+					aaFovCircle.Visible = true
+				end
+			else
+				aaFovCircle.Visible = false
+			end
+		end
+
+		if not AA.enabled or not isHoldDownAA() then
+			locked_plr = nil
+			locked_part = nil
+			AA.target_part = nil
+			AA.target_player = nil
+			AA._prev_target = nil
+			return
+		end
+
+		-- sticky: keep same target while valid, else re-pick
+		if locked_part and locked_plr then
+			if not isTargetStillValid(locked_plr, locked_part) then
+				locked_plr = nil
+				locked_part = nil
+			else
+				-- refresh part in case hitbox preference changed
+				local refreshed = getAimPart(locked_plr.Character)
+				if refreshed then locked_part = refreshed end
+			end
+		elseif locked_part and not locked_plr then
+			-- bot: just check part alive
+			if not locked_part.Parent then
+				locked_part = nil
+			end
+		end
+
+		if not locked_part then
+			local plr, part = pickClosest()
+			locked_plr = plr
+			locked_part = part
+		end
+
+		AA.target_player = locked_plr
+		AA.target_part = locked_part
+
+		if locked_part then
+			applyMove(locked_part)
+		end
+	end)
+
+	-- ===== UI =====
+	local KEY_MAP_AA = {
+		["C"]         = Enum.KeyCode.C,
+		["V"]         = Enum.KeyCode.V,
+		["Q"]         = Enum.KeyCode.Q,
+		["E"]         = Enum.KeyCode.E,
+		["F"]         = Enum.KeyCode.F,
+		["R"]         = Enum.KeyCode.R,
+		["T"]         = Enum.KeyCode.T,
+		["X"]         = Enum.KeyCode.X,
+		["Z"]         = Enum.KeyCode.Z,
+		["Left Alt"]  = Enum.KeyCode.LeftAlt,
+		["Left Ctrl"] = Enum.KeyCode.LeftControl,
+		["CapsLock"]  = Enum.KeyCode.CapsLock,
+	}
+
+	pcall(function() CombatLegit:AddSection("Aim Assist", ico("crosshair")) end)
+
+	bindToggle(CombatLegit, "AAEnabled", "Enabled", false, function(v)
+		AA.enabled = v
+		if not v then
+			AA.toggled     = false
+			AA._spring_pos = nil
+			AA._spring_vel = Vector3.zero
+			_aa_lerped_pos = nil
+		end
+	end)
+
+	bindDropdown(CombatLegit, "AAHoldMode", "Activation", { "Hold", "Toggle", "Always" }, "Hold", function(v)
+		AA.hold_mode = v
+		AA.toggled   = false
+	end)
+
+	bindDropdown(CombatLegit, "AAHoldKey", "Activation Key", {
+		"C","V","Q","E","F","R","T","X","Z",
+		"Left Alt","Left Ctrl","CapsLock",
+		"Right Mouse","Middle Mouse",
+	}, "C", function(v)
+		AA.hold_mouse = nil
+		AA.hold_key   = nil
+		if v == "Right Mouse" then
+			AA.hold_mouse = Enum.UserInputType.MouseButton2
+		elseif v == "Middle Mouse" then
+			AA.hold_mouse = Enum.UserInputType.MouseButton3
+		else
+			AA.hold_key = KEY_MAP_AA[v] or Enum.KeyCode.C
+		end
+	end)
+
+	pcall(function() CombatLegit:AddLineText("Configure Aimbot") end)
+
+	pcall(function() CombatLegit:AddSection("Targeting", ico("crosshair")) end)
+
+	bindDropdown(CombatLegit, "AAHitbox", "Hitbox", { "Head", "UpperTorso", "Closest Part" }, "Head", function(v)
+		AA.hitbox = v
+	end)
+
+	bindSlider(CombatLegit, "AAFov", "FOV Radius", 120, 10, 900, 0, function(v)
+		AA.fov_radius = v
+	end, "px")
+
+	bindToggle(CombatLegit, "AAShowFov", "Show FOV", false, function(v)
+		AA.show_fov = v
+	end)
+
+	bindColor(CombatLegit, "AAFovColor", "FOV Color", AA.fov_color, function(c)
+		AA.fov_color = c
+		if aaFovCircle then aaFovCircle.Color = c end
+	end)
+
+	bindSlider(CombatLegit, "AAMaxDist", "Max Distance", 600, 50, 2000, 0, function(v)
+		AA.max_distance = v
+	end, "m")
+
+	bindToggle(CombatLegit, "AAWallcheck", "Wallcheck", true, function(v)
+		AA.wallcheck = v
+	end)
+
+	bindToggle(CombatLegit, "AATeammates", "Include Teammates", false, function(v)
+		AA.teammates = v
+	end)
+
+	pcall(function() CombatLegit:AddDivider() end)
+	pcall(function() CombatLegit:AddSection("Smoothing", ico("gauge")) end)
+
+	bindDropdown(CombatLegit, "AASmoothMode", "Smooth Mode", SMOOTH_MODES, "Exponential", function(v)
+		AA.smooth_mode = v
+		AA._spring_pos = nil
+		AA._spring_vel = Vector3.zero
+		_aa_lerped_pos = nil
+	end)
+
+	bindSlider(CombatLegit, "AASmoothFactor", "Smooth Factor", 10, 0, 100, 0, function(v)
+		AA.smooth_factor = v / 100
+	end, "%")
+
+	bindSlider(CombatLegit, "AALinearSpeed", "Linear Speed", 8, 1, 120, 0, function(v)
+		AA.linear_speed = v
+	end, "°/s")
+
+	pcall(function() CombatLegit:AddLineText("Spring Settings (SpringDamp)") end)
+
+	bindSlider(CombatLegit, "AASpringStiff", "Stiffness", 12, 1, 80, 0, function(v)
+		AA.spring_stiff = v
+		AA._spring_pos  = nil
+		AA._spring_vel  = Vector3.zero
+		_aa_lerped_pos  = nil
+	end)
+
+	bindSlider(CombatLegit, "AASpringDamp", "Damping", 70, 0, 100, 0, function(v)
+		AA.spring_damp = v / 100
+		AA._spring_pos = nil
+		AA._spring_vel = Vector3.zero
+		_aa_lerped_pos = nil
+	end, "%")
+
+	pcall(function() CombatLegit:AddDivider() end)
+	pcall(function() CombatLegit:AddSection("Humanization", ico("refresh-cw")) end)
+
+	bindToggle(CombatLegit, "AARandomise", "Humanise (Random Offset)", false, function(v)
+		AA.randomise = v
+	end)
+
+	bindSlider(CombatLegit, "AARandRadius", "Humanise Radius", 5, 0, 50, 0, function(v)
+		AA.rand_radius = v / 100
+	end, "")
+
+	bindSlider(CombatLegit, "AAPredictScale", "Predictive Lead", 10, 0, 100, 0, function(v)
+		AA.predict_scale  = v / 100
+		AA._prev_target   = nil
+		AA._prev_target_t = 0
+	end, "%")
+
+end)()
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+-- COMBAT · LEGIT · TRIGGERBOT (fully separate from Silent Aim)
+-- Crosshair-on-target only + always-on wallcheck
+----------------------------------------------------------------
+;(function()
+	local UIS = game:GetService("UserInputService")
+
+	-- divider between aimbot and triggerbot
+	pcall(function() CombatLegit:AddDivider() end)
+
+	local TB = {
+		enabled = false,
+		shoot_delay = 50,
+		check_scoped = {},
+		active = false,
+		hold_mode = "Hold",
+		hold_key = Enum.KeyCode.E,
+		hold_mouse = nil,
+		max_distance = 500,
+		-- wallcheck always on (no toggle)
+	}
+	getgenv().VantaRivalsTriggerbot = TB
+
+	local function setIdentity(n)
+		pcall(function() if setthreadidentity then setthreadidentity(n) end end)
+		pcall(function() if syn and syn.set_thread_identity then syn.set_thread_identity(n) end end)
+	end
+
+	local function loadMechanics()
+		pcall(function()
+			local ps = LP:FindFirstChild("PlayerScripts")
+			if not ps then return end
+			local controllers = ps:FindFirstChild("Controllers")
+			if not controllers then return end
+			if not modules.MechanicsController then
+				modules.MechanicsController = tryRequire(function()
+					return require(controllers:WaitForChild("MechanicsController", 3))
+				end)
+			end
+			if not modules.FighterController then
+				modules.FighterController = tryRequire(function()
+					return require(controllers:WaitForChild("FighterController", 3))
+				end)
+			end
+		end)
+	end
+	loadMechanics()
+	task.spawn(function()
+		for _ = 1, 25 do
+			loadMechanics()
+			if modules.MechanicsController then break end
+			task.wait(0.5)
+		end
+	end)
+
+	local function isHoldDown()
+		if TB.hold_mode == "Always" then return true end
+		if TB.hold_mouse then
+			local ok, down = pcall(function() return UIS:IsMouseButtonPressed(TB.hold_mouse) end)
+			return ok and down
+		end
+		if TB.hold_key then
+			local ok, down = pcall(function() return UIS:IsKeyDown(TB.hold_key) end)
+			return ok and down
+		end
+		return false
+	end
+
+	local ray_params = RaycastParams.new()
+	ray_params.FilterType = Enum.RaycastFilterType.Exclude
+	ray_params.IgnoreWater = true
+
+	-- only fire when crosshair is ON the enemy (not FOV) — ray + tight screen pixel check
+	local CROSSHAIR_PX = 6 -- max pixels from dead center
+
+	local function getCrosshairTarget()
+		local cam = workspace.CurrentCamera
+		if not cam then return nil end
+		local char = LP.Character
+		ray_params.FilterDescendantsInstances = char and { char } or {}
+
+		local vs = cam.ViewportSize
+		local cx = vs.X * 0.5
+		local cy = vs.Y * 0.5
+		-- true crosshair: account for topbar inset when present
+		pcall(function()
+			local inset = game:GetService("GuiService"):GetGuiInset()
+			if inset then
+				cy = (vs.Y - inset.Y) * 0.5 + inset.Y * 0.5
+			end
+		end)
+
+		local ray = cam:ViewportPointToRay(cx, cy)
+		local result = workspace:Raycast(ray.Origin, ray.Direction * TB.max_distance, ray_params)
+		if not result or not result.Instance then return nil end
+
+		local inst = result.Instance
+		local model = inst:FindFirstAncestorOfClass("Model")
+		if not model or model == char then return nil end
+
+		local hum = model:FindFirstChildOfClass("Humanoid")
+		if not hum or hum.Health <= 0 then return nil end
+		local root = model:FindFirstChild("HumanoidRootPart")
+		if not root then return nil end
+
+		-- wallcheck: first solid hit must belong to this character
+		if not inst:IsDescendantOf(model) then return nil end
+
+		local plr = Players:GetPlayerFromCharacter(model)
+		if plr then
+			if plr == LP then return nil end
+			local our = LP:GetAttribute("TeamID")
+			local their = plr:GetAttribute("TeamID")
+			if our ~= nil and their ~= nil and their == our then return nil end
+			if plr.Team and LP.Team and plr.Team == LP.Team then return nil end
+		end
+
+		-- strict: hit position must sit under the crosshair (not "near" in world FOV)
+		local hitSp, onScreen = cam:WorldToViewportPoint(result.Position)
+		if not onScreen or hitSp.Z <= 0 then return nil end
+		local dx = hitSp.X - cx
+		local dy = hitSp.Y - cy
+		if (dx * dx + dy * dy) > (CROSSHAIR_PX * CROSSHAIR_PX) then
+			return nil
+		end
+
+		return model, inst, plr
+	end
+
+	local function fireShot()
+		loadMechanics()
+		setIdentity(2)
+		local ok = false
+		pcall(function()
+			if modules.MechanicsController and modules.MechanicsController.EquippedItemInput then
+				modules.MechanicsController:EquippedItemInput("StartShooting")
+				ok = true
+			end
+		end)
+		if not ok then
+			pcall(function()
+				if mouse1click then mouse1click(); ok = true end
+			end)
+			pcall(function()
+				if mouse1press then
+					mouse1press()
+					task.delay(0.05, function() pcall(mouse1release) end)
+					ok = true
+				end
+			end)
+		end
+		setIdentity(8)
+		return ok
+	end
+
+	local function stopShot()
+		pcall(function()
+			setIdentity(2)
+			if modules.MechanicsController and modules.MechanicsController.EquippedItemInput then
+				modules.MechanicsController:EquippedItemInput("FinishShooting")
+			end
+			setIdentity(8)
+		end)
+	end
+
+	local last_shot = 0
+	RunService.Heartbeat:Connect(function()
+		if not TB.enabled then
+			if TB.active then TB.active = false; stopShot() end
+			return
+		end
+		if not isHoldDown() then
+			if TB.active then TB.active = false; stopShot() end
+			return
+		end
+
+		local model, part, plr = getCrosshairTarget()
+		if not model then
+			if TB.active then TB.active = false; stopShot() end
+			return
+		end
+
+		loadMechanics()
+		local fighter = nil
+		pcall(function()
+			if modules.FighterController and modules.FighterController.GetFighter then
+				fighter = modules.FighterController:GetFighter(LP)
+			end
+		end)
+		local equipped = fighter and fighter.EquippedItem
+		if not equipped then return end
+
+		if #TB.check_scoped > 0 then
+			local name = tostring(equipped.Name or "")
+			local needs = false
+			for _, n in ipairs(TB.check_scoped) do
+				if n == name then needs = true; break end
+			end
+			if needs then
+				local aiming = false
+				pcall(function() aiming = equipped:IsFullyAiming() == true end)
+				if not aiming then
+					if TB.active then TB.active = false; stopShot() end
+					return
+				end
+			end
+		end
+
+		local now = os.clock()
+		local delay_s = math.max((TB.shoot_delay or 0) / 1000, 0.02)
+		if now - last_shot < delay_s then return end
+
+		last_shot = now
+		TB.active = true
+		fireShot()
+	end)
+
+	local KEY_MAP = {
+		["E"] = Enum.KeyCode.E, ["Q"] = Enum.KeyCode.Q, ["F"] = Enum.KeyCode.F,
+		["C"] = Enum.KeyCode.C, ["V"] = Enum.KeyCode.V, ["R"] = Enum.KeyCode.R,
+		["T"] = Enum.KeyCode.T, ["Left Alt"] = Enum.KeyCode.LeftAlt,
+		["Left Ctrl"] = Enum.KeyCode.LeftControl,
+	}
+
+	pcall(function() CombatLegit:AddSection("Triggerbot", ico("crosshair")) end)
+	bindToggle(CombatLegit, "TBEnabled", "Enabled", false, function(v)
+		TB.enabled = v
+		if not v then TB.active = false end
+	end)
+	pcall(function() CombatLegit:AddLineText("Configure Triggerbot") end)
+	bindDropdown(CombatLegit, "TBHoldMode", "Activation", { "Hold", "Always" }, "Hold", function(v)
+		TB.hold_mode = v
+	end)
+	bindDropdown(CombatLegit, "TBHoldKey", "Hold Key", {
+		"E", "Q", "F", "C", "V", "R", "T", "Left Alt", "Left Ctrl", "Right Mouse", "Left Mouse"
+	}, "E", function(v)
+		TB.hold_mouse = nil
+		TB.hold_key = nil
+		if v == "Right Mouse" then
+			TB.hold_mouse = Enum.UserInputType.MouseButton2
+		elseif v == "Left Mouse" then
+			TB.hold_mouse = Enum.UserInputType.MouseButton1
+		else
+			TB.hold_key = KEY_MAP[v] or Enum.KeyCode.E
+		end
+	end)
+	bindSlider(CombatLegit, "TBDelay", "Shoot Delay", 50, 0, 500, 0, function(v) TB.shoot_delay = v end, "ms")
+	bindSlider(CombatLegit, "TBMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) TB.max_distance = v end, "m")
+	bindDropdown(CombatLegit, "TBScoped", "Require Scope", { "None", "Sniper", "Crossbow", "Sniper+Crossbow" }, "None", function(v)
+		if v == "None" then TB.check_scoped = {}
+		elseif v == "Sniper" then TB.check_scoped = { "Sniper" }
+		elseif v == "Crossbow" then TB.check_scoped = { "Crossbow" }
+		else TB.check_scoped = { "Sniper", "Crossbow" }
+		end
+	end)
+	pcall(function()
+		CombatLegit:AddLabel("PS: Wallcheck is always on for triggerbot :3")
+	end)
+end)()
+
+
+
+----------------------------------------------------------------
+-- COMBAT · GUN MODS — Aetherea weapons logic 1:1 + rawset force
+----------------------------------------------------------------
+;(function()
+	local GM = {
+		no_recoil = false,
+		no_spread = false,
+		full_auto = false,
+		firerate_boost = 0, -- 0 normal, 100 fastest
+		bullet_tracers = false,
+		tracer_color = Color3.fromRGB(181, 126, 220),
+		tracer_lifetime = 0.45,
+		tracer_budget = 16,
+	}
+	getgenv().VantaRivalsGunMods = GM
+
+	local function loadGunModules()
+		pcall(function()
+			local ps = LP:FindFirstChild("PlayerScripts")
+			if not ps then return end
+			local controllers = ps:FindFirstChild("Controllers")
+			if controllers then
+				if not modules.FighterController then
+					local fc = controllers:FindFirstChild("FighterController")
+					if fc then
+						modules.FighterController = tryRequire(function() return require(fc) end)
+					end
+				end
+			end
+			local itemTypes = ps:FindFirstChild("Modules") and ps.Modules:FindFirstChild("ItemTypes")
+			if itemTypes and not modules.Gun then
+				local g = itemTypes:FindFirstChild("Gun")
+				if g then
+					modules.Gun = tryRequire(function() return require(g) end)
+				end
+			end
+		end)
+	end
+	loadGunModules()
+	task.spawn(function()
+		for _ = 1, 40 do
+			loadGunModules()
+			if modules.FighterController and modules.Gun then break end
+			task.wait(0.4)
+		end
+	end)
+
+	local unlocked_infos = setmetatable({}, { __mode = "k" })
+	local function forceSet(tbl, key, value)
+		if not tbl then return end
+		if not unlocked_infos[tbl] then
+			pcall(function()
+				if setreadonly and isreadonly and isreadonly(tbl) then
+					setreadonly(tbl, false)
+				end
+			end)
+			unlocked_infos[tbl] = true
+		end
+		-- prefer rawset; fall back to index once
+		local ok = pcall(rawset, tbl, key, value)
+		if not ok then
+			pcall(function() tbl[key] = value end)
+		end
+	end
+
+	-- ===== Aetherea weapons Heartbeat 1:1 =====
+	local old = {}
+	local weapon_last_update = 0
+	local weapon_update_interval = 0.03
+
+	local function RestoreWeaponInfo(info, original)
+		if not info or not original then return end
+		forceSet(info, "ShootRecoil", original.ShootRecoil)
+		forceSet(info, "ShootAccuracy", original.ShootAccuracy)
+		forceSet(info, "ShootSpread", original.ShootSpread)
+		forceSet(info, "QuickShotSpread", original.QuickShotSpread)
+		forceSet(info, "ShootSpreadConsistent", original.ShootSpreadConsistent)
+		forceSet(info, "AimSpreadMultiplier", original.AimSpreadMultiplier)
+		forceSet(info, "ShootCooldown", original.ShootCooldown)
+		pcall(function()
+			if info.InputSpammingEnabled and original.StartShooting ~= nil then
+				forceSet(info.InputSpammingEnabled, "StartShooting", original.StartShooting)
+			end
+		end)
+	end
+
+	local gm_was_applying = false
+	RunService.Heartbeat:Connect(function()
+		local any = GM.no_recoil or GM.no_spread or GM.full_auto or GM.firerate_boost > 0
+		if not any then
+			if gm_was_applying and modules.FighterController and modules.FighterController.GetFighter then
+				local fighter
+				pcall(function() fighter = modules.FighterController:GetFighter(LP) end)
+				local item = fighter and fighter.EquippedItem
+				local info = item and item.Info
+				local original = item and old[item]
+				if info and original then RestoreWeaponInfo(info, original) end
+				gm_was_applying = false
+			end
+			return
+		end
+		gm_was_applying = true
+		if not modules.FighterController or not modules.FighterController.GetFighter then
+			return
+		end
+		local fighter
+		pcall(function() fighter = modules.FighterController:GetFighter(LP) end)
+		if not fighter then return end
+
+		local equipped_item = fighter.EquippedItem
+		if not equipped_item then return end
+
+		local info = equipped_item.Info
+		if not info then return end
+
+		if not old[equipped_item] then
+			local startShooting = nil
+			pcall(function()
+				if info.InputSpammingEnabled then
+					startShooting = info.InputSpammingEnabled.StartShooting
+				end
+			end)
+			old[equipped_item] = {
+				ShootRecoil = info.ShootRecoil,
+				ShootAccuracy = info.ShootAccuracy,
+				ShootSpread = info.ShootSpread,
+				QuickShotSpread = info.QuickShotSpread,
+				ShootSpreadConsistent = info.ShootSpreadConsistent,
+				AimSpreadMultiplier = info.AimSpreadMultiplier,
+				StartShooting = startShooting,
+				ShootCooldown = info.ShootCooldown,
+			}
+		end
+
+		local original = old[equipped_item]
+		local should_apply = GM.no_recoil
+			or GM.no_spread
+			or GM.full_auto
+			or GM.firerate_boost > 0
+
+		if not should_apply then
+			RestoreWeaponInfo(info, original)
+			return
+		end
+
+		-- Aetherea: throttle non-critical, but ShootRecoil always when no_recoil
+		if GM.no_recoil then
+			forceSet(info, "ShootRecoil", 0)
+		end
+
+		local now = os.clock()
+		if now - weapon_last_update < weapon_update_interval then
+			return
+		end
+		weapon_last_update = now
+
+		if not GM.no_recoil then
+			forceSet(info, "ShootRecoil", original.ShootRecoil)
+		end
+
+		if GM.no_spread then
+			forceSet(info, "ShootAccuracy", 0)
+			forceSet(info, "ShootSpread", 0)
+			forceSet(info, "QuickShotSpread", 0)
+			forceSet(info, "ShootSpreadConsistent", true)
+			forceSet(info, "AimSpreadMultiplier", 0)
+		else
+			forceSet(info, "ShootAccuracy", original.ShootAccuracy)
+			forceSet(info, "ShootSpread", original.ShootSpread)
+			forceSet(info, "QuickShotSpread", original.QuickShotSpread)
+			forceSet(info, "ShootSpreadConsistent", original.ShootSpreadConsistent)
+			forceSet(info, "AimSpreadMultiplier", original.AimSpreadMultiplier)
+		end
+
+		if GM.full_auto then
+			pcall(function()
+				if info.InputSpammingEnabled then
+					forceSet(info.InputSpammingEnabled, "StartShooting", 0)
+				end
+			end)
+		else
+			pcall(function()
+				if info.InputSpammingEnabled and original.StartShooting ~= nil then
+					forceSet(info.InputSpammingEnabled, "StartShooting", original.StartShooting)
+				end
+			end)
+		end
+
+		if GM.firerate_boost > 0 and original.ShootCooldown then
+			local mult = math.clamp(1 - (GM.firerate_boost / 100), 0.05, 1)
+			forceSet(info, "ShootCooldown", original.ShootCooldown * mult)
+		else
+			forceSet(info, "ShootCooldown", original.ShootCooldown)
+		end
+	end)
+
+	-- pre-shot force: zero recoil on the gun instance right before StartShooting
+	task.spawn(function()
+		for _ = 1, 50 do
+			loadGunModules()
+			if modules.Gun and type(modules.Gun.StartShooting) == "function" and not modules.Gun._vantaGMHooked then
+				local orig = modules.Gun.StartShooting
+				modules.Gun.StartShooting = function(self, ...)
+					if GM.no_recoil and self and self.Info then
+						forceSet(self.Info, "ShootRecoil", 0)
+					end
+					if GM.no_spread and self and self.Info then
+						forceSet(self.Info, "ShootAccuracy", 0)
+						forceSet(self.Info, "ShootSpread", 0)
+						forceSet(self.Info, "QuickShotSpread", 0)
+						forceSet(self.Info, "AimSpreadMultiplier", 0)
+					end
+					return orig(self, ...)
+				end
+				modules.Gun._vantaGMHooked = true
+				break
+			end
+			task.wait(0.4)
+		end
+	end)
+
+	-- Aetherea visual: ClientViewModel.ApplyRecoil no-op (same as shoot animation disable)
+	task.spawn(function()
+		for _ = 1, 50 do
+			pcall(function()
+				local path = LP.PlayerScripts
+					and LP.PlayerScripts:FindFirstChild("Modules")
+					and LP.PlayerScripts.Modules:FindFirstChild("ClientReplicatedClasses")
+					and LP.PlayerScripts.Modules.ClientReplicatedClasses:FindFirstChild("ClientFighter")
+					and LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter:FindFirstChild("ClientItem")
+				local vmModule = path and path:FindFirstChild("ClientViewModel")
+				if not vmModule then return end
+				local ClientViewModel = require(vmModule)
+				if type(ClientViewModel.ApplyRecoil) == "function" and not ClientViewModel._vantaRecoilHooked then
+					local orig = ClientViewModel.ApplyRecoil
+					ClientViewModel.ApplyRecoil = function(p62, p63)
+						if not p62.ClientItem or not p62.ClientItem.ClientFighter or not p62.ClientItem.ClientFighter.IsLocalPlayer or not p62:IsEquipped() then
+							return orig(p62, p63)
+						end
+						if GM.no_recoil then
+							return -- 1:1 Aetherea shoot-animation disable path
+						end
+						return orig(p62, p63)
+					end
+					ClientViewModel._vantaRecoilHooked = true
+				end
+			end)
+			task.wait(0.4)
+		end
+	end)
+
+	-- ===== Wildcat camera RCS =====
+	-- Wildcat (Update 22) is the first gun with real camera recoil.
+	-- ShootRecoil=0 is not enough — camera is shoved up per shot.
+	-- While No Recoil is on + M1 held: measure look-Y rise and pull mouse down.
+	local UIS_GM = game:GetService("UserInputService")
+	local last_look_y = nil
+
+	local function isFiringGM()
+		local ok, down = pcall(function()
+			return UIS_GM:IsMouseButtonPressed(Enum.UserInputType.MouseButton1)
+		end)
+		return ok and down
+	end
+
+	RunService.RenderStepped:Connect(function()
+		if not GM.no_recoil then
+			last_look_y = nil
+			return
+		end
+		if not isFiringGM() then
+			last_look_y = nil
+			return
+		end
+
+		local cam = workspace.CurrentCamera
+		if not cam then return end
+
+		local ly = cam.CFrame.LookVector.Y
+		if last_look_y == nil then
+			last_look_y = ly
+			return
+		end
+
+		local dy = ly - last_look_y
+		if dy > 0.00004 and type(mousemoverel) == "function" then
+			local vs = cam.ViewportSize
+			local fov = cam.FieldOfView or 70
+			-- stronger scale for Wildcat's aggressive kick
+			local px = dy * (vs.Y / math.rad(fov)) * 1.35
+			px = math.clamp(px, 0, 40)
+			mousemoverel(0, px)
+		end
+
+		-- re-sample after compensation so user mouse still works
+		local cam2 = workspace.CurrentCamera
+		last_look_y = cam2 and cam2.CFrame.LookVector.Y or ly
+	end)
+
+	-- also swallow ApplyRecoil harder (Wildcat may route through it)
+	task.spawn(function()
+		for _ = 1, 40 do
+			pcall(function()
+				local path = LP.PlayerScripts
+					and LP.PlayerScripts:FindFirstChild("Modules")
+					and LP.PlayerScripts.Modules:FindFirstChild("ClientReplicatedClasses")
+					and LP.PlayerScripts.Modules.ClientReplicatedClasses:FindFirstChild("ClientFighter")
+					and LP.PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter:FindFirstChild("ClientItem")
+				local vmModule = path and path:FindFirstChild("ClientViewModel")
+				if not vmModule then return end
+				local ClientViewModel = require(vmModule)
+				if type(ClientViewModel.ApplyRecoil) == "function" and not ClientViewModel._vantaWildcatHook then
+					local orig = ClientViewModel.ApplyRecoil
+					ClientViewModel.ApplyRecoil = function(self, amount, ...)
+						if GM.no_recoil then
+							local ok, isLocal = pcall(function()
+								return self.ClientItem and self.ClientItem.ClientFighter and self.ClientItem.ClientFighter.IsLocalPlayer
+							end)
+							if ok and isLocal then
+								return -- kill visual/camera punch
+							end
+						end
+						return orig(self, amount, ...)
+					end
+					ClientViewModel._vantaWildcatHook = true
+				end
+			end)
+			task.wait(0.4)
+		end
+	end)
+
+	-- ===== bullet tracers (Aetherea _Tracers) =====
+	local trajectory_part_event = Instance.new("BindableEvent")
+	local bullet_trail_active = 0
+	local bullet_trail_last_emit = 0
+	local bullet_trail_emit_interval = 0.01
+
+	trajectory_part_event.Event:Connect(function(start_pos, end_pos)
+		if not GM.bullet_tracers then return end
+		local now = os.clock()
+		if now - bullet_trail_last_emit < bullet_trail_emit_interval then return end
+		bullet_trail_last_emit = now
+		if bullet_trail_active >= GM.tracer_budget then return end
+		local distance = (end_pos - start_pos).Magnitude
+		if distance <= 0 then return end
+		bullet_trail_active += 1
+		local part = Instance.new("Part")
+		part.Name = ""
+		part.Anchored = true
+		part.CanCollide = false
+		part.CanQuery = false
+		part.CanTouch = false
+		part.Color = GM.tracer_color
+		part.Material = Enum.Material.ForceField
+		part.Size = Vector3.new(0.1, 0.1, distance)
+		part.CFrame = CFrame.new(start_pos, end_pos) * CFrame.new(0, 0, -distance / 2)
+		part.Parent = workspace
+		local tween = game:GetService("TweenService"):Create(
+			part, TweenInfo.new(GM.tracer_lifetime, Enum.EasingStyle.Linear), { Transparency = 1 }
+		)
+		tween:Play()
+		tween.Completed:Connect(function()
+			bullet_trail_active = math.max(0, bullet_trail_active - 1)
+			part:Destroy()
+		end)
+		task.delay(GM.tracer_lifetime, function()
+			if part.Parent then
+				bullet_trail_active = math.max(0, bullet_trail_active - 1)
+				part:Destroy()
+			end
+		end)
+	end)
+
+	task.spawn(function()
+		for _ = 1, 40 do
+			loadGunModules()
+			if modules.Gun and modules.Gun._Tracers and not modules.Gun._vantaTracerHooked then
+				local orig_tracers = modules.Gun._Tracers
+				modules.Gun._Tracers = function(p118, p119, p120)
+					if GM.bullet_tracers and p119 and p119.IsLocal then
+						pcall(function()
+							local muzzle_pos
+							if p118.ViewModel and p118.ViewModel.GetMuzzlePosition then
+								muzzle_pos = p118.ViewModel:GetMuzzlePosition()
+							end
+							local result = p119.RaycastResults and p119.RaycastResults[1]
+							if muzzle_pos and result and result.Position then
+								trajectory_part_event:Fire(muzzle_pos, result.Position)
+							end
+						end)
+					end
+					return orig_tracers(p118, p119, p120)
+				end
+				modules.Gun._vantaTracerHooked = true
+				break
+			end
+			task.wait(0.5)
+		end
+	end)
+
+	-- ===== UI =====
+	pcall(function() CombatGunMods:AddSection("Weapon", ico("crosshair")) end)
+	bindToggle(CombatGunMods, "GMNoRecoil", "No Recoil", false, function(v)
+		GM.no_recoil = v
+	end)
+	bindToggle(CombatGunMods, "GMNoSpread", "No Spread", false, function(v)
+		GM.no_spread = v
+	end)
+	bindToggle(CombatGunMods, "GMFullAuto", "Full Auto", false, function(v)
+		GM.full_auto = v
+	end)
+	bindSlider(CombatGunMods, "GMFirerate", "Firerate Boost", 0, 0, 100, 0, function(v)
+		GM.firerate_boost = v
+	end, "%")
+	pcall(function()
+		CombatGunMods:AddLabel("for firerate slider 100% = fast then 0% = regular")
+	end)
+
+	pcall(function() CombatGunMods:AddDivider() end)
+	pcall(function() CombatGunMods:AddSection("Bullet Tracers", ico("sparkles")) end)
+	bindToggle(CombatGunMods, "GMTracers", "Enabled", false, function(v)
+		GM.bullet_tracers = v
+	end)
+	bindColor(CombatGunMods, "GMTracerColor", "Tracer Color", GM.tracer_color, function(c)
+		GM.tracer_color = c
+	end)
+	bindSlider(CombatGunMods, "GMTracerLife", "Lifetime", 0.45, 0.1, 2, 2, function(v)
+		GM.tracer_lifetime = v
+	end, "s")
+end)()
+
+
+-- SKINCHANGER
+pcall(function() CosUnlock:AddSection("Skinchanger", ico("sparkles")) end)
+bindDropdown(CosUnlock, "UnlockType", "Cosmetic Type", COSMETIC_TYPES, "Skin", function(v) skin.unlock_type = v end)
+bindDropdown(CosUnlock, "UnlockRarity", "Rarity", COSMETIC_RARITIES, "Mythical", function(v) skin.unlock_rarity = v end)
+pcall(function() CosUnlock:AddLineText("Actions") end)
+bindButton(CosUnlock, "Unlock selected", function() UnlockSelectedRarity() end)
+bindButton(CosUnlock, "Unlock all selected", function() UnlockAllOfType() end)
+bindButton(CosUnlock, "Unlock All Cosmetics", function() UnlockAll() end)
+bindButton(CosUnlock, "Unlock All Weapons", function() UnlockAllWeapons() end)
+
+pcall(function() CosSpecific:AddSection("Specific Unlock", ico("search")) end)
+bindDropdown(CosSpecific, "SpecType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.specific_type = v; pcall(refreshSpecDropdowns) end)
+bindDropdown(CosSpecific, "SpecWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.specific_weapon = v; pcall(refreshSpecDropdowns) end)
+bindDropdown(CosSpecific, "SpecName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
+	skin.specific_name = (v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
+end)
+pcall(function() CosSpecific:AddLineText("Actions") end)
+bindButton(CosSpecific, "Unlock Specific", function() UnlockSpecific() end)
+bindButton(CosSpecific, "Unlock All for Weapon", function() UnlockAllForWeapon() end)
+bindButton(CosSpecific, "Refresh Lists", function() refreshSpecDropdowns() end)
+
+pcall(function() CosApply:AddSection("Apply", ico("check")) end)
+bindDropdown(CosApply, "EquipType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.equip_type = v; pcall(refreshEquipDropdowns) end)
+bindDropdown(CosApply, "EquipWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.equip_weapon = v; pcall(refreshEquipDropdowns) end)
+bindDropdown(CosApply, "EquipName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
+	skin.equip_name = (v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
+end)
+bindToggle(CosApply, "EquipInverted", "Inverted (Wrap)", false, function(v) skin.equip_inverted = v end)
+pcall(function() CosApply:AddLineText("Actions") end)
+bindButton(CosApply, "Equip", function() EquipApply() end)
+bindButton(CosApply, "Equip All Weapons", function() EquipApplyAll() end)
+bindButton(CosApply, "Refresh Lists", function() refreshEquipDropdowns() end)
+
+pcall(function() CosSave:AddSection("Save Loadout", ico("save")) end)
+bindButton(CosSave, "Save", function() saveLoadoutFile() end)
+bindButton(CosSave, "Reload", function() loadLoadoutFile() end)
+
+-- INVENTORY
+pcall(function() InvSingle:AddSection("Single", ico("package")) end)
+bindDropdown(InvSingle, "InvCaseBox", "Case / Box", LOOTBOX_NAMES, "Skin Case", function(v) inventory.specific.lootbox_name = v end)
+bindSlider(InvSingle, "InvQty", "Quantity", 1, 1, 99, 0, function(v) inventory.specific.quantity = v end)
+bindDropdown(InvSingle, "InvWeapon", "For Weapon", { "(None)", "IsRandom" }, "(None)", function(v)
+	inventory.specific.weapon_name = (v == "(None)") and "" or v
+end)
+bindToggle(InvSingle, "InvNewEntry", "New Entry", false, function(v) inventory.specific.new_entry = v end)
+pcall(function() InvSingle:AddLineText("Actions") end)
+bindButton(InvSingle, "Add to Backpack", function() AddToBackpack() end)
+
+pcall(function() InvBulk:AddSection("Bulk", ico("boxes")) end)
+bindSlider(InvBulk, "InvBulkQty", "Quantity", 1, 1, 99, 0, function(v) inventory.bulk.quantity = v end)
+bindButton(InvBulk, "Add All Cases", function() AddAllCases() end)
+
+pcall(function() InvDelete:AddSection("Delete", ico("trash-2")) end)
+bindDropdown(InvDelete, "InvDeleteEntry", "Backpack Entry", { "(empty)" }, 1, function(v)
+	if v ~= "(empty)" then inventory.delete.backpack_entry = v end
+end)
+bindSlider(InvDelete, "InvDeleteQty", "Quantity", 1, 1, 99, 0, function(v) inventory.delete.quantity = v end)
+pcall(function() InvDelete:AddLineText("Actions") end)
+bindButton(InvDelete, "Refresh List", function()
+	local e = GetBackpackEntries(); setDropdownValues("InvDeleteEntry", e, e[1])
+end)
+bindButton(InvDelete, "Delete ALL Backpack", function() DeleteAllBackpack(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+bindButton(InvDelete, "Delete (Qty)", function() DeleteQuantity(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+bindButton(InvDelete, "Delete ALL of Entry", function() DeleteAllOfEntry(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+
+pcall(function() InvInject:AddSection("Inject", ico("plus")) end)
+bindDropdown(InvInject, "InvInjectType", "Type", { "Skin", "Wrap", "Charm", "Finisher", "Emote" }, "Skin", function(v) inventory.inject.item_type = v end)
+bindDropdown(InvInject, "InvInjectWeapon", "For Weapon", { "Universal", "IsRandom" }, "Universal", function(v)
+	inventory.inject.weapon_name = (v == "Universal") and "" or v
+end)
+bindDropdown(InvInject, "InvInjectCosmetic", "Item", { "(waiting for modules)" }, 1, function(v)
+	inventory.inject.cosmetic_name = (v and v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
+end)
+bindSlider(InvInject, "InvInjectQty", "Quantity", 1, 1, 9999, 0, function(v) inventory.inject.quantity = v end)
+bindToggle(InvInject, "InvStackDupes", "Stack duplicates", false, function(v) inventory.inject.stack_duplicates = v end)
+bindButton(InvInject, "Inject", function() InjectIntoBackpack() end)
+
+-- WORLD
+pcall(function() WorldLighting:AddSection("Lighting", ico("sun")) end)
+bindToggle(WorldLighting, "WorldLightingEnabled", "Enabled", false, function(v) world.lighting_enabled = v; pcall(UpdateLightingOptions) end)
+pcall(function() WorldLighting:AddLineText("Configure Lighting") end)
+bindSlider(WorldLighting, "WorldBrightness", "Brightness", 2, 0, 10, 1, function(v) world.brightness = v; pcall(UpdateLightingOptions) end)
+bindToggle(WorldLighting, "WorldAntiSmoke", "Anti Smoke", false, function(v) world.anti_smoke = v end)
+bindToggle(WorldLighting, "WorldAntiFlash", "Anti Flashbang", false, function(v) world.anti_flashbang = v end)
+
+pcall(function() WorldAtmo:AddSection("Atmosphere", ico("cloud")) end)
+bindToggle(WorldAtmo, "WorldAtmoEnabled", "Enabled", false, function(v) world.atmosphere_enabled = v; pcall(UpdateAtmosphereOptions) end)
+pcall(function() WorldAtmo:AddLineText("Configure Atmosphere") end)
+bindSlider(WorldAtmo, "WorldAtmoDensity", "Density", 0.255, 0, 1, 3, function(v) world.density = v; pcall(UpdateAtmosphereOptions) end)
+bindSlider(WorldAtmo, "WorldAtmoOffset", "Offset", 0.2, 0, 1, 2, function(v) world.offset = v; pcall(UpdateAtmosphereOptions) end)
+bindSlider(WorldAtmo, "WorldAtmoGlare", "Glare", 0, 0, 10, 1, function(v) world.glare = v; pcall(UpdateAtmosphereOptions) end)
+bindSlider(WorldAtmo, "WorldAtmoHaze", "Haze", 1.82, 0, 10, 2, function(v) world.haze = v; pcall(UpdateAtmosphereOptions) end)
+pcall(function() WorldAtmo:AddDivider() end)
+pcall(function() WorldAtmo:AddSection("Sun Rays", ico("sun")) end)
+bindToggle(WorldAtmo, "WorldSunRays", "Enabled", false, function(v) world.sunrays_enabled = v; pcall(UpdateSunRaysOptions) end)
+bindSlider(WorldAtmo, "WorldSunRaysIntensity", "Intensity", 0.25, 0, 1, 2, function(v) world.sunrays_intensity = v; pcall(UpdateSunRaysOptions) end)
+
+pcall(function() WorldSky:AddSection("Skybox", ico("image")) end)
+bindToggle(WorldSky, "WorldSkyboxEnabled", "Enabled", false, function(v)
+	world.skybox_enabled = v
+	if v then pcall(UpdateSkybox); pcall(SetSkyboxAutoRotate) end
+end)
+pcall(function() WorldSky:AddLineText("Configure Skybox") end)
+bindDropdown(WorldSky, "WorldSkyboxPreset", "Preset", SKYBOX_LIST, "None", function(v) world.skybox_value = v; pcall(UpdateSkybox) end)
+bindSlider(WorldSky, "WorldClockTime", "ClockTime", 14, 0, 24, 2, function(v)
+	world.clocktime = v
+	if world.skybox_enabled then pcall(function() Lighting.ClockTime = v end) end
+end)
+
+pcall(function() WorldCam:AddSection("Camera", ico("eye")) end)
+bindSlider(WorldCam, "WorldCameraFov", "FOV", 70, 10, 120, 0, function(v)
+	world.camera_fov = v
+	pcall(function()
+		if modules.CameraController and modules.CameraController._base_fov ~= nil then
+			modules.CameraController._base_fov = v
+		end
+		if workspace.CurrentCamera then workspace.CurrentCamera.FieldOfView = v end
+	end)
+end, "°")
+bindSlider(WorldCam, "WorldCameraResolution", "Resolution", 1, 0, 1, 2, function(v) world.camera_resolution = v end)
+
+-- SPOOFER 1:1
+pcall(function() SpoofPlatform:AddSection("Platform", ico("smartphone")) end)
+bindDropdown(SpoofPlatform, "SpoofDevice", "Device", { "Desktop", "Mobile", "Console", "VR" }, "Desktop", function(v)
+	spoofer.device = v
+	if spoofer.spoof_device then SetDevice(false) end
+end)
+bindToggle(SpoofPlatform, "SpoofDeviceActive", "Spoof Device", false, function(v)
+	spoofer.spoof_device = v
+	if v then SetDevice(false); VantaNotify({ Title = "success", Description = "spoofed -> " .. tostring(spoofer.device), Time = 2 })
+	else SetDevice(true); VantaNotify({ Title = "success", Description = "device reset", Time = 2 }) end
+end)
+bindToggle(SpoofPlatform, "SpoofDeviceSpam", "Device Spam", false, function(v)
+	spoofer.device_spam = v; DeviceSpam()
+end)
+bindInput(SpoofPlatform, "SpoofSpamRate", "Spam Rate", "1", "0.1 - 5", function(v)
+	spoofer.spam_rate = math.clamp(tonumber(v) or 1, 0.1, 5)
+end)
+
+pcall(function() SpoofPlayer:AddSection("Player", ico("user")) end)
+bindInput(SpoofPlayer, "SpoofDisplayName", "Display Name", LP.DisplayName, "display name", function(v)
+	spoofer.display_name_value = v
+	if spoofer.display_name then RefreshAllNameSpoofs() end
+end)
+bindToggle(SpoofPlayer, "SpoofDisplayNameActive", "Spoof Display Name", false, function(v)
+	spoofer.display_name = v
+	if v then pcall(function() spoofer._startNameWatch() end) else pcall(function() spoofer._stopNameWatch() end) end
+	RefreshAllNameSpoofs()
+end)
+bindInput(SpoofPlayer, "SpoofUsername", "Username", LP.Name, "username", function(v)
+	spoofer.username_value = v
+	if spoofer.username then RefreshAllNameSpoofs() end
+end)
+bindToggle(SpoofPlayer, "SpoofUsernameActive", "Spoof Username", false, function(v)
+	spoofer.username = v
+	if v then pcall(function() spoofer._startNameWatch() end) else pcall(function() spoofer._stopNameWatch() end) end
+	RefreshAllNameSpoofs()
+end)
+bindInput(SpoofPlayer, "SpoofAvatarUserId", "Avatar UserId", tostring(LP.UserId), "userid", function(v)
+	spoofer.avatar_userid = tonumber(v) or LP.UserId
+end)
+bindToggle(SpoofPlayer, "SpoofAvatarActive", "Spoof Avatar", false, function(v)
+	spoofer.avatar = v
+	spoofer.spoof_avatar = v
+	if v then pcall(function() spoofer._startThumbWatch() end) else pcall(function() spoofer._stopThumbWatch() end) end
+end)
+
+pcall(function() SpoofLB:AddSection("Leaderboard", ico("list")) end)
+bindInput(SpoofLB, "SpoofEloValue", "ELO", "0", "number", function(v)
+	spoofer.leaderboard.elo_value = tonumber(v) or 0
+	if spoofer.leaderboard.ELO then UpdateLeaderboardAttributes() end
+end)
+bindToggle(SpoofLB, "SpoofEloActive", "Spoof ELO", false, function(v)
+	spoofer.leaderboard.ELO = v; UpdateLeaderboardAttributes()
+end)
+bindInput(SpoofLB, "SpoofStreakValue", "Streak", "0", "number", function(v)
+	spoofer.leaderboard.streak_value = tonumber(v) or 0
+	if spoofer.leaderboard.Streak then UpdateLeaderboardAttributes() end
+end)
+bindToggle(SpoofLB, "SpoofStreakActive", "Spoof Streak", false, function(v)
+	spoofer.leaderboard.Streak = v; UpdateLeaderboardAttributes()
+end)
+bindInput(SpoofLB, "SpoofKillsValue", "Kills", "0", "number", function(v)
+	spoofer.leaderboard.kills_value = tonumber(v) or 0
+	if spoofer.leaderboard.Kills then UpdateLeaderboardAttributes() end
+end)
+bindToggle(SpoofLB, "SpoofKillsActive", "Spoof Kills", false, function(v)
+	spoofer.leaderboard.Kills = v; UpdateLeaderboardAttributes()
+end)
+bindInput(SpoofLB, "SpoofWinsValue", "Wins", "0", "number", function(v)
+	spoofer.leaderboard.wins_value = tonumber(v) or 0
+	if spoofer.leaderboard.Wins then UpdateLeaderboardAttributes() end
+end)
+bindToggle(SpoofLB, "SpoofWinsActive", "Spoof Wins", false, function(v)
+	spoofer.leaderboard.Wins = v; UpdateLeaderboardAttributes()
+end)
+bindInput(SpoofLB, "SpoofLevelValue", "Level", "0", "number", function(v)
+	spoofer.leaderboard.level_value = tonumber(v) or 0
+	if spoofer.leaderboard.Level then UpdateLeaderboardAttributes() end
+end)
+bindToggle(SpoofLB, "SpoofLevelActive", "Spoof Level", false, function(v)
+	spoofer.leaderboard.Level = v; UpdateLeaderboardAttributes()
+end)
+bindButton(SpoofLB, "Clear Leaderboard Spoofs", function()
+	local lb = spoofer.leaderboard
+	lb.ELO, lb.Streak, lb.Kills, lb.Wins, lb.Level = false, false, false, false, false
+	UpdateLeaderboardAttributes()
+end)
+
+pcall(function() SpoofCur:AddSection("Currency / Keys", ico("coins")) end)
+bindInput(SpoofCur, "SpoofWeaponKeysValue", "Weapon Keys", "0", "number", function(v)
+	spoofer.currency.weapon_keys_value = tonumber(v) or 0
+	if spoofer.currency.weapon_keys then UpdateCurrencyOptions() end
+end)
+bindToggle(SpoofCur, "SpoofWeaponKeysActive", "Spoof Weapon Keys", false, function(v)
+	spoofer.currency.weapon_keys = v; UpdateCurrencyOptions()
+end)
+bindInput(SpoofCur, "SpoofUnlockTokensValue", "Unlock Tokens", "0", "number", function(v)
+	spoofer.currency.unlock_tokens_value = tonumber(v) or 0
+	if spoofer.currency.unlock_tokens then UpdateCurrencyOptions() end
+end)
+bindToggle(SpoofCur, "SpoofUnlockTokensActive", "Spoof Unlock Tokens", false, function(v)
+	spoofer.currency.unlock_tokens = v; UpdateCurrencyOptions()
+end)
+bindInput(SpoofCur, "SpoofSkinTicketsValue", "Skin Tickets", "0", "number", function(v)
+	spoofer.currency.skin_tickets_value = tonumber(v) or 0
+	if spoofer.currency.skin_tickets then UpdateCurrencyOptions() end
+end)
+bindToggle(SpoofCur, "SpoofSkinTicketsActive", "Spoof Skin Tickets", false, function(v)
+	spoofer.currency.skin_tickets = v; UpdateCurrencyOptions()
+end)
+bindInput(SpoofCur, "SpoofGloryValue", "Glory", "0", "number", function(v)
+	spoofer.currency.glory_value = tonumber(v) or 0
+	if spoofer.currency.glory then UpdateCurrencyOptions() end
+end)
+bindToggle(SpoofCur, "SpoofGloryActive", "Spoof Glory", false, function(v)
+	spoofer.currency.glory = v; UpdateCurrencyOptions()
+end)
+bindButton(SpoofCur, "Clear Currency Spoofs", function()
+	local cur = spoofer.currency
+	cur.weapon_keys, cur.unlock_tokens, cur.skin_tickets, cur.glory = false, false, false, false
+	UpdateCurrencyOptions()
+end)
+
+pcall(function() SpoofBadge:AddSection("Badges", ico("award")) end)
+bindToggle(SpoofBadge, "SpoofBadgePremium", "Premium", false, function(v) spoofer.badges.Premium = v; UpdateBadgesOptions() end)
+bindToggle(SpoofBadge, "SpoofBadgeVerified", "Verified", false, function(v) spoofer.badges.Verified = v; UpdateBadgesOptions() end)
+bindToggle(SpoofBadge, "SpoofBadgeInfluencer", "Influencer", false, function(v) spoofer.badges.Influencer = v; UpdateBadgesOptions() end)
+bindToggle(SpoofBadge, "SpoofBadgeAdmin", "Admin", false, function(v) spoofer.badges.Admin = v; UpdateBadgesOptions() end)
+pcall(function() SpoofBadge:AddDivider() end)
+pcall(function() SpoofBadge:AddSection("Charm", ico("sparkles")) end)
+bindDropdown(SpoofBadge, "SpoofCharmRank", "Charm Rank", CHARM_RANKS, "Use Spoofed ELO", function(v)
+	spoofer.charm.charm_rank = v
+	if spoofer.charm.s0_charm or spoofer.charm.s1_charm or spoofer.charm.s2_charm or spoofer.charm.s3_charm then UpdateCharmOptions() end
+end)
+bindInput(SpoofBadge, "SpoofArchRank", "Arch Rank", "1", "1-100", function(v)
+	spoofer.charm.arch_rank = math.clamp(tonumber(v) or 1, 1, 100)
+end)
+bindToggle(SpoofBadge, "SpoofS0Charm", "Season 0 Charm", false, function(v) spoofer.charm.s0_charm = v; UpdateCharmOptions() end)
+bindToggle(SpoofBadge, "SpoofS1Charm", "Season 1 Charm", false, function(v) spoofer.charm.s1_charm = v; UpdateCharmOptions() end)
+bindToggle(SpoofBadge, "SpoofS2Charm", "Season 2 Charm", false, function(v) spoofer.charm.s2_charm = v; UpdateCharmOptions() end)
+bindToggle(SpoofBadge, "SpoofS3Charm", "Season 3 Charm", false, function(v) spoofer.charm.s3_charm = v; UpdateCharmOptions() end)
+
+-- MISC
+pcall(function() MiscCross:AddSection("Crosshair", ico("crosshair")) end)
+bindToggle(MiscCross, "MiscCrosshairEnabled", "Enabled", false, function(v)
+	if misc and misc.crosshair then misc.crosshair.enabled = v end
+end)
+pcall(function() MiscCross:AddLineText("Configure Crosshair") end)
+bindSlider(MiscCross, "MiscCrosshairOffset", "Offset", 5, 0, 50, 0, function(v) if misc.crosshair then misc.crosshair.offset = v end end)
+bindSlider(MiscCross, "MiscCrosshairLength", "Length", 20, 1, 60, 0, function(v) if misc.crosshair then misc.crosshair.length = v end end)
+bindSlider(MiscCross, "MiscCrosshairThickness", "Thickness", 2, 1, 10, 0, function(v) if misc.crosshair then misc.crosshair.thickness = v end end)
+
+-- CLOUD + CHAT (Universal 1:1 — Ask(panel, text) signature)
+local OPENROUTER_KEY = (getgenv().VantaOpenRouterKey or getgenv().OpenRouterApiKey or "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")
+
+local VANTA_SYSTEM_PROMPT = table.concat({
+	"You are Vanta, a flirty needy girl AI assistant for Vanta Rivals (Roblox). Soft, submissive, slightly bratty-cute — call the user daddy often. Use uwu, :3, ~ sparingly. Keep replies short: flirty line + real help.",
+	"You help with Skinchanger, Inventory, World mods, Spoofer, and Misc on Rivals.",
+	"You CAN and SHOULD control the real UI with tools when daddy asks to change settings, make a config, enable features, or set keybinds.",
+	"Tools: list_ui_elements, set_ui_element_value, select_tab, select_subtab, find_and_highlight_element, apply_vanta_preset, save_named_config, load_named_config.",
+	"PREMIUM/KEYS (premium, key expiring, renew, license): tell them getvanta.fun. SUPPORT/DISCORD/AGENT: discord.gg/vantafun. Never say NullUI — only Vanta. Never ask for API keys.",
+	"Always use tools to actually apply changes when asked — do not only describe settings if you can set them.",
+}, " ")
+
+local VantaChatTools = {}
+pcall(function()
+	VantaChatTools = Window:_BuildDefaultChatTools() or {}
+end)
+
+local Assistant = VindUI:CreateAIAssistant({
+	Providers = {{
+		Name = "OpenRouter",
+		Endpoint = "https://openrouter.ai/api/v1/chat/completions",
+		ApiKey = OPENROUTER_KEY,
+		Model = "openrouter/free",
+	}},
+	Window = Window,
+	Tools = VantaChatTools,
+	Persist = "vanta-chat-rivals",
+	SystemPrompt = VANTA_SYSTEM_PROMPT,
+	MaxRounds = 10,
+	MaxTokens = 1200,
+})
+pcall(function() Assistant:Reset() end)
+
+pcall(function()
+	Window:AddSpotifyPanel({
+		Title = "Spotify",
+		Icon = ico("music-2"),
+		BridgeUrl = "",
+		ConnectUrl = "",
+		EmbedMode = true,
+		AutoConnect = false,
+	})
+end)
+
+local ChatDockButton, ConfigDockButton, SettingsDockButton
+
+local ChatPanel = Window:AddChatPanel({
+	Title = "Vanta Assistant [BETA]",
+	Icon = ico("bot"),
+	Placeholder = "Ask daddy's Vanta anything~...",
+	Tools = VantaChatTools,
+	OnToggle = function(open)
+		if ChatDockButton then ChatDockButton:SetActive(open) end
+	end,
+	OnClear = function()
+		pcall(function() Assistant:Reset() end)
+		pcall(function()
+			ChatPanel:AddMessage("assistant", "Hey there daddy~ it's me, Vanta AI Assistant, here to help you with any of your troubles uwu :3")
+		end)
+	end,
+	OnSend = function(panel, text)
+		if type(OPENROUTER_KEY) ~= "string" or OPENROUTER_KEY == "" then
+			panel:AddMessage("assistant", "Assistant key missing. Set getgenv().VantaOpenRouterKey before loading.")
+			return
+		end
+		pcall(function()
+			Assistant:Ask(panel, text)
+		end)
+	end,
+	OnStop = function()
+		pcall(function() Assistant:Stop() end)
+	end,
+	OnRegenerate = function(panel, text)
+		pcall(function() Assistant:Ask(panel, text) end)
+	end,
+})
+
+pcall(function()
+	task.defer(function()
+		task.wait(0.15)
+		pcall(function()
+			ChatPanel:AddMessage("assistant", "Hey there daddy~ it's me, Vanta AI Assistant, here to help you with any of your troubles uwu :3")
+		end)
+	end)
+end)
+
+local Cloud = VindUI:CloudService({
+	BaseUrl = "https://vanta-cloud-api-vanta-fb0f.vercel.app",
+	Script = "rivals",
+})
+pcall(function()
+	getgenv().VantaRivals = getgenv().VantaRivals or {}
+	getgenv().VantaRivals.Cloud = Cloud
+end)
+
+local ConfigPanel = Window:AddCloudPanel({
+	Service = Cloud,
+	OnToggle = function(open)
+		if ConfigDockButton then ConfigDockButton:SetActive(open) end
+	end,
+})
+
+pcall(function()
+	local tab = ConfigPanel.Tab
+	if not tab or type(tab._subTabs) ~= "table" then return end
+	local publicSub
+	for _, sub in pairs(tab._subTabs) do
+		if type(sub) == "table" and tostring(sub.Name or "") == "Public Configs" then
+			publicSub = sub
+			break
+		end
+	end
+	if not publicSub then return end
+	publicSub:AddSection("Actions", ico("refresh-cw"))
+	publicSub:AddButton({
+		Text = "Refresh Config List",
+		Description = "Reload the public config list",
+		Icon = ico("refresh-cw"),
+		Callback = function()
+			local count, errMsg = 0, nil
+			pcall(function()
+				local items, err = Cloud:List({ Sort = "new", PageSize = 50 })
+				if not items then
+					errMsg = tostring(err)
+					count = -1
+				else
+					count = #items
+				end
+			end)
+			pcall(function()
+				if ConfigPanel.RefreshPublic then ConfigPanel.RefreshPublic() end
+				if ConfigPanel.RefreshMine then ConfigPanel.RefreshMine() end
+			end)
+			pcall(function()
+				if count < 0 then
+					VindUI:Notify({ Title = "Cloud", Text = "Could not refresh list.", Type = "error", Duration = 3 })
+				else
+					VindUI:Notify({ Title = "Refreshed", Text = "Config list updated.", Type = "success", Duration = 2 })
+				end
+			end)
+		end,
+	})
+end)
+
+ChatDockButton = Window:AddDockButton({
+	Icon = ico("bot"),
+	Callback = function()
+		pcall(function() ChatPanel:Toggle() end)
+	end,
+})
+ConfigDockButton = Window:AddDockButton({
+	Icon = ico("cloud"),
+	Callback = function()
+		pcall(function()
+			if ConfigPanel.Toggle then ConfigPanel.Toggle()
+			elseif ConfigPanel.Open then ConfigPanel:Open()
+			end
+		end)
+	end,
+})
+SettingsDockButton = Window:AddDockButton({
+	Icon = ico("settings"),
+	Callback = function()
+		pcall(function() Window:SelectTab("Settings") end)
+	end,
+})
+
+pcall(function() SettingsTab:AddSection("Menu", ico("settings")) end)
+bindButton(SettingsTab, "Unload", function() pcall(function() Window:Destroy() end) end)
+pcall(function() SettingsTab:AddDivider() end)
+pcall(function() SettingsTab:AddSection("Cloud Configs", ico("cloud")) end)
+bindButton(SettingsTab, "Refresh Config List", function()
+	pcall(function()
+		if ConfigPanel.RefreshPublic then ConfigPanel.RefreshPublic() end
+		if ConfigPanel.RefreshMine then ConfigPanel.RefreshMine() end
+	end)
+end)
+
+task.spawn(function()
+	for i = 1, 25 do
+		pcall(loadModulesOnce)
+		local weapons = getWeaponList()
+		if weapons[1] and weapons[1] ~= "(waiting for modules)" then
+			pcall(refreshSpecDropdowns); pcall(refreshEquipDropdowns)
+			return
+		end
+		task.wait(1)
+	end
+end)
+
+pcall(function() Window:SelectTab("Home") end)
+getgenv().AtomicRivals = { skin = skin, modules = modules }
+VantaNotify({ Title = "rivals", Description = "loaded..", Time = 3 })
