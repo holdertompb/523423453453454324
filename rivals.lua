@@ -25,101 +25,37 @@ do
 	task.wait(0.25)
 end
 
--- AC bypass (runs first, then main script after 2s)
+-- AC soft-bypass (Medium-safe)
+-- No getconnections nukes, no remote Destroy, no mt setreadonly.
+-- Broad name filters ("flag"/"validate") were blocking legit game traffic
+-- and breaking Utility.Raycast on Medium (NextNumber / Workspace desync).
 do
 	local Players = game:GetService("Players")
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local LocalPlayer = Players.LocalPlayer
 
-	local hookmetamethod = hookmetamethod
-	local getrawmetatable = getrawmetatable
-	local setreadonly = setreadonly
-	local checkcaller = checkcaller
-	local getnamecallmethod = getnamecallmethod
-	local getconnections = getconnections
+	local hmm = hookmetamethod
+	local gnm = getnamecallmethod
+	local ncc = newcclosure or function(f) return f end
 
-	local mt = getrawmetatable(game)
-	setreadonly(mt, false)
+	if type(hmm) == "function" and type(gnm) == "function" then
+		local oldNamecall
+		oldNamecall = hmm(game, "__namecall", ncc(function(self, ...)
+			local method = gnm()
+			-- only hard-block local Kick; leave all remotes alone
+			if method == "Kick" and self == LocalPlayer then
+				return
+			end
+			return oldNamecall(self, ...)
+		end))
 
-	local oldNamecall
-	oldNamecall = hookmetamethod(game, "__namecall", function(self, ...)
-	    local method = getnamecallmethod()
-	    -- Kick block
-	    if method == "Kick" then
-	        if self == LocalPlayer then
-	            return
-	        end
-	        return oldNamecall(self, ...)
-	    end
-	    -- only string-scan remotes (skip Index/etc entirely)
-	    if method == "FireServer" or method == "InvokeServer" then
-	        local ok, name = pcall(function()
-	            return string.lower(self.Name)
-	        end)
-	        if ok and name then
-	            if string.find(name, "exploit", 1, true)
-	                or string.find(name, "cheat", 1, true)
-	                or string.find(name, "detect", 1, true)
-	                or string.find(name, "ban", 1, true)
-	                or string.find(name, "flag", 1, true)
-	                or string.find(name, "validate", 1, true)
-	                or string.find(name, "integrity", 1, true)
-	                or string.find(name, "security", 1, true)
-	                or string.find(name, "anticheat", 1, true)
-	                or string.find(name, "ac_", 1, true) then
-	                return
-	            end
-	        end
-	    end
-	    return oldNamecall(self, ...)
-	end)
-
-	setreadonly(mt, true)
-
-	local function nukeConnections()
-	    if not getconnections then return end
-	    pcall(function()
-	        for _, conn in ipairs(getconnections(LocalPlayer.CharacterAdded)) do
-	            if not checkcaller() then
-	                conn:Disable()
-	            end
-	        end
-	    end)
-	    pcall(function()
-	        for _, conn in ipairs(getconnections(LocalPlayer.PlayerGui.ChildAdded)) do
-	            if not checkcaller() then
-	                conn:Disable()
-	            end
-	        end
-	    end)
+		local oldIndex
+		oldIndex = hmm(game, "__index", ncc(function(self, key)
+			if key == "Kick" and self == LocalPlayer then
+				return function() end
+			end
+			return oldIndex(self, key)
+		end))
 	end
-	nukeConnections()
-
-	ReplicatedStorage.DescendantAdded:Connect(function(obj)
-	    if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
-	        local name = obj.Name:lower()
-	        if name:find("exploit") or name:find("cheat") or
-	           name:find("detect") or name:find("ban") or
-	           name:find("flag") or name:find("validate") or
-	           name:find("integrity") or name:find("security") or
-	           name:find("anticheat") or name:find("ac_") then
-	            pcall(function() obj:Destroy() end)
-	        end
-	    end
-	end)
-
-	LocalPlayer.CharacterAdded:Connect(function()
-	    task.wait(0.5)
-	    nukeConnections()
-	end)
-
-	local oldIndex
-	oldIndex = hookmetamethod(game, "__index", function(self, key)
-	    if checkcaller() and key == "Kick" and self == LocalPlayer then
-	        return function() end
-	    end
-	    return oldIndex(self, key)
-	end)
 end
 
 task.wait(2)
