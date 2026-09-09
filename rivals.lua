@@ -2996,7 +2996,7 @@ end
 -- ==================== WINDOW ====================
 local Window = VindUI:CreateWindow({
 	Title = "Vanta Rivals [Beta]",
-	Subtitle = "Version: v2.00",
+	Subtitle = "Version: v2.1",
 	Icon = LOGO,
 	Size = UDim2.fromOffset(680, 480),
 	MinSize = Vector2.new(520, 380),
