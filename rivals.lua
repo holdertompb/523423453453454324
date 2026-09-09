@@ -324,7 +324,6 @@ end
 
 local function saveLoadoutFile()
 	if not writefile then
-		VantaNotify({ Title = "Loadout", Description = "writefile unavailable", Time = 3 })
 		return false
 	end
 	local ok = pcall(function()
@@ -340,11 +339,6 @@ local function saveLoadoutFile()
 			saved_at = os.time(),
 		}))
 	end)
-	VantaNotify({
-		Title = "Loadout",
-		Description = ok and ("saved " .. LOADOUT_FILE) or "save failed",
-		Time = 3,
-	})
 	return ok
 end
 
@@ -890,7 +884,6 @@ local function EquipApply()
 		options.IsInverted = skin.equip_inverted and true or nil
 	end
 	if type(weapon_name) ~= "string" or weapon_name == "" then
-		VantaNotify({ Title = "Equip", Description = "set a weapon name", Time = 3 })
 		return
 	end
 	if cosmetic_name and cosmetic_name ~= "" then
@@ -900,18 +893,12 @@ local function EquipApply()
 	pcall(function()
 		ReplicatedStorage.Remotes.Data.EquipCosmetic:FireServer(weapon_name, unlock_type, name_to_send, options)
 	end)
-	VantaNotify({
-		Title = "Equip",
-		Description = string.format("%s on %s → %s", tostring(unlock_type), tostring(weapon_name), tostring(cosmetic_name)),
-		Time = 2,
-	})
 end
 
 local function EquipApplyAll()
 	local unlock_type = skin.equip_type
 	local cosmetic_name = skin.equip_name
 	if unlock_type == "Skin" then
-		VantaNotify({ Title = "Equip", Description = "equip-all skips Skin (weapon-specific)", Time = 3 })
 		return
 	end
 	if cosmetic_name and cosmetic_name ~= "" then
@@ -933,7 +920,6 @@ local function EquipApplyAll()
 			end
 		end
 	end
-	VantaNotify({ Title = "Equip", Description = "applied to " .. tostring(count) .. " weapons", Time = 3 })
 end
 
 --[[ LPH_NO_VIRTUALIZE ]]
@@ -1210,24 +1196,17 @@ local function installViewmodelHooks()
 			end
 		end)
 
-		VantaNotify({ Title = "Loading", Description = "ready...", Time = 3 })
 	end)
 end
 
 
 task.spawn(function()
 	if not waitModules(15) then
-		VantaNotify({
-			Title = "Cosmetics",
-			Description = "modules not found — fully load rivals then re-exec",
-			Time = 5,
-		})
 		return
 	end
 	initInventoryFromGame()
 	loadLoadoutFile()
 	if installHooks() then
-		VantaNotify({ Title = "Loading", Description = "ready...", Time = 3 })
 		installViewmodelHooks()
 	end
 end)
@@ -1882,7 +1861,6 @@ local function AddToBackpack()
 	local weapon_name = inventory.specific.weapon_name
 	local new_entry = inventory.specific.new_entry
 	if not modules.CosmeticLibrary or not modules.CosmeticLibrary.Rewards or not modules.CosmeticLibrary.Rewards[item_name] then
-		VantaNotify({ Title = "Inventory", Description = "modules not ready / invalid case", Time = 3 })
 		return
 	end
 	if not weapon_name or weapon_name == "" then weapon_name = "IsRandom" end
@@ -1902,7 +1880,6 @@ local function AddToBackpack()
 		if not found then table.insert(list, reward_entry) end
 	end
 	ReplicateInventory()
-	VantaNotify({ Title = "Inventory", Description = "added to backpack", Time = 2 })
 end
 
 local function AddAllCases()
@@ -1915,7 +1892,6 @@ local function AddAllCases()
 		end
 	end
 	ReplicateInventory()
-	VantaNotify({ Title = "Inventory", Description = "all cases added", Time = 2 })
 end
 
 local function GetBackpackEntries()
@@ -1965,13 +1941,11 @@ local function InjectIntoBackpack()
 	local weapon_name = inventory.inject.weapon_name
 	local quantity = inventory.inject.quantity or 1
 	if not cosmetic_name or cosmetic_name == "" then
-		VantaNotify({ Title = "Inventory", Description = "select a cosmetic", Time = 2 })
 		return
 	end
 	local reward_entry
 	if item_type == "Skin" then
 		if not weapon_name or weapon_name == "" then
-			VantaNotify({ Title = "Inventory", Description = "skin needs a weapon", Time = 2 })
 			return
 		end
 		reward_entry = { Name = cosmetic_name, Quantity = quantity, Weapon = weapon_name }
@@ -1994,7 +1968,6 @@ local function InjectIntoBackpack()
 		if not found then table.insert(list, reward_entry) end
 	end
 	ReplicateInventory()
-	VantaNotify({ Title = "Inventory", Description = "injected " .. tostring(cosmetic_name), Time = 2 })
 end
 
 task.spawn(function()
@@ -2981,6 +2954,45 @@ local function bindColor(page, flag, text, default, cb)
 	end
 end
 
+-- VVind Keybind picker — Default nil = "None". Callback(key, event) where event is "bind" | "press"
+local function bindKeybind(page, flag, text, defaultKey, onBind, onPress)
+	defaultKey = defaultKey -- nil means None
+	local kb
+	local ok = pcall(function()
+		kb = page:AddKeybind({
+			Text = text,
+			Icon = ico("keyboard"),
+			Default = defaultKey, -- nil → shows "None"
+			Flag = flag,
+			Callback = function(key, event)
+				Options[flag] = Options[flag] or {}
+				Options[flag].Value = key
+				if event == "bind" then
+					if onBind then pcall(onBind, key) end
+				elseif event == "press" then
+					if onPress then pcall(onPress, key) end
+				end
+			end,
+		})
+	end)
+	Options[flag] = {
+		Value = defaultKey,
+		Get = function()
+			if kb and kb.Get then return kb:Get() end
+			return Options[flag].Value
+		end,
+		Set = function(_, key, silent)
+			Options[flag].Value = key
+			if kb and kb.Set then pcall(function() kb:Set(key, silent) end) end
+		end,
+	}
+	if not ok then
+		-- last-resort: no keybind widget
+		pcall(function() page:AddLabel(text .. " (keybind unavailable)") end)
+	end
+	return kb
+end
+
 -- ==================== WINDOW ====================
 local Window = VindUI:CreateWindow({
 	Title = "Vanta Rivals [Beta]",
@@ -3039,72 +3051,67 @@ pcall(function()
 	end
 end)
 
-local Home = Window:AddTab({ Name = "Home", Icon = ico("house") })
+-- Tabs/subtabs live on one table to stay under Luau's 200 local register limit
+local UI = {}
+UI.Home = Window:AddTab({ Name = "Home", Icon = ico("house") })
 Window:AddTabLine()
-
--- Combat / Visuals
-local CombatTab = Window:AddTab({ Name = "Combat", Icon = ico("crosshair") })
-local VisualsTab = Window:AddTab({ Name = "Visuals", Icon = ico("eye") })
+UI.CombatTab = Window:AddTab({ Name = "Combat", Icon = ico("crosshair") })
+UI.VisualsTab = Window:AddTab({ Name = "Visuals", Icon = ico("eye") })
+UI.MovementTab = Window:AddTab({ Name = "Movement", Icon = ico("zap") })
 Window:AddTabLine()
-
--- Cosmetics / Inventory
-local CosmeticsTab = Window:AddTab({ Name = "Skinchanger", Icon = ico("sparkles") })
-local InventoryTab = Window:AddTab({ Name = "Inventory", Icon = ico("backpack") })
+UI.CosmeticsTab = Window:AddTab({ Name = "Skinchanger", Icon = ico("sparkles") })
+UI.InventoryTab = Window:AddTab({ Name = "Inventory", Icon = ico("backpack") })
 Window:AddTabLine()
+UI.WorldTab = Window:AddTab({ Name = "World", Icon = ico("globe") })
+UI.SpooferTab = Window:AddTab({ Name = "Spoofer", Icon = ico("user") })
+UI.MiscTab = Window:AddTab({ Name = "Misc", Icon = ico("box") })
+UI.SettingsTab = Window:AddTab({ Name = "Settings", Icon = ico("settings"), Hidden = true })
 
--- World / Spoofer / Misc
-local WorldTab = Window:AddTab({ Name = "World", Icon = ico("globe") })
-local SpooferTab = Window:AddTab({ Name = "Spoofer", Icon = ico("user") })
-local MiscTab = Window:AddTab({ Name = "Misc", Icon = ico("box") })
-local SettingsTab = Window:AddTab({ Name = "Settings", Icon = ico("settings"), Hidden = true })
+UI.CombatRage = UI.CombatTab:AddSubTab({ Name = "Rage", Icon = ico("crosshair") })
+UI.CombatLegit = UI.CombatTab:AddSubTab({ Name = "Legit", Icon = ico("bow-arrow") })
+UI.CombatGunMods = UI.CombatTab:AddSubTab({ Name = "Gun Mods", Icon = ico("package") })
+pcall(function() UI.CombatTab:SelectSubTab(1) end)
 
--- Combat subtabs
-local CombatRage = CombatTab:AddSubTab({ Name = "Rage", Icon = ico("crosshair") })
-local CombatLegit = CombatTab:AddSubTab({ Name = "Legit", Icon = ico("bow-arrow") })
-local CombatGunMods = CombatTab:AddSubTab({ Name = "Gun Mods", Icon = ico("package") })
-pcall(function() CombatTab:SelectSubTab(1) end)
+UI.VisPlayer = UI.VisualsTab:AddSubTab({ Name = "Player", Icon = ico("user") })
+pcall(function() UI.VisualsTab:SelectSubTab(1) end)
 
--- Visuals subtabs
-local VisPlayer = VisualsTab:AddSubTab({ Name = "Player", Icon = ico("user") })
-pcall(function() VisualsTab:SelectSubTab(1) end)
+UI.MovePlayer = UI.MovementTab:AddSubTab({ Name = "Player", Icon = ico("user") })
+pcall(function() UI.MovementTab:SelectSubTab(1) end)
 
--- Skinchanger
-local CosUnlock = CosmeticsTab:AddSubTab({ Name = "Unlock", Icon = ico("unlock") })
-local CosSpecific = CosmeticsTab:AddSubTab({ Name = "Specific", Icon = ico("search") })
-local CosApply = CosmeticsTab:AddSubTab({ Name = "Apply", Icon = ico("check") })
-local CosSave = CosmeticsTab:AddSubTab({ Name = "Save", Icon = ico("save") })
-pcall(function() CosmeticsTab:SelectSubTab(1) end)
+UI.CosUnlock = UI.CosmeticsTab:AddSubTab({ Name = "Unlock", Icon = ico("unlock") })
+UI.CosSpecific = UI.CosmeticsTab:AddSubTab({ Name = "Specific", Icon = ico("search") })
+UI.CosApply = UI.CosmeticsTab:AddSubTab({ Name = "Apply", Icon = ico("check") })
+UI.CosSave = UI.CosmeticsTab:AddSubTab({ Name = "Save", Icon = ico("save") })
+pcall(function() UI.CosmeticsTab:SelectSubTab(1) end)
 
--- Inventory
-local InvSingle = InventoryTab:AddSubTab({ Name = "Single", Icon = ico("package") })
-local InvBulk = InventoryTab:AddSubTab({ Name = "Bulk", Icon = ico("boxes") })
-local InvDelete = InventoryTab:AddSubTab({ Name = "Delete", Icon = ico("trash-2") })
-local InvInject = InventoryTab:AddSubTab({ Name = "Inject", Icon = ico("plus") })
-pcall(function() InventoryTab:SelectSubTab(1) end)
+UI.InvSingle = UI.InventoryTab:AddSubTab({ Name = "Single", Icon = ico("package") })
+UI.InvBulk = UI.InventoryTab:AddSubTab({ Name = "Bulk", Icon = ico("boxes") })
+UI.InvDelete = UI.InventoryTab:AddSubTab({ Name = "Delete", Icon = ico("trash-2") })
+UI.InvInject = UI.InventoryTab:AddSubTab({ Name = "Inject", Icon = ico("plus") })
+pcall(function() UI.InventoryTab:SelectSubTab(1) end)
 
--- World
-local WorldLighting = WorldTab:AddSubTab({ Name = "Lighting", Icon = ico("sun") })
-local WorldAtmo = WorldTab:AddSubTab({ Name = "Atmosphere", Icon = ico("cloud") })
-local WorldSky = WorldTab:AddSubTab({ Name = "Skybox", Icon = ico("image") })
-local WorldCam = WorldTab:AddSubTab({ Name = "Camera", Icon = ico("eye") })
-pcall(function() WorldTab:SelectSubTab(1) end)
+UI.WorldLighting = UI.WorldTab:AddSubTab({ Name = "Lighting", Icon = ico("sun") })
+UI.WorldAtmo = UI.WorldTab:AddSubTab({ Name = "Atmosphere", Icon = ico("cloud") })
+UI.WorldSky = UI.WorldTab:AddSubTab({ Name = "Skybox", Icon = ico("image") })
+UI.WorldCam = UI.WorldTab:AddSubTab({ Name = "View", Icon = ico("eye") })
+pcall(function() UI.WorldTab:SelectSubTab(1) end)
 
--- Spoofer
-local SpoofPlatform = SpooferTab:AddSubTab({ Name = "Platform", Icon = ico("smartphone") })
-local SpoofPlayer = SpooferTab:AddSubTab({ Name = "Player", Icon = ico("user") })
-local SpoofLB = SpooferTab:AddSubTab({ Name = "Leaderboard", Icon = ico("list") })
-local SpoofCur = SpooferTab:AddSubTab({ Name = "Currency", Icon = ico("coins") })
-local SpoofBadge = SpooferTab:AddSubTab({ Name = "Badges", Icon = ico("award") })
-pcall(function() SpooferTab:SelectSubTab(1) end)
+UI.SpoofPlatform = UI.SpooferTab:AddSubTab({ Name = "Platform", Icon = ico("smartphone") })
+UI.SpoofPlayer = UI.SpooferTab:AddSubTab({ Name = "Player", Icon = ico("user") })
+UI.SpoofLB = UI.SpooferTab:AddSubTab({ Name = "Leaderboard", Icon = ico("list") })
+UI.SpoofCur = UI.SpooferTab:AddSubTab({ Name = "Currency", Icon = ico("coins") })
+UI.SpoofBadge = UI.SpooferTab:AddSubTab({ Name = "Badges", Icon = ico("award") })
+pcall(function() UI.SpooferTab:SelectSubTab(1) end)
 
--- Misc
-local MiscCross = MiscTab:AddSubTab({ Name = "Crosshair", Icon = ico("crosshair") })
-pcall(function() MiscTab:SelectSubTab(1) end)
+UI.MiscCross = UI.MiscTab:AddSubTab({ Name = "Crosshair", Icon = ico("crosshair") })
+UI.MiscExtra = UI.MiscTab:AddSubTab({ Name = "Extra", Icon = ico("sparkles") })
+pcall(function() UI.MiscTab:SelectSubTab(1) end)
 
--- Home
-local Welcome = Home:AddSubTab({ Name = "Welcome", Icon = ico("sparkles") })
-local DiscordTab = Home:AddSubTab({ Name = "Discord", Icon = ico("message-circle") })
-pcall(function() Home:SelectSubTab(1) end)
+UI.Welcome = UI.Home:AddSubTab({ Name = "Welcome", Icon = ico("sparkles") })
+UI.DiscordTab = UI.Home:AddSubTab({ Name = "Discord", Icon = ico("message-circle") })
+pcall(function() UI.Home:SelectSubTab(1) end)
+
+-- Access pages via UI.* (one local) — avoids 40+ register slots for tab handles
 
 local function vantaGreeting()
 	local hour = tonumber(os.date("%H")) or 12
@@ -3114,19 +3121,19 @@ local function vantaGreeting()
 	return "Good evening."
 end
 
-Welcome:AddCard({
+UI.Welcome:AddCard({
 	UserId = LP.UserId,
 	Title = "Hello, " .. (LP.DisplayName or LP.Name),
 	Description = vantaGreeting(),
 })
 
-Welcome:AddParagraph({
+UI.Welcome:AddParagraph({
 	Title = "Welcome to Vanta",
 	Icon = ico("sparkles"),
 	Text = "Thanks for choosing Vanta as your script, make sure to join our discord server to never miss an update and stay connected within our community! <3",
 })
 
-Welcome:AddDivider()
+UI.Welcome:AddDivider()
 
 local function detectExecutor()
 	local name = "Unknown"
@@ -3157,7 +3164,7 @@ local execOk = isSupportedExec(execName)
 
 local sysGrid
 pcall(function()
-	sysGrid = Welcome:AddSystemInfoGrid({
+	sysGrid = UI.Welcome:AddSystemInfoGrid({
 		Description = "Live session and client info",
 	})
 end)
@@ -3172,15 +3179,15 @@ end)
 
 local DISCORD_URL = "https://discord.gg/vantafun"
 
-DiscordTab:AddParagraph({
+UI.DiscordTab:AddParagraph({
 	Title = "Join the Vanta Community",
 	Icon = ico("message-circle"),
 	Text = "Connect with our community! share configs, chat with others and more!",
 })
 
-DiscordTab:AddDivider()
+UI.DiscordTab:AddDivider()
 
-DiscordTab:AddGradientCard({
+UI.DiscordTab:AddGradientCard({
 	Title = "Vanta Discord",
 	Description = "discord.gg/vantafun — click to join",
 	ColorA = Color3.fromRGB(88, 101, 242),
@@ -3194,12 +3201,6 @@ DiscordTab:AddGradientCard({
 		pcall(function()
 			game:GetService("GuiService"):OpenBrowserWindow(url)
 		end)
-		VindUI:Notify({
-			Title = "Thanks for joining",
-			Text = "Discord invite copied to clipboard",
-			Type = "success",
-			Duration = 4,
-		})
 	end,
 })
 
@@ -4002,79 +4003,79 @@ DiscordTab:AddGradientCard({
 	end)
 
 	-- ===== UI (no friendly colors) =====
-	pcall(function() VisPlayer:AddSection("Master ESP", ico("eye")) end)
-	bindToggle(VisPlayer, "ESPMaster", "Enabled", false, function(v)
+	pcall(function() UI.VisPlayer:AddSection("Master ESP", ico("eye")) end)
+	bindToggle(UI.VisPlayer, "ESPMaster", "Enabled", false, function(v)
 		ESP.visuals_enabled = v; ESP.Apply()
 	end)
-	bindToggle(VisPlayer, "ESPTeammates", "Teammates", false, function(v) ESP.teammates = v end)
-	bindSlider(VisPlayer, "ESPMaxDist", "Max Distance", 1500, 50, 5000, 0, function(v) ESP.max_distance = v end, "m")
+	bindToggle(UI.VisPlayer, "ESPTeammates", "Teammates", false, function(v) ESP.teammates = v end)
+	bindSlider(UI.VisPlayer, "ESPMaxDist", "Max Distance", 1500, 50, 5000, 0, function(v) ESP.max_distance = v end, "m")
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Box", ico("box")) end)
-	bindToggle(VisPlayer, "ESPBox", "Enabled", false, function(v) ESP.box.enabled = v end)
-	pcall(function() VisPlayer:AddLineText("Configure Box") end)
-	bindDropdown(VisPlayer, "ESPBoxMode", "Mode", { "Full", "Corner" }, "Full", function(v) ESP.box.mode = v end)
-	bindSlider(VisPlayer, "ESPBoxThick", "Thickness", 1, 1, 6, 0, function(v) ESP.box.thickness = v end, "px")
-	bindToggle(VisPlayer, "ESPBoxOutline", "Outline", true, function(v) ESP.box.outline = v end)
-	bindColor(VisPlayer, "ESPBoxOutlineCol", "Outline Color", ESP.box.outline_color, function(c) ESP.box.outline_color = c end)
-	bindToggle(VisPlayer, "ESPBoxGrad", "Gradient", false, function(v) ESP.box.gradient = v end)
-	bindColor(VisPlayer, "ESPBoxCol", "Color", ESP.box.color, function(c) ESP.box.color = c end)
-	bindColor(VisPlayer, "ESPBoxCol2", "Color 2", ESP.box.color2, function(c) ESP.box.color2 = c end)
-	bindToggle(VisPlayer, "ESPBoxFill", "Fill", false, function(v) ESP.box.fill = v end)
-	bindColor(VisPlayer, "ESPBoxFillCol", "Fill Color", ESP.box.fill_color, function(c) ESP.box.fill_color = c end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Box", ico("box")) end)
+	bindToggle(UI.VisPlayer, "ESPBox", "Enabled", false, function(v) ESP.box.enabled = v end)
+	pcall(function() UI.VisPlayer:AddLineText("Configure Box") end)
+	bindDropdown(UI.VisPlayer, "ESPBoxMode", "Mode", { "Full", "Corner" }, "Full", function(v) ESP.box.mode = v end)
+	bindSlider(UI.VisPlayer, "ESPBoxThick", "Thickness", 1, 1, 6, 0, function(v) ESP.box.thickness = v end, "px")
+	bindToggle(UI.VisPlayer, "ESPBoxOutline", "Outline", true, function(v) ESP.box.outline = v end)
+	bindColor(UI.VisPlayer, "ESPBoxOutlineCol", "Outline Color", ESP.box.outline_color, function(c) ESP.box.outline_color = c end)
+	bindToggle(UI.VisPlayer, "ESPBoxGrad", "Gradient", false, function(v) ESP.box.gradient = v end)
+	bindColor(UI.VisPlayer, "ESPBoxCol", "Color", ESP.box.color, function(c) ESP.box.color = c end)
+	bindColor(UI.VisPlayer, "ESPBoxCol2", "Color 2", ESP.box.color2, function(c) ESP.box.color2 = c end)
+	bindToggle(UI.VisPlayer, "ESPBoxFill", "Fill", false, function(v) ESP.box.fill = v end)
+	bindColor(UI.VisPlayer, "ESPBoxFillCol", "Fill Color", ESP.box.fill_color, function(c) ESP.box.fill_color = c end)
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Skeleton", ico("user")) end)
-	bindToggle(VisPlayer, "ESPSkeleton", "Enabled", false, function(v) ESP.skeleton.enabled = v end)
-	pcall(function() VisPlayer:AddLineText("Configure Skeleton") end)
-	bindSlider(VisPlayer, "ESPSkelThick", "Thickness", 1.5, 1, 6, 1, function(v) ESP.skeleton.thickness = v end, "px")
-	bindToggle(VisPlayer, "ESPSkelGrad", "Gradient", false, function(v) ESP.skeleton.gradient = v end)
-	bindColor(VisPlayer, "ESPSkelCol", "Color", ESP.skeleton.color, function(c) ESP.skeleton.color = c end)
-	bindColor(VisPlayer, "ESPSkelCol2", "Color 2", ESP.skeleton.color2, function(c) ESP.skeleton.color2 = c end)
-	bindToggle(VisPlayer, "ESPHeadDot", "Head Dot", false, function(v) ESP.skeleton.headdot = v end)
-	bindSlider(VisPlayer, "ESPHeadDotSize", "Head Dot Size", 4, 1, 12, 0, function(v) ESP.skeleton.headdot_size = v end, "px")
-	bindColor(VisPlayer, "ESPHeadDotCol", "Head Dot Color", ESP.skeleton.headdot_color, function(c) ESP.skeleton.headdot_color = c end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Skeleton", ico("user")) end)
+	bindToggle(UI.VisPlayer, "ESPSkeleton", "Enabled", false, function(v) ESP.skeleton.enabled = v end)
+	pcall(function() UI.VisPlayer:AddLineText("Configure Skeleton") end)
+	bindSlider(UI.VisPlayer, "ESPSkelThick", "Thickness", 1.5, 1, 6, 1, function(v) ESP.skeleton.thickness = v end, "px")
+	bindToggle(UI.VisPlayer, "ESPSkelGrad", "Gradient", false, function(v) ESP.skeleton.gradient = v end)
+	bindColor(UI.VisPlayer, "ESPSkelCol", "Color", ESP.skeleton.color, function(c) ESP.skeleton.color = c end)
+	bindColor(UI.VisPlayer, "ESPSkelCol2", "Color 2", ESP.skeleton.color2, function(c) ESP.skeleton.color2 = c end)
+	bindToggle(UI.VisPlayer, "ESPHeadDot", "Head Dot", false, function(v) ESP.skeleton.headdot = v end)
+	bindSlider(UI.VisPlayer, "ESPHeadDotSize", "Head Dot Size", 4, 1, 12, 0, function(v) ESP.skeleton.headdot_size = v end, "px")
+	bindColor(UI.VisPlayer, "ESPHeadDotCol", "Head Dot Color", ESP.skeleton.headdot_color, function(c) ESP.skeleton.headdot_color = c end)
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Chams", ico("sparkles")) end)
-	bindToggle(VisPlayer, "ESPChams", "Enabled", false, function(v) ESP.chams.enabled = v end)
-	pcall(function() VisPlayer:AddLineText("Configure Chams") end)
-	bindColor(VisPlayer, "ESPChamsFill", "Fill", ESP.chams.fill_color, function(c) ESP.chams.fill_color = c end)
-	bindColor(VisPlayer, "ESPChamsOl", "Outline", ESP.chams.outline_color, function(c) ESP.chams.outline_color = c end)
-	bindSlider(VisPlayer, "ESPChamsTrans", "Fill Transparency", 0.5, 0, 1, 2, function(v) ESP.chams.fill_transparency = v end)
-	bindSlider(VisPlayer, "ESPChamsOlTrans", "Outline Transparency", 0, 0, 1, 2, function(v) ESP.chams.outline_transparency = v end)
-	bindToggle(VisPlayer, "ESPChamsVisibleOnly", "Visible Only", false, function(v) ESP.chams.visible_only = v end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Chams", ico("sparkles")) end)
+	bindToggle(UI.VisPlayer, "ESPChams", "Enabled", false, function(v) ESP.chams.enabled = v end)
+	pcall(function() UI.VisPlayer:AddLineText("Configure Chams") end)
+	bindColor(UI.VisPlayer, "ESPChamsFill", "Fill", ESP.chams.fill_color, function(c) ESP.chams.fill_color = c end)
+	bindColor(UI.VisPlayer, "ESPChamsOl", "Outline", ESP.chams.outline_color, function(c) ESP.chams.outline_color = c end)
+	bindSlider(UI.VisPlayer, "ESPChamsTrans", "Fill Transparency", 0.5, 0, 1, 2, function(v) ESP.chams.fill_transparency = v end)
+	bindSlider(UI.VisPlayer, "ESPChamsOlTrans", "Outline Transparency", 0, 0, 1, 2, function(v) ESP.chams.outline_transparency = v end)
+	bindToggle(UI.VisPlayer, "ESPChamsVisibleOnly", "Visible Only", false, function(v) ESP.chams.visible_only = v end)
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Healthbar", ico("heart")) end)
-	bindToggle(VisPlayer, "ESPHealth", "Enabled", false, function(v) ESP.health.enabled = v end)
-	pcall(function() VisPlayer:AddLineText("Configure Health") end)
-	bindSlider(VisPlayer, "ESPHpWidth", "Bar Width", 2, 1, 12, 0, function(v) ESP.health.width = v end, "px")
-	bindToggle(VisPlayer, "ESPHpText", "HP Text", true, function(v) ESP.health.text = v end)
-	bindColor(VisPlayer, "ESPHpHigh", "High", ESP.health.color_high, function(c) ESP.health.color_high = c end)
-	bindColor(VisPlayer, "ESPHpMid", "Mid", ESP.health.color_mid, function(c) ESP.health.color_mid = c end)
-	bindColor(VisPlayer, "ESPHpLow", "Low", ESP.health.color_low, function(c) ESP.health.color_low = c end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Healthbar", ico("heart")) end)
+	bindToggle(UI.VisPlayer, "ESPHealth", "Enabled", false, function(v) ESP.health.enabled = v end)
+	pcall(function() UI.VisPlayer:AddLineText("Configure Health") end)
+	bindSlider(UI.VisPlayer, "ESPHpWidth", "Bar Width", 2, 1, 12, 0, function(v) ESP.health.width = v end, "px")
+	bindToggle(UI.VisPlayer, "ESPHpText", "HP Text", true, function(v) ESP.health.text = v end)
+	bindColor(UI.VisPlayer, "ESPHpHigh", "High", ESP.health.color_high, function(c) ESP.health.color_high = c end)
+	bindColor(UI.VisPlayer, "ESPHpMid", "Mid", ESP.health.color_mid, function(c) ESP.health.color_mid = c end)
+	bindColor(UI.VisPlayer, "ESPHpLow", "Low", ESP.health.color_low, function(c) ESP.health.color_low = c end)
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Tracers", ico("crosshair")) end)
-	bindToggle(VisPlayer, "ESPTracers", "Enabled", false, function(v) ESP.tracer.enabled = v end)
-	pcall(function() VisPlayer:AddLineText("Configure Tracers") end)
-	bindDropdown(VisPlayer, "ESPTracerOrigin", "Origin", { "Bottom", "Top", "Center", "Mouse" }, "Bottom", function(v) ESP.tracer.origin = v end)
-	bindSlider(VisPlayer, "ESPTracerThick", "Thickness", 1, 1, 6, 0, function(v) ESP.tracer.thickness = v end, "px")
-	bindToggle(VisPlayer, "ESPTracerOutline", "Outline", true, function(v) ESP.tracer.outline = v end)
-	bindColor(VisPlayer, "ESPTracerCol", "Color", ESP.tracer.color, function(c) ESP.tracer.color = c end)
-	bindColor(VisPlayer, "ESPTracerOlCol", "Outline Color", ESP.tracer.outline_color, function(c) ESP.tracer.outline_color = c end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Tracers", ico("crosshair")) end)
+	bindToggle(UI.VisPlayer, "ESPTracers", "Enabled", false, function(v) ESP.tracer.enabled = v end)
+	pcall(function() UI.VisPlayer:AddLineText("Configure Tracers") end)
+	bindDropdown(UI.VisPlayer, "ESPTracerOrigin", "Origin", { "Bottom", "Top", "Center", "Mouse" }, "Bottom", function(v) ESP.tracer.origin = v end)
+	bindSlider(UI.VisPlayer, "ESPTracerThick", "Thickness", 1, 1, 6, 0, function(v) ESP.tracer.thickness = v end, "px")
+	bindToggle(UI.VisPlayer, "ESPTracerOutline", "Outline", true, function(v) ESP.tracer.outline = v end)
+	bindColor(UI.VisPlayer, "ESPTracerCol", "Color", ESP.tracer.color, function(c) ESP.tracer.color = c end)
+	bindColor(UI.VisPlayer, "ESPTracerOlCol", "Outline Color", ESP.tracer.outline_color, function(c) ESP.tracer.outline_color = c end)
 
-	pcall(function() VisPlayer:AddDivider() end)
-	pcall(function() VisPlayer:AddSection("Flags", ico("list")) end)
-	bindToggle(VisPlayer, "ESPName", "Username", false, function(v) ESP.flags.username = v end)
-	bindColor(VisPlayer, "ESPNameCol", "Username Color", ESP.flags.username_color, function(c) ESP.flags.username_color = c end)
-	pcall(function() VisPlayer:AddLineText("Distance") end)
-	bindToggle(VisPlayer, "ESPDistance", "Distance", false, function(v) ESP.flags.distance = v end)
-	bindColor(VisPlayer, "ESPDistCol", "Distance Color", ESP.flags.distance_color, function(c) ESP.flags.distance_color = c end)
-	pcall(function() VisPlayer:AddLineText("Weapon") end)
-	bindToggle(VisPlayer, "ESPWeapon", "Weapon", false, function(v) ESP.flags.weapon = v end)
-	bindColor(VisPlayer, "ESPWepCol", "Weapon Color", ESP.flags.weapon_color, function(c) ESP.flags.weapon_color = c end)
+	pcall(function() UI.VisPlayer:AddDivider() end)
+	pcall(function() UI.VisPlayer:AddSection("Flags", ico("list")) end)
+	bindToggle(UI.VisPlayer, "ESPName", "Username", false, function(v) ESP.flags.username = v end)
+	bindColor(UI.VisPlayer, "ESPNameCol", "Username Color", ESP.flags.username_color, function(c) ESP.flags.username_color = c end)
+	pcall(function() UI.VisPlayer:AddLineText("Distance") end)
+	bindToggle(UI.VisPlayer, "ESPDistance", "Distance", false, function(v) ESP.flags.distance = v end)
+	bindColor(UI.VisPlayer, "ESPDistCol", "Distance Color", ESP.flags.distance_color, function(c) ESP.flags.distance_color = c end)
+	pcall(function() UI.VisPlayer:AddLineText("Weapon") end)
+	bindToggle(UI.VisPlayer, "ESPWeapon", "Weapon", false, function(v) ESP.flags.weapon = v end)
+	bindColor(UI.VisPlayer, "ESPWepCol", "Weapon Color", ESP.flags.weapon_color, function(c) ESP.flags.weapon_color = c end)
 
 	pcall(function() VisExtra:AddSection("Extra", ico("package")) end)
 	pcall(function() VisExtra:AddLabel("Nothing here yet") end)
@@ -4486,22 +4487,22 @@ end)()
 	end)
 
 	-- UI · Rage tab
-	pcall(function() CombatRage:AddSection("Silent Aim", ico("crosshair")) end)
-	bindToggle(CombatRage, "SAEnabled", "Enabled", false, function(v)
+	pcall(function() UI.CombatRage:AddSection("Silent Aim", ico("crosshair")) end)
+	bindToggle(UI.CombatRage, "SAEnabled", "Enabled", false, function(v)
 		SA.enabled = v
 		if v then tryHookGun() end
 	end)
-	pcall(function() CombatRage:AddLineText("Configure Silent Aim") end)
-	bindToggle(CombatRage, "SAShowFOV", "Show FOV", false, function(v) SA.show_fov = v end)
-	bindSlider(CombatRage, "SAFOV", "FOV Size", 100, 10, 800, 0, function(v) SA.fov_radius = v end, "px")
-	bindColor(CombatRage, "SAFOVColor", "FOV Color", SA.fov_color, function(c) SA.fov_color = c end)
-	bindDropdown(CombatRage, "SAHitbox", "Hitbox", { "Closest Part", "Head", "UpperTorso" }, "Closest Part", function(v)
+	pcall(function() UI.CombatRage:AddLineText("Configure Silent Aim") end)
+	bindToggle(UI.CombatRage, "SAShowFOV", "Show FOV", false, function(v) SA.show_fov = v end)
+	bindSlider(UI.CombatRage, "SAFOV", "FOV Size", 100, 10, 800, 0, function(v) SA.fov_radius = v end, "px")
+	bindColor(UI.CombatRage, "SAFOVColor", "FOV Color", SA.fov_color, function(c) SA.fov_color = c end)
+	bindDropdown(UI.CombatRage, "SAHitbox", "Hitbox", { "Closest Part", "Head", "UpperTorso" }, "Closest Part", function(v)
 		SA.hitbox = v
 	end)
-	bindSlider(CombatRage, "SAHitChance", "Hit Chance", 100, 0, 100, 0, function(v) SA.hit_chance = v end, "%")
-	bindSlider(CombatRage, "SAMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) SA.max_distance = v end, "m")
-	bindToggle(CombatRage, "SAWallcheck", "Wallcheck", true, function(v) SA.wallcheck = v end)
-	bindToggle(CombatRage, "SAManip", "Manipulation", false, function(v) SA.manipulation = v end)
+	bindSlider(UI.CombatRage, "SAHitChance", "Hit Chance", 100, 0, 100, 0, function(v) SA.hit_chance = v end, "%")
+	bindSlider(UI.CombatRage, "SAMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) SA.max_distance = v end, "m")
+	bindToggle(UI.CombatRage, "SAWallcheck", "Wallcheck", true, function(v) SA.wallcheck = v end)
+	bindToggle(UI.CombatRage, "SAManip", "Manipulation", false, function(v) SA.manipulation = v end)
 end)()
 
 ----------------------------------------------------------------
@@ -4529,7 +4530,7 @@ end)()
 	local AA = {
 		enabled        = false,
 		hold_mode      = "Hold",
-		hold_key       = Enum.KeyCode.C,
+		hold_key       = nil, -- None until user binds
 		hold_mouse     = nil,
 		toggled        = false,
 
@@ -4771,16 +4772,7 @@ end)()
 		return false
 	end
 
-	UIS.InputBegan:Connect(function(input, gpe)
-		if gpe or not AA.enabled then return end
-		if AA.hold_mode ~= "Toggle" then return end
-		local kc = input.KeyCode
-		local mt = input.UserInputType
-		if (kc ~= Enum.KeyCode.Unknown and kc == AA.hold_key)
-		or (mt ~= Enum.UserInputType.None and mt == AA.hold_mouse) then
-			AA.toggled = not AA.toggled
-		end
-	end)
+	-- Toggle activation is handled by the VVind Keybind "press" callback on AAHoldKey
 
 	-- ===== FOV circle =====
 	local aaFovCircle
@@ -5007,24 +4999,9 @@ end)()
 	end)
 
 	-- ===== UI =====
-	local KEY_MAP_AA = {
-		["C"]         = Enum.KeyCode.C,
-		["V"]         = Enum.KeyCode.V,
-		["Q"]         = Enum.KeyCode.Q,
-		["E"]         = Enum.KeyCode.E,
-		["F"]         = Enum.KeyCode.F,
-		["R"]         = Enum.KeyCode.R,
-		["T"]         = Enum.KeyCode.T,
-		["X"]         = Enum.KeyCode.X,
-		["Z"]         = Enum.KeyCode.Z,
-		["Left Alt"]  = Enum.KeyCode.LeftAlt,
-		["Left Ctrl"] = Enum.KeyCode.LeftControl,
-		["CapsLock"]  = Enum.KeyCode.CapsLock,
-	}
+	pcall(function() UI.CombatLegit:AddSection("Aim Assist", ico("crosshair")) end)
 
-	pcall(function() CombatLegit:AddSection("Aim Assist", ico("crosshair")) end)
-
-	bindToggle(CombatLegit, "AAEnabled", "Enabled", false, function(v)
+	bindToggle(UI.CombatLegit, "AAEnabled", "Enabled", false, function(v)
 		AA.enabled = v
 		if not v then
 			AA.toggled     = false
@@ -5034,106 +5011,101 @@ end)()
 		end
 	end)
 
-	bindDropdown(CombatLegit, "AAHoldMode", "Activation", { "Hold", "Toggle", "Always" }, "Hold", function(v)
+	bindDropdown(UI.CombatLegit, "AAHoldMode", "Activation", { "Hold", "Toggle", "Always" }, "Hold", function(v)
 		AA.hold_mode = v
 		AA.toggled   = false
 	end)
 
-	bindDropdown(CombatLegit, "AAHoldKey", "Activation Key", {
-		"C","V","Q","E","F","R","T","X","Z",
-		"Left Alt","Left Ctrl","CapsLock",
-		"Right Mouse","Middle Mouse",
-	}, "C", function(v)
+	-- VVind key picker — default None
+	bindKeybind(UI.CombatLegit, "AAHoldKey", "Activation Key", nil, function(key)
 		AA.hold_mouse = nil
-		AA.hold_key   = nil
-		if v == "Right Mouse" then
-			AA.hold_mouse = Enum.UserInputType.MouseButton2
-		elseif v == "Middle Mouse" then
-			AA.hold_mouse = Enum.UserInputType.MouseButton3
-		else
-			AA.hold_key = KEY_MAP_AA[v] or Enum.KeyCode.C
+		AA.hold_key = key -- nil when cleared (Backspace)
+	end, function(key)
+		-- press event: used for Toggle activation mode
+		if AA.enabled and AA.hold_mode == "Toggle" then
+			AA.toggled = not AA.toggled
 		end
 	end)
 
-	pcall(function() CombatLegit:AddLineText("Configure Aimbot") end)
+	pcall(function() UI.CombatLegit:AddLineText("Configure Aimbot") end)
 
-	pcall(function() CombatLegit:AddSection("Targeting", ico("crosshair")) end)
+	pcall(function() UI.CombatLegit:AddSection("Targeting", ico("crosshair")) end)
 
-	bindDropdown(CombatLegit, "AAHitbox", "Hitbox", { "Head", "UpperTorso", "Closest Part" }, "Head", function(v)
+	bindDropdown(UI.CombatLegit, "AAHitbox", "Hitbox", { "Head", "UpperTorso", "Closest Part" }, "Head", function(v)
 		AA.hitbox = v
 	end)
 
-	bindSlider(CombatLegit, "AAFov", "FOV Radius", 120, 10, 900, 0, function(v)
+	bindSlider(UI.CombatLegit, "AAFov", "FOV Radius", 120, 10, 900, 0, function(v)
 		AA.fov_radius = v
 	end, "px")
 
-	bindToggle(CombatLegit, "AAShowFov", "Show FOV", false, function(v)
+	bindToggle(UI.CombatLegit, "AAShowFov", "Show FOV", false, function(v)
 		AA.show_fov = v
 	end)
 
-	bindColor(CombatLegit, "AAFovColor", "FOV Color", AA.fov_color, function(c)
+	bindColor(UI.CombatLegit, "AAFovColor", "FOV Color", AA.fov_color, function(c)
 		AA.fov_color = c
 		if aaFovCircle then aaFovCircle.Color = c end
 	end)
 
-	bindSlider(CombatLegit, "AAMaxDist", "Max Distance", 600, 50, 2000, 0, function(v)
+	bindSlider(UI.CombatLegit, "AAMaxDist", "Max Distance", 600, 50, 2000, 0, function(v)
 		AA.max_distance = v
 	end, "m")
 
-	bindToggle(CombatLegit, "AAWallcheck", "Wallcheck", true, function(v)
+	bindToggle(UI.CombatLegit, "AAWallcheck", "Wallcheck", true, function(v)
 		AA.wallcheck = v
 	end)
 
-	bindToggle(CombatLegit, "AATeammates", "Include Teammates", false, function(v)
+	bindToggle(UI.CombatLegit, "AATeammates", "Include Teammates", false, function(v)
 		AA.teammates = v
 	end)
 
-	pcall(function() CombatLegit:AddDivider() end)
-	pcall(function() CombatLegit:AddSection("Smoothing", ico("gauge")) end)
+	pcall(function() UI.CombatLegit:AddDivider() end)
+	pcall(function() UI.CombatLegit:AddSection("Smoothing", ico("gauge")) end)
 
-	bindDropdown(CombatLegit, "AASmoothMode", "Smooth Mode", SMOOTH_MODES, "Exponential", function(v)
+	bindDropdown(UI.CombatLegit, "AASmoothMode", "Smooth Mode", SMOOTH_MODES, "Exponential", function(v)
 		AA.smooth_mode = v
 		AA._spring_pos = nil
 		AA._spring_vel = Vector3.zero
 		_aa_lerped_pos = nil
 	end)
 
-	bindSlider(CombatLegit, "AASmoothFactor", "Smooth Factor", 10, 0, 100, 0, function(v)
+	bindSlider(UI.CombatLegit, "AASmoothFactor", "Smooth Factor", 10, 0, 100, 0, function(v)
 		AA.smooth_factor = v / 100
 	end, "%")
 
-	bindSlider(CombatLegit, "AALinearSpeed", "Linear Speed", 8, 1, 120, 0, function(v)
+	bindSlider(UI.CombatLegit, "AALinearSpeed", "Linear Speed", 8, 1, 120, 0, function(v)
 		AA.linear_speed = v
 	end, "°/s")
 
-	pcall(function() CombatLegit:AddLineText("Spring Settings (SpringDamp)") end)
+	pcall(function() UI.CombatLegit:AddLineText("Spring Settings (SpringDamp)") end)
 
-	bindSlider(CombatLegit, "AASpringStiff", "Stiffness", 12, 1, 80, 0, function(v)
+	bindSlider(UI.CombatLegit, "AASpringStiff", "Stiffness", 12, 1, 80, 0, function(v)
 		AA.spring_stiff = v
 		AA._spring_pos  = nil
 		AA._spring_vel  = Vector3.zero
 		_aa_lerped_pos  = nil
 	end)
 
-	bindSlider(CombatLegit, "AASpringDamp", "Damping", 70, 0, 100, 0, function(v)
+	bindSlider(UI.CombatLegit, "AASpringDamp", "Damping", 70, 0, 100, 0, function(v)
 		AA.spring_damp = v / 100
 		AA._spring_pos = nil
 		AA._spring_vel = Vector3.zero
 		_aa_lerped_pos = nil
 	end, "%")
 
-	pcall(function() CombatLegit:AddDivider() end)
-	pcall(function() CombatLegit:AddSection("Humanization", ico("refresh-cw")) end)
+	pcall(function() UI.CombatLegit:AddDivider() end)
+	pcall(function() UI.CombatLegit:AddSection("Humanization", ico("refresh-cw")) end)
 
-	bindToggle(CombatLegit, "AARandomise", "Humanise (Random Offset)", false, function(v)
+	bindToggle(UI.CombatLegit, "AARandomise", "Humanise (Random Offset)", false, function(v)
 		AA.randomise = v
 	end)
 
-	bindSlider(CombatLegit, "AARandRadius", "Humanise Radius", 5, 0, 50, 0, function(v)
+	bindSlider(UI.CombatLegit, "AARandRadius", "Humanise Radius", 5, 0, 50, 0, function(v)
 		AA.rand_radius = v / 100
 	end, "")
 
-	bindSlider(CombatLegit, "AAPredictScale", "Predictive Lead", 10, 0, 100, 0, function(v)
+	bindSlider(UI.CombatLegit, "AAPredictScale", "Predictive Lead", 10, 0, 100, 0, function(v)
 		AA.predict_scale  = v / 100
 		AA._prev_target   = nil
 		AA._prev_target_t = 0
@@ -5152,7 +5124,7 @@ end)()
 	local UIS = game:GetService("UserInputService")
 
 	-- divider between aimbot and triggerbot
-	pcall(function() CombatLegit:AddDivider() end)
+	pcall(function() UI.CombatLegit:AddDivider() end)
 
 	local TB = {
 		enabled = false,
@@ -5160,7 +5132,7 @@ end)()
 		check_scoped = {},
 		active = false,
 		hold_mode = "Hold",
-		hold_key = Enum.KeyCode.E,
+		hold_key = nil, -- None until user binds
 		hold_mouse = nil,
 		max_distance = 500,
 		-- wallcheck always on (no toggle)
@@ -5361,38 +5333,23 @@ end)()
 		fireShot()
 	end)
 
-	local KEY_MAP = {
-		["E"] = Enum.KeyCode.E, ["Q"] = Enum.KeyCode.Q, ["F"] = Enum.KeyCode.F,
-		["C"] = Enum.KeyCode.C, ["V"] = Enum.KeyCode.V, ["R"] = Enum.KeyCode.R,
-		["T"] = Enum.KeyCode.T, ["Left Alt"] = Enum.KeyCode.LeftAlt,
-		["Left Ctrl"] = Enum.KeyCode.LeftControl,
-	}
-
-	pcall(function() CombatLegit:AddSection("Triggerbot", ico("crosshair")) end)
-	bindToggle(CombatLegit, "TBEnabled", "Enabled", false, function(v)
+	pcall(function() UI.CombatLegit:AddSection("Triggerbot", ico("crosshair")) end)
+	bindToggle(UI.CombatLegit, "TBEnabled", "Enabled", false, function(v)
 		TB.enabled = v
 		if not v then TB.active = false end
 	end)
-	pcall(function() CombatLegit:AddLineText("Configure Triggerbot") end)
-	bindDropdown(CombatLegit, "TBHoldMode", "Activation", { "Hold", "Always" }, "Hold", function(v)
+	pcall(function() UI.CombatLegit:AddLineText("Configure Triggerbot") end)
+	bindDropdown(UI.CombatLegit, "TBHoldMode", "Activation", { "Hold", "Always" }, "Hold", function(v)
 		TB.hold_mode = v
 	end)
-	bindDropdown(CombatLegit, "TBHoldKey", "Hold Key", {
-		"E", "Q", "F", "C", "V", "R", "T", "Left Alt", "Left Ctrl", "Right Mouse", "Left Mouse"
-	}, "E", function(v)
+	-- VVind key picker — default None
+	bindKeybind(UI.CombatLegit, "TBHoldKey", "Hold Key", nil, function(key)
 		TB.hold_mouse = nil
-		TB.hold_key = nil
-		if v == "Right Mouse" then
-			TB.hold_mouse = Enum.UserInputType.MouseButton2
-		elseif v == "Left Mouse" then
-			TB.hold_mouse = Enum.UserInputType.MouseButton1
-		else
-			TB.hold_key = KEY_MAP[v] or Enum.KeyCode.E
-		end
+		TB.hold_key = key
 	end)
-	bindSlider(CombatLegit, "TBDelay", "Shoot Delay", 50, 0, 500, 0, function(v) TB.shoot_delay = v end, "ms")
-	bindSlider(CombatLegit, "TBMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) TB.max_distance = v end, "m")
-	bindDropdown(CombatLegit, "TBScoped", "Require Scope", { "None", "Sniper", "Crossbow", "Sniper+Crossbow" }, "None", function(v)
+	bindSlider(UI.CombatLegit, "TBDelay", "Shoot Delay", 50, 0, 500, 0, function(v) TB.shoot_delay = v end, "ms")
+	bindSlider(UI.CombatLegit, "TBMaxDist", "Max Distance", 500, 50, 2000, 0, function(v) TB.max_distance = v end, "m")
+	bindDropdown(UI.CombatLegit, "TBScoped", "Require Scope", { "None", "Sniper", "Crossbow", "Sniper+Crossbow" }, "None", function(v)
 		if v == "None" then TB.check_scoped = {}
 		elseif v == "Sniper" then TB.check_scoped = { "Sniper" }
 		elseif v == "Crossbow" then TB.check_scoped = { "Crossbow" }
@@ -5400,7 +5357,7 @@ end)()
 		end
 	end)
 	pcall(function()
-		CombatLegit:AddLabel("PS: Wallcheck is always on for triggerbot :3")
+		UI.CombatLegit:AddLabel("PS: Wallcheck is always on for triggerbot :3")
 	end)
 end)()
 
@@ -5807,148 +5764,254 @@ end)()
 	end)
 
 	-- ===== UI =====
-	pcall(function() CombatGunMods:AddSection("Weapon", ico("crosshair")) end)
-	bindToggle(CombatGunMods, "GMNoRecoil", "No Recoil", false, function(v)
+	pcall(function() UI.CombatGunMods:AddSection("Weapon", ico("crosshair")) end)
+	bindToggle(UI.CombatGunMods, "GMNoRecoil", "No Recoil", false, function(v)
 		GM.no_recoil = v
 	end)
-	bindToggle(CombatGunMods, "GMNoSpread", "No Spread", false, function(v)
+	bindToggle(UI.CombatGunMods, "GMNoSpread", "No Spread", false, function(v)
 		GM.no_spread = v
 	end)
-	bindToggle(CombatGunMods, "GMFullAuto", "Full Auto", false, function(v)
+	bindToggle(UI.CombatGunMods, "GMFullAuto", "Full Auto", false, function(v)
 		GM.full_auto = v
 	end)
-	bindSlider(CombatGunMods, "GMFirerate", "Firerate Boost", 0, 0, 100, 0, function(v)
+	bindSlider(UI.CombatGunMods, "GMFirerate", "Firerate Boost", 0, 0, 100, 0, function(v)
 		GM.firerate_boost = v
 	end, "%")
 	pcall(function()
-		CombatGunMods:AddLabel("for firerate slider 100% = fast then 0% = regular")
+		UI.CombatGunMods:AddLabel("for firerate slider 100% = fast then 0% = regular")
 	end)
 
-	pcall(function() CombatGunMods:AddDivider() end)
-	pcall(function() CombatGunMods:AddSection("Bullet Tracers", ico("sparkles")) end)
-	bindToggle(CombatGunMods, "GMTracers", "Enabled", false, function(v)
+	pcall(function() UI.CombatGunMods:AddDivider() end)
+	pcall(function() UI.CombatGunMods:AddSection("Bullet Tracers", ico("sparkles")) end)
+	bindToggle(UI.CombatGunMods, "GMTracers", "Enabled", false, function(v)
 		GM.bullet_tracers = v
 	end)
-	bindColor(CombatGunMods, "GMTracerColor", "Tracer Color", GM.tracer_color, function(c)
+	bindColor(UI.CombatGunMods, "GMTracerColor", "Tracer Color", GM.tracer_color, function(c)
 		GM.tracer_color = c
 	end)
-	bindSlider(CombatGunMods, "GMTracerLife", "Lifetime", 0.45, 0.1, 2, 2, function(v)
+	bindSlider(UI.CombatGunMods, "GMTracerLife", "Lifetime", 0.45, 0.1, 2, 2, function(v)
 		GM.tracer_lifetime = v
 	end, "s")
 end)()
 
 
 -- SKINCHANGER
-pcall(function() CosUnlock:AddSection("Skinchanger", ico("sparkles")) end)
-bindDropdown(CosUnlock, "UnlockType", "Cosmetic Type", COSMETIC_TYPES, "Skin", function(v) skin.unlock_type = v end)
-bindDropdown(CosUnlock, "UnlockRarity", "Rarity", COSMETIC_RARITIES, "Mythical", function(v) skin.unlock_rarity = v end)
-pcall(function() CosUnlock:AddLineText("Actions") end)
-bindButton(CosUnlock, "Unlock selected", function() UnlockSelectedRarity() end)
-bindButton(CosUnlock, "Unlock all selected", function() UnlockAllOfType() end)
-bindButton(CosUnlock, "Unlock All Cosmetics", function() UnlockAll() end)
-bindButton(CosUnlock, "Unlock All Weapons", function() UnlockAllWeapons() end)
+pcall(function() UI.CosUnlock:AddSection("Skinchanger", ico("sparkles")) end)
+bindDropdown(UI.CosUnlock, "UnlockType", "Cosmetic Type", COSMETIC_TYPES, "Skin", function(v) skin.unlock_type = v end)
+bindDropdown(UI.CosUnlock, "UnlockRarity", "Rarity", COSMETIC_RARITIES, "Mythical", function(v) skin.unlock_rarity = v end)
+pcall(function() UI.CosUnlock:AddLineText("Actions") end)
+bindButton(UI.CosUnlock, "Unlock selected", function() UnlockSelectedRarity() end)
+bindButton(UI.CosUnlock, "Unlock all selected", function() UnlockAllOfType() end)
+bindButton(UI.CosUnlock, "Unlock All Cosmetics", function() UnlockAll() end)
+bindButton(UI.CosUnlock, "Unlock All Weapons", function() UnlockAllWeapons() end)
 
-pcall(function() CosSpecific:AddSection("Specific Unlock", ico("search")) end)
-bindDropdown(CosSpecific, "SpecType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.specific_type = v; pcall(refreshSpecDropdowns) end)
-bindDropdown(CosSpecific, "SpecWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.specific_weapon = v; pcall(refreshSpecDropdowns) end)
-bindDropdown(CosSpecific, "SpecName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
+pcall(function() UI.CosSpecific:AddSection("Specific Unlock", ico("search")) end)
+bindDropdown(UI.CosSpecific, "SpecType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.specific_type = v; pcall(refreshSpecDropdowns) end)
+bindDropdown(UI.CosSpecific, "SpecWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.specific_weapon = v; pcall(refreshSpecDropdowns) end)
+bindDropdown(UI.CosSpecific, "SpecName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
 	skin.specific_name = (v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
 end)
-pcall(function() CosSpecific:AddLineText("Actions") end)
-bindButton(CosSpecific, "Unlock Specific", function() UnlockSpecific() end)
-bindButton(CosSpecific, "Unlock All for Weapon", function() UnlockAllForWeapon() end)
-bindButton(CosSpecific, "Refresh Lists", function() refreshSpecDropdowns() end)
+pcall(function() UI.CosSpecific:AddLineText("Actions") end)
+bindButton(UI.CosSpecific, "Unlock Specific", function() UnlockSpecific() end)
+bindButton(UI.CosSpecific, "Unlock All for Weapon", function() UnlockAllForWeapon() end)
+bindButton(UI.CosSpecific, "Refresh Lists", function() refreshSpecDropdowns() end)
 
-pcall(function() CosApply:AddSection("Apply", ico("check")) end)
-bindDropdown(CosApply, "EquipType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.equip_type = v; pcall(refreshEquipDropdowns) end)
-bindDropdown(CosApply, "EquipWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.equip_weapon = v; pcall(refreshEquipDropdowns) end)
-bindDropdown(CosApply, "EquipName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
+pcall(function() UI.CosApply:AddSection("Apply", ico("check")) end)
+bindDropdown(UI.CosApply, "EquipType", "Type", COSMETIC_TYPES, "Skin", function(v) skin.equip_type = v; pcall(refreshEquipDropdowns) end)
+bindDropdown(UI.CosApply, "EquipWeapon", "Weapon", { "(waiting for modules)" }, 1, function(v) skin.equip_weapon = v; pcall(refreshEquipDropdowns) end)
+bindDropdown(UI.CosApply, "EquipName", "Cosmetic", { "(waiting for modules)" }, 1, function(v)
 	skin.equip_name = (v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
 end)
-bindToggle(CosApply, "EquipInverted", "Inverted (Wrap)", false, function(v) skin.equip_inverted = v end)
-pcall(function() CosApply:AddLineText("Actions") end)
-bindButton(CosApply, "Equip", function() EquipApply() end)
-bindButton(CosApply, "Equip All Weapons", function() EquipApplyAll() end)
-bindButton(CosApply, "Refresh Lists", function() refreshEquipDropdowns() end)
+bindToggle(UI.CosApply, "EquipInverted", "Inverted (Wrap)", false, function(v) skin.equip_inverted = v end)
+pcall(function() UI.CosApply:AddLineText("Actions") end)
+bindButton(UI.CosApply, "Equip", function() EquipApply() end)
+bindButton(UI.CosApply, "Equip All Weapons", function() EquipApplyAll() end)
+bindButton(UI.CosApply, "Refresh Lists", function() refreshEquipDropdowns() end)
 
-pcall(function() CosSave:AddSection("Save Loadout", ico("save")) end)
-bindButton(CosSave, "Save", function() saveLoadoutFile() end)
-bindButton(CosSave, "Reload", function() loadLoadoutFile() end)
+pcall(function() UI.CosSave:AddSection("Save Loadout", ico("save")) end)
+bindButton(UI.CosSave, "Save", function() saveLoadoutFile() end)
+bindButton(UI.CosSave, "Reload", function() loadLoadoutFile() end)
 
 -- INVENTORY
-pcall(function() InvSingle:AddSection("Single", ico("package")) end)
-bindDropdown(InvSingle, "InvCaseBox", "Case / Box", LOOTBOX_NAMES, "Skin Case", function(v) inventory.specific.lootbox_name = v end)
-bindSlider(InvSingle, "InvQty", "Quantity", 1, 1, 99, 0, function(v) inventory.specific.quantity = v end)
-bindDropdown(InvSingle, "InvWeapon", "For Weapon", { "(None)", "IsRandom" }, "(None)", function(v)
+pcall(function() UI.InvSingle:AddSection("Single", ico("package")) end)
+bindDropdown(UI.InvSingle, "InvCaseBox", "Case / Box", LOOTBOX_NAMES, "Skin Case", function(v) inventory.specific.lootbox_name = v end)
+bindSlider(UI.InvSingle, "InvQty", "Quantity", 1, 1, 99, 0, function(v) inventory.specific.quantity = v end)
+bindDropdown(UI.InvSingle, "InvWeapon", "For Weapon", { "(None)", "IsRandom" }, "(None)", function(v)
 	inventory.specific.weapon_name = (v == "(None)") and "" or v
 end)
-bindToggle(InvSingle, "InvNewEntry", "New Entry", false, function(v) inventory.specific.new_entry = v end)
-pcall(function() InvSingle:AddLineText("Actions") end)
-bindButton(InvSingle, "Add to Backpack", function() AddToBackpack() end)
+bindToggle(UI.InvSingle, "InvNewEntry", "New Entry", false, function(v) inventory.specific.new_entry = v end)
+pcall(function() UI.InvSingle:AddLineText("Actions") end)
+bindButton(UI.InvSingle, "Add to Backpack", function() AddToBackpack() end)
 
-pcall(function() InvBulk:AddSection("Bulk", ico("boxes")) end)
-bindSlider(InvBulk, "InvBulkQty", "Quantity", 1, 1, 99, 0, function(v) inventory.bulk.quantity = v end)
-bindButton(InvBulk, "Add All Cases", function() AddAllCases() end)
+pcall(function() UI.InvBulk:AddSection("Bulk", ico("boxes")) end)
+bindSlider(UI.InvBulk, "InvBulkQty", "Quantity", 1, 1, 99, 0, function(v) inventory.bulk.quantity = v end)
+bindButton(UI.InvBulk, "Add All Cases", function() AddAllCases() end)
 
-pcall(function() InvDelete:AddSection("Delete", ico("trash-2")) end)
-bindDropdown(InvDelete, "InvDeleteEntry", "Backpack Entry", { "(empty)" }, 1, function(v)
+pcall(function() UI.InvDelete:AddSection("Delete", ico("trash-2")) end)
+bindDropdown(UI.InvDelete, "InvDeleteEntry", "Backpack Entry", { "(empty)" }, 1, function(v)
 	if v ~= "(empty)" then inventory.delete.backpack_entry = v end
 end)
-bindSlider(InvDelete, "InvDeleteQty", "Quantity", 1, 1, 99, 0, function(v) inventory.delete.quantity = v end)
-pcall(function() InvDelete:AddLineText("Actions") end)
-bindButton(InvDelete, "Refresh List", function()
+bindSlider(UI.InvDelete, "InvDeleteQty", "Quantity", 1, 1, 99, 0, function(v) inventory.delete.quantity = v end)
+pcall(function() UI.InvDelete:AddLineText("Actions") end)
+bindButton(UI.InvDelete, "Refresh List", function()
 	local e = GetBackpackEntries(); setDropdownValues("InvDeleteEntry", e, e[1])
 end)
-bindButton(InvDelete, "Delete ALL Backpack", function() DeleteAllBackpack(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
-bindButton(InvDelete, "Delete (Qty)", function() DeleteQuantity(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
-bindButton(InvDelete, "Delete ALL of Entry", function() DeleteAllOfEntry(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+bindButton(UI.InvDelete, "Delete ALL Backpack", function() DeleteAllBackpack(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+bindButton(UI.InvDelete, "Delete (Qty)", function() DeleteQuantity(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
+bindButton(UI.InvDelete, "Delete ALL of Entry", function() DeleteAllOfEntry(); setDropdownValues("InvDeleteEntry", GetBackpackEntries(), nil) end)
 
-pcall(function() InvInject:AddSection("Inject", ico("plus")) end)
-bindDropdown(InvInject, "InvInjectType", "Type", { "Skin", "Wrap", "Charm", "Finisher", "Emote" }, "Skin", function(v) inventory.inject.item_type = v end)
-bindDropdown(InvInject, "InvInjectWeapon", "For Weapon", { "Universal", "IsRandom" }, "Universal", function(v)
+pcall(function() UI.InvInject:AddSection("Inject", ico("plus")) end)
+bindDropdown(UI.InvInject, "InvInjectType", "Type", { "Skin", "Wrap", "Charm", "Finisher", "Emote" }, "Skin", function(v) inventory.inject.item_type = v end)
+bindDropdown(UI.InvInject, "InvInjectWeapon", "For Weapon", { "Universal", "IsRandom" }, "Universal", function(v)
 	inventory.inject.weapon_name = (v == "Universal") and "" or v
 end)
-bindDropdown(InvInject, "InvInjectCosmetic", "Item", { "(waiting for modules)" }, 1, function(v)
+bindDropdown(UI.InvInject, "InvInjectCosmetic", "Item", { "(waiting for modules)" }, 1, function(v)
 	inventory.inject.cosmetic_name = (v and v ~= "(none)" and v ~= "(waiting for modules)") and v or ""
 end)
-bindSlider(InvInject, "InvInjectQty", "Quantity", 1, 1, 9999, 0, function(v) inventory.inject.quantity = v end)
-bindToggle(InvInject, "InvStackDupes", "Stack duplicates", false, function(v) inventory.inject.stack_duplicates = v end)
-bindButton(InvInject, "Inject", function() InjectIntoBackpack() end)
+bindSlider(UI.InvInject, "InvInjectQty", "Quantity", 1, 1, 9999, 0, function(v) inventory.inject.quantity = v end)
+bindToggle(UI.InvInject, "InvStackDupes", "Stack duplicates", false, function(v) inventory.inject.stack_duplicates = v end)
+bindButton(UI.InvInject, "Inject", function() InjectIntoBackpack() end)
 
--- WORLD
-pcall(function() WorldLighting:AddSection("Lighting", ico("sun")) end)
-bindToggle(WorldLighting, "WorldLightingEnabled", "Enabled", false, function(v) world.lighting_enabled = v; pcall(UpdateLightingOptions) end)
-pcall(function() WorldLighting:AddLineText("Configure Lighting") end)
-bindSlider(WorldLighting, "WorldBrightness", "Brightness", 2, 0, 10, 1, function(v) world.brightness = v; pcall(UpdateLightingOptions) end)
-bindToggle(WorldLighting, "WorldAntiSmoke", "Anti Smoke", false, function(v) world.anti_smoke = v end)
-bindToggle(WorldLighting, "WorldAntiFlash", "Anti Flashbang", false, function(v) world.anti_flashbang = v end)
+-- WORLD (full lighting / atmosphere / color correction / sky / camera)
+pcall(function() UI.WorldLighting:AddSection("Lighting", ico("sun")) end)
+bindToggle(UI.WorldLighting, "WorldLightingEnabled", "Enabled", false, function(v)
+	world.lighting_enabled = v
+	if v then
+		pcall(UpdateLightingOptions)
+	else
+		pcall(RestoreLighting)
+	end
+end)
+pcall(function() UI.WorldLighting:AddLineText("Configure Lighting") end)
+bindColor(UI.WorldLighting, "WorldAmbient", "Ambient", world.ambient_color, function(c)
+	world.ambient_color = c; pcall(UpdateLightingOptions)
+end)
+bindColor(UI.WorldLighting, "WorldOutdoorAmbient", "Outdoor Ambient", world.outdoor_ambient_color, function(c)
+	world.outdoor_ambient_color = c; pcall(UpdateLightingOptions)
+end)
+bindColor(UI.WorldLighting, "WorldShiftTop", "Color Shift Top", world.shift_top, function(c)
+	world.shift_top = c; pcall(UpdateLightingOptions)
+end)
+bindColor(UI.WorldLighting, "WorldShiftBottom", "Color Shift Bottom", world.shift_bottom, function(c)
+	world.shift_bottom = c; pcall(UpdateLightingOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldBrightness", "Brightness", world.brightness or 2, 0, 10, 1, function(v)
+	world.brightness = v; pcall(UpdateLightingOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldExposure", "Exposure", world.exposure or 0, -3, 3, 2, function(v)
+	world.exposure = v; pcall(UpdateLightingOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldShadowSoft", "Shadow Softness", world.shadow_softness or 0.2, 0, 1, 2, function(v)
+	world.shadow_softness = v; pcall(UpdateLightingOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldDiffuse", "Diffuse Scale", world.diffuse_scale or 1, 0, 1, 2, function(v)
+	world.diffuse_scale = v; pcall(UpdateLightingOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldSpecular", "Specular Scale", world.specular_scale or 1, 0, 1, 2, function(v)
+	world.specular_scale = v; pcall(UpdateLightingOptions)
+end)
+bindToggle(UI.WorldLighting, "WorldGlobalShadows", "Global Shadows", world.global_shadows ~= false, function(v)
+	world.global_shadows = v; pcall(UpdateLightingOptions)
+end)
+bindDropdown(UI.WorldLighting, "WorldLightingStyle", "Style", { "Realistic", "Soft" }, world.lighting_style or "Realistic", function(v)
+	world.lighting_style = v; pcall(UpdateLightingOptions)
+end)
 
-pcall(function() WorldAtmo:AddSection("Atmosphere", ico("cloud")) end)
-bindToggle(WorldAtmo, "WorldAtmoEnabled", "Enabled", false, function(v) world.atmosphere_enabled = v; pcall(UpdateAtmosphereOptions) end)
-pcall(function() WorldAtmo:AddLineText("Configure Atmosphere") end)
-bindSlider(WorldAtmo, "WorldAtmoDensity", "Density", 0.255, 0, 1, 3, function(v) world.density = v; pcall(UpdateAtmosphereOptions) end)
-bindSlider(WorldAtmo, "WorldAtmoOffset", "Offset", 0.2, 0, 1, 2, function(v) world.offset = v; pcall(UpdateAtmosphereOptions) end)
-bindSlider(WorldAtmo, "WorldAtmoGlare", "Glare", 0, 0, 10, 1, function(v) world.glare = v; pcall(UpdateAtmosphereOptions) end)
-bindSlider(WorldAtmo, "WorldAtmoHaze", "Haze", 1.82, 0, 10, 2, function(v) world.haze = v; pcall(UpdateAtmosphereOptions) end)
-pcall(function() WorldAtmo:AddDivider() end)
-pcall(function() WorldAtmo:AddSection("Sun Rays", ico("sun")) end)
-bindToggle(WorldAtmo, "WorldSunRays", "Enabled", false, function(v) world.sunrays_enabled = v; pcall(UpdateSunRaysOptions) end)
-bindSlider(WorldAtmo, "WorldSunRaysIntensity", "Intensity", 0.25, 0, 1, 2, function(v) world.sunrays_intensity = v; pcall(UpdateSunRaysOptions) end)
+pcall(function() UI.WorldLighting:AddDivider() end)
+pcall(function() UI.WorldLighting:AddSection("Color Correction", ico("sparkles")) end)
+bindToggle(UI.WorldLighting, "WorldCCEnabled", "Enabled", false, function(v)
+	world.cc_enabled = v; pcall(UpdateColorCorrectionOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldCCBrightness", "Brightness", 0, -1, 1, 2, function(v)
+	world.cc_brightness = v; pcall(UpdateColorCorrectionOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldCCContrast", "Contrast", 0, -1, 1, 2, function(v)
+	world.cc_contrast = v; pcall(UpdateColorCorrectionOptions)
+end)
+bindSlider(UI.WorldLighting, "WorldCCSaturation", "Saturation", 0, -1, 1, 2, function(v)
+	world.cc_saturation = v; pcall(UpdateColorCorrectionOptions)
+end)
+bindColor(UI.WorldLighting, "WorldCCTint", "Tint", world.cc_tint, function(c)
+	world.cc_tint = c; pcall(UpdateColorCorrectionOptions)
+end)
 
-pcall(function() WorldSky:AddSection("Skybox", ico("image")) end)
-bindToggle(WorldSky, "WorldSkyboxEnabled", "Enabled", false, function(v)
+pcall(function() UI.WorldAtmo:AddSection("Atmosphere", ico("cloud")) end)
+bindToggle(UI.WorldAtmo, "WorldAtmoEnabled", "Enabled", false, function(v)
+	world.atmosphere_enabled = v; pcall(UpdateAtmosphereOptions)
+end)
+pcall(function() UI.WorldAtmo:AddLineText("Configure Atmosphere") end)
+bindSlider(UI.WorldAtmo, "WorldAtmoDensity", "Density", 0.255, 0, 1, 3, function(v)
+	world.density = v; pcall(UpdateAtmosphereOptions)
+end)
+bindSlider(UI.WorldAtmo, "WorldAtmoOffset", "Offset", 0.2, 0, 1, 2, function(v)
+	world.offset = v; pcall(UpdateAtmosphereOptions)
+end)
+bindColor(UI.WorldAtmo, "WorldAtmoColor", "Color", world.atm_color, function(c)
+	world.atm_color = c; pcall(UpdateAtmosphereOptions)
+end)
+bindColor(UI.WorldAtmo, "WorldAtmoDecay", "Decay", world.decay, function(c)
+	world.decay = c; pcall(UpdateAtmosphereOptions)
+end)
+bindSlider(UI.WorldAtmo, "WorldAtmoGlare", "Glare", 0, 0, 10, 1, function(v)
+	world.glare = v; pcall(UpdateAtmosphereOptions)
+end)
+bindSlider(UI.WorldAtmo, "WorldAtmoHaze", "Haze", 1.82, 0, 10, 2, function(v)
+	world.haze = v; pcall(UpdateAtmosphereOptions)
+end)
+
+pcall(function() UI.WorldAtmo:AddDivider() end)
+pcall(function() UI.WorldAtmo:AddSection("Sun Rays", ico("sun")) end)
+bindToggle(UI.WorldAtmo, "WorldSunRays", "Enabled", false, function(v)
+	world.sunrays_enabled = v; pcall(UpdateSunRaysOptions)
+end)
+bindSlider(UI.WorldAtmo, "WorldSunRaysIntensity", "Intensity", 0.25, 0, 1, 2, function(v)
+	world.sunrays_intensity = v; pcall(UpdateSunRaysOptions)
+end)
+bindSlider(UI.WorldAtmo, "WorldSunRaysSpread", "Spread", 1, 0, 1, 2, function(v)
+	world.sunrays_spread = v; pcall(UpdateSunRaysOptions)
+end)
+
+pcall(function() UI.WorldSky:AddSection("Skybox", ico("image")) end)
+bindToggle(UI.WorldSky, "WorldSkyboxEnabled", "Enabled", false, function(v)
 	world.skybox_enabled = v
-	if v then pcall(UpdateSkybox); pcall(SetSkyboxAutoRotate) end
+	if v then
+		pcall(UpdateSkybox)
+		pcall(SetSkyboxAutoRotate)
+	end
 end)
-pcall(function() WorldSky:AddLineText("Configure Skybox") end)
-bindDropdown(WorldSky, "WorldSkyboxPreset", "Preset", SKYBOX_LIST, "None", function(v) world.skybox_value = v; pcall(UpdateSkybox) end)
-bindSlider(WorldSky, "WorldClockTime", "ClockTime", 14, 0, 24, 2, function(v)
+pcall(function() UI.WorldSky:AddLineText("Configure Skybox") end)
+bindDropdown(UI.WorldSky, "WorldSkyboxPreset", "Preset", SKYBOX_LIST, "None", function(v)
+	world.skybox_value = v; pcall(UpdateSkybox)
+end)
+bindSlider(UI.WorldSky, "WorldClockTime", "ClockTime", world.clocktime or 14, 0, 24, 2, function(v)
 	world.clocktime = v
-	if world.skybox_enabled then pcall(function() Lighting.ClockTime = v end) end
+	pcall(function() Lighting.ClockTime = v end)
 end)
+bindSlider(UI.WorldSky, "WorldStarCount", "Star Count", 3000, 0, 5000, 0, function(v)
+	world.star_count = v; pcall(UpdateSkybox)
+end)
+bindSlider(UI.WorldSky, "WorldSunSize", "Sun Angular Size", 21, 0, 60, 1, function(v)
+	world.sun_angular_size = v; pcall(UpdateSkybox)
+end)
+bindSlider(UI.WorldSky, "WorldMoonSize", "Moon Angular Size", 11, 0, 60, 1, function(v)
+	world.moon_angular_size = v; pcall(UpdateSkybox)
+end)
+bindToggle(UI.WorldSky, "WorldSkyAutoRotate", "Auto Rotate", false, function(v)
+	world.auto_rotate = v; pcall(SetSkyboxAutoRotate)
+end)
+bindSlider(UI.WorldSky, "WorldSkyRotateSpeed", "Rotate Speed", 1, 0.1, 10, 1, function(v)
+	world.auto_rotate_speed = v
+end)
+pcall(function() UI.WorldSky:AddLineText("Custom Faces (asset id)") end)
+bindInput(UI.WorldSky, "WorldSkyBack", "Back", "", "asset id", function(v) world.skybox_back = v; pcall(UpdateSkybox) end)
+bindInput(UI.WorldSky, "WorldSkyFront", "Front", "", "asset id", function(v) world.skybox_front = v; pcall(UpdateSkybox) end)
+bindInput(UI.WorldSky, "WorldSkyLeft", "Left", "", "asset id", function(v) world.skybox_left = v; pcall(UpdateSkybox) end)
+bindInput(UI.WorldSky, "WorldSkyRight", "Right", "", "asset id", function(v) world.skybox_right = v; pcall(UpdateSkybox) end)
+bindInput(UI.WorldSky, "WorldSkyUp", "Up", "", "asset id", function(v) world.skybox_up = v; pcall(UpdateSkybox) end)
+bindInput(UI.WorldSky, "WorldSkyDown", "Down", "", "asset id", function(v) world.skybox_down = v; pcall(UpdateSkybox) end)
 
-pcall(function() WorldCam:AddSection("Camera", ico("eye")) end)
-bindSlider(WorldCam, "WorldCameraFov", "FOV", 70, 10, 120, 0, function(v)
+pcall(function() UI.WorldCam:AddSection("Camera", ico("eye")) end)
+bindSlider(UI.WorldCam, "WorldCameraFov", "FOV", 70, 10, 120, 0, function(v)
 	world.camera_fov = v
 	pcall(function()
 		if modules.CameraController and modules.CameraController._base_fov ~= nil then
@@ -5957,159 +6020,747 @@ bindSlider(WorldCam, "WorldCameraFov", "FOV", 70, 10, 120, 0, function(v)
 		if workspace.CurrentCamera then workspace.CurrentCamera.FieldOfView = v end
 	end)
 end, "°")
-bindSlider(WorldCam, "WorldCameraResolution", "Resolution", 1, 0, 1, 2, function(v) world.camera_resolution = v end)
+bindSlider(UI.WorldCam, "WorldCameraResolution", "Resolution", 1, 0, 1, 2, function(v)
+	world.camera_resolution = v
+end)
+bindToggle(UI.WorldCam, "WorldAntiFlash", "Anti Flashbang", false, function(v) world.anti_flashbang = v end)
+bindToggle(UI.WorldCam, "WorldAntiSmoke", "Anti Smoke", false, function(v) world.anti_smoke = v end)
+
+----------------------------------------------------------------
+-- VIEW · Third Person / Freecam / Viewmodel Chams (Paragon logic, upgraded)
+----------------------------------------------------------------
+local VIEW = {
+	third_person = false,
+	third_dist = 12,
+	third_person_key = nil,
+	freecam = false,
+	freecam_speed = 40,
+	vm_chams = false,
+	vm_material = "Neon",
+	vm_color = Color3.fromRGB(254, 0, 67),
+	vm_transparency = 0,
+	vm_hide = false,
+	freecam_key = nil,
+}
+
+local FreecamState = { enabled = false, rotX = 0, rotY = 0, pos = Vector3.zero }
+
+-- Cache originals so disable restores cleanly.
+-- Rivals arms carry Shirt / SurfaceAppearance / MeshPart.TextureID — those block Color/Material until stripped.
+local vmOrig = {} -- [BasePart] = { Material, Color, Transparency, TextureID? }
+local vmHiddenChildren = {} -- [Instance] = original Parent
+local function cacheVmPart(part)
+	if not part:IsA("BasePart") then return end
+	if vmOrig[part] then return end
+	local entry = {
+		Material = part.Material,
+		Color = part.Color,
+		Transparency = part.Transparency,
+	}
+	if part:IsA("MeshPart") then
+		entry.TextureID = part.TextureID
+	end
+	vmOrig[part] = entry
+end
+local function stripClothingVisuals(part)
+	if part:IsA("MeshPart") then
+		pcall(function()
+			if part.TextureID ~= "" then
+				part.TextureID = ""
+			end
+		end)
+	end
+	for _, child in ipairs(part:GetChildren()) do
+		if child:IsA("SurfaceAppearance") or child:IsA("Texture") or child:IsA("Decal") then
+			if not vmHiddenChildren[child] then
+				vmHiddenChildren[child] = child.Parent
+				pcall(function() child.Parent = nil end)
+			end
+		end
+	end
+end
+local function stripModelClothing(model)
+	for _, d in ipairs(model:GetDescendants()) do
+		if d:IsA("Shirt") or d:IsA("Pants") or d:IsA("ShirtGraphic") or d:IsA("Clothing")
+			or d:IsA("SurfaceAppearance") or d:IsA("Texture") or d:IsA("Decal") then
+			if not vmHiddenChildren[d] then
+				vmHiddenChildren[d] = d.Parent
+				pcall(function() d.Parent = nil end)
+			end
+		end
+	end
+end
+local function restoreVmParts()
+	for part, orig in pairs(vmOrig) do
+		if part and part.Parent then
+			pcall(function()
+				part.Material = orig.Material
+				part.Color = orig.Color
+				part.Transparency = orig.Transparency
+				if orig.TextureID ~= nil and part:IsA("MeshPart") then
+					part.TextureID = orig.TextureID
+				end
+			end)
+		end
+	end
+	table.clear(vmOrig)
+	for inst, parent in pairs(vmHiddenChildren) do
+		if inst and parent then
+			pcall(function() inst.Parent = parent end)
+		end
+	end
+	table.clear(vmHiddenChildren)
+end
+
+local VM_MATERIALS = {
+	"Neon", "ForceField", "Glass", "Metal", "SmoothPlastic", "Plastic",
+	"Foil", "DiamondPlate", "Ice", "Marble", "Granite", "Concrete",
+	"Sand", "Fabric", "Wood", "WoodPlanks",
+}
+
+local MATERIAL_MAP = {}
+for _, name in ipairs(VM_MATERIALS) do
+	local ok, mat = pcall(function() return Enum.Material[name] end)
+	if ok and mat then MATERIAL_MAP[name] = mat end
+end
+
+-- Resolve ONLY the local player's viewmodel(s) under workspace.ViewModels
+-- Rivals names them like: "PlayerName - WeaponName - ..." and separate "PlayerName - Arms - ..."
+local function getLocalViewModels()
+	local out = {}
+	local folder = workspace:FindFirstChild("ViewModels")
+	if not folder then return out end
+	local myName = LP.Name
+	local myNameLower = string.lower(myName)
+	for _, child in ipairs(folder:GetChildren()) do
+		local n = child.Name
+		local nLower = string.lower(n)
+		local isMine = n == "FirstPerson"
+			or string.sub(n, 1, #myName + 3) == (myName .. " - ")
+			or string.find(n, myName, 1, true) == 1
+			or string.find(nLower, myNameLower, 1, true) == 1
+		if isMine then
+			table.insert(out, child)
+		end
+	end
+	if #out == 0 then
+		local fp = folder:FindFirstChild("FirstPerson")
+		if fp then table.insert(out, fp) end
+	end
+	return out
+end
+
+local function setVmChams(enabled)
+	VIEW.vm_chams = enabled
+	if not enabled and not VIEW.vm_hide then
+		restoreVmParts()
+	end
+end
+
+pcall(function() UI.WorldCam:AddDivider() end)
+pcall(function() UI.WorldCam:AddSection("Third Person", ico("user")) end)
+bindToggle(UI.WorldCam, "ViewThirdPerson", "Enabled", false, function(v)
+	VIEW.third_person = v
+end)
+bindKeybind(UI.WorldCam, "ViewThirdPersonKey", "Toggle Key", nil, function(key)
+	VIEW.third_person_key = key
+end, function()
+	VIEW.third_person = not VIEW.third_person
+	if Toggles.ViewThirdPerson and Toggles.ViewThirdPerson.SetValue then
+		pcall(function() Toggles.ViewThirdPerson:SetValue(VIEW.third_person) end)
+	end
+end)
+bindSlider(UI.WorldCam, "ViewThirdDist", "Distance", 12, 5, 30, 0, function(v)
+	VIEW.third_dist = v
+end, "m")
+
+pcall(function() UI.WorldCam:AddDivider() end)
+pcall(function() UI.WorldCam:AddSection("Freecam", ico("eye")) end)
+bindToggle(UI.WorldCam, "ViewFreecam", "Enabled", false, function(v)
+	VIEW.freecam = v
+	if not v and FreecamState.enabled then
+		FreecamState.enabled = false
+		pcall(function()
+			game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
+		end)
+		local char = LP.Character
+		local root = char and char:FindFirstChild("HumanoidRootPart")
+		if root then root.Anchored = false end
+	end
+end)
+bindKeybind(UI.WorldCam, "ViewFreecamKey", "Toggle Key", nil, function(key)
+	VIEW.freecam_key = key
+end, function()
+	VIEW.freecam = not VIEW.freecam
+	if Toggles.ViewFreecam and Toggles.ViewFreecam.SetValue then
+		pcall(function() Toggles.ViewFreecam:SetValue(VIEW.freecam) end)
+	end
+	if not VIEW.freecam and FreecamState.enabled then
+		FreecamState.enabled = false
+		pcall(function()
+			game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
+		end)
+		local char = LP.Character
+		local root = char and char:FindFirstChild("HumanoidRootPart")
+		if root then root.Anchored = false end
+	end
+end)
+bindSlider(UI.WorldCam, "ViewFreecamSpeed", "Speed", 40, 10, 100, 0, function(v)
+	VIEW.freecam_speed = v
+end, "m/s")
+
+pcall(function() UI.WorldCam:AddDivider() end)
+pcall(function() UI.WorldCam:AddSection("Model Chams", ico("swords")) end)
+bindToggle(UI.WorldCam, "ViewVmChams", "Enabled", false, function(v)
+	setVmChams(v)
+end)
+bindDropdown(UI.WorldCam, "ViewVmMaterial", "Material", VM_MATERIALS, "Neon", function(v)
+	VIEW.vm_material = v
+end)
+bindColor(UI.WorldCam, "ViewVmColor", "Color", VIEW.vm_color, function(c)
+	VIEW.vm_color = c
+end)
+bindSlider(UI.WorldCam, "ViewVmTrans", "Transparency", 0, 0, 1, 2, function(v)
+	VIEW.vm_transparency = v
+end)
+bindToggle(UI.WorldCam, "ViewVmHide", "Hide Arms/Gun", false, function(v)
+	VIEW.vm_hide = v
+	if not v and not VIEW.vm_chams then
+		restoreVmParts()
+	end
+end)
+
+-- Runtime: third person / freecam / viewmodel (local VM only)
+local UIS_VIEW = game:GetService("UserInputService")
+RunService.RenderStepped:Connect(function(dt)
+	local cam = workspace.CurrentCamera
+	local char = LP.Character
+	local root = char and char:FindFirstChild("HumanoidRootPart")
+	local hum = char and char:FindFirstChildOfClass("Humanoid")
+
+	if (VIEW.third_person or VIEW.freecam) and char then
+		for _, p in ipairs(char:GetDescendants()) do
+			if p:IsA("BasePart") then
+				p.LocalTransparencyModifier = 0
+			end
+		end
+	end
+
+	if VIEW.third_person and root and hum and cam and not VIEW.freecam then
+		local head = char:FindFirstChild("Head") or root
+		local headPos = head.Position + Vector3.new(0, 0.5, 0)
+		local dist = tonumber(VIEW.third_dist) or 12
+		local backDir = -cam.CFrame.LookVector * dist
+		local hitParams = RaycastParams.new()
+		hitParams.FilterDescendantsInstances = { char, cam }
+		hitParams.FilterType = Enum.RaycastFilterType.Exclude
+		local rayRes = workspace:Raycast(headPos, backDir, hitParams)
+		local camPos = rayRes and (rayRes.Position + rayRes.Normal * 0.4) or (headPos + backDir)
+		cam.CFrame = CFrame.lookAt(camPos, headPos + cam.CFrame.LookVector * 100)
+	end
+
+	if VIEW.freecam and cam then
+		if not FreecamState.enabled then
+			FreecamState.enabled = true
+			local rx, ry = cam.CFrame:ToOrientation()
+			FreecamState.rotX = rx
+			FreecamState.rotY = ry
+			FreecamState.pos = cam.CFrame.Position
+		end
+		if root then
+			root.Anchored = true
+			root.AssemblyLinearVelocity = Vector3.zero
+			root.AssemblyAngularVelocity = Vector3.zero
+		end
+		UIS_VIEW.MouseBehavior = Enum.MouseBehavior.LockCurrentPosition
+		local delta = UIS_VIEW:GetMouseDelta()
+		if delta.Magnitude > 0 then
+			FreecamState.rotY = FreecamState.rotY - math.rad(delta.X * 0.25)
+			FreecamState.rotX = math.clamp(FreecamState.rotX - math.rad(delta.Y * 0.25), math.rad(-89), math.rad(89))
+		end
+		local camRot = CFrame.Angles(0, FreecamState.rotY, 0) * CFrame.Angles(FreecamState.rotX, 0, 0)
+		local moveDir = Vector3.zero
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.W) then moveDir = moveDir + camRot.LookVector end
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.S) then moveDir = moveDir - camRot.LookVector end
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.A) then moveDir = moveDir - camRot.RightVector end
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.D) then moveDir = moveDir + camRot.RightVector end
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.Space) then moveDir = moveDir + Vector3.new(0, 1, 0) end
+		if UIS_VIEW:IsKeyDown(Enum.KeyCode.LeftShift) then moveDir = moveDir - Vector3.new(0, 1, 0) end
+		if moveDir.Magnitude > 0 then
+			FreecamState.pos = FreecamState.pos + (moveDir.Unit * (tonumber(VIEW.freecam_speed) or 40) * dt)
+		end
+		cam.CFrame = CFrame.new(FreecamState.pos) * camRot
+	elseif FreecamState.enabled then
+		FreecamState.enabled = false
+		UIS_VIEW.MouseBehavior = Enum.MouseBehavior.Default
+		if root then root.Anchored = false end
+	end
+
+	-- Local viewmodel only (weapon + arms). Strip shirt/textures so arm material shows.
+	if VIEW.vm_chams or VIEW.vm_hide then
+		local mat = MATERIAL_MAP[VIEW.vm_material] or Enum.Material.Neon
+		local col = VIEW.vm_color
+		local trans = math.clamp(tonumber(VIEW.vm_transparency) or 0, 0, 1)
+		local models = getLocalViewModels()
+		for _, model in ipairs(models) do
+			stripModelClothing(model)
+			for _, part in ipairs(model:GetDescendants()) do
+				if part:IsA("BasePart") then
+					cacheVmPart(part)
+					stripClothingVisuals(part)
+					if VIEW.vm_hide then
+						part.Transparency = 1
+					else
+						part.Material = mat
+						part.Color = col
+						part.Transparency = trans
+					end
+				end
+			end
+		end
+	end
+end)
+
+getgenv().VantaView = VIEW
 
 -- SPOOFER 1:1
-pcall(function() SpoofPlatform:AddSection("Platform", ico("smartphone")) end)
-bindDropdown(SpoofPlatform, "SpoofDevice", "Device", { "Desktop", "Mobile", "Console", "VR" }, "Desktop", function(v)
+pcall(function() UI.SpoofPlatform:AddSection("Platform", ico("smartphone")) end)
+bindDropdown(UI.SpoofPlatform, "SpoofDevice", "Device", { "Desktop", "Mobile", "Console", "VR" }, "Desktop", function(v)
 	spoofer.device = v
 	if spoofer.spoof_device then SetDevice(false) end
 end)
-bindToggle(SpoofPlatform, "SpoofDeviceActive", "Spoof Device", false, function(v)
+bindToggle(UI.SpoofPlatform, "SpoofDeviceActive", "Spoof Device", false, function(v)
 	spoofer.spoof_device = v
-	if v then SetDevice(false); VantaNotify({ Title = "success", Description = "spoofed -> " .. tostring(spoofer.device), Time = 2 })
-	else SetDevice(true); VantaNotify({ Title = "success", Description = "device reset", Time = 2 }) end
+	if v then SetDevice(false) else SetDevice(true) end
 end)
-bindToggle(SpoofPlatform, "SpoofDeviceSpam", "Device Spam", false, function(v)
+bindToggle(UI.SpoofPlatform, "SpoofDeviceSpam", "Device Spam", false, function(v)
 	spoofer.device_spam = v; DeviceSpam()
 end)
-bindInput(SpoofPlatform, "SpoofSpamRate", "Spam Rate", "1", "0.1 - 5", function(v)
+bindInput(UI.SpoofPlatform, "SpoofSpamRate", "Spam Rate", "1", "0.1 - 5", function(v)
 	spoofer.spam_rate = math.clamp(tonumber(v) or 1, 0.1, 5)
 end)
 
-pcall(function() SpoofPlayer:AddSection("Player", ico("user")) end)
-bindInput(SpoofPlayer, "SpoofDisplayName", "Display Name", LP.DisplayName, "display name", function(v)
+pcall(function() UI.SpoofPlayer:AddSection("Player", ico("user")) end)
+bindInput(UI.SpoofPlayer, "SpoofDisplayName", "Display Name", LP.DisplayName, "display name", function(v)
 	spoofer.display_name_value = v
 	if spoofer.display_name then RefreshAllNameSpoofs() end
 end)
-bindToggle(SpoofPlayer, "SpoofDisplayNameActive", "Spoof Display Name", false, function(v)
+bindToggle(UI.SpoofPlayer, "SpoofDisplayNameActive", "Spoof Display Name", false, function(v)
 	spoofer.display_name = v
 	if v then pcall(function() spoofer._startNameWatch() end) else pcall(function() spoofer._stopNameWatch() end) end
 	RefreshAllNameSpoofs()
 end)
-bindInput(SpoofPlayer, "SpoofUsername", "Username", LP.Name, "username", function(v)
+bindInput(UI.SpoofPlayer, "SpoofUsername", "Username", LP.Name, "username", function(v)
 	spoofer.username_value = v
 	if spoofer.username then RefreshAllNameSpoofs() end
 end)
-bindToggle(SpoofPlayer, "SpoofUsernameActive", "Spoof Username", false, function(v)
+bindToggle(UI.SpoofPlayer, "SpoofUsernameActive", "Spoof Username", false, function(v)
 	spoofer.username = v
 	if v then pcall(function() spoofer._startNameWatch() end) else pcall(function() spoofer._stopNameWatch() end) end
 	RefreshAllNameSpoofs()
 end)
-bindInput(SpoofPlayer, "SpoofAvatarUserId", "Avatar UserId", tostring(LP.UserId), "userid", function(v)
+bindInput(UI.SpoofPlayer, "SpoofAvatarUserId", "Avatar UserId", tostring(LP.UserId), "userid", function(v)
 	spoofer.avatar_userid = tonumber(v) or LP.UserId
 end)
-bindToggle(SpoofPlayer, "SpoofAvatarActive", "Spoof Avatar", false, function(v)
+bindToggle(UI.SpoofPlayer, "SpoofAvatarActive", "Spoof Avatar", false, function(v)
 	spoofer.avatar = v
 	spoofer.spoof_avatar = v
 	if v then pcall(function() spoofer._startThumbWatch() end) else pcall(function() spoofer._stopThumbWatch() end) end
 end)
 
-pcall(function() SpoofLB:AddSection("Leaderboard", ico("list")) end)
-bindInput(SpoofLB, "SpoofEloValue", "ELO", "0", "number", function(v)
+pcall(function() UI.SpoofLB:AddSection("Leaderboard", ico("list")) end)
+bindInput(UI.SpoofLB, "SpoofEloValue", "ELO", "0", "number", function(v)
 	spoofer.leaderboard.elo_value = tonumber(v) or 0
 	if spoofer.leaderboard.ELO then UpdateLeaderboardAttributes() end
 end)
-bindToggle(SpoofLB, "SpoofEloActive", "Spoof ELO", false, function(v)
+bindToggle(UI.SpoofLB, "SpoofEloActive", "Spoof ELO", false, function(v)
 	spoofer.leaderboard.ELO = v; UpdateLeaderboardAttributes()
 end)
-bindInput(SpoofLB, "SpoofStreakValue", "Streak", "0", "number", function(v)
+bindInput(UI.SpoofLB, "SpoofStreakValue", "Streak", "0", "number", function(v)
 	spoofer.leaderboard.streak_value = tonumber(v) or 0
 	if spoofer.leaderboard.Streak then UpdateLeaderboardAttributes() end
 end)
-bindToggle(SpoofLB, "SpoofStreakActive", "Spoof Streak", false, function(v)
+bindToggle(UI.SpoofLB, "SpoofStreakActive", "Spoof Streak", false, function(v)
 	spoofer.leaderboard.Streak = v; UpdateLeaderboardAttributes()
 end)
-bindInput(SpoofLB, "SpoofKillsValue", "Kills", "0", "number", function(v)
+bindInput(UI.SpoofLB, "SpoofKillsValue", "Kills", "0", "number", function(v)
 	spoofer.leaderboard.kills_value = tonumber(v) or 0
 	if spoofer.leaderboard.Kills then UpdateLeaderboardAttributes() end
 end)
-bindToggle(SpoofLB, "SpoofKillsActive", "Spoof Kills", false, function(v)
+bindToggle(UI.SpoofLB, "SpoofKillsActive", "Spoof Kills", false, function(v)
 	spoofer.leaderboard.Kills = v; UpdateLeaderboardAttributes()
 end)
-bindInput(SpoofLB, "SpoofWinsValue", "Wins", "0", "number", function(v)
+bindInput(UI.SpoofLB, "SpoofWinsValue", "Wins", "0", "number", function(v)
 	spoofer.leaderboard.wins_value = tonumber(v) or 0
 	if spoofer.leaderboard.Wins then UpdateLeaderboardAttributes() end
 end)
-bindToggle(SpoofLB, "SpoofWinsActive", "Spoof Wins", false, function(v)
+bindToggle(UI.SpoofLB, "SpoofWinsActive", "Spoof Wins", false, function(v)
 	spoofer.leaderboard.Wins = v; UpdateLeaderboardAttributes()
 end)
-bindInput(SpoofLB, "SpoofLevelValue", "Level", "0", "number", function(v)
+bindInput(UI.SpoofLB, "SpoofLevelValue", "Level", "0", "number", function(v)
 	spoofer.leaderboard.level_value = tonumber(v) or 0
 	if spoofer.leaderboard.Level then UpdateLeaderboardAttributes() end
 end)
-bindToggle(SpoofLB, "SpoofLevelActive", "Spoof Level", false, function(v)
+bindToggle(UI.SpoofLB, "SpoofLevelActive", "Spoof Level", false, function(v)
 	spoofer.leaderboard.Level = v; UpdateLeaderboardAttributes()
 end)
-bindButton(SpoofLB, "Clear Leaderboard Spoofs", function()
+bindButton(UI.SpoofLB, "Clear Leaderboard Spoofs", function()
 	local lb = spoofer.leaderboard
 	lb.ELO, lb.Streak, lb.Kills, lb.Wins, lb.Level = false, false, false, false, false
 	UpdateLeaderboardAttributes()
 end)
 
-pcall(function() SpoofCur:AddSection("Currency / Keys", ico("coins")) end)
-bindInput(SpoofCur, "SpoofWeaponKeysValue", "Weapon Keys", "0", "number", function(v)
+pcall(function() UI.SpoofCur:AddSection("Currency / Keys", ico("coins")) end)
+bindInput(UI.SpoofCur, "SpoofWeaponKeysValue", "Weapon Keys", "0", "number", function(v)
 	spoofer.currency.weapon_keys_value = tonumber(v) or 0
 	if spoofer.currency.weapon_keys then UpdateCurrencyOptions() end
 end)
-bindToggle(SpoofCur, "SpoofWeaponKeysActive", "Spoof Weapon Keys", false, function(v)
+bindToggle(UI.SpoofCur, "SpoofWeaponKeysActive", "Spoof Weapon Keys", false, function(v)
 	spoofer.currency.weapon_keys = v; UpdateCurrencyOptions()
 end)
-bindInput(SpoofCur, "SpoofUnlockTokensValue", "Unlock Tokens", "0", "number", function(v)
+bindInput(UI.SpoofCur, "SpoofUnlockTokensValue", "Unlock Tokens", "0", "number", function(v)
 	spoofer.currency.unlock_tokens_value = tonumber(v) or 0
 	if spoofer.currency.unlock_tokens then UpdateCurrencyOptions() end
 end)
-bindToggle(SpoofCur, "SpoofUnlockTokensActive", "Spoof Unlock Tokens", false, function(v)
+bindToggle(UI.SpoofCur, "SpoofUnlockTokensActive", "Spoof Unlock Tokens", false, function(v)
 	spoofer.currency.unlock_tokens = v; UpdateCurrencyOptions()
 end)
-bindInput(SpoofCur, "SpoofSkinTicketsValue", "Skin Tickets", "0", "number", function(v)
+bindInput(UI.SpoofCur, "SpoofSkinTicketsValue", "Skin Tickets", "0", "number", function(v)
 	spoofer.currency.skin_tickets_value = tonumber(v) or 0
 	if spoofer.currency.skin_tickets then UpdateCurrencyOptions() end
 end)
-bindToggle(SpoofCur, "SpoofSkinTicketsActive", "Spoof Skin Tickets", false, function(v)
+bindToggle(UI.SpoofCur, "SpoofSkinTicketsActive", "Spoof Skin Tickets", false, function(v)
 	spoofer.currency.skin_tickets = v; UpdateCurrencyOptions()
 end)
-bindInput(SpoofCur, "SpoofGloryValue", "Glory", "0", "number", function(v)
+bindInput(UI.SpoofCur, "SpoofGloryValue", "Glory", "0", "number", function(v)
 	spoofer.currency.glory_value = tonumber(v) or 0
 	if spoofer.currency.glory then UpdateCurrencyOptions() end
 end)
-bindToggle(SpoofCur, "SpoofGloryActive", "Spoof Glory", false, function(v)
+bindToggle(UI.SpoofCur, "SpoofGloryActive", "Spoof Glory", false, function(v)
 	spoofer.currency.glory = v; UpdateCurrencyOptions()
 end)
-bindButton(SpoofCur, "Clear Currency Spoofs", function()
+bindButton(UI.SpoofCur, "Clear Currency Spoofs", function()
 	local cur = spoofer.currency
 	cur.weapon_keys, cur.unlock_tokens, cur.skin_tickets, cur.glory = false, false, false, false
 	UpdateCurrencyOptions()
 end)
 
-pcall(function() SpoofBadge:AddSection("Badges", ico("award")) end)
-bindToggle(SpoofBadge, "SpoofBadgePremium", "Premium", false, function(v) spoofer.badges.Premium = v; UpdateBadgesOptions() end)
-bindToggle(SpoofBadge, "SpoofBadgeVerified", "Verified", false, function(v) spoofer.badges.Verified = v; UpdateBadgesOptions() end)
-bindToggle(SpoofBadge, "SpoofBadgeInfluencer", "Influencer", false, function(v) spoofer.badges.Influencer = v; UpdateBadgesOptions() end)
-bindToggle(SpoofBadge, "SpoofBadgeAdmin", "Admin", false, function(v) spoofer.badges.Admin = v; UpdateBadgesOptions() end)
-pcall(function() SpoofBadge:AddDivider() end)
-pcall(function() SpoofBadge:AddSection("Charm", ico("sparkles")) end)
-bindDropdown(SpoofBadge, "SpoofCharmRank", "Charm Rank", CHARM_RANKS, "Use Spoofed ELO", function(v)
+pcall(function() UI.SpoofBadge:AddSection("Badges", ico("award")) end)
+bindToggle(UI.SpoofBadge, "SpoofBadgePremium", "Premium", false, function(v) spoofer.badges.Premium = v; UpdateBadgesOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofBadgeVerified", "Verified", false, function(v) spoofer.badges.Verified = v; UpdateBadgesOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofBadgeInfluencer", "Influencer", false, function(v) spoofer.badges.Influencer = v; UpdateBadgesOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofBadgeAdmin", "Admin", false, function(v) spoofer.badges.Admin = v; UpdateBadgesOptions() end)
+pcall(function() UI.SpoofBadge:AddDivider() end)
+pcall(function() UI.SpoofBadge:AddSection("Charm", ico("sparkles")) end)
+bindDropdown(UI.SpoofBadge, "SpoofCharmRank", "Charm Rank", CHARM_RANKS, "Use Spoofed ELO", function(v)
 	spoofer.charm.charm_rank = v
 	if spoofer.charm.s0_charm or spoofer.charm.s1_charm or spoofer.charm.s2_charm or spoofer.charm.s3_charm then UpdateCharmOptions() end
 end)
-bindInput(SpoofBadge, "SpoofArchRank", "Arch Rank", "1", "1-100", function(v)
+bindInput(UI.SpoofBadge, "SpoofArchRank", "Arch Rank", "1", "1-100", function(v)
 	spoofer.charm.arch_rank = math.clamp(tonumber(v) or 1, 1, 100)
 end)
-bindToggle(SpoofBadge, "SpoofS0Charm", "Season 0 Charm", false, function(v) spoofer.charm.s0_charm = v; UpdateCharmOptions() end)
-bindToggle(SpoofBadge, "SpoofS1Charm", "Season 1 Charm", false, function(v) spoofer.charm.s1_charm = v; UpdateCharmOptions() end)
-bindToggle(SpoofBadge, "SpoofS2Charm", "Season 2 Charm", false, function(v) spoofer.charm.s2_charm = v; UpdateCharmOptions() end)
-bindToggle(SpoofBadge, "SpoofS3Charm", "Season 3 Charm", false, function(v) spoofer.charm.s3_charm = v; UpdateCharmOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofS0Charm", "Season 0 Charm", false, function(v) spoofer.charm.s0_charm = v; UpdateCharmOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofS1Charm", "Season 1 Charm", false, function(v) spoofer.charm.s1_charm = v; UpdateCharmOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofS2Charm", "Season 2 Charm", false, function(v) spoofer.charm.s2_charm = v; UpdateCharmOptions() end)
+bindToggle(UI.SpoofBadge, "SpoofS3Charm", "Season 3 Charm", false, function(v) spoofer.charm.s3_charm = v; UpdateCharmOptions() end)
 
 -- MISC
-pcall(function() MiscCross:AddSection("Crosshair", ico("crosshair")) end)
-bindToggle(MiscCross, "MiscCrosshairEnabled", "Enabled", false, function(v)
+pcall(function() UI.MiscCross:AddSection("Crosshair", ico("crosshair")) end)
+bindToggle(UI.MiscCross, "MiscCrosshairEnabled", "Enabled", false, function(v)
 	if misc and misc.crosshair then misc.crosshair.enabled = v end
 end)
-pcall(function() MiscCross:AddLineText("Configure Crosshair") end)
-bindSlider(MiscCross, "MiscCrosshairOffset", "Offset", 5, 0, 50, 0, function(v) if misc.crosshair then misc.crosshair.offset = v end end)
-bindSlider(MiscCross, "MiscCrosshairLength", "Length", 20, 1, 60, 0, function(v) if misc.crosshair then misc.crosshair.length = v end end)
-bindSlider(MiscCross, "MiscCrosshairThickness", "Thickness", 2, 1, 10, 0, function(v) if misc.crosshair then misc.crosshair.thickness = v end end)
+pcall(function() UI.MiscCross:AddLineText("Configure Crosshair") end)
+bindSlider(UI.MiscCross, "MiscCrosshairOffset", "Offset", 5, 0, 50, 0, function(v) if misc.crosshair then misc.crosshair.offset = v end end)
+bindSlider(UI.MiscCross, "MiscCrosshairLength", "Length", 20, 1, 60, 0, function(v) if misc.crosshair then misc.crosshair.length = v end end)
+bindSlider(UI.MiscCross, "MiscCrosshairThickness", "Thickness", 2, 1, 10, 0, function(v) if misc.crosshair then misc.crosshair.thickness = v end end)
+
+----------------------------------------------------------------
+-- MISC · EXTRA — Hit Sounds (Skeet / Rust)
+----------------------------------------------------------------
+local SoundService = game:GetService("SoundService")
+local Debris = game:GetService("Debris")
+
+local HIT_SOUND_IDS = {
+	Skeet = "rbxassetid://4817809188",
+	Rust  = "rbxassetid://1255040462",
+}
+
+local hitsound = {
+	enabled = false,
+	selected = "Skeet", -- Skeet | Rust
+	volume = 1.2,
+}
+
+local lastHitSoundTime = 0
+local function PlayHitSound(forceId)
+	local now = tick()
+	if not forceId and (now - lastHitSoundTime) < 0.04 then return end
+	if not forceId then lastHitSoundTime = now end
+	pcall(function()
+		local sndId = forceId or HIT_SOUND_IDS[hitsound.selected] or HIT_SOUND_IDS.Skeet
+		local snd = Instance.new("Sound")
+		snd.SoundId = sndId
+		snd.Volume = tonumber(hitsound.volume) or 1.2
+		snd.Parent = SoundService
+		snd:Play()
+		pcall(function() Debris:AddItem(snd, 1.5) end)
+		task.delay(1.5, function()
+			if snd and snd.Parent then pcall(function() snd:Destroy() end) end
+		end)
+	end)
+end
+
+-- Hook Rivals hitmarker / damage effect so custom sound plays on real hits
+task.spawn(function()
+	for _ = 1, 30 do
+		local ok = pcall(function()
+			local ps = LP:FindFirstChild("PlayerScripts")
+			local mods = ps and ps:FindFirstChild("Modules")
+			local crc = mods and mods:FindFirstChild("ClientReplicatedClasses")
+			local cf = crc and crc:FindFirstChild("ClientFighter")
+			local ciMod = cf and cf:FindFirstChild("ClientItem")
+			if not ciMod then return end
+			local ci = require(ciMod)
+			if ci and type(ci._PlayHitmarkerQueue) == "function" and not ci._vantaHitSoundHooked then
+				local orig = ci._PlayHitmarkerQueue
+				ci._PlayHitmarkerQueue = function(self, ...)
+					if hitsound.enabled then
+						pcall(function()
+							local fighter = self and (self.Fighter or self._fighter or self.Player)
+							local isLocal = (fighter == LP) or (self and self.Character == LP.Character)
+							if isLocal then PlayHitSound() end
+						end)
+					end
+					return orig(self, ...)
+				end
+				ci._vantaHitSoundHooked = true
+			end
+			local ii = ciMod:FindFirstChild("ItemInterface")
+			local mMod = ii and ii:FindFirstChild("Mouse")
+			local mcMod = mMod and mMod:FindFirstChild("MouseCrosshair")
+			if mcMod then
+				local mc = require(mcMod)
+				if mc and type(mc.DamageEffect) == "function" and not mc._vantaHitSoundHooked then
+					local origDE = mc.DamageEffect
+					mc.DamageEffect = function(self, ...)
+						if hitsound.enabled then pcall(PlayHitSound) end
+						return origDE(self, ...)
+					end
+					mc._vantaHitSoundHooked = true
+				end
+			end
+		end)
+		if ok then break end
+		task.wait(1)
+	end
+end)
+
+pcall(function() UI.MiscExtra:AddSection("Hit Sounds", ico("volume-2")) end)
+bindToggle(UI.MiscExtra, "HitSoundEnabled", "Enabled", false, function(v)
+	hitsound.enabled = v
+end)
+bindDropdown(UI.MiscExtra, "HitSoundType", "Sound", { "Skeet", "Rust" }, "Skeet", function(v)
+	hitsound.selected = v
+end)
+bindSlider(UI.MiscExtra, "HitSoundVolume", "Volume", 1.2, 0, 3, 2, function(v)
+	hitsound.volume = v
+end)
+bindButton(UI.MiscExtra, "Preview Sound", function()
+	local id = HIT_SOUND_IDS[hitsound.selected] or HIT_SOUND_IDS.Skeet
+	PlayHitSound(id)
+end)
+
+getgenv().VantaHitSound = hitsound
+
+----------------------------------------------------------------
+-- MOVEMENT (from Paragon — full ground + air + VVind keybinds)
+----------------------------------------------------------------
+local UserInputService = game:GetService("UserInputService")
+
+local MOVE = {
+	speed = false,
+	speed_value = 49,
+	speed_key = nil, -- None
+	fly = false,
+	fly_speed = 50,
+	fly_key = nil,
+	inf_jump = false,
+	inf_jump_key = nil,
+	bhop = false,
+	bhop_key = nil,
+	noclip = false,
+	noclip_key = nil,
+}
+
+local function moveFlip(flag, uiFlag)
+	MOVE[flag] = not MOVE[flag]
+	if uiFlag and Toggles[uiFlag] and Toggles[uiFlag].SetValue then
+		pcall(function() Toggles[uiFlag]:SetValue(MOVE[flag]) end)
+	elseif uiFlag and Options[uiFlag] then
+		Options[uiFlag].Value = MOVE[flag]
+	end
+end
+
+-- Ground
+pcall(function() UI.MovePlayer:AddSection("Walkspeed", ico("gauge")) end)
+bindToggle(UI.MovePlayer, "MoveSpeed", "Enabled", false, function(v) MOVE.speed = v end)
+bindKeybind(UI.MovePlayer, "MoveSpeedKey", "Toggle Key", nil, function(key)
+	MOVE.speed_key = key
+end, function()
+	moveFlip("speed", "MoveSpeed")
+end)
+bindSlider(UI.MovePlayer, "MoveSpeedValue", "Speed", 49, 16, 120, 0, function(v) MOVE.speed_value = v end, "m/s")
+
+pcall(function() UI.MovePlayer:AddDivider() end)
+pcall(function() UI.MovePlayer:AddSection("Jumping", ico("arrow-up-from-line")) end)
+bindToggle(UI.MovePlayer, "MoveInfJump", "Inf Jump", false, function(v) MOVE.inf_jump = v end)
+bindKeybind(UI.MovePlayer, "MoveInfJumpKey", "Toggle Key", nil, function(key)
+	MOVE.inf_jump_key = key
+end, function()
+	moveFlip("inf_jump", "MoveInfJump")
+end)
+bindToggle(UI.MovePlayer, "MoveBhop", "Bhop", false, function(v) MOVE.bhop = v end)
+bindKeybind(UI.MovePlayer, "MoveBhopKey", "Toggle Key", nil, function(key)
+	MOVE.bhop_key = key
+end, function()
+	moveFlip("bhop", "MoveBhop")
+end)
+
+-- Air
+pcall(function() UI.MovePlayer:AddSection("Fly", ico("plane")) end)
+bindToggle(UI.MovePlayer, "MoveFly", "Enabled", false, function(v) MOVE.fly = v end)
+bindKeybind(UI.MovePlayer, "MoveFlyKey", "Toggle Key", nil, function(key)
+	MOVE.fly_key = key
+end, function()
+	moveFlip("fly", "MoveFly")
+end)
+bindSlider(UI.MovePlayer, "MoveFlySpeed", "Fly Speed", 50, 20, 150, 0, function(v) MOVE.fly_speed = v end, "m/s")
+
+pcall(function() UI.MovePlayer:AddDivider() end)
+pcall(function() UI.MovePlayer:AddSection("Nocliperz", ico("ghost")) end)
+bindToggle(UI.MovePlayer, "MoveNoclip", "Noclip", false, function(v) MOVE.noclip = v end)
+bindKeybind(UI.MovePlayer, "MoveNoclipKey", "Toggle Key", nil, function(key)
+	MOVE.noclip_key = key
+end, function()
+	moveFlip("noclip", "MoveNoclip")
+end)
+
+-- Infinite jump
+local lastInfJumpTime = 0
+UserInputService.JumpRequest:Connect(function()
+	if not MOVE.inf_jump then return end
+	local now = tick()
+	if now - lastInfJumpTime < 0.25 then return end
+	lastInfJumpTime = now
+	local char = LP.Character
+	local hum = char and char:FindFirstChildOfClass("Humanoid")
+	if hum then
+		pcall(function() hum:ChangeState(Enum.HumanoidStateType.Jumping) end)
+	end
+end)
+
+-- Runtime: speed / fly / bhop / noclip
+local flyBV, flyBG
+local lastBhopJumpTime = 0
+local lastNoclipParts = {}
+
+RunService.RenderStepped:Connect(function(dt)
+	local char = LP.Character
+	local root = char and char:FindFirstChild("HumanoidRootPart")
+	local hum = char and char:FindFirstChildOfClass("Humanoid")
+	local cam = workspace.CurrentCamera
+	if not root or not hum then
+		if flyBV then pcall(function() flyBV:Destroy() end); flyBV = nil end
+		if flyBG then pcall(function() flyBG:Destroy() end); flyBG = nil end
+		return
+	end
+
+	-- SPEED (WalkSpeed + CFrame boost past base 16 — softer than pure high WalkSpeed)
+	if MOVE.speed then
+		local target = tonumber(MOVE.speed_value) or 32
+		hum.WalkSpeed = target
+		local moveDir = hum.MoveDirection
+		if moveDir.Magnitude > 0.05 then
+			local extra = math.max(0, target - 16)
+			if extra > 0 then
+				root.CFrame = root.CFrame + (moveDir.Unit * (extra * dt))
+			end
+		end
+	end
+
+	-- FLY (BodyVelocity + BodyGyro, camera-relative)
+	if MOVE.fly and cam then
+		if not flyBV or flyBV.Parent ~= root then
+			if flyBV then pcall(function() flyBV:Destroy() end) end
+			flyBV = Instance.new("BodyVelocity")
+			flyBV.Velocity = Vector3.zero
+			flyBV.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+			flyBV.Parent = root
+		end
+		if not flyBG or flyBG.Parent ~= root then
+			if flyBG then pcall(function() flyBG:Destroy() end) end
+			flyBG = Instance.new("BodyGyro")
+			flyBG.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+			flyBG.P = 9e4
+			flyBG.Parent = root
+		end
+		local camCF = cam.CFrame
+		local dir = Vector3.zero
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) then dir = dir + camCF.LookVector end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) then dir = dir - camCF.LookVector end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) then dir = dir - camCF.RightVector end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) then dir = dir + camCF.RightVector end
+		if UserInputService:IsKeyDown(Enum.KeyCode.Space) then dir = dir + Vector3.new(0, 1, 0) end
+		if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then dir = dir - Vector3.new(0, 1, 0) end
+		flyBG.CFrame = camCF
+		flyBV.Velocity = (dir.Magnitude > 0) and (dir.Unit * (tonumber(MOVE.fly_speed) or 50)) or Vector3.zero
+	else
+		if flyBV then pcall(function() flyBV:Destroy() end); flyBV = nil end
+		if flyBG then pcall(function() flyBG:Destroy() end); flyBG = nil end
+	end
+
+	-- BHOP
+	if MOVE.bhop then
+		if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+			if hum.FloorMaterial ~= Enum.Material.Air then
+				local now = tick()
+				if now - lastBhopJumpTime > 0.08 then
+					lastBhopJumpTime = now
+					hum.Jump = true
+				end
+			end
+		end
+	end
+end)
+
+-- NOCLIP (Stepped so physics respects it)
+RunService.Stepped:Connect(function()
+	local char = LP.Character
+	if not char then return end
+	if MOVE.noclip then
+		for _, part in ipairs(char:GetDescendants()) do
+			if part:IsA("BasePart") and part.CanCollide then
+				lastNoclipParts[part] = true
+				part.CanCollide = false
+			end
+		end
+	else
+		-- restore only parts we flipped
+		for part in pairs(lastNoclipParts) do
+			if part and part.Parent then
+				pcall(function() part.CanCollide = true end)
+			end
+			lastNoclipParts[part] = nil
+		end
+	end
+end)
+
+-- clean movers on character swap
+LP.CharacterAdded:Connect(function()
+	if flyBV then pcall(function() flyBV:Destroy() end); flyBV = nil end
+	if flyBG then pcall(function() flyBG:Destroy() end); flyBG = nil end
+	table.clear(lastNoclipParts)
+end)
 
 -- CLOUD + CHAT (Universal 1:1 — Ask(panel, text) signature)
 local OPENROUTER_KEY = (getgenv().VantaOpenRouterKey or getgenv().OpenRouterApiKey or "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")
@@ -6160,7 +6811,7 @@ local ChatDockButton, ConfigDockButton, SettingsDockButton
 local ChatPanel = Window:AddChatPanel({
 	Title = "Vanta Assistant [BETA]",
 	Icon = ico("bot"),
-	Placeholder = "Ask daddy's Vanta anything~...",
+	Placeholder = "Ask anything...",
 	Tools = VantaChatTools,
 	OnToggle = function(open)
 		if ChatDockButton then ChatDockButton:SetActive(open) end
@@ -6244,13 +6895,6 @@ pcall(function()
 				if ConfigPanel.RefreshPublic then ConfigPanel.RefreshPublic() end
 				if ConfigPanel.RefreshMine then ConfigPanel.RefreshMine() end
 			end)
-			pcall(function()
-				if count < 0 then
-					VindUI:Notify({ Title = "Cloud", Text = "Could not refresh list.", Type = "error", Duration = 3 })
-				else
-					VindUI:Notify({ Title = "Refreshed", Text = "Config list updated.", Type = "success", Duration = 2 })
-				end
-			end)
 		end,
 	})
 end)
@@ -6278,11 +6922,11 @@ SettingsDockButton = Window:AddDockButton({
 	end,
 })
 
-pcall(function() SettingsTab:AddSection("Menu", ico("settings")) end)
-bindButton(SettingsTab, "Unload", function() pcall(function() Window:Destroy() end) end)
-pcall(function() SettingsTab:AddDivider() end)
-pcall(function() SettingsTab:AddSection("Cloud Configs", ico("cloud")) end)
-bindButton(SettingsTab, "Refresh Config List", function()
+pcall(function() UI.SettingsTab:AddSection("Menu", ico("settings")) end)
+bindButton(UI.SettingsTab, "Unload", function() pcall(function() Window:Destroy() end) end)
+pcall(function() UI.SettingsTab:AddDivider() end)
+pcall(function() UI.SettingsTab:AddSection("Cloud Configs", ico("cloud")) end)
+bindButton(UI.SettingsTab, "Refresh Config List", function()
 	pcall(function()
 		if ConfigPanel.RefreshPublic then ConfigPanel.RefreshPublic() end
 		if ConfigPanel.RefreshMine then ConfigPanel.RefreshMine() end
@@ -6303,4 +6947,3 @@ end)
 
 pcall(function() Window:SelectTab("Home") end)
 getgenv().AtomicRivals = { skin = skin, modules = modules }
-VantaNotify({ Title = "rivals", Description = "loaded..", Time = 3 })
